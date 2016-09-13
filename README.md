@@ -1,7 +1,7 @@
 # dmengine size plot
 This project will plot the size of dmengine (Defold) for all supported platforms and versions.
 
-![Size per platform and version](size.png)
+![Size per platform and version](https://github.com/britzl/dmengine_size/raw/master/size.png)
 
 ![](https://travis-ci.org/britzl/dmengine_size.svg?branch=master)
 
