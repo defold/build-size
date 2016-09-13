@@ -3,6 +3,8 @@ This project will plot the size of dmengine (Defold) for all supported platforms
 
 ![Size per platform and version](size.png)
 
+![](https://travis-ci.org/britzl/dmengine_size.svg?branch=master)
+
 # Requirements
 If you wish to run this script locally you need to have the following things installed:
 
