@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 import urllib
 import os
-from csv import reader
+import datetime
 import itertools
+from csv import reader
 import matplotlib
 matplotlib.use('Agg')
 
@@ -81,12 +82,12 @@ releases = [
 
 def create_report():
 	with open("report.csv", 'w') as out:
+		out.write(str(datetime.datetime.now()) + "\n")
 		out.write("VERSION,")
 		line = ""
 		for engine in engines:
 			line = line + engine["platform"] + ","
 		out.write(line.rstrip(",") + "\n")
-
 		for release in releases:
 			line = ""
 			print("Getting size for version " + release["version"])
@@ -101,7 +102,9 @@ def create_report():
 def create_graph():
 	with open('report.csv', 'r') as f:
 		data = list(reader(f))
+		timestamp = data.pop(0)	# remove timestamp
 
+		# get all versions, ignore column headers
 		versions = [i[0] for i in data[1::]]
 		xaxis_version = range(0, len(versions))
 
@@ -115,6 +118,7 @@ def create_graph():
 		pyplot.yticks(locs, map(lambda x: "%d" % x, locs))
 		pyplot.ylabel('SIZE')
 		pyplot.xlabel('VERSION')
+		pyplot.annotate(timestamp, xy=(0.05, 0.95), xycoords='axes fraction')
 
 		legend = ax.legend(loc='center right', bbox_to_anchor=(1.4, 0.5))
 		frame = legend.get_frame()
