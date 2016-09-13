@@ -4,8 +4,18 @@ cache:
   - "$HOME/.cache/pip"
   - "$HOME/.pyenv"
 python:
-  - "2.7.10"
+- 2.7.10
 install:
 - "./.travis/install.sh"
 script:
 - "./.travis/run.sh"
+deploy:
+  provider: releases
+  api-key:
+    secure: Q9KEbjfPdMg/E9MNap1vPLFxznZpuuMfPn6I2G7NxCLwhNFrn6+MhmjauN36AnZZT2mGpEI0qwf+OgmrRNymyc8zCKQ17EnWoNz1B6WQQH+elqu1VeWu8ztfX8PMkqbgTZwuzTFZrIblW0URUnuOIM4f47mcQohoSHnJQncZl8IIijI7rlkW9Lnt3MG0q4ZCgyUiVYia+1Yf+XvRSNYKOrp4xi2c5hnObC/d0KWZDtP7ClUtmbMbVOdMXbre6jteMNaIFJa7AALkIOC//uBOCtclz7joRPe31rePbhvkek+B5VJ62NKi17JyxAE4C2qTavHJUWqQKSQNik3rjL0wZ9XEKKPY9+M+DF/Qejm6lg7vly0qqWIDFKSvWZpstT4LQiWO/Q8Hwl73UuFATxybQ2iCRDad+21N578CBlJrSsB5Wjc4md4ik3jgII1wV4oSVyw0zXNENNbbyk2w+rCkaUrVCX7702Okk5yXcsbn4LxOK7/FkRQSw6AMtDv8TSOcx6pz9A2L+suq8LNFuwcsZAu5EF7qoZxs1ga3f89DfKQk6Q2xkq3DnCwlxo7tSrsaBm/4KIsWK9cLe6n11uIIzmRaScehZnSYBzZDLF8AxIl2juTJ/J/jOziA7OvVyYvkRdsZBN93Xij/NZF/72oVNDAmWMzIk2j0Fwi8M7+upkM=
+  skip_cleanup: true
+  file:
+    - size.png
+    - report.csv
+  on:
+    tags: true
