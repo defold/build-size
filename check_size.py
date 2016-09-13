@@ -126,5 +126,5 @@ def create_graph():
 
 		fig.savefig('size.png', format='png', bbox_extra_artists=(legend,), bbox_inches='tight')
 
-#create_report()
+create_report()
 create_graph()
