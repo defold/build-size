@@ -2,6 +2,7 @@
 import urllib
 import os
 from csv import reader
+import itertools
 import matplotlib
 matplotlib.use('Agg')
 
@@ -106,9 +107,9 @@ def create_graph():
 
 		fig, ax = pyplot.subplots(figsize=(20, 10))
 		pyplot.xticks(xaxis_version, versions, rotation=270)
-		for engine in range(1,len(data[0])):
+		for engine, marker in zip(range(1,len(data[0])), itertools.cycle('.o8s+xD*p')):
 			yaxis_size = [i[engine] for i in data[1::]]
-			ax.plot(xaxis_version, yaxis_size, label=data[0][engine])
+			ax.plot(xaxis_version, yaxis_size, label=data[0][engine], marker=marker)
 
 		locs,labels = pyplot.yticks()
 		pyplot.yticks(locs, map(lambda x: "%d" % x, locs))
