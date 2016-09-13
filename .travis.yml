@@ -1,0 +1,11 @@
+language: python
+cache:
+  directories:
+  - "$HOME/.cache/pip"
+  - "$HOME/.pyenv"
+python:
+  - "2.7.10"
+install:
+- "./.travis/install.sh"
+script:
+- "./.travis/run.sh"
