@@ -103,7 +103,6 @@ def create_report():
 def create_graph():
 	with open('report.csv', 'r') as f:
 		data = list(reader(f))
-		timestamp = data.pop(0)	# remove timestamp
 
 		# get all versions, ignore column headers
 		versions = [i[0] for i in data[1::]]
@@ -119,7 +118,7 @@ def create_graph():
 		pyplot.yticks(locs, map(lambda x: "%d" % x, locs))
 		pyplot.ylabel('SIZE')
 		pyplot.xlabel('VERSION')
-		pyplot.annotate(timestamp, xy=(0.05, 0.95), xycoords='axes fraction')
+		pyplot.annotate(str(datetime.datetime.now()), xy=(0.05, 0.95), xycoords='axes fraction')
 
 		legend = ax.legend(loc='center right', bbox_to_anchor=(1.4, 0.5))
 		frame = legend.get_frame()
