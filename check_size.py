@@ -83,7 +83,7 @@ releases = [
 
 def create_report():
 	with open("report.csv", 'w') as out:
-		out.write(str(datetime.datetime.now()) + "\n")
+		#out.write(str(datetime.datetime.now()) + "\n")
 		out.write("VERSION,")
 		line = ""
 		for engine in engines:
