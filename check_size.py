@@ -93,6 +93,7 @@ releases = [
 	{ "version": "1.2.101", "sha1": "1e53d81a6306962b64381195f081d442d033ead1" },
 	{ "version": "1.2.102", "sha1": "d530758af74c2800d0898c591cc7188cc4515476" },
 	{ "version": "1.2.103", "sha1": "d126b0348d27c684d020e0bd43fde0a2771746f0" },
+	{ "version": "1.2.104", "sha1": "298b7ce75a1386a26124061dbccfa822df9bc982" },
 ]
 
 def create_report():
