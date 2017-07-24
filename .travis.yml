@@ -1,16 +1,16 @@
 language: python
 env:
   global:
-    - secure: "iPLunTQopNY/5lq19spOSz8skudzAiEntoZosf+Y3h39wz+KnDWlfJo8XpTuD1Yl9WGjpma30djE9k6GgSIbGhRvpH+h/KSNdqkNpFuyXwCTT1bJYlpNTOWrUb58KwwqroSVQeKQ1yCEVNrOHbCxpLSjcPeS9OscR6/v7TtITV50MpbVwgF0mL8jaKUnpq9IUB6S6PVyqxZbqwyNanz7ehxc6Kg4VJ7oo53yT/7dC5onUgUkP0sy3Fxpq2qp4o+J0+U1p0o7xrwwgcoD2pwZMJXesZBhX2BiEWMAcVMiJQOGiVjbmfzFotlf6mewa2NEl+4t/znr+wU19AKb+hpEFbRyBho9YpY3k1yxeB4giyUeTu+AthttPkk52M7pJuTv3HD5XQqtSAtbbPAtdNQv6/9MjyMFPEyGxEwxob9IxOnH3YhDKr3+eNRqo5dxoMMUsg/BgSbdSSoD7NquPpe719fboWuVyNomkUEkXfecOMqwnD9PiBfEPhymsAwEjQySKjRbLgDpxfozbkquF0ONegIV4FVjOHmQf0sfurFz9mlyMYlbo2wpOMtEdLb0gM4bHVyrmUYlOu/T1gjCoe9Ah2u3D3dSy5Ti05QgTx1wiftNSJWRDBr7eRvQCOe9i3JbMmH1RWuWnUH/WJ7ByhjGgUlwBdrOtnHvGrHGxSgYCgE="
+  - secure: ss3cLy++XrIshbwpsh8nibp28nQay7/WCfraVD+lzTEYPMBO4nCgtk76Wq1x9nL2m0UUn0A3TEZlQgZEUjSKEUgbYtTOuGOQZFHmi+E3RrD8P9i2Al0kbjoGJlj3MYo8J2yxo7fJVAKp8J/eXKWM4rjxjlaCgUuSmuHZoYZ6P7mitKoLFZNKmAVx/L93igcz9164twPTPDOVodd1+Lduh5JeAJQgv89MfybTO+3/phfrDUAyYB+N0ZQWF+Dy182e16ear+f/s0KAADt//KB50bVa8877fL3goIbplluu9x7l0dbfmUB0LnN84cYpA/GDIqqy1QqkVh3UbCZEJf8VHQR+YT4XG8MxvcqtbyQTg9RxVivZmIkyAZdobMRj3s+oX8IUZs62fEIHqhWqAEnU7+RoJiD3hANVORTV6Jh/MokETIK76XLFMYugGsUaNWpf3uuHdm57muFLUblHts29d3+r1VZjz5MC61fBlen0XSzyiucRdTegCvRsptZS8laYDIOTlUVETu37qmiBspNzdJ5zhMFubSshd0tk12/niKiu6PDPkpte424jTPRBC9i+NuUkmDHZrcPEWSQHPVvNDZVH/MEmH6KSszJ7Cb+qa7zpIApby7MLYOketz8uUb5kytx8XELK5FiHnUthZdMSP3DCyO74LLfk0+CS8NLIHdU=
 cache:
   directories:
-  - "$HOME/.cache/pip"
-  - "$HOME/.pyenv"
+  - $HOME/.cache/pip
+  - $HOME/.pyenv
 python:
 - 2.7.10
 install:
-- "./.travis/install.sh"
+- ./.travis/install.sh
 script:
-- "./.travis/run.sh"
+- ./.travis/run.sh
 after_success:
-- "./.travis/deploy.sh"
+- ./.travis/deploy.sh
