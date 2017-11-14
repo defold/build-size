@@ -149,13 +149,15 @@ def create_graph():
         pyplot.yticks(locs, map(lambda x: "%d" % x, locs))
         pyplot.ylabel('SIZE')
         pyplot.xlabel('VERSION')
+        # add timestamp to top-left corner of graph
         pyplot.annotate(str(datetime.datetime.now()), xy=(0.05, 0.95), xycoords='axes fraction')
 
+        # create legend
         legend = ax.legend(loc='center right', bbox_to_anchor=(1.4, 0.5))
         frame = legend.get_frame()
         frame.set_facecolor('0.90')
 
-        fig.savefig('size.png', format='png', bbox_extra_artists=(legend,), bbox_inches='tight')
+        fig.savefig('size.png', format='png', bbox_extra_artists=(legend,), bbox_inches='tight', pad_inches=1)
 
 
 create_report()
