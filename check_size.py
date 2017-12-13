@@ -109,8 +109,8 @@ releases = [
     {"version": "1.2.115", "sha1": "57fb5f1ad5df59262aa415f298f97694debc991c"},
     {"version": "1.2.116", "sha1": "33da4aa91761d531471f364ef1693c2acec16de7"},
     {"version": "1.2.117", "sha1": "4ac025d15c25a9e0dbf14140d2e5d443c2edfdc4"},
+    {"version": "1.2.118", "sha1": "0faa10db6bb28907d67358ad5810f3962437f3fd"},
 ]
-
 
 def create_report():
     with open("report.csv", 'w') as out:
