@@ -115,6 +115,7 @@ releases = [
     {"version": "1.2.121", "sha1": "9988355914f63362a4292c4827639f0187275e70"},
 ]
 
+
 def create_report():
     with open("report.csv", 'w') as out:
         # out.write(str(datetime.datetime.now()) + "\n")
@@ -149,8 +150,8 @@ def create_graph():
             ax.plot(xaxis_version, yaxis_size, label=data[0][engine], marker=marker)
 
         locs, labels = pyplot.yticks()
-        pyplot.yticks(locs, map(lambda x: "%d" % x, locs))
-        pyplot.ylabel('SIZE')
+        pyplot.yticks(locs, locs)
+        pyplot.ylabel('SIZE (bytes)')
         pyplot.xlabel('VERSION')
         # add timestamp to top-left corner of graph
         pyplot.annotate(str(datetime.datetime.now()), xy=(0.05, 0.95), xycoords='axes fraction')
