@@ -115,6 +115,7 @@ releases = [
     {"version": "1.2.121", "sha1": "9988355914f63362a4292c4827639f0187275e70"},
     {"version": "1.2.122", "sha1": "fce7921da858a71876773c75920b74310ca7ac1f"},
     {"version": "1.2.123", "sha1": "46d8b7e63d7e0f0f4acd545c46d25ca2b227a806"},
+    {"version": "1.2.124", "sha1": "e3f2a48e6495946eb8aede3c843471bb037976aa"},
 ]
 
 
