@@ -45,7 +45,6 @@ engines = [
 
 def create_report(releases):
     with open("report.csv", 'w') as out:
-        # out.write(str(datetime.datetime.now()) + "\n")
         out.write("VERSION,")
         line = ""
         for engine in engines:
@@ -96,14 +95,12 @@ def create_graph():
             ax.axhline(y, alpha=0.1)
 
         pyplot.yticks(locs, map(lambda x: "%d mb" % (x // mb), locs))
-        #ax.yaxis.tick_right()
         pyplot.ylabel('SIZE')
         pyplot.xlabel('VERSION')
         # add timestamp to top-left corner of graph
         pyplot.annotate(str(datetime.datetime.now()), xy=(0.02, 0.95), xycoords='axes fraction')
 
         # create legend
-        #legend = ax.legend(loc='center right', bbox_to_anchor=(1.4, 0.5))
         legend = ax.legend(loc='upper left', bbox_to_anchor=(0.02, 0.94))
         frame = legend.get_frame()
         frame.set_facecolor('0.90')
