@@ -12,7 +12,9 @@ from matplotlib import pyplot
 def get_size(sha1, path):
     url = "http://d.defold.com/archive/" + sha1 + "/" + path
     d = urllib.urlopen(url)
-    return d.info()['Content-Length']
+    if d.getcode() == 200:
+        return d.info()['Content-Length']
+    return 0
 
 
 engines = [
@@ -116,12 +118,15 @@ releases = [
     {"version": "1.2.122", "sha1": "fce7921da858a71876773c75920b74310ca7ac1f"},
     {"version": "1.2.123", "sha1": "46d8b7e63d7e0f0f4acd545c46d25ca2b227a806"},
     {"version": "1.2.124", "sha1": "e3f2a48e6495946eb8aede3c843471bb037976aa"},
+    {"version": "1.2.125", "sha1": "f9995611e4d5befaa75d6b6d7becdd52823e01eb"},
+    {"version": "1.2.126", "sha1": "32ba5eaa128e4b54113fb36eb4b9eff33d8582b3"},
+    {"version": "1.2.127", "sha1": "c129eafe38a95a1a69eec93679790cd29ab6c0a6"},
+    {"version": "1.2.128", "sha1": "477e0e1034b76a6f9e07fb5ead5dc10adcd2ba6d"},
 ]
 
 
 def create_report():
     with open("report.csv", 'w') as out:
-        # out.write(str(datetime.datetime.now()) + "\n")
         out.write("VERSION,")
         line = ""
         for engine in engines:
@@ -148,19 +153,37 @@ def create_graph():
 
         fig, ax = pyplot.subplots(figsize=(20, 10))
         pyplot.xticks(xaxis_version, versions, rotation=270)
+        max_ysize = 0
         for engine, marker in zip(range(1, len(data[0])), itertools.cycle('.o8s+xD*p')):
             yaxis_size = [i[engine] for i in data[1::]]
+            # convert from string to int
+            yaxis_size = map(lambda x: int(x) if x > 0 else None, yaxis_size)
+            # find the max y size
+            max_ysize = max(max_ysize, max(yaxis_size))
+            # replace zero values with nan to avoid plotting them
+            yaxis_size = map(lambda x: x if x != 0 else float('nan'), yaxis_size)
             ax.plot(xaxis_version, yaxis_size, label=data[0][engine], marker=marker)
 
-        locs, labels = pyplot.yticks()
-        pyplot.yticks(locs, locs)
-        pyplot.ylabel('SIZE (bytes)')
+        # make sure the plot fills out the area (easier to see nuances)
+        ax.set_ylim(bottom=0.)
+        ax.set_xlim(left=0., right=xaxis_version[-1])
+
+        mb = 1024 * 1024
+        max_mb = (max_ysize+mb/2) // mb
+        locs = [i * mb for i in range(0, max_mb + 1)]
+
+        # create horizontal lines, to make it easier to track sizes
+        for y in range(0, max_mb*mb, 2*mb):
+            ax.axhline(y, alpha=0.1)
+
+        pyplot.yticks(locs, map(lambda x: "%d mb" % (x // mb), locs))
+        pyplot.ylabel('SIZE')
         pyplot.xlabel('VERSION')
         # add timestamp to top-left corner of graph
-        pyplot.annotate(str(datetime.datetime.now()), xy=(0.05, 0.95), xycoords='axes fraction')
+        pyplot.annotate(str(datetime.datetime.now()), xy=(0.02, 0.95), xycoords='axes fraction')
 
         # create legend
-        legend = ax.legend(loc='center right', bbox_to_anchor=(1.4, 0.5))
+        legend = ax.legend(loc='upper left', bbox_to_anchor=(0.02, 0.94))
         frame = legend.get_frame()
         frame.set_facecolor('0.90')
 
