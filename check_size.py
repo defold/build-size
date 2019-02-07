@@ -4,7 +4,7 @@ import datetime
 import itertools
 import json
 import shutil
-from csv import reader
+import csv
 import matplotlib
 matplotlib.use('Agg')
 
@@ -44,26 +44,49 @@ engines = [
 ]
 
 def create_report(releases):
-    with open("report.csv", 'w') as out:
-        out.write("VERSION,")
-        line = ""
+    report_rows = []
+    with open('report.csv', 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            report_rows.append(row)
+
+    with open("report.csv", 'w') as f:
+        writer = csv.writer(f)
+        header = []
+        header.append("VERSION")
         for engine in engines:
-            line = line + engine["platform"] + ","
-        out.write(line.rstrip(",") + "\n")
+            header.append(engine["platform"])
+        writer.writerow(header)
+
+        # go through the releases one by one and either use existing size data
+        # or download and get the size data
         for release in releases:
-            line = ""
-            print("Getting size for version " + release["version"])
-            line = line + release["version"] + ","
-            for engine in engines:
-                path = "engine/{}/{}".format(engine["platform"], engine["filename"])
-                size = get_size(release["sha1"], path)
-                line = line + str(size) + ","
-            out.write(line.rstrip(",") + "\n")
+            version = release["version"]
+            sha1 = release["sha1"]
+            print("Release", version)
+
+            row = None
+            for report_row in report_rows:
+                if report_row[0] == version:
+                    print("Found existing size")
+                    row = report_row
+                    break
+
+            if row is None:
+                print("Downloading size")
+                row = []
+                row.append(version)
+                for engine in engines:
+                    path = "engine/{}/{}".format(engine["platform"], engine["filename"])
+                    size = get_size(release["sha1"], path)
+                    row.append(size)
+
+            writer.writerow(row)
 
 
 def create_graph():
     with open('report.csv', 'r') as f:
-        data = list(reader(f))
+        data = list(csv.reader(f))
 
         # get all versions, ignore column headers
         versions = [i[0] for i in data[1::]]
@@ -116,7 +139,7 @@ def check_for_updates(latest_release, releases):
     return True
 
 
-latest_release = get_latest_version()    
+latest_release = get_latest_version()
 releases = read_releases('releases.json')
 
 if check_for_updates(latest_release, releases):
