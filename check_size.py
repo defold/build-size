@@ -63,17 +63,15 @@ def create_report(releases):
         for release in releases:
             version = release["version"]
             sha1 = release["sha1"]
-            print("Release", version)
 
             row = None
             for report_row in report_rows:
                 if report_row[0] == version:
-                    print("Found existing size")
                     row = report_row
                     break
 
             if row is None:
-                print("Downloading size")
+                print("Found new version {} - Getting size of engine binaries".format(version))
                 row = []
                 row.append(version)
                 for engine in engines:
@@ -143,7 +141,7 @@ latest_release = get_latest_version()
 releases = read_releases('releases.json')
 
 if check_for_updates(latest_release, releases):
-    print("Found new release", latest_release)
+    print("Found new release {}".format(latest_release))
     releases['releases'].append(latest_release)
 
     create_report(releases['releases'])
