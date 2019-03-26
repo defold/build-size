@@ -75,8 +75,11 @@ def create_report(releases):
                 row = []
                 row.append(version)
                 for engine in engines:
-                    path = "engine/{}/{}".format(engine["platform"], engine["filename"])
+                    path = "engine/{}/stripped/{}".format(engine["platform"], engine["filename"])
                     size = get_size(release["sha1"], path)
+                    if size == 0:
+                        path = "engine/{}/{}".format(engine["platform"], engine["filename"])
+                        size = get_size(release["sha1"], path)
                     row.append(size)
 
             writer.writerow(row)
