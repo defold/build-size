@@ -33,14 +33,17 @@ def read_releases(path):
 
 engines = [
     {"platform": "arm64-darwin", "filename": "dmengine_release"},
-    {"platform": "armv7-android", "filename": "dmengine_release.apk"},
+    {"platform": "armv7-android", "filename": "dmengine_release.apk"}, # added in 1.2.153
     {"platform": "armv7-darwin", "filename": "dmengine_release"},
     {"platform": "darwin", "filename": "dmengine_release"},
     {"platform": "js-web", "filename": "dmengine_release.js"},
+    {"platform": "wasm-web", "filename": "dmengine_release.wasm"}, # added in 1.2.141
     {"platform": "linux", "filename": "dmengine_release"},
     {"platform": "win32", "filename": "dmengine_release.exe"},
     {"platform": "x86_64-darwin", "filename": "dmengine_release"},
     {"platform": "x86_64-linux", "filename": "dmengine_release"},
+    {"platform": "armv7-android", "filename": "dmengine.apk"},
+    {"platform": "arm64-android", "filename": "dmengine.apk"},
 ]
 
 def create_report(releases):
@@ -84,10 +87,25 @@ def create_report(releases):
 
             writer.writerow(row)
 
+def parse_version(version_str):
+    return map(int, version_str.split('.'))
 
-def create_graph():
+def create_graph(out, from_version=None):
     with open('report.csv', 'r') as f:
         data = list(csv.reader(f))
+
+        # only keep the versions starting with from_version and above
+        if from_version is not None:
+            from_version = parse_version(from_version)
+            new_data = []
+            for line in data:
+                if not line[0].startswith('1.2.'):
+                    new_data.append(line)
+                    continue
+                version = parse_version(line[0])
+                if version >= from_version:
+                    new_data.append(line)
+            data = new_data
 
         # get all versions, ignore column headers
         versions = [i[0] for i in data[1::]]
@@ -96,7 +114,9 @@ def create_graph():
         fig, ax = pyplot.subplots(figsize=(20, 10))
         pyplot.xticks(xaxis_version, versions, rotation=270)
         max_ysize = 0
-        for engine, marker in zip(range(1, len(data[0])), itertools.cycle('.o8s+xD*p')):
+        markers = '.o8s+xD*pP<^'
+        assert(len(markers) >= (len(data[0])-1)) # we need unique markers for each platform
+        for engine, marker in zip(range(1, len(data[0])), markers):
             yaxis_size = [i[engine] for i in data[1::]]
             # convert from string to int
             yaxis_size = map(lambda x: int(x) if x > 0 else None, yaxis_size)
@@ -129,7 +149,7 @@ def create_graph():
         frame = legend.get_frame()
         frame.set_facecolor('0.90')
 
-        fig.savefig('size.png', format='png', bbox_extra_artists=(legend,), bbox_inches='tight', pad_inches=1)
+        fig.savefig(out, format='png', bbox_extra_artists=(legend,), bbox_inches='tight', pad_inches=1)
 
 
 def check_for_updates(latest_release, releases):
@@ -147,12 +167,15 @@ if check_for_updates(latest_release, releases):
     print("Found new release {}".format(latest_release))
     releases['releases'].append(latest_release)
 
-    create_report(releases['releases'])
-
     # update the releases on disc
     with open('releases_new.json', 'wb') as f:
         json.dump(releases, f, indent=4, separators=(',', ': '))
     # if everything went right, move the temp file
     shutil.move('releases_new.json', 'releases.json')
 
-    create_graph()
+
+# update report (if releases are missing from report.csv)
+create_report(releases['releases'])
+
+create_graph(out='size.png')
+create_graph(out='size_small.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
