@@ -47,6 +47,7 @@ engines = [
 ]
 
 def create_report(releases):
+    print("Creating report.csv")
     report_rows = []
     with open('report.csv', 'r') as f:
         reader = csv.reader(f)
@@ -86,11 +87,13 @@ def create_report(releases):
                     row.append(size)
 
             writer.writerow(row)
+    print("Creating report.csv - ok")
 
 def parse_version(version_str):
     return map(int, version_str.split('.'))
 
 def create_graph(out, from_version=None):
+    print("Creating {}".format(out))
     with open('report.csv', 'r') as f:
         data = list(csv.reader(f))
 
@@ -150,6 +153,7 @@ def create_graph(out, from_version=None):
         frame.set_facecolor('0.90')
 
         fig.savefig(out, format='png', bbox_extra_artists=(legend,), bbox_inches='tight', pad_inches=1)
+    print("Creating {} - ok".format(out))
 
 
 def check_for_updates(latest_release, releases):
