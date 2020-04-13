@@ -1,5 +1,5 @@
 language: python
-dist: trusty
+dist: bionic
 env:
   global:
   - secure: ss3cLy++XrIshbwpsh8nibp28nQay7/WCfraVD+lzTEYPMBO4nCgtk76Wq1x9nL2m0UUn0A3TEZlQgZEUjSKEUgbYtTOuGOQZFHmi+E3RrD8P9i2Al0kbjoGJlj3MYo8J2yxo7fJVAKp8J/eXKWM4rjxjlaCgUuSmuHZoYZ6P7mitKoLFZNKmAVx/L93igcz9164twPTPDOVodd1+Lduh5JeAJQgv89MfybTO+3/phfrDUAyYB+N0ZQWF+Dy182e16ear+f/s0KAADt//KB50bVa8877fL3goIbplluu9x7l0dbfmUB0LnN84cYpA/GDIqqy1QqkVh3UbCZEJf8VHQR+YT4XG8MxvcqtbyQTg9RxVivZmIkyAZdobMRj3s+oX8IUZs62fEIHqhWqAEnU7+RoJiD3hANVORTV6Jh/MokETIK76XLFMYugGsUaNWpf3uuHdm57muFLUblHts29d3+r1VZjz5MC61fBlen0XSzyiucRdTegCvRsptZS8laYDIOTlUVETu37qmiBspNzdJ5zhMFubSshd0tk12/niKiu6PDPkpte424jTPRBC9i+NuUkmDHZrcPEWSQHPVvNDZVH/MEmH6KSszJ7Cb+qa7zpIApby7MLYOketz8uUb5kytx8XELK5FiHnUthZdMSP3DCyO74LLfk0+CS8NLIHdU=
@@ -8,7 +8,7 @@ cache:
   - $HOME/.cache/pip
   - $HOME/.pyenv
 python:
-- 2.7.10
+- 2.7.17
 install:
 - ./.travis/install.sh
 script:
