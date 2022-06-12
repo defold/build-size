@@ -322,13 +322,13 @@ if check_for_updates(latest_release, releases):
 # update reports (if releases are missing from a report file)
 print("Creating reports")
 # create_report("legacy_engine_report.csv", releases['releases'], engines, get_engine_size_from_aws)
-# create_report("engine_report.csv", releases['releases'], engines, get_engine_size_from_bob)
+create_report("engine_report.csv", releases['releases'], engines, get_engine_size_from_bob)
 create_report("bundle_report.csv", releases['releases'], bundles, get_bundle_size_from_bob)
 
 
 # create graphs based on the different reports
-# print("Creating graphs")
-# create_graph("legacy_engine_report.csv", out='legacy_engine_size.png')
-# create_graph("legacy_engine_report.csv", out='legacy_engine_size_stripped.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
-# create_graph("legacy_engine_report.csv", out='engine_size.png')
-create_graph("bundle_report.csv", out='bundle_size.png', from_version='1.2.185')
+print("Creating graphs")
+create_graph("legacy_engine_report.csv", out='legacy_engine_size.png')
+create_graph("legacy_engine_report.csv", out='legacy_engine_size_stripped.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
+create_graph("engine_report.csv", out='engine_size.png', from_version='1.2.166')
+create_graph("bundle_report.csv", out='bundle_size.png', from_version='1.2.166')
