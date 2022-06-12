@@ -114,12 +114,17 @@ def get_zipped_size(path):
     z = zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED)
     for root, dirs, files in os.walk(path):
         for file in files:
-            print("writing", root, file)
-            # z.write(os.path.join(root, file))
+            z.write(os.path.join(root, file))
+            print("write " + os.path.join(root, file))
     z.close()
-    sys.exit(1)
-    return os.path.getsize(z.name)
+    return os.path.getsize(tmp.name)
 
+def get_folder_size(path):
+    size = 0
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            size = size + os.path.getsize(os.path.join(root, file))
+    return size
 
 def get_bundle_size_from_bob(sha1, platform, _):
     print("Gettings size of bundle for platform {} with sha1 {} using Bob".format(platform, sha1))
@@ -131,21 +136,36 @@ def get_bundle_size_from_bob(sha1, platform, _):
         bob_path = download_bob(sha1)
         bob_filename = os.path.basename(bob_path)
         shutil.copy(bob_path, os.path.join("empty_project", "bob.jar"))
-        subprocess.call(["java", "-jar", "bob.jar", "--archive", "--platform=" + platform, "--variant=release", "--bundle-output=../bundle_output", "clean", "build", "bundle"],cwd="empty_project")
+        args = []
+        args.append("java")
+        args.append("-jar")
+        args.append("bob.jar")
+        args.append("--archive")
+        if platform in ("armv7-android", "arm64-android"):
+            args.append("--platform=armv7-android")
+            args.append("--architectures=" + platform)
+        elif platform in ("wasm-web", "js-web"):
+            args.append("--platform=js-web")
+            args.append("--architectures=" + platform)
+        else:
+            args.append("--platform=" + platform)
+        args.append("--variant=release")
+        args.append("--bundle-output=../bundle_output")
+        args.extend(["clean", "build", "bundle"])
+
+        subprocess.call(args,cwd="empty_project")
 
         if platform in ("armv7-android", "arm64-android"):
-            return os.path.getsize("bundle_output/unnamed.apk")
+            return os.path.getsize("bundle_output/unnamed/unnamed.apk")
         elif platform in ("arm64-darwin"):
             return os.path.getsize("bundle_output/unnamed.ipa")
         elif platform in ("x86_64-darwin"):
-            return os.path.getsize("bundle_output/unnamed.app")
+            return get_folder_size("bundle_output/unnamed.app")
         elif platform in ("x86_64-win32", "x86-win32"):
             return get_zipped_size("bundle_output")
         elif platform in ("x86_64-linux"):
             return get_zipped_size("bundle_output")
-        elif platform in ("wasm-web"):
-            return get_zipped_size("bundle_output")
-        elif platform in ("js-web"):
+        elif platform in ("wasm-web", "js-web"):
             return get_zipped_size("bundle_output")
         else:
             raise Exception("Unknown platform {}". format(platform))
@@ -204,7 +224,6 @@ def create_report(report_filename, releases, report_platforms, fn):
                     platform = report_platform["platform"]
                     filename = report_platform["filename"]
                     size = fn(sha1, platform, filename)
-                    print(size, platform, filename)
                     row.append(size)
 
             writer.writerow(row)
@@ -312,4 +331,4 @@ create_report("bundle_report.csv", releases['releases'], bundles, get_bundle_siz
 # create_graph("legacy_engine_report.csv", out='legacy_engine_size.png')
 # create_graph("legacy_engine_report.csv", out='legacy_engine_size_stripped.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
 # create_graph("legacy_engine_report.csv", out='engine_size.png')
-# create_graph("bundle_report.csv", out='bundle_size.png')
+create_graph("bundle_report.csv", out='bundle_size.png', from_version='1.2.185')
