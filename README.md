@@ -1,15 +1,16 @@
 [![Build Status](https://travis-ci.com/britzl/dmengine_size.svg?branch=master)](https://travis-ci.com/britzl/dmengine_size)
 
 # dmengine size plot
-This project will plot the size of dmengine (Defold) for all supported platforms and versions. Note that this will show the size of the debug version of dmengine (ie including debug symbols). A release build of dmengine will be smaller.
+This project will plot the size of the Defold engine (aka dmengine) as well as the size of a complete Defold game bundle for all supported platforms and versions.
 
-Showing stripped versions:
 
-![Size per platform and version](https://github.com/britzl/dmengine_size/raw/master/size_small.png)
+Graph of versions stripped of debug symbols:
+
+![Size per platform and version](https://github.com/britzl/dmengine_size/raw/master/legacy_engine_size_stripped.png)
 
 History of versions:
 
-![History of size per platform and version](https://github.com/britzl/dmengine_size/raw/master/size.png)
+![History of size per platform and version](https://github.com/britzl/dmengine_size/raw/master/legacy_engine_size.png)
 
 [![](https://travis-ci.org/britzl/dmengine_size.svg?branch=master)](https://travis-ci.org/britzl/dmengine_size/builds)
 

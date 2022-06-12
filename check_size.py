@@ -1,37 +1,27 @@
 #!/usr/bin/env python
+import os
+import sys
+import subprocess
+import tempfile
 import urllib
 import datetime
 import itertools
 import json
 import shutil
 import csv
+import zipfile
 import matplotlib
 matplotlib.use('Agg')
 
 from matplotlib import pyplot
 
 
-def get_size(sha1, path):
-    url = "http://d.defold.com/archive/" + sha1 + "/" + path
-    d = urllib.urlopen(url)
-    if d.getcode() == 200:
-        return d.info()['Content-Length']
-    return 0
+# https://matplotlib.org/stable/api/markers_api.html
+markers = '.o8s+xD*pP<<>'
 
-def get_latest_version():
-    url = "http://d.defold.com/stable/info.json"
-    response = urllib.urlopen(url)
-    if response.getcode() == 200:
-        return json.loads(response.read())
-    return {}
-
-def read_releases(path):
-    with open(path, 'rb') as f:
-        d = json.loads(f.read())
-        return d
-    return {}
-
-engines = [
+# old list containing architectures we no longer use
+# also a mix of engines and archives (apk vs engine binary)
+legacy_engines = [
     {"platform": "arm64-darwin", "filename": "dmengine_release"},
     {"platform": "armv7-android", "filename": "dmengine_release.apk"}, # added in 1.2.153
     {"platform": "armv7-darwin", "filename": "dmengine_release"},
@@ -46,20 +36,152 @@ engines = [
     {"platform": "arm64-android", "filename": "dmengine.apk"},
 ]
 
-def create_report(releases):
-    print("Creating report.csv")
+engines = [
+    {"platform": "arm64-darwin",    "filename": "dmengine_release"},
+    {"platform": "arm64-android",   "filename": "libdmengine_release.so"},
+    {"platform": "armv7-android",   "filename": "libdmengine_release.so"},
+    {"platform": "x86_64-darwin",   "filename": "dmengine_release"},
+    {"platform": "js-web",          "filename": "dmengine_release.js"},
+    {"platform": "wasm-web",        "filename": "dmengine_release.wasm"},
+    {"platform": "x86_64-linux",    "filename": "dmengine_release"},
+    {"platform": "x86-win32",       "filename": "dmengine_release.exe"},
+    {"platform": "x86_64-win32",    "filename": "dmengine_release.exe"},
+]
+
+bundles = [
+    {"platform": "arm64-darwin",    "filename": "notused"},
+    {"platform": "arm64-android",   "filename": "notused"},
+    {"platform": "armv7-android",   "filename": "notused"},
+    {"platform": "x86_64-darwin",   "filename": "notused"},
+    {"platform": "js-web",          "filename": "notused"},
+    {"platform": "wasm-web",        "filename": "notused"},
+    {"platform": "x86_64-linux",    "filename": "notused"},
+    {"platform": "x86-win32",       "filename": "notused"},
+    {"platform": "x86_64-win32",    "filename": "notused"},
+]
+
+def get_host():
+    if sys.platform == 'linux2':
+        return 'linux'
+    elif sys.platform == 'win32':
+        return 'windows'
+    elif sys.platform == 'darwin':
+        return 'macos'
+    raise "Unknown platform"
+
+def download_bob(sha1):
+    bob_path = 'bob_{}.jar'.format(sha1)
+    if not os.path.exists(bob_path):
+        print("Downloading bob version {} to {}".format(sha1, bob_path))
+        url = "http://d.defold.com/archive/stable/" + sha1 + "/bob/bob.jar"
+        urllib.urlretrieve(url, bob_path)
+    return bob_path
+
+def get_size_from_url(sha1, path):
+    url = "http://d.defold.com/archive/" + sha1 + "/" + path
+    d = urllib.urlopen(url)
+    if d.getcode() == 200:
+        return d.info()['Content-Length']
+    return 0
+
+def get_engine_size_from_aws(sha1, platform, filename):
+    print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
+    path = "engine/{}/stripped/{}".format(platform, filename)
+    size = get_size_from_url(sha1, path)
+    if size == 0:
+        path = "engine/{}/{}".format(platform, filename)
+        size = get_size_from_url(sha1, path)
+    return size
+
+def extract_from_bob(bob_path, filename):
+    bob_zip = zipfile.ZipFile(bob_path)
+    bob_info = bob_zip.getinfo(filename)
+    return bob_zip.extract(bob_info)
+
+def get_engine_size_from_bob(sha1, platform, filename):
+    print("Gettings size of {} for platform {} with sha1 {} from Bob".format(filename, platform, sha1))
+    try:
+        bob_path = download_bob(sha1)
+        engine_path = 'libexec/{}/{}'.format(platform, filename)
+        extracted_engine = extract_from_bob(bob_path, engine_path)
+        return os.path.getsize(extracted_engine)
+    except Exception as e:
+        print(e)
+        return 0
+
+def get_zipped_size(path):
+    tmp = tempfile.NamedTemporaryFile("wb")
+    z = zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED)
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            print("writing", root, file)
+            # z.write(os.path.join(root, file))
+    z.close()
+    sys.exit(1)
+    return os.path.getsize(z.name)
+
+
+def get_bundle_size_from_bob(sha1, platform, _):
+    print("Gettings size of bundle for platform {} with sha1 {} using Bob".format(platform, sha1))
+    if os.path.exists("bundle_output"):
+        shutil.rmtree("bundle_output")
+    os.mkdir("bundle_output")
+
+    try:
+        bob_path = download_bob(sha1)
+        bob_filename = os.path.basename(bob_path)
+        shutil.copy(bob_path, os.path.join("empty_project", "bob.jar"))
+        subprocess.call(["java", "-jar", "bob.jar", "--archive", "--platform=" + platform, "--variant=release", "--bundle-output=../bundle_output", "clean", "build", "bundle"],cwd="empty_project")
+
+        if platform in ("armv7-android", "arm64-android"):
+            return os.path.getsize("bundle_output/unnamed.apk")
+        elif platform in ("arm64-darwin"):
+            return os.path.getsize("bundle_output/unnamed.ipa")
+        elif platform in ("x86_64-darwin"):
+            return os.path.getsize("bundle_output/unnamed.app")
+        elif platform in ("x86_64-win32", "x86-win32"):
+            return get_zipped_size("bundle_output")
+        elif platform in ("x86_64-linux"):
+            return get_zipped_size("bundle_output")
+        elif platform in ("wasm-web"):
+            return get_zipped_size("bundle_output")
+        elif platform in ("js-web"):
+            return get_zipped_size("bundle_output")
+        else:
+            raise Exception("Unknown platform {}". format(platform))
+    except Exception as e:
+        print(e)
+        return 0
+
+
+def get_latest_version():
+    url = "http://d.defold.com/stable/info.json"
+    response = urllib.urlopen(url)
+    if response.getcode() == 200:
+        return json.loads(response.read())
+    return {}
+
+def read_releases(path):
+    with open(path, 'rb') as f:
+        d = json.loads(f.read())
+        return d
+    return {}
+
+
+def create_report(report_filename, releases, report_platforms, fn):
+    print("Creating {}".format(report_filename))
     report_rows = []
-    with open('report.csv', 'r') as f:
+    with open(report_filename, 'r') as f:
         reader = csv.reader(f)
         for row in reader:
             report_rows.append(row)
 
-    with open("report.csv", 'w') as f:
+    with open(report_filename, 'w') as f:
         writer = csv.writer(f)
         header = []
         header.append("VERSION")
-        for engine in engines:
-            header.append(engine["platform"])
+        for report_platform in report_platforms:
+            header.append(report_platform["platform"])
         writer.writerow(header)
 
         # go through the releases one by one and either use existing size data
@@ -75,26 +197,25 @@ def create_report(releases):
                     break
 
             if row is None:
-                print("Found new version {} - Getting size of engine binaries".format(version))
+                print("Found new version {} - Getting size".format(version))
                 row = []
                 row.append(version)
-                for engine in engines:
-                    path = "engine/{}/stripped/{}".format(engine["platform"], engine["filename"])
-                    size = get_size(release["sha1"], path)
-                    if size == 0:
-                        path = "engine/{}/{}".format(engine["platform"], engine["filename"])
-                        size = get_size(release["sha1"], path)
+                for report_platform in report_platforms:
+                    platform = report_platform["platform"]
+                    filename = report_platform["filename"]
+                    size = fn(sha1, platform, filename)
+                    print(size, platform, filename)
                     row.append(size)
 
             writer.writerow(row)
-    print("Creating report.csv - ok")
+    print("Creating {} - ok".format(report_filename))
 
 def parse_version(version_str):
     return map(int, version_str.split('.'))
 
-def create_graph(out, from_version=None):
+def create_graph(report_filename, out, from_version=None):
     print("Creating {}".format(out))
-    with open('report.csv', 'r') as f:
+    with open(report_filename, 'r') as f:
         data = list(csv.reader(f))
 
         # only keep the versions starting with from_version and above
@@ -117,7 +238,6 @@ def create_graph(out, from_version=None):
         fig, ax = pyplot.subplots(figsize=(20, 10))
         pyplot.xticks(xaxis_version, versions, rotation=270)
         max_ysize = 0
-        markers = '.o8s+xD*pP<^'
         assert(len(markers) >= (len(data[0])-1)) # we need unique markers for each platform
         for engine, marker in zip(range(1, len(data[0])), markers):
             yaxis_size = [i[engine] for i in data[1::]]
@@ -164,7 +284,9 @@ def check_for_updates(latest_release, releases):
     return True
 
 
+# latest_release = { "version": "1.3.3", "sha1": "287c945fab310c324493e08b191ee1b1538ef973"}
 latest_release = get_latest_version()
+
 releases = read_releases('releases.json')
 
 if check_for_updates(latest_release, releases):
@@ -178,8 +300,16 @@ if check_for_updates(latest_release, releases):
     shutil.move('releases_new.json', 'releases.json')
 
 
-# update report (if releases are missing from report.csv)
-create_report(releases['releases'])
+# update reports (if releases are missing from a report file)
+print("Creating reports")
+# create_report("legacy_engine_report.csv", releases['releases'], engines, get_engine_size_from_aws)
+# create_report("engine_report.csv", releases['releases'], engines, get_engine_size_from_bob)
+create_report("bundle_report.csv", releases['releases'], bundles, get_bundle_size_from_bob)
 
-create_graph(out='size.png')
-create_graph(out='size_small.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
+
+# create graphs based on the different reports
+# print("Creating graphs")
+# create_graph("legacy_engine_report.csv", out='legacy_engine_size.png')
+# create_graph("legacy_engine_report.csv", out='legacy_engine_size_stripped.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
+# create_graph("legacy_engine_report.csv", out='engine_size.png')
+# create_graph("bundle_report.csv", out='bundle_size.png')
