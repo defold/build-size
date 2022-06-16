@@ -3,7 +3,7 @@
 # Defold engine and application bundle size plot
 This project will plot the size of the Defold engine (aka dmengine) as well as the size of a complete Defold game bundle for all supported platforms and versions.
 
-## Bndle size
+## Bundle size
 The bundle size is measured as:
 
 * Android - Size of .apk file containing one CPU architecture
@@ -31,6 +31,7 @@ History of versions:
 
 ![History of size per platform and version](https://github.com/britzl/dmengine_size/raw/master/legacy_engine_size.png)
 
+NOTE: In both of the deprecated graphs above the measurements show the size of the .apk file for Android and for all other platforms the size of the engine itself.
 
 # Requirements
 If you wish to run this script locally you need to have the following things installed:
