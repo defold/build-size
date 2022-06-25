@@ -47,11 +47,12 @@ Run [check_size.py](check_size.py):
 
 It will generate these files:
 * [releases.json](releases.json)
-* [report.csv](report.csv)
-* [size.png](size.png)
-* [size_small.png](size_small.png)
+* [engine_report.csv](engine_report.csv)
+* [bundle_report.csv](bundle_report.csv)
+* [engine_size.png](engine_size.png)
+* [bundle_size.png](bundle_size.png)
 
 
-To include a new version of dmengine in the report you need to [add an entry in the releases list in check_size.py](https://github.com/britzl/dmengine_size/blob/master/check_size.py#L28). The sha1 of the version you wish to add can be seen at [d.defold.com](d.defold.com).
+To include a new version of dmengine in the report you need to [add an entry in the releases list in releases.json](https://github.com/britzl/dmengine_size/blob/master/releases.json). The sha1 of the version you wish to add can be seen at [d.defold.com](d.defold.com).
 
-The project will automatically generate a new graph and report file when a file in the project is changed. The automation is handled by [a Travis-CI job](https://travis-ci.org/britzl/dmengine_size).
+The project will automatically generate new graphs and report files when a file in the project is changed. The automation is handled by [a Travis-CI job](https://travis-ci.org/britzl/dmengine_size).
