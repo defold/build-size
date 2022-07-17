@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/britzl/dmengine_size.svg?branch=master)](https://travis-ci.com/britzl/dmengine_size)
+[![Buils Status](https://github.com/britzl/dmengine_size/actions/workflows/check_size.yaml/badge.svg)](https://github.com/britzl/dmengine_size/actions/workflows/check_size.yaml)
 
 # Defold engine and application bundle size plot
 This project will plot the size of the Defold engine (aka dmengine) as well as the size of a complete Defold game bundle for all supported platforms and versions.
