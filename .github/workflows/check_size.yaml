@@ -1,6 +1,7 @@
 name: Check engine size
 
-on: [push, pull_request]
+on:
+  push:
   schedule:
     - cron: 0 2 * * * 
 jobs:
