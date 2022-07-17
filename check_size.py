@@ -1,9 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import sys
 import subprocess
 import tempfile
 import urllib
+import urllib.request
 import datetime
 import itertools
 import json
@@ -74,12 +75,12 @@ def download_bob(sha1):
     if not os.path.exists(bob_path):
         print("Downloading bob version {} to {}".format(sha1, bob_path))
         url = "http://d.defold.com/archive/stable/" + sha1 + "/bob/bob.jar"
-        urllib.urlretrieve(url, bob_path)
+        urllib.request.urlretrieve(url, bob_path)
     return bob_path
 
 def get_size_from_url(sha1, path):
     url = "http://d.defold.com/archive/" + sha1 + "/" + path
-    d = urllib.urlopen(url)
+    d = urllib.request.urlopen(url)
     if d.getcode() == 200:
         return d.info()['Content-Length']
     return 0
@@ -176,7 +177,7 @@ def get_bundle_size_from_bob(sha1, platform, _):
 
 def get_latest_version():
     url = "http://d.defold.com/stable/info.json"
-    response = urllib.urlopen(url)
+    response = urllib.request.urlopen(url)
     if response.getcode() == 200:
         return json.loads(response.read())
     return {}
@@ -328,7 +329,7 @@ create_report("bundle_report.csv", releases['releases'], bundles, get_bundle_siz
 
 # create graphs based on the different reports
 print("Creating graphs")
-create_graph("legacy_engine_report.csv", out='legacy_engine_size.png')
-create_graph("legacy_engine_report.csv", out='legacy_engine_size_stripped.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
+# create_graph("legacy_engine_report.csv", out='legacy_engine_size.png')
+# create_graph("legacy_engine_report.csv", out='legacy_engine_size_stripped.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
 create_graph("engine_report.csv", out='engine_size.png', from_version='1.2.166')
 create_graph("bundle_report.csv", out='bundle_size.png', from_version='1.2.166')
