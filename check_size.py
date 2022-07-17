@@ -231,7 +231,20 @@ def create_report(report_filename, releases, report_platforms, fn):
     print("Creating {} - ok".format(report_filename))
 
 def parse_version(version_str):
-    return map(int, version_str.split('.'))
+    v = version_str.split('.')
+    v[0] = int(v[0])
+    v[1] = int(v[1])
+    v[2] = int(v[2])
+    return v
+
+def new_version(v1, v2):
+    if v1[0] < v2[0]:
+        return False
+    if v1[0] == v2[0] and v1[1] < v2[1]:
+        return False
+    if v1[0] == v2[0] and v1[1] == v2[1] and v1[2] < v2[2]:
+        return False
+    return True
 
 def create_graph(report_filename, out, from_version=None):
     print("Creating {}".format(out))
@@ -247,7 +260,7 @@ def create_graph(report_filename, out, from_version=None):
                     new_data.append(line)
                     continue
                 version = parse_version(line[0])
-                if version >= from_version:
+                if new_version(version, from_version):
                     new_data.append(line)
             data = new_data
 
@@ -260,13 +273,13 @@ def create_graph(report_filename, out, from_version=None):
         max_ysize = 0
         assert(len(markers) >= (len(data[0])-1)) # we need unique markers for each platform
         for engine, marker in zip(range(1, len(data[0])), markers):
-            yaxis_size = [i[engine] for i in data[1::]]
             # convert from string to int
-            yaxis_size = map(lambda x: int(x) if x > 0 else None, yaxis_size)
             # find the max y size
-            max_ysize = max(max_ysize, max(yaxis_size))
-            # replace zero values with nan to avoid plotting them
-            yaxis_size = map(lambda x: x if x != 0 else float('nan'), yaxis_size)
+            yaxis_size = []
+            for num in list([i[engine] for i in data[1::]]):
+                num = int(num)
+                max_ysize = max(max_ysize, num)
+                yaxis_size.append(num)
             ax.plot(xaxis_version, yaxis_size, label=data[0][engine], marker=marker)
 
         # make sure the plot fills out the area (easier to see nuances)
@@ -275,10 +288,10 @@ def create_graph(report_filename, out, from_version=None):
 
         mb = 1024 * 1024
         max_mb = (max_ysize+mb/2) // mb
-        locs = [i * mb for i in range(0, max_mb + 1)]
+        locs = [i * mb for i in range(0, int(max_mb + 1))]
 
         # create horizontal lines, to make it easier to track sizes
-        for y in range(0, max_mb*mb, 2*mb):
+        for y in range(0, int(max_mb*mb), 2*mb):
             ax.axhline(y, alpha=0.1)
 
         pyplot.yticks(locs, map(lambda x: "%d mb" % (x // mb), locs))
