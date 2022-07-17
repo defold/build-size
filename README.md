@@ -36,7 +36,7 @@ NOTE: In both of the deprecated graphs above the measurements show the size of t
 # Requirements
 If you wish to run this script locally you need to have the following things installed:
 
-* Python 2.7.10+
+* Python 3 (developed with 3.10.5)
 * Java 11.0.*
 * [matlibplot](http://matplotlib.org/)
 
