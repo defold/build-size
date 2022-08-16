@@ -327,7 +327,7 @@ if check_for_updates(latest_release, releases):
     releases['releases'].append(latest_release)
 
     # update the releases on disc
-    with open('releases_new.json', 'wb') as f:
+    with open('releases_new.json', 'w') as f:
         json.dump(releases, f, indent=4, separators=(',', ': '))
     # if everything went right, move the temp file
     shutil.move('releases_new.json', 'releases.json')
