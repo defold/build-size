@@ -38,12 +38,12 @@ If you wish to run this script locally you need to have the following things ins
 
 * Python 3 (developed with 3.10.5)
 * Java 11.0.*
-* [matlibplot](http://matplotlib.org/)
+* [matlibplot](http://matplotlib.org/) (Install with `python3 -m pip install matplotlib`)
 
 # Usage
 Run [check_size.py](check_size.py):
 
-    python check_size.py
+    python3 check_size.py
 
 It will generate these files:
 * [releases.json](releases.json)
