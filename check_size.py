@@ -38,10 +38,10 @@ legacy_engines = [
 ]
 
 engines = [
-    {"platform": "arm64-darwin",    "filename": "dmengine_release"},
+    {"platform": "arm64-ios",       "filename": "dmengine_release"},
     {"platform": "arm64-android",   "filename": "libdmengine_release.so"},
     {"platform": "armv7-android",   "filename": "libdmengine_release.so"},
-    {"platform": "x86_64-darwin",   "filename": "dmengine_release"},
+    {"platform": "x86_64-macos",    "filename": "dmengine_release"},
     {"platform": "js-web",          "filename": "dmengine_release.js"},
     {"platform": "wasm-web",        "filename": "dmengine_release.wasm"},
     {"platform": "x86_64-linux",    "filename": "dmengine_release"},
@@ -50,10 +50,10 @@ engines = [
 ]
 
 bundles = [
-    {"platform": "arm64-darwin",    "filename": "notused"},
+    {"platform": "arm64-ios",       "filename": "notused"},
     {"platform": "arm64-android",   "filename": "notused"},
     {"platform": "armv7-android",   "filename": "notused"},
-    {"platform": "x86_64-darwin",   "filename": "notused"},
+    {"platform": "x86_64-macos",    "filename": "notused"},
     {"platform": "js-web",          "filename": "notused"},
     {"platform": "wasm-web",        "filename": "notused"},
     {"platform": "x86_64-linux",    "filename": "notused"},
@@ -158,13 +158,13 @@ def get_bundle_size_from_bob(sha1, platform, _):
 
         if platform in ("armv7-android", "arm64-android"):
             return os.path.getsize("bundle_output/unnamed/unnamed.apk")
-        elif platform in ("arm64-darwin"):
+        elif platform in ("arm64-ios","x86_64-ios","arm64-darwin"):
             return os.path.getsize("bundle_output/unnamed.ipa")
-        elif platform in ("x86_64-darwin"):
+        elif platform in ("x86_64-macos", "x86_64-darwin"):
             return get_folder_size("bundle_output/unnamed.app")
         elif platform in ("x86_64-win32", "x86-win32"):
             return get_zipped_size("bundle_output")
-        elif platform in ("x86_64-linux"):
+        elif platform in ("x86_64-linux",):
             return get_zipped_size("bundle_output")
         elif platform in ("wasm-web", "js-web"):
             return get_zipped_size("bundle_output")
