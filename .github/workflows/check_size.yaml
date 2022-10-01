@@ -29,8 +29,18 @@ jobs:
         run: |
           python check_size.py
 
+      - name: Check github token
+        id: checktoken
+        shell: bash
+        run: |
+          if [ "$PRIVATE_GITHUB_TOKEN" == "" ]; then
+            echo ::set-output name=token_exists::false
+          else
+            echo ::set-output name=token_exists::true
+          fi
+
       - name: Commit changes
-        if: ${{ secrets.PRIVATE_GITHUB_TOKEN != "" }}
+        if: ${{ steps.checktoken.outputs.token_exists }}
         run: |
           git commit -m "Generated new size report and graph [skip ci]" bundle_size.png engine_size.png engine_report.csv bundle_report.csv releases.json
           git push "https://${PRIVATE_GITHUB_TOKEN}@github.com/britzl/dmengine_size.git" HEAD:master
