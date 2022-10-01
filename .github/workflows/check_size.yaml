@@ -25,10 +25,6 @@ jobs:
           python -m pip install -U pip
           python -m pip install -U matplotlib
 
-      - name: Check size
-        run: |
-          python check_size.py
-
       - name: Check github token
         id: checktoken
         shell: bash
@@ -41,6 +37,10 @@ jobs:
             echo ::set-output name=token_exists::true
             echo "token_exists::true"
           fi
+
+      - name: Check size
+        run: |
+          python check_size.py
 
       - name: Commit changes
         if: ${{ steps.checktoken.outputs.token_exists }}
