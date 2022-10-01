@@ -33,10 +33,13 @@ jobs:
         id: checktoken
         shell: bash
         run: |
-          if [ "$PRIVATE_GITHUB_TOKEN" == "" ]; then
+          echo "PRIVATE_GITHUB_TOKEN=${PRIVATE_GITHUB_TOKEN}"
+          if [ "${PRIVATE_GITHUB_TOKEN}" == "" ]; then
             echo ::set-output name=token_exists::false
+            echo "token_exists::false"
           else
             echo ::set-output name=token_exists::true
+            echo "token_exists::true"
           fi
 
       - name: Commit changes
