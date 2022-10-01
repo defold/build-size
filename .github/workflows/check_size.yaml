@@ -43,6 +43,12 @@ jobs:
           echo "token_exists: ${{steps.checktoken.outputs.token_exists}}"
           echo "FAV_NUMBER: ${{steps.checktoken.outputs.FAV_COLOR}}"
 
+      - name: Test output
+        if: ${{ steps.checktoken.outputs.token_exists }} == true
+        run: |
+          echo "token_exists: ${{steps.checktoken.outputs.token_exists}}"
+          echo "FAV_NUMBER: ${{steps.checktoken.outputs.FAV_COLOR}}"
+
       - name: Check size
         run: |
           python check_size.py
