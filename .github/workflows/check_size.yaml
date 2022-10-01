@@ -11,20 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Python
-        uses: actions/setup-python@v2
-      
-      - name: Setup Java
-        uses: actions/setup-java@v1
-        with:
-          java-version: '11.0.2'
-          architecture: x64
-
-      - name: Setup matplotlib
-        run: |
-          python -m pip install -U pip
-          python -m pip install -U matplotlib
-
       - name: Check github token
         id: checktoken
         shell: bash
@@ -44,17 +30,31 @@ jobs:
           echo "FAV_NUMBER: ${{steps.checktoken.outputs.FAV_NUMBER}}"
 
       - name: Test output
-        if: ${{ steps.checktoken.outputs.token_exists }} == 'true'
+        if: ${{ steps.checktoken.outputs.token_exists == 'true' }}
         run: |
           echo "token_exists: ${{steps.checktoken.outputs.token_exists}}"
           echo "FAV_NUMBER: ${{steps.checktoken.outputs.FAV_NUMBER}}"
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+      
+      - name: Setup Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: '11.0.2'
+          architecture: x64
+
+      - name: Setup matplotlib
+        run: |
+          python -m pip install -U pip
+          python -m pip install -U matplotlib
 
       - name: Check size
         run: |
           python check_size.py
 
       - name: Commit changes
-        if: ${{ steps.checktoken.outputs.token_exists }} == 'true'
+        if: ${{ steps.checktoken.outputs.token_exists == 'true' }}
         run: |
           git commit -m "Generated new size report and graph [skip ci]" bundle_size.png engine_size.png engine_report.csv bundle_report.csv releases.json
           git push "https://${PRIVATE_GITHUB_TOKEN}@github.com/britzl/dmengine_size.git" HEAD:master
