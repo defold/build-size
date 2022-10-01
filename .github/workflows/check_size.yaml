@@ -29,14 +29,19 @@ jobs:
         id: checktoken
         shell: bash
         run: |
-          echo "PRIVATE_GITHUB_TOKEN=${PRIVATE_GITHUB_TOKEN}"
+          echo '::set-output name=FAV_NUMBER::3'
           if [ "${PRIVATE_GITHUB_TOKEN}" == "" ]; then
-            echo ::set-output name=token_exists::false
+            echo "::set-output name=token_exists::false"
             echo "token_exists::false"
           else
-            echo ::set-output name=token_exists::true
+            echo "::set-output name=token_exists::true"
             echo "token_exists::true"
           fi
+
+      - name: Read output
+        run: |
+          echo "token_exists: ${{steps.checktoken.outputs.token_exists}}"
+          echo "FAV_NUMBER: ${{steps.checktoken.outputs.FAV_COLOR}}"
 
       - name: Check size
         run: |
