@@ -11,30 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Check github token
-        id: checktoken
-        shell: bash
-        run: |
-          echo '::set-output name=FAV_NUMBER::3'
-          if [ "${PRIVATE_GITHUB_TOKEN}" == "" ]; then
-            echo "::set-output name=token_exists::false"
-            echo "token_exists::false"
-          else
-            echo "::set-output name=token_exists::true"
-            echo "token_exists::true"
-          fi
-
-      - name: Read output
-        run: |
-          echo "token_exists: ${{steps.checktoken.outputs.token_exists}}"
-          echo "FAV_NUMBER: ${{steps.checktoken.outputs.FAV_NUMBER}}"
-
-      - name: Test output
-        if: ${{ steps.checktoken.outputs.token_exists == 'true' }}
-        run: |
-          echo "token_exists: ${{steps.checktoken.outputs.token_exists}}"
-          echo "FAV_NUMBER: ${{steps.checktoken.outputs.FAV_NUMBER}}"
-
       - name: Setup Python
         uses: actions/setup-python@v2
       
@@ -52,6 +28,18 @@ jobs:
       - name: Check size
         run: |
           python check_size.py
+
+      - name: Check github token
+        id: checktoken
+        shell: bash
+        run: |
+          if [ "${PRIVATE_GITHUB_TOKEN}" == "" ]; then
+            echo "::set-output name=token_exists::false"
+            echo "token_exists::false"
+          else
+            echo "::set-output name=token_exists::true"
+            echo "token_exists::true"
+          fi
 
       - name: Commit changes
         if: ${{ steps.checktoken.outputs.token_exists == 'true' }}
