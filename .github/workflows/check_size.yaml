@@ -9,13 +9,13 @@ jobs:
     runs-on: macOS-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
       
       - name: Setup Java
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v3
         with:
           java-version: '11.0.2'
           architecture: x64
@@ -34,10 +34,12 @@ jobs:
         shell: bash
         run: |
           if [ "${PRIVATE_GITHUB_TOKEN}" == "" ]; then
-            echo "::set-output name=token_exists::false"
+            # echo "::set-output name=token_exists::false"
+            echo "token_exists=false" >> $GITHUB_OUTPUT
             echo "token_exists::false"
           else
-            echo "::set-output name=token_exists::true"
+            # echo "::set-output name=token_exists::true"
+            echo "token_exists=true" >> $GITHUB_OUTPUT
             echo "token_exists::true"
           fi
 
