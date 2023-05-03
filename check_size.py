@@ -66,6 +66,12 @@ bob_files = [
     {"platform": "x86_64-macos",    "filename": "bob.jar"},
 ]
 
+editor_files = [
+    {"platform": "x86_64-macos",    "filename": "Defold-x86_64-macos.dmg"},
+    {"platform": "x86_64-win32",    "filename": "Defold-x86_64-win32.zip"},
+    {"platform": "x86_64-linux",    "filename": "Defold-x86_64-linux.zip"},
+]
+#editor2/Defold-x86_64-macos.dmg
 
 def get_host():
     if sys.platform == 'linux2':
@@ -107,6 +113,12 @@ def get_engine_size_from_aws(sha1, platform, filename):
 def get_bob_size_from_aws(sha1, platform, filename):
     print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
     path = "bob/{}".format(filename)
+    size = get_size_from_url(sha1, path)
+    return size
+
+def get_editor_size_from_aws(sha1, platform, filename):
+    print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
+    path = "editor-alpha/editor2/{}".format(filename)
     size = get_size_from_url(sha1, path)
     return size
 
@@ -248,20 +260,7 @@ def create_report(report_filename, releases, report_platforms, fn):
     print("Creating {} - ok".format(report_filename))
 
 def parse_version(version_str):
-    v = version_str.split('.')
-    v[0] = int(v[0])
-    v[1] = int(v[1])
-    v[2] = int(v[2])
-    return v
-
-def new_version(v1, v2):
-    if v1[0] < v2[0]:
-        return False
-    if v1[0] == v2[0] and v1[1] < v2[1]:
-        return False
-    if v1[0] == v2[0] and v1[1] == v2[1] and v1[2] < v2[2]:
-        return False
-    return True
+    return tuple(map(int, version_str.split('.'))) # make it into a tuple
 
 def create_graph(report_filename, out, from_version=None):
     print("Creating {}".format(out))
@@ -273,13 +272,16 @@ def create_graph(report_filename, out, from_version=None):
             from_version = parse_version(from_version)
             new_data = []
             for line in data:
-                if not line[0].startswith('1.2.'):
+                if 'VERSION' in line[0]:
                     new_data.append(line)
                     continue
                 version = parse_version(line[0])
-                if new_version(version, from_version):
+                #if new_version(version, from_version):
+                if version >= from_version:
                     new_data.append(line)
             data = new_data
+
+            print("MAWE", new_data)
 
         # get all versions, ignore column headers
         versions = [i[0] for i in data[1::]]
@@ -361,6 +363,7 @@ print("Creating reports")
 create_report("engine_report.csv", releases['releases'], engines, get_engine_size_from_bob)
 create_report("bundle_report.csv", releases['releases'], bundles, get_bundle_size_from_bob)
 create_report("bob_report.csv", releases['releases'], bob_files, get_bob_size_from_aws)
+create_report("editor_report.csv", releases['releases'], editor_files, get_editor_size_from_aws)
 
 
 # create graphs based on the different reports
@@ -370,3 +373,4 @@ print("Creating graphs")
 create_graph("engine_report.csv", out='engine_size.png', from_version='1.2.166')
 create_graph("bundle_report.csv", out='bundle_size.png', from_version='1.2.166')
 create_graph("bob_report.csv", out='bob_size.png', from_version='1.2.166')
+create_graph("editor_report.csv", out='editor_size.png', from_version='1.3.6')

@@ -21,6 +21,16 @@ This is the size of a release version of the Defold engine executable/library:
 
 ![Engine size per platform and version](https://github.com/britzl/dmengine_size/raw/master/engine_size.png)
 
+## Editor size
+This is the size of the release versions of the Defold editor (including bob.jar):
+
+![Editor size per platform and version](https://github.com/britzl/dmengine_size/raw/master/editor_size.png)
+
+## Bob size
+This is the size of a release version of the our command line build interface (bob.jar):
+
+![bob.jar size per platform and version](https://github.com/britzl/dmengine_size/raw/master/bob_size.png)
+
 
 ## Deprecated graphs
 Graph of versions stripped of debug symbols:
