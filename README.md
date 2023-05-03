@@ -59,8 +59,12 @@ It will generate these files:
 * [releases.json](releases.json)
 * [engine_report.csv](engine_report.csv)
 * [bundle_report.csv](bundle_report.csv)
+* [bob_report.csv](bob_report.csv)
+* [editor_report.csv](editor_report.csv)
 * [engine_size.png](engine_size.png)
 * [bundle_size.png](bundle_size.png)
+* [bob_size.png](bob_size.png)
+* [editor_size.png](editor_size.png)
 
 
 To include a new version of dmengine in the report you need to [add an entry in the releases list in releases.json](https://github.com/britzl/dmengine_size/blob/master/releases.json). The sha1 of the version you wish to add can be seen at [d.defold.com](d.defold.com).
