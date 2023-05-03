@@ -61,6 +61,18 @@ bundles = [
     {"platform": "x86_64-win32",    "filename": "notused"},
 ]
 
+# each platform is the same size (it's the same bundle)
+bob_files = [
+    {"platform": "x86_64-macos",    "filename": "bob.jar"},
+]
+
+editor_files = [
+    {"platform": "x86_64-macos",    "filename": "Defold-x86_64-macos.dmg"},
+    {"platform": "x86_64-win32",    "filename": "Defold-x86_64-win32.zip"},
+    {"platform": "x86_64-linux",    "filename": "Defold-x86_64-linux.zip"},
+]
+#editor2/Defold-x86_64-macos.dmg
+
 def get_host():
     if sys.platform == 'linux2':
         return 'linux'
@@ -80,9 +92,13 @@ def download_bob(sha1):
 
 def get_size_from_url(sha1, path):
     url = "http://d.defold.com/archive/" + sha1 + "/" + path
-    d = urllib.request.urlopen(url)
-    if d.getcode() == 200:
-        return d.info()['Content-Length']
+    try:
+        d = urllib.request.urlopen(url)
+        if d.getcode() == 200:
+            return d.info()['Content-Length']
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            print(e.code, "Url doesn't exist:", url)
     return 0
 
 def get_engine_size_from_aws(sha1, platform, filename):
@@ -92,6 +108,18 @@ def get_engine_size_from_aws(sha1, platform, filename):
     if size == 0:
         path = "engine/{}/{}".format(platform, filename)
         size = get_size_from_url(sha1, path)
+    return size
+
+def get_bob_size_from_aws(sha1, platform, filename):
+    print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
+    path = "bob/{}".format(filename)
+    size = get_size_from_url(sha1, path)
+    return size
+
+def get_editor_size_from_aws(sha1, platform, filename):
+    print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
+    path = "editor-alpha/editor2/{}".format(filename)
+    size = get_size_from_url(sha1, path)
     return size
 
 def extract_from_bob(bob_path, filename):
@@ -192,10 +220,11 @@ def read_releases(path):
 def create_report(report_filename, releases, report_platforms, fn):
     print("Creating {}".format(report_filename))
     report_rows = []
-    with open(report_filename, 'r') as f:
-        reader = csv.reader(f)
-        for row in reader:
-            report_rows.append(row)
+    if os.path.exists(report_filename):
+        with open(report_filename, 'r') as f:
+            reader = csv.reader(f)
+            for row in reader:
+                report_rows.append(row)
 
     with open(report_filename, 'w') as f:
         writer = csv.writer(f)
@@ -231,20 +260,7 @@ def create_report(report_filename, releases, report_platforms, fn):
     print("Creating {} - ok".format(report_filename))
 
 def parse_version(version_str):
-    v = version_str.split('.')
-    v[0] = int(v[0])
-    v[1] = int(v[1])
-    v[2] = int(v[2])
-    return v
-
-def new_version(v1, v2):
-    if v1[0] < v2[0]:
-        return False
-    if v1[0] == v2[0] and v1[1] < v2[1]:
-        return False
-    if v1[0] == v2[0] and v1[1] == v2[1] and v1[2] < v2[2]:
-        return False
-    return True
+    return tuple(map(int, version_str.split('.'))) # make it into a tuple
 
 def create_graph(report_filename, out, from_version=None):
     print("Creating {}".format(out))
@@ -256,22 +272,29 @@ def create_graph(report_filename, out, from_version=None):
             from_version = parse_version(from_version)
             new_data = []
             for line in data:
-                if not line[0].startswith('1.2.'):
+                if 'VERSION' in line[0]:
                     new_data.append(line)
                     continue
                 version = parse_version(line[0])
-                if new_version(version, from_version):
+                #if new_version(version, from_version):
+                if version >= from_version:
                     new_data.append(line)
             data = new_data
+
+            print("MAWE", new_data)
 
         # get all versions, ignore column headers
         versions = [i[0] for i in data[1::]]
         xaxis_version = range(0, len(versions))
 
+        mb = 1024 * 1024
+
         fig, ax = pyplot.subplots(figsize=(20, 10))
         pyplot.xticks(xaxis_version, versions, rotation=270)
         max_ysize = 0
+        min_ysize = 10000 * mb
         assert(len(markers) >= (len(data[0])-1)) # we need unique markers for each platform
+
         for engine, marker in zip(range(1, len(data[0])), markers):
             # convert from string to int
             # find the max y size
@@ -279,19 +302,20 @@ def create_graph(report_filename, out, from_version=None):
             for num in list([i[engine] for i in data[1::]]):
                 num = int(num)
                 max_ysize = max(max_ysize, num)
+                min_ysize = min(min_ysize, num)
                 yaxis_size.append(num)
             ax.plot(xaxis_version, yaxis_size, label=data[0][engine], marker=marker)
 
         # make sure the plot fills out the area (easier to see nuances)
-        ax.set_ylim(bottom=0.)
+        ax.set_ylim(bottom=min_ysize)
         ax.set_xlim(left=0., right=xaxis_version[-1])
 
-        mb = 1024 * 1024
-        max_mb = (max_ysize+mb/2) // mb
-        locs = [i * mb for i in range(0, int(max_mb + 1))]
+        max_mb = int( (max_ysize+mb/2) // mb )
+        min_mb = int( (min_ysize+mb/2) // mb )
+        locs = [i * mb for i in range(min_mb, max_mb+1)]
 
         # create horizontal lines, to make it easier to track sizes
-        for y in range(0, int(max_mb*mb), 2*mb):
+        for y in range(min_mb*mb, max_mb*mb, 2*mb):
             ax.axhline(y, alpha=0.1)
 
         pyplot.yticks(locs, map(lambda x: "%d mb" % (x // mb), locs))
@@ -338,6 +362,8 @@ print("Creating reports")
 # create_report("legacy_engine_report.csv", releases['releases'], engines, get_engine_size_from_aws)
 create_report("engine_report.csv", releases['releases'], engines, get_engine_size_from_bob)
 create_report("bundle_report.csv", releases['releases'], bundles, get_bundle_size_from_bob)
+create_report("bob_report.csv", releases['releases'], bob_files, get_bob_size_from_aws)
+create_report("editor_report.csv", releases['releases'], editor_files, get_editor_size_from_aws)
 
 
 # create graphs based on the different reports
@@ -346,3 +372,5 @@ print("Creating graphs")
 # create_graph("legacy_engine_report.csv", out='legacy_engine_size_stripped.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
 create_graph("engine_report.csv", out='engine_size.png', from_version='1.2.166')
 create_graph("bundle_report.csv", out='bundle_size.png', from_version='1.2.166')
+create_graph("bob_report.csv", out='bob_size.png', from_version='1.2.166')
+create_graph("editor_report.csv", out='editor_size.png', from_version='1.3.6')

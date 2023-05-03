@@ -13,23 +13,33 @@ The bundle size is measured as:
 * Linux - Size of zip archive with engine, required library files and game archive
 * HTML5 - Size of zip archive with either .wasm or .asm.js engine, required library files and game archive
 
-![Bundle size per platform and version](https://github.com/britzl/dmengine_size/raw/master/bundle_size.png)
+![Bundle size per platform and version](./bundle_size.png)
 
 
 ## Engine size
 This is the size of a release version of the Defold engine executable/library:
 
-![Engine size per platform and version](https://github.com/britzl/dmengine_size/raw/master/engine_size.png)
+![Engine size per platform and version](./engine_size.png)
+
+## Editor size
+This is the size of the release versions of the Defold editor (including bob.jar):
+
+![Editor size per platform and version](./editor_size.png)
+
+## Bob size
+This is the size of a release version of the our command line build interface (bob.jar):
+
+![bob.jar size per platform and version](./bob_size.png)
 
 
 ## Deprecated graphs
 Graph of versions stripped of debug symbols:
 
-![Size per platform and version](https://github.com/britzl/dmengine_size/raw/master/legacy_engine_size_stripped.png)
+![Size per platform and version](./legacy_engine_size_stripped.png)
 
 History of versions:
 
-![History of size per platform and version](https://github.com/britzl/dmengine_size/raw/master/legacy_engine_size.png)
+![History of size per platform and version](./legacy_engine_size.png)
 
 NOTE: In both of the deprecated graphs above the measurements show the size of the .apk file for Android and for all other platforms the size of the engine itself.
 
@@ -49,8 +59,12 @@ It will generate these files:
 * [releases.json](releases.json)
 * [engine_report.csv](engine_report.csv)
 * [bundle_report.csv](bundle_report.csv)
+* [bob_report.csv](bob_report.csv)
+* [editor_report.csv](editor_report.csv)
 * [engine_size.png](engine_size.png)
 * [bundle_size.png](bundle_size.png)
+* [bob_size.png](bob_size.png)
+* [editor_size.png](editor_size.png)
 
 
 To include a new version of dmengine in the report you need to [add an entry in the releases list in releases.json](https://github.com/britzl/dmengine_size/blob/master/releases.json). The sha1 of the version you wish to add can be seen at [d.defold.com](d.defold.com).
