@@ -3,7 +3,7 @@ name: Check engine size
 on:
   push:
   schedule:
-    - cron: 0 2 * * * 
+    - cron: 0 2 * * *
 jobs:
   check_size:
     runs-on: macOS-latest
@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      
+
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
@@ -54,5 +54,5 @@ jobs:
         env:
           PRIVATE_GITHUB_TOKEN: ${{ secrets.PRIVATE_GITHUB_TOKEN }}
         run: |
-          git commit -m "Generated new size report and graph [skip ci]" bundle_size.png engine_size.png engine_report.csv bundle_report.csv releases.json
+          git commit -m "Generated new size report and graph [skip ci]" bundle_size.png engine_size.png engine_report.csv bob_size.png bob_report.csv editor_size.png editor_report.csv bundle_report.csv releases.json
           git push "https://${PRIVATE_GITHUB_TOKEN}@github.com/britzl/dmengine_size.git" HEAD:master
