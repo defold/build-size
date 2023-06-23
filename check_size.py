@@ -15,6 +15,7 @@ import matplotlib
 matplotlib.use('Agg')
 
 from matplotlib import pyplot
+from collections import OrderedDict
 
 
 # https://matplotlib.org/stable/api/markers_api.html
@@ -42,6 +43,7 @@ engines = [
     {"platform": "arm64-android",   "filename": "libdmengine_release.so"},
     {"platform": "armv7-android",   "filename": "libdmengine_release.so"},
     {"platform": "x86_64-macos",    "filename": "dmengine_release"},
+    {"platform": "arm64-macos",     "filename": "dmengine_release"},
     {"platform": "js-web",          "filename": "dmengine_release.js"},
     {"platform": "wasm-web",        "filename": "dmengine_release.wasm"},
     {"platform": "x86_64-linux",    "filename": "dmengine_release"},
@@ -54,6 +56,7 @@ bundles = [
     {"platform": "arm64-android",   "filename": "notused"},
     {"platform": "armv7-android",   "filename": "notused"},
     {"platform": "x86_64-macos",    "filename": "notused"},
+    {"platform": "arm64-macos",     "filename": "notused"},
     {"platform": "js-web",          "filename": "notused"},
     {"platform": "wasm-web",        "filename": "notused"},
     {"platform": "x86_64-linux",    "filename": "notused"},
@@ -176,6 +179,9 @@ def get_bundle_size_from_bob(sha1, platform, _):
         elif platform in ("wasm-web", "js-web"):
             args.append("--platform=js-web")
             args.append("--architectures=" + platform)
+        elif platform in ("x86_64-macos", "arm64-macos"):
+            args.append("--platform=x86_64-macos")
+            args.append("--architectures=" + platform)
         else:
             args.append("--platform=" + platform)
         args.append("--variant=release")
@@ -188,7 +194,7 @@ def get_bundle_size_from_bob(sha1, platform, _):
             return os.path.getsize("bundle_output/unnamed/unnamed.apk")
         elif platform in ("arm64-ios","x86_64-ios","arm64-darwin"):
             return os.path.getsize("bundle_output/unnamed.ipa")
-        elif platform in ("x86_64-macos", "x86_64-darwin"):
+        elif platform in ("x86_64-macos", "x86_64-darwin", "arm64-macos"):
             return get_folder_size("bundle_output/unnamed.app")
         elif platform in ("x86_64-win32", "x86-win32"):
             return get_zipped_size("bundle_output")
@@ -216,47 +222,164 @@ def read_releases(path):
         return d
     return {}
 
+def version_to_number(version):
+    tokens = version.split('.')
+    ints = list(map(int, tokens))
+    n = ints[0] * 100000 + ints[1] * 1000 + ints[2]
+    return n
+
+
+def number_to_version(number):
+    major = number // 100000
+    number -= major * 100000
+    middle = number // 1000
+    number -= middle * 1000 #minor
+    return "%d.%d.%d" % (major, middle, number)
+
+
+def print_report(report):
+
+    """
+    {
+        'version' = ['1.3.3', '1.3.4', '1.3.5'],
+        'arm64-ios' = {
+            '1.3.4' = 123456,
+            '1.3.5' = 123789,
+        }
+        'x86_64-macos' = {
+            ...
+        }
+        ...
+    }
+    """
+    print("report:")
+    for key, data in report.items():
+        if key == 'version':
+            print("  version:")
+            for version in data:
+                print("    ", version)
+            continue
+        platform = key
+        print("  platform:", platform)
+        for version, size in data.items():
+            print("    ", version, ":", size)
+
+def read_report(path):
+    #format:
+    #VERSION,arm64-ios,arm64-android,armv7-android,x86_64-macos,js-web,wasm-web,x86_64-linux,x86-win32,x86_64-win32
+    #1.2.38,0,0,0,0,0,0,0,0,0,0,0,0,0
+    #1.2.39,0,0,0,0,0,0,0,0,0,0,0,0,0
+    lines = []
+    with open(path, 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            lines.append(row)
+
+    header = lines[0]
+    platforms = header[1:]
+    assert(header[0] == 'VERSION')
+
+    report = OrderedDict()
+    report['version'] = []
+    for line in lines[1:]:
+        version = line[0]
+        report['version'].append(version)
+
+        if len(line) != len(header):
+            print("%s:" % path, "Mismatching number of cells in line", line)
+            continue
+
+        # loop over each platform
+        for i, platform in enumerate(header):
+            if i == 0:
+                continue
+
+            if not platform in report:
+                report[platform] = OrderedDict()
+
+            size = line[i]
+            if size == '0':
+                continue
+            report[platform][version] = size
+
+    return report
+
+def sort_versions(versions):
+    version_numbers = list(map(lambda x: version_to_number(x), versions))
+    return list(map(lambda x: number_to_version(x), sorted(version_numbers)))
+
+def write_report(path, report):
+    #format:
+    #VERSION,arm64-ios,arm64-android,armv7-android,x86_64-macos,js-web,wasm-web,x86_64-linux,x86-win32,x86_64-win32
+    #1.2.38,0,0,0,0,0,0,0,0,0,0,0,0,0
+    #1.2.39,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+    versions = sort_versions(report['version'])
+
+    platforms = [x for x in report.keys() if x != 'version']
+
+    lines = []
+    lines.append(['VERSION']+platforms) # header
+
+    for version in versions:
+        row = [version]
+        for platform in platforms:
+            platform_data = report[platform]
+            size = platform_data.get(version, 0) # the size (int) or n/a (0)
+            row.append(size)
+
+        lines.append(row)
+
+    with open(path, 'w') as f:
+        writer = csv.writer(f)
+        for line in lines:
+            writer.writerow(line)
+
+    print("Wrote {}".format(path))
+
 
 def create_report(report_filename, releases, report_platforms, fn):
     print("Creating {}".format(report_filename))
-    report_rows = []
-    if os.path.exists(report_filename):
-        with open(report_filename, 'r') as f:
-            reader = csv.reader(f)
-            for row in reader:
-                report_rows.append(row)
 
-    with open(report_filename, 'w') as f:
-        writer = csv.writer(f)
-        header = []
-        header.append("VERSION")
+    report = read_report(report_filename)
+
+    # Remove old platforms
+    supported_platforms = list(map(lambda x: x['platform'], report_platforms))
+    delete_keys = []
+    for key,_ in report.items():
+        if key == 'version':
+            continue
+        if key not in supported_platforms:
+            print("Removed old platform", key)
+            delete_keys.append(key)
+    for key in delete_keys:
+        del report[key]
+
+    # Add new platforms
+    for platform in supported_platforms:
+        if not platform in report:
+            report[platform] = OrderedDict()
+
+
+    # go through the releases one by one and either use existing size data
+    # or download and get the size data
+    for release in releases:
+        version = release["version"]
+        sha1 = release["sha1"]
+
+        if version in report['version']:
+            continue # we already had the report for this version
+
+        report['version'].append(version)
+        print("Found new version {} - Getting size".format(version))
+
         for report_platform in report_platforms:
-            header.append(report_platform["platform"])
-        writer.writerow(header)
+            platform = report_platform["platform"]
+            filename = report_platform["filename"]
+            size = fn(sha1, platform, filename)
+            report[platform][version] = size
 
-        # go through the releases one by one and either use existing size data
-        # or download and get the size data
-        for release in releases:
-            version = release["version"]
-            sha1 = release["sha1"]
-
-            row = None
-            for report_row in report_rows:
-                if report_row[0] == version:
-                    row = report_row
-                    break
-
-            if row is None:
-                print("Found new version {} - Getting size".format(version))
-                row = []
-                row.append(version)
-                for report_platform in report_platforms:
-                    platform = report_platform["platform"]
-                    filename = report_platform["filename"]
-                    size = fn(sha1, platform, filename)
-                    row.append(size)
-
-            writer.writerow(row)
+    write_report(report_filename, report)
     print("Creating {} - ok".format(report_filename))
 
 def parse_version(version_str):
@@ -280,8 +403,6 @@ def create_graph(report_filename, out, from_version=None):
                 if version >= from_version:
                     new_data.append(line)
             data = new_data
-
-            print("MAWE", new_data)
 
         # get all versions, ignore column headers
         versions = [i[0] for i in data[1::]]
