@@ -368,6 +368,7 @@ def create_report(report_filename, releases, report_platforms, fn):
         sha1 = release["sha1"]
 
         if version in report['version']:
+            print(f"  Version {version} already exists")
             continue # we already had the report for this version
 
         report['version'].append(version)
@@ -376,7 +377,9 @@ def create_report(report_filename, releases, report_platforms, fn):
         for report_platform in report_platforms:
             platform = report_platform["platform"]
             filename = report_platform["filename"]
+            print(f"  Making report for {platform} {filename}...")
             size = fn(sha1, platform, filename)
+            print(f"  Resported size: {platform} {size}")
             report[platform][version] = size
 
     write_report(report_filename, report)
