@@ -377,7 +377,7 @@ def create_report(report_filename, releases, report_platforms, fn):
         for report_platform in report_platforms:
             platform = report_platform["platform"]
             filename = report_platform["filename"]
-            print(f"  Making report for {platform} {filename}...")
+            print(f"  Making report for {platform}...")
             size = fn(sha1, platform, filename)
             print(f"  Resported size: {platform} {size}")
             report[platform][version] = size

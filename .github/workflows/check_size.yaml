@@ -19,9 +19,8 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
-          java-version: '11.0.15'
-          architecture: x64
-          distribution: 'microsoft'
+          java-version: '17.0.5+8'
+          distribution: 'temurin'
 
       - name: Setup matplotlib
         run: |
