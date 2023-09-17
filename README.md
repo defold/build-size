@@ -1,4 +1,4 @@
-[![Buils Status](https://github.com/britzl/dmengine_size/actions/workflows/check_size.yaml/badge.svg)](https://github.com/britzl/dmengine_size/actions/workflows/check_size.yaml)
+[![Buils Status](https://github.com/defold/build-size/actions/workflows/check_size.yaml/badge.svg)](https://github.com/defold/build-size/actions/workflows/check_size.yaml)
 
 # Defold engine and application bundle size plot
 This project will plot the size of the Defold engine (aka dmengine) as well as the size of a complete Defold game bundle for all supported platforms and versions.
@@ -67,6 +67,6 @@ It will generate these files:
 * [editor_size.png](editor_size.png)
 
 
-To include a new version of dmengine in the report you need to [add an entry in the releases list in releases.json](https://github.com/britzl/dmengine_size/blob/master/releases.json). The sha1 of the version you wish to add can be seen at [d.defold.com](d.defold.com).
+To include a new version of dmengine in the report you need to [add an entry in the releases list in releases.json](https://github.com/defold/build-size/blob/master/releases.json). The sha1 of the version you wish to add can be seen at [d.defold.com](d.defold.com).
 
-The project will automatically generate new graphs and report files when a file in the project is changed. The automation is handled by [a Travis-CI job](https://travis-ci.org/britzl/dmengine_size).
+The project will automatically generate new graphs and report files when a file in the project is changed.
