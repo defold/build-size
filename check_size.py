@@ -71,6 +71,7 @@ bob_files = [
 
 editor_files = [
     {"platform": "x86_64-macos",    "filename": "Defold-x86_64-macos.dmg"},
+    {"platform": "arm64-macos",     "filename": "Defold-arm64-macos.dmg"},
     {"platform": "x86_64-win32",    "filename": "Defold-x86_64-win32.zip"},
     {"platform": "x86_64-linux",    "filename": "Defold-x86_64-linux.zip"},
 ]
@@ -436,10 +437,13 @@ def create_graph(report_filename, out, from_version=None):
 
         max_mb = int( (max_ysize+mb/2) // mb )
         min_mb = int( (min_ysize+mb/2) // mb )
-        locs = [i * mb for i in range(min_mb, max_mb+1)]
+        step = 1
+        if max_mb - min_mb > 200:
+            step = 10
+        locs = [i * mb for i in range(min_mb, max_mb+1, step)]
 
         # create horizontal lines, to make it easier to track sizes
-        for y in range(min_mb*mb, max_mb*mb, 2*mb):
+        for y in range(min_mb*mb, max_mb*mb, mb*step):
             ax.axhline(y, alpha=0.1)
 
         pyplot.yticks(locs, map(lambda x: "%d mb" % (x // mb), locs))
