@@ -106,8 +106,10 @@ def get_size_from_url(sha1, path):
     return 0
 
 def get_engine_size_from_aws(sha1, platform, filename):
+    if platform == "x86-win32":
+        platform = "win32"
     print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
-    path = "engine/{}/stripped/{}".format(platform, filename)
+    path = "engine/{}/{}".format(platform, filename)
     size = get_size_from_url(sha1, path)
     if size == 0:
         path = "engine/{}/{}".format(platform, filename)
@@ -141,6 +143,16 @@ def get_engine_size_from_bob(sha1, platform, filename):
     except Exception as e:
         print(e)
         return 0
+
+def get_engine_size(sha1, platform, filename):
+    # Try to get the engine size from Bob
+    size = get_engine_size_from_bob(sha1, platform, filename)
+    if size > 0:
+        return size
+
+    # Fall back to getting the engine size from AWS
+    size = get_engine_size_from_aws(sha1, platform, filename)
+    return size
 
 def get_zipped_size(path):
     tmp = tempfile.NamedTemporaryFile("wb")
@@ -488,7 +500,7 @@ if check_for_updates(latest_release, releases):
 # update reports (if releases are missing from a report file)
 print("Creating reports")
 # create_report("legacy_engine_report.csv", releases['releases'], engines, get_engine_size_from_aws)
-create_report("engine_report.csv", releases['releases'], engines, get_engine_size_from_bob)
+create_report("engine_report.csv", releases['releases'], engines, get_engine_size)
 create_report("bundle_report.csv", releases['releases'], bundles, get_bundle_size_from_bob)
 create_report("bob_report.csv", releases['releases'], bob_files, get_bob_size_from_aws)
 create_report("editor_report.csv", releases['releases'], editor_files, get_editor_size_from_aws)
