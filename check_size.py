@@ -108,8 +108,11 @@ def get_size_from_url(sha1, path):
 def get_engine_size_from_aws(sha1, platform, filename):
     if platform == "x86-win32":
         platform = "win32"
+    path = "engine/{}/{}"
+    if "android" in platform:
+        path = "engine/{}/stripped/{}"
     print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
-    path = "engine/{}/{}".format(platform, filename)
+    path = path.format(platform, filename)
     size = get_size_from_url(sha1, path)
     if size == 0:
         path = "engine/{}/{}".format(platform, filename)
