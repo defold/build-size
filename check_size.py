@@ -201,6 +201,7 @@ def get_bundle_size_from_bob(sha1, platform, _):
         else:
             args.append("--platform=" + platform)
         args.append("--variant=release")
+        args.append("--strip-executable")
         args.append("--bundle-output=../bundle_output")
         args.extend(["clean", "build", "bundle"])
 
