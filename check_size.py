@@ -194,6 +194,7 @@ def get_bundle_size_from_bob(sha1, platform, _):
         if platform in ("armv7-android", "arm64-android"):
             args.append("--platform=armv7-android")
             args.append("--architectures=" + platform)
+            args.append("--bundle-format="+"aab")
         elif platform in ("wasm-web", "js-web"):
             args.append("--platform=js-web")
             args.append("--architectures=" + platform)
@@ -210,7 +211,7 @@ def get_bundle_size_from_bob(sha1, platform, _):
         subprocess.call(args,cwd="empty_project")
 
         if platform in ("armv7-android", "arm64-android"):
-            return os.path.getsize("bundle_output/unnamed/unnamed.apk")
+            return os.path.getsize("bundle_output/unnamed/unnamed.aab")
         elif platform in ("arm64-ios","x86_64-ios","arm64-darwin"):
             return os.path.getsize("bundle_output/unnamed.ipa")
         elif platform in ("x86_64-macos", "x86_64-darwin", "arm64-macos"):
