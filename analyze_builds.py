@@ -44,27 +44,33 @@ def download_bob_jar(sha1, output_path):
     """Download bob.jar from Defold archive"""
     return download_file(sha1, "bob", "bob.jar", output_path)
 
-def run_bloaty_analysis(binary_path, output_csv_path, debug_file_path=None):
-    """Run bloaty analysis on the binary"""
+def run_bloaty_analysis(binary_path, output_csv_path, platform, debug_file_path=None):
+    """Run bloaty analysis on the binary with platform-specific modes"""
     print(f"Running bloaty analysis on {binary_path}")
     
     # Create output directory if it doesn't exist
     os.makedirs(os.path.dirname(output_csv_path), exist_ok=True)
     
     try:
+        # All platforms use compileunits mode for consistency
+        analysis_mode = "compileunits"
+        
         # Run bloaty with the specified parameters
         cmd = [
             "bloaty", 
-            "-d", "compileunits", 
+            "-d", analysis_mode, 
             "--demangle=full", 
             "-n", "0"
         ]
         
-        # Add debug file option if provided (for iOS)
+        # Add debug file for Apple platforms (dSYM)
         if debug_file_path:
             cmd.extend(["--debug-file", debug_file_path])
+            print(f"Using debug file: {debug_file_path}")
         
         cmd.extend([binary_path, "--csv"])
+        
+        print(f"Using analysis mode: {analysis_mode}")
         
         with open(output_csv_path, 'w') as f:
             result = subprocess.run(cmd, stdout=f, stderr=subprocess.PIPE, text=True)
@@ -216,90 +222,131 @@ def main():
                 jar_filename = f"bob_{version}.jar"
                 jar_path = platform_dir / jar_filename
                 
-                if not download_bob_jar(sha1, str(jar_path)):
-                    print(f"Failed to download bob.jar for {version}, skipping...")
-                    continue
+                # Keep track of files to clean up
+                cleanup_paths = []
                 
-                # Analyze bob.jar
-                if not analyze_bob_jar(str(jar_path), str(csv_path)):
-                    print(f"Failed to analyze bob.jar for {version}, skipping...")
-                    # Clean up failed download
-                    if jar_path.exists():
-                        jar_path.unlink()
-                    continue
-                
-                # Clean up the jar file after successful analysis
-                if jar_path.exists():
-                    try:
-                        jar_path.unlink()
-                        print(f"Cleaned up jar: {jar_path}")
-                    except Exception as e:
-                        print(f"Warning: Failed to clean up {jar_path}: {e}")
+                try:
+                    # Download bob.jar
+                    if not download_bob_jar(sha1, str(jar_path)):
+                        print(f"Failed to download bob.jar for {version}, skipping...")
+                        continue
+                    cleanup_paths.append(jar_path)
+                    
+                    # Analyze bob.jar
+                    if not analyze_bob_jar(str(jar_path), str(csv_path)):
+                        print(f"Failed to analyze bob.jar for {version}, skipping...")
+                        continue
+                    
+                    print(f"Successfully analyzed {version} for {platform}")
+                    
+                finally:
+                    # Always clean up downloaded files
+                    for path in cleanup_paths:
+                        if path.exists():
+                            try:
+                                path.unlink()
+                                print(f"Cleaned up file: {path}")
+                            except Exception as e:
+                                print(f"Warning: Failed to clean up {path}: {e}")
             
             else:
                 # Handle native binary analysis
                 if platform in ["arm64-ios", "x86_64-macos", "arm64-macos"]:
-                    # Apple platforms (iOS/macOS) require both main binary and stripped debug file
+                    # Apple platforms - need binary and dSYM file
                     binary_filename = f"dmengine_release_{version}"
-                    debug_filename = f"dmengine_release_{version}_stripped"
+                    dsym_filename = f"dmengine_release_{version}.dSYM.zip"
                     binary_path = platform_dir / binary_filename
-                    debug_path = platform_dir / debug_filename
+                    dsym_zip_path = platform_dir / dsym_filename
+                    dsym_extract_dir = platform_dir / f"dsym_{version}"
                     
-                    # Download main binary
-                    if not download_engine(sha1, platform, filename, str(binary_path)):
-                        print(f"Failed to download main binary for {version}, skipping...")
-                        continue
+                    # Keep track of all files/directories to clean up
+                    cleanup_paths = []
                     
-                    # Download stripped debug file
-                    if not download_file(sha1, f"engine/{platform}/stripped", filename, str(debug_path)):
-                        print(f"Failed to download debug file for {version}, skipping...")
-                        # Clean up main binary
-                        if binary_path.exists():
-                            binary_path.unlink()
-                        continue
-                    
-                    # Run bloaty analysis with debug file
-                    if not run_bloaty_analysis(str(binary_path), str(csv_path), str(debug_path)):
-                        print(f"Failed to analyze {version}, skipping...")
-                        # Clean up downloaded files
-                        if binary_path.exists():
-                            binary_path.unlink()
-                        if debug_path.exists():
-                            debug_path.unlink()
-                        continue
-                    
-                    # Clean up the binary files after successful analysis
-                    for path in [binary_path, debug_path]:
-                        if path.exists():
-                            try:
-                                path.unlink()
-                                print(f"Cleaned up: {path}")
-                            except Exception as e:
-                                print(f"Warning: Failed to clean up {path}: {e}")
+                    try:
+                        # Download main binary
+                        if not download_engine(sha1, platform, filename, str(binary_path)):
+                            print(f"Failed to download binary for {version}, skipping...")
+                            continue
+                        cleanup_paths.append(binary_path)
+                        
+                        # Download dSYM file
+                        if not download_file(sha1, f"engine/{platform}", f"{filename}.dSYM.zip", str(dsym_zip_path)):
+                            print(f"Failed to download dSYM for {version}, skipping...")
+                            continue
+                        cleanup_paths.append(dsym_zip_path)
+                        
+                        # Extract dSYM file
+                        try:
+                            import zipfile
+                            with zipfile.ZipFile(str(dsym_zip_path), 'r') as zf:
+                                zf.extractall(str(dsym_extract_dir))
+                            cleanup_paths.append(dsym_extract_dir)
+                            
+                            # Find the DWARF file inside the dSYM bundle
+                            dwarf_file = dsym_extract_dir / "src" / f"{filename}.dSYM" / "Contents" / "Resources" / "DWARF" / filename
+                            
+                            if not dwarf_file.exists():
+                                print(f"DWARF file not found in dSYM for {version}, skipping...")
+                                continue
+                            
+                            # Run bloaty analysis with dSYM debug file
+                            if not run_bloaty_analysis(str(binary_path), str(csv_path), platform, str(dwarf_file)):
+                                print(f"Failed to analyze {version}, skipping...")
+                                continue
+                            
+                            print(f"Successfully analyzed {version} for {platform}")
+                            
+                        except zipfile.BadZipFile:
+                            print(f"Invalid ZIP file for dSYM {version}, skipping...")
+                            continue
+                        except Exception as e:
+                            print(f"Failed to extract dSYM for {version}: {e}")
+                            continue
+                            
+                    finally:
+                        # Always clean up all downloaded/extracted files
+                        for path in cleanup_paths:
+                            if path.exists():
+                                try:
+                                    if path.is_dir():
+                                        shutil.rmtree(path)
+                                        print(f"Cleaned up directory: {path}")
+                                    else:
+                                        path.unlink()
+                                        print(f"Cleaned up file: {path}")
+                                except Exception as e:
+                                    print(f"Warning: Failed to clean up {path}: {e}")
                 else:
                     # Handle other platforms (Android, etc.)
                     binary_filename = f"dmengine_release_{version}.so"
                     binary_path = platform_dir / binary_filename
                     
-                    if not download_engine(sha1, platform, filename, str(binary_path)):
-                        print(f"Failed to download {version}, skipping...")
-                        continue
+                    # Keep track of files to clean up
+                    cleanup_paths = []
                     
-                    # Run bloaty analysis
-                    if not run_bloaty_analysis(str(binary_path), str(csv_path)):
-                        print(f"Failed to analyze {version}, skipping...")
-                        # Clean up failed download
-                        if binary_path.exists():
-                            binary_path.unlink()
-                        continue
-                    
-                    # Clean up the binary file after successful analysis
-                    if binary_path.exists():
-                        try:
-                            binary_path.unlink()
-                            print(f"Cleaned up binary: {binary_path}")
-                        except Exception as e:
-                            print(f"Warning: Failed to clean up {binary_path}: {e}")
+                    try:
+                        # Download binary
+                        if not download_engine(sha1, platform, filename, str(binary_path)):
+                            print(f"Failed to download {version}, skipping...")
+                            continue
+                        cleanup_paths.append(binary_path)
+                        
+                        # Run bloaty analysis with compileunits mode (no debug file needed)
+                        if not run_bloaty_analysis(str(binary_path), str(csv_path), platform):
+                            print(f"Failed to analyze {version}, skipping...")
+                            continue
+                        
+                        print(f"Successfully analyzed {version} for {platform}")
+                        
+                    finally:
+                        # Always clean up downloaded files
+                        for path in cleanup_paths:
+                            if path.exists():
+                                try:
+                                    path.unlink()
+                                    print(f"Cleaned up file: {path}")
+                                except Exception as e:
+                                    print(f"Warning: Failed to clean up {path}: {e}")
             
             # Add to processed versions list
             processed_versions.append(version)
