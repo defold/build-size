@@ -64,4 +64,4 @@ jobs:
         run: |
           git add -A
           git commit -m "Generated new size report and graph [skip ci]" bundle_size.png engine_size.png engine_report.csv bob_size.png bob_report.csv editor_size.png editor_report.csv bundle_report.csv releases.json size-analyzer/
-          git push "https://${SERVICES_GITHUB_TOKEN}@github.com/defold/build-size.git" HEAD:master
+          git push "https://${SERVICES_GITHUB_TOKEN}@github.com/defold/build-size.git" HEAD
