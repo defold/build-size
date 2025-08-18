@@ -44,7 +44,7 @@ def download_bob_jar(sha1, output_path):
     """Download bob.jar from Defold archive"""
     return download_file(sha1, "bob", "bob.jar", output_path)
 
-def run_bloaty_analysis(binary_path, output_csv_path):
+def run_bloaty_analysis(binary_path, output_csv_path, debug_file_path=None):
     """Run bloaty analysis on the binary"""
     print(f"Running bloaty analysis on {binary_path}")
     
@@ -57,10 +57,14 @@ def run_bloaty_analysis(binary_path, output_csv_path):
             "bloaty", 
             "-d", "compileunits", 
             "--demangle=full", 
-            "-n", "0", 
-            binary_path, 
-            "--csv"
+            "-n", "0"
         ]
+        
+        # Add debug file option if provided (for iOS)
+        if debug_file_path:
+            cmd.extend(["--debug-file", debug_file_path])
+        
+        cmd.extend([binary_path, "--csv"])
         
         with open(output_csv_path, 'w') as f:
             result = subprocess.run(cmd, stdout=f, stderr=subprocess.PIPE, text=True)
@@ -149,6 +153,9 @@ def main():
     # Configuration
     platforms_config = {
         "arm64-android": "libdmengine_release.so",
+        "arm64-ios": "dmengine_release",
+        "x86_64-macos": "dmengine_release",
+        "arm64-macos": "dmengine_release",
         "bob.jar": None  # Special platform for bob.jar analysis
     }
     min_version = "1.9.0"
@@ -230,28 +237,68 @@ def main():
             
             else:
                 # Handle native binary analysis
-                binary_filename = f"dmengine_release_{version}.so"
-                binary_path = platform_dir / binary_filename
-                
-                if not download_engine(sha1, platform, filename, str(binary_path)):
-                    print(f"Failed to download {version}, skipping...")
-                    continue
-                
-                # Run bloaty analysis
-                if not run_bloaty_analysis(str(binary_path), str(csv_path)):
-                    print(f"Failed to analyze {version}, skipping...")
-                    # Clean up failed download
+                if platform in ["arm64-ios", "x86_64-macos", "arm64-macos"]:
+                    # Apple platforms (iOS/macOS) require both main binary and stripped debug file
+                    binary_filename = f"dmengine_release_{version}"
+                    debug_filename = f"dmengine_release_{version}_stripped"
+                    binary_path = platform_dir / binary_filename
+                    debug_path = platform_dir / debug_filename
+                    
+                    # Download main binary
+                    if not download_engine(sha1, platform, filename, str(binary_path)):
+                        print(f"Failed to download main binary for {version}, skipping...")
+                        continue
+                    
+                    # Download stripped debug file
+                    if not download_file(sha1, f"engine/{platform}/stripped", filename, str(debug_path)):
+                        print(f"Failed to download debug file for {version}, skipping...")
+                        # Clean up main binary
+                        if binary_path.exists():
+                            binary_path.unlink()
+                        continue
+                    
+                    # Run bloaty analysis with debug file
+                    if not run_bloaty_analysis(str(binary_path), str(csv_path), str(debug_path)):
+                        print(f"Failed to analyze {version}, skipping...")
+                        # Clean up downloaded files
+                        if binary_path.exists():
+                            binary_path.unlink()
+                        if debug_path.exists():
+                            debug_path.unlink()
+                        continue
+                    
+                    # Clean up the binary files after successful analysis
+                    for path in [binary_path, debug_path]:
+                        if path.exists():
+                            try:
+                                path.unlink()
+                                print(f"Cleaned up: {path}")
+                            except Exception as e:
+                                print(f"Warning: Failed to clean up {path}: {e}")
+                else:
+                    # Handle other platforms (Android, etc.)
+                    binary_filename = f"dmengine_release_{version}.so"
+                    binary_path = platform_dir / binary_filename
+                    
+                    if not download_engine(sha1, platform, filename, str(binary_path)):
+                        print(f"Failed to download {version}, skipping...")
+                        continue
+                    
+                    # Run bloaty analysis
+                    if not run_bloaty_analysis(str(binary_path), str(csv_path)):
+                        print(f"Failed to analyze {version}, skipping...")
+                        # Clean up failed download
+                        if binary_path.exists():
+                            binary_path.unlink()
+                        continue
+                    
+                    # Clean up the binary file after successful analysis
                     if binary_path.exists():
-                        binary_path.unlink()
-                    continue
-                
-                # Clean up the binary file after successful analysis
-                if binary_path.exists():
-                    try:
-                        binary_path.unlink()
-                        print(f"Cleaned up binary: {binary_path}")
-                    except Exception as e:
-                        print(f"Warning: Failed to clean up {binary_path}: {e}")
+                        try:
+                            binary_path.unlink()
+                            print(f"Cleaned up binary: {binary_path}")
+                        except Exception as e:
+                            print(f"Warning: Failed to clean up {binary_path}: {e}")
             
             # Add to processed versions list
             processed_versions.append(version)
