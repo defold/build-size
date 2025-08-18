@@ -1,0 +1,228 @@
+/* Dashboard-specific styles */
+
+/* Chart sections */
+.chart-section {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e8ed;
+}
+
+.chart-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 1rem;
+}
+
+.chart-header h2 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.chart-header p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Version controls */
+.version-control {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.version-control label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.version-control select {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    font-size: 0.9rem;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.version-control select:hover {
+    border-color: #3498db;
+}
+
+.version-control select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+
+/* Chart containers */
+.chart-container {
+    min-height: 800px;
+    background: #fafbfc;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.chart-container > div {
+    width: 100% !important;
+    height: 800px !important;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #e1e8ed;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+footer a:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Loading states */
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.loading::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 0.75rem;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Error states */
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    color: #e74c3c;
+    font-size: 1.1rem;
+    background: #fdf2f2;
+    border-radius: 6px;
+    border: 1px solid #fadbd8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .chart-section {
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    
+    .chart-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .version-control {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .version-control select {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    
+    .chart-container {
+        min-height: 600px;
+        padding: 0.5rem;
+    }
+    
+    .chart-container > div {
+        height: 600px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-container {
+        min-height: 500px;
+    }
+    
+    .chart-container > div {
+        height: 500px !important;
+    }
+}
+
+/* Platform-specific colors for consistency */
+.platform-arm64-ios { color: #e74c3c; }
+.platform-arm64-android { color: #3498db; }
+.platform-armv7-android { color: #9b59b6; }
+.platform-x86_64-macos { color: #2ecc71; }
+.platform-js-web { color: #f39c12; }
+.platform-wasm-web { color: #e67e22; }
+.platform-x86_64-linux { color: #34495e; }
+.platform-x86-win32 { color: #16a085; }
+.platform-x86_64-win32 { color: #27ae60; }
+.platform-arm64-macos { color: #8e44ad; }
+
+/* Ensure Plotly tooltips remain readable with classic styling */
+.plotly .hovertext {
+    background: #FFFFDD !important;
+    color: black !important;
+    border: 1px solid #333 !important;
+}
+
+.plotly .hovertext text {
+    fill: black !important;
+}
+
+/* Override any colorful tooltip backgrounds */
+g.hovertext {
+    background: #FFFFDD !important;
+}
+
+g.hovertext rect {
+    fill: #FFFFDD !important;
+    stroke: #333 !important;
+}
+
+g.hovertext text {
+    fill: black !important;
+}
