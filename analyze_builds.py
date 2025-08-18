@@ -153,6 +153,7 @@ def main():
     # Configuration
     platforms_config = {
         "arm64-android": "libdmengine_release.so",
+        "armv7-android": "libdmengine_release.so",
         "arm64-ios": "dmengine_release",
         "x86_64-macos": "dmengine_release",
         "arm64-macos": "dmengine_release",
