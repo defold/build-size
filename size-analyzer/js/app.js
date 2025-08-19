@@ -109,17 +109,22 @@ class DefoldSizeAnalyzer {
          */
         const platformData = this.analysisIndex.platforms[platform];
         if (!platformData || !platformData.versions) {
+            console.log(`No platform data found for ${platform}`);
             return [];
         }
         
         const versions = platformData.versions;
+        console.log(`Platform ${platform} has versions:`, versions);
         
         // Check if it's the new format (array of objects with version/sha1)
         if (versions.length > 0 && typeof versions[0] === 'object' && versions[0].version) {
-            return versions.map(v => v.version);
+            const extractedVersions = versions.map(v => v.version);
+            console.log(`Extracted version strings:`, extractedVersions);
+            return extractedVersions;
         }
         
         // Old format (array of strings)
+        console.log(`Using old format versions:`, versions);
         return versions;
     }
     
@@ -959,6 +964,7 @@ class DefoldSizeAnalyzer {
         if (!this.urlParams || !this.analysisIndex) return;
         
         const { platform, fromVersion, toVersion } = this.urlParams;
+        console.log(`Applying URL parameters: platform=${platform}, from=${fromVersion}, to=${toVersion}`);
         
         // Check if the platform exists in the analysis index
         if (this.analysisIndex.platforms[platform]) {
@@ -968,14 +974,22 @@ class DefoldSizeAnalyzer {
             
             // Wait a bit for platform change to populate versions, then set versions
             setTimeout(() => {
-                if (this.elements.version1Select.querySelector(`option[value="${fromVersion}"]`)) {
+                console.log(`Setting version1 to ${fromVersion}`);
+                const version1Option = this.elements.version1Select.querySelector(`option[value="${fromVersion}"]`);
+                console.log(`Found version1 option:`, version1Option);
+                if (version1Option) {
                     this.elements.version1Select.value = fromVersion;
+                    console.log(`version1Select.value set to:`, this.elements.version1Select.value);
                     this.onVersion1Change();
                 }
                 
                 setTimeout(() => {
-                    if (this.elements.version2Select.querySelector(`option[value="${toVersion}"]`)) {
+                    console.log(`Setting version2 to ${toVersion}`);
+                    const version2Option = this.elements.version2Select.querySelector(`option[value="${toVersion}"]`);
+                    console.log(`Found version2 option:`, version2Option);
+                    if (version2Option) {
                         this.elements.version2Select.value = toVersion;
+                        console.log(`version2Select.value set to:`, this.elements.version2Select.value);
                         this.onVersionChange();
                     }
                 }, 100);

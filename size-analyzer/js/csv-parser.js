@@ -25,7 +25,7 @@ class CSVParser {
     
     static getMetricsFromHeaders(headers) {
         // Get metrics from CSV headers, excluding the filename column
-        const filenameColumns = ['compileunits', 'filename'];
+        const filenameColumns = ['compileunits', 'filename', 'symbol_group_name'];
         return headers
             .map(h => h.trim())
             .filter(header => !filenameColumns.includes(header.toLowerCase()));
@@ -33,7 +33,7 @@ class CSVParser {
     
     static getFilenameColumn(headers) {
         // Find the filename column
-        const filenameColumns = ['compileunits', 'filename'];
+        const filenameColumns = ['compileunits', 'filename', 'symbol_group_name'];
         return headers
             .map(h => h.trim())
             .find(header => filenameColumns.includes(header.toLowerCase())) || headers[0];
