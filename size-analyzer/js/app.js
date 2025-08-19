@@ -101,6 +101,28 @@ class DefoldSizeAnalyzer {
         });
     }
     
+    getVersionsForPlatform(platform) {
+        /**
+         * Helper method to handle both old and new analysis_index.json formats:
+         * - Old format: {"platforms": {"platform": {"versions": ["1.9.0", "1.9.1", ...]}}}
+         * - New format: {"platforms": {"platform": {"versions": [{"version": "1.9.0", "sha1": "..."}, ...]}}}
+         */
+        const platformData = this.analysisIndex.platforms[platform];
+        if (!platformData || !platformData.versions) {
+            return [];
+        }
+        
+        const versions = platformData.versions;
+        
+        // Check if it's the new format (array of objects with version/sha1)
+        if (versions.length > 0 && typeof versions[0] === 'object' && versions[0].version) {
+            return versions.map(v => v.version);
+        }
+        
+        // Old format (array of strings)
+        return versions;
+    }
+    
     onPlatformChange() {
         const selectedPlatform = this.elements.platformSelect.value;
         
@@ -114,7 +136,7 @@ class DefoldSizeAnalyzer {
             this.elements.version2Select.disabled = false;
             
             // Try to preserve version selections if they exist in new platform
-            const newVersions = this.analysisIndex.platforms[selectedPlatform].versions;
+            const newVersions = this.getVersionsForPlatform(selectedPlatform);
             
             if (currentVersion1 && newVersions.includes(currentVersion1)) {
                 this.elements.version1Select.value = currentVersion1;
@@ -156,7 +178,7 @@ class DefoldSizeAnalyzer {
     }
     
     populateVersionSelects(platform) {
-        const versions = this.analysisIndex.platforms[platform].versions;
+        const versions = this.getVersionsForPlatform(platform);
         this.allVersions = versions; // Store for reference
         
         // Clear existing options
@@ -270,7 +292,7 @@ class DefoldSizeAnalyzer {
             }
             
             // Populate versions and set defaults
-            const versions = this.analysisIndex.platforms[firstPlatform].versions;
+            const versions = this.getVersionsForPlatform(firstPlatform);
             this.populateVersionSelects(firstPlatform);
             this.elements.version1Select.disabled = false;
             this.elements.version2Select.disabled = false;
