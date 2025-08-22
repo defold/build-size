@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defold Size Analyzer</title>
+    <link rel="stylesheet" href="css/style.css?v=12">
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Defold Size Analyzer</h1>
+            <p>Analyze Defold component sizes across versions using interactive bar histograms</p>
+        </header>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="platform-select">Platform:</label>
+                <select id="platform-select">
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="version1-select">From version:</label>
+                <select id="version1-select" disabled>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="version2-select">To version:</label>
+                <select id="version2-select" disabled>
+                </select>
+            </div>
+
+            <!-- Size metric tabs moved below controls -->
+
+            <div class="control-group">
+                <label for="threshold-slider">Change threshold: <span id="threshold-value">50</span> bytes</label>
+                <input type="range" id="threshold-slider" min="1" max="1000" value="50" class="slider">
+            </div>
+
+            <div class="control-group" id="debug-filter-group" style="display: none;">
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="hide-debug-sections" checked>
+                        <span>Hide debug sections</span>
+                        <button type="button" class="info-button" id="debug-info-btn" title="Show debug sections info">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                            </svg>
+                        </button>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Hide unchanged files checkbox is not needed for this chart type -->
+
+            <!-- Max files slider removed - showing all changed files -->
+        </div>
+
+        <div class="status" id="status">
+            <p>Select platform and versions to begin comparison</p>
+        </div>
+
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="filesize">File Size</button>
+                <button class="tab-button" data-tab="vmsize">VM Size</button>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h3>Legend</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="legend-color decreased"></div>
+                    <span>Size decreased (Left Side)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color increased"></div>
+                    <span>Size increased (Right Side)</span>
+                </div>
+            </div>
+            <p id="legend-description" style="margin-top: 10px; color: #666; font-size: 14px; font-style: italic;">
+                Shows cumulative change from the selected baseline version to the compare version.<br>
+                Use tabs above to switch between File Size and VM Size metrics.<br>
+                <strong>Click any file bar</strong> to see its detailed evolution timeline across all intermediate versions.
+            </p>
+        </div>
+
+        <div class="visualization">
+            <div class="chart-container">
+                <div class="chart-header">
+                    <div class="version-label" id="version1-label">Version 1</div>
+                    <div class="chart-controls">
+                        <span class="chart-info" id="chart-info">Cumulative Size Changes - Click bars for timeline, hover for details</span>
+                    </div>
+                    <div class="version-label" id="version2-label">Version 2</div>
+                </div>
+                <div id="metric-chart"></div>
+            </div>
+        </div>
+
+        <div class="details" id="details">
+            <h3>Comparison Details</h3>
+            <div class="summary" id="summary"></div>
+            
+            <div class="file-list-section">
+                <h4>File Changes</h4>
+                <div class="table-filters">
+                    <input type="text" id="file-filter" placeholder="Filter by file name...">
+                    <select id="change-type-filter">
+                        <option value="">All changes</option>
+                        <option value="increased">Increased only</option>
+                        <option value="decreased">Decreased only</option>
+                        <option value="unchanged">Unchanged only</option>
+                    </select>
+                    <input type="number" id="min-change-filter" placeholder="Min change (bytes)">
+                    <input type="number" id="max-change-filter" placeholder="Max change (bytes)">
+                </div>
+                <div class="file-list" id="file-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="js/csv-parser.js?v=13"></script>
+    <script src="js/plotly-histogram.js?v=13"></script>
+    <script src="js/app.js?v=13"></script>
+</body>
+</html>

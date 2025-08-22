@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defold Component Size Dashboard</title>
+    <link rel="stylesheet" href="size-analyzer/css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Defold Component Size Dashboard</h1>
+            <p>Track the size evolution of Defold components across versions and platforms</p>
+        </header>
+
+        <!-- Bundle Size Chart -->
+        <section class="chart-section">
+            <div class="chart-header">
+                <h2>Bundle Size</h2>
+                <p>Compiled game bundle sizes across platforms</p>
+                <div class="version-control">
+                    <label for="bundle-version-select">Starting with version:</label>
+                    <select id="bundle-version-select">
+                        <option value="">Loading versions...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div id="bundle-chart"></div>
+            </div>
+        </section>
+
+        <!-- Engine Size Chart -->
+        <section class="chart-section">
+            <div class="chart-header">
+                <h2>Engine Size</h2>
+                <p>Engine binary sizes across platforms</p>
+                <div class="version-control">
+                    <label for="engine-version-select">Starting with version:</label>
+                    <select id="engine-version-select">
+                        <option value="">Loading versions...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div id="engine-chart"></div>
+            </div>
+        </section>
+
+        <!-- Editor Size Chart -->
+        <section class="chart-section">
+            <div class="chart-header">
+                <h2>Editor Size</h2>
+                <p>Editor application sizes across desktop platforms</p>
+                <div class="version-control">
+                    <label for="editor-version-select">Starting with version:</label>
+                    <select id="editor-version-select">
+                        <option value="">Loading versions...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div id="editor-chart"></div>
+            </div>
+        </section>
+
+        <!-- Bob Size Chart -->
+        <section class="chart-section">
+            <div class="chart-header">
+                <h2>Bob.jar Size</h2>
+                <p>Build tool (bob.jar) size evolution</p>
+                <div class="version-control">
+                    <label for="bob-version-select">Starting with version:</label>
+                    <select id="bob-version-select">
+                        <option value="">Loading versions...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div id="bob-chart"></div>
+            </div>
+        </section>
+
+        <footer>
+            <p><a href="size-analyzer/">→ Advanced Size Analysis Tool</a></p>
+        </footer>
+    </div>
+
+    <script src="js/dashboard.js?v=22"></script>
+</body>
+</html>

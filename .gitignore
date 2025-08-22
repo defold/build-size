@@ -1,2 +1,6 @@
 bob*.jar
 bundle_output
+
+# Allow our bob.jar analysis folder and its CSV files
+!size-analyzer/bob.jar/
+!size-analyzer/bob.jar/*.csv

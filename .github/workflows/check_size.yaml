@@ -22,14 +22,23 @@ jobs:
           java-version: '21.0.5+11.0.LTS'
           distribution: 'temurin'
 
-      - name: Setup matplotlib
+      - name: Install Python dependencies
         run: |
           python -m pip install -U pip
           python -m pip install -U matplotlib
 
+      - name: Install bloaty (for analyze_builds.py)
+        run: |
+          # Install bloaty using Homebrew (macOS)
+          brew install bloaty
+
       - name: Check size
         run: |
           python check_size.py
+
+      - name: Run detailed analysis
+        run: |
+          python analyze_builds.py
 
       - name: Check github token
         id: checktoken
@@ -53,5 +62,6 @@ jobs:
         env:
           SERVICES_GITHUB_TOKEN: ${{ secrets.SERVICES_GITHUB_TOKEN }}
         run: |
-          git commit -m "Generated new size report and graph [skip ci]" bundle_size.png engine_size.png engine_report.csv bob_size.png bob_report.csv editor_size.png editor_report.csv bundle_report.csv releases.json
-          git push "https://${SERVICES_GITHUB_TOKEN}@github.com/defold/build-size.git" HEAD:master
+          git add -A
+          git commit -m "Generated new size report and graph [skip ci]" bundle_size.png engine_size.png engine_report.csv bob_size.png bob_report.csv editor_size.png editor_report.csv bundle_report.csv releases.json size-analyzer/
+          git push "https://${SERVICES_GITHUB_TOKEN}@github.com/defold/build-size.git" HEAD
