@@ -38,7 +38,23 @@ class PlotlyHistogramChart {
     
     handleResize() {
         this.updateDimensions();
-        if (this.currentData) {
+        
+        // Handle responsive layout updates
+        if (this.currentData && document.getElementById(this.containerId).data) {
+            const isMobile = window.innerWidth <= 768;
+            const updatedLayout = {
+                width: this.width,
+                margin: {
+                    l: 240,
+                    r: 50,
+                    t: 30,
+                    b: 50
+                }
+            };
+            
+            Plotly.relayout(this.containerId, updatedLayout);
+        } else if (this.currentData) {
+            // Full re-render if no existing chart
             this.render(this.currentData, this.threshold, this.metricType);
         }
     }
@@ -178,14 +194,21 @@ class PlotlyHistogramChart {
         const maxAbsValue = Math.max(...chartData.barValues.map(Math.abs));
         const axisRange = [-maxAbsValue * 1.1, maxAbsValue * 1.1];
         
+        // Check if we're on mobile/tablet (768px or less)
+        const isMobile = window.innerWidth <= 768;
+        
+        // Update external title block instead of using Plotly title
+        this.updateExternalTitle(metricType, threshold, chartData.decreasedCount, chartData.increasedCount);
+        
         const layout = {
-            title: {
-                text: `${this.formatMetricTitle(metricType)} Changes (≥${this.formatBytes(threshold)}): ${chartData.decreasedCount} decreased, ${chartData.increasedCount} increased`,
-                font: { size: 16, color: '#2c3e50' }
-            },
             width: this.width,
             height: Math.max(600, chartData.fileNames.length * 25 + 100), // Dynamic height based on data
-            margin: { l: 240, r: 50, t: 60, b: 50 }, // 20% more left margin for file names (200 * 1.2 = 240)
+            margin: { 
+                l: 240, 
+                r: 50, 
+                t: 30, 
+                b: 50 
+            }, // 20% more left margin for file names (200 * 1.2 = 240), reduced top margin since title is external
             font: { size: 11, family: 'Arial, sans-serif' },
             paper_bgcolor: 'white',
             plot_bgcolor: 'white',
@@ -197,7 +220,8 @@ class PlotlyHistogramChart {
                 zerolinecolor: '#333',
                 zerolinewidth: 2,
                 gridcolor: '#f0f0f0',
-                tickformat: '.2s'
+                tickformat: '.2s',
+                fixedrange: true
             },
             yaxis: {
                 title: 'Files',
@@ -205,37 +229,38 @@ class PlotlyHistogramChart {
                 tickvals: Array.from({length: chartData.fileNames.length}, (_, i) => i),
                 ticktext: chartData.fileNames,
                 autorange: 'reversed', // Show first file at top
-                gridcolor: '#f0f0f0'
+                gridcolor: '#f0f0f0',
+                fixedrange: true
             },
             annotations: [
                 {
-                    text: "← Files became smaller",
+                    text: "← smaller",
                     showarrow: false,
                     x: -maxAbsValue * 0.5,
                     y: -1,
                     xref: 'x',
                     yref: 'y',
-                    font: { size: 12, color: this.colors.decreased }
+                    font: { size: 12, color: this.colors.decreasedFilesize }
                 },
                 {
-                    text: "Files became larger →",
+                    text: "bigger →",
                     showarrow: false,
                     x: maxAbsValue * 0.5,
                     y: -1,
                     xref: 'x',
                     yref: 'y',
-                    font: { size: 12, color: this.colors.increased }
+                    font: { size: 12, color: this.colors.increasedFilesize }
                 }
             ]
         };
         
         const config = {
             displayModeBar: true,
-            modeBarButtonsToRemove: ['select2d', 'lasso2d', 'autoScale2d'],
+            modeBarButtonsToRemove: ['select2d', 'lasso2d', 'autoScale2d', 'zoomIn2d', 'zoomOut2d', 'zoom2d', 'resetScale2d'],
             displaylogo: false,
             responsive: true,
-            scrollZoom: true,
-            doubleClick: 'reset',
+            scrollZoom: false,
+            doubleClick: false,
             dragMode: 'pan', // Set pan as default interaction mode
             toImageButtonOptions: {
                 format: 'png',
@@ -315,6 +340,14 @@ class PlotlyHistogramChart {
                metricType.charAt(0).toUpperCase() + metricType.slice(1);
     }
     
+    updateExternalTitle(metricType, threshold, decreasedCount, increasedCount) {
+        // Update the chart info element with title information
+        const chartInfo = document.getElementById('chart-info');
+        if (chartInfo) {
+            chartInfo.textContent = `${this.formatMetricTitle(metricType)} Changes (≥${this.formatBytes(threshold)}): ${decreasedCount} decreased, ${increasedCount} increased - Click bars for timeline, hover for details`;
+        }
+    }
+    
     addInteractivity() {
         const plotElement = document.getElementById(this.containerId);
         
@@ -323,10 +356,7 @@ class PlotlyHistogramChart {
             this.handleElementClick(data);
         });
         
-        // Add double-click to reset view
-        plotElement.on('plotly_doubleclick', () => {
-            this.resetZoom();
-        });
+        // Double-click disabled to prevent zoom reset
     }
     
     handleElementClick(data) {
@@ -505,6 +535,9 @@ class PlotlyHistogramChart {
             }
         }];
         
+        // Check if we're on mobile for timeline modal
+        const isMobile = window.innerWidth <= 768;
+        
         const layout = {
             xaxis: {
                 title: 'Version',
@@ -519,7 +552,12 @@ class PlotlyHistogramChart {
                 fixedrange: false,
                 autorange: false
             },
-            margin: { l: 80, r: 40, t: 60, b: 80 },
+            margin: { 
+                l: 80, 
+                r: 40, 
+                t: isMobile ? 80 : 60, 
+                b: 80 
+            },
             showlegend: false,
             hovermode: 'closest'
         };
@@ -534,10 +572,4 @@ class PlotlyHistogramChart {
         Plotly.newPlot('timeline-chart', data, layout, config);
     }
     
-    resetZoom() {
-        Plotly.relayout(this.containerId, {
-            'xaxis.autorange': true,
-            'yaxis.autorange': true
-        });
-    }
 }

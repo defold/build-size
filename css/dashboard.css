@@ -21,12 +21,14 @@
     color: #2c3e50;
     font-size: 1.8rem;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 .chart-header p {
-    margin: 0;
+    margin: 0 0 1rem 0;
     color: #666;
     font-size: 1rem;
+    line-height: 1.4;
 }
 
 /* Version controls */
@@ -154,39 +156,111 @@ footer a:hover {
         padding: 1rem;
     }
     
+    .chart-header {
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+    }
+    
     .chart-header h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .chart-header p {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
     }
     
     .version-control {
+        margin-top: 0.75rem;
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
     }
     
+    .version-control label {
+        font-size: 0.85rem;
+    }
+    
     .version-control select {
         width: 100%;
-        max-width: 200px;
+        max-width: 250px;
+        padding: 0.6rem 0.75rem;
     }
     
-    
-    .chart-container {
-        min-height: 600px;
-        padding: 0.5rem;
-    }
-    
-    .chart-container > div {
-        height: 600px !important;
-    }
-}
-
-@media (max-width: 480px) {
     .chart-container {
         min-height: 500px;
+        padding: 0.5rem;
+        margin-top: 1rem;
     }
     
     .chart-container > div {
         height: 500px !important;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0.75rem;
+    }
+    
+    .chart-section {
+        margin-bottom: 1.5rem;
+        padding: 0.75rem;
+    }
+    
+    .chart-header h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .chart-header p {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .version-control {
+        margin-top: 0.5rem;
+    }
+    
+    .version-control label {
+        font-size: 0.8rem;
+    }
+    
+    .version-control select {
+        max-width: 100%;
+        font-size: 0.85rem;
+        padding: 0.5rem 0.6rem;
+    }
+    
+    .chart-container {
+        min-height: 400px;
+        padding: 0.25rem;
+    }
+    
+    .chart-container > div {
+        height: 400px !important;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header p {
+        font-size: 0.85rem;
+    }
+    
+    footer a {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
     }
 }
 

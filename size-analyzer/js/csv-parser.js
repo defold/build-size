@@ -104,7 +104,9 @@ class DataProcessor {
     }
 
     static parseVersion(version) {
-        return version.split('.').map(Number);
+        // Ensure version is a string
+        const versionStr = typeof version === 'string' ? version : String(version);
+        return versionStr.split('.').map(Number);
     }
 
     static compareVersions(v1, v2) {
@@ -134,7 +136,10 @@ class DataProcessor {
         // Get analysis index to determine available versions
         const analysisResponse = await fetch('analysis_index.json');
         const analysisIndex = await analysisResponse.json();
-        const allVersions = analysisIndex.platforms[platform].versions;
+        const allVersionObjects = analysisIndex.platforms[platform].versions;
+        
+        // Extract just the version strings from the objects
+        const allVersions = allVersionObjects.map(v => v.version);
         
         // Get versions in range
         const versionsInRange = this.getVersionsInRange(allVersions, startVersion, endVersion);

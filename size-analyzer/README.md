@@ -170,9 +170,11 @@ Tabs are automatically created based on available metrics:
 
 #### Interactive Visualization:
 - **Horizontal Bar Charts**: Files sorted by change magnitude
-- **Color Coding**: Red (increased), Green (decreased)
+- **Color Coding**: Red (increased), Green (decreased) with metric-specific colors
 - **Threshold Filtering**: Dynamic range based on actual data
 - **Timeline Modal**: Click any bar to see version-by-version evolution
+- **Pan Navigation**: Charts support panning but prevent zoom in/out for consistent scale
+- **External Titles**: Chart titles displayed outside Plotly area for better mobile experience
 
 #### Data Processing Pipeline:
 ```javascript
@@ -202,6 +204,8 @@ Tabs are automatically created based on available metrics:
 - **Lazy Loading**: Only loads data when needed
 - **Efficient Filtering**: Client-side processing with smart algorithms
 - **Responsive UI**: Smooth interactions even with large datasets
+- **Chart Optimization**: Fixed axis ranges prevent expensive zoom calculations
+- **Mobile Performance**: Reduced chart complexity and disabled zoom for better touch performance
 
 ### 5. User Interface
 
@@ -210,8 +214,9 @@ Tabs are automatically created based on available metrics:
 2. **Version Selection**: Smart dropdowns with validation
 3. **Metric Tabs**: Dynamic tabs based on available data
 4. **Threshold Control**: Filter by change magnitude
-5. **Chart Visualization**: Interactive horizontal bar chart
-6. **Data Table**: Detailed file list with filtering options
+5. **Chart Info**: Dynamic title showing comparison details above chart
+6. **Chart Visualization**: Interactive horizontal bar chart with pan-only navigation
+7. **Data Table**: Detailed file list with filtering options
 
 #### Timeline Modal:
 - **Triggered**: Click any bar in the main chart
@@ -225,9 +230,32 @@ Tabs are automatically created based on available metrics:
 - **Dashboard integration**: Automatically applied when navigating from dashboard
 
 #### Responsive Design:
-- **Desktop**: Full-featured interface with side-by-side layouts
-- **Tablet**: Stacked layouts with touch-friendly controls
-- **Mobile**: Simplified interface with collapsible sections
+- **Desktop**: Full-featured interface with side-by-side layouts and standard chart margins
+- **Tablet**: Stacked layouts with touch-friendly controls and adjusted chart spacing
+- **Mobile**: Simplified interface with collapsible sections and mobile-optimized chart layouts
+- **Dynamic Layout**: Charts automatically adjust margins and title positioning based on screen width
+- **Touch-Friendly**: Disabled zoom gestures to prevent accidental UI disruption on mobile devices
+
+---
+
+## Recent Improvements
+
+### Mobile & Touch Optimization (v19):
+- **Responsive Chart Titles**: Moved chart titles outside Plotly area to prevent mobile overlap with modebar
+- **Zoom Restrictions**: Disabled zoom in/out to maintain consistent scale and prevent accidental gestures
+- **Touch Navigation**: Enabled pan-only interaction for better mobile experience
+- **Dynamic Margins**: Charts automatically adjust spacing based on screen width (≤768px detection)
+- **Simplified Controls**: Streamlined arrow labels ("← smaller" / "bigger →") for mobile readability
+
+### Error Handling & Stability:
+- **Version Parsing**: Fixed `version.split is not a function` error in timeline modal
+- **Type Safety**: Added string conversion safeguards for version processing
+- **Data Validation**: Improved handling of analysis_index.json structure changes
+
+### UI/UX Enhancements:
+- **External Titles**: Chart information now displays in HTML element above chart
+- **Better Context**: Removed internal Plotly titles to maximize chart space for data
+- **Consistent Branding**: Chart info includes click/hover instructions with comparison details
 
 ---
 
@@ -275,8 +303,9 @@ Tabs are automatically created based on available metrics:
 
 ### Browser Compatibility:
 - **Modern browsers**: Chrome 80+, Firefox 75+, Safari 13+, Edge 80+
-- **Features used**: ES6 modules, Fetch API, CSS Grid, Flexbox
-- **No IE support**: Uses modern JavaScript features
+- **Features used**: ES6 modules, Fetch API, CSS Grid, Flexbox, window.innerWidth detection
+- **Mobile browsers**: iOS Safari 13+, Android Chrome 80+, mobile-optimized interactions
+- **No IE support**: Uses modern JavaScript features and responsive design
 
 ### Performance Characteristics:
 - **Data loading**: ~100ms per CSV file (cached after first load)

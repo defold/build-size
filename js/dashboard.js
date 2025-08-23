@@ -19,6 +19,11 @@ class DefoldDashboard {
         };
         
         this.init();
+        
+        // Add window resize listener to handle responsive layout changes
+        window.addEventListener('resize', () => {
+            this.handleResize();
+        });
     }
     
     async init() {
@@ -288,10 +293,15 @@ class DefoldDashboard {
             });
         });
         
+        // Check if we're on mobile/tablet (768px or less)
+        const isMobile = window.innerWidth <= 768;
+        
         const layout = {
             title: {
                 text: title,
-                font: { size: 16, color: '#2c3e50' }
+                font: { size: 16, color: '#2c3e50' },
+                y: isMobile ? 0.92 : 0.95,
+                yanchor: 'top'
             },
             xaxis: {
                 title: 'Version',
@@ -303,7 +313,12 @@ class DefoldDashboard {
                 tickformat: '.2s',
                 gridcolor: '#f0f0f0'
             },
-            margin: { l: 80, r: 40, t: 60, b: showLegend ? 100 : 60 },
+            margin: { 
+                l: 80, 
+                r: 50, 
+                t: isMobile ? 100 : 60, 
+                b: showLegend ? 100 : 60 
+            },
             paper_bgcolor: 'white',
             plot_bgcolor: 'white',
             showlegend: showLegend,
@@ -625,6 +640,34 @@ class DefoldDashboard {
         });
         
         Plotly.react(chartId, traces, chartData.layout, chartData.config);
+    }
+    
+    handleResize() {
+        // Debounce resize events
+        clearTimeout(this.resizeTimeout);
+        this.resizeTimeout = setTimeout(() => {
+            // Update all charts with responsive layout
+            this.chartConfigs.forEach((config, chartId) => {
+                const chartData = this.charts.get(chartId);
+                if (chartData) {
+                    const isMobile = window.innerWidth <= 768;
+                    const updatedLayout = {
+                        ...chartData.layout,
+                        title: {
+                            ...chartData.layout.title,
+                            y: isMobile ? 0.92 : 0.95
+                        },
+                        margin: {
+                            ...chartData.layout.margin,
+                            t: isMobile ? 100 : 60
+                        }
+                    };
+                    
+                    Plotly.relayout(chartId, updatedLayout);
+                    this.charts.set(chartId, { ...chartData, layout: updatedLayout });
+                }
+            });
+        }, 250); // 250ms debounce
     }
     
     showError(message) {
