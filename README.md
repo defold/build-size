@@ -3,6 +3,9 @@
 # Defold engine and application bundle size plot
 This project will plot the size of the Defold engine (aka dmengine) as well as the size of a complete Defold game bundle for all supported platforms and versions.
 
+**Live Dashboard**: https://defold.com/build-size  
+**Interactive Size Analyzer**: https://defold.com/build-size/size-analyzer/
+
 ## Bundle size
 The bundle size is measured as:
 

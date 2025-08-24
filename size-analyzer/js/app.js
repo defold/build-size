@@ -709,7 +709,7 @@ class DefoldSizeAnalyzer {
             
             html += `
                 <div class="file-item">
-                    <div class="file-name" title="${comp.compileUnit}${comp.isMoved ? ' (File was moved)' : ''}">${displayName}${moveIndicator}</div>
+                    <div class="file-name file-name-tooltip" title="${comp.compileUnit}${comp.isMoved ? ' (File was moved)' : ''}" data-full-name="${comp.compileUnit}">${displayName}${moveIndicator}</div>
                     <div class="file-sizes">
                         <div class="size-value">${DataProcessor.formatBytes(comp.size1)}</div>
                         <div class="size-value">${DataProcessor.formatBytes(comp.size2)}</div>
@@ -730,6 +730,9 @@ class DefoldSizeAnalyzer {
                 this.onColumnHeaderClick(sortField);
             });
         });
+        
+        // Add tooltip functionality for long file names
+        this.setupFileNameTooltips();
     }
     
     onColumnHeaderClick(sortField) {
@@ -946,6 +949,40 @@ class DefoldSizeAnalyzer {
         ];
         
         return debugSections.some(section => filename.includes(section));
+    }
+    
+    setupFileNameTooltips() {
+        const fileNameElements = this.elements.fileList.querySelectorAll('.file-name-tooltip');
+        const tooltip = document.getElementById('tooltip');
+        
+        fileNameElements.forEach(element => {
+            element.addEventListener('mouseenter', (e) => {
+                const fullName = e.target.dataset.fullName;
+                const displayName = e.target.textContent.trim();
+                
+                // Only show tooltip if the display name is truncated
+                if (fullName !== displayName.replace(/\s*📁\s*$/, '')) {
+                    const rect = e.target.getBoundingClientRect();
+                    
+                    tooltip.textContent = fullName;
+                    tooltip.style.left = (rect.left + window.scrollX) + 'px';
+                    tooltip.style.top = (rect.bottom + window.scrollY + 5) + 'px';
+                    tooltip.classList.add('visible');
+                    
+                    // Adjust position if tooltip goes off screen
+                    setTimeout(() => {
+                        const tooltipRect = tooltip.getBoundingClientRect();
+                        if (tooltipRect.right > window.innerWidth) {
+                            tooltip.style.left = (window.innerWidth - tooltipRect.width - 10) + 'px';
+                        }
+                    }, 0);
+                }
+            });
+            
+            element.addEventListener('mouseleave', () => {
+                tooltip.classList.remove('visible');
+            });
+        });
     }
     
     handleUrlParameters() {
