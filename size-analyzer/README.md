@@ -18,8 +18,9 @@ The Defold Size Analyzer consists of three main components:
 The Python script automates the download and analysis of Defold components across versions.
 
 #### Supported Platforms:
-- **Native Binaries**: `arm64-android` (libdmengine_release.so)
+- **Native Binaries**: `arm64-android`, `armv7-android`, `arm64-ios`, `x86_64-macos`, `arm64-macos` (libdmengine_release.so)
 - **Java Tooling**: `bob.jar` (editor/build tools)
+- **Editor Applications**: `editor-win32`, `editor-x86_64-linux`, `editor-x86_64-macos`, `editor-arm64-macos` (complete editor packages)
 
 #### Data Sources:
 - Downloads components from Defold's archive: `http://d.defold.com/archive/{sha1}/`
@@ -50,6 +51,19 @@ with zipfile.ZipFile(jar_path, 'r') as zf:
 - **uncompressed**: Original size of entry
 - **filename**: Path within JAR file
 
+**Editor Analysis (Combined Approach)**
+```python
+# Combines JAR analysis, JDK grouping, and file analysis
+# - JAR contents analyzed individually with compression ratios
+# - JDK folder grouped as single "JDK" entity
+# - Other files analyzed individually (compressed == uncompressed)
+# - Library grouping applied to reduce complexity
+```
+- **Output**: `filename,compressed,uncompressed`
+- **compressed**: Compressed size (for JARs) or file size (for other files)
+- **uncompressed**: Uncompressed size (for JARs) or file size (for other files)
+- **filename**: File path or grouped library name (e.g., `com/ibm/*.*`, `JDK`)
+
 #### Generated Files:
 ```
 size-analyzer/
@@ -58,23 +72,34 @@ size-analyzer/
 │   ├── 1.9.0.csv
 │   ├── 1.9.1.csv
 │   └── ...
-└── bob.jar/               # Java tooling analysis
-    ├── 1.9.0.csv
-    ├── 1.9.1.csv
+├── bob.jar/               # Java tooling analysis
+│   ├── 1.9.0.csv
+│   ├── 1.9.1.csv
+│   └── ...
+└── editor-*/              # Editor analysis (all platforms)
+    ├── 1.10.3.csv
+    ├── 1.10.4.csv
     └── ...
 ```
 
 #### Running Analysis:
 ```bash
+# Full analysis (all platforms, all versions)
 python3 analyze_builds.py
+
+# Test mode (single platform, latest version only)
+python3 analyze_builds.py --test editor  # Test editor analysis
+python3 analyze_builds.py --test bob     # Test bob.jar analysis
+python3 analyze_builds.py --test ios     # Test iOS engine analysis
 ```
 
 The script will:
 1. Read `releases.json` for version information
 2. Download and analyze each component for each version
 3. Generate CSV files with size data
-4. Update `analysis_index.json` with available platforms/versions
-5. Clean up temporary downloaded files
+4. Apply library grouping for editor analysis (reduces ~76,000 entries to ~5,500)
+5. Update `analysis_index.json` with available platforms/versions
+6. Clean up temporary downloaded files
 
 ---
 
@@ -110,6 +135,7 @@ The dashboard provides a high-level view of component size evolution across vers
 - `x86_64-macos`, `x86_64-linux`, `x86-win32`, `x86_64-win32`, `arm64-macos`
 - `js-web`, `wasm-web`
 - `bob.jar` (special handling for build tools)
+- `editor-*` platforms (automatic mapping from dashboard to size-analyzer)
 
 **Files:**
 - `index.html` - Dashboard interface
@@ -154,6 +180,16 @@ filename,compressed,uncompressed
 lib/android.jar,10299057,13989417
 ```
 
+**editor format (with library grouping):**
+```csv
+filename,compressed,uncompressed
+jfxwebkit.dll,31852784,83512832
+JDK,58083658,58083658
+com/ibm/*.*,11528031,27028277
+com/sun/*.*,8886096,21765809
+clojure/*.*,6990823,15500531
+```
+
 #### Tab Generation:
 Tabs are automatically created based on available metrics:
 - **Native Binary**: "File Size" and "VM Size" tabs
@@ -175,6 +211,9 @@ Tabs are automatically created based on available metrics:
 - **Timeline Modal**: Click any bar to see version-by-version evolution
 - **Pan Navigation**: Charts support panning but prevent zoom in/out for consistent scale
 - **External Titles**: Chart titles displayed outside Plotly area for better mobile experience
+- **Enhanced Hover Areas**: Full-row hover detection with subtle gray overlays for easier interaction
+- **Cursor-Following Tooltips**: Tooltips positioned near cursor with Plotly-style yellow background
+- **File Name Tooltips**: Hover over long file names (chart y-axis or table) to see full paths
 
 #### Data Processing Pipeline:
 ```javascript
@@ -240,6 +279,20 @@ Tabs are automatically created based on available metrics:
 
 ## Recent Improvements
 
+### Editor Analysis Integration (v20):
+- **Complete Editor Analysis**: Added support for analyzing Defold editor packages across all platforms
+- **Combined Analysis Approach**: JAR contents + individual files + JDK grouping in unified CSV format
+- **Intelligent Library Grouping**: Reduced editor analysis from ~76,000 entries to ~5,500 (92% reduction)
+- **Test Mode**: Added `--test` flag for quick single-platform validation during development
+- **Dashboard Integration**: Automatic platform name mapping from dashboard to size-analyzer URLs
+
+### Enhanced User Experience (v20):
+- **Full-Row Hover Detection**: Click/hover anywhere across chart rows, not just thin bars
+- **Cursor-Following Tooltips**: Tooltips now position near cursor instead of fixed right-side placement
+- **File Name Tooltips**: Hover over truncated file names (y-axis labels and table) to see complete paths
+- **Smart Tooltip Styling**: Maintained Plotly-style yellow background with dynamic width adaptation
+- **Subtle Visual Cues**: Light gray overlay bars indicate hoverable areas without interfering with data
+
 ### Mobile & Touch Optimization (v19):
 - **Responsive Chart Titles**: Moved chart titles outside Plotly area to prevent mobile overlap with modebar
 - **Zoom Restrictions**: Disabled zoom in/out to maintain consistent scale and prevent accidental gestures
@@ -251,11 +304,7 @@ Tabs are automatically created based on available metrics:
 - **Version Parsing**: Fixed `version.split is not a function` error in timeline modal
 - **Type Safety**: Added string conversion safeguards for version processing
 - **Data Validation**: Improved handling of analysis_index.json structure changes
-
-### UI/UX Enhancements:
-- **External Titles**: Chart information now displays in HTML element above chart
-- **Better Context**: Removed internal Plotly titles to maximize chart space for data
-- **Consistent Branding**: Chart info includes click/hover instructions with comparison details
+- **Cross-Platform URL Mapping**: Automatic conversion between dashboard platform keys and size-analyzer directories
 
 ---
 
@@ -284,6 +333,14 @@ Tabs are automatically created based on available metrics:
 3. Switch between "Compressed" and "Uncompressed" tabs
 4. Identify which JAR entries contribute most to size changes
 5. Use timeline view to understand growth patterns
+
+### Analyzing Editor Components:
+1. Select any "editor-*" platform (win32, linux, macos)
+2. Choose version range for comparison (editor analysis starts from 1.10.3)
+3. Switch between "Compressed" and "Uncompressed" tabs
+4. Analyze grouped libraries (com/ibm/*.*, com/sun/*.*, etc.) and individual components
+5. Compare JDK overhead vs application code vs bundled libraries
+6. Use hover tooltips to see full component names for grouped entries
 
 ### Debug Analysis (Android):
 1. Select arm64-android platform
