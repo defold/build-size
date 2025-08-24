@@ -409,6 +409,17 @@ class DefoldDashboard {
                 platformKey = 'bob.jar';
             }
             
+            // Special case: if this is the Editor chart, map to editor platform names
+            if (containerId === 'editor-chart') {
+                const editorPlatformMap = {
+                    'x86_64-win32': 'editor-win32',
+                    'x86_64-linux': 'editor-x86_64-linux',
+                    'x86_64-macos': 'editor-x86_64-macos',
+                    'arm64-macos': 'editor-arm64-macos'
+                };
+                platformKey = editorPlatformMap[platformKey] || platformKey;
+            }
+            
             if (platformKey && clickedVersion) {
                 // Get all available versions for this platform to find the previous version
                 const allVersions = this.getAllVersionsForPlatform(platformKey, containerId);

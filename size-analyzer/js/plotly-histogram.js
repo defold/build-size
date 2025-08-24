@@ -72,6 +72,9 @@ class PlotlyHistogramChart {
         // Prepare data for Plotly horizontal bar chart
         const chartData = this.prepareHistogramData(data, threshold, metricType);
         
+        // Store chart data for hover functionality
+        this.chartData = chartData;
+        
         // Create Plotly horizontal bar chart
         this.createPlotlyHistogram(chartData, threshold, metricType);
     }
@@ -162,6 +165,10 @@ class PlotlyHistogramChart {
     }
     
     createPlotlyHistogram(chartData, threshold = 50, metricType = 'filesize') {
+        // Calculate the range for overlay bars to span full chart width
+        const maxAbsValue = Math.max(...chartData.barValues.map(v => Math.abs(v)));
+        const fullWidth = maxAbsValue * 2.2; // Full width from left to right edge
+        
         const data = [
             {
                 y: chartData.fileNames,
@@ -176,7 +183,29 @@ class PlotlyHistogramChart {
                         width: 1
                     }
                 },
-                hovertemplate: '%{customdata.hoverText}<extra></extra>',
+                hoverinfo: 'skip', // Skip hover for main bars
+                hoverlabel: {
+                    bgcolor: '#FFFFDD',
+                    bordercolor: '#333',
+                    font: { color: '#000', size: 12 }
+                },
+                showlegend: false
+            },
+            // Invisible overlay bars for easier hovering - spans full row width
+            {
+                y: chartData.fileNames,
+                x: chartData.fileNames.map(() => fullWidth), // Full width bars
+                type: 'bar',
+                orientation: 'h',
+                name: 'Hover Area',
+                marker: {
+                    color: 'rgba(240, 240, 240, 0.15)', // Very light gray with low opacity
+                    line: { 
+                        color: 'rgba(220, 220, 220, 0.2)', // Slightly darker gray border
+                        width: 0.5 
+                    }
+                },
+                hoverinfo: 'text', // Enable hover events for custom tooltip
                 customdata: chartData.hoverTexts.map((text, index) => ({
                     hoverText: text,
                     fullFileName: chartData.fullFileNames[index]
@@ -186,12 +215,15 @@ class PlotlyHistogramChart {
                     bordercolor: '#333',
                     font: { color: '#000', size: 12 }
                 },
-                showlegend: false
+                showlegend: false,
+                base: -maxAbsValue * 1.1, // Start from left edge
+                visible: true,
+                hoverinfo: 'text',
+                width: 0.8 // Match the main bar width to align properly
             }
         ];
         
-        // Calculate the maximum absolute value for symmetric axis
-        const maxAbsValue = Math.max(...chartData.barValues.map(Math.abs));
+        // Calculate axis range using the already calculated maxAbsValue
         const axisRange = [-maxAbsValue * 1.1, maxAbsValue * 1.1];
         
         // Check if we're on mobile/tablet (768px or less)
@@ -213,6 +245,9 @@ class PlotlyHistogramChart {
             paper_bgcolor: 'white',
             plot_bgcolor: 'white',
             dragmode: 'pan', // Set pan as default in layout
+            bargap: 0.1, // Control spacing between bars (smaller = closer together)
+            barmode: 'overlay', // Overlay mode for the invisible bars
+            hovermode: 'closest', // Position hover tooltip near cursor
             xaxis: {
                 title: 'Size Change (bytes)',
                 range: axisRange,
@@ -356,7 +391,118 @@ class PlotlyHistogramChart {
             this.handleElementClick(data);
         });
         
+        // Add custom cursor-based hover functionality
+        this.addCustomHover(plotElement);
+        
+        // Add hover functionality for y-axis labels
+        this.addYAxisHover(plotElement);
+        
         // Double-click disabled to prevent zoom reset
+    }
+    
+    addCustomHover(plotElement) {
+        const tooltip = document.getElementById('tooltip');
+        if (!tooltip) return;
+        
+        // Add mouse events to the plot element
+        plotElement.on('plotly_hover', (data) => {
+            if (data.points && data.points.length > 0) {
+                const point = data.points[0];
+                const hoverText = point.customdata ? point.customdata.hoverText : '';
+                
+                if (hoverText) {
+                    tooltip.innerHTML = hoverText.replace(/\n/g, '<br>');
+                    // Apply Plotly-style yellow background
+                    tooltip.style.backgroundColor = '#FFFFDD';
+                    tooltip.style.color = '#000';
+                    tooltip.style.border = '1px solid #333';
+                    // Reset width and let content determine size
+                    tooltip.style.width = 'auto';
+                    tooltip.style.maxWidth = '400px'; // Reasonable max width
+                    tooltip.style.minWidth = '150px'; // Minimum width
+                    tooltip.style.wordWrap = 'break-word';
+                    tooltip.style.whiteSpace = 'normal';
+                    tooltip.classList.add('visible');
+                }
+            }
+        });
+        
+        plotElement.on('plotly_unhover', () => {
+            tooltip.classList.remove('visible');
+        });
+        
+        // Add mousemove event to position tooltip near cursor
+        plotElement.addEventListener('mousemove', (e) => {
+            if (tooltip.classList.contains('visible')) {
+                tooltip.style.left = (e.pageX + 15) + 'px';
+                tooltip.style.top = (e.pageY - 10) + 'px';
+                
+                // Adjust position if tooltip goes off screen
+                const tooltipRect = tooltip.getBoundingClientRect();
+                if (tooltipRect.right > window.innerWidth) {
+                    tooltip.style.left = (e.pageX - tooltipRect.width - 15) + 'px';
+                }
+                if (tooltipRect.bottom > window.innerHeight) {
+                    tooltip.style.top = (e.pageY - tooltipRect.height - 10) + 'px';
+                }
+            }
+        });
+    }
+    
+    addYAxisHover(plotElement) {
+        // Wait for plot to be fully rendered before adding hover listeners
+        setTimeout(() => {
+            const yAxisLabels = plotElement.querySelectorAll('.ytick text');
+            const tooltip = document.getElementById('tooltip');
+            
+            if (!tooltip) return;
+            
+            yAxisLabels.forEach((label, index) => {
+                const truncatedText = label.textContent.trim();
+                
+                // Find the corresponding full filename
+                let fullFileName = '';
+                if (this.chartData && this.chartData.fullFileNames && this.chartData.fullFileNames[index]) {
+                    fullFileName = this.chartData.fullFileNames[index];
+                } else {
+                    // Fallback: remove emoji and try to find matching full name
+                    const cleanText = truncatedText.replace(/📁\s*/, '');
+                    if (this.chartData && this.chartData.fullFileNames) {
+                        const match = this.chartData.fullFileNames.find(name => 
+                            this.truncateFileName(name) === cleanText
+                        );
+                        fullFileName = match || truncatedText;
+                    }
+                }
+                
+                // Only show tooltip if filename is truncated
+                if (fullFileName && fullFileName !== truncatedText.replace(/📁\s*/, '')) {
+                    label.addEventListener('mouseenter', (e) => {
+                        const rect = e.target.getBoundingClientRect();
+                        
+                        tooltip.textContent = fullFileName;
+                        tooltip.style.left = (rect.right + window.scrollX + 10) + 'px';
+                        tooltip.style.top = (rect.top + window.scrollY) + 'px';
+                        tooltip.classList.add('visible');
+                        
+                        // Adjust position if tooltip goes off screen
+                        setTimeout(() => {
+                            const tooltipRect = tooltip.getBoundingClientRect();
+                            if (tooltipRect.right > window.innerWidth) {
+                                tooltip.style.left = (rect.left + window.scrollX - tooltipRect.width - 10) + 'px';
+                            }
+                        }, 0);
+                    });
+                    
+                    label.addEventListener('mouseleave', () => {
+                        tooltip.classList.remove('visible');
+                    });
+                    
+                    // Add cursor style to indicate hoverable
+                    label.style.cursor = 'help';
+                }
+            });
+        }, 100);
     }
     
     handleElementClick(data) {
