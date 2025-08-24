@@ -597,6 +597,25 @@ class PlotlyHistogramChart {
                 this.metricType
             );
             
+            // Calculate actual total change from timeline data
+            if (timeline && timeline.length > 1) {
+                const firstSize = timeline[0].size;
+                const lastSize = timeline[timeline.length - 1].size;
+                const actualTotalChange = lastSize - firstSize;
+                
+                // Update the summary with actual change
+                const summaryDiv = modal.querySelector('.timeline-modal-summary');
+                const isDecrease = actualTotalChange < 0;
+                const changeColor = isDecrease ? '#27ae60' : '#e74c3c'; // Green for decrease, red for increase
+                
+                summaryDiv.innerHTML = `
+                    <span>Total change (${version1} → ${version2}): </span>
+                    <span style="color: ${changeColor}; font-weight: bold;">
+                        ${isDecrease ? '' : '+'}${this.formatBytes(actualTotalChange)}
+                    </span>
+                `;
+            }
+            
             // Hide loading and show chart
             modal.querySelector('.timeline-loading').style.display = 'none';
             modal.querySelector('#timeline-chart').style.display = 'block';
