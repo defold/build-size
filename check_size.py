@@ -86,51 +86,117 @@ def get_host():
         return 'macos'
     raise "Unknown platform"
 
-def download_bob(sha1):
+def get_channel_from_version(version):
+    if not version:
+        return None
+    if '-' not in version:
+        return None
+    suffix = version.split('-', 1)[1].lower()
+    if suffix in ("alpha", "beta"):
+        return suffix
+    return None
+
+def build_bob_urls(sha1, filename, channel):
+    if channel in ("alpha", "beta"):
+        return [
+            f"http://d.defold.com/archive/{channel}/{sha1}/bob/{filename}",
+            f"http://d.defold.com/archive/{channel}/{sha1}/{channel}/bob/{filename}",
+            f"http://d.defold.com/archive/{sha1}/bob/{filename}",
+        ]
+    return [
+        f"http://d.defold.com/archive/stable/{sha1}/bob/{filename}",
+        f"http://d.defold.com/archive/{sha1}/bob/{filename}",
+    ]
+
+def build_editor_urls(sha1, filename, channel):
+    if channel in ("alpha", "beta"):
+        return [
+            f"http://d.defold.com/archive/{channel}/{sha1}/{channel}/editor2/{filename}",
+            f"http://d.defold.com/archive/{channel}/{sha1}/editor2/{filename}",
+            f"http://d.defold.com/archive/{sha1}/editor-alpha/editor2/{filename}",
+        ]
+    return [
+        f"http://d.defold.com/archive/{sha1}/editor-alpha/editor2/{filename}",
+    ]
+
+def build_engine_filenames(platform, filename, channel):
+    if platform in ("js-web", "wasm-web"):
+        if platform == "js-web":
+            headless = "dmengine_headless.js"
+        else:
+            headless = "dmengine_headless.wasm"
+        if channel in ("alpha", "beta"):
+            return [headless, filename]
+        return [filename, headless]
+    return [filename]
+
+def build_engine_urls(sha1, platform, filename, channel):
+    filenames = build_engine_filenames(platform, filename, channel)
+    bases = []
+    if channel in ("alpha", "beta"):
+        bases.append(f"http://d.defold.com/archive/{channel}/{sha1}")
+    bases.append(f"http://d.defold.com/archive/{sha1}")
+    urls = []
+    for base in bases:
+        for engine_filename in filenames:
+            urls.append(f"{base}/engine/{platform}/stripped/{engine_filename}")
+            urls.append(f"{base}/engine/{platform}/{engine_filename}")
+    return urls
+
+def download_bob(sha1, version=None):
     bob_path = 'bob_{}.jar'.format(sha1)
     if not os.path.exists(bob_path):
         print("Downloading bob version {} to {}".format(sha1, bob_path))
-        url = "http://d.defold.com/archive/stable/" + sha1 + "/bob/bob.jar"
-        urllib.request.urlretrieve(url, bob_path)
+        channel = get_channel_from_version(version)
+        urls = build_bob_urls(sha1, "bob.jar", channel)
+        for url in urls:
+            try:
+                urllib.request.urlretrieve(url, bob_path)
+                break
+            except urllib.error.HTTPError as e:
+                if e.code == 404:
+                    print(e.code, "Url doesn't exist:", url)
+                    continue
+                raise
     return bob_path
 
 def get_size_from_url(sha1, path):
     url = "http://d.defold.com/archive/" + sha1 + "/" + path
-    try:
-        d = urllib.request.urlopen(url)
-        if d.getcode() == 200:
-            return d.info()['Content-Length']
-    except urllib.error.HTTPError as e:
-        if e.code == 404:
-            print(e.code, "Url doesn't exist:", url)
+    return get_size_from_urls([url])
+
+def get_size_from_urls(urls):
+    for url in urls:
+        try:
+            d = urllib.request.urlopen(url)
+            if d.getcode() == 200:
+                return d.info()['Content-Length']
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                print(e.code, "Url doesn't exist:", url)
+        except Exception as e:
+            print(e)
     return 0
 
-def get_engine_size_from_aws(sha1, platform, filename):
+def get_engine_size_from_aws(sha1, platform, filename, version=None):
     if platform == "x86-win32":
         platform = "win32"
-    path = "engine/{}/stripped/{}"
     print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
-    path = path.format(platform, filename)
-    size = get_size_from_url(sha1, path)
-    if size == 0:
-        path = "engine/{}/{}"
-        path = path.format(platform, filename)
-        size = get_size_from_url(sha1, path)
-    if size == 0:
-        path = "engine/{}/{}".format(platform, filename)
-        size = get_size_from_url(sha1, path)
+    channel = get_channel_from_version(version)
+    urls = build_engine_urls(sha1, platform, filename, channel)
+    return get_size_from_urls(urls)
+
+def get_bob_size_from_aws(sha1, platform, filename, version=None):
+    print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
+    channel = get_channel_from_version(version)
+    urls = build_bob_urls(sha1, filename, channel)
+    size = get_size_from_urls(urls)
     return size
 
-def get_bob_size_from_aws(sha1, platform, filename):
+def get_editor_size_from_aws(sha1, platform, filename, version=None):
     print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
-    path = "bob/{}".format(filename)
-    size = get_size_from_url(sha1, path)
-    return size
-
-def get_editor_size_from_aws(sha1, platform, filename):
-    print("Gettings size of {} for platform {} with sha1 {} from AWS".format(filename, platform, sha1))
-    path = "editor-alpha/editor2/{}".format(filename)
-    size = get_size_from_url(sha1, path)
+    channel = get_channel_from_version(version)
+    urls = build_editor_urls(sha1, filename, channel)
+    size = get_size_from_urls(urls)
     return size
 
 def extract_from_bob(bob_path, filename):
@@ -138,10 +204,10 @@ def extract_from_bob(bob_path, filename):
     bob_info = bob_zip.getinfo(filename)
     return bob_zip.extract(bob_info)
 
-def get_engine_size_from_bob(sha1, platform, filename):
+def get_engine_size_from_bob(sha1, platform, filename, version=None):
     print("Gettings size of {} for platform {} with sha1 {} from Bob".format(filename, platform, sha1))
     try:
-        bob_path = download_bob(sha1)
+        bob_path = download_bob(sha1, version)
         engine_path = 'libexec/{}/{}'.format(platform, filename)
         extracted_engine = extract_from_bob(bob_path, engine_path)
         return os.path.getsize(extracted_engine)
@@ -149,14 +215,14 @@ def get_engine_size_from_bob(sha1, platform, filename):
         print(e)
         return 0
 
-def get_engine_size(sha1, platform, filename):
+def get_engine_size(sha1, platform, filename, version=None):
     # Try to get the engine size from Bob
-    size = get_engine_size_from_bob(sha1, platform, filename)
+    size = get_engine_size_from_bob(sha1, platform, filename, version)
     if size > 0:
         return size
 
     # Fall back to getting the engine size from AWS
-    size = get_engine_size_from_aws(sha1, platform, filename)
+    size = get_engine_size_from_aws(sha1, platform, filename, version)
     return size
 
 def get_zipped_size(path):
@@ -176,14 +242,14 @@ def get_folder_size(path):
             size = size + os.path.getsize(os.path.join(root, file))
     return size
 
-def get_bundle_size_from_bob(sha1, platform, _):
+def get_bundle_size_from_bob(sha1, platform, _, version=None):
     print("Gettings size of bundle for platform {} with sha1 {} using Bob".format(platform, sha1))
     if os.path.exists("bundle_output"):
         shutil.rmtree("bundle_output")
     os.mkdir("bundle_output")
 
     try:
-        bob_path = download_bob(sha1)
+        bob_path = download_bob(sha1, version)
         bob_filename = os.path.basename(bob_path)
         shutil.copy(bob_path, os.path.join("empty_project", "bob.jar"))
         args = []
@@ -400,7 +466,7 @@ def create_report(report_filename, releases, report_platforms, fn, forced_versio
                     platform = report_platform["platform"]
                     filename = report_platform["filename"]
                     print(f"  Making report for {platform}...")
-                    size = fn(sha1, platform, filename)
+                    size = fn(sha1, platform, filename, version)
                     print(f"  Resported size: {platform} {size}")
                     report[platform][version] = size
                 changed = True
@@ -416,7 +482,7 @@ def create_report(report_filename, releases, report_platforms, fn, forced_versio
             platform = report_platform["platform"]
             filename = report_platform["filename"]
             print(f"  Making report for {platform}...")
-            size = fn(sha1, platform, filename)
+            size = fn(sha1, platform, filename, version)
             print(f"  Resported size: {platform} {size}")
             report[platform][version] = size
 

@@ -3,6 +3,7 @@ import os
 import sys
 import subprocess
 import urllib.request
+import urllib.error
 import json
 import shutil
 import zipfile
@@ -34,6 +35,75 @@ def read_releases(path):
         return d
     return {}
 
+def get_channel_from_version(version):
+    if not version or '-' not in version:
+        return None
+    suffix = version.split('-', 1)[1].lower()
+    if suffix in ("alpha", "beta"):
+        return suffix
+    return None
+
+def build_bob_urls(sha1, channel):
+    if channel in ("alpha", "beta"):
+        return [
+            f"http://d.defold.com/archive/{channel}/{sha1}/bob/bob.jar",
+            f"http://d.defold.com/archive/{channel}/{sha1}/{channel}/bob/bob.jar",
+            f"http://d.defold.com/archive/{sha1}/bob/bob.jar",
+        ]
+    return [
+        f"http://d.defold.com/archive/stable/{sha1}/bob/bob.jar",
+        f"http://d.defold.com/archive/{sha1}/bob/bob.jar",
+    ]
+
+def build_editor_urls(sha1, channel, filename):
+    if channel in ("alpha", "beta"):
+        return [
+            f"http://d.defold.com/archive/{channel}/{sha1}/{channel}/editor2/{filename}",
+            f"http://d.defold.com/archive/{channel}/{sha1}/editor2/{filename}",
+            f"http://d.defold.com/archive/{sha1}/editor-alpha/editor2/{filename}",
+        ]
+    return [
+        f"http://d.defold.com/archive/{sha1}/editor-alpha/editor2/{filename}",
+    ]
+
+def build_engine_urls(sha1, channel, platform, filename):
+    bases = []
+    if channel in ("alpha", "beta"):
+        bases.append(f"http://d.defold.com/archive/{channel}/{sha1}")
+    bases.append(f"http://d.defold.com/archive/{sha1}")
+    urls = []
+    for base in bases:
+        urls.append(f"{base}/engine/{platform}/{filename}")
+    return urls
+
+def build_engine_dsym_urls(sha1, channel, platform, filename):
+    bases = []
+    if channel in ("alpha", "beta"):
+        bases.append(f"http://d.defold.com/archive/{channel}/{sha1}")
+    bases.append(f"http://d.defold.com/archive/{sha1}")
+    urls = []
+    for base in bases:
+        urls.append(f"{base}/engine/{platform}/{filename}.dSYM.zip")
+    return urls
+
+def download_with_fallback(urls, output_path):
+    for url in urls:
+        print(f"Downloading from {url}")
+        try:
+            urllib.request.urlretrieve(url, output_path)
+            print(f"Downloaded to {output_path}")
+            return True
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                print(f"Error downloading {url}: {e.code} {e.reason}")
+                continue
+            print(f"Error downloading {url}: {e.code} {e.reason}")
+            return False
+        except Exception as e:
+            print(f"Error downloading {url}: {e}")
+            return False
+    return False
+
 def download_file(sha1, path, filename, output_path):
     """Download file from Defold archive (engine binary or bob.jar)"""
     url = f"http://d.defold.com/archive/{sha1}/{path}/{filename}"
@@ -50,17 +120,29 @@ def download_file(sha1, path, filename, output_path):
         print(f"Error downloading {url}: {e}")
         return False
 
-def download_engine(sha1, platform, filename, output_path):
+def download_engine(sha1, version, platform, filename, output_path):
     """Download engine binary from Defold archive"""
-    return download_file(sha1, f"engine/{platform}", filename, output_path)
+    channel = get_channel_from_version(version)
+    urls = build_engine_urls(sha1, channel, platform, filename)
+    return download_with_fallback(urls, output_path)
 
-def download_bob_jar(sha1, output_path):
+def download_engine_dsym(sha1, version, platform, filename, output_path):
+    """Download engine dSYM from Defold archive"""
+    channel = get_channel_from_version(version)
+    urls = build_engine_dsym_urls(sha1, channel, platform, filename)
+    return download_with_fallback(urls, output_path)
+
+def download_bob_jar(sha1, version, output_path):
     """Download bob.jar from Defold archive"""
-    return download_file(sha1, "bob", "bob.jar", output_path)
+    channel = get_channel_from_version(version)
+    urls = build_bob_urls(sha1, channel)
+    return download_with_fallback(urls, output_path)
 
-def download_editor(sha1, platform, filename, output_path):
+def download_editor(sha1, version, platform, filename, output_path):
     """Download editor from Defold archive"""
-    return download_file(sha1, "editor-alpha/editor2", filename, output_path)
+    channel = get_channel_from_version(version)
+    urls = build_editor_urls(sha1, channel, filename)
+    return download_with_fallback(urls, output_path)
 
 def apply_symbol_grouping(symbol_name):
     """
@@ -506,13 +588,13 @@ def run_test_mode(test_platform, releases):
         
         try:
             # Download binary
-            if not download_engine(sha1, platform, filename, str(binary_path)):
+            if not download_engine(sha1, version, platform, filename, str(binary_path)):
                 print(f"Failed to download binary for {version}")
                 return
             cleanup_paths.append(binary_path)
             
             # Download dSYM
-            if not download_file(sha1, f"engine/{platform}", f"{filename}.dSYM.zip", str(dsym_zip_path)):
+            if not download_engine_dsym(sha1, version, platform, filename, str(dsym_zip_path)):
                 print(f"Failed to download dSYM for {version}")
                 return
             cleanup_paths.append(dsym_zip_path)
@@ -563,7 +645,7 @@ def run_test_mode(test_platform, releases):
         
         try:
             # Download binary
-            if not download_engine(sha1, platform, filename, str(binary_path)):
+            if not download_engine(sha1, version, platform, filename, str(binary_path)):
                 print(f"Failed to download binary for {version}")
                 return
             cleanup_paths.append(binary_path)
@@ -598,7 +680,7 @@ def run_test_mode(test_platform, releases):
         
         try:
             # Download bob.jar
-            if not download_bob_jar(sha1, str(jar_path)):
+            if not download_bob_jar(sha1, version, str(jar_path)):
                 print(f"Failed to download bob.jar for {version}")
                 return
             cleanup_paths.append(jar_path)
@@ -635,7 +717,7 @@ def run_test_mode(test_platform, releases):
         
         try:
             # Download editor
-            if not download_editor(sha1, editor_platform, filename, str(editor_path)):
+            if not download_editor(sha1, version, editor_platform, filename, str(editor_path)):
                 print(f"Failed to download editor for {version}")
                 return
             cleanup_paths.append(editor_path)
@@ -682,7 +764,7 @@ def run_test_mode(test_platform, releases):
         
         try:
             # Download binary
-            if not download_engine(sha1, platform, filename, str(binary_path)):
+            if not download_engine(sha1, version, platform, filename, str(binary_path)):
                 print(f"Failed to download binary for {version}")
                 return
             cleanup_paths.append(binary_path)
@@ -851,7 +933,7 @@ def main():
                 
                 try:
                     # Download bob.jar
-                    if not download_bob_jar(sha1, str(jar_path)):
+                    if not download_bob_jar(sha1, version, str(jar_path)):
                         print(f"Failed to download bob.jar for {version}, skipping...")
                         continue
                     cleanup_paths.append(jar_path)
@@ -888,13 +970,13 @@ def main():
                     
                     try:
                         # Download main binary
-                        if not download_engine(sha1, platform, filename, str(binary_path)):
+                        if not download_engine(sha1, version, platform, filename, str(binary_path)):
                             print(f"Failed to download binary for {version}, skipping...")
                             continue
                         cleanup_paths.append(binary_path)
                         
                         # Download dSYM file
-                        if not download_file(sha1, f"engine/{platform}", f"{filename}.dSYM.zip", str(dsym_zip_path)):
+                        if not download_engine_dsym(sha1, version, platform, filename, str(dsym_zip_path)):
                             print(f"Failed to download dSYM for {version}, skipping...")
                             continue
                         cleanup_paths.append(dsym_zip_path)
@@ -949,7 +1031,7 @@ def main():
                     
                     try:
                         # Download binary
-                        if not download_engine(sha1, platform, filename, str(binary_path)):
+                        if not download_engine(sha1, version, platform, filename, str(binary_path)):
                             print(f"Failed to download {version}, skipping...")
                             continue
                         cleanup_paths.append(binary_path)
@@ -1030,7 +1112,7 @@ def main():
             
             try:
                 # Download editor
-                if not download_editor(sha1, editor_platform, filename, str(editor_path)):
+                if not download_editor(sha1, version, editor_platform, filename, str(editor_path)):
                     print(f"Failed to download editor for {version}, skipping...")
                     continue
                 cleanup_paths.append(editor_path)
