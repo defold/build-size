@@ -105,8 +105,27 @@ class DefoldDashboard {
     }
     
     compareVersions(v1, v2) {
-        const a = v1.split('.').map(Number);
-        const b = v2.split('.').map(Number);
+        const parseVersion = (version) => {
+            let base = version;
+            let suffix = null;
+            if (version.includes('-')) {
+                const parts = version.split('-', 2);
+                base = parts[0];
+                suffix = parts[1].toLowerCase();
+            }
+            const nums = base.split('.').map(value => parseInt(value, 10) || 0);
+            let stageOrder = 2;
+            if (suffix === 'alpha') {
+                stageOrder = 0;
+            } else if (suffix === 'beta') {
+                stageOrder = 1;
+            }
+            nums.push(stageOrder);
+            return nums;
+        };
+
+        const a = parseVersion(v1);
+        const b = parseVersion(v2);
         
         for (let i = 0; i < Math.max(a.length, b.length); i++) {
             const numA = a[i] || 0;

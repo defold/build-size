@@ -229,11 +229,13 @@ def get_bundle_size_from_bob(sha1, platform, _):
         return 0
 
 
-def get_latest_version():
-    url = "http://d.defold.com/stable/info.json"
+def get_latest_release(channel):
+    url = "http://d.defold.com/{}/info.json".format(channel)
     response = urllib.request.urlopen(url)
     if response.getcode() == 200:
-        return json.loads(response.read())
+        data = json.loads(response.read())
+        data["channel"] = channel
+        return data
     return {}
 
 def read_releases(path):
@@ -241,21 +243,6 @@ def read_releases(path):
         d = json.loads(f.read())
         return d
     return {}
-
-def version_to_number(version):
-    tokens = version.split('.')
-    ints = list(map(int, tokens))
-    n = ints[0] * 100000 + ints[1] * 1000 + ints[2]
-    return n
-
-
-def number_to_version(number):
-    major = number // 100000
-    number -= major * 100000
-    middle = number // 1000
-    number -= middle * 1000 #minor
-    return "%d.%d.%d" % (major, middle, number)
-
 
 def print_report(report):
 
@@ -325,8 +312,7 @@ def read_report(path):
     return report
 
 def sort_versions(versions):
-    version_numbers = list(map(lambda x: version_to_number(x), versions))
-    return list(map(lambda x: number_to_version(x), sorted(version_numbers)))
+    return sorted(versions, key=parse_version)
 
 def write_report(path, report):
     #format:
@@ -358,10 +344,28 @@ def write_report(path, report):
     print("Wrote {}".format(path))
 
 
-def create_report(report_filename, releases, report_platforms, fn):
+def create_report(report_filename, releases, report_platforms, fn, forced_versions=None):
     print("Creating {}".format(report_filename))
 
     report = read_report(report_filename)
+    changed = False
+    forced_versions = forced_versions or set()
+    releases_versions = set(map(lambda x: x["version"], releases))
+
+    # Remove versions that no longer exist in the releases list
+    removed_versions = []
+    for version in list(report['version']):
+        if version not in releases_versions:
+            report['version'].remove(version)
+            removed_versions.append(version)
+    if removed_versions:
+        for platform, platform_data in report.items():
+            if platform == 'version':
+                continue
+            for version in removed_versions:
+                if version in platform_data:
+                    del platform_data[version]
+        changed = True
 
     # Remove old platforms
     supported_platforms = list(map(lambda x: x['platform'], report_platforms))
@@ -374,11 +378,13 @@ def create_report(report_filename, releases, report_platforms, fn):
             delete_keys.append(key)
     for key in delete_keys:
         del report[key]
+        changed = True
 
     # Add new platforms
     for platform in supported_platforms:
         if not platform in report:
             report[platform] = OrderedDict()
+            changed = True
 
 
     # go through the releases one by one and either use existing size data
@@ -388,11 +394,23 @@ def create_report(report_filename, releases, report_platforms, fn):
         sha1 = release["sha1"]
 
         if version in report['version']:
-            print(f"  Version {version} already exists")
+            if version in forced_versions:
+                print("  Version {} updated - Getting size".format(version))
+                for report_platform in report_platforms:
+                    platform = report_platform["platform"]
+                    filename = report_platform["filename"]
+                    print(f"  Making report for {platform}...")
+                    size = fn(sha1, platform, filename)
+                    print(f"  Resported size: {platform} {size}")
+                    report[platform][version] = size
+                changed = True
+            else:
+                print(f"  Version {version} already exists")
             continue # we already had the report for this version
 
         report['version'].append(version)
         print("Found new version {} - Getting size".format(version))
+        changed = True
 
         for report_platform in report_platforms:
             platform = report_platform["platform"]
@@ -402,11 +420,27 @@ def create_report(report_filename, releases, report_platforms, fn):
             print(f"  Resported size: {platform} {size}")
             report[platform][version] = size
 
-    write_report(report_filename, report)
-    print("Creating {} - ok".format(report_filename))
+    if changed:
+        write_report(report_filename, report)
+        print("Creating {} - ok".format(report_filename))
+    else:
+        print("No changes for {}".format(report_filename))
+    return changed
 
 def parse_version(version_str):
-    return tuple(map(int, version_str.split('.'))) # make it into a tuple
+    base = version_str
+    suffix = None
+    if '-' in version_str:
+        base, suffix = version_str.split('-', 1)
+        suffix = suffix.lower()
+    tokens = base.split('.')
+    ints = list(map(int, tokens))
+    stage_order = 2
+    if suffix == 'alpha':
+        stage_order = 0
+    elif suffix == 'beta':
+        stage_order = 1
+    return (ints[0], ints[1], ints[2], stage_order)
 
 def create_graph(report_filename, out, from_version=None):
     print("Creating {}".format(out))
@@ -480,22 +514,68 @@ def create_graph(report_filename, out, from_version=None):
     print("Creating {} - ok".format(out))
 
 
-def check_for_updates(latest_release, releases):
-    # Is the release already present?
-    for release in releases['releases']:
-        if latest_release['version'] == release['version']:
-            return False
-    return True
+def update_releases_with_channels(releases, latest_stable, latest_beta, latest_alpha):
+    releases_list = releases['releases']
+    changed = False
+    forced_versions = set()
+
+    filtered_releases = []
+    for release in releases_list:
+        version = release.get("version", "")
+        if version.endswith("-alpha") or version.endswith("-beta"):
+            changed = True
+            continue
+        filtered_releases.append(release)
+    releases_list = filtered_releases
+
+    def upsert_release(version, sha1):
+        nonlocal changed
+        existing = next((r for r in releases_list if r['version'] == version), None)
+        if existing is None:
+            releases_list.append({"version": version, "sha1": sha1})
+            changed = True
+            forced_versions.add(version)
+            return
+        if existing.get("sha1") != sha1:
+            existing["sha1"] = sha1
+            changed = True
+            forced_versions.add(version)
+
+    stable_version = None
+    if latest_stable:
+        stable_version = latest_stable.get("version")
+        if stable_version and latest_stable.get("sha1"):
+            upsert_release(stable_version, latest_stable["sha1"])
+
+    if latest_beta and latest_beta.get("version") and latest_beta.get("sha1"):
+        beta_version = latest_beta["version"]
+        if beta_version != stable_version:
+            upsert_release("{}-beta".format(beta_version), latest_beta["sha1"])
+
+    if latest_alpha and latest_alpha.get("version") and latest_alpha.get("sha1"):
+        alpha_version = latest_alpha["version"]
+        upsert_release("{}-alpha".format(alpha_version), latest_alpha["sha1"])
+
+    releases['releases'] = releases_list
+    return changed, forced_versions
 
 
-# latest_release = { "version": "1.3.3", "sha1": "287c945fab310c324493e08b191ee1b1538ef973"}
-latest_release = get_latest_version()
+# latest_stable = { "version": "1.3.3", "sha1": "287c945fab310c324493e08b191ee1b1538ef973"}
+latest_stable = get_latest_release("stable")
+latest_beta = get_latest_release("beta")
+latest_alpha = get_latest_release("alpha")
 
 releases = read_releases('releases.json')
 
-if check_for_updates(latest_release, releases):
-    print("Found new release {}".format(latest_release))
-    releases['releases'].append(latest_release)
+releases_changed, forced_versions = update_releases_with_channels(
+    releases,
+    latest_stable,
+    latest_beta,
+    latest_alpha,
+)
+
+if releases_changed:
+    print("Found updated release info")
 
     # update the releases on disc
     with open('releases_new.json', 'w') as f:
@@ -507,17 +587,45 @@ if check_for_updates(latest_release, releases):
 # update reports (if releases are missing from a report file)
 print("Creating reports")
 # create_report("legacy_engine_report.csv", releases['releases'], engines, get_engine_size_from_aws)
-create_report("engine_report.csv", releases['releases'], engines, get_engine_size)
-create_report("bundle_report.csv", releases['releases'], bundles, get_bundle_size_from_bob)
-create_report("bob_report.csv", releases['releases'], bob_files, get_bob_size_from_aws)
-create_report("editor_report.csv", releases['releases'], editor_files, get_editor_size_from_aws)
+reports_changed = False
+reports_changed |= create_report(
+    "engine_report.csv",
+    releases['releases'],
+    engines,
+    get_engine_size,
+    forced_versions,
+)
+reports_changed |= create_report(
+    "bundle_report.csv",
+    releases['releases'],
+    bundles,
+    get_bundle_size_from_bob,
+    forced_versions,
+)
+reports_changed |= create_report(
+    "bob_report.csv",
+    releases['releases'],
+    bob_files,
+    get_bob_size_from_aws,
+    forced_versions,
+)
+reports_changed |= create_report(
+    "editor_report.csv",
+    releases['releases'],
+    editor_files,
+    get_editor_size_from_aws,
+    forced_versions,
+)
 
 
 # create graphs based on the different reports
-print("Creating graphs")
-# create_graph("legacy_engine_report.csv", out='legacy_engine_size.png')
-# create_graph("legacy_engine_report.csv", out='legacy_engine_size_stripped.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
-create_graph("engine_report.csv", out='engine_size.png', from_version='1.2.166')
-create_graph("bundle_report.csv", out='bundle_size.png', from_version='1.2.166')
-create_graph("bob_report.csv", out='bob_size.png', from_version='1.2.166')
-create_graph("editor_report.csv", out='editor_size.png', from_version='1.3.6')
+if reports_changed:
+    print("Creating graphs")
+    # create_graph("legacy_engine_report.csv", out='legacy_engine_size.png')
+    # create_graph("legacy_engine_report.csv", out='legacy_engine_size_stripped.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
+    create_graph("engine_report.csv", out='engine_size.png', from_version='1.2.166')
+    create_graph("bundle_report.csv", out='bundle_size.png', from_version='1.2.166')
+    create_graph("bob_report.csv", out='bob_size.png', from_version='1.2.166')
+    create_graph("editor_report.csv", out='editor_size.png', from_version='1.3.6')
+else:
+    print("Reports unchanged - skipping graph generation")

@@ -13,7 +13,19 @@ from collections import defaultdict
 
 def parse_version(version_str):
     """Parse version string into tuple for comparison"""
-    return tuple(map(int, version_str.split('.')))
+    base = version_str
+    suffix = None
+    if '-' in version_str:
+        base, suffix = version_str.split('-', 1)
+        suffix = suffix.lower()
+    tokens = base.split('.')
+    ints = list(map(int, tokens))
+    stage_order = 2
+    if suffix == 'alpha':
+        stage_order = 0
+    elif suffix == 'beta':
+        stage_order = 1
+    return (ints[0], ints[1], ints[2], stage_order)
 
 def read_releases(path):
     """Read releases from JSON file"""
@@ -724,6 +736,14 @@ def main():
     
     # Read releases first
     releases = read_releases('releases.json')
+
+    # Read existing analysis index to detect SHA1 changes
+    size_data_dir = Path("size-analyzer")
+    analysis_index_path = size_data_dir / "analysis_index.json"
+    existing_index = {}
+    if analysis_index_path.exists():
+        with open(analysis_index_path, 'r') as f:
+            existing_index = json.load(f)
     
     # If test mode, run test and exit
     if args.test:
@@ -772,6 +792,24 @@ def main():
     
     # Build version to SHA1 mapping from all releases (not just filtered ones)
     version_to_sha1 = {release['version']: release['sha1'] for release in releases['releases']}
+    releases_version_set = set(version_to_sha1.keys())
+
+    def get_existing_sha1(platform, version):
+        platform_data = existing_index.get("platforms", {}).get(platform, {})
+        for version_info in platform_data.get("versions", []):
+            if version_info.get("version") == version:
+                return version_info.get("sha1")
+        return None
+
+    def cleanup_stale_csvs(directory, allowed_versions):
+        for csv_file in directory.glob("*.csv"):
+            version = csv_file.stem
+            if version not in allowed_versions:
+                try:
+                    csv_file.unlink()
+                    print(f"Removed stale analysis: {csv_file}")
+                except Exception as e:
+                    print(f"Warning: Failed to remove stale analysis {csv_file}: {e}")
     
     # Process each platform
     for platform, filename in platforms_config.items():
@@ -795,9 +833,13 @@ def main():
             csv_path = platform_dir / csv_filename
             
             if csv_path.exists():
-                print(f"Analysis already exists: {csv_path}")
-                processed_versions.append(version)
-                continue
+                existing_sha1 = get_existing_sha1(platform, version)
+                if existing_sha1 and existing_sha1 != sha1:
+                    print(f"Analysis exists but SHA1 changed ({existing_sha1} -> {sha1}), reprocessing...")
+                else:
+                    print(f"Analysis already exists: {csv_path}")
+                    processed_versions.append(version)
+                    continue
             
             if platform == "bob.jar":
                 # Handle bob.jar analysis
@@ -934,10 +976,13 @@ def main():
             print(f"Completed processing {version} for {platform}")
         
         # Get all existing CSV files for this platform to include in index
+        cleanup_stale_csvs(platform_dir, releases_version_set)
         existing_csvs = list(platform_dir.glob("*.csv"))
         all_versions = []
         for csv_file in existing_csvs:
             version = csv_file.stem
+            if version not in releases_version_set:
+                continue
             sha1 = version_to_sha1.get(version, "unknown")
             all_versions.append({"version": version, "sha1": sha1})
         all_platforms_versions[platform] = all_versions
@@ -966,9 +1011,13 @@ def main():
             csv_path = editor_platform_dir / csv_filename
             
             if csv_path.exists():
-                print(f"Editor analysis already exists for {version}")
-                processed_versions.append(version)
-                continue
+                existing_sha1 = get_existing_sha1(f"editor-{editor_platform}", version)
+                if existing_sha1 and existing_sha1 != sha1:
+                    print(f"Editor analysis exists but SHA1 changed ({existing_sha1} -> {sha1}), reprocessing...")
+                else:
+                    print(f"Editor analysis already exists for {version}")
+                    processed_versions.append(version)
+                    continue
             
             # Download and extract editor
             editor_filename = f"editor_{version}_{editor_platform}.zip"
@@ -1022,10 +1071,13 @@ def main():
                             print(f"Warning: Failed to clean up {path}: {e}")
         
         # Get all existing CSV files for this editor platform to include in index
+        cleanup_stale_csvs(editor_platform_dir, releases_version_set)
         existing_csvs = list(editor_platform_dir.glob("*.csv"))
         editor_versions = []
         for csv_file in existing_csvs:
             version = csv_file.stem
+            if version not in releases_version_set:
+                continue
             sha1 = version_to_sha1.get(version, "unknown")
             editor_versions.append({"version": version, "sha1": sha1})
         all_platforms_versions[f"editor-{editor_platform}"] = editor_versions
@@ -1034,12 +1086,6 @@ def main():
     
     # Update analysis index with all platforms and versions
     analysis_index_path = size_data_dir / "analysis_index.json"
-    
-    # Read existing index or create new one
-    existing_index = {}
-    if analysis_index_path.exists():
-        with open(analysis_index_path, 'r') as f:
-            existing_index = json.load(f)
     
     index = {"platforms": {}}
     
@@ -1055,8 +1101,8 @@ def main():
         updated_versions = []
         for version_info in version_data:
             version = version_info["version"]
-            # Prefer existing SHA1, then version_to_sha1, then current value
-            sha1 = existing_sha1_map.get(version, version_to_sha1.get(version, version_info["sha1"]))
+            # Prefer current release SHA1, then existing, then current value
+            sha1 = version_to_sha1.get(version, existing_sha1_map.get(version, version_info["sha1"]))
             updated_versions.append({"version": version, "sha1": sha1})
         
         # Sort by version

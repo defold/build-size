@@ -106,7 +106,22 @@ class DataProcessor {
     static parseVersion(version) {
         // Ensure version is a string
         const versionStr = typeof version === 'string' ? version : String(version);
-        return versionStr.split('.').map(Number);
+        let base = versionStr;
+        let suffix = null;
+        if (versionStr.includes('-')) {
+            const parts = versionStr.split('-', 2);
+            base = parts[0];
+            suffix = parts[1].toLowerCase();
+        }
+        const nums = base.split('.').map(value => parseInt(value, 10) || 0);
+        let stageOrder = 2;
+        if (suffix === 'alpha') {
+            stageOrder = 0;
+        } else if (suffix === 'beta') {
+            stageOrder = 1;
+        }
+        nums.push(stageOrder);
+        return nums;
     }
 
     static compareVersions(v1, v2) {

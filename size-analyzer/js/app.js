@@ -119,13 +119,15 @@ class DefoldSizeAnalyzer {
         // Check if it's the new format (array of objects with version/sha1)
         if (versions.length > 0 && typeof versions[0] === 'object' && versions[0].version) {
             const extractedVersions = versions.map(v => v.version);
+            extractedVersions.sort(DataProcessor.compareVersions.bind(DataProcessor));
             console.log(`Extracted version strings:`, extractedVersions);
             return extractedVersions;
         }
         
         // Old format (array of strings)
-        console.log(`Using old format versions:`, versions);
-        return versions;
+        const sortedVersions = versions.slice().sort(DataProcessor.compareVersions.bind(DataProcessor));
+        console.log(`Using old format versions:`, sortedVersions);
+        return sortedVersions;
     }
     
     onPlatformChange() {
