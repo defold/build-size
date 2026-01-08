@@ -1,11 +1,11 @@
 symbol_group_name,vmsize,filesize
 dmScript,632171,142720
 dmGameSystem,398146,544181
-[section .rodata],337307,337307
-dmGraphics,138033,192726
-dmGui,113139,148475
-dmGameObject,110764,156487
+[section .rodata],337291,337291
+dmGraphics,138077,192777
+dmGui,113139,148482
 dmCrash,110750,11042
+dmGameObject,110592,155892
 basist,107919,111865
 _compress_* (library),104967,106278
 dmRender,94148,133602
@@ -14,11 +14,11 @@ std,77302,96335
 _pfb,65536,65561
 [section .ARM.exidx],60856,60856
 dmHashTable<>,50764,63431
-_GLOBAL_* (library),47808,53893
+_GLOBAL_* (library),47800,53885
 (anonymous namespace),44188,102929
 dmParticle,39873,50341
 dmPhysics,37925,58041
-dmResource,36380,51392
+dmResource,36328,51348
 dmSound,25265,32608
 _ssl_* (library),22756,31372
 btConeTwistConstraint,22000,25064
@@ -30,7 +30,7 @@ _load_* (library),18688,19796
 dmRig,18544,23228
 btCollisionWorld,18289,25117
 _cf_* (library),17380,26649
-dmDDF,16400,25754
+dmDDF,16404,25758
 vwin8192,16384,16409
 btDiscreteDynamicsWorld,15764,21069
 dmLiveUpdate,15297,20794
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 [section .gnu.hash],6112,6112
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5832,5832
+[section .text],5840,5840
 [section .dynstr],5816,5816
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -2388,17 +2388,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5341087
-[section .debug_loc],0,2902506
-[section .debug_line],0,2265030
-[section .debug_str],0,1749491
-[section .debug_ranges],0,910912
+[section .debug_info],0,5340922
+[section .debug_loc],0,2902453
+[section .debug_line],0,2264885
+[section .debug_str],0,1749050
+[section .debug_ranges],0,910928
 [section .debug_abbrev],0,424536
-[section .debug_frame],0,267196
+[section .debug_frame],0,267156
 [section .symtab],0,44080
 [section .strtab],0,17296
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,9
+[Unmapped],0,14

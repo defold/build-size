@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3829760,3826560
+[__LINKEDIT],3829760,3826128
 MVK_spirv_cross,1692352,1692208
 dmScript,634444,109824
-dmGameSystem,409796,408460
+dmGameSystem,409844,408508
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",240570,240570
+"_TEXT,_* (library)",240554,240554
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,122996,122012
-dmGameObject,117704,117680
+dmGameObject,117512,117488
 dmCrash,112164,6516
-dmGraphics,110865,109833
+dmGraphics,110881,109849
 (anonymous namespace),110736,110736
 dmRender,107080,106792
 _except_* (library),106140,106140
@@ -34,7 +34,7 @@ dmPhysics,42188,42072
 stbi__process_marker(),41886,41886
 _recff_* (library),36656,36656
 btConeTwistConstraint,36152,36152
-dmResource,34992,34992
+dmResource,34912,34912
 MVKObjectPool<>,34117,34117
 dmRig,32792,32768
 MVKPhysicalDevice,32741,32677
@@ -64,7 +64,7 @@ _vwin8192,16384,16384
 MVKCommandEncoder,16224,16224
 dmLiveUpdate,15820,14724
 MVKRenderSubpass,15779,15779
-dmDDF,15640,15576
+dmDDF,15672,15608
 _KHR_* (library),15340,0
 MVKDescriptorPool,15174,15174
 glsl_entries,14912,14912
@@ -525,7 +525,6 @@ _ZN22MVKCmdClearAttachmentsILm4EE16populateVerticesEP17MVKCommandEncoderPDv4_* (
 _csctx_* (library),864,864
 MVKPipelineStatisticsQueryPool,857,857
 MVKFunctionSpecializer,857,857
-dmEngineDDF,856,856
 b2ChainAndCircleContact,856,856
 b2ChainAndPolygonContact,856,856
 btSphereShape,856,856
@@ -541,8 +540,10 @@ _dmPropertiesDDF_* (library),844,672
 MVKRenderPipelineCompiler,844,844
 MVKSwapchainImage,844,844
 MVKCombinedImageSamplerDescriptor,844,844
+[__TEXT],836,5596
 b2StackAllocator,832,832
 MVKSamplerDescriptorMixin,828,828
+dmEngineDDF,824,824
 _dmBufferDDF_* (library),824,656
 _vkCmdBindVertexBuffers2,816,816
 __glfwInitVulkan,800,800
@@ -612,7 +613,6 @@ _tab_* (library),624,624
 spvPushOperandTypes(),624,624
 dmRigDDF,624,624
 MVKCmdClearColorImage<>,620,620
-[__TEXT],612,5372
 -[GLFWContentView flagsChanged:],592,592
 __glfwPollJoystickCocoa,592,592
 _vkCmdBlitImage,592,592

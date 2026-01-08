@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3768320,3758688
+[__LINKEDIT],3768320,3758320
 MVK_spirv_cross,1517052,1516908
 dmScript,625120,100500
 basist,373493,358633
-dmGameSystem,347168,345856
+dmGameSystem,347128,345816
 std,291979,291979
-"_TEXT,_* (library)",274298,274298
+"_TEXT,_* (library)",274282,274282
 _lj_* (library),226741,226741
 _variable_* (library),127354,127354
 _mbedtls_* (library),126868,126708
 dmCrash,113688,7008
 _except_* (library),110720,110720
 (anonymous namespace),106036,106036
-dmGameObject,96012,95988
+dmGameObject,95848,95824
 dmGui,92108,91140
-dmGraphics,89049,88048
+dmGraphics,89057,88056
 dmRender,83740,83452
 _LZ4_* (library),68100,68100
 MVKPixelFormats,66490,66466
@@ -22,7 +22,7 @@ _pfb,65548,65548
 __watermarkTextureContent,65536,65536
 MVKInstance,60619,60619
 spvtools,60399,60399
-_GLOBAL_* (library),56376,56376
+_GLOBAL_* (library),56372,56372
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
 _LZ4HC_* (library),42488,42488
@@ -33,7 +33,7 @@ _recff_* (library),33977,33977
 dmParticle,32028,31860
 MVKGraphicsPipeline,31566,31566
 opencl_entries,29808,29808
-dmResource,29448,29448
+dmResource,29340,29340
 MVKSmallVectorImpl<>,28748,28748
 MVKPhysicalDevice,27713,27649
 MVKCommandTypePool<>,25631,25631
@@ -62,7 +62,7 @@ btDiscreteDynamicsWorld,15016,15016
 glsl_entries,14904,14904
 __glfw,14744,0
 dmRig,14572,14548
-dmDDF,14384,14320
+dmDDF,14412,14348
 _field_* (library),14344,14344
 MVKCommandEncoder,14268,14268
 btSequentialImpulseConstraintSolver,14116,14116
@@ -72,10 +72,10 @@ MVKImage,13510,13510
 dmInput,13508,12484
 MVKCmdBufferImageCopy<>,13425,13425
 _DATA_* (library),13136,13136
+[__TEXT],12901,17677
 _dmGameSystemDDF_* (library),12864,9008
 MVKDescriptorPool,12790,12790
 _rec_* (library),12780,12780
-[__TEXT],12565,17341
 _EXT_* (library),11960,0
 MVKRenderSubpass,11711,11711
 "_DATA,_* (library)",11336,11336
@@ -1354,7 +1354,6 @@ _dmExportedSymbols,152,152
 _mvkMTLTextureUsageFromVkImageUsageFlags,152,152
 _setpath,152,152
 _Components_* (library),152,152
-dmEngineDDF,152,152
 -[GLFWContentView setMarkedText:selectedRange:replacementRange:],148,148
 __glfwGetWindowPosCocoa,148,148
 __glfwStringInExtensionString,148,148
@@ -1572,6 +1571,7 @@ btAlignedAllocInternal(),112,112
 dmHashReverseSafe32Alloc(),112,112
 dmHashReverseSafe64Alloc(),112,112
 dmOpaqueHandleContainer<>,112,112
+dmEngineDDF,112,112
 _package_* (library),112,112
 _md5_* (library),112,112
 _sha1_* (library),112,112

@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3276800,3272000
+[__LINKEDIT],3276800,3271712
 MVK_spirv_cross,1475800,1475656
 dmScript,619720,95308
 basist,359070,344208
-dmGameSystem,339913,338713
+dmGameSystem,339833,338633
 std,269750,269750
-"_TEXT,_* (library)",264312,264312
+"_TEXT,_* (library)",264284,264284
 _lj_* (library),224857,224857
 _variable_* (library),128058,128058
 dmCrash,112852,6172
 _except_* (library),106148,106148
 _mbedtls_* (library),102272,102268
 (anonymous namespace),101418,101418
-dmGameObject,93380,93356
+dmGameObject,93196,93172
 dmGui,87106,86138
 dmGraphics,84407,83406
 dmRender,81576,81472
@@ -74,10 +74,10 @@ _EXT_* (library),11960,0
 MVKRenderSubpass,11247,11247
 dmEasing,10824,10824
 MVKExtensionList,10687,10687
+_mh_* (library),10448,32
 _zip_* (library),10380,10380
 _vorbis_* (library),10252,10252
 "_DATA,_* (library)",10184,10184
-_mh_* (library),10160,32
 MVKDescriptorSetLayoutBinding,9894,9894
 _expr_* (library),9812,9812
 _dmRenderDDF_* (library),9612,7160
@@ -1837,6 +1837,7 @@ _mvkMTLIndexTypeSizeInBytes,20,20
 _mvkMipmapBaseSizeFromLevelSize2D,20,20
 spvIsExtendedInstruction(),20,20
 stbi__compute_huffman_codes(),20,20
+[__TEXT],17,10361
 -[GLFWContentView drawRect:],16,16
 FontCollectionGetFontCount(),16,16
 GetAscentTTF(),16,16
@@ -1925,7 +1926,6 @@ _sha512_* (library),16,16
 dmEngineDDF,16,16
 dmGuiDDF,16,16
 dmLiveUpdateDDF,16,16
-[__TEXT],13,10069
 _row_* (library),13,13
 -[GLFWContentView selectedRange],12,12
 -[GLFWContentView validAttributesForMarkedText],12,12
