@@ -2,11 +2,11 @@ symbol_group_name,vmsize,filesize
 [__LINKEDIT],3325952,3322120
 MVK_spirv_cross,1642853,1642709
 dmScript,628836,104232
-dmGameSystem,407560,406344
+dmGameSystem,407768,406552
 basist,375871,361007
 std,285795,285795
 _lj_* (library),248120,248120
-"_TEXT,_* (library)",228378,228378
+"_TEXT,_* (library)",228634,228634
 _variable_* (library),127496,127496
 dmGui,118244,117260
 dmGameObject,115160,115136
@@ -14,7 +14,7 @@ dmCrash,111620,5972
 dmGraphics,108530,107514
 _mbedtls_* (library),105712,105696
 (anonymous namespace),104700,104700
-dmRender,102800,102504
+dmRender,103040,102744
 MVKPixelFormats,101738,101714
 _except_* (library),101612,101612
 _GLOBAL_* (library),68016,68016
@@ -112,7 +112,6 @@ MVKDeviceMemory,7860,7860
 btIDebugDraw,7712,7712
 _json_* (library),7712,7696
 _ciphersuite_* (library),7632,7632
-_mh_* (library),7584,32
 _clspvreflection_* (library),7552,7552
 MVKSwapchain,7487,7487
 b2ContactSolver,7472,7472
@@ -122,6 +121,7 @@ btConvexConvexAlgorithm,7072,7072
 MVKQueue,7036,7036
 MVKCmdBeginRenderPass<>,7016,7016
 MVKDescriptorSet,6915,6915
+_mh_* (library),6880,32
 b2PrismaticJoint,6880,6880
 _deflate_* (library),6880,6880
 MVKCommandEncodingPool,6841,6841
@@ -1279,7 +1279,7 @@ _LiveUpdateExt1013,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
-_ResourceTypeFont978,128,0
+_ResourceTypeFont1003,128,0
 _ResourceTypeGameObject230,128,0
 _ResourceTypeGui347,128,0
 _ResourceTypeGuiScript158,128,0
@@ -1883,7 +1883,7 @@ dmEngineService,32,32
 dmGamesysDDF,32,32
 dmGuiDDF,32,32
 dmLiveUpdateDDF,32,32
-[__TEXT],29,7509
+[__TEXT],29,6805
 VkPhysicalDeviceFeatures2,28,28
 VkPhysicalDeviceFeatures,27,27
 rmtp_SoundPlaying(),24,24

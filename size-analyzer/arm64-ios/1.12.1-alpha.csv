@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1835008,1826952
+[__LINKEDIT],1835008,1828640
 dmScript,620672,96060
-dmGameSystem,338560,336064
+dmGameSystem,338916,336244
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",148564,148564
+"_TEXT,_* (library)",149088,149088
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
 basist,97742,82884
 dmGameObject,92860,92836
-dmGui,86548,85580
-dmRender,81312,81024
+dmGui,88056,87088
+dmRender,81464,81176
 dmGraphics,71941,70956
 _pfb,65544,65544
-_GLOBAL_* (library),37328,37328
+_GLOBAL_* (library),37332,37332
 _cp_* (library),34652,34652
-stbi__process_marker(),33030,33030
+stbi__process_marker(),33192,33192
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
 std,29240,29240
@@ -22,15 +22,15 @@ dmParticle,29196,29028
 dmResource,27244,27244
 _load_* (library),21176,21176
 dmHashTable<>,20776,20776
-[__TEXT],20690,36970
 dmSound,19352,19200
 _lua_* (library),19256,19256
-dmEngine,17336,17320
+dmEngine,17592,17576
+[__TEXT],17224,33504
 btCollisionWorld,16572,16568
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 dmLiveUpdate,15700,14604
-_OBJC_* (library),14740,14740
+_OBJC_* (library),14964,14964
 btDiscreteDynamicsWorld,14436,14436
 _lex_* (library),14292,14292
 btSequentialImpulseConstraintSolver,13860,13860
@@ -49,8 +49,8 @@ _serialize_* (library),9780,9780
 _dmRenderDDF_* (library),9612,7160
 b2World,9564,9564
 _dmRigDDF_* (library),9444,6896
-[__DATA],9136,12
 gjkepa2_impl,9044,9044
+[__DATA],8872,4
 dmHttpCache,8653,8653
 dmHID,8520,8448
 _gc_* (library),8228,8228
@@ -77,8 +77,8 @@ dmJobThread,5984,5968
 dmSocket,5972,5972
 _bcwrite_* (library),5968,5968
 _bcread_* (library),5852,5852
-"_DATA,_* (library)",5808,5808
-_objc_* (library),5760,5760
+"_DATA,_* (library)",5816,5816
+_objc_* (library),5792,5792
 b2DynamicTree,5676,5676
 dmBuffer,5668,5660
 _carith_* (library),5580,5580
@@ -128,6 +128,7 @@ dmSSLSocket,3644,3636
 _socket_* (library),3636,3636
 dmResourceProviderArchiveMutable,3596,3468
 _run_* (library),3592,3592
+dmPlatform,3560,3552
 b2Island,3508,3508
 _luaopen_* (library),3504,3504
 dmResourceProviderZip,3460,3332
@@ -137,7 +138,6 @@ _callback_* (library),3384,3384
 _dmMath_* (library),3348,2368
 btCompoundShape,3348,3348
 _ctype_* (library),3264,3264
-dmPlatform,3252,3244
 _ov_* (library),3172,3172
 b2SeparationFunction,3128,3128
 dmResourceArchive,3108,3108
@@ -218,7 +218,7 @@ btTriangleShape,1604,1604
 b2FrictionJoint,1592,1592
 b2MouseJoint,1588,1588
 _jmp_* (library),1572,1572
-__MergedGlobals,1568,192
+__MergedGlobals,1568,144
 _var_* (library),1564,1564
 _ecdsa_* (library),1556,1556
 _strfmt_* (library),1536,1536
@@ -235,6 +235,7 @@ btTransformUtil,1340,1340
 dmIntersection,1320,1320
 btConvexInternalShape,1312,1312
 _auxiliar_* (library),1308,1308
+_glfwOpenWindow,1296,1296
 _ccm_* (library),1296,1296
 dmResourceProvider,1296,1296
 dmBlockAllocator,1292,1292
@@ -278,7 +279,6 @@ _RT2,1024,0
 _RT3,1024,0
 _vwin512,1024,1024
 btSphereTriangleCollisionAlgorithm,1024,1024
-_glfwOpenWindow,1008,1008
 _compute_* (library),992,992
 btBoxBoxCollisionAlgorithm,992,992
 btCollisionShape,988,988
@@ -287,9 +287,10 @@ _compress_* (library),960,960
 _idct_* (library),956,956
 dmImage,952,952
 dmMutex,948,948
+_glfwDisable,944,944
+_OUTLINED_* (library),944,944
 dmResourceProviderFile,944,816
 btGjkConvexCast,940,940
-_OUTLINED_* (library),936,936
 _oggbyte_* (library),928,928
 _timeout_* (library),924,924
 _aes_* (library),908,904
@@ -314,7 +315,6 @@ btTriangleRaycastCallback,768,768
 b2Joint,756,756
 _jit_* (library),752,752
 _fpconv_* (library),752,752
-_glfwDisable,748,748
 _index2adr,732,732
 CProfileManager,728,656
 dmHashFinal64(),724,724
@@ -413,13 +413,14 @@ ResourceChunkCacheEvictMemory(),428,428
 _matchbracketclass,428,428
 _collect_* (library),420,420
 -[BaseView fillTouch:forPhase:],416,416
--[EAGLView createFramebuffer],416,416
 dmPPrint,412,412
 _brainpoolP512r1_* (library),412,412
+-[EAGLView createFramebuffer],404,404
 _call_* (library),404,404
+_glfwEnable,404,404
 _dmMeshDDF_* (library),400,296
-_glfwGetTouch,396,396
 _mmcall,396,396
+_glfwGetTouch,392,392
 _inflateReset2,392,392
 btNullPairCache,392,392
 dmHashClone64(),388,388
@@ -434,10 +435,8 @@ _classend,360,360
 _matchbalance,360,360
 dmHashClone32(),356,356
 stbtt_GetGlyphBox(),356,356
-__glfwClearInput,352,352
 _optset,352,352
 __glfwParseGLVersion,348,348
-_glfwEnable,348,348
 _stack_* (library),348,348
 ResourceChunkCacheGet(),340,340
 _glfwExtensionSupported,340,340
@@ -520,19 +519,18 @@ _set_* (library),252,252
 _dmHashReverse32,252,252
 _dmHashReverse64,252,252
 _zlength_* (library),248,248
+-[ViewController getIntendedFrameOrigin:],240,240
 _countint,240,240
 dmHashTable64<>,240,240
 dmStrTok(),240,240
 _secp384r1_* (library),240,240
 -[AppDelegateProxy application:didFinishLaunchingWithOptions:],236,236
--[ViewController getIntendedFrameOrigin:],236,236
 _counthash,236,236
 _inflateInit2_* (library),236,236
 dmHashInit32(),236,236
 dmHashInit64(),236,236
 _base_* (library),236,236
 -[AppDelegateProxy forwardInvocation:],232,232
--[EAGLView destroyFramebuffer],232,232
 __glfwPlatformOpenWindowVulkan,228,228
 _cdata_* (library),228,228
 _pushnexttemplate,228,228
@@ -541,6 +539,7 @@ _optget,224,224
 _return_* (library),224,224
 b2ChainShape,224,224
 dmArrayUtil,224,224
+-[EAGLView destroyFramebuffer],220,220
 -[SoundApplicationDelegate handleInterruption:],216,216
 _start_* (library),216,216
 dmEngineCreate(),216,216
@@ -600,7 +599,6 @@ _end_* (library),168,168
 _glfwAppBootstrap,168,168
 _mksymname,168,168
 +[AppDelegateProxy application:willFinishLaunchingWithOptions:],164,164
--[AppDelegate appUpdate],164,164
 _deflateReset,164,164
 _has_* (library),164,164
 _segment_* (library),164,164
@@ -624,13 +622,14 @@ _capture_* (library),152,152
 _dmExportedSymbols,152,152
 _emptybuffer,152,152
 _index2adr_* (library),152,152
-_Components_* (library),152,40
+_Components_* (library),152,8
 _ZN15dmDeviceAVAudioL17DeviceAVAudioOpenEPKN7dmSound16OpenDeviceParamsEPPv_* (library),152,152
 _package_* (library),152,152
 -[BaseView init],148,148
 _check_* (library),148,148
 _flush_* (library),148,148
 _setintfield,148,148
+-[AppDelegate appUpdate],144,144
 __glfwPlatformSetWindowBackgroundColor,144,144
 _getthread,144,144
 _glfwInit,144,144
@@ -642,6 +641,7 @@ _secp224r1_* (library),144,144
 -[ViewController createView:],140,140
 _ndigits_* (library),140,140
 _MLOOP_* (library),138,138
+__glfwInputKey,136,136
 _getboolfield,136,136
 dmEngineInitialize(),136,136
 _dmResourceDDF_* (library),136,48
@@ -663,7 +663,7 @@ _LiveUpdateExt1013,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
-_ResourceTypeFont970,128,0
+_ResourceTypeFont995,128,0
 _ResourceTypeGameObject230,128,0
 _ResourceTypeGui347,128,0
 _ResourceTypeGuiScript158,128,0
@@ -693,7 +693,6 @@ rmtp_Sprite(),128,128
 rmtp_Tilemap(),128,128
 dmPhysicsDDF,128,128
 -[SoundApplicationDelegate applicationDidBecomeActive:],124,124
-__glfwInputKey,124,124
 _libsize,124,124
 _treatstackoption,124,124
 _depth_* (library),124,124
@@ -709,15 +708,13 @@ _secp192r1_* (library),120,120
 -[BaseView textInRange:],116,116
 -[BaseView touchStart:withTouch:],116,116
 _ExtensionParamsGetContextByName,116,116
+__glfwInputMouseClick,116,116
 _free_* (library),116,116
 btPointCollector,116,116
 -[ViewController getIntendedViewSize],112,112
-__glfwInputMouseClick,112,112
 __glfwPlatformPollEvents,112,112
 __glfwThrd,112,0
 _ctoknames,112,112
-_glfwGetJoystickHats,112,112
-_glfwGetJoystickPos,112,112
 btAlignedAllocInternal(),112,112
 dmHashReverseSafe64Alloc(),112,112
 dmOpaqueHandleContainer<>,112,112
@@ -732,6 +729,8 @@ _ZN15dmDeviceAVAudioL18DeviceAVAudioQueueEPvPKvj_* (library),104,104
 _determine_* (library),104,104
 __glfwLibrary,104,0
 _glfwCloseWindow,104,104
+_glfwGetJoystickHats,104,104
+_glfwGetJoystickPos,104,104
 _glfwSwapBuffers,104,104
 _secp192k1_* (library),104,104
 FontCollectionRemoveFont(),100,100
@@ -744,11 +743,12 @@ FontGetGlyph(),96,96
 ResourceChunkCacheCreate(),96,96
 TextLayoutLegacyFree(),96,96
 _getcurrenv,96,96
+_glfwGetMouseButton,96,96
 btActivatingCollisionAlgorithm,96,96
 -[BaseView clearMarkedText],92,92
 -[BaseView dealloc],92,92
 _dec64table,92,92
-_glfwGetMouseButton,92,92
+_glfwGetKey,92,92
 _setboolfield,92,92
 recursedeletenode(),92,92
 -[ViewController viewDidAppear:],88,88
@@ -756,8 +756,6 @@ FontDestroy(),88,88
 ResourceTypeContextGetContextByHash(),88,88
 __glfwPlatformGetProcAddress,88,88
 _glfwAccelerometerEnable,88,88
-_glfwGetKey,88,88
-_glfwSetWindowSize,88,88
 _mad3sizes_* (library),88,88
 b2ContactListener,88,88
 btCollisionAlgorithm,88,88
@@ -768,6 +766,7 @@ _bitrev,86,86
 -[ViewController accelerometer:didAccelerate:],84,84
 _CALL_* (library),84,84
 _LiveUpdateExt,84,84
+_glfwSetWindowSize,84,84
 _glfwUnregisterUIApplicationDelegate,84,84
 dmLZ4,84,84
 dmSnPrintf(),84,84
@@ -816,6 +815,7 @@ _ExtensionParamsInitialize,64,64
 _LHs,64,64
 _RHs,64,64
 _glfwGetWindowSize,64,64
+_glfwSetWindowSizeCallback,64,64
 _settabsb,64,64
 _settabsi,64,64
 _settabss,64,64
@@ -829,7 +829,6 @@ _24-[AppDelegate appUpdate]_* (library),64,64
 ChunkComparePathOffsetFn(),60,60
 _ExtensionAppParamsInitialize,60,60
 _glfwSetWindowPos,60,60
-_glfwSetWindowSizeCallback,60,60
 _setpc_* (library),60,60
 _unlinkuv,60,60
 b2CollideEdgeAndPolygon(),60,60
@@ -944,6 +943,7 @@ __glfwPlatformUnacquireAuxContext,24,24
 __glfwSetMarkedText,24,24
 dmGamesysDDF,24,24
 dmModelDDF,24,24
+-[AppDelegate appUpdate].cold.1,20,20
 -[BaseView caretRectForPosition:],20,20
 -[BaseView firstRectForRange:],20,20
 -[IndexedRange range],20,20
@@ -990,6 +990,7 @@ __glfwPlatformUnacquireAuxContextOpenGL,16,16
 __glfwResetKeyboard,16,16
 _eckeydh_* (library),16,16
 _glfwGetMouseLocked,16,16
+_glfwGetiOSUIView,16,16
 _quant_* (library),16,16
 gProfileClock,16,0
 _GameObject_* (library),16,16

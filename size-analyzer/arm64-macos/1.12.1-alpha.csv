@@ -1,11 +1,11 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3768320,3758320
-MVK_spirv_cross,1517052,1516908
+[__LINKEDIT],3768320,3759744
+MVK_spirv_cross,1517047,1516903
 dmScript,625120,100500
-basist,373493,358633
-dmGameSystem,347128,345816
+basist,373487,358627
+dmGameSystem,347484,346172
 std,291979,291979
-"_TEXT,_* (library)",274282,274282
+"_TEXT,_* (library)",274539,274539
 _lj_* (library),226741,226741
 _variable_* (library),127354,127354
 _mbedtls_* (library),126868,126708
@@ -13,20 +13,20 @@ dmCrash,113688,7008
 _except_* (library),110720,110720
 (anonymous namespace),106036,106036
 dmGameObject,95848,95824
-dmGui,92108,91140
+dmGui,93812,92844
 dmGraphics,89057,88056
-dmRender,83740,83452
+dmRender,83892,83604
 _LZ4_* (library),68100,68100
 MVKPixelFormats,66490,66466
 _pfb,65548,65548
 __watermarkTextureContent,65536,65536
 MVKInstance,60619,60619
 spvtools,60399,60399
-_GLOBAL_* (library),56372,56372
+_GLOBAL_* (library),56376,56376
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
+stbi__process_marker(),42542,42542
 _LZ4HC_* (library),42488,42488
-stbi__process_marker(),42374,42374
 MVKObjectPool<>,34565,34565
 dmPhysics,34324,34208
 _recff_* (library),33977,33977
@@ -48,7 +48,7 @@ _load_* (library),20904,20904
 _asm_* (library),19661,19661
 _lua_* (library),19359,19359
 _fold_* (library),18954,18954
-dmEngine,17844,17828
+dmEngine,18100,18084
 _cp_* (library),17708,17708
 cereal,17054,17054
 btCollisionWorld,16876,16868
@@ -63,7 +63,7 @@ glsl_entries,14904,14904
 __glfw,14744,0
 dmRig,14572,14548
 dmDDF,14412,14348
-_field_* (library),14344,14344
+_field_* (library),14339,14339
 MVKCommandEncoder,14268,14268
 btSequentialImpulseConstraintSolver,14116,14116
 btAxisSweep3Internal<>,13772,13772
@@ -71,8 +71,7 @@ _ssl_* (library),13700,13700
 MVKImage,13510,13510
 dmInput,13508,12484
 MVKCmdBufferImageCopy<>,13425,13425
-_DATA_* (library),13136,13136
-[__TEXT],12901,17677
+_DATA_* (library),13104,13104
 _dmGameSystemDDF_* (library),12864,9008
 MVKDescriptorPool,12790,12790
 _rec_* (library),12780,12780
@@ -87,6 +86,7 @@ b2World,10700,10700
 MVKDescriptorSetLayoutBinding,10450,10450
 _OBJC_* (library),10332,10332
 _luaL_* (library),10104,10104
+[__TEXT],10028,14804
 _dmRenderDDF_* (library),9740,7288
 _dmRigDDF_* (library),9604,7056
 _expr_* (library),9424,9424
@@ -186,7 +186,7 @@ _dmParticleDDF_* (library),3992,3304
 btCompoundCollisionAlgorithm,3952,3952
 _pk_* (library),3952,3952
 _gc_* (library),3940,3940
-_OUTLINED_* (library),3904,3904
+_OUTLINED_* (library),3912,3912
 _process_* (library),3888,3888
 simple_json,3888,3888
 MVKCmdDrawIndexedIndirect,3884,3884
@@ -199,8 +199,8 @@ mvkPopulateShaderConversionConfig(),3812,3812
 b2GridShape,3768,3768
 _inet_* (library),3756,3756
 _serialize_* (library),3752,3752
+dmPlatform,3740,3724
 dmMessage,3724,3684
-dmPlatform,3716,3700
 b2RevoluteJoint,3668,3668
 dmSSLSocket,3660,3652
 _trace_* (library),3628,3628
@@ -1451,7 +1451,7 @@ _LiveUpdateExt1013,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
-_ResourceTypeFont970,128,0
+_ResourceTypeFont995,128,0
 _ResourceTypeGameObject230,128,0
 _ResourceTypeGui347,128,0
 _ResourceTypeGuiScript158,128,0
@@ -2280,7 +2280,6 @@ ProfileRegisterPropertyGroup(),8,8
 ProfileRegisterPropertyS32(),8,8
 ProfileRegisterPropertyU32(),8,8
 ResourceChunkCacheGetUsedMemory(),8,8
-ResourceTypeGetPreloadSize(),8,8
 ResourceTypeSetCreateFn(),8,8
 ResourceTypeSetDestroyFn(),8,8
 ResourceTypeSetPostCreateFn(),8,8

@@ -1,14 +1,14 @@
 symbol_group_name,vmsize,filesize
 dmScript,631047,141581
-dmGameSystem,397618,543749
-[section .rodata],335440,335440
+dmGameSystem,397846,544009
+[section .rodata],335696,335696
 dmGraphics,137945,192645
 dmGui,112755,148098
 dmCrash,110750,11042
 dmGameObject,110592,155892
 basist,107919,111865
 _compress_* (library),104967,106278
-dmRender,93989,133445
+dmRender,94201,133657
 std,77302,96319
 [section .rel.dyn],68392,68392
 _pfb,65536,65561
@@ -75,8 +75,8 @@ btDbvt,6360,8443
 _info_* (library),6007,6905
 [section .rel.plt],5952,5952
 dmConfigFile,5936,7177
-[section .text],5840,5840
 [section .dynstr],5837,5837
+[section .text],5832,5832
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -1193,7 +1193,7 @@ LiveUpdateExt1013,128,34
 ResourceTypeAnim35,128,35
 ResourceTypeAnimationSet103,128,44
 ResourceTypeCollection369,128,42
-ResourceTypeFont978,128,36
+ResourceTypeFont1003,128,37
 ResourceTypeGameObject230,128,42
 ResourceTypeGui347,128,35
 ResourceTypeGuiScript158,128,41
@@ -2111,6 +2111,7 @@ _l_* (library),20,50
 cp_check,20,45
 _glfwThrd,20,26
 g_Window,20,25
+[LOAD #4 [RW]],20,0
 stbi__compute_huffman_codes(),19,100
 bl_order,19,44
 cpfinalize,18,61
@@ -2434,7 +2435,6 @@ gAddedPairs,4,28
 g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
-[LOAD #4 [RW]],4,0
 stbi__process_frame_header(),3,71
 supported_init,2,47
 g_accelerometerEnabled,1,39
@@ -2443,11 +2443,11 @@ _decimal_* (library),1,38
 gDisableDeactivation,1,37
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5345655
-[section .debug_loc],0,2926914
-[section .debug_line],0,2269684
-[section .debug_str],0,1747699
-[section .debug_ranges],0,914392
+[section .debug_info],0,5345883
+[section .debug_loc],0,2927448
+[section .debug_line],0,2269920
+[section .debug_str],0,1747707
+[section .debug_ranges],0,914544
 [section .debug_abbrev],0,420608
 [section .debug_frame],0,266996
 [section .symtab],0,43936
@@ -2456,4 +2456,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,5
+[Unmapped],0,2
