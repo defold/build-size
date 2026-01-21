@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
-dmScript,632171,142713
-dmGameSystem,398566,544709
-[section .rodata],337595,337595
+dmScript,632171,142720
+dmGameSystem,399410,546341
+[section .rodata],337643,337643
 dmGraphics,138077,192777
 dmGui,115383,151274
 dmCrash,110750,11042
@@ -12,7 +12,7 @@ dmRender,94492,133946
 std,77302,96319
 [section .rel.dyn],70760,70760
 _pfb,65536,65561
-[section .ARM.exidx],60936,60936
+[section .ARM.exidx],60968,60968
 dmHashTable<>,50764,63407
 _GLOBAL_* (library),47800,53897
 (anonymous namespace),44188,102915
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5838,5838
+[section .text],5858,5858
 [section .dynstr],5816,5816
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -2032,6 +2032,7 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
+[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2192,7 +2193,6 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
-[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceRegisterReloadedCallback(),4,130
@@ -2390,17 +2390,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5346731
-[section .debug_loc],0,2907492
-[section .debug_line],0,2269237
-[section .debug_str],0,1750609
-[section .debug_ranges],0,912072
+[section .debug_info],0,5350704
+[section .debug_loc],0,2909195
+[section .debug_line],0,2269867
+[section .debug_str],0,1751796
+[section .debug_ranges],0,912288
 [section .debug_abbrev],0,424833
-[section .debug_frame],0,267496
+[section .debug_frame],0,267636
 [section .symtab],0,44112
 [section .strtab],0,17296
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,15
+[Unmapped],0,11
