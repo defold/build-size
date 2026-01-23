@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3768320,3761168
+[__LINKEDIT],3768320,3764384
 MVK_spirv_cross,1517047,1516903
 dmScript,625120,100500
 basist,373487,358627
@@ -13,8 +13,8 @@ dmCrash,113688,7008
 _except_* (library),110720,110720
 (anonymous namespace),106036,106036
 dmGameObject,95848,95824
-dmGui,93812,92844
-dmGraphics,89057,88056
+dmGui,93940,92972
+dmGraphics,91449,90408
 dmRender,83952,83664
 _LZ4_* (library),68100,68100
 MVKPixelFormats,66490,66466
@@ -25,7 +25,7 @@ spvtools,60399,60399
 _GLOBAL_* (library),56372,56372
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
-stbi__process_marker(),42542,42542
+stbi__process_marker(),42873,42873
 _LZ4HC_* (library),42488,42488
 MVKObjectPool<>,34565,34565
 dmPhysics,34324,34208
@@ -90,9 +90,8 @@ _dmRenderDDF_* (library),9740,7288
 _dmRigDDF_* (library),9604,7056
 _expr_* (library),9424,9424
 gjkepa2_impl,9356,9356
-[__TEXT],9238,14014
-[__DATA],9172,12
 btGeneric6DofConstraint,9156,9156
+[__DATA],9132,12
 dmHttpCache,9132,9132
 dmHID,9032,8960
 b2DynamicTree,8944,8944
@@ -124,6 +123,7 @@ btDbvt,6676,6676
 MVKCmdCopyImage<>,6672,6672
 _dmGraphics_* (library),6527,5136
 _ogg_* (library),6460,6460
+[__TEXT],6427,11203
 MVKResourcesCommandEncoderState,6410,6410
 _dmPhysicsDDF_* (library),6352,4624
 MVKSwapchain,6311,6311

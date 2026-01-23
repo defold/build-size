@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
 dmScript,632171,142720
 dmGameSystem,399410,546341
-[section .rodata],337643,337643
-dmGraphics,138077,192777
+[section .rodata],338355,338355
+dmGraphics,141505,197789
 dmGui,115383,151274
 dmCrash,110750,11042
 dmGameObject,110592,155909
 basist,107919,111865
 _compress_* (library),104967,106278
 dmRender,94492,133946
-std,77302,96319
+std,77302,96335
 [section .rel.dyn],70760,70760
 _pfb,65536,65561
-[section .ARM.exidx],60968,60968
+[section .ARM.exidx],61072,61072
 dmHashTable<>,50764,63407
-_GLOBAL_* (library),47800,53897
+_GLOBAL_* (library),47800,53883
 (anonymous namespace),44188,102915
 dmParticle,39873,50341
 dmPhysics,37925,58055
@@ -38,7 +38,7 @@ btSequentialImpulseConstraintSolver,15188,19119
 btAxisSweep3Internal<>,14740,19275
 _internal_* (library),14284,14721
 _mpi_* (library),14088,16667
-[section .ARM.extab],13736,13736
+[section .ARM.extab],13748,13748
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 dmInput,11927,13694
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5858,5858
+[section .text],5854,5854
 [section .dynstr],5816,5816
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -150,7 +150,7 @@ topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
 dmArray<>,2948,4456
 _cconv_* (library),2928,3379
-[section .bss],2914,0
+[section .bss],2910,0
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
@@ -325,9 +325,9 @@ btConvexInternalAabbCachingShape,1076,1703
 btCollisionShape,1072,1908
 _MaterialDesc_* (library),1068,2371
 _buffer_* (library),1067,1321
-TextLayoutLegacyCreate(),1064,1194
 _fromdB_* (library),1060,1096
 bcwrite_proto,1058,1104
+TextLayoutLegacyCreate(),1052,1182
 mapping_inverse,1052,1100
 btSphereTriangleCollisionAlgorithm,1052,2465
 btPolyhedralConvexAabbCachingShape,1048,1691
@@ -569,11 +569,11 @@ _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
 lex_number,384,443
+[LOAD #1 [R]],382,382
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
 deflatePending,376,455
-[LOAD #1 [R]],374,374
 _SpriteDesc_* (library),369,960
 deflateTune,364,440
 _cur_* (library),364,429
@@ -2390,14 +2390,14 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5350704
-[section .debug_loc],0,2909195
-[section .debug_line],0,2269867
-[section .debug_str],0,1751796
-[section .debug_ranges],0,912288
-[section .debug_abbrev],0,424833
-[section .debug_frame],0,267636
-[section .symtab],0,44112
+[section .debug_info],0,5355187
+[section .debug_loc],0,2908376
+[section .debug_line],0,2271545
+[section .debug_str],0,1755948
+[section .debug_ranges],0,912832
+[section .debug_abbrev],0,424897
+[section .debug_frame],0,268060
+[section .symtab],0,44096
 [section .strtab],0,17296
 [ELF Headers],0,1400
 [section .shstrtab],0,368

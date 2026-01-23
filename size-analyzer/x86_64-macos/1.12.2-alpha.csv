@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3829760,3829512
+[__LINKEDIT],3833856,3832520
 MVK_spirv_cross,1692352,1692208
 dmScript,634444,109824
 dmGameSystem,411044,409708
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",240762,240762
+"_TEXT,_* (library)",240794,240794
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
-dmGui,125236,124252
+dmGui,125348,124364
 dmGameObject,117512,117488
+dmGraphics,113153,112073
 dmCrash,112164,6516
-dmGraphics,110881,109849
 (anonymous namespace),110736,110736
 dmRender,107368,107080
 _except_* (library),106140,106140
@@ -29,9 +29,9 @@ MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
 dmParticle,55776,55608
 _LZ4HC_* (library),49440,49440
+stbi__process_marker(),42382,42382
 MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42072
-stbi__process_marker(),42062,42062
 _recff_* (library),36656,36656
 btConeTwistConstraint,36152,36152
 dmResource,34912,34912
@@ -338,6 +338,7 @@ btTransformUtil,1904,1904
 btTypedConstraint,1896,1896
 dmCrypt,1888,1888
 _idct_* (library),1872,1872
+[__TEXT],1844,6604
 _ecdsa_* (library),1829,1829
 _glfwGetGamepadState,1824,1824
 _mapping_* (library),1824,1824
@@ -349,13 +350,13 @@ MVKBaseObject,1800,1800
 _global_* (library),1792,1792
 MVKDepthStencilCommandEncoderState,1789,1789
 btTranslationalLimitMotor,1776,1776
-[__DATA],1760,8
 __glfwSetWindowMonitorCocoa,1728,1728
 b2TimeOfImpact(),1728,1728
 MVKFence,1726,1726
 _block_* (library),1724,1724
 btPerturbedContactResult,1720,1720
 btManifoldResult,1720,1720
+[__DATA],1712,8
 MVKEventEmulated,1707,1707
 CProfileManager,1704,1632
 __glfwInitEGL,1696,1696
@@ -427,11 +428,11 @@ _dmGamesysDDF_* (library),1204,824
 _ctype_* (library),1200,1200
 _aa_* (library),1200,1200
 btCollisionShape,1192,1192
-TextLayoutLegacyCreate(),1184,1184
 __glfwInputError,1184,1184
 MVKPipeline,1182,1182
 MVKEventNative,1177,1177
 MVKCmdUpdateBuffer,1173,1173
+TextLayoutLegacyCreate(),1168,1168
 _ffi_* (library),1168,1168
 _processPerformanceStats,1152,0
 MVKMTLFunction,1152,1152
@@ -724,7 +725,6 @@ _strfmt_* (library),432,432
 b2Timer,432,432
 MVKCmdSetSampleLocations,427,427
 _chachapoly_* (library),422,422
-[__TEXT],420,5180
 ResourceChunkCacheEvictPathHash(),416,416
 __glfwInitOSMesa,416,416
 _argv2ctype,416,416
