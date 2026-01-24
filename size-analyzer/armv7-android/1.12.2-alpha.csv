@@ -2,17 +2,17 @@ symbol_group_name,vmsize,filesize
 dmScript,632171,142720
 dmGameSystem,399410,546341
 [section .rodata],338355,338355
-dmGraphics,141505,197789
-dmGui,115383,151274
+dmGraphics,141505,197635
+dmGui,115383,151204
+dmGameObject,113308,160765
 dmCrash,110750,11042
-dmGameObject,110592,155909
 basist,107919,111865
 _compress_* (library),104967,106278
 dmRender,94492,133946
 std,77302,96335
 [section .rel.dyn],70760,70760
 _pfb,65536,65561
-[section .ARM.exidx],61072,61072
+[section .ARM.exidx],61144,61144
 dmHashTable<>,50764,63407
 _GLOBAL_* (library),47800,53883
 (anonymous namespace),44188,102915
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5854,5854
+[section .text],5855,5855
 [section .dynstr],5816,5816
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -569,11 +569,11 @@ _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
 lex_number,384,443
-[LOAD #1 [R]],382,382
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
 deflatePending,376,455
+[LOAD #1 [R]],374,374
 _SpriteDesc_* (library),369,960
 deflateTune,364,440
 _cur_* (library),364,429
@@ -2380,6 +2380,7 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
+_CortexA8657417_* (library),3,43
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
 g_PendingResizeBecauseOfInsets,1,47
@@ -2390,17 +2391,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5355187
-[section .debug_loc],0,2908376
-[section .debug_line],0,2271545
-[section .debug_str],0,1755948
-[section .debug_ranges],0,912832
+[section .debug_info],0,5358435
+[section .debug_loc],0,2911200
+[section .debug_line],0,2272729
+[section .debug_str],0,1757438
+[section .debug_ranges],0,913032
 [section .debug_abbrev],0,424897
-[section .debug_frame],0,268060
-[section .symtab],0,44096
+[section .debug_frame],0,268576
+[section .symtab],0,44112
 [section .strtab],0,17296
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,11
+[Unmapped],0,9
