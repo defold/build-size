@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3837952,3834992
+[__LINKEDIT],3837952,3835112
 MVK_spirv_cross,1692352,1692208
 dmScript,634444,109824
 dmGameSystem,411044,409708
@@ -214,8 +214,8 @@ b2WeldJoint,4000,4000
 MVKWatermark,3967,3967
 _ra_* (library),3952,3952
 _pk_* (library),3928,3928
-[__TEXT],3924,8684
 _inet_* (library),3856,3856
+[__TEXT],3828,8588
 dmDeviceAVAudio,3824,3824
 dmLog,3824,3520
 _gc_* (library),3808,3808
@@ -1289,6 +1289,7 @@ dmModelDDF,176,176
 dmMath,168,168
 MVKLinkableMixin<>,165,165
 mvkOSVersion(),164,160
+GBGetGlyphIndex(),160,160
 ResourceGetByHashAndExt(),160,160
 __glfwGetCursorPosCocoa,160,160
 __glfwInputKey,160,160
@@ -1814,7 +1815,6 @@ dmGamesysDDF,72,72
 ChunkComparePathOffsetFn(),64,64
 FontCollectionDestroy(),64,64
 FontDestroyTTF(),64,64
-GBGetGlyphIndex(),64,64
 MVKCommandBufferSubmitInfo,64,64
 ResourceAddFile(),64,64
 ResourceGetExtFromPath(),64,64

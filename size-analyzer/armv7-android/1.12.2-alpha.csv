@@ -12,7 +12,7 @@ dmRender,94492,133946
 std,77302,96335
 [section .rel.dyn],70760,70760
 _pfb,65536,65561
-[section .ARM.exidx],61144,61144
+[section .ARM.exidx],61152,61152
 dmHashTable<>,50764,63407
 _GLOBAL_* (library),47800,53883
 (anonymous namespace),44188,102915
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5855,5855
+[section .text],5846,5846
 [section .dynstr],5816,5816
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -569,11 +569,11 @@ _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
 lex_number,384,443
+[LOAD #1 [R]],382,382
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
 deflatePending,376,455
-[LOAD #1 [R]],374,374
 _SpriteDesc_* (library),369,960
 deflateTune,364,440
 _cur_* (library),364,429
@@ -1069,6 +1069,7 @@ btAxisSweep3,144,423
 ResourceTypeContextGetContextByHash(),144,239
 btEmptyAlgorithm,144,1115
 _glfwAndroidVerifySurfaceError,144,223
+GBGetGlyphIndex(),144,220
 onConfigurationChanged,144,215
 ExtensionAppParamsGetContextByName,144,211
 ExtensionParamsGetContextByName,144,208
@@ -1564,7 +1565,6 @@ ResourceTypeLua,68,132
 glfwCloseWindow,68,132
 mz_inflateEnd(),68,132
 bcread_error,68,129
-GBGetGlyphIndex(),68,128
 LZ4_setStreamDecode,68,120
 __divmodsi4,68,112
 stbi__bmask,68,101
@@ -2032,7 +2032,6 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
-[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2193,6 +2192,7 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
+[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceRegisterReloadedCallback(),4,130
@@ -2380,7 +2380,6 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
-_CortexA8657417_* (library),3,43
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
 g_PendingResizeBecauseOfInsets,1,47
@@ -2391,14 +2390,14 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5358435
-[section .debug_loc],0,2911200
-[section .debug_line],0,2272729
+[section .debug_info],0,5358496
+[section .debug_loc],0,2911404
+[section .debug_line],0,2272752
 [section .debug_str],0,1757438
-[section .debug_ranges],0,913032
+[section .debug_ranges],0,913040
 [section .debug_abbrev],0,424897
-[section .debug_frame],0,268576
-[section .symtab],0,44112
+[section .debug_frame],0,268588
+[section .symtab],0,44096
 [section .strtab],0,17296
 [ELF Headers],0,1400
 [section .shstrtab],0,368

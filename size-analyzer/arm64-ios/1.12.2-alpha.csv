@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1835008,1831584
+[__LINKEDIT],1835008,1831632
 dmScript,620672,96060
 dmGameSystem,339576,336904
 _lj_* (library),204580,204580
@@ -12,12 +12,12 @@ dmGui,88088,87120
 dmRender,81524,81236
 dmGraphics,74577,73552
 _pfb,65544,65544
-_GLOBAL_* (library),37332,37332
+_GLOBAL_* (library),37324,37324
 _cp_* (library),34652,34652
 stbi__process_marker(),33571,33571
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
-[__TEXT],29939,46219
+[__TEXT],29875,46155
 std,29240,29240
 dmParticle,29196,29028
 dmResource,27240,27240
@@ -693,6 +693,7 @@ rmtp_Sprite(),128,128
 rmtp_Tilemap(),128,128
 dmPhysicsDDF,128,128
 -[SoundApplicationDelegate applicationDidBecomeActive:],124,124
+GBGetGlyphIndex(),124,124
 _libsize,124,124
 _treatstackoption,124,124
 _depth_* (library),124,124
@@ -847,7 +848,6 @@ b2PairLessThan(),56,56
 -[ViewController viewDidUnload],52,52
 -[VulkanView dealloc],52,52
 FontDestroyTTF(),52,52
-GBGetGlyphIndex(),52,52
 _glfwGetMouseWheel,52,52
 _glfwIconifyWindow,52,52
 dmEngineFinalize(),52,52

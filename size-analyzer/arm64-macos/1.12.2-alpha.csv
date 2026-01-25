@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3768320,3766896
+[__LINKEDIT],3768320,3766944
 MVK_spirv_cross,1517047,1516903
 dmScript,625120,100500
 basist,373487,358627
@@ -22,7 +22,7 @@ _pfb,65548,65548
 __watermarkTextureContent,65536,65536
 MVKInstance,60619,60619
 spvtools,60399,60399
-_GLOBAL_* (library),56376,56376
+_GLOBAL_* (library),56368,56368
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
 stbi__process_marker(),42873,42873
@@ -170,9 +170,9 @@ btOptimizedBvh,4356,4356
 dmConnectionPool,4316,4316
 _meth_* (library),4252,4252
 MVKCommandBuffer,4243,4243
-[__TEXT],4203,8979
 dmSystemDDF,4169,4169
 _do_* (library),4144,4144
+[__TEXT],4139,8915
 MVKCmdClearImage<>,4138,4138
 btHashedOverlappingPairCache,4112,4112
 btBvhTriangleMeshShape,4108,4108
@@ -1513,6 +1513,7 @@ rmtp_TilemapVertexCount(),128,128
 rmtp_TilemapVertexSize(),128,128
 spvBinaryEndianness(),128,128
 spvIsValidID(),128,128
+GBGetGlyphIndex(),124,124
 _ZN31MVKQueueCommandBufferSubmission28commitActiveMTLCommandBufferEb_* (library),124,124
 __glfwSetCursorModeCocoa,124,124
 _glfwGetError,124,124
@@ -1904,7 +1905,6 @@ MVKCmdQuery,54,54
 MVKEvent,54,54
 VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT,53,53
 FontDestroyTTF(),52,52
-GBGetGlyphIndex(),52,52
 VkPhysicalDeviceTextureCompressionASTCHDRFeatures,52,52
 VkPhysicalDeviceVertexAttributeDivisorFeaturesKHR,52,52
 _ZN16MVKMetalCompiler7compileERNSt3_* (library),52,52
