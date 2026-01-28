@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
 dmScript,632171,142720
-dmGameSystem,399410,546341
+dmGameSystem,399682,546613
 [section .rodata],338355,338355
-dmGraphics,141505,197635
-dmGui,115383,151204
-dmGameObject,113308,160765
+dmGraphics,141505,197572
+dmGui,115519,151354
+dmGameObject,114688,162899
 dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
@@ -12,7 +12,7 @@ dmRender,94492,133946
 std,77302,96335
 [section .rel.dyn],70760,70760
 _pfb,65536,65561
-[section .ARM.exidx],61152,61152
+[section .ARM.exidx],61184,61184
 dmHashTable<>,50764,63407
 _GLOBAL_* (library),47800,53883
 (anonymous namespace),44188,102915
@@ -38,7 +38,7 @@ btSequentialImpulseConstraintSolver,15188,19119
 btAxisSweep3Internal<>,14740,19275
 _internal_* (library),14284,14721
 _mpi_* (library),14088,16667
-[section .ARM.extab],13748,13748
+[section .ARM.extab],13760,13760
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 dmInput,11927,13694
@@ -50,8 +50,8 @@ dmObjectPool<>,10532,13433
 btGeneric6DofConstraint,10468,13589
 b2DynamicTree,10220,12192
 dmSocket,10084,14283
-dmHttpClient,10012,13352
 gjkepa2_impl,10012,11557
+dmHttpClient,9956,13296
 [section .hash],9656,9656
 dmResourceMounts,9456,12479
 inflate,9228,9636
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5846,5846
+[section .text],5839,5839
 [section .dynstr],5816,5816
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -1160,8 +1160,8 @@ vwin64,128,151
 last4,128,150
 _StartRecord_* (library),128,434
 ComponentTypeAnim64,128,36
-ComponentTypeGui3545,128,37
-ComponentTypeMesh1215,128,38
+ComponentTypeGui3554,128,37
+ComponentTypeMesh1220,128,38
 ComponentTypeScript65,128,38
 ComponentTypeSound574,128,38
 LiveUpdateExt1013,128,34
@@ -2032,6 +2032,7 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
+[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2192,7 +2193,6 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
-[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceRegisterReloadedCallback(),4,130
@@ -2380,6 +2380,7 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
+_CortexA8657417_* (library),3,43
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
 g_PendingResizeBecauseOfInsets,1,47
@@ -2390,17 +2391,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5358496
-[section .debug_loc],0,2911404
-[section .debug_line],0,2272752
-[section .debug_str],0,1757438
-[section .debug_ranges],0,913040
-[section .debug_abbrev],0,424897
-[section .debug_frame],0,268588
-[section .symtab],0,44096
+[section .debug_info],0,5359963
+[section .debug_loc],0,2913221
+[section .debug_line],0,2273594
+[section .debug_str],0,1758164
+[section .debug_ranges],0,913392
+[section .debug_abbrev],0,424992
+[section .debug_frame],0,268820
+[section .symtab],0,44112
 [section .strtab],0,17296
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,9
+[Unmapped],0,13

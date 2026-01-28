@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3768320,3766944
+[__LINKEDIT],3768320,3767664
 MVK_spirv_cross,1517047,1516903
 dmScript,625120,100500
 basist,373487,358627
-dmGameSystem,348276,346964
+dmGameSystem,348616,347304
 std,291979,291979
 "_TEXT,_* (library)",274473,274473
 _lj_* (library),226741,226741
@@ -12,8 +12,8 @@ _mbedtls_* (library),126868,126708
 dmCrash,113688,7008
 _except_* (library),110720,110720
 (anonymous namespace),106036,106036
-dmGameObject,98068,98044
-dmGui,93940,92972
+dmGameObject,99036,99012
+dmGui,94020,93052
 dmGraphics,91449,90408
 dmRender,83952,83664
 _LZ4_* (library),68100,68100
@@ -22,7 +22,7 @@ _pfb,65548,65548
 __watermarkTextureContent,65536,65536
 MVKInstance,60619,60619
 spvtools,60399,60399
-_GLOBAL_* (library),56368,56368
+_GLOBAL_* (library),56380,56380
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
 stbi__process_marker(),42873,42873
@@ -43,9 +43,9 @@ _zip_* (library),21484,21484
 mvk,21339,21219
 _objc_* (library),21312,21312
 MVKCommandPool,21081,21081
-dmHashTable<>,20944,20944
 _load_* (library),20904,20904
 _asm_* (library),19661,19661
+dmHashTable<>,19612,19612
 _lua_* (library),19359,19359
 _fold_* (library),18954,18954
 dmEngine,18100,18084
@@ -97,7 +97,7 @@ dmHID,9032,8960
 b2DynamicTree,8944,8944
 MVKQueueFullCommandBufferSubmission<>,8835,8835
 MVKGraphicsResourcesCommandEncoderState,8790,8790
-dmHttpClient,8712,8696
+dmHttpClient,8700,8684
 dmResourceMounts,8276,8276
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
@@ -172,13 +172,13 @@ _meth_* (library),4252,4252
 MVKCommandBuffer,4243,4243
 dmSystemDDF,4169,4169
 _do_* (library),4144,4144
-[__TEXT],4139,8915
 MVKCmdClearImage<>,4138,4138
 btHashedOverlappingPairCache,4112,4112
 btBvhTriangleMeshShape,4108,4108
 GetGlyphTTF(),4096,4096
 _vwin2048,4096,4096
 b2GearJoint,4088,4088
+[__TEXT],4083,8859
 btDbvtBroadphase,4056,4056
 MVKCmdDrawIndirect,4048,4048
 MVKPipelineLayout,4028,4028
@@ -1443,8 +1443,8 @@ rmtp_MeshVertexSize(),132,132
 ParseArgOneOperand(),128,128
 ResourceGetByHash(),128,128
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3545,128,0
-_ComponentTypeMesh1215,128,0
+_ComponentTypeGui3554,128,0
+_ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
 _ComponentTypeSound574,128,0
 _LiveUpdateExt1013,128,0

@@ -1,16 +1,16 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3837952,3835112
+[__LINKEDIT],3837952,3836104
 MVK_spirv_cross,1692352,1692208
 dmScript,634444,109824
-dmGameSystem,411044,409708
+dmGameSystem,411556,410220
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
 "_TEXT,_* (library)",240794,240794
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
-dmGui,125348,124364
-dmGameObject,119528,119504
+dmGui,125492,124508
+dmGameObject,122024,122000
 dmGraphics,113153,112073
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
@@ -105,7 +105,7 @@ _dmRigDDF_* (library),9628,7080
 tinfl_decompress(),9492,9492
 _inflate,9392,9392
 _crec_* (library),9328,9328
-dmHttpClient,9264,9248
+dmHttpClient,9248,9232
 MVKCmdCopyImage<>,8976,8976
 dmSoundCodec,8904,8872
 MVKCommandResourceFactory,8860,8860
@@ -215,7 +215,6 @@ MVKWatermark,3967,3967
 _ra_* (library),3952,3952
 _pk_* (library),3928,3928
 _inet_* (library),3856,3856
-[__TEXT],3828,8588
 dmDeviceAVAudio,3824,3824
 dmLog,3824,3520
 _gc_* (library),3808,3808
@@ -582,6 +581,7 @@ CProfileNode,720,720
 MVKSamplerYcbcrConversion,716,716
 _dmLuaDDF_* (library),712,528
 _small_* (library),704,704
+[__TEXT],692,5452
 _ll_* (library),688,688
 _vkCmdPipelineBarrier2,688,688
 spvOpcodeMemorySemanticsOperandIndices(),688,688
@@ -1474,8 +1474,8 @@ MVKSubpassDependency,128,128
 ResourceGetDescriptorByHash(),128,128
 ResourceGetPath(),128,128
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3545,128,0
-_ComponentTypeMesh1215,128,0
+_ComponentTypeGui3554,128,0
+_ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
 _ComponentTypeSound574,128,0
 _ExtensionAppParamsGetContextByName,128,128
