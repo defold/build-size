@@ -1,12 +1,12 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3837952,3836104
+[__LINKEDIT],3837952,3836232
 MVK_spirv_cross,1692352,1692208
 dmScript,634444,109824
-dmGameSystem,411556,410220
+dmGameSystem,411556,410172
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",240794,240794
+"_TEXT,_* (library)",240810,240810
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125492,124508
@@ -14,7 +14,7 @@ dmGameObject,122024,122000
 dmGraphics,113153,112073
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
-dmRender,107368,107080
+dmRender,108448,108152
 _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
@@ -29,7 +29,7 @@ MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
 dmParticle,55776,55608
 _LZ4HC_* (library),49440,49440
-stbi__process_marker(),42382,42382
+stbi__process_marker(),42414,42414
 MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42072
 _recff_* (library),36656,36656
@@ -141,7 +141,7 @@ _deflate_* (library),6912,6912
 MVKCommandEncodingPool,6905,6905
 _debuginfo_* (library),6816,6816
 _lex_* (library),6704,6704
-_dmGraphics_* (library),6543,5152
+_dmGraphics_* (library),6591,5200
 _dmPhysicsDDF_* (library),6360,4632
 btVoronoiSimplexSolver,6288,6288
 debuginfo_entries,6256,6256
@@ -221,6 +221,7 @@ _gc_* (library),3808,3808
 btSimulationIslandManager,3808,3808
 MVKImageViewPlane,3758,3758
 btGjkPairDetector,3736,3736
+[__TEXT],3668,8428
 _deflate,3664,3664
 _serialize_* (library),3648,3648
 MVKCmdDrawIndexed,3588,3588
@@ -355,11 +356,11 @@ MVKFence,1726,1726
 _block_* (library),1724,1724
 btPerturbedContactResult,1720,1720
 btManifoldResult,1720,1720
-[__DATA],1712,8
 MVKEventEmulated,1707,1707
 CProfileManager,1704,1632
 __glfwInitEGL,1696,1696
 _get_* (library),1694,1694
+[__DATA],1664,8
 b2ChainShape,1664,1664
 _dmLiveUpdateDDF_* (library),1632,1208
 MVKCmdPushDescriptorSet,1626,1626
@@ -581,7 +582,6 @@ CProfileNode,720,720
 MVKSamplerYcbcrConversion,716,716
 _dmLuaDDF_* (library),712,528
 _small_* (library),704,704
-[__TEXT],692,5452
 _ll_* (library),688,688
 _vkCmdPipelineBarrier2,688,688
 spvOpcodeMemorySemanticsOperandIndices(),688,688
@@ -2401,7 +2401,6 @@ dmFixedMemFree(),16,16
 dmStrCaseCmp(),16,16
 force_inline,16,16
 gProfileClock,16,0
-g_CurrentExtension,16,0
 kOperandTable,16,16
 mvkCompress(),16,16
 mvkDecompress(),16,16
@@ -2434,6 +2433,7 @@ _memset_* (library),8,8
 _mvkGlobalConfigInitialized,8,0
 _mvkMachTimebase,8,0
 _platformPixelFormats,8,0
+g_CurrentExtension,8,0
 g_FirstExtension,8,0
 _DispatchCalls_* (library),8,0
 _DrawCalls_* (library),8,0

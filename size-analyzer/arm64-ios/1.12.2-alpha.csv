@@ -1,23 +1,23 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1835008,1832064
+[__LINKEDIT],1835008,1832200
 dmScript,620672,96060
-dmGameSystem,339896,337224
+dmGameSystem,339896,337184
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",149022,149022
+"_TEXT,_* (library)",149041,149041
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
 basist,97742,82884
 dmGameObject,93524,93500
 dmGui,88168,87200
-dmRender,81524,81236
+dmRender,82144,81848
 dmGraphics,74577,73552
 _pfb,65544,65544
-_GLOBAL_* (library),37324,37324
+_GLOBAL_* (library),37332,37332
 _cp_* (library),34652,34652
-stbi__process_marker(),33571,33571
+stbi__process_marker(),33591,33591
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
-[__TEXT],30155,46435
+[__TEXT],29496,45776
 std,29240,29240
 dmParticle,29196,29028
 dmResource,27240,27240
@@ -38,7 +38,7 @@ dmRig,13816,13792
 _ssl_* (library),13520,13520
 dmDDF,13088,13024
 _dmGameSystemDDF_* (library),12448,8592
-dmInput,11936,10904
+dmInput,11928,10904
 _parse_* (library),11740,11740
 _zip_* (library),11368,11368
 dmEasing,10824,10824
@@ -50,7 +50,7 @@ _dmRenderDDF_* (library),9612,7160
 b2World,9564,9564
 _dmRigDDF_* (library),9444,6896
 gjkepa2_impl,9044,9044
-[__DATA],8832,4
+[__DATA],8784,20
 dmHttpCache,8653,8653
 dmHID,8520,8448
 _gc_* (library),8228,8228
@@ -71,7 +71,7 @@ tinfl_decompress(),6420,6420
 _strscan_* (library),6280,6280
 btIDebugDraw,6256,6256
 _dmPhysicsDDF_* (library),6256,4528
-_dmGraphics_* (library),6159,4768
+_dmGraphics_* (library),6207,4816
 dBoxBox2(),6092,6092
 dmJobThread,5984,5968
 dmSocket,5972,5972
@@ -218,7 +218,7 @@ btTriangleShape,1604,1604
 b2FrictionJoint,1592,1592
 b2MouseJoint,1588,1588
 _jmp_* (library),1572,1572
-__MergedGlobals,1568,144
+__MergedGlobals,1568,128
 _var_* (library),1564,1564
 _ecdsa_* (library),1556,1556
 _strfmt_* (library),1536,1536
@@ -622,7 +622,7 @@ _capture_* (library),152,152
 _dmExportedSymbols,152,152
 _emptybuffer,152,152
 _index2adr_* (library),152,152
-_Components_* (library),152,8
+_Components_* (library),152,0
 _ZN15dmDeviceAVAudioL17DeviceAVAudioOpenEPKN7dmSound16OpenDeviceParamsEPPv_* (library),152,152
 _package_* (library),152,152
 -[BaseView init],148,148

@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
 dmScript,632171,142720
 dmGameSystem,399682,546613
-[section .rodata],338499,338499
+[section .rodata],338531,338531
 dmGraphics,141505,197572
 dmGui,115519,151354
 dmGameObject,114688,162899
 dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
-dmRender,94492,133946
+dmRender,95284,134907
 std,77302,96335
-[section .rel.dyn],70760,70760
+[section .rel.dyn],70768,70768
 _pfb,65536,65561
 [section .ARM.exidx],61208,61208
 dmHashTable<>,50764,63407
-_GLOBAL_* (library),47800,53883
+_GLOBAL_* (library),47792,53875
 (anonymous namespace),44188,102915
 dmParticle,39873,50341
 dmPhysics,37925,58055
@@ -76,7 +76,7 @@ dmConfigFile,6164,7501
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
 [section .dynstr],5860,5860
-[section .text],5846,5846
+[section .text],5851,5851
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -150,7 +150,7 @@ topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
 dmArray<>,2948,4456
 _cconv_* (library),2928,3379
-[section .bss],2906,0
+[section .bss],2914,0
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
@@ -272,13 +272,13 @@ b2ContactManager,1356,1839
 deflate_rle,1344,1404
 fs_finish,1344,1402
 _csctx_* (library),1344,1655
+_ShaderDesc_* (library),1322,3001
 _NodeDesc_* (library),1321,3532
 b2BroadPhase,1320,2090
 _com_* (library),1315,2274
 _aeabi_* (library),1312,2428
 btTranslationalLimitMotor,1308,1544
 _ecdh_* (library),1300,1908
-_ShaderDesc_* (library),1298,2977
 _sign_* (library),1296,1568
 Layout<>(),1288,1415
 btMatrix3x3,1280,1605
@@ -569,11 +569,11 @@ _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
 lex_number,384,443
+[LOAD #1 [R]],382,382
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
 deflatePending,376,455
-[LOAD #1 [R]],374,374
 _SpriteDesc_* (library),369,960
 deflateTune,364,440
 _cur_* (library),364,429
@@ -2034,6 +2034,7 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
+[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2092,7 +2093,6 @@ meth_shutdown.methods,16,54
 _clone_* (library),16,211
 expr_toval,16,43
 quant_look,16,43
-[LOAD #4 [RW]],16,0
 _row_* (library),13,111
 TextLayoutCreate(),12,120
 ProfileRegisterPropertyBool(),12,90
@@ -2382,6 +2382,7 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
+_CortexA8657417_* (library),3,43
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
 g_PendingResizeBecauseOfInsets,1,47
@@ -2392,17 +2393,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5360208
-[section .debug_loc],0,2913686
-[section .debug_line],0,2273807
-[section .debug_str],0,1758251
-[section .debug_ranges],0,913480
-[section .debug_abbrev],0,425022
-[section .debug_frame],0,268880
-[section .symtab],0,44192
+[section .debug_info],0,5362307
+[section .debug_loc],0,2915715
+[section .debug_line],0,2274170
+[section .debug_str],0,1758688
+[section .debug_ranges],0,913664
+[section .debug_abbrev],0,425031
+[section .debug_frame],0,268896
+[section .symtab],0,44208
 [section .strtab],0,17340
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,15
+[Unmapped],0,13
