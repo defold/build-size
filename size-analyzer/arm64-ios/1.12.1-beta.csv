@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1835008,1828496
-dmScript,620672,96060
-dmGameSystem,339012,336340
+[__LINKEDIT],1835008,1828400
+dmScript,620664,96060
+dmGameSystem,339028,336388
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",149022,149022
+"_TEXT,_* (library)",149010,149010
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
 basist,97742,82884
 dmGameObject,92860,92836
 dmGui,88056,87088
-dmRender,81524,81236
+dmRender,81548,81260
 dmGraphics,71941,70956
 _pfb,65544,65544
-_GLOBAL_* (library),37336,37336
+_GLOBAL_* (library),37332,37332
 _cp_* (library),34652,34652
 stbi__process_marker(),33192,33192
 dmPhysics,32688,32576
@@ -25,7 +25,7 @@ dmHashTable<>,20776,20776
 dmSound,19352,19200
 _lua_* (library),19256,19256
 dmEngine,17592,17576
-[__TEXT],17134,33414
+[__TEXT],17114,33394
 btCollisionWorld,16572,16568
 _vwin8192,16388,16388
 _mh_* (library),16384,32
@@ -46,11 +46,11 @@ _crc_* (library),10326,10326
 _vorbis_* (library),10240,10240
 _luaL_* (library),9892,9892
 _serialize_* (library),9780,9780
-_dmRenderDDF_* (library),9612,7160
 b2World,9564,9564
+_dmRenderDDF_* (library),9556,7112
 _dmRigDDF_* (library),9444,6896
 gjkepa2_impl,9044,9044
-[__DATA],8872,4
+[__DATA],8936,20
 dmHttpCache,8653,8653
 dmHID,8520,8448
 _gc_* (library),8228,8228
@@ -489,10 +489,10 @@ _max_* (library),276,276
 b2Timer,276,276
 dmUtf8,276,276
 +[EAGLView createView:recreate:],272,272
-GBGetGlyph(),272,272
 _random_* (library),272,272
 _tokennames,272,272
 _CONTEXT_* (library),272,264
+GBGetGlyph(),268,268
 _dmHashBufferNoReverse64,268,268
 _bit_* (library),264,264
 _deflateResetKeep,264,264
@@ -663,7 +663,7 @@ _LiveUpdateExt1013,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
-_ResourceTypeFont996,128,0
+_ResourceTypeFont998,128,0
 _ResourceTypeGameObject230,128,0
 _ResourceTypeGui347,128,0
 _ResourceTypeGuiScript158,128,0

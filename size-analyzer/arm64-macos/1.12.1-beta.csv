@@ -1,11 +1,11 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3768320,3759616
+[__LINKEDIT],3768320,3759520
 MVK_spirv_cross,1517047,1516903
-dmScript,625120,100500
+dmScript,625112,100500
 basist,373487,358627
-dmGameSystem,347580,346268
+dmGameSystem,347596,346316
 std,291979,291979
-"_TEXT,_* (library)",274473,274473
+"_TEXT,_* (library)",274461,274461
 _lj_* (library),226741,226741
 _variable_* (library),127354,127354
 _mbedtls_* (library),126868,126708
@@ -15,14 +15,14 @@ _except_* (library),110720,110720
 dmGameObject,95848,95824
 dmGui,93812,92844
 dmGraphics,89057,88056
-dmRender,83952,83664
+dmRender,83976,83688
 _LZ4_* (library),68100,68100
 MVKPixelFormats,66490,66466
 _pfb,65548,65548
 __watermarkTextureContent,65536,65536
 MVKInstance,60619,60619
 spvtools,60399,60399
-_GLOBAL_* (library),56380,56380
+_GLOBAL_* (library),56368,56368
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
 stbi__process_marker(),42542,42542
@@ -86,12 +86,12 @@ b2World,10700,10700
 MVKDescriptorSetLayoutBinding,10450,10450
 _OBJC_* (library),10332,10332
 _luaL_* (library),10104,10104
-[__TEXT],9938,14714
-_dmRenderDDF_* (library),9740,7288
+[__TEXT],9918,14694
+_dmRenderDDF_* (library),9684,7240
 _dmRigDDF_* (library),9604,7056
 _expr_* (library),9424,9424
 gjkepa2_impl,9356,9356
-[__DATA],9172,12
+[__DATA],9236,28
 btGeneric6DofConstraint,9156,9156
 dmHttpCache,9132,9132
 dmHID,9032,8960
@@ -888,6 +888,7 @@ __glfwSetWindowSizeLimitsNull,280,280
 _cpparser,280,280
 btSingleContactCallback,280,280
 -[GLFWContentView flagsChanged:],276,276
+GBGetGlyph(),276,276
 _glfwJoystickIsGamepad,276,276
 _mask,276,276
 _matchbracketclass,276,276
@@ -896,7 +897,6 @@ btGjkEpaPenetrationDepthSolver,276,276
 b2Timer,276,276
 dmUtf8,276,276
 MVKCmdWriteTimestamp,275,275
-GBGetGlyph(),272,272
 _glfwGetJoystickGUID,272,272
 _glfwGetJoystickName,272,272
 _tokennames,272,272
@@ -1451,7 +1451,7 @@ _LiveUpdateExt1013,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
-_ResourceTypeFont996,128,0
+_ResourceTypeFont998,128,0
 _ResourceTypeGameObject230,128,0
 _ResourceTypeGui347,128,0
 _ResourceTypeGuiScript158,128,0

@@ -1,12 +1,12 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3829760,3827608
+[__LINKEDIT],3829760,3827520
 MVK_spirv_cross,1692352,1692208
-dmScript,634444,109824
-dmGameSystem,410212,408876
+dmScript,634436,109824
+dmGameSystem,410212,408884
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",240762,240762
+"_TEXT,_* (library)",240746,240746
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125236,124252
@@ -14,7 +14,7 @@ dmGameObject,117512,117488
 dmCrash,112164,6516
 dmGraphics,110881,109849
 (anonymous namespace),110736,110736
-dmRender,107368,107080
+dmRender,107432,107144
 _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
@@ -99,7 +99,7 @@ _DATA_* (library),9880,9880
 "_DATA,_* (library)",9840,9840
 btDbvt,9840,9840
 _expr_* (library),9760,9760
-_dmRenderDDF_* (library),9756,7304
+_dmRenderDDF_* (library),9700,7256
 dmJobThread,9648,9632
 _dmRigDDF_* (library),9628,7080
 tinfl_decompress(),9492,9492
@@ -339,6 +339,7 @@ btTypedConstraint,1896,1896
 dmCrypt,1888,1888
 _idct_* (library),1872,1872
 _ecdsa_* (library),1829,1829
+[__DATA],1824,8
 _glfwGetGamepadState,1824,1824
 _mapping_* (library),1824,1824
 MVKMetalCompiler,1811,1811
@@ -349,7 +350,6 @@ MVKBaseObject,1800,1800
 _global_* (library),1792,1792
 MVKDepthStencilCommandEncoderState,1789,1789
 btTranslationalLimitMotor,1776,1776
-[__DATA],1760,8
 __glfwSetWindowMonitorCocoa,1728,1728
 b2TimeOfImpact(),1728,1728
 MVKFence,1726,1726
@@ -413,7 +413,6 @@ btSphereTriangleCollisionAlgorithm,1296,1296
 Vectormath,1280,1280
 b2BroadPhase,1280,1280
 btPairCachingGhostObject,1272,1272
-[__TEXT],1268,6028
 _tremolo_* (library),1264,1264
 _debug_* (library),1264,1264
 btSphereSphereCollisionAlgorithm,1264,1264
@@ -424,6 +423,7 @@ MVKQueueSubmission,1229,1229
 MVKGPUCounterQueryPool,1217,1217
 _vkCmdBindDescriptorSets,1216,1216
 mz_crc32(),1216,1216
+[__TEXT],1204,5964
 _dmGamesysDDF_* (library),1204,824
 _ctype_* (library),1200,1200
 _aa_* (library),1200,1200
@@ -1439,8 +1439,8 @@ rmtp_Mesh(),144,144
 rmtp_MeshVertexCount(),144,144
 rmtp_MeshVertexSize(),144,144
 rmtp_Messages(),144,128
-rmtp_Model(),144,128
-rmtp_ModelIndexCount(),144,128
+rmtp_Model(),144,144
+rmtp_ModelIndexCount(),144,144
 rmtp_ModelVertexCount(),144,128
 rmtp_ModelVertexSize(),144,128
 rmtp_ParticleFx(),144,144
@@ -1483,7 +1483,7 @@ _LiveUpdateExt1013,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
-_ResourceTypeFont996,128,0
+_ResourceTypeFont998,128,0
 _ResourceTypeGameObject230,128,0
 _ResourceTypeGui347,128,0
 _ResourceTypeGuiScript158,128,0
@@ -1620,7 +1620,7 @@ _package_* (library),112,112
 dmTime,112,112
 dmLiveUpdateDDF,112,112
 _bitrev,104,104
-_Components_* (library),104,96
+_Components_* (library),104,104
 btCollisionPairCallback,104,104
 MVKCmdBeginRenderPassBase,100,100
 -[CAMetalLayer(MoltenVK) naturalDrawableSizeMVK],96,96
@@ -1710,6 +1710,7 @@ FontGetGlyph(),80,80
 FontGetPath(),80,80
 FontGetPathHash(),80,80
 FontGetType(),80,80
+GBGetGlyphIndex(),80,80
 _CrashExt,80,80
 _ExtensionAppParamsFinalize,80,80
 _ExtensionParamsFinalize,80,80
@@ -1814,7 +1815,6 @@ dmGamesysDDF,72,72
 ChunkComparePathOffsetFn(),64,64
 FontCollectionDestroy(),64,64
 FontDestroyTTF(),64,64
-GBGetGlyphIndex(),64,64
 MVKCommandBufferSubmitInfo,64,64
 ResourceAddFile(),64,64
 ResourceGetExtFromPath(),64,64

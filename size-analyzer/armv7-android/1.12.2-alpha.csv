@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,632171,142720
-dmGameSystem,399682,546613
+dmGameSystem,399702,546665
 [section .rodata],338531,338531
 dmGraphics,141505,197572
 dmGui,115519,151354
@@ -8,9 +8,9 @@ dmGameObject,114688,162899
 dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
-dmRender,95284,134907
+dmRender,95332,134955
 std,77302,96335
-[section .rel.dyn],70768,70768
+[section .rel.dyn],70752,70752
 _pfb,65536,65561
 [section .ARM.exidx],61208,61208
 dmHashTable<>,50764,63407
@@ -23,7 +23,7 @@ dmSound,25265,32608
 _ssl_* (library),22756,31372
 btConeTwistConstraint,22000,25064
 _decompress_* (library),21628,22962
-dmEngine,21302,26660
+dmEngine,21310,26668
 _zip_* (library),21164,26601
 btQuantizedBvh,18928,22181
 _load_* (library),18688,19796
@@ -76,14 +76,14 @@ dmConfigFile,6164,7501
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
 [section .dynstr],5860,5860
-[section .text],5851,5851
+[section .text],5846,5846
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
 init_gl,5444,5980
 dmConnectionPool,5400,7198
 b2ContactSolver,5400,6309
-dmHttpService,5376,6920
+dmHttpService,5380,6924
 _process_* (library),5280,5764
 btVoronoiSimplexSolver,5256,6815
 _create_* (library),5216,5475
@@ -150,7 +150,7 @@ topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
 dmArray<>,2948,4456
 _cconv_* (library),2928,3379
-[section .bss],2914,0
+[section .bss],2903,0
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
@@ -361,7 +361,6 @@ _base64_* (library),980,1120
 dmMutex,968,1349
 compress_block,964,1027
 dmHashBuffer32,963,1026
-_GlyphBank_* (library),963,2775
 _unw_* (library),960,1998
 dmResourceProviderFile,960,1652
 dmHashInit32(),956,1036
@@ -372,6 +371,7 @@ cpcparser,952,1010
 _md5_* (library),952,1599
 serialize_get,948,994
 btRayAabb(),936,1023
+_GlyphBank_* (library),934,2681
 _Emitter_* (library),919,2258
 dmHashReverseErase32,917,986
 btRotationalLimitMotor,916,1121
@@ -594,13 +594,13 @@ socket_sendto,352,414
 meth_sendto,352,412
 dmRigDDF,348,3537
 LZ4_loadDictHC,347,394
+GBGetGlyph(),344,446
 socket_connect,344,407
 bcemit_store,342,387
 _HttpRequest_* (library),342,746
 _glfwShowKeyboard,340,406
 [section .data],339,339
 _find_* (library),338,367
-GBGetGlyph(),336,438
 b2EdgeSeparation(),332,442
 auxiliar_tostring,332,398
 _zeros_* (library),332,548
@@ -1169,7 +1169,7 @@ LiveUpdateExt1013,128,34
 ResourceTypeAnim35,128,35
 ResourceTypeAnimationSet103,128,44
 ResourceTypeCollection369,128,42
-ResourceTypeFont996,128,36
+ResourceTypeFont998,128,36
 ResourceTypeGameObject230,128,42
 ResourceTypeGui347,128,35
 ResourceTypeGuiScript158,128,41
@@ -2034,7 +2034,6 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
-[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2093,6 +2092,7 @@ meth_shutdown.methods,16,54
 _clone_* (library),16,211
 expr_toval,16,43
 quant_look,16,43
+[LOAD #4 [RW]],16,0
 _row_* (library),13,111
 TextLayoutCreate(),12,120
 ProfileRegisterPropertyBool(),12,90
@@ -2382,7 +2382,6 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
-_CortexA8657417_* (library),3,43
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
 g_PendingResizeBecauseOfInsets,1,47
@@ -2393,17 +2392,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5362307
-[section .debug_loc],0,2915715
-[section .debug_line],0,2274170
-[section .debug_str],0,1758688
-[section .debug_ranges],0,913664
-[section .debug_abbrev],0,425031
+[section .debug_info],0,5362228
+[section .debug_loc],0,2915997
+[section .debug_line],0,2274314
+[section .debug_str],0,1758758
+[section .debug_ranges],0,913704
+[section .debug_abbrev],0,425044
 [section .debug_frame],0,268896
-[section .symtab],0,44208
+[section .symtab],0,44192
 [section .strtab],0,17340
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,13
+[Unmapped],0,9

@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,632171,142713
-dmGameSystem,398566,544709
+dmGameSystem,398586,544761
 [section .rodata],337723,337723
 dmGraphics,138077,192777
 dmGui,115383,151274
@@ -8,9 +8,9 @@ dmCrash,110750,11042
 dmGameObject,110592,155909
 basist,107919,111865
 _compress_* (library),104967,106278
-dmRender,94492,133946
+dmRender,94568,134022
 std,77302,96319
-[section .rel.dyn],70760,70760
+[section .rel.dyn],70744,70744
 _pfb,65536,65561
 [section .ARM.exidx],60960,60960
 dmHashTable<>,50764,63407
@@ -76,7 +76,7 @@ dmConfigFile,6164,7501
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
 [section .dynstr],5860,5860
-[section .text],5846,5846
+[section .text],5842,5842
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -150,7 +150,7 @@ topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
 dmArray<>,2948,4456
 _cconv_* (library),2928,3379
-[section .bss],2910,0
+[section .bss],2915,0
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
@@ -361,7 +361,6 @@ _base64_* (library),980,1120
 dmMutex,968,1349
 compress_block,964,1027
 dmHashBuffer32,963,1026
-_GlyphBank_* (library),963,2775
 _unw_* (library),960,1998
 dmResourceProviderFile,960,1652
 dmHashInit32(),956,1036
@@ -372,6 +371,7 @@ cpcparser,952,1010
 _md5_* (library),952,1599
 serialize_get,948,994
 btRayAabb(),936,1023
+_GlyphBank_* (library),934,2681
 _Emitter_* (library),919,2258
 dmHashReverseErase32,917,986
 btRotationalLimitMotor,916,1121
@@ -594,13 +594,13 @@ socket_sendto,352,414
 meth_sendto,352,412
 dmRigDDF,348,3537
 LZ4_loadDictHC,347,394
+GBGetGlyph(),344,446
 socket_connect,344,407
 bcemit_store,342,387
 _HttpRequest_* (library),342,746
 _glfwShowKeyboard,340,406
 [section .data],339,339
 _find_* (library),338,367
-GBGetGlyph(),336,438
 b2EdgeSeparation(),332,442
 auxiliar_tostring,332,398
 _zeros_* (library),332,548
@@ -1168,7 +1168,7 @@ LiveUpdateExt1013,128,34
 ResourceTypeAnim35,128,35
 ResourceTypeAnimationSet103,128,44
 ResourceTypeCollection369,128,42
-ResourceTypeFont996,128,36
+ResourceTypeFont998,128,36
 ResourceTypeGameObject230,128,42
 ResourceTypeGui347,128,35
 ResourceTypeGuiScript158,128,41
@@ -2034,6 +2034,7 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
+[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2092,7 +2093,6 @@ meth_shutdown.methods,16,54
 _clone_* (library),16,211
 expr_toval,16,43
 quant_look,16,43
-[LOAD #4 [RW]],16,0
 _row_* (library),13,111
 TextLayoutCreate(),12,120
 ProfileRegisterPropertyBool(),12,90
@@ -2313,7 +2313,6 @@ mbedtls_md5,4,48
 g_ResourceTypeCreatorDescFirst,4,47
 app_dummy,4,46
 gContactBreakingThreshold,4,46
-_CortexA8657417_* (library),4,44
 adler32,4,44
 b2velocityThresholdOverride,4,44
 gNumSplitImpulseRecoveries,4,43
@@ -2393,17 +2392,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5347004
-[section .debug_loc],0,2907957
-[section .debug_line],0,2269428
-[section .debug_str],0,1750696
-[section .debug_ranges],0,912160
+[section .debug_info],0,5346955
+[section .debug_loc],0,2908284
+[section .debug_line],0,2269494
+[section .debug_str],0,1750643
+[section .debug_ranges],0,912216
 [section .debug_abbrev],0,424863
 [section .debug_frame],0,267556
-[section .symtab],0,44224
+[section .symtab],0,44208
 [section .strtab],0,17340
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,15
+[Unmapped],0,14

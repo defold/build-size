@@ -1,12 +1,12 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3837952,3836232
+[__LINKEDIT],3837952,3836144
 MVK_spirv_cross,1692352,1692208
-dmScript,634444,109824
-dmGameSystem,411556,410172
+dmScript,634436,109824
+dmGameSystem,411556,410220
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",240810,240810
+"_TEXT,_* (library)",240794,240794
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125492,124508
@@ -14,7 +14,7 @@ dmGameObject,122024,122000
 dmGraphics,113153,112073
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
-dmRender,108448,108152
+dmRender,108496,108200
 _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
@@ -99,7 +99,7 @@ _DATA_* (library),9880,9880
 "_DATA,_* (library)",9840,9840
 btDbvt,9840,9840
 _expr_* (library),9760,9760
-_dmRenderDDF_* (library),9756,7304
+_dmRenderDDF_* (library),9700,7256
 dmJobThread,9648,9632
 _dmRigDDF_* (library),9628,7080
 tinfl_decompress(),9492,9492
@@ -157,7 +157,7 @@ _mdct_* (library),5760,5760
 MVKCmdDrawIndexedIndirect,5724,5724
 btCompoundCollisionAlgorithm,5704,5704
 MVKCmdDrawIndirect,5701,5701
-dmHttpService,5456,5456
+dmHttpService,5472,5472
 b2SeparationFunction,5440,5440
 b2GridShape,5420,5420
 dmConnectionPool,5392,5392
@@ -221,9 +221,9 @@ _gc_* (library),3808,3808
 btSimulationIslandManager,3808,3808
 MVKImageViewPlane,3758,3758
 btGjkPairDetector,3736,3736
-[__TEXT],3668,8428
 _deflate,3664,3664
 _serialize_* (library),3648,3648
+[__TEXT],3588,8348
 MVKCmdDrawIndexed,3588,3588
 MVKQueryPool,3575,3575
 MVKShaderModule,3554,3554
@@ -350,6 +350,7 @@ MVKBaseObject,1800,1800
 _global_* (library),1792,1792
 MVKDepthStencilCommandEncoderState,1789,1789
 btTranslationalLimitMotor,1776,1776
+[__DATA],1728,8
 __glfwSetWindowMonitorCocoa,1728,1728
 b2TimeOfImpact(),1728,1728
 MVKFence,1726,1726
@@ -360,7 +361,6 @@ MVKEventEmulated,1707,1707
 CProfileManager,1704,1632
 __glfwInitEGL,1696,1696
 _get_* (library),1694,1694
-[__DATA],1664,8
 b2ChainShape,1664,1664
 _dmLiveUpdateDDF_* (library),1632,1208
 MVKCmdPushDescriptorSet,1626,1626
@@ -485,9 +485,9 @@ dmHashFinal64(),1008,1008
 dmThread,1008,1008
 _oggbyte_* (library),1008,1008
 b2Mat33,1008,1008
+dmGameSystemDDF,1008,1008
 MVKSemaphoreMTLEvent,1007,1007
 MVKLayer,1002,1002
-dmGameSystemDDF,1000,1000
 b2WorldManifold,992,992
 btBridgedManifoldResult,984,984
 _chacha20_* (library),980,980
@@ -1217,10 +1217,12 @@ _globalMVKConfig,184,0
 btPointCollector,184,184
 btConvexCast,184,184
 dmParticleDDF,184,184
+dmModelDDF,184,184
 MVKCmdEndRendering,181,181
 -[GLFWContentView keyUp:],176,176
 -[GLFWContentView setMarkedText:selectedRange:replacementRange:],176,176
 CreateGlyphBankFont(),176,176
+GBGetGlyphIndex(),176,176
 ResourcePreloader,176,176
 __glfwFreeMonitor,176,176
 __glfwGetFramebufferSizeCocoa,176,176
@@ -1285,11 +1287,9 @@ b2TestOverlap(),176,176
 mvkGetEnvVar(),176,176
 mz_inflateInit(),176,176
 dmPropertiesDDF,176,176
-dmModelDDF,176,176
 dmMath,168,168
 MVKLinkableMixin<>,165,165
 mvkOSVersion(),164,160
-GBGetGlyphIndex(),160,160
 ResourceGetByHashAndExt(),160,160
 __glfwGetCursorPosCocoa,160,160
 __glfwInputKey,160,160
@@ -1484,7 +1484,7 @@ _LiveUpdateExt1013,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
-_ResourceTypeFont996,128,0
+_ResourceTypeFont998,128,0
 _ResourceTypeGameObject230,128,0
 _ResourceTypeGui347,128,0
 _ResourceTypeGuiScript158,128,0
