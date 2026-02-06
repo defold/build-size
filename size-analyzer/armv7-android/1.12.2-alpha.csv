@@ -12,7 +12,7 @@ dmRender,95332,134955
 std,77302,96335
 [section .rel.dyn],70752,70752
 _pfb,65536,65561
-[section .ARM.exidx],61208,61208
+[section .ARM.exidx],61200,61200
 dmHashTable<>,50764,63407
 _GLOBAL_* (library),47792,53875
 (anonymous namespace),44188,102915
@@ -76,7 +76,7 @@ dmConfigFile,6164,7501
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
 [section .dynstr],5860,5860
-[section .text],5846,5846
+[section .text],5838,5838
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -216,6 +216,7 @@ deflate_slow,1920,1981
 cp_next,1916,2100
 btDefaultCollisionConfiguration,1900,2982
 _err_* (library),1898,3367
+_gl_* (library),1892,2270
 _ffh_* (library),1886,3294
 inflate_table,1884,1946
 btCompoundLeafCallback,1880,2188
@@ -223,7 +224,6 @@ _vorbis_* (library),1880,2040
 dmLoadQueue,1880,2575
 _stream_* (library),1878,2595
 _jpeg_* (library),1867,2247
-_gl_* (library),1864,2242
 _next_* (library),1856,1991
 btGhostObject,1848,2684
 _app_* (library),1848,2382
@@ -265,8 +265,8 @@ btManifoldResult,1380,1899
 _sha256_* (library),1380,2063
 _width_* (library),1376,1513
 _hmac_* (library),1376,2142
-final_gl,1364,1485
 _double_* (library),1364,1473
+final_gl,1360,1481
 _glfwAndroidHandleCommand,1356,1462
 b2ContactManager,1356,1839
 deflate_rle,1344,1404
@@ -569,11 +569,11 @@ _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
 lex_number,384,443
-[LOAD #1 [R]],382,382
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
 deflatePending,376,455
+[LOAD #1 [R]],374,374
 _SpriteDesc_* (library),369,960
 deflateTune,364,440
 _cur_* (library),364,429
@@ -2392,17 +2392,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5362228
-[section .debug_loc],0,2915997
-[section .debug_line],0,2274314
+[section .debug_info],0,5362232
+[section .debug_loc],0,2916096
+[section .debug_line],0,2274300
 [section .debug_str],0,1758758
-[section .debug_ranges],0,913704
+[section .debug_ranges],0,913656
 [section .debug_abbrev],0,425044
-[section .debug_frame],0,268896
+[section .debug_frame],0,268900
 [section .symtab],0,44192
 [section .strtab],0,17340
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,9
+[Unmapped],0,8

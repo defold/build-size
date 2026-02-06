@@ -28,7 +28,7 @@ _zip_* (library),19620,25761
 _load_* (library),19360,20012
 dmRig,19296,24284
 dmDDF,17944,28684
-libunwind,17865,20942
+libunwind,17865,20966
 btCollisionWorld,17689,24923
 btQuantizedBvh,17680,21445
 __cxxabiv1,17288,28571
@@ -285,11 +285,11 @@ dmImage,1608,2434
 _TextureSet_* (library),1601,1963
 glfwAndroidDiscoverJoysticks,1600,1677
 _TextureImage_* (library),1596,2163
+_gl_* (library),1596,1966
 _sha1_* (library),1596,2463
 _ctx_* (library),1592,3173
 _VertexAttribute_* (library),1590,2692
 _ecdsa_* (library),1588,2580
-_gl_* (library),1584,1954
 dmURI,1564,1949
 bcwrite_proto,1556,1618
 _LOOKUP_* (library),1548,1666
@@ -407,8 +407,8 @@ dmHashRelease32(),1022,1104
 dmHashRelease64(),1022,1104
 _verify_* (library),1016,1285
 dmHashClone32(),1013,1098
-final_gl,1008,1065
 dmHashClone64(),1005,1138
+final_gl,1004,1061
 dmHashUpdateBuffer64(),999,1090
 compress_block,996,1059
 _serialize_* (library),996,1459
@@ -425,7 +425,7 @@ btUnionFind,960,1489
 _192_* (library),960,1425
 _128_* (library),960,1425
 _256_* (library),960,1401
-dmRenderDDF,960,4690
+dmRenderDDF,960,4666
 dmHashBuffer32,959,1022
 _SpriteGeometry_* (library),959,1305
 _substruct_* (library),948,1085
@@ -518,7 +518,7 @@ lj_bcread,720,778
 _EmitterKey_* (library),720,871
 dmAndroid,720,1127
 dmGameObjectDDF,720,3494
-_emutls_* (library),713,1039
+_emutls_* (library),713,1015
 deflateInit2_,712,798
 expr_primary,712,773
 _Bone_* (library),711,921
@@ -819,6 +819,7 @@ stbi__get16be(),344,427
 glfwOpenWindowHint,344,411
 _glfwShowKeyboard,344,410
 socket_read,344,404
+[section .text],344,344
 _SetViewProjection_* (library),344,481
 _TriggerEvent_* (library),344,457
 _call_* (library),340,430
@@ -829,7 +830,6 @@ _glfwPlatformGetJoystickButtons,336,416
 _ktabk_* (library),336,410
 _toreg_* (library),336,404
 _g_* (library),336,465
-[section .text],336,336
 b2Timer,336,588
 parse_label,328,388
 BroadphaseRayTester,328,629
@@ -1109,6 +1109,7 @@ process_cmd,224,284
 err_argmsg,224,283
 lj_cparse,224,282
 err_msgv,224,281
+_Resize_* (library),224,340
 _ResetConstantParticleFX_* (library),224,379
 _EnableGridShapeLayer_* (library),224,361
 _ComponenTypeDesc_* (library),224,358
@@ -1120,7 +1121,6 @@ _ConvexShape_* (library),224,358
 _LayoutChanged_* (library),224,328
 _SetTexture_* (library),224,325
 _Trigger_* (library),224,322
-_Resize_* (library),224,316
 luaL_optnumber,223,286
 dmHashReverseSafe32Alloc(),220,312
 dmHashReverseSafe64Alloc(),220,312
@@ -2306,7 +2306,6 @@ secp192k1_p,24,60
 secp192r1_b,24,60
 secp192r1_n,24,60
 g_SoundManager,24,39
-[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,165
 reltable.hookf,20,59
 _frame_* (library),20,20
@@ -2316,7 +2315,6 @@ g_FirstExtension,16,135
 _GameObject_* (library),16,131
 _Script_* (library),16,121
 inet_optfamily.optvalue,16,88
-_CortexA53843419_* (library),16,165
 ADJUST_SQRT2,16,77
 quant_look,16,75
 gProfileClock,16,67
@@ -2329,6 +2327,7 @@ _dso_* (library),8,117
 _ZN12dmGameObjectL23g_* (library),8,101
 _ZN8dmRenderL26g_* (library),8,93
 stbi__check_png_header(),8,86
+_CortexA53843419_* (library),8,84
 g_ResourceTypeCreatorDescFirst,8,79
 _DrawCalls_* (library),8,77
 lua_version.version,8,76
@@ -2352,6 +2351,8 @@ _empty_* (library),8,41
 g_accelerometer,8,40
 g_AndroidApp,8,37
 g_MainThread,8,37
+[LOAD #2 [RX]],8,8
+[LOAD #4 [RW]],8,0
 _init_* (library),5,108
 _FRAME_* (library),4,14017
 gContactBreakingThreshold,4,78
@@ -2407,10 +2408,10 @@ g_accelerometerEnabled,1,47
 g_appLaunchInterrupted,1,47
 g_PendingResize,1,40
 g_AppResumed,1,37
-[section .debug_info],0,5743499
-[section .debug_loc],0,5310833
-[section .debug_line],0,2244714
-[section .debug_ranges],0,1796928
+[section .debug_info],0,5743503
+[section .debug_loc],0,5310944
+[section .debug_line],0,2244721
+[section .debug_ranges],0,1796832
 [section .debug_str],0,1759820
 [section .debug_abbrev],0,416628
 [section .symtab],0,92040
@@ -2419,4 +2420,4 @@ g_AppResumed,1,37
 [section .shstrtab],0,374
 [section .comment],0,190
 [section .debug_frame],0,120
-[Unmapped],0,21
+[Unmapped],0,20
