@@ -4,7 +4,7 @@ dmGameSystem,405858,566656
 [section .rodata],353983,353983
 (anonymous namespace),130364,202121
 dmGraphics,124573,166446
-dmGui,123071,160615
+dmGui,123067,160611
 dmGameObject,116984,168898
 dmCrash,114782,14250
 dmRender,105936,149280
@@ -106,7 +106,7 @@ btOptimizedBvh,5084,7163
 _meta_* (library),5044,5995
 btDbvtBroadphase,5040,7441
 b2GearJoint,5004,6216
-dBoxBox2(),4988,5195
+dBoxBox2(),4988,5219
 btVoronoiSimplexSolver,4988,6635
 _book_* (library),4907,5494
 b2RevoluteJoint,4860,7061
@@ -425,7 +425,7 @@ btUnionFind,960,1489
 _128_* (library),960,1425
 _192_* (library),960,1425
 _256_* (library),960,1401
-dmRenderDDF,960,4690
+dmRenderDDF,960,4666
 dmHashBuffer32,959,1022
 _SpriteGeometry_* (library),959,1305
 _substruct_* (library),948,1085
@@ -587,7 +587,7 @@ _classify_* (library),576,646
 longest_match,576,638
 dmPPrint,576,942
 _Create_* (library),574,800
-intersectRectQuad2(),572,674
+intersectRectQuad2(),572,650
 ll_loadfunc,572,632
 _PbrMetallicRoughness_* (library),570,862
 _Clearcoat_* (library),570,807
@@ -825,7 +825,6 @@ _call_* (library),340,430
 _terminate_* (library),340,423
 mz_adler32(),340,408
 gc_finalize,340,400
-[section .text],340,340
 _glfwPlatformGetJoystickButtons,336,416
 _ktabk_* (library),336,410
 _toreg_* (library),336,404
@@ -833,6 +832,7 @@ _g_* (library),336,465
 b2Timer,336,588
 BroadphaseRayTester,328,653
 parse_label,328,388
+[section .text],328,328
 BroadphaseAabbTester,328,578
 luaL_gsub,326,384
 fetchleaves(),324,439
@@ -845,7 +845,7 @@ meth_setpeername,324,389
 socket_accept,324,386
 deflatePrime,324,385
 updatewindow,324,385
-_DisplayProfileQualifier_* (library),322,575
+_DisplayProfileQualifier_* (library),322,599
 meth_send,320,426
 _gather_* (library),320,392
 glfwGetWindowParam,320,387
@@ -2306,6 +2306,7 @@ secp192k1_p,24,60
 secp192r1_b,24,60
 secp192r1_n,24,60
 g_SoundManager,24,39
+[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,165
 reltable.hookf,20,59
 _frame_* (library),20,20
@@ -2351,7 +2352,6 @@ _empty_* (library),8,41
 g_accelerometer,8,40
 g_AndroidApp,8,37
 g_MainThread,8,37
-[LOAD #4 [RW]],8,0
 _init_* (library),5,108
 _FRAME_* (library),4,14017
 gContactBreakingThreshold,4,78
@@ -2409,7 +2409,7 @@ g_PendingResize,1,40
 g_AppResumed,1,37
 [section .debug_info],0,5743704
 [section .debug_loc],0,5311216
-[section .debug_line],0,2244861
+[section .debug_line],0,2244849
 [section .debug_ranges],0,1797040
 [section .debug_str],0,1759788
 [section .debug_abbrev],0,416628
@@ -2419,4 +2419,4 @@ g_AppResumed,1,37
 [section .shstrtab],0,374
 [section .comment],0,190
 [section .debug_frame],0,120
-[Unmapped],0,22
+[Unmapped],0,18
