@@ -1,26 +1,26 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1835008,1832096
+[__LINKEDIT],1835008,1833320
 dmScript,620664,96060
-dmGameSystem,339912,337240
+dmGameSystem,343184,340696
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",149029,149029
+"_TEXT,_* (library)",149315,149315
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
 basist,97742,82884
-dmGameObject,93648,93624
-dmGui,88164,87196
+dmGameObject,94072,94048
+dmGui,88232,87264
 dmRender,82172,81876
 dmGraphics,74577,73552
 _pfb,65544,65544
-_GLOBAL_* (library),37324,37324
+_GLOBAL_* (library),37212,37212
 _cp_* (library),34652,34652
-stbi__process_marker(),33591,33591
+stbi__process_marker(),33667,33667
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
-[__TEXT],29336,45616
+dmParticle,29804,29636
 std,29240,29240
-dmParticle,29196,29028
 dmResource,27240,27240
+[__TEXT],24706,40986
 _load_* (library),21176,21176
 dmHashTable<>,19444,19444
 dmSound,19352,19200
@@ -49,8 +49,8 @@ _serialize_* (library),9780,9780
 b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
 _dmRigDDF_* (library),9444,6896
+[__DATA],9216,4
 gjkepa2_impl,9044,9044
-[__DATA],8848,4
 dmHttpCache,8653,8653
 dmHID,8520,8448
 _gc_* (library),8228,8228
@@ -73,7 +73,6 @@ btIDebugDraw,6256,6256
 _dmPhysicsDDF_* (library),6256,4528
 _dmGraphics_* (library),6207,4816
 dBoxBox2(),6092,6092
-dmJobThread,5984,5968
 dmSocket,5972,5972
 _bcwrite_* (library),5968,5968
 _bcread_* (library),5852,5852
@@ -168,10 +167,9 @@ FontLoadFromMemoryTTF(),2384,2384
 __packetout,2376,2376
 _prepend_* (library),2316,2316
 b2PolygonShape,2280,2280
-_dmModelDDF_* (library),2216,1408
 stbtt_GetGlyphShape(),2204,2204
-_g_* (library),2194,0
 b2DistanceJoint,2192,2192
+_g_* (library),2190,0
 _jpeg_* (library),2171,2171
 btConvexHullShape,2168,2168
 _LZ4_* (library),2164,2164
@@ -194,6 +192,7 @@ _err_* (library),1908,1908
 _oid_* (library),1896,1896
 btDefaultCollisionConfiguration,1884,1884
 dmCrypt,1868,1868
+_dmModelDDF_* (library),1868,1160
 dmResourceProviderArchive,1852,1724
 _release_* (library),1840,1840
 _rsa_* (library),1828,1828
@@ -218,7 +217,7 @@ btTriangleShape,1604,1604
 b2FrictionJoint,1592,1592
 b2MouseJoint,1588,1588
 _jmp_* (library),1572,1572
-__MergedGlobals,1568,144
+__MergedGlobals,1568,192
 _var_* (library),1564,1564
 _ecdsa_* (library),1556,1556
 _strfmt_* (library),1536,1536
@@ -252,6 +251,7 @@ dmVMath,1188,1188
 _send_* (library),1176,1176
 b2ContactManager,1172,1172
 _ll_* (library),1164,1164
+_JobSystemUpdate,1144,1144
 _oggpack_* (library),1132,1132
 _ffh_* (library),1120,1120
 btPolyhedralConvexAabbCachingShape,1120,1016
@@ -287,9 +287,9 @@ Layout<>(),960,960
 _compress_* (library),960,960
 _idct_* (library),956,956
 dmImage,952,952
+_OUTLINED_* (library),952,952
 dmMutex,948,948
 _glfwDisable,944,944
-_OUTLINED_* (library),944,944
 dmResourceProviderFile,944,816
 btGjkConvexCast,940,940
 _oggbyte_* (library),928,928
@@ -327,6 +327,7 @@ _udp_* (library),712,712
 _dmLuaDDF_* (library),712,528
 cullPoints2(),708,708
 dmURI,704,704
+SelectAndPopJob(),700,700
 _direct_* (library),700,700
 _reader_* (library),696,696
 _tremolo_* (library),692,692
@@ -389,12 +390,14 @@ _dist_* (library),512,512
 _setjitmode,512,512
 _token2binop,512,512
 _vwin256,512,512
+_JobSystemCreate,500,500
 -[BaseView initWithFrame:],496,496
 _foldarith,496,496
 b2GridAndPolygonContact,496,496
 _de_* (library),492,484
 b2GridAndCircleContact,492,492
 _dict_* (library),484,484
+PutDone(),476,476
 _eckey_* (library),476,476
 _dmSoundDDF_* (library),472,360
 _const_* (library),464,464
@@ -411,6 +414,7 @@ _dmHashBuffer64,432,432
 _newproxy_* (library),432,432
 ResourceChunkCacheEvictMemory(),428,428
 _matchbracketclass,428,428
+CancelJobInternal(),424,424
 _collect_* (library),420,420
 -[BaseView fillTouch:forPhase:],416,416
 dmPPrint,412,412
@@ -419,12 +423,15 @@ _brainpoolP512r1_* (library),412,412
 _call_* (library),404,404
 _glfwEnable,404,404
 _dmMeshDDF_* (library),400,296
+_JobSystemSetParent,396,396
 _mmcall,396,396
+_JobSystemDestroy,392,392
 _glfwGetTouch,392,392
 _inflateReset2,392,392
 btNullPairCache,392,392
 dmHashClone64(),388,388
 _func,384,384
+_JobSystemPushJob,376,376
 _cpluaopen,376,376
 _rehashtab,376,376
 _countarray,368,368
@@ -436,6 +443,7 @@ _matchbalance,360,360
 dmHashClone32(),356,356
 stbtt_GetGlyphBox(),356,356
 _optset,352,352
+ProcessOneJob(),348,348
 __glfwParseGLVersion,348,348
 _stack_* (library),348,348
 ResourceChunkCacheGet(),340,340
@@ -477,6 +485,7 @@ btGjkEpaPenetrationDepthSolver,296,296
 _ShutdownEngine,292,292
 _bestasize,292,292
 _callhook,292,292
+_JobSystemCreateJob,288,288
 _adjuststack,288,288
 _ctr_* (library),288,288
 _glfwGetWindowParam,288,288
@@ -517,6 +526,7 @@ dmGameSystemDDF,256,256
 _set_* (library),252,252
 _dmHashReverse32,252,252
 _dmHashReverse64,252,252
+JobThread(),248,240
 _zlength_* (library),248,248
 -[ViewController getIntendedFrameOrigin:],240,240
 _countint,240,240
@@ -605,6 +615,7 @@ _segment_* (library),164,164
 dmStrlCat(),164,164
 stbi__get8(),164,164
 btSingleSweepCallback,164,164
+JobContext,160,160
 _configuration_* (library),160,160
 _derive_* (library),160,160
 _getfd,160,160
@@ -622,7 +633,7 @@ _capture_* (library),152,152
 _dmExportedSymbols,152,152
 _emptybuffer,152,152
 _index2adr_* (library),152,152
-_Components_* (library),152,8
+_Components_* (library),152,40
 _ZN15dmDeviceAVAudioL17DeviceAVAudioOpenEPKN7dmSound16OpenDeviceParamsEPPv_* (library),152,152
 _package_* (library),152,152
 -[BaseView init],148,148
@@ -726,6 +737,7 @@ _barklook,110,110
 -[BaseView textRangeFromPosition:toPosition:],104,104
 -[EAGLView teardownView],104,104
 ResourceRegisterTypeCreatorDesc(),104,104
+_JobSystemCancelJob,104,104
 _ZN15dmDeviceAVAudioL18DeviceAVAudioQueueEPvPKvj_* (library),104,104
 _determine_* (library),104,104
 __glfwLibrary,104,0
@@ -877,6 +889,15 @@ FontCollectionCreate(),40,40
 FontCollectionGetFont(),40,40
 GetScaleFromSizeTTF(),40,40
 _GraphicsAdapterOpenGL,40,40
+_JobSystemCreate.cold.1,40,40
+_JobSystemCreate.cold.4,40,40
+_JobSystemPushJob.cold.3,40,40
+_JobSystemSetParent.cold.4,40,40
+_JobSystemSetParent.cold.5,40,40
+_JobSystemSetParent.cold.6,40,40
+_JobSystemSetParent.cold.8,40,40
+_JobSystemSetParent.cold.9,40,40
+_JobSystemUpdate.cold.5,40,40
 _LogGLError,40,40
 _LogInternal.cold.1,40,40
 _RCON,40,0
@@ -905,6 +926,7 @@ _inflate.order,38,38
 _ComponentTypeGui,36,36
 _ComponentTypeMesh,36,36
 _ComponentTypeSound,36,36
+_JobSystemUpdate.cold.1,36,36
 _ResourceTypeAnim,36,36
 _ResourceTypeAnimationSet,36,36
 _ResourceTypeCollection,36,36
@@ -942,7 +964,6 @@ __glfwPlatformTerminate,24,24
 __glfwPlatformUnacquireAuxContext,24,24
 __glfwSetMarkedText,24,24
 dmGamesysDDF,24,24
-dmModelDDF,24,24
 -[AppDelegate appUpdate].cold.1,20,20
 -[BaseView caretRectForPosition:],20,20
 -[BaseView firstRectForRange:],20,20
@@ -983,6 +1004,7 @@ GetLineGapTTF(),16,16
 ResourceTypeIsStreaming(),16,16
 TextLayoutGetLineCount(),16,16
 _ADJUST_* (library),16,16
+_JobSystemGetWorkerCount,16,16
 __glfwPlatformGetDefaultFramebuffer,16,16
 __glfwPlatformOpenWindow,16,16
 __glfwPlatformSwapBuffers,16,16
@@ -1001,6 +1023,7 @@ _sha512_* (library),16,16
 dmEngineDDF,16,16
 dmGuiDDF,16,16
 dmLiveUpdateDDF,16,16
+dmModelDDF,16,16
 _row_* (library),13,13
 +[EAGLView layerClass],12,12
 +[VulkanView layerClass],12,12
@@ -1051,6 +1074,7 @@ GBFreeGlyph(),8,8
 GBGetLineGap(),8,8
 GBGetScaleFromSize(),8,8
 GetResourceSizeTTF(),8,8
+JobSystemUpdate,8,0
 ProfileRegisterPropertyF32(),8,8
 ProfileRegisterPropertyGroup(),8,8
 ProfileRegisterPropertyU32(),8,8

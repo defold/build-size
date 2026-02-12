@@ -1,16 +1,16 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3837952,3836144
+[__LINKEDIT],3842048,3838248
 MVK_spirv_cross,1692352,1692208
 dmScript,634436,109824
-dmGameSystem,411556,410220
+dmGameSystem,415388,414164
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",240794,240794
+"_TEXT,_* (library)",241074,241074
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
-dmGui,125492,124508
-dmGameObject,122152,122128
+dmGui,125524,124540
+dmGameObject,122696,122672
 dmGraphics,113153,112073
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
@@ -19,7 +19,7 @@ _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
 spvtools,69246,69246
-_GLOBAL_* (library),69104,69104
+_GLOBAL_* (library),68976,68976
 _ZNSt3_* (library),67120,67120
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
@@ -27,11 +27,11 @@ MVKInstance,62343,62343
 dmHashTable<>,61712,61712
 MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
-dmParticle,55776,55608
+dmParticle,56528,56360
 _LZ4HC_* (library),49440,49440
-stbi__process_marker(),42414,42414
+stbi__process_marker(),42494,42494
 MVKGraphicsPipeline,42338,42338
-dmPhysics,42188,42072
+dmPhysics,42188,42152
 _recff_* (library),36656,36656
 btConeTwistConstraint,36152,36152
 dmResource,34912,34912
@@ -71,7 +71,7 @@ glsl_entries,14912,14912
 __glfw,14744,0
 cereal,14710,14710
 MVKCmdBlitImage<>,14560,14560
-_field_* (library),14352,14352
+_field_* (library),14384,14384
 _OBJC_* (library),14320,14320
 btAxisSweep3Internal<>,13936,13936
 dmObjectPool<>,13872,13872
@@ -87,7 +87,7 @@ MVKExtensionList,11747,11747
 MVKGraphicsResourcesCommandEncoderState,11554,11554
 _vorbis_* (library),11392,11392
 dmEasing,11000,11000
-dmHttpCache,10970,10970
+dmHttpCache,10986,10986
 MVKCmdResolveImage<>,10758,10758
 dmHID,10576,10192
 MVKQueueFullCommandBufferSubmission<>,10420,10420
@@ -100,7 +100,6 @@ _DATA_* (library),9880,9880
 btDbvt,9840,9840
 _expr_* (library),9760,9760
 _dmRenderDDF_* (library),9700,7256
-dmJobThread,9648,9632
 _dmRigDDF_* (library),9628,7080
 tinfl_decompress(),9492,9492
 _inflate,9392,9392
@@ -229,7 +228,6 @@ MVKShaderModule,3554,3554
 MVKCmdDraw,3533,3533
 simple_json,3520,3520
 _emit_* (library),3504,3504
-[__TEXT],3460,8220
 _oid_* (library),3439,3439
 dmSSLSocket,3432,3424
 _tr_* (library),3376,3376
@@ -311,16 +309,17 @@ MVKCmdWaitEvents<>,2258,2258
 _rsa_* (library),2253,2253
 basisu,2250,2234
 btAlignedObjectArray<>,2240,2240
-_dmModelDDF_* (library),2216,1408
 btSortedOverlappingPairCache,2216,2216
 _match,2208,2208
 _io_* (library),2208,2208
 _buffer_* (library),2176,2176
 btHashMap<>,2160,2160
 MVKImageDescriptor,2157,2157
+[__TEXT],2140,6900
 MVKDeferredOperation,2135,2135
 MVKOcclusionQueryPool,2128,2128
 _decode_* (library),2112,2112
+[__DATA],2096,8
 __glfwCreateWindowCocoa,2080,2080
 mvkCmdBeginRenderPass(),2064,2064
 dmResourceProviderArchive,2064,1936
@@ -339,6 +338,7 @@ btTransformUtil,1904,1904
 btTypedConstraint,1896,1896
 dmCrypt,1888,1888
 _idct_* (library),1872,1872
+_dmModelDDF_* (library),1868,1160
 _ecdsa_* (library),1829,1829
 _glfwGetGamepadState,1824,1824
 _mapping_* (library),1824,1824
@@ -350,7 +350,6 @@ MVKBaseObject,1800,1800
 _global_* (library),1792,1792
 MVKDepthStencilCommandEncoderState,1789,1789
 btTranslationalLimitMotor,1776,1776
-[__DATA],1728,8
 __glfwSetWindowMonitorCocoa,1728,1728
 b2TimeOfImpact(),1728,1728
 MVKFence,1726,1726
@@ -377,7 +376,8 @@ __glfwRefreshContextAttribs,1504,1504
 btConvexInternalShape,1480,1480
 _vkspreflection_* (library),1472,1472
 _fetch_* (library),1472,1472
-_g_* (library),1465,0
+_g_* (library),1461,0
+_JobSystemUpdate,1456,1456
 dmURI,1456,1456
 _static_* (library),1448,1448
 dmResourceProvider,1448,1448
@@ -485,12 +485,13 @@ dmHashFinal64(),1008,1008
 dmThread,1008,1008
 _oggbyte_* (library),1008,1008
 b2Mat33,1008,1008
-dmGameSystemDDF,1008,1008
 MVKSemaphoreMTLEvent,1007,1007
 MVKLayer,1002,1002
+dmGameSystemDDF,1000,1000
 b2WorldManifold,992,992
 btBridgedManifoldResult,984,984
 _chacha20_* (library),980,980
+SelectAndPopJob(),976,976
 _auxsort,976,976
 dmMutex,976,976
 GetGlyphIndexTTF(),960,960
@@ -529,6 +530,7 @@ MVKFunctionSpecializer,857,857
 b2ChainAndCircleContact,856,856
 b2ChainAndPolygonContact,856,856
 btSphereShape,856,856
+JobSystemDebugPrintJobs(),848,848
 _release_* (library),848,848
 _vkCmdClearAttachments,848,848
 mz_inflate(),848,848
@@ -581,6 +583,7 @@ _udp_* (library),720,720
 CProfileNode,720,720
 MVKSamplerYcbcrConversion,716,716
 _dmLuaDDF_* (library),712,528
+PutDone(),704,704
 _small_* (library),704,704
 _ll_* (library),688,688
 _vkCmdPipelineBarrier2,688,688
@@ -614,6 +617,7 @@ spvPushOperandTypes(),624,624
 dmRigDDF,624,624
 MVKCmdClearColorImage<>,620,620
 -[GLFWContentView flagsChanged:],592,592
+_JobSystemCreate,592,592
 __glfwPollJoystickCocoa,592,592
 _vkCmdBlitImage,592,592
 b2EdgeSeparation(),592,592
@@ -653,6 +657,7 @@ btNullPairCache,536,536
 -[GLFWContentView performDragOperation:],528,528
 ResourceChunkCacheEvictMemory(),528,528
 _COS_* (library),528,528
+_JobSystemDestroy,528,528
 _ZN28MVKTimelineSemaphoreMTLEvent12registerWaitEP14MVKFenceSitterPK19VkSemaphoreWaitInfoj_* (library),528,528
 _init_* (library),528,528
 _longest_* (library),528,528
@@ -681,6 +686,7 @@ _check_* (library),512,512
 _map_* (library),512,512
 MVKSamplerDescriptor,511,511
 _entropy_* (library),499,499
+CancelJobInternal(),496,496
 __glfwGetGammaRampCocoa,496,496
 __glfwGetVideoModesCocoa,496,496
 b2AABB,496,496
@@ -720,6 +726,8 @@ _eckey_* (library),447,447
 dmInputDDF,440,440
 btCapsuleShapeX,440,440
 btCapsuleShapeZ,440,440
+ProcessOneJob(),432,432
+_JobSystemPushJob,432,432
 _inflateCopy,432,432
 _strfmt_* (library),432,432
 b2Timer,432,432
@@ -761,6 +769,8 @@ _vkCmdUpdateBuffer,384,384
 spvExtInstImportTypeGet(),384,384
 _ZN24MVKShaderLibraryCompiler13newMTLLibraryEP8NSStringRKN3mvk30SPIRVToMSLConversionResultInfoE_* (library),384,384
 MVKCommandEncoderState,369,369
+_JobSystemCreateJob,368,368
+_JobSystemSetParent,368,368
 __glfwGetScancodeNameCocoa,368,368
 __glfwGetVulkanResultString,368,368
 __glfwInitNull,368,368
@@ -839,6 +849,7 @@ MVKSemaphoreSubmitInfo,320,320
 MVKStorageBufferDynamicDescriptor,316,316
 MVKUniformBufferDynamicDescriptor,316,316
 MVKPipelineCommandEncoderState,313,313
+JobThread(),312,304
 MVKCmdBeginQuery,307,307
 ResourceChunkCacheGet(),304,304
 SetContext(),304,304
@@ -1217,13 +1228,15 @@ _globalMVKConfig,184,0
 btPointCollector,184,184
 btConvexCast,184,184
 dmParticleDDF,184,184
-dmModelDDF,184,184
 MVKCmdEndRendering,181,181
 -[GLFWContentView keyUp:],176,176
 -[GLFWContentView setMarkedText:selectedRange:replacementRange:],176,176
 CreateGlyphBankFont(),176,176
 GBGetGlyphIndex(),176,176
+JobContext,176,176
 ResourcePreloader,176,176
+_JobSystemGetContext,176,176
+_JobSystemGetData,176,176
 __glfwFreeMonitor,176,176
 __glfwGetFramebufferSizeCocoa,176,176
 _cpcall,176,176
@@ -1288,6 +1301,7 @@ mvkGetEnvVar(),176,176
 mz_inflateInit(),176,176
 dmPropertiesDDF,176,176
 dmMath,168,168
+dmModelDDF,168,168
 MVKLinkableMixin<>,165,165
 mvkOSVersion(),164,160
 ResourceGetByHashAndExt(),160,160
@@ -1440,10 +1454,10 @@ rmtp_Mesh(),144,144
 rmtp_MeshVertexCount(),144,144
 rmtp_MeshVertexSize(),144,144
 rmtp_Messages(),144,128
-rmtp_Model(),144,128
-rmtp_ModelIndexCount(),144,128
-rmtp_ModelVertexCount(),144,128
-rmtp_ModelVertexSize(),144,128
+rmtp_Model(),144,144
+rmtp_ModelIndexCount(),144,144
+rmtp_ModelVertexCount(),144,144
+rmtp_ModelVertexSize(),144,144
 rmtp_ParticleFx(),144,144
 rmtp_ParticleVertexCount(),144,144
 rmtp_ParticleVertexSize(),144,144
@@ -1621,7 +1635,7 @@ _package_* (library),112,112
 dmTime,112,112
 dmLiveUpdateDDF,112,112
 _bitrev,104,104
-_Components_* (library),104,96
+_Components_* (library),104,104
 btCollisionPairCallback,104,104
 MVKCmdBeginRenderPassBase,100,100
 -[CAMetalLayer(MoltenVK) naturalDrawableSizeMVK],96,96
@@ -1641,6 +1655,7 @@ ResourceChunkCacheCreate(),96,96
 ResourceRegisterTypeCreatorDesc(),96,96
 TextLayoutLegacyFree(),96,96
 _ExtensionRegisterCallback,96,96
+_JobSystemCancelJob,96,96
 _ZN16MVKEventEmulated12encodeSignalEPU27objcproto16MTLCommandBuffer11objc_* (library),96,96
 _ZN31MVKQueueCommandBufferSubmission28commitActiveMTLCommandBufferEb_* (library),96,96
 _ZN8MVKQueue6submitEP18MVKQueueSubmission_* (library),96,96
@@ -1953,6 +1968,37 @@ _ConfigFileGetInt.cold.1,48,48
 _ConfigFileGetString.cold.1,48,48
 _ConfigFileRegisterExtension,48,48
 _GraphicsAdapterVulkan,48,48
+_JobSystemCreate.cold.1,48,48
+_JobSystemCreate.cold.2,48,48
+_JobSystemCreate.cold.3,48,48
+_JobSystemCreate.cold.4,48,48
+_JobSystemCreate.cold.5,48,48
+_JobSystemCreateJob.cold.1,48,48
+_JobSystemCreateJob.cold.2,48,48
+_JobSystemDestroy.cold.1,48,48
+_JobSystemGetContext.cold.1,48,48
+_JobSystemGetData.cold.1,48,48
+_JobSystemPushJob.cold.1,48,48
+_JobSystemPushJob.cold.2,48,48
+_JobSystemPushJob.cold.3,48,48
+_JobSystemPushJob.cold.4,48,48
+_JobSystemSetParent.cold.1,48,48
+_JobSystemSetParent.cold.2,48,48
+_JobSystemSetParent.cold.3,48,48
+_JobSystemSetParent.cold.4,48,48
+_JobSystemSetParent.cold.5,48,48
+_JobSystemSetParent.cold.6,48,48
+_JobSystemSetParent.cold.7,48,48
+_JobSystemSetParent.cold.8,48,48
+_JobSystemSetParent.cold.9,48,48
+_JobSystemUpdate.cold.1,48,48
+_JobSystemUpdate.cold.2,48,48
+_JobSystemUpdate.cold.3,48,48
+_JobSystemUpdate.cold.4,48,48
+_JobSystemUpdate.cold.5,48,48
+_JobSystemUpdate.cold.6,48,48
+_JobSystemUpdate.cold.7,48,48
+_JobSystemUpdate.cold.8,48,48
 _LZ4MaxCompressedSize,48,48
 _LogInternal.cold.1,48,48
 _RCON,48,0
@@ -2418,6 +2464,7 @@ spvOpcodeIsScalarSpecConstant(),16,16
 spvOpcodeMake(),16,16
 spvOperandIsVariable(),16,16
 uniqueId,16,0
+JobSystemUpdate,8,0
 _ZN12dmGameObjectL23g_* (library),8,8
 _ZN12dmGameSystemL25g_* (library),8,8
 _ZN8dmRenderL26g_* (library),8,0
