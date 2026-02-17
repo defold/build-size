@@ -1,31 +1,31 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1835008,1833320
+[__LINKEDIT],1835008,1833752
 dmScript,620664,96060
-dmGameSystem,343184,340696
+dmGameSystem,343216,340728
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",149315,149315
+"_TEXT,_* (library)",149296,149296
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
-basist,97742,82884
+basist,97761,82903
 dmGameObject,94072,94048
 dmGui,88232,87264
 dmRender,82172,81876
 dmGraphics,74577,73552
 _pfb,65544,65544
-_GLOBAL_* (library),37212,37212
+_GLOBAL_* (library),37204,37204
 _cp_* (library),34652,34652
-stbi__process_marker(),33667,33667
+stbi__process_marker(),33655,33655
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
 dmParticle,29804,29636
 std,29240,29240
 dmResource,27240,27240
-[__TEXT],24706,40986
+[__TEXT],24674,40954
 _load_* (library),21176,21176
 dmHashTable<>,19444,19444
 dmSound,19352,19200
 _lua_* (library),19256,19256
-dmEngine,17596,17580
+dmEngine,17580,17564
 btCollisionWorld,16572,16568
 _vwin8192,16388,16388
 _mh_* (library),16384,32
@@ -38,7 +38,7 @@ dmRig,13816,13792
 _ssl_* (library),13520,13520
 dmDDF,13088,13024
 _dmGameSystemDDF_* (library),12448,8592
-dmInput,11928,10904
+dmInput,11896,10872
 _parse_* (library),11740,11740
 _zip_* (library),11368,11368
 dmEasing,10824,10824
@@ -64,7 +64,7 @@ dmResourceMounts,7812,7812
 _create_* (library),7792,7792
 _inflate,7608,7608
 btAxisSweep3Internal<>,7040,7040
-dmSoundCodec,6940,6908
+dmSoundCodec,6952,6920
 _deflate_* (library),6912,6912
 _bcemit_* (library),6724,6724
 tinfl_decompress(),6420,6420
@@ -127,7 +127,7 @@ dmSSLSocket,3644,3636
 _socket_* (library),3636,3636
 dmResourceProviderArchiveMutable,3596,3468
 _run_* (library),3592,3592
-dmPlatform,3560,3552
+dmPlatform,3548,3540
 b2Island,3508,3508
 _luaopen_* (library),3504,3504
 dmResourceProviderZip,3460,3332
@@ -285,9 +285,9 @@ btCollisionShape,988,988
 _lib_* (library),984,984
 Layout<>(),960,960
 _compress_* (library),960,960
+_OUTLINED_* (library),960,960
 _idct_* (library),956,956
 dmImage,952,952
-_OUTLINED_* (library),952,952
 dmMutex,948,948
 _glfwDisable,944,944
 dmResourceProviderFile,944,816
@@ -841,6 +841,7 @@ _24-[AppDelegate appUpdate]_* (library),64,64
 -[BaseView selectedTextRange],60,60
 ChunkComparePathOffsetFn(),60,60
 _ExtensionAppParamsInitialize,60,60
+_WindowCreateParamsInitialize,60,60
 _glfwSetWindowPos,60,60
 _setpc_* (library),60,60
 _unlinkuv,60,60

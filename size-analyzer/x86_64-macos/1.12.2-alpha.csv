@@ -1,12 +1,12 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3842048,3838248
-MVK_spirv_cross,1692352,1692208
+[__LINKEDIT],3846144,3842688
+MVK_spirv_cross,1692371,1692227
 dmScript,634436,109824
-dmGameSystem,415388,414164
+dmGameSystem,415548,414324
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",241074,241074
+"_TEXT,_* (library)",241106,241106
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125524,124540
@@ -29,7 +29,7 @@ MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
 dmParticle,56528,56360
 _LZ4HC_* (library),49440,49440
-stbi__process_marker(),42494,42494
+stbi__process_marker(),42478,42478
 MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42152
 _recff_* (library),36656,36656
@@ -51,7 +51,7 @@ btCollisionWorld,23976,23968
 _zip_* (library),23488,23488
 btSequentialImpulseConstraintSolver,21984,21984
 btDiscreteDynamicsWorld,21712,21712
-dmEngine,21360,21344
+dmEngine,21328,21312
 _lua_* (library),20104,20104
 _fold_* (library),19712,19712
 _cp_* (library),18400,18400
@@ -59,7 +59,7 @@ MVKCmdBufferImageCopy<>,18137,18137
 _parse_* (library),17856,17856
 MVKDescriptorTypePool<>,17104,17104
 MVKImage,17042,17042
-dmInput,16840,15808
+dmInput,16760,15728
 _vwin8192,16384,16384
 MVKCommandEncoder,16224,16224
 dmLiveUpdate,15820,14724
@@ -87,7 +87,7 @@ MVKExtensionList,11747,11747
 MVKGraphicsResourcesCommandEncoderState,11554,11554
 _vorbis_* (library),11392,11392
 dmEasing,11000,11000
-dmHttpCache,10986,10986
+dmHttpCache,10938,10938
 MVKCmdResolveImage<>,10758,10758
 dmHID,10576,10192
 MVKQueueFullCommandBufferSubmission<>,10420,10420
@@ -201,11 +201,11 @@ b2PulleyJoint,4176,4176
 dmSystemDDF,4152,4152
 MVKCmdBindDescriptorSetsStatic<>,4149,4149
 btBvhTriangleMeshShape,4136,4136
+dmPlatform,4112,4096
 dmMessage,4104,4064
 _vwin2048,4096,4096
 mvk_smallvector_allocator<>,4096,4096
 MVKPresentableSwapchainImage,4039,4039
-dmPlatform,4032,4016
 btConvexShape,4024,4024
 stbtt_GetGlyphShape(),4016,4016
 _dmParticleDDF_* (library),4008,3320
@@ -315,7 +315,6 @@ _io_* (library),2208,2208
 _buffer_* (library),2176,2176
 btHashMap<>,2160,2160
 MVKImageDescriptor,2157,2157
-[__TEXT],2140,6900
 MVKDeferredOperation,2135,2135
 MVKOcclusionQueryPool,2128,2128
 _decode_* (library),2112,2112
@@ -400,6 +399,7 @@ _ccm_* (library),1373,1373
 btConvexInternalAabbCachingShape,1368,1256
 MVKBufferDescriptor,1358,1358
 MVKInlineUniformBlockDescriptor,1354,1354
+[__TEXT],1353,6113
 __glfwDefaultMappings,1352,1352
 _send_* (library),1344,1344
 _unaccessed_* (library),1344,1344
@@ -1738,6 +1738,7 @@ _ScriptHttp,80,80
 _ScriptImageExt,80,80
 _ScriptModelExt,80,80
 _ScriptTypesExt,80,80
+_WindowCreateParamsInitialize,80,80
 __glfwAllocMonitor,80,80
 __glfwCenterCursorInContentArea,80,80
 __glfwCompareVideoModes,80,80
@@ -2167,6 +2168,7 @@ _AudioDecoderWav,32,32
 _DefaultSoundDevice,32,32
 _ExtensionAppParamsSetContext,32,32
 _ExtensionParamsSetContext,32,32
+_WindowOpen,32,32
 _ZN12dmGameObjectL10TYPE_* (library),32,32
 _ZN13MVKImagePlane26pullFromDeviceOnCompletionEP17MVKCommandEncoderR19MVKImageSubresourceRK20MVKMappedMemoryRange_* (library),32,32
 _fseek64_* (library),32,32
@@ -2342,6 +2344,41 @@ _ADJUST_* (library),16,16
 _DecryptXTeaCTR,16,16
 _EncryptXTeaCTR,16,16
 _ExtensionAppParamsGetAppExitCode,16,16
+_WindowAcquireAuxContext,16,16
+_WindowClose,16,16
+_WindowDelete,16,16
+_WindowGetDeviceState,16,16
+_WindowGetDisplayScaleFactor,16,16
+_WindowGetHeight,16,16
+_WindowGetJoystickAxes,16,16
+_WindowGetJoystickButtons,16,16
+_WindowGetJoystickDeviceName,16,16
+_WindowGetJoystickHats,16,16
+_WindowGetKey,16,16
+_WindowGetMouseButton,16,16
+_WindowGetMousePosition,16,16
+_WindowGetMouseWheel,16,16
+_WindowGetProcAddress,16,16
+_WindowGetSafeArea,16,16
+_WindowGetStateParam,16,16
+_WindowGetWidth,16,16
+_WindowHide,16,16
+_WindowIconify,16,16
+_WindowNew,16,16
+_WindowPollEvents,16,16
+_WindowSetDeviceState,16,16
+_WindowSetGamepadEventCallback,16,16
+_WindowSetKeyboardCharCallback,16,16
+_WindowSetKeyboardDeviceChangedCallback,16,16
+_WindowSetKeyboardMarkedTextCallback,16,16
+_WindowSetSize,16,16
+_WindowSetSwapInterval,16,16
+_WindowSetWindowPosition,16,16
+_WindowSetWindowTitle,16,16
+_WindowShow,16,16
+_WindowSwapBuffers,16,16
+_WindowTriggerCloseCallback,16,16
+_WindowUnacquireAuxContext,16,16
 _ZN17MVKCommandEncoder16getTempMTLBufferEmbb_* (library),16,16
 _ZN17MVKCommandEncoder24getStageCountersMTLFenceEv_* (library),16,16
 _ZN18MVKCmdUpdateBuffer6encodeEP17MVKCommandEncoder_* (library),16,16

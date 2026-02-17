@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
 dmScript,632171,142720
-dmGameSystem,403322,551191
-[section .rodata],338787,338787
-dmGraphics,141505,197430
+dmGameSystem,403606,551607
+[section .rodata],338707,338707
+dmGraphics,141505,197416
 dmGui,115499,151306
-dmGameObject,115440,163663
+dmGameObject,115440,163647
 dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
@@ -12,18 +12,18 @@ dmRender,95332,134955
 std,77302,96307
 [section .rel.dyn],70696,70696
 _pfb,65536,65561
-[section .ARM.exidx],61264,61264
-dmHashTable<>,50764,63407
-_GLOBAL_* (library),47624,53707
+[section .ARM.exidx],61368,61368
+dmHashTable<>,50764,63426
+_GLOBAL_* (library),47624,53713
 (anonymous namespace),44188,102915
 dmParticle,40573,51538
-dmPhysics,37925,58041
+dmPhysics,37925,58034
 dmResource,36328,51315
 dmSound,25265,32608
 _ssl_* (library),22756,31372
 btConeTwistConstraint,22000,25064
 _decompress_* (library),21628,22962
-dmEngine,21310,26668
+dmEngine,21274,26588
 _zip_* (library),21164,26601
 btQuantizedBvh,18928,22181
 _load_* (library),18688,19796
@@ -42,7 +42,7 @@ _mpi_* (library),14088,16667
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 [section .plt],11952,11952
-dmInput,11927,13694
+dmInput,11885,13636
 b2World,11672,13849
 _ecp_* (library),11029,13516
 dmEasing,11004,11212
@@ -63,7 +63,7 @@ vwin4096,8192,8217
 dmSys,8174,11160
 _BC_* (library),7892,10850
 __cxxabiv1,7494,17864
-dmHID,7450,13620
+dmHID,7450,13598
 _get_* (library),7362,9534
 btIDebugDraw,7328,8416
 tinfl_decompress(),7038,7806
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
 [section .dynstr],5860,5860
-[section .text],5831,5831
+[section .text],5846,5846
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -149,12 +149,12 @@ topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
 dmArray<>,2948,4463
 _cconv_* (library),2928,3379
-[section .bss],2902,0
+[section .bss],2894,0
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
 _carith_* (library),2852,3611
-dmPlatform,2817,12526
+dmPlatform,2813,12446
 btSimulationIslandManager,2808,3916
 _packetout,2760,2803
 btConvexConcaveCollisionAlgorithm,2704,5157
@@ -319,6 +319,7 @@ dmHashClone64(),1121,1206
 dmHashRelease32(),1118,1200
 dmHashRelease64(),1118,1200
 btCollisionObject,1112,2115
+glfwAndroidFlushEvents,1104,1207
 btBoxBoxCollisionAlgorithm,1084,2399
 btConvexInternalAabbCachingShape,1076,1703
 btCollisionShape,1072,1908
@@ -353,7 +354,6 @@ RT3,1024,20
 btGjkConvexCast,1020,1458
 dmHashUpdateBuffer32(),1007,1098
 dmImage,1004,1718
-glfwAndroidFlushEvents,1000,1103
 fill_window,1000,1044
 _bcread_* (library),994,1026
 dmFileDescriptor,992,1687
@@ -392,7 +392,7 @@ dmZlib,856,1041
 insertleaf(),852,924
 _initialize_* (library),840,911
 _chacha20_* (library),840,1203
-_ThumbV7PILongThunk_* (library),840,6594
+_ThumbV7PILongThunk_* (library),840,6586
 dmHashReverse32Alloc(),838,928
 _profile_* (library),838,1227
 _verify_* (library),836,1041
@@ -577,12 +577,12 @@ _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
 lex_number,384,443
-[LOAD #1 [R]],382,382
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
 deflatePending,376,455
+[LOAD #1 [R]],374,374
 JobSystemCreateJob,372,439
 _SpriteDesc_* (library),369,960
 deflateTune,364,440
@@ -1095,7 +1095,7 @@ bcwrite_ktabk,144,190
 _EmitterKey_* (library),144,255
 _GamepadMap_* (library),144,373
 dmTime,144,311
-_ARMV7PILongThunk_* (library),143,911
+_ARMV7PILongThunk_* (library),143,887
 lua_newuserdata,142,196
 buf_grow,142,183
 _PropertyDeclarationEntry_* (library),142,385
@@ -1468,7 +1468,7 @@ lua_remove,83,126
 max_expand,82,125
 btAlignedAllocSetCustom(),80,168
 _glfwPlatformGetJoystickHats,80,157
-dmEngineUpdate(),80,157
+dmEngineUpdate(),80,156
 recursedeletenode(),80,156
 FontDestroy(),80,150
 ChunkComparePathOffsetFn(),80,148
@@ -1615,6 +1615,7 @@ Particle_ResetAttributeScratchBuffer,65,134
 LZ4_freeStreamDecode,65,118
 oggpack_bits,65,110
 ResourceAddFile(),64,148
+WindowCreateParamsInitialize,64,141
 glfwIconifyWindow,64,130
 luaL_loadbuffer,64,128
 _glfwInputChar,64,127
@@ -1647,7 +1648,7 @@ LZ4_freeStreamHC,61,110
 lua_isuserdata,61,108
 lua_isstring,61,106
 dLib,61,307
-dmEngineDestroy(),60,138
+dmEngineDestroy(),60,137
 btAlignedFreeInternal(),60,136
 glfwSetMouseButtonCallback,60,135
 FontGetPathHash(),60,134
@@ -2081,6 +2082,7 @@ _glfwThrd,20,26
 g_Window,20,25
 stbi__compute_huffman_codes(),19,100
 bl_order,19,44
+WindowOpen,18,61
 cpfinalize,18,61
 dmProfiler,16,327
 global_create6,16,95
@@ -2182,27 +2184,47 @@ FontGetGlyphIndex(),8,69
 GetResourceSizeTTF(),8,69
 glfwSetDeviceChangedCallback,8,69
 FontGetLayoutType(),8,68
+WindowGetDisplayScaleFactor,8,68
+WindowGetJoystickDeviceName,8,68
+_input_* (library),8,125
 FontGetDescent(),8,66
 FontGetLineGap(),8,66
 ProfileIsInitialized(),8,66
 FontGetAscent(),8,65
 GBGetLineGap(),8,65
+WindowGetJoystickButtons,8,65
+WindowAcquireAuxContext,8,64
 ProfileFrameBegin(),8,63
 _hdr_* (library),8,126
+WindowGetAcceleration,8,62
+WindowGetJoystickAxes,8,62
+WindowGetJoystickHats,8,62
+WindowGetDeviceState,8,61
+WindowGetMouseButton,8,61
+WindowGetProcAddress,8,61
+WindowGetMouseWheel,8,60
+WindowGetStateParam,8,60
+WindowGetTouchData,8,59
+WindowGetSafeArea,8,58
 _set2key_* (library),8,116
 _set3key_* (library),8,116
 zlibCompileFlags,8,57
+WindowGetHeight,8,56
+WindowGetWidth,8,55
 pointerIdToRef,8,55
 _GameObject_* (library),8,55
 auxiliar_open,8,54
+WindowGetKey,8,53
 socket_close,8,53
 buffer_open,8,52
 sha224_wrap,8,52
 sha256_wrap,8,52
 sha384_wrap,8,52
 sha512_wrap,8,52
+WindowTriggerCloseCallback,8,51
 do_nothing,8,51
 _Script_* (library),8,51
+WindowNew,8,50
 zcalloc,8,48
 zcfree,8,47
 lua_version.version,8,44
@@ -2253,7 +2275,9 @@ ResourceRelease(),4,83
 ResourceGetCanonicalPath(),4,78
 btCollisionAlgorithmCreateFunc,4,76
 btConvexPenetrationDepthSolver,4,76
+WindowSetKeyboardDeviceChangedCallback,4,75
 _glfwPlatformSetWindowBackgroundColor,4,74
+WindowSetKeyboardMarkedTextCallback,4,72
 btBroadphaseAabbCallback,4,70
 ProfileUnregisterProfiler(),4,69
 _glfwPlatformRefreshWindowParams,4,69
@@ -2261,6 +2285,8 @@ _dso_* (library),4,68
 _glfwPlatformDisableSystemKeys,4,67
 _glfwPlatformSetMouseCursorPos,4,67
 btNodeOverlapCallback,4,67
+WindowSetGamepadEventCallback,4,66
+WindowSetKeyboardCharCallback,4,66
 _glfwPlatformEnableSystemKeys,4,66
 ProfilePropertySetBool(),4,65
 _ZN12dmGameSystemL25g_* (library),4,65
@@ -2288,42 +2314,56 @@ _glfwPlatformRestoreWindow,4,63
 b2RayCastCallback,4,63
 btOverlapCallback,4,63
 ProfilePropertyReset(),4,62
+WindowUnacquireAuxContext,4,62
 _glfwPlatformSetWindowPos,4,62
 glfwGetDefaultFramebuffer,4,62
 glfwGetDisplayScaleFactor,4,62
 _ZN8dmRenderL26g_* (library),4,61
 _glfwPlatformSetViewType,4,61
 ProfileScopeEnd(),4,60
+WindowSetWindowPosition,4,60
 _glfwPlatformWaitEvents,4,60
 dmFixedMemFree(),4,60
 glfwUnacquireAuxContext,4,60
 AppDestroy(),4,59
 ProfileInitialize(),4,59
 ProfileLogText(),4,59
+WindowGetMousePosition,4,59
 btBulletCollisionProbe,4,59
 btMotionState,4,59
+WindowSetSwapInterval,4,58
 glfwAcquireAuxContext,4,58
 _vertically_* (library),4,58
 AppCreate(),4,57
 ProfileFinalize(),4,57
 ProfileFrameEnd(),4,57
+WindowSetDeviceState,4,57
+WindowSetWindowTitle,4,57
 btFreeDefault(),4,57
 glfwGetAcceleration,4,56
 glfwQueryAuxContext,4,56
 _unpremultiply_* (library),4,56
+WindowSwapBuffers,4,54
 glfwResetKeyboard,4,54
+WindowPollEvents,4,53
 glfwShowKeyboard,4,53
 b2Shape,4,52
 glfwSetViewType,4,52
 _image_* (library),4,52
 mbedtls_sha256,4,51
 mbedtls_sha512,4,51
+WindowIconify,4,50
+WindowSetSize,4,50
 _mcode_* (library),4,50
+WindowDelete,4,49
 mbedtls_sha1,4,49
 mz_free(),4,49
 ProfilerExt,4,48
+WindowClose,4,48
 b2Free(),4,48
 mbedtls_md5,4,48
+WindowHide,4,47
+WindowShow,4,47
 g_ResourceTypeCreatorDescFirst,4,47
 app_dummy,4,46
 gContactBreakingThreshold,4,46
@@ -2396,7 +2436,6 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
-_CortexA8657417_* (library),3,43
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
 g_PendingResizeBecauseOfInsets,1,47
@@ -2407,17 +2446,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5369615
-[section .debug_loc],0,2923059
-[section .debug_line],0,2277650
-[section .debug_str],0,1761281
-[section .debug_ranges],0,915176
-[section .debug_abbrev],0,425284
-[section .debug_frame],0,269288
-[section .symtab],0,44208
-[section .strtab],0,17339
+[section .debug_info],0,5373490
+[section .debug_loc],0,2925094
+[section .debug_line],0,2279906
+[section .debug_str],0,1762225
+[section .debug_ranges],0,915696
+[section .debug_abbrev],0,425647
+[section .debug_frame],0,270132
+[section .symtab],0,44240
+[section .strtab],0,17350
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,22
+[Unmapped],0,19
