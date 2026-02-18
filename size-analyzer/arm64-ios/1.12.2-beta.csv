@@ -1,26 +1,26 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1835008,1833752
+[__LINKEDIT],1835008,1833504
 dmScript,620664,96060
-dmGameSystem,343216,340728
+dmGameSystem,343068,340492
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",149296,149296
+"_TEXT,_* (library)",149216,149216
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
 basist,97761,82903
 dmGameObject,94072,94048
 dmGui,88232,87264
-dmRender,82172,81876
-dmGraphics,74577,73552
+dmRender,82864,82568
+dmGraphics,74861,73836
 _pfb,65544,65544
-_GLOBAL_* (library),37204,37204
+_GLOBAL_* (library),37276,37276
 _cp_* (library),34652,34652
-stbi__process_marker(),33655,33655
+stbi__process_marker(),33574,33574
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
 dmParticle,29804,29636
 std,29240,29240
 dmResource,27240,27240
-[__TEXT],24674,40954
+[__TEXT],23931,40211
 _load_* (library),21176,21176
 dmHashTable<>,19444,19444
 dmSound,19352,19200
@@ -34,11 +34,11 @@ _OBJC_* (library),14964,14964
 btDiscreteDynamicsWorld,14436,14436
 _lex_* (library),14292,14292
 btSequentialImpulseConstraintSolver,13860,13860
-dmRig,13816,13792
+dmRig,13820,13796
 _ssl_* (library),13520,13520
 dmDDF,13088,13024
 _dmGameSystemDDF_* (library),12448,8592
-dmInput,11896,10872
+dmInput,11904,10872
 _parse_* (library),11740,11740
 _zip_* (library),11368,11368
 dmEasing,10824,10824
@@ -49,7 +49,7 @@ _serialize_* (library),9780,9780
 b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
 _dmRigDDF_* (library),9444,6896
-[__DATA],9216,4
+[__DATA],9144,28
 gjkepa2_impl,9044,9044
 dmHttpCache,8653,8653
 dmHID,8520,8448
@@ -76,7 +76,7 @@ dBoxBox2(),6092,6092
 dmSocket,5972,5972
 _bcwrite_* (library),5968,5968
 _bcread_* (library),5852,5852
-"_DATA,_* (library)",5816,5816
+"_DATA,_* (library)",5824,5824
 _objc_* (library),5792,5792
 b2DynamicTree,5676,5676
 dmBuffer,5668,5660
@@ -176,6 +176,7 @@ _LZ4_* (library),2164,2164
 SphereTriangleDetector,2164,2164
 b2Contact,2132,1528
 _dmInputDDF_* (library),2080,1248
+dmArray<>,2072,2072
 btCollisionDispatcher,2072,2072
 b2RopeJoint,2056,2056
 _crc32_* (library),2052,2052
@@ -183,7 +184,6 @@ _char2escape,2048,2048
 _fixedtables.lenfix,2048,2048
 _vwin1024,2048,2048
 _clib_* (library),2028,2028
-dmArray<>,2016,2016
 _buffer_* (library),1984,1984
 _decode_* (library),1968,1968
 _gola_* (library),1940,1940
@@ -317,7 +317,6 @@ _jit_* (library),752,752
 _fpconv_* (library),752,752
 _index2adr,732,732
 CProfileManager,728,656
-dmHashFinal64(),724,724
 _priority,720,720
 GetGlyphIndexTTF(),716,716
 b2EdgeShape,716,716
@@ -334,10 +333,11 @@ _tremolo_* (library),692,692
 Vectormath,692,692
 _assign_* (library),692,692
 btGhostObject,692,692
+_dmHashFinal64,688,688
 _copy_* (library),688,688
 _strbuf_* (library),688,688
+_dmHashFinal32,680,680
 _hashkey,680,680
-dmHashFinal32(),680,680
 insertleaf(),680,680
 _tab_* (library),676,676
 b2WorldManifold,676,676
@@ -351,7 +351,6 @@ _close_* (library),652,652
 _dmBufferDDF_* (library),648,480
 _newtab,644,644
 b2CollidePolygonAndCircle(),636,636
-dmHashUpdateBuffer64(),636,636
 _zbuild_* (library),628,628
 b2CollideEdgeAndCircle(),620,620
 _des_* (library),620,620
@@ -360,10 +359,11 @@ btClosestNotMeConvexResultCallback,612,612
 _dmHashBuffer32,608,608
 _tls_* (library),608,608
 btMatrix3x3,604,604
+_dmHashUpdateBuffer64,596,596
 dmConditionVariable,596,596
 _fscope_* (library),592,592
 _mmap_* (library),588,580
-dmHashUpdateBuffer32(),580,580
+_dmHashUpdateBuffer32,580,580
 b2StackAllocator,580,580
 _zdist_* (library),576,576
 btTriangleConvexcastCallback,572,572
@@ -429,7 +429,6 @@ _JobSystemDestroy,392,392
 _glfwGetTouch,392,392
 _inflateReset2,392,392
 btNullPairCache,392,392
-dmHashClone64(),388,388
 _func,384,384
 _JobSystemPushJob,376,376
 _cpluaopen,376,376
@@ -440,11 +439,12 @@ btConeTwistConstraint,364,364
 ResourceChunkCacheEvictPathHash(),360,360
 _classend,360,360
 _matchbalance,360,360
-dmHashClone32(),356,356
+_dmHashClone32,356,356
 stbtt_GetGlyphBox(),356,356
 _optset,352,352
 ProcessOneJob(),348,348
 __glfwParseGLVersion,348,348
+_dmHashClone64,348,348
 _stack_* (library),348,348
 ResourceChunkCacheGet(),340,340
 _glfwExtensionSupported,340,340
@@ -488,8 +488,8 @@ _callhook,292,292
 _JobSystemCreateJob,288,288
 _adjuststack,288,288
 _ctr_* (library),288,288
+_dmHashRelease64,288,288
 _glfwGetWindowParam,288,288
-dmHashRelease64(),288,288
 _dhm_* (library),288,288
 _brainpoolP384r1_* (library),288,288
 _SB1,284,284
@@ -535,9 +535,9 @@ dmStrTok(),240,240
 _secp384r1_* (library),240,240
 -[AppDelegateProxy application:didFinishLaunchingWithOptions:],236,236
 _counthash,236,236
+_dmHashInit32,236,236
+_dmHashInit64,236,236
 _inflateInit2_* (library),236,236
-dmHashInit32(),236,236
-dmHashInit64(),236,236
 _base_* (library),236,236
 -[AppDelegateProxy forwardInvocation:],232,232
 __glfwPlatformOpenWindowVulkan,228,228
@@ -666,7 +666,7 @@ rmtp_Mesh(),132,132
 dmMemProfile,132,116
 b2Draw,132,132
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3554,128,0
+_ComponentTypeGui3557,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
 _ComponentTypeSound574,128,0
@@ -727,8 +727,8 @@ btPointCollector,116,116
 __glfwPlatformPollEvents,112,112
 __glfwThrd,112,0
 _ctoknames,112,112
+_dmHashReverseSafe64Alloc,112,112
 btAlignedAllocInternal(),112,112
-dmHashReverseSafe64Alloc(),112,112
 dmOpaqueHandleContainer<>,112,112
 _md5_* (library),112,112
 _sha1_* (library),112,112
@@ -912,9 +912,11 @@ _ResourceTypeOgg,40,40
 _ResourceTypeOpus,40,40
 _ResourceTypeTTF,40,40
 _ResourceTypeWav,40,40
+_dmHashClone64.cold.7,40,40
 _dmHashReverseSafe64,40,40
 _dmHashString32,40,40
 _dmHashString64,40,40
+_dmHashUpdateBuffer64.cold.4,40,40
 _hookf.hooknames,40,40
 _transposes,40,40
 b2Log(),40,40
@@ -936,6 +938,7 @@ _ResourceTypeGui,36,36
 _ResourceTypeLua,36,36
 _ResourceTypeScript,36,36
 __ilog,36,36
+_dmHashFinal64.cold.12,36,36
 -[AppDelegate applicationDidBecomeActive:],32,32
 _ComponentTypeAnim,32,32
 _ComponentTypeScript,32,32

@@ -1,25 +1,25 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3846144,3842688
+[__LINKEDIT],3846144,3843496
 MVK_spirv_cross,1692371,1692227
 dmScript,634436,109824
-dmGameSystem,415548,414324
+dmGameSystem,416324,415100
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",241106,241106
+"_TEXT,_* (library)",241122,241122
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125524,124540
 dmGameObject,122696,122672
-dmGraphics,113153,112073
+dmGraphics,113681,112601
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
-dmRender,108496,108200
+dmRender,108896,108600
 _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
 spvtools,69246,69246
-_GLOBAL_* (library),68976,68976
+_GLOBAL_* (library),69056,69056
 _ZNSt3_* (library),67120,67120
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
@@ -27,11 +27,11 @@ MVKInstance,62343,62343
 dmHashTable<>,61712,61712
 MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
-dmParticle,56528,56360
+dmParticle,56432,56264
 _LZ4HC_* (library),49440,49440
-stbi__process_marker(),42478,42478
+stbi__process_marker(),42398,42398
 MVKGraphicsPipeline,42338,42338
-dmPhysics,42188,42152
+dmPhysics,42188,42096
 _recff_* (library),36656,36656
 btConeTwistConstraint,36152,36152
 dmResource,34912,34912
@@ -74,7 +74,7 @@ MVKCmdBlitImage<>,14560,14560
 _field_* (library),14384,14384
 _OBJC_* (library),14320,14320
 btAxisSweep3Internal<>,13936,13936
-dmObjectPool<>,13872,13872
+dmObjectPool<>,13824,13824
 _rec_* (library),13760,13760
 _ssl_* (library),13684,13684
 gjkepa2_impl,13124,13124
@@ -213,6 +213,7 @@ b2WeldJoint,4000,4000
 MVKWatermark,3967,3967
 _ra_* (library),3952,3952
 _pk_* (library),3928,3928
+[__TEXT],3897,8657
 _inet_* (library),3856,3856
 dmDeviceAVAudio,3824,3824
 dmLog,3824,3520
@@ -237,7 +238,7 @@ MVKTimelineSemaphoreEmulated,3335,3335
 MVKCmdCopyBuffer<>,3330,3330
 dmResourceProviderZip,3320,3192
 b2PolygonShape,3312,3312
-dmArray<>,3264,3264
+dmArray<>,3296,3296
 dmIntersection,3216,3216
 SphereTriangleDetector,3208,3208
 _floor1_* (library),3200,3200
@@ -318,11 +319,11 @@ MVKImageDescriptor,2157,2157
 MVKDeferredOperation,2135,2135
 MVKOcclusionQueryPool,2128,2128
 _decode_* (library),2112,2112
-[__DATA],2096,8
 __glfwCreateWindowCocoa,2080,2080
 mvkCmdBeginRenderPass(),2064,2064
 dmResourceProviderArchive,2064,1936
 dmLoadQueue,2064,2064
+[__DATA],2048,8
 _char2escape,2048,2048
 _fixedtables.lenfix,2048,2048
 _vwin1024,2048,2048
@@ -399,7 +400,6 @@ _ccm_* (library),1373,1373
 btConvexInternalAabbCachingShape,1368,1256
 MVKBufferDescriptor,1358,1358
 MVKInlineUniformBlockDescriptor,1354,1354
-[__TEXT],1353,6113
 __glfwDefaultMappings,1352,1352
 _send_* (library),1344,1344
 _unaccessed_* (library),1344,1344
@@ -481,7 +481,6 @@ MVKCmdSetScissor<>,1011,1011
 _LogInternal,1008,1008
 _vkCmdCopyBufferToImage,1008,1008
 _vkCmdCopyImageToBuffer,1008,1008
-dmHashFinal64(),1008,1008
 dmThread,1008,1008
 _oggbyte_* (library),1008,1008
 b2Mat33,1008,1008
@@ -498,7 +497,6 @@ GetGlyphIndexTTF(),960,960
 __glfwGetGammaRampNull,960,960
 kMVKMTLDepthStencilDescriptorDataDefault,960,0
 _floor0_* (library),960,960
-dmHashFinal32(),944,944
 dmZlib,944,944
 b2Joint,944,944
 dmResourceProviderFile,944,816
@@ -560,6 +558,7 @@ b2EdgeAndCircleContact,776,776
 b2EdgeAndPolygonContact,776,776
 b2PolygonAndCircleContact,776,776
 b2PolygonContact,776,776
+_dmHashFinal64,768,768
 _vkCmdPushConstants,768,768
 b2CollidePolygonAndCircle(),768,768
 _zbuild_* (library),768,768
@@ -576,14 +575,13 @@ MVKSemaphoreSingleQueue,738,738
 _bcread_* (library),736,736
 _copy_* (library),736,736
 MVKPeerSwapchainImage,736,736
-dmHashUpdateBuffer32(),720,720
-dmHashUpdateBuffer64(),720,720
 spvOpcodeIsScalarizable(),720,720
 _udp_* (library),720,720
 CProfileNode,720,720
 MVKSamplerYcbcrConversion,716,716
 _dmLuaDDF_* (library),712,528
 PutDone(),704,704
+_dmHashFinal32,704,704
 _small_* (library),704,704
 _ll_* (library),688,688
 _vkCmdPipelineBarrier2,688,688
@@ -612,6 +610,8 @@ MVKCmdDispatch,625,625
 _des_* (library),625,625
 -[CAMetalLayer(MoltenVK) privateScreenMVKImpl],624,624
 _deflateSetDictionary,624,624
+_dmHashUpdateBuffer32,624,624
+_dmHashUpdateBuffer64,624,624
 _tab_* (library),624,624
 spvPushOperandTypes(),624,624
 dmRigDDF,624,624
@@ -636,7 +636,6 @@ __glfwSetVideoModeCocoa,560,560
 _deflateCopy,560,560
 _vkCmdCopyImage,560,560
 _vkCmdResolveImage,560,560
-dmHashClone64(),560,560
 MVKMetalArgumentBuffer,560,560
 MVKCmdPushDescriptorSetWithTemplate,550,550
 FontDebug(),544,544
@@ -647,7 +646,6 @@ _loop_* (library),544,544
 _vkCmdClearColorImage,544,544
 _vkCmdClearDepthStencilImage,544,544
 _vkCmdCopyBuffer,544,544
-dmHashClone32(),544,544
 mvkGetAvailableMTLDevicesArray(),544,544
 _YCbCr_* (library),544,544
 _gcm_* (library),541,541
@@ -695,8 +693,6 @@ spvInstructionAddWord(),496,496
 __glfwIsValidContextConfig,480,480
 _deflateParams,480,480
 _dmHashBuffer64,480,480
-dmHashRelease32(),480,480
-dmHashRelease64(),480,480
 kMVKMTLStencilDescriptorDataDefault,480,0
 _dmSoundDDF_* (library),480,368
 _ccall_* (library),480,480
@@ -739,6 +735,7 @@ _argv2ctype,416,416
 _cpluaopen,416,416
 _deflateBound,416,416
 _dmHashBufferNoReverse64,416,416
+_dmHashClone64,416,416
 _glfwExtensionSupported,416,416
 _vkCmdCopyQueryPoolResults,416,416
 _brainpoolP512r1_* (library),416,416
@@ -747,6 +744,7 @@ _dmMeshDDF_* (library),408,304
 -[GLFWWindowDelegate windowDidResize:],400,400
 MVKTraceVulkanCallStartImpl(),400,400
 _collect_* (library),400,400
+_dmHashClone32,400,400
 _vkCmdDispatchBase,400,400
 _vkGetInstanceProcAddr,400,400
 fetchleaves(),400,400
@@ -874,7 +872,6 @@ _vkCmdSetRasterizerDiscardEnable,304,304
 _vkCmdSetSampleLocationsEnableEXT,304,304
 _vkCmdSetStencilTestEnable,304,304
 b2PulleyJointDef,304,304
-dmHashInit32(),304,304
 mvkVkDescriptorTypeName(),304,304
 mz_uncompress2(),304,304
 stbi__get16be(),304,304
@@ -898,6 +895,8 @@ __glfwWaitEventsTimeoutCocoa,288,288
 __glfwWindowHoveredCocoa,288,288
 _closeJoystick,288,288
 _deflateEnd,288,288
+_dmHashRelease32,288,288
+_dmHashRelease64,288,288
 _glfwCreateCursor,288,288
 _glfwCreateStandardCursor,288,288
 _mask,288,288
@@ -905,7 +904,6 @@ _updatewindow,288,288
 _vkCreateDevice,288,288
 applyAnisotropicFriction(),288,288
 b2DistanceProxy,288,288
-dmHashInit64(),288,288
 zip_errlist,288,288
 _reader_* (library),288,288
 _ZN25MVKRenderPipelineCompiler25newMTLRenderPipelineStateEP27MTLRenderPipelineDescriptor_* (library),288,288
@@ -959,6 +957,7 @@ _length_* (library),256,256
 _set_* (library),256,256
 _deflatePrime,256,256
 _deflateResetKeep,256,256
+_dmHashInit32,256,256
 _dmHashReverse32,256,256
 _dmHashReverseErase32,256,256
 _four_* (library),256,256
@@ -992,6 +991,7 @@ __glfwSetWindowAspectRatioNull,240,240
 __glfwSetWindowSizeLimitsNull,240,240
 _buf_* (library),240,240
 _close_* (library),240,240
+_dmHashInit64,240,240
 _glfwGetJoystickButtons,240,240
 _glfwSetCursorPos,240,240
 _inflateInit_* (library),240,240
@@ -1488,7 +1488,7 @@ MVKSubpassDependency,128,128
 ResourceGetDescriptorByHash(),128,128
 ResourceGetPath(),128,128
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3554,128,0
+_ComponentTypeGui3557,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
 _ComponentTypeSound574,128,0
@@ -1587,6 +1587,8 @@ _barklook,112,112
 _ctoknames,112,112
 _deflateSetHeader,112,112
 _deflateUsed,112,112
+_dmHashReverseSafe32Alloc,112,112
+_dmHashReverseSafe64Alloc,112,112
 _dmLogRegisterListener,112,112
 _flush_* (library),112,112
 _glfwGetCursorPos,112,112
@@ -1623,8 +1625,6 @@ _mvkVkFormatName,112,112
 _mvkVkFormatProperties,112,112
 _panic,112,112
 _spvContextCreate,112,112
-dmHashReverseSafe32Alloc(),112,112
-dmHashReverseSafe64Alloc(),112,112
 mvkGetElapsedMilliseconds(),112,112
 mvkMTLTextureTypeFromVkImageTypeObj(),112,112
 spvIsValidID(),112,112
@@ -2038,6 +2038,36 @@ __glfwSetWindowPosNull,48,48
 __glfwTerminateNull,48,48
 __glfwTerminateOSMesa,48,48
 _deflateInit_* (library),48,48
+_dmHashClone32.cold.5,48,48
+_dmHashClone32.cold.6,48,48
+_dmHashClone32.cold.7,48,48
+_dmHashClone64.cold.5,48,48
+_dmHashClone64.cold.6,48,48
+_dmHashClone64.cold.7,48,48
+_dmHashFinal32.cold.10,48,48
+_dmHashFinal32.cold.11,48,48
+_dmHashFinal32.cold.12,48,48
+_dmHashFinal32.cold.5,48,48
+_dmHashFinal32.cold.8,48,48
+_dmHashFinal64.cold.10,48,48
+_dmHashFinal64.cold.11,48,48
+_dmHashFinal64.cold.12,48,48
+_dmHashFinal64.cold.5,48,48
+_dmHashFinal64.cold.8,48,48
+_dmHashInit32.cold.5,48,48
+_dmHashInit64.cold.5,48,48
+_dmHashRelease32.cold.4,48,48
+_dmHashRelease32.cold.6,48,48
+_dmHashRelease32.cold.7,48,48
+_dmHashRelease32.cold.8,48,48
+_dmHashRelease64.cold.4,48,48
+_dmHashRelease64.cold.6,48,48
+_dmHashRelease64.cold.7,48,48
+_dmHashRelease64.cold.8,48,48
+_dmHashUpdateBuffer32.cold.3,48,48
+_dmHashUpdateBuffer32.cold.4,48,48
+_dmHashUpdateBuffer64.cold.3,48,48
+_dmHashUpdateBuffer64.cold.4,48,48
 _glfwFocusWindow,48,48
 _glfwGetClipboardString,48,48
 _glfwGetMonitorName,48,48
@@ -2500,7 +2530,6 @@ spvIsOpenGLEnv(),16,16
 spvOpcodeIsScalarSpecConstant(),16,16
 spvOpcodeMake(),16,16
 spvOperandIsVariable(),16,16
-uniqueId,16,0
 JobSystemUpdate,8,0
 _ZN12dmGameObjectL23g_* (library),8,8
 _ZN12dmGameSystemL25g_* (library),8,8
@@ -2526,6 +2555,7 @@ _Render_* (library),8,0
 sAllocFunc,8,8
 sFreeFunc,8,8
 stbi__check_png_header(),8,8
+uniqueId,8,0
 _b2velocityThresholdOverride,4,0
 _gAddedPairs,4,0
 _gContactBreakingThreshold,4,4
