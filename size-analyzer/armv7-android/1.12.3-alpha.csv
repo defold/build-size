@@ -3,24 +3,24 @@ dmScript,632171,142720
 dmGameSystem,403910,552269
 [section .rodata],338931,338931
 dmGraphics,141921,197467
-dmGui,115499,151306
+dmGui,115499,151285
 dmGameObject,115440,163647
 dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
 dmRender,95732,135499
-std,77302,96307
+std,77302,96321
 [section .rel.dyn],70704,70704
 _pfb,65536,65561
 [section .ARM.exidx],61400,61400
 dmHashTable<>,50764,63426
 _GLOBAL_* (library),47716,53902
 (anonymous namespace),44188,103006
-dmParticle,40577,51542
+dmParticle,40621,51618
 dmPhysics,37925,58034
 dmResource,36328,51315
 dmSound,25265,32608
-_ssl_* (library),22756,31372
+_ssl_* (library),22756,31365
 btConeTwistConstraint,22000,25064
 _decompress_* (library),21628,22962
 dmEngine,21274,26588
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
 [section .dynstr],5860,5860
-[section .text],5846,5846
+[section .text],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -141,7 +141,7 @@ b2Fixture,3072,4028
 _glfwAndroidHandleInput,3064,3232
 _meta_* (library),3008,3855
 [section .got.plt],2992,2992
-dmArray<>,2992,4592
+dmArray<>,2992,4599
 _aes_* (library),2988,3810
 _run_* (library),2980,3217
 _sync_* (library),2969,3402
@@ -646,7 +646,7 @@ socket_recv,312,372
 _vmevent_* (library),312,443
 _clear_* (library),310,506
 _RenderPrototypeDesc_* (library),310,1230
-Particle_IsSleeping,308,376
+Particle_IsSleeping,308,383
 tcp_create,308,367
 mz_adler32(),308,360
 _fff_* (library),308,638
@@ -772,7 +772,7 @@ FontCollectionAddFont(),228,325
 glfwAndroidPollEvents,228,298
 ov_info,228,268
 _SetCamera_* (library),227,552
-Particle_GetInstanceStats,226,307
+Particle_GetInstanceStats,226,314
 dmOpaqueHandleContainer<>,224,330
 zip_openwitherror,224,274
 lua_lessthan,221,250
@@ -850,7 +850,7 @@ CProfileIterator,196,650
 LZ4_compressHC,195,242
 _IK_* (library),195,375
 _EmbeddedComponentDesc_* (library),194,566
-Particle_SetPosition,193,276
+Particle_SetPosition,193,262
 func,192,309
 deflateReset,192,253
 DefoldError,192,252
@@ -1115,7 +1115,7 @@ _ScriptMessage_* (library),140,277
 _RequestRayCast_* (library),140,271
 _AnimationTrack_* (library),140,259
 _MeshSet_* (library),140,238
-Particle_GetTileSource,139,224
+Particle_GetTileSource,139,217
 Particle_SetTileSource,139,217
 LZ4_resetStreamStateHC,139,194
 luaL_newstate,138,200
@@ -1123,7 +1123,7 @@ luaL_setfuncs,138,200
 bcemit_branch,138,184
 fscope_end,138,181
 Particle_ReloadPrototype,137,224
-Particle_GetMaterial,137,213
+Particle_GetMaterial,137,220
 Particle_SetMaterial,137,213
 ResourceGetTypeFromExtensionHash(),136,270
 glfwAndroidUnregisterOnActivityResultListener,136,230
@@ -1211,7 +1211,7 @@ luaL_optinteger,124,172
 luaL_addvalue,124,170
 socket_listen,124,170
 __divmoddi4,124,168
-Particle_GetTileSourcePath,123,212
+Particle_GetTileSourcePath,123,205
 lua_getmetatable,123,178
 _Cue_* (library),123,332
 luaopen_table,122,184
@@ -1731,9 +1731,9 @@ ComponentTypeSound,52,119
 glfwGetProcAddress,52,119
 ComponentTypeMesh,52,118
 ComponentTypeGui,52,117
+Particle_CreateInstance,52,115
 ExtensionParamsInitialize,52,110
 LZ4_sizeofStreamStateHC,52,108
-Particle_CreateInstance,52,108
 _flight_* (library),52,100
 deflateInit_,52,97
 zip_close,52,94
@@ -1826,7 +1826,6 @@ _glfwPlatformQueryAuxContext,44,121
 _glfwPlatformSetWindowSize,44,119
 ComponentTypeScript,44,112
 ComponentTypeAnim,44,110
-Particle_ReloadInstance,44,107
 meth_getstats,44,106
 meth_setstats,44,106
 buffer_tobuf,44,105
@@ -1835,6 +1834,7 @@ glfw_atexit,44,104
 io_strerror,44,104
 io_tofilep,44,103
 Particle_DestroyContext,44,100
+Particle_ReloadInstance,44,100
 socket_setnonblocking,44,98
 socket_setblocking,44,95
 auxiliar_setclass,44,94
@@ -1848,7 +1848,7 @@ _def_* (library),44,230
 cp_line,44,84
 Particle_ResetInstance,43,98
 Particle_StartInstance,43,98
-Particle_StopInstance,42,96
+Particle_StopInstance,42,103
 lua_getallocf,42,94
 LZ4_versionNumber,42,92
 err_limit,42,84
@@ -1907,9 +1907,9 @@ eckey_debug,36,96
 except_open,36,96
 FontCollectionCreate(),36,94
 dmFixedMemAlloc(),36,92
+Particle_Update,36,91
 zError,36,91
 luaL_argerror,36,88
-Particle_Update,36,84
 bcreg_reserve,36,82
 luaL_loadfile,36,82
 luaL_register,36,82
@@ -2447,11 +2447,11 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5377857
-[section .debug_loc],0,2927204
-[section .debug_line],0,2280895
-[section .debug_str],0,1764489
-[section .debug_ranges],0,916064
+[section .debug_info],0,5377899
+[section .debug_loc],0,2927765
+[section .debug_line],0,2281076
+[section .debug_str],0,1764517
+[section .debug_ranges],0,916320
 [section .debug_abbrev],0,425837
 [section .debug_frame],0,270272
 [section .symtab],0,44240
