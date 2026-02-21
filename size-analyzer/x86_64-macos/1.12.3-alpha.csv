@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3846144,3843496
+[__LINKEDIT],3846144,3843328
 MVK_spirv_cross,1692371,1692227
 dmScript,634436,109824
-dmGameSystem,416324,415100
+dmGameSystem,416788,415564
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
@@ -27,7 +27,7 @@ MVKInstance,62343,62343
 dmHashTable<>,61712,61712
 MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
-dmParticle,56208,56040
+dmParticle,55616,55448
 _LZ4HC_* (library),49440,49440
 stbi__process_marker(),42398,42398
 MVKGraphicsPipeline,42338,42338
@@ -1359,6 +1359,7 @@ b2ContactListener,160,160
 _secp192r1_* (library),160,160
 _secp224r1_* (library),160,160
 _secp256r1_* (library),160,160
+[__TEXT],153,4913
 rmtp_SoundPlaying(),152,152
 _add_* (library),152,152
 _depth_* (library),146,146
@@ -2306,7 +2307,6 @@ _decompressor_* (library),32,32
 btConstraintSolver,32,32
 VkPhysicalDeviceFeatures2,28,28
 VkPhysicalDeviceFeatures,27,27
-[__TEXT],25,4785
 dmMeshDDF,24,24
 dmSoundDDF,24,24
 _sha256_* (library),24,24
