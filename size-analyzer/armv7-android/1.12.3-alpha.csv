@@ -1,14 +1,14 @@
 symbol_group_name,vmsize,filesize
 dmScript,632171,142720
 dmGameSystem,404118,552508
-[section .rodata],338931,338931
+[section .rodata],338915,338915
 dmGraphics,141921,197467
 dmGui,115499,151306
 dmGameObject,115440,163647
 dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
-dmRender,95732,135499
+dmRender,96080,135794
 std,77302,96307
 [section .rel.dyn],70704,70704
 _pfb,65536,65561
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
 [section .dynstr],5860,5860
-[section .text],5834,5834
+[section .text],5822,5822
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -2447,12 +2447,12 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5377428
-[section .debug_loc],0,2928192
-[section .debug_line],0,2281019
-[section .debug_str],0,1764522
-[section .debug_ranges],0,915808
-[section .debug_abbrev],0,425837
+[section .debug_info],0,5377429
+[section .debug_loc],0,2927656
+[section .debug_line],0,2281120
+[section .debug_str],0,1764541
+[section .debug_ranges],0,915872
+[section .debug_abbrev],0,425828
 [section .debug_frame],0,270276
 [section .symtab],0,44240
 [section .strtab],0,17350
@@ -2460,4 +2460,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,16
+[Unmapped],0,13
