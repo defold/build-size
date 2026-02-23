@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3784704,3773520
+[__LINKEDIT],3784704,3773408
 MVK_spirv_cross,1517066,1516922
 dmScript,625112,100500
 basist,373487,358627
@@ -25,7 +25,7 @@ spvtools,60399,60399
 _GLOBAL_* (library),56332,56332
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
-stbi__process_marker(),42879,42879
+stbi__process_marker(),42845,42845
 _LZ4HC_* (library),42488,42488
 MVKObjectPool<>,34565,34565
 dmPhysics,34324,34248
@@ -71,7 +71,7 @@ _ssl_* (library),13700,13700
 MVKImage,13510,13510
 dmInput,13476,12444
 MVKCmdBufferImageCopy<>,13425,13425
-[__TEXT],13274,18050
+[__TEXT],13360,18136
 _DATA_* (library),13104,13104
 _dmGameSystemDDF_* (library),12864,9008
 MVKDescriptorPool,12790,12790
@@ -646,12 +646,12 @@ __glfwSetGammaRampCocoa,508,508
 _vkCmdBlitImage2,504,504
 _vkCmdCopyBuffer2,504,504
 _vkCmdResolveImage2,504,504
-_JobSystemCreate,500,500
 __glfwInputWindowFocus,500,500
 _fscope_* (library),500,500
 _vkCmdCopyImage2,500,500
 __glfwSetVideoModeCocoa,496,496
 _de_* (library),492,484
+_JobSystemCreate,488,488
 _vkCmdExecuteCommands,488,488
 __glfwCreateWindowNull,484,484
 _dict_* (library),484,484
@@ -2009,8 +2009,7 @@ FontCollectionCreate(),40,40
 FontCollectionGetFont(),40,40
 GetScaleFromSizeTTF(),40,40
 _GraphicsAdapterVulkan,40,40
-_JobSystemCreate.cold.1,40,40
-_JobSystemCreate.cold.4,40,40
+_JobSystemCreate.cold.3,40,40
 _JobSystemPushJob.cold.3,40,40
 _JobSystemSetParent.cold.4,40,40
 _JobSystemSetParent.cold.5,40,40

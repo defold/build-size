@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1835008,1833376
+[__LINKEDIT],1835008,1833264
 dmScript,620664,96060
 dmGameSystem,343208,340632
 _lj_* (library),204580,204580
@@ -14,13 +14,13 @@ dmGraphics,74861,73836
 _pfb,65544,65544
 _GLOBAL_* (library),37276,37276
 _cp_* (library),34652,34652
-stbi__process_marker(),33574,33574
+stbi__process_marker(),33540,33540
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
 dmParticle,29520,29352
 std,29240,29240
 dmResource,27240,27240
-[__TEXT],24013,40293
+[__TEXT],24099,40379
 _load_* (library),21176,21176
 dmHashTable<>,19444,19444
 dmSound,19352,19200
@@ -390,12 +390,12 @@ _dist_* (library),512,512
 _setjitmode,512,512
 _token2binop,512,512
 _vwin256,512,512
-_JobSystemCreate,500,500
 -[BaseView initWithFrame:],496,496
 _foldarith,496,496
 b2GridAndPolygonContact,496,496
 _de_* (library),492,484
 b2GridAndCircleContact,492,492
+_JobSystemCreate,488,488
 _dict_* (library),484,484
 PutDone(),476,476
 _eckey_* (library),476,476
@@ -890,8 +890,7 @@ FontCollectionCreate(),40,40
 FontCollectionGetFont(),40,40
 GetScaleFromSizeTTF(),40,40
 _GraphicsAdapterOpenGL,40,40
-_JobSystemCreate.cold.1,40,40
-_JobSystemCreate.cold.4,40,40
+_JobSystemCreate.cold.3,40,40
 _JobSystemPushJob.cold.3,40,40
 _JobSystemSetParent.cold.4,40,40
 _JobSystemSetParent.cold.5,40,40
