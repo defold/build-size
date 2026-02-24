@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3846144,3843472
+[__LINKEDIT],3846144,3843368
 MVK_spirv_cross,1692371,1692227
 dmScript,634436,109824
 dmGameSystem,416324,415100
@@ -29,7 +29,7 @@ MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
 dmParticle,56432,56264
 _LZ4HC_* (library),49440,49440
-stbi__process_marker(),42398,42398
+stbi__process_marker(),42366,42366
 MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42096
 _recff_* (library),36656,36656
@@ -220,11 +220,11 @@ _gc_* (library),3808,3808
 btSimulationIslandManager,3808,3808
 MVKImageViewPlane,3758,3758
 btGjkPairDetector,3736,3736
+[__TEXT],3673,8433
 _deflate,3664,3664
 _serialize_* (library),3648,3648
 MVKCmdDrawIndexed,3588,3588
 MVKQueryPool,3575,3575
-[__TEXT],3561,8321
 MVKShaderModule,3554,3554
 MVKCmdDraw,3533,3533
 simple_json,3520,3520
@@ -617,7 +617,6 @@ spvPushOperandTypes(),624,624
 dmRigDDF,624,624
 MVKCmdClearColorImage<>,620,620
 -[GLFWContentView flagsChanged:],592,592
-_JobSystemCreate,592,592
 __glfwPollJoystickCocoa,592,592
 _vkCmdBlitImage,592,592
 b2EdgeSeparation(),592,592
@@ -631,6 +630,7 @@ _ZNKSt3_* (library),576,576
 _vk_* (library),576,576
 _poly1305_* (library),567,567
 MVKSingleValueCommand<>,563,563
+_JobSystemCreate,560,560
 __glfwChooseFBConfig,560,560
 __glfwSetVideoModeCocoa,560,560
 _deflateCopy,560,560
@@ -1973,7 +1973,6 @@ _JobSystemCreate.cold.1,48,48
 _JobSystemCreate.cold.2,48,48
 _JobSystemCreate.cold.3,48,48
 _JobSystemCreate.cold.4,48,48
-_JobSystemCreate.cold.5,48,48
 _JobSystemCreateJob.cold.1,48,48
 _JobSystemCreateJob.cold.2,48,48
 _JobSystemDestroy.cold.1,48,48

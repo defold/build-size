@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,632171,142720
 dmGameSystem,403910,552269
-[section .rodata],338915,338915
+[section .rodata],338883,338883
 dmGraphics,141921,197467
 dmGui,115499,151306
 dmGameObject,115440,163647
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
 [section .dynstr],5860,5860
-[section .text],5834,5834
+[section .text],5838,5838
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -432,7 +432,6 @@ _Material_* (library),732,1324
 _bitmask_* (library),728,842
 __udivmoddi4,720,765
 b2PositionSolverManifold,716,856
-JobSystemCreate,712,776
 intersectRectQuad2(),712,774
 _clib_* (library),706,939
 ANativeActivity_onCreate,701,774
@@ -460,6 +459,7 @@ res_unpack,643,686
 _cjson_* (library),640,770
 b2GridAndPolygonContact,632,1239
 b2GridAndCircleContact,632,1232
+JobSystemCreate,628,692
 b2Mat33,628,947
 PutDone(),620,718
 btClosestNotMeConvexResultCallback,620,1010
@@ -2109,7 +2109,6 @@ meth_shutdown.methods,16,54
 _clone_* (library),16,211
 expr_toval,16,43
 quant_look,16,43
-[LOAD #4 [RW]],16,0
 _row_* (library),13,111
 TextLayoutCreate(),12,120
 ProfileRegisterPropertyBool(),12,90
@@ -2447,12 +2446,12 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5377858
-[section .debug_loc],0,2926668
-[section .debug_line],0,2280996
-[section .debug_str],0,1764508
-[section .debug_ranges],0,916128
-[section .debug_abbrev],0,425828
+[section .debug_info],0,5377785
+[section .debug_loc],0,2926545
+[section .debug_line],0,2280980
+[section .debug_str],0,1764529
+[section .debug_ranges],0,916216
+[section .debug_abbrev],0,425819
 [section .debug_frame],0,270272
 [section .symtab],0,44240
 [section .strtab],0,17350
@@ -2460,4 +2459,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,12
+[Unmapped],0,16
