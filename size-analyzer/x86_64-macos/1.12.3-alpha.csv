@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3846144,3843200
+[__LINKEDIT],3846144,3843744
 MVK_spirv_cross,1692371,1692227
 dmScript,634436,109824
-dmGameSystem,416788,415564
+dmGameSystem,416884,415660
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
@@ -10,11 +10,11 @@ _lj_* (library),250848,250848
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125524,124540
-dmGameObject,122696,122672
+dmGameObject,122680,122656
 dmGraphics,113681,112601
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
-dmRender,109232,108936
+dmRender,109376,109080
 _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
@@ -24,7 +24,7 @@ _ZNSt3_* (library),67120,67120
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
 MVKInstance,62343,62343
-dmHashTable<>,61712,61712
+dmHashTable<>,61808,61808
 MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
 dmParticle,55616,55448
@@ -34,7 +34,7 @@ MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42096
 _recff_* (library),36656,36656
 btConeTwistConstraint,36152,36152
-dmResource,34912,34912
+dmResource,34960,34960
 MVKObjectPool<>,34117,34117
 dmRig,32792,32768
 MVKPhysicalDevice,32741,32677
@@ -87,7 +87,7 @@ MVKExtensionList,11747,11747
 MVKGraphicsResourcesCommandEncoderState,11554,11554
 _vorbis_* (library),11392,11392
 dmEasing,11000,11000
-dmHttpCache,10938,10938
+dmHttpCache,10906,10906
 MVKCmdResolveImage<>,10758,10758
 dmHID,10576,10192
 MVKQueueFullCommandBufferSubmission<>,10420,10420
@@ -132,7 +132,7 @@ btConvexConvexAlgorithm,7264,7264
 MVKQueue,7228,7228
 b2PrismaticJoint,7168,7168
 btRigidBody,7064,7064
-dmConfigFile,7040,7040
+dmConfigFile,7056,7056
 _ogg_* (library),7040,7040
 MVKCmdBeginRenderPass<>,7016,7016
 MVKPipelineCache,6952,6952
@@ -156,15 +156,15 @@ _mdct_* (library),5760,5760
 MVKCmdDrawIndexedIndirect,5724,5724
 btCompoundCollisionAlgorithm,5704,5704
 MVKCmdDrawIndirect,5701,5701
-dmHttpService,5472,5472
+dmHttpService,5568,5568
 b2SeparationFunction,5440,5440
 b2GridShape,5420,5420
 dmConnectionPool,5392,5392
 btCompoundShape,5384,5384
+dmSys,5328,5232
 topdown(),5224,5168
 _inflate_* (library),5200,5200
 _dmInputDDF_* (library),5200,4368
-dmSys,5168,5072
 MVKResourcesCommandEncoderState,5122,5122
 _dmGuiDDF_* (library),5100,3976
 MVKCmdPipelineBarrier<>,5099,5099
@@ -206,7 +206,6 @@ dmMessage,4104,4064
 _vwin2048,4096,4096
 mvk_smallvector_allocator<>,4096,4096
 MVKPresentableSwapchainImage,4039,4039
-[__TEXT],4025,8785
 btConvexShape,4024,4024
 stbtt_GetGlyphShape(),4016,4016
 _dmParticleDDF_* (library),4008,3320
@@ -231,6 +230,7 @@ simple_json,3520,3520
 _emit_* (library),3504,3504
 _oid_* (library),3439,3439
 dmSSLSocket,3432,3424
+[__TEXT],3385,8145
 _tr_* (library),3376,3376
 _dmMath_* (library),3372,2392
 MVKComputePipeline,3349,3349
@@ -273,9 +273,9 @@ _crc32_* (library),2736,2736
 MVKBufferView,2727,2727
 _bcwrite_* (library),2720,2720
 _build_* (library),2704,2704
+ReverseHashContainer,2704,2704
 btCapsuleShape,2696,2696
 btSubsimplexConvexCast,2680,2680
-ReverseHashContainer,2672,2672
 MVKMTLBufferAllocationPool,2653,2653
 MVKFramebuffer,2625,2625
 __packetout,2624,2624
@@ -428,11 +428,11 @@ _dmGamesysDDF_* (library),1204,824
 _ctype_* (library),1200,1200
 _aa_* (library),1200,1200
 btCollisionShape,1192,1192
+TextLayoutLegacyCreate(),1184,1184
 __glfwInputError,1184,1184
 MVKPipeline,1182,1182
 MVKEventNative,1177,1177
 MVKCmdUpdateBuffer,1173,1173
-TextLayoutLegacyCreate(),1168,1168
 _ffi_* (library),1168,1168
 _processPerformanceStats,1152,0
 MVKMTLFunction,1152,1152
@@ -1650,7 +1650,6 @@ MVKCmdBeginRenderPassBase,100,100
 FontCollectionGetFont(),96,96
 FontDestroy(),96,96
 FontGetGlyphBoxTTF(),96,96
-FontLoadFromPath(),96,96
 ResourceChunkCacheCreate(),96,96
 ResourceRegisterTypeCreatorDesc(),96,96
 TextLayoutLegacyFree(),96,96
@@ -1726,6 +1725,7 @@ FontGetGlyph(),80,80
 FontGetPath(),80,80
 FontGetPathHash(),80,80
 FontGetType(),80,80
+FontLoadFromPath(),80,80
 _CrashExt,80,80
 _ExtensionAppParamsFinalize,80,80
 _ExtensionParamsFinalize,80,80

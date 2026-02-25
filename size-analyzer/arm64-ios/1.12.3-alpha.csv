@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1835008,1833264
-dmScript,620664,96060
-dmGameSystem,343208,340632
+[__LINKEDIT],1835008,1833544
+dmScript,620676,96072
+dmGameSystem,343248,340672
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",149210,149210
+"_TEXT,_* (library)",149208,149208
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
 basist,97761,82903
-dmGameObject,94072,94048
+dmGameObject,94064,94040
 dmGui,88232,87264
-dmRender,82932,82636
+dmRender,82944,82648
 dmGraphics,74861,73836
 _pfb,65544,65544
-_GLOBAL_* (library),37276,37276
+_GLOBAL_* (library),37284,37284
 _cp_* (library),34652,34652
 stbi__process_marker(),33540,33540
 dmPhysics,32688,32576
@@ -20,7 +20,7 @@ _ZNSt3_* (library),32452,32452
 dmParticle,29520,29352
 std,29240,29240
 dmResource,27240,27240
-[__TEXT],24099,40379
+[__TEXT],23905,40185
 _load_* (library),21176,21176
 dmHashTable<>,19444,19444
 dmSound,19352,19200
@@ -36,7 +36,7 @@ _lex_* (library),14292,14292
 btSequentialImpulseConstraintSolver,13860,13860
 dmRig,13820,13796
 _ssl_* (library),13520,13520
-dmDDF,13088,13024
+dmDDF,13100,13036
 _dmGameSystemDDF_* (library),12448,8592
 dmInput,11904,10872
 _parse_* (library),11740,11740
@@ -85,15 +85,15 @@ _x509_* (library),5500,5500
 _fs_* (library),5436,5436
 _ccall_* (library),5376,5376
 b2ContactSolver,5376,5376
+dmConfigFile,5356,5356
 _ecp_* (library),5348,5300
-dmConfigFile,5340,5340
 _dmGuiDDF_* (library),5092,3968
 _ogg_* (library),5008,5008
 _io_* (library),4992,4992
 dmObjectPool<>,4852,4852
 _inflate_* (library),4832,4832
 btConvexConvexAlgorithm,4768,4768
-dmHttpService,4652,4652
+dmHttpService,4720,4720
 _dmGameObjectDDF_* (library),4640,3056
 b2PrismaticJoint,4524,4524
 _mdct_* (library),4516,4516
@@ -195,10 +195,10 @@ dmCrypt,1868,1868
 _dmModelDDF_* (library),1868,1160
 dmResourceProviderArchive,1852,1724
 _release_* (library),1840,1840
+ReverseHashContainer,1840,1840
 _rsa_* (library),1828,1828
 dmLoadQueue,1824,1824
 b2Distance(),1808,1808
-ReverseHashContainer,1808,1808
 btConvexTriangleCallback,1804,1804
 _mapping_* (library),1804,1804
 btContinuousConvexCollision,1784,1784
@@ -299,7 +299,7 @@ dmPath,896,896
 _cpparser,892,892
 DebugDrawcallback,888,888
 _csctx_* (library),876,876
-TextLayoutLegacyCreate(),868,868
+TextLayoutLegacyCreate(),872,872
 _floor0_* (library),868,868
 _tcp_* (library),864,864
 _LogInternal,848,848

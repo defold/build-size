@@ -9,7 +9,7 @@ dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
 dmRender,96080,135794
-std,77302,96307
+std,77302,96291
 [section .rel.dyn],70704,70704
 _pfb,65536,65561
 [section .ARM.exidx],61400,61400
@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
 [section .dynstr],5860,5860
-[section .text],5838,5838
+[section .text],5842,5842
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -327,13 +327,13 @@ _MaterialDesc_* (library),1068,2371
 _buffer_* (library),1067,1321
 _fromdB_* (library),1060,1096
 bcwrite_proto,1058,1104
-TextLayoutLegacyCreate(),1052,1182
 mapping_inverse,1052,1100
 btSphereTriangleCollisionAlgorithm,1052,2465
 btPolyhedralConvexAabbCachingShape,1048,1691
 btPolyhedralConvexShape,1048,1615
 _ecdsa_* (library),1048,1808
 btSphereSphereCollisionAlgorithm,1044,2447
+TextLayoutLegacyCreate(),1040,1170
 _dispatch_* (library),1040,1321
 _LOOKUP_* (library),1032,1126
 _ccall_* (library),1028,1127
@@ -2109,6 +2109,7 @@ meth_shutdown.methods,16,54
 _clone_* (library),16,211
 expr_toval,16,43
 quant_look,16,43
+[LOAD #4 [RW]],16,0
 _row_* (library),13,111
 TextLayoutCreate(),12,120
 ProfileRegisterPropertyBool(),12,90
@@ -2138,7 +2139,6 @@ inet_optsocktype.optname,12,53
 b2_version,12,39
 g_SoundManager,12,31
 stbi__process_marker(),11,137
-[LOAD #2 [RX]],11,11
 err_syntax,10,53
 cp_err,10,33
 _depth_* (library),9,54
@@ -2436,6 +2436,7 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
+[LOAD #2 [RX]],3,3
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
 g_PendingResizeBecauseOfInsets,1,47
@@ -2447,16 +2448,16 @@ g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
 [section .debug_info],0,5377785
-[section .debug_loc],0,2926545
-[section .debug_line],0,2280980
+[section .debug_loc],0,2926533
+[section .debug_line],0,2280950
 [section .debug_str],0,1764529
-[section .debug_ranges],0,916216
+[section .debug_ranges],0,916208
 [section .debug_abbrev],0,425819
-[section .debug_frame],0,270272
-[section .symtab],0,44240
+[section .debug_frame],0,270276
+[section .symtab],0,44256
 [section .strtab],0,17350
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,16
+[Unmapped],0,14
