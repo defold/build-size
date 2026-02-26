@@ -1,11 +1,11 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3784704,3773680
+[__LINKEDIT],3784704,3773952
 MVK_spirv_cross,1517066,1516922
-dmScript,625124,100512
+dmScript,625132,100512
 basist,373487,358627
-dmGameSystem,352396,351188
+dmGameSystem,352560,351352
 std,291979,291979
-"_TEXT,_* (library)",274712,274712
+"_TEXT,_* (library)",274733,274733
 _lj_* (library),226741,226741
 _variable_* (library),127354,127354
 _mbedtls_* (library),126868,126708
@@ -14,15 +14,15 @@ _except_* (library),110720,110720
 (anonymous namespace),106036,106036
 dmGameObject,99564,99540
 dmGui,94084,93116
-dmGraphics,92025,90984
-dmRender,85412,85116
+dmGraphics,92093,91052
+dmRender,85480,85176
 _LZ4_* (library),68100,68100
 MVKPixelFormats,66490,66466
 _pfb,65548,65548
 __watermarkTextureContent,65536,65536
 MVKInstance,60619,60619
 spvtools,60399,60399
-_GLOBAL_* (library),56324,56324
+_GLOBAL_* (library),56340,56340
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
 stbi__process_marker(),42845,42845
@@ -30,7 +30,7 @@ _LZ4HC_* (library),42488,42488
 MVKObjectPool<>,34565,34565
 dmPhysics,34324,34248
 _recff_* (library),33977,33977
-dmParticle,32356,32188
+dmParticle,32504,32336
 MVKGraphicsPipeline,31566,31566
 opencl_entries,29808,29808
 dmResource,29336,29336
@@ -61,7 +61,7 @@ _KHR_* (library),15340,0
 btDiscreteDynamicsWorld,15016,15016
 glsl_entries,14904,14904
 __glfw,14744,0
-dmRig,14576,14552
+dmRig,14660,14636
 dmDDF,14424,14360
 _field_* (library),14366,14366
 MVKCommandEncoder,14268,14268
@@ -71,11 +71,11 @@ _ssl_* (library),13700,13700
 MVKImage,13510,13510
 dmInput,13476,12444
 MVKCmdBufferImageCopy<>,13425,13425
-[__TEXT],13146,17922
 _DATA_* (library),13104,13104
 _dmGameSystemDDF_* (library),12864,9008
 MVKDescriptorPool,12790,12790
 _rec_* (library),12780,12780
+[__TEXT],12585,17361
 _EXT_* (library),11960,0
 MVKRenderSubpass,11711,11711
 "_DATA,_* (library)",11336,11336
@@ -89,7 +89,7 @@ _OBJC_* (library),10332,10332
 _luaL_* (library),10104,10104
 _dmRenderDDF_* (library),9684,7240
 _dmRigDDF_* (library),9604,7056
-[__DATA],9452,12
+[__DATA],9436,12
 _expr_* (library),9424,9424
 gjkepa2_impl,9356,9356
 btGeneric6DofConstraint,9156,9156
@@ -133,7 +133,7 @@ debuginfo_entries,6256,6256
 _lex_* (library),6068,6068
 MVKDeviceMemory,6053,6053
 MVKQueue,5858,5858
-dmBuffer,5808,5800
+dmBuffer,5800,5792
 MVKPipelineCache,5728,5728
 MVKCmdClearAttachments<>,5706,5706
 dmConfigFile,5616,5616
@@ -185,7 +185,7 @@ _dmParticleDDF_* (library),3992,3304
 btCompoundCollisionAlgorithm,3952,3952
 _pk_* (library),3952,3952
 _gc_* (library),3940,3940
-_OUTLINED_* (library),3928,3928
+_OUTLINED_* (library),3936,3936
 _process_* (library),3888,3888
 simple_json,3888,3888
 MVKCmdDrawIndexedIndirect,3884,3884

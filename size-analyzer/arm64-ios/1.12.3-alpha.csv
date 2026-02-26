@@ -1,26 +1,26 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1835008,1833544
-dmScript,620676,96072
-dmGameSystem,343248,340672
+[__LINKEDIT],1835008,1833816
+dmScript,620684,96072
+dmGameSystem,343564,340988
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",149208,149208
+"_TEXT,_* (library)",149229,149229
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
 basist,97761,82903
 dmGameObject,94064,94040
 dmGui,88232,87264
-dmRender,82944,82648
-dmGraphics,74861,73836
+dmRender,83012,82708
+dmGraphics,74929,73904
 _pfb,65544,65544
-_GLOBAL_* (library),37284,37284
+_GLOBAL_* (library),37308,37308
 _cp_* (library),34652,34652
 stbi__process_marker(),33540,33540
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
-dmParticle,29520,29352
+dmParticle,29668,29500
 std,29240,29240
 dmResource,27240,27240
-[__TEXT],23905,40185
+[__TEXT],23184,39464
 _load_* (library),21176,21176
 dmHashTable<>,19444,19444
 dmSound,19352,19200
@@ -33,8 +33,8 @@ dmLiveUpdate,15700,14604
 _OBJC_* (library),14964,14964
 btDiscreteDynamicsWorld,14436,14436
 _lex_* (library),14292,14292
+dmRig,13900,13876
 btSequentialImpulseConstraintSolver,13860,13860
-dmRig,13820,13796
 _ssl_* (library),13520,13520
 dmDDF,13100,13036
 _dmGameSystemDDF_* (library),12448,8592
@@ -49,7 +49,7 @@ _serialize_* (library),9780,9780
 b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
 _dmRigDDF_* (library),9444,6896
-[__DATA],9144,28
+[__DATA],9128,28
 gjkepa2_impl,9044,9044
 dmHttpCache,8653,8653
 dmHID,8520,8448
@@ -79,7 +79,7 @@ _bcread_* (library),5852,5852
 "_DATA,_* (library)",5824,5824
 _objc_* (library),5792,5792
 b2DynamicTree,5676,5676
-dmBuffer,5668,5660
+dmBuffer,5664,5656
 _carith_* (library),5580,5580
 _x509_* (library),5500,5500
 _fs_* (library),5436,5436
@@ -283,9 +283,9 @@ _compute_* (library),992,992
 btBoxBoxCollisionAlgorithm,992,992
 btCollisionShape,988,988
 _lib_* (library),984,984
+_OUTLINED_* (library),968,968
 Layout<>(),960,960
 _compress_* (library),960,960
-_OUTLINED_* (library),960,960
 _idct_* (library),956,956
 dmImage,952,952
 dmMutex,948,948
