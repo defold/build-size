@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3784704,3774256
+[__LINKEDIT],3784704,3774448
 MVK_spirv_cross,1517066,1516922
 dmScript,625132,100512
 basist,373487,358627
@@ -75,7 +75,7 @@ _DATA_* (library),13104,13104
 _dmGameSystemDDF_* (library),12864,9008
 MVKDescriptorPool,12790,12790
 _rec_* (library),12780,12780
-[__TEXT],12528,17304
+[__TEXT],12520,17296
 _EXT_* (library),11960,0
 MVKRenderSubpass,11711,11711
 "_DATA,_* (library)",11336,11336
@@ -2481,6 +2481,8 @@ _b2velocityThresholdOverride,4,0
 _defaultAllocate,4,4
 _defaultDeallocate,4,4
 _defaultReallocate,4,4
+_dmLogFinalize,4,4
+_dmLogInitialize,4,4
 _gAddedPairs,4,0
 _gContactBreakingThreshold,4,4
 _gDeactivationTime,4,4

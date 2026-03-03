@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142704
 dmGameSystem,405258,553656
-[section .rodata],339127,339127
-dmGraphics,142509,198175
+[section .rodata],338983,338983
+dmGraphics,144569,201152
 dmGui,115639,151460
 dmGameObject,115584,163759
 dmCrash,110750,11042
@@ -12,7 +12,7 @@ dmRender,98820,138650
 std,77302,96305
 [section .rel.dyn],70720,70720
 _pfb,65536,65561
-[section .ARM.exidx],61440,61440
+[section .ARM.exidx],61424,61424
 dmHashTable<>,50764,63446
 _GLOBAL_* (library),47756,53914
 (anonymous namespace),44188,102992
@@ -38,7 +38,7 @@ btSequentialImpulseConstraintSolver,15188,19119
 btAxisSweep3Internal<>,14740,19275
 _internal_* (library),14284,14721
 _mpi_* (library),14088,16667
-[section .ARM.extab],13764,13764
+[section .ARM.extab],13776,13776
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 [section .plt],11952,11952
@@ -74,7 +74,7 @@ dmConfigFile,6192,7529
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
-[section .text],5883,5883
+[section .text],5890,5890
 [section .dynstr],5860,5860
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -103,7 +103,7 @@ libunwind,4677,7123
 btOptimizedBvh,4660,6452
 _write_* (library),4592,4921
 _asn1_* (library),4592,6406
-dmLog,4476,5620
+dmLog,4476,5616
 dmResourceProviderArchiveMutable,4432,5864
 btDbvtBroadphase,4388,6478
 _alloc_* (library),4382,4859
@@ -149,7 +149,7 @@ b2WeldJoint,2964,3839
 topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
 _cconv_* (library),2928,3379
-[section .bss],2902,0
+[section .bss],2910,0
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
@@ -315,7 +315,6 @@ LogInternal,1140,1200
 _buf_* (library),1138,1915
 _mod_* (library),1136,1565
 btCollisionObject,1112,2115
-glfwAndroidFlushEvents,1104,1207
 dmHashRelease32,1100,1164
 dmHashRelease64,1100,1164
 dmHashClone32,1098,1160
@@ -354,6 +353,7 @@ RT3,1024,20
 btGjkConvexCast,1020,1458
 dmImage,1004,1718
 dmFileDescriptor,1004,1699
+glfwAndroidFlushEvents,1000,1103
 fill_window,1000,1044
 _bcread_* (library),994,1026
 dmHashUpdateBuffer32,985,1054
@@ -2186,7 +2186,6 @@ glfwSetDeviceChangedCallback,8,69
 FontGetLayoutType(),8,68
 WindowGetDisplayScaleFactor,8,68
 WindowGetJoystickDeviceName,8,68
-_input_* (library),8,125
 FontGetDescent(),8,66
 FontGetLineGap(),8,66
 ProfileIsInitialized(),8,66
@@ -2348,12 +2347,14 @@ glfwResetKeyboard,4,54
 WindowPollEvents,4,53
 glfwShowKeyboard,4,53
 b2Shape,4,52
+dmLogInitialize,4,52
 glfwSetViewType,4,52
 _image_* (library),4,52
 mbedtls_sha256,4,51
 mbedtls_sha512,4,51
 WindowIconify,4,50
 WindowSetSize,4,50
+dmLogFinalize,4,50
 _mcode_* (library),4,50
 WindowDelete,4,49
 mbedtls_sha1,4,49
@@ -2436,7 +2437,6 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
-_CortexA8657417_* (library),3,43
 [LOAD #2 [RX]],3,3
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
@@ -2448,17 +2448,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5382000
-[section .debug_loc],0,2938178
-[section .debug_line],0,2285688
-[section .debug_str],0,1765024
-[section .debug_ranges],0,927280
-[section .debug_abbrev],0,425777
-[section .debug_frame],0,270476
-[section .symtab],0,44272
+[section .debug_info],0,5383155
+[section .debug_loc],0,2940184
+[section .debug_line],0,2286171
+[section .debug_str],0,1765273
+[section .debug_ranges],0,927824
+[section .debug_abbrev],0,425825
+[section .debug_frame],0,270448
+[section .symtab],0,44256
 [section .strtab],0,17350
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,5
+[Unmapped],0,6

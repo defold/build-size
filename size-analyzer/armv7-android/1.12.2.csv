@@ -75,7 +75,7 @@ dmConfigFile,6164,7501
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
 [section .dynstr],5860,5860
-[section .text],5842,5842
+[section .text],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -149,7 +149,7 @@ b2WeldJoint,2964,3839
 topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
 _cconv_* (library),2928,3379
-[section .bss],2894,0
+[section .bss],2902,0
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
@@ -315,7 +315,6 @@ LogInternal,1140,1200
 _buf_* (library),1138,1915
 _mod_* (library),1136,1565
 btCollisionObject,1112,2115
-glfwAndroidFlushEvents,1104,1207
 dmHashRelease32,1100,1164
 dmHashRelease64,1100,1164
 dmHashClone32,1098,1160
@@ -353,6 +352,7 @@ RT2,1024,20
 RT3,1024,20
 btGjkConvexCast,1020,1458
 dmImage,1004,1718
+glfwAndroidFlushEvents,1000,1103
 fill_window,1000,1044
 _bcread_* (library),994,1026
 dmFileDescriptor,992,1687
@@ -2109,7 +2109,6 @@ meth_shutdown.methods,16,54
 _clone_* (library),16,211
 expr_toval,16,43
 quant_look,16,43
-[LOAD #4 [RW]],16,0
 _row_* (library),13,111
 TextLayoutCreate(),12,120
 ProfileRegisterPropertyBool(),12,90
@@ -2186,7 +2185,6 @@ glfwSetDeviceChangedCallback,8,69
 FontGetLayoutType(),8,68
 WindowGetDisplayScaleFactor,8,68
 WindowGetJoystickDeviceName,8,68
-_input_* (library),8,125
 FontGetDescent(),8,66
 FontGetLineGap(),8,66
 ProfileIsInitialized(),8,66
@@ -2447,10 +2445,10 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5377785
-[section .debug_loc],0,2926533
-[section .debug_line],0,2280950
-[section .debug_str],0,1764529
+[section .debug_info],0,5377680
+[section .debug_loc],0,2926513
+[section .debug_line],0,2280920
+[section .debug_str],0,1764422
 [section .debug_ranges],0,916208
 [section .debug_abbrev],0,425819
 [section .debug_frame],0,270276
@@ -2460,4 +2458,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,14
+[Unmapped],0,17

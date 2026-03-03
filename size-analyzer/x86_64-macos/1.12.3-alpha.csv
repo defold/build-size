@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3846144,3844344
+[__LINKEDIT],3846144,3844536
 MVK_spirv_cross,1692371,1692227
 dmScript,634444,109824
 dmGameSystem,417476,416252
@@ -313,10 +313,10 @@ btSortedOverlappingPairCache,2216,2216
 _match,2208,2208
 _io_* (library),2208,2208
 _buffer_* (library),2176,2176
-[__TEXT],2161,6921
 btHashMap<>,2160,2160
 MVKImageDescriptor,2157,2157
 MVKDeferredOperation,2135,2135
+[__TEXT],2129,6889
 MVKOcclusionQueryPool,2128,2128
 _decode_* (library),2112,2112
 __glfwCreateWindowCocoa,2080,2080
@@ -2474,7 +2474,9 @@ _crc32,16,16
 _defaultAllocate,16,16
 _defaultDeallocate,16,16
 _defaultReallocate,16,16
+_dmLogFinalize,16,16
 _dmLogGetLevel,16,16
+_dmLogInitialize,16,16
 _emptyExtMemProps,16,0
 _extensionSupportedNSGL,16,16
 _extensionSupportedOSMesa,16,16
