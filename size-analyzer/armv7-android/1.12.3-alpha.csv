@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142704
-dmGameSystem,405258,553656
-[section .rodata],338983,338983
-dmGraphics,144569,201152
+dmGameSystem,406390,554871
+[section .rodata],338663,338663
+dmGraphics,144605,201188
 dmGui,115639,151460
 dmGameObject,115584,163759
 dmCrash,110750,11042
@@ -14,7 +14,7 @@ std,77302,96305
 _pfb,65536,65561
 [section .ARM.exidx],61424,61424
 dmHashTable<>,50764,63446
-_GLOBAL_* (library),47756,53914
+_GLOBAL_* (library),47756,53921
 (anonymous namespace),44188,102992
 dmParticle,40261,51219
 dmPhysics,38137,58246
@@ -38,7 +38,7 @@ btSequentialImpulseConstraintSolver,15188,19119
 btAxisSweep3Internal<>,14740,19275
 _internal_* (library),14284,14721
 _mpi_* (library),14088,16667
-[section .ARM.extab],13776,13776
+[section .ARM.extab],13800,13800
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 [section .plt],11952,11952
@@ -2049,7 +2049,6 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
-[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2230,6 +2229,7 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
+[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceRegisterReloadedCallback(),4,130
@@ -2448,17 +2448,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5383155
-[section .debug_loc],0,2940184
-[section .debug_line],0,2286171
-[section .debug_str],0,1765273
-[section .debug_ranges],0,927824
+[section .debug_info],0,5384224
+[section .debug_loc],0,2941504
+[section .debug_line],0,2286882
+[section .debug_str],0,1765829
+[section .debug_ranges],0,928208
 [section .debug_abbrev],0,425825
-[section .debug_frame],0,270448
+[section .debug_frame],0,270480
 [section .symtab],0,44256
 [section .strtab],0,17350
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,6
+[Unmapped],0,16
