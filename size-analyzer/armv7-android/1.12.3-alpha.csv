@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142704
 dmGameSystem,406390,554871
-[section .rodata],338663,338663
-dmGraphics,144605,201188
+[section .rodata],339023,339023
+dmGraphics,147773,206903
 dmGui,115799,151620
 dmGameObject,115584,163759
 dmCrash,110750,11042
 basist,107919,111900
 _compress_* (library),104967,106278
-dmRender,98820,138650
+dmRender,98828,138740
 std,77302,96305
 [section .rel.dyn],70720,70720
 _pfb,65536,65561
-[section .ARM.exidx],61424,61424
+[section .ARM.exidx],61392,61392
 dmHashTable<>,50764,63446
-_GLOBAL_* (library),47756,53921
+_GLOBAL_* (library),47756,53923
 (anonymous namespace),44188,102992
 dmParticle,40261,51219
 dmPhysics,38137,58246
@@ -23,7 +23,7 @@ dmSound,25265,32608
 _ssl_* (library),22756,31372
 btConeTwistConstraint,22000,25064
 _decompress_* (library),21628,22962
-dmEngine,21186,26455
+dmEngine,21210,26479
 _zip_* (library),21164,26601
 btQuantizedBvh,18928,22181
 dmRig,18704,23449
@@ -41,8 +41,8 @@ _mpi_* (library),14088,16667
 [section .ARM.extab],13800,13800
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
-[section .plt],11952,11952
 dmInput,11949,13700
+[section .plt],11920,11920
 b2World,11672,13849
 _ecp_* (library),11029,13516
 dmEasing,11004,11212
@@ -52,7 +52,7 @@ b2DynamicTree,10220,12192
 dmSocket,10084,14283
 gjkepa2_impl,10012,11557
 dmHttpClient,9956,13296
-[section .hash],9672,9672
+[section .hash],9656,9656
 dmResourceMounts,9580,12603
 inflate,9228,9636
 dmHttpCache,8997,10912
@@ -67,15 +67,15 @@ dmHID,7482,13630
 _get_* (library),7362,9534
 btIDebugDraw,7328,8416
 tinfl_decompress(),7038,7806
-[section .dynsym],6624,6624
+[section .dynsym],6592,6592
 dmBuffer,6420,8664
 btDbvt,6360,8443
 dmConfigFile,6192,7529
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
-[section .rel.plt],5960,5960
-[section .text],5890,5890
-[section .dynstr],5860,5860
+[section .rel.plt],5944,5944
+[section .text],5906,5906
+[section .dynstr],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
 ciphersuite_definitions,5520,5560
@@ -141,8 +141,8 @@ btGjkPairDetector,3200,4396
 b2Fixture,3072,4028
 _glfwAndroidHandleInput,3064,3232
 _meta_* (library),3008,3855
-[section .got.plt],2992,2992
 _aes_* (library),2988,3810
+[section .got.plt],2984,2984
 _run_* (library),2980,3217
 _sync_* (library),2969,3402
 b2WeldJoint,2964,3839
@@ -168,8 +168,8 @@ _tab_* (library),2576,3349
 FontLoadFromMemoryTTF(),2572,2654
 _debug_* (library),2484,3172
 _glfwJoy,2432,25
-[section .gnu.version],2416,2416
 _page_* (library),2415,2898
+[section .gnu.version],2412,2412
 b2DistanceJoint,2408,3339
 _dhm_* (library),2400,2902
 _des_* (library),2376,3070
@@ -576,7 +576,7 @@ dmHashBufferNoReverse64,388,476
 _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
-[LOAD #1 [R]],388,388
+[LOAD #1 [R]],386,386
 lex_number,384,443
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
@@ -2229,7 +2229,6 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
-[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceRegisterReloadedCallback(),4,130
@@ -2448,17 +2447,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5384565
-[section .debug_loc],0,2941638
-[section .debug_line],0,2287097
-[section .debug_str],0,1765829
-[section .debug_ranges],0,928368
+[section .debug_info],0,5385573
+[section .debug_loc],0,2942226
+[section .debug_line],0,2287797
+[section .debug_str],0,1766081
+[section .debug_ranges],0,928720
 [section .debug_abbrev],0,425809
-[section .debug_frame],0,270480
-[section .symtab],0,44256
-[section .strtab],0,17350
+[section .debug_frame],0,270408
+[section .symtab],0,44160
+[section .strtab],0,17324
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,18
+[Unmapped],0,9

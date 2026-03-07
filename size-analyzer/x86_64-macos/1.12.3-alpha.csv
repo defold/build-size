@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3846144,3845272
+[__LINKEDIT],3846144,3845408
 MVK_spirv_cross,1692371,1692227
 dmScript,634444,109824
 dmGameSystem,418484,417260
@@ -11,10 +11,10 @@ _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125748,124764
 dmGameObject,122680,122656
-dmGraphics,113889,112809
+dmGraphics,113905,112825
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
-dmRender,109448,109144
+dmRender,109512,109208
 _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
@@ -51,7 +51,7 @@ btCollisionWorld,23976,23968
 _zip_* (library),23488,23488
 btSequentialImpulseConstraintSolver,21984,21984
 btDiscreteDynamicsWorld,21712,21712
-dmEngine,21136,21120
+dmEngine,21168,21152
 _lua_* (library),20104,20104
 _fold_* (library),19712,19712
 _cp_* (library),18400,18400
@@ -489,7 +489,6 @@ dmGameSystemDDF,1000,1000
 b2WorldManifold,992,992
 btBridgedManifoldResult,984,984
 _chacha20_* (library),980,980
-[__TEXT],977,5737
 SelectAndPopJob(),976,976
 _auxsort,976,976
 dmMutex,976,976
@@ -514,6 +513,7 @@ b2GridAndCircleContact,888,888
 b2GridAndPolygonContact,888,888
 _vkCmdPipelineBarrier,880,880
 MVKStagedDescriptorBindingUse,880,880
+[__TEXT],865,5625
 __glfwInitJoysticksCocoa,864,864
 _vkCmdBeginRendering,864,864
 _vkCmdCopyBufferToImage2,864,864
