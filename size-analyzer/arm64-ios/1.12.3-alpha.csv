@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1851392,1837752
+[__LINKEDIT],1851392,1840304
 dmScript,620684,96072
 dmGameSystem,344276,341732
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",149072,149072
+"_TEXT,_* (library)",149257,149257
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
 basist,97761,82903
 dmGameObject,94064,94040
 dmGui,88380,87412
-dmRender,83084,82780
-dmGraphics,77093,76068
+dmRender,84608,84280
+dmGraphics,77533,76508
 _pfb,65544,65544
-_GLOBAL_* (library),37300,37300
+_GLOBAL_* (library),37356,37356
 _cp_* (library),34652,34652
 stbi__process_marker(),33864,33864
 dmPhysics,32688,32576
@@ -21,11 +21,11 @@ dmParticle,29668,29500
 std,29240,29240
 dmResource,27240,27240
 _load_* (library),21176,21176
-[__TEXT],19993,36273
 dmHashTable<>,19444,19444
 dmSound,19352,19200
 _lua_* (library),19256,19256
-dmEngine,17496,17480
+[__TEXT],17768,34048
+dmEngine,17532,17516
 btCollisionWorld,16572,16568
 _vwin8192,16388,16388
 _mh_* (library),16384,32
@@ -38,7 +38,7 @@ btSequentialImpulseConstraintSolver,13860,13860
 _ssl_* (library),13520,13520
 dmDDF,13100,13036
 _dmGameSystemDDF_* (library),12448,8592
-dmInput,11904,10872
+dmInput,11896,10872
 _parse_* (library),11740,11740
 _zip_* (library),11368,11368
 dmEasing,10824,10824
@@ -49,7 +49,7 @@ _serialize_* (library),9780,9780
 b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
 _dmRigDDF_* (library),9444,6896
-[__DATA],9144,12
+[__DATA],9120,4
 gjkepa2_impl,9044,9044
 dmHttpCache,8653,8653
 dmHID,8520,8448
@@ -76,7 +76,7 @@ dBoxBox2(),6092,6092
 dmSocket,5972,5972
 _bcwrite_* (library),5968,5968
 _bcread_* (library),5852,5852
-"_DATA,_* (library)",5808,5808
+"_DATA,_* (library)",5816,5816
 _objc_* (library),5792,5792
 b2DynamicTree,5676,5676
 dmBuffer,5664,5656
@@ -408,8 +408,8 @@ _grow_* (library),448,448
 _des3_* (library),448,448
 dmZip,448,448
 _resizestack,444,444
+_b2Vec2_* (library),440,440
 dmTransform,436,436
-_b2Vec2_* (library),432,432
 _dmHashBuffer64,432,432
 _newproxy_* (library),432,432
 ResourceChunkCacheEvictMemory(),428,428

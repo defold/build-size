@@ -1,25 +1,25 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3846144,3845408
+[__LINKEDIT],3854336,3850320
 MVK_spirv_cross,1692371,1692227
 dmScript,634444,109824
 dmGameSystem,418484,417260
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",240986,240986
+"_TEXT,_* (library)",241210,241210
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125748,124764
 dmGameObject,122680,122656
-dmGraphics,113905,112825
+dmGraphics,114289,113209
+dmRender,114096,113768
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
-dmRender,109512,109208
 _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
 spvtools,69246,69246
-_GLOBAL_* (library),69072,69072
+_GLOBAL_* (library),69120,69120
 _ZNSt3_* (library),67120,67120
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
@@ -29,7 +29,7 @@ MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
 dmParticle,55968,55800
 _LZ4HC_* (library),49440,49440
-stbi__process_marker(),42366,42366
+stbi__process_marker(),42382,42382
 MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42096
 _recff_* (library),36656,36656
@@ -214,6 +214,7 @@ MVKWatermark,3967,3967
 _ra_* (library),3952,3952
 _pk_* (library),3928,3928
 _inet_* (library),3856,3856
+[__TEXT],3841,8601
 dmDeviceAVAudio,3824,3824
 dmLog,3824,3520
 _gc_* (library),3808,3808
@@ -325,9 +326,9 @@ dmLoadQueue,2064,2064
 _char2escape,2048,2048
 _fixedtables.lenfix,2048,2048
 _vwin1024,2048,2048
-[__DATA],2032,8
 _resample_* (library),2032,2032
 btTriangleShape,2024,2024
+[__DATA],2000,8
 _matchCallback,2000,2000
 MVKSurface,1973,1973
 MVKDXTnCodec,1967,1967
@@ -506,7 +507,6 @@ b2EdgeShape,928,928
 MVKCmdFillBuffer,915,915
 _tls1_* (library),913,913
 _decompress_* (library),912,912
-[__TEXT],897,5657
 _glfwWindowHint,896,896
 b2CollideEdgeAndCircle(),896,896
 mvkVkResultName(),896,896
@@ -565,12 +565,12 @@ _zbuild_* (library),768,768
 MVKMTLDeviceCapabilities,768,768
 dmResourceProviderArchivePrivate,768,768
 _err_* (library),768,768
+_b2Vec2_* (library),756,756
 _dmHashBuffer32,752,752
 _vkCmdBindVertexBuffers,752,752
 _mcode_* (library),752,752
 MVKCmdClearMultiAttachments<>,744,744
 MVKGPUCaptureScope,741,741
-_b2Vec2_* (library),740,740
 MVKSemaphoreSingleQueue,738,738
 _bcread_* (library),736,736
 _copy_* (library),736,736
@@ -2515,6 +2515,7 @@ dmFixedMemFree(),16,16
 dmStrCaseCmp(),16,16
 force_inline,16,16
 gProfileClock,16,0
+g_CurrentExtension,16,0
 kOperandTable,16,16
 mvkCompress(),16,16
 mvkDecompress(),16,16
@@ -2547,7 +2548,6 @@ _memset_* (library),8,8
 _mvkGlobalConfigInitialized,8,0
 _mvkMachTimebase,8,0
 _platformPixelFormats,8,0
-g_CurrentExtension,8,0
 g_FirstExtension,8,0
 _DispatchCalls_* (library),8,0
 _DrawCalls_* (library),8,0

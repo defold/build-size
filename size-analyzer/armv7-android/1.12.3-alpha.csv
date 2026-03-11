@@ -1,21 +1,21 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142704
 dmGameSystem,406390,554871
-[section .rodata],339023,339023
-dmGraphics,147773,206903
+[section .rodata],339791,339791
+dmGraphics,148473,207653
 dmGui,115799,151620
 dmGameObject,115584,163759
 dmCrash,110750,11042
-basist,107919,111900
+basist,107919,111865
 _compress_* (library),104967,106278
-dmRender,98828,138740
+dmRender,102869,144300
 std,77302,96305
-[section .rel.dyn],70720,70720
+[section .rel.dyn],70728,70728
 _pfb,65536,65561
-[section .ARM.exidx],61392,61392
+[section .ARM.exidx],61504,61504
 dmHashTable<>,50764,63446
-_GLOBAL_* (library),47756,53923
-(anonymous namespace),44188,102992
+_GLOBAL_* (library),47836,54093
+(anonymous namespace),44188,103020
 dmParticle,40261,51219
 dmPhysics,38137,58246
 dmResource,36376,51350
@@ -74,7 +74,7 @@ dmConfigFile,6192,7529
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5898,5898
+[section .text],5894,5894
 [section .dynstr],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -149,7 +149,7 @@ b2WeldJoint,2964,3839
 topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
 _cconv_* (library),2928,3379
-[section .bss],2910,0
+[section .bss],2909,0
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
@@ -576,12 +576,12 @@ dmHashBufferNoReverse64,388,476
 _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
-[LOAD #1 [R]],386,386
 lex_number,384,443
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
+[LOAD #1 [R]],378,378
 deflatePending,376,455
 JobSystemCreateJob,372,439
 _SpriteDesc_* (library),369,960
@@ -649,11 +649,11 @@ _RenderPrototypeDesc_* (library),310,1230
 Particle_IsSleeping,308,383
 tcp_create,308,367
 mz_adler32(),308,360
+[section .init_array],308,308
 _fff_* (library),308,638
 _CollisionShape_* (library),306,651
 ResourceChunkCacheGet(),304,406
 socket_read,304,364
-[section .init_array],304,304
 dmUtf8,304,522
 btGjkEpaPenetrationDepthSolver,300,618
 _decode_* (library),300,392
@@ -2229,6 +2229,7 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
+[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceRegisterReloadedCallback(),4,130
@@ -2447,17 +2448,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5385573
-[section .debug_loc],0,2942226
-[section .debug_line],0,2287797
-[section .debug_str],0,1766081
-[section .debug_ranges],0,928720
-[section .debug_abbrev],0,425809
-[section .debug_frame],0,270408
-[section .symtab],0,44160
-[section .strtab],0,17324
+[section .debug_info],0,5406125
+[section .debug_loc],0,2946374
+[section .debug_line],0,2292242
+[section .debug_str],0,1771102
+[section .debug_ranges],0,930776
+[section .debug_abbrev],0,427377
+[section .debug_frame],0,270812
+[section .symtab],0,44176
+[section .strtab],0,17334
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,9
+[Unmapped],0,12
