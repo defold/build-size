@@ -1,12 +1,12 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3854336,3850320
+[__LINKEDIT],3854336,3850792
 MVK_spirv_cross,1692371,1692227
 dmScript,634444,109824
-dmGameSystem,418484,417260
+dmGameSystem,419956,418732
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",241210,241210
+"_TEXT,_* (library)",241362,241362
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125748,124764
@@ -34,7 +34,7 @@ MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42096
 _recff_* (library),36656,36656
 btConeTwistConstraint,36152,36152
-dmResource,34960,34960
+dmResource,34992,34992
 MVKObjectPool<>,34117,34117
 dmRig,32976,32952
 MVKPhysicalDevice,32741,32677
@@ -51,7 +51,7 @@ btCollisionWorld,23976,23968
 _zip_* (library),23488,23488
 btSequentialImpulseConstraintSolver,21984,21984
 btDiscreteDynamicsWorld,21712,21712
-dmEngine,21168,21152
+dmEngine,21184,21168
 _lua_* (library),20104,20104
 _fold_* (library),19712,19712
 _cp_* (library),18400,18400
@@ -214,7 +214,6 @@ MVKWatermark,3967,3967
 _ra_* (library),3952,3952
 _pk_* (library),3928,3928
 _inet_* (library),3856,3856
-[__TEXT],3841,8601
 dmDeviceAVAudio,3824,3824
 dmLog,3824,3520
 _gc_* (library),3808,3808
@@ -314,6 +313,7 @@ btSortedOverlappingPairCache,2216,2216
 _match,2208,2208
 _io_* (library),2208,2208
 _buffer_* (library),2176,2176
+[__TEXT],2169,6929
 btHashMap<>,2160,2160
 MVKImageDescriptor,2157,2157
 MVKDeferredOperation,2135,2135

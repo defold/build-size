@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142704
-dmGameSystem,406390,554871
-[section .rodata],339791,339791
+dmGameSystem,407734,556390
+[section .rodata],340031,340031
 dmGraphics,148473,207653
 dmGui,115799,151620
-dmGameObject,115584,163759
+dmGameObject,115584,163777
 dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
@@ -12,18 +12,18 @@ dmRender,102869,144300
 std,77302,96305
 [section .rel.dyn],70728,70728
 _pfb,65536,65561
-[section .ARM.exidx],61504,61504
-dmHashTable<>,50764,63446
-_GLOBAL_* (library),47836,54093
+[section .ARM.exidx],61496,61496
+dmHashTable<>,50764,63440
+_GLOBAL_* (library),47836,54081
 (anonymous namespace),44188,103020
 dmParticle,40261,51219
 dmPhysics,38137,58246
-dmResource,36376,51350
+dmResource,36396,51378
 dmSound,25265,32608
 _ssl_* (library),22756,31372
 btConeTwistConstraint,22000,25064
 _decompress_* (library),21628,22962
-dmEngine,21210,26479
+dmEngine,21198,26421
 _zip_* (library),21164,26601
 btQuantizedBvh,18928,22181
 dmRig,18704,23449
@@ -38,7 +38,7 @@ btSequentialImpulseConstraintSolver,15188,19119
 btAxisSweep3Internal<>,14740,19275
 _internal_* (library),14284,14721
 _mpi_* (library),14088,16667
-[section .ARM.extab],13800,13800
+[section .ARM.extab],13812,13812
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 dmInput,11949,13700
@@ -74,7 +74,7 @@ dmConfigFile,6192,7529
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5894,5894
+[section .text],5902,5902
 [section .dynstr],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -576,12 +576,12 @@ dmHashBufferNoReverse64,388,476
 _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
+[LOAD #1 [R]],386,386
 lex_number,384,443
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
-[LOAD #1 [R]],378,378
 deflatePending,376,455
 JobSystemCreateJob,372,439
 _SpriteDesc_* (library),369,960
@@ -2049,6 +2049,7 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
+[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2229,7 +2230,6 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
-[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceRegisterReloadedCallback(),4,130
@@ -2448,17 +2448,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5406125
-[section .debug_loc],0,2946374
-[section .debug_line],0,2292242
-[section .debug_str],0,1771102
-[section .debug_ranges],0,930776
-[section .debug_abbrev],0,427377
-[section .debug_frame],0,270812
+[section .debug_info],0,5407305
+[section .debug_loc],0,2947440
+[section .debug_line],0,2293103
+[section .debug_str],0,1771328
+[section .debug_ranges],0,931352
+[section .debug_abbrev],0,427409
+[section .debug_frame],0,270872
 [section .symtab],0,44176
 [section .strtab],0,17334
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,12
+[Unmapped],0,14

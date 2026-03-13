@@ -1,11 +1,11 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3784704,3778976
+[__LINKEDIT],3784704,3779360
 MVK_spirv_cross,1517066,1516922
 dmScript,625132,100512
 basist,373487,358627
-dmGameSystem,353300,352092
+dmGameSystem,354356,353148
 std,291979,291979
-"_TEXT,_* (library)",274808,274808
+"_TEXT,_* (library)",274967,274967
 _lj_* (library),226741,226741
 _variable_* (library),127354,127354
 _mbedtls_* (library),126868,126708
@@ -22,7 +22,7 @@ _pfb,65548,65548
 __watermarkTextureContent,65536,65536
 MVKInstance,60619,60619
 spvtools,60399,60399
-_GLOBAL_* (library),56408,56408
+_GLOBAL_* (library),56400,56400
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
 stbi__process_marker(),42868,42868
@@ -33,7 +33,7 @@ _recff_* (library),33977,33977
 dmParticle,32504,32336
 MVKGraphicsPipeline,31566,31566
 opencl_entries,29808,29808
-dmResource,29336,29336
+dmResource,29348,29348
 MVKSmallVectorImpl<>,28748,28748
 MVKPhysicalDevice,27713,27649
 MVKCommandTypePool<>,25631,25631
@@ -48,7 +48,7 @@ _asm_* (library),19661,19661
 dmHashTable<>,19612,19612
 _lua_* (library),19359,19359
 _fold_* (library),18954,18954
-dmEngine,18040,18024
+dmEngine,18052,18036
 _cp_* (library),17708,17708
 cereal,17054,17054
 btCollisionWorld,16876,16868
@@ -105,7 +105,6 @@ _shader_* (library),8096,8096
 dmSocket,7940,7940
 _json_* (library),7936,7920
 _create_* (library),7904,7904
-[__TEXT],7890,12666
 _ciphersuite_* (library),7888,7888
 _x509_* (library),7884,7884
 MVKCommandResourceFactory,7832,7832
@@ -121,6 +120,7 @@ MVKDescriptorSetLayout,6877,6877
 _debuginfo_* (library),6808,6808
 btDbvt,6676,6676
 MVKCmdCopyImage<>,6672,6672
+[__TEXT],6659,11435
 _dmGraphics_* (library),6575,5184
 _ogg_* (library),6460,6460
 MVKResourcesCommandEncoderState,6410,6410
