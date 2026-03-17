@@ -1,25 +1,25 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3854336,3850984
+[__LINKEDIT],3854336,3852216
 MVK_spirv_cross,1692371,1692227
 dmScript,634444,109824
-dmGameSystem,420036,418812
+dmGameSystem,419924,418700
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",241410,241410
+"_TEXT,_* (library)",241474,241474
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125748,124764
 dmGameObject,122680,122656
-dmGraphics,114289,113209
-dmRender,114096,113768
+dmGraphics,114769,113689
+dmRender,114080,113752
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
 _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
 spvtools,69246,69246
-_GLOBAL_* (library),69120,69120
+_GLOBAL_* (library),69232,69232
 _ZNSt3_* (library),67120,67120
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
@@ -325,11 +325,10 @@ dmLoadQueue,2064,2064
 _char2escape,2048,2048
 _fixedtables.lenfix,2048,2048
 _vwin1024,2048,2048
-[__TEXT],2041,6801
 _resample_* (library),2032,2032
 btTriangleShape,2024,2024
-[__DATA],2000,8
 _matchCallback,2000,2000
+[__DATA],1984,8
 MVKSurface,1973,1973
 MVKDXTnCodec,1967,1967
 b2CollidePolygons(),1952,1952
@@ -390,6 +389,7 @@ MVKWatermarkRandom,1414,1414
 _strbuf_* (library),1408,1408
 _auxiliar_* (library),1408,1408
 _dmSystemDDF_* (library),1392,608
+[__TEXT],1385,6145
 btGjkConvexCast,1384,1384
 MVKTexelBufferDescriptor,1379,1379
 _luaJIT_* (library),1376,1376
@@ -1463,6 +1463,7 @@ rmtp_ParticleVertexCount(),144,144
 rmtp_ParticleVertexSize(),144,144
 rmtp_ParticleVertexSizeGPU(),144,144
 rmtp_ParticlesAlive(),144,128
+rmtp_RenderDispatchCount(),144,128
 rmtp_Resource(),144,144
 rmtp_ScriptCount(),144,144
 rmtp_Sound(),144,144
@@ -1488,7 +1489,7 @@ MVKSubpassDependency,128,128
 ResourceGetDescriptorByHash(),128,128
 ResourceGetPath(),128,128
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3572,128,0
+_ComponentTypeGui3575,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
 _ComponentTypeSound574,128,0

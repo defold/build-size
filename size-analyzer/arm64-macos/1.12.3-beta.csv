@@ -1,11 +1,11 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3784704,3779568
+[__LINKEDIT],3784704,3780400
 MVK_spirv_cross,1517066,1516922
 dmScript,625132,100512
 basist,373487,358627
-dmGameSystem,354456,353248
+dmGameSystem,354376,353168
 std,291979,291979
-"_TEXT,_* (library)",275018,275018
+"_TEXT,_* (library)",275068,275068
 _lj_* (library),226741,226741
 _variable_* (library),127354,127354
 _mbedtls_* (library),126868,126708
@@ -14,15 +14,15 @@ _except_* (library),110720,110720
 (anonymous namespace),106036,106036
 dmGameObject,99564,99540
 dmGui,94248,93280
-dmGraphics,92621,91580
-dmRender,88612,88284
+dmGraphics,92909,91868
+dmRender,88584,88256
 _LZ4_* (library),68100,68100
 MVKPixelFormats,66490,66466
 _pfb,65548,65548
 __watermarkTextureContent,65536,65536
 MVKInstance,60619,60619
 spvtools,60399,60399
-_GLOBAL_* (library),56400,56400
+_GLOBAL_* (library),56520,56520
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
 stbi__process_marker(),42868,42868
@@ -30,7 +30,7 @@ _LZ4HC_* (library),42488,42488
 MVKObjectPool<>,34565,34565
 dmPhysics,34324,34248
 _recff_* (library),33977,33977
-dmParticle,32504,32336
+dmParticle,32512,32344
 MVKGraphicsPipeline,31566,31566
 opencl_entries,29808,29808
 dmResource,29348,29348
@@ -89,7 +89,7 @@ _luaL_* (library),10104,10104
 _dmRenderDDF_* (library),9684,7240
 _dmRigDDF_* (library),9604,7056
 _expr_* (library),9424,9424
-[__DATA],9420,12
+[__DATA],9404,12
 gjkepa2_impl,9356,9356
 btGeneric6DofConstraint,9156,9156
 dmHttpCache,9132,9132
@@ -121,7 +121,6 @@ _debuginfo_* (library),6808,6808
 btDbvt,6676,6676
 MVKCmdCopyImage<>,6672,6672
 _dmGraphics_* (library),6575,5184
-[__TEXT],6508,11284
 _ogg_* (library),6460,6460
 MVKResourcesCommandEncoderState,6410,6410
 _dmPhysicsDDF_* (library),6352,4624
@@ -132,6 +131,7 @@ MVKCmdBeginRenderPass<>,6264,6264
 debuginfo_entries,6256,6256
 _lex_* (library),6068,6068
 MVKDeviceMemory,6053,6053
+[__TEXT],6010,10786
 MVKQueue,5858,5858
 dmBuffer,5800,5792
 MVKPipelineCache,5728,5728
@@ -245,9 +245,9 @@ MVKTimelineSemaphoreEmulated,2763,2763
 MVKQueueCommandBufferSubmission,2750,2750
 _strscan_* (library),2744,2744
 topdown(),2712,2656
+__MergedGlobals,2664,712
 btGjkPairDetector,2660,2660
 MVKComputeResourcesCommandEncoderState,2658,2658
-__MergedGlobals,2648,712
 _res_* (library),2644,2644
 b2PulleyJoint,2632,2632
 b2Contact,2620,2016
@@ -1404,6 +1404,7 @@ rmtp_GuiVertexCount(),140,140
 rmtp_Label(),140,140
 rmtp_Messages(),140,140
 rmtp_ParticlesAlive(),140,140
+rmtp_RenderDispatchCount(),140,140
 rmtp_ScriptCount(),140,140
 rmtp_TimerCount(),140,140
 _MLOOP_* (library),138,138
@@ -1456,7 +1457,7 @@ rmtp_MeshVertexSize(),132,132
 ParseArgOneOperand(),128,128
 ResourceGetByHash(),128,128
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3572,128,0
+_ComponentTypeGui3575,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
 _ComponentTypeSound574,128,0
