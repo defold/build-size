@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142704
-dmGameSystem,407874,556530
-[section .rodata],340223,340223
+dmGameSystem,405962,553317
+[section .rodata],339631,339631
 dmGraphics,148473,207653
 dmGui,115799,151620
 dmGameObject,115584,163777
@@ -10,11 +10,11 @@ basist,107919,111865
 _compress_* (library),104967,106278
 dmRender,102917,144346
 std,77302,96305
-[section .rel.dyn],70728,70728
+[section .rel.dyn],70440,70440
 _pfb,65536,65561
-[section .ARM.exidx],61504,61504
+[section .ARM.exidx],61424,61424
 dmHashTable<>,50764,63440
-_GLOBAL_* (library),47992,54237
+_GLOBAL_* (library),47748,53993
 (anonymous namespace),44188,103020
 dmParticle,40337,51295
 dmPhysics,38137,58246
@@ -74,7 +74,7 @@ dmConfigFile,6192,7529
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5911,5911
+[section .text],5910,5910
 [section .dynstr],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -149,7 +149,7 @@ b2WeldJoint,2964,3839
 topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
 _cconv_* (library),2928,3379
-[section .bss],2913,0
+[section .bss],2893,0
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
@@ -161,8 +161,8 @@ btConvexConcaveCollisionAlgorithm,2704,5157
 _camellia_* (library),2688,3310
 b2Contact,2685,3183
 b2PolygonShape,2660,3561
-[section .got],2652,2652
 _set_* (library),2640,4122
+[section .got],2600,2600
 stbtt_GetGlyphShape(),2576,2716
 _tab_* (library),2576,3349
 FontLoadFromMemoryTTF(),2572,2654
@@ -514,7 +514,6 @@ b2EdgeAndCircleContact,508,1090
 b2PolygonContact,508,1048
 b2CircleContact,508,1041
 floor0_inverse1,504,552
-dmGameSystemDDF,504,5958
 _VertexAttribute_* (library),502,1540
 opt_setmembership,500,566
 propagatemark,498,550
@@ -523,6 +522,7 @@ JobSystemDestroy,496,561
 deflateEnd,492,567
 ResourceChunkCacheDebugChunks(),480,583
 __udivmodsi4,480,525
+dmGameSystemDDF,480,5690
 _glfwInputDeactivation,476,547
 oggbyte_set4,472,517
 _ip6_* (library),468,538
@@ -694,7 +694,6 @@ lua_equal,266,308
 _randomize_* (library),264,314
 inet_tryconnect,264,312
 strscan_hex,264,308
-_LightDesc_* (library),262,444
 _StreamDesc_* (library),262,434
 _key_* (library),261,396
 entropy_update,260,323
@@ -766,8 +765,8 @@ matrixToEulerXYZ(),232,327
 auxiliar_checkgroup,232,300
 _glfwResetKeyboard,232,299
 ov_comment,231,274
-_Register_* (library),231,12449
 luaopen_base,229,290
+_Register_* (library),229,12344
 b2CollideCircles(),228,332
 glfwAndroidPollEvents,228,298
 ov_info,228,268
@@ -1259,7 +1258,6 @@ extra_lbits,116,144
 _SetViewProjection_* (library),116,265
 _ManifestData_* (library),116,250
 _TriggerEvent_* (library),116,241
-_SetLight_* (library),116,238
 dmDoubleLinkedList,116,535
 _Collision_* (library),116,232
 _DrawLine_* (library),116,226
@@ -1951,7 +1949,6 @@ _EmissionSpace_* (library),32,149
 _FontRenderMode_* (library),32,147
 _IndexBufferFormat_* (library),32,147
 atexit,32,76
-_LightType_* (library),32,145
 _PlayMode_* (library),32,139
 _SizeMode_* (library),32,139
 brainpoolP256r1_gx,32,67
@@ -2438,7 +2435,6 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
-_CortexA8657417_* (library),3,43
 [LOAD #2 [RX]],3,3
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
@@ -2450,17 +2446,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5407536
-[section .debug_loc],0,2948124
-[section .debug_line],0,2293227
-[section .debug_str],0,1771540
-[section .debug_ranges],0,931368
-[section .debug_abbrev],0,427424
-[section .debug_frame],0,270900
-[section .symtab],0,44192
-[section .strtab],0,17334
+[section .debug_info],0,5400407
+[section .debug_loc],0,2946636
+[section .debug_line],0,2290182
+[section .debug_str],0,1767816
+[section .debug_ranges],0,930704
+[section .debug_abbrev],0,425953
+[section .debug_frame],0,270588
+[section .symtab],0,44144
+[section .strtab],0,17305
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,18
+[Unmapped],0,13

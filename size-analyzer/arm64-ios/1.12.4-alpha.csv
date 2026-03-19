@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1851392,1840832
+[__LINKEDIT],1851392,1837320
 dmScript,620684,96072
-dmGameSystem,345248,342704
+dmGameSystem,343652,341532
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",149517,149517
+"_TEXT,_* (library)",149315,149315
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
 basist,97761,82903
@@ -12,7 +12,7 @@ dmGui,88380,87412
 dmRender,84580,84252
 dmGraphics,77533,76508
 _pfb,65544,65544
-_GLOBAL_* (library),37476,37476
+_GLOBAL_* (library),37272,37272
 _cp_* (library),34652,34652
 stbi__process_marker(),33864,33864
 dmPhysics,32688,32576
@@ -24,9 +24,9 @@ _load_* (library),21176,21176
 dmHashTable<>,19444,19444
 dmSound,19352,19200
 _lua_* (library),19256,19256
+[__TEXT],18414,34694
 dmEngine,17544,17528
 btCollisionWorld,16572,16568
-[__TEXT],16412,32692
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 dmLiveUpdate,15700,14604
@@ -37,19 +37,19 @@ dmRig,13900,13876
 btSequentialImpulseConstraintSolver,13860,13860
 _ssl_* (library),13520,13520
 dmDDF,13100,13036
-_dmGameSystemDDF_* (library),12448,8592
 dmInput,11896,10872
 _parse_* (library),11740,11740
+_dmGameSystemDDF_* (library),11708,8016
 _zip_* (library),11368,11368
 dmEasing,10824,10824
 _crc_* (library),10326,10326
 _vorbis_* (library),10240,10240
 _luaL_* (library),9892,9892
+[__DATA],9872,20
 _serialize_* (library),9780,9780
 b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
 _dmRigDDF_* (library),9444,6896
-[__DATA],9104,4
 gjkepa2_impl,9044,9044
 dmHttpCache,8653,8653
 dmHID,8520,8448
@@ -169,7 +169,7 @@ _prepend_* (library),2316,2316
 b2PolygonShape,2280,2280
 stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192
-_g_* (library),2190,0
+_g_* (library),2178,0
 _jpeg_* (library),2171,2171
 btConvexHullShape,2168,2168
 _LZ4_* (library),2164,2164
@@ -216,7 +216,7 @@ _dmHttpDDF_* (library),1620,1256
 btTriangleShape,1604,1604
 b2FrictionJoint,1592,1592
 b2MouseJoint,1588,1588
-__MergedGlobals,1584,192
+__MergedGlobals,1584,288
 _jmp_* (library),1572,1572
 _var_* (library),1564,1564
 _ecdsa_* (library),1556,1556
@@ -522,7 +522,6 @@ _length_* (library),256,256
 _four_* (library),256,256
 _vwin128,256,256
 b2DistanceProxy,256,256
-dmGameSystemDDF,256,256
 _set_* (library),252,252
 _dmHashReverse32,252,252
 _dmHashReverse64,252,252
@@ -533,6 +532,7 @@ _countint,240,240
 dmHashTable64<>,240,240
 dmStrTok(),240,240
 _secp384r1_* (library),240,240
+dmGameSystemDDF,240,240
 -[AppDelegateProxy application:didFinishLaunchingWithOptions:],236,236
 _counthash,236,236
 _dmHashInit32,236,236
@@ -633,7 +633,7 @@ _capture_* (library),152,152
 _dmExportedSymbols,152,152
 _emptybuffer,152,152
 _index2adr_* (library),152,152
-_Components_* (library),152,40
+_Components_* (library),152,80
 _ZN15dmDeviceAVAudioL17DeviceAVAudioOpenEPKN7dmSound16OpenDeviceParamsEPPv_* (library),152,152
 _package_* (library),152,152
 -[BaseView init],148,148
@@ -1088,7 +1088,7 @@ ResourceTypeSetStreaming(),8,8
 TextLayoutFree(),8,8
 TextLayoutGetLines(),8,8
 _ZN12dmGameObjectL23g_* (library),8,8
-_ZN12dmGameSystemL25g_* (library),8,0
+_ZN12dmGameSystemL25g_* (library),8,8
 _ZN8dmRenderL26g_* (library),8,0
 _dyld_* (library),8,8
 __glfwPlatformGetDisplayScaleFactor,8,8
@@ -1114,7 +1114,7 @@ g_CurrentExtension,8,0
 g_FirstExtension,8,0
 _DispatchCalls_* (library),8,0
 _DrawCalls_* (library),8,0
-_Gui_* (library),8,0
+_Gui_* (library),8,8
 _Render_* (library),8,0
 sAllocFunc,8,8
 sFreeFunc,8,8

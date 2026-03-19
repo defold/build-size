@@ -1,12 +1,12 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3854336,3852216
+[__LINKEDIT],3850240,3848192
 MVK_spirv_cross,1692371,1692227
 dmScript,634444,109824
-dmGameSystem,419924,418700
+dmGameSystem,418100,416876
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",241474,241474
+"_TEXT,_* (library)",241226,241226
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125748,124764
@@ -19,7 +19,7 @@ _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
 spvtools,69246,69246
-_GLOBAL_* (library),69232,69232
+_GLOBAL_* (library),68992,68992
 _ZNSt3_* (library),67120,67120
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
@@ -31,7 +31,7 @@ dmParticle,55968,55800
 _LZ4HC_* (library),49440,49440
 stbi__process_marker(),42382,42382
 MVKGraphicsPipeline,42338,42338
-dmPhysics,42188,42096
+dmPhysics,42188,42184
 _recff_* (library),36656,36656
 btConeTwistConstraint,36152,36152
 dmResource,34992,34992
@@ -47,7 +47,7 @@ spv,25696,25696
 _load_* (library),25392,25392
 mvk,24879,24759
 btQuantizedBvh,24168,24168
-btCollisionWorld,23976,23968
+btCollisionWorld,23976,23976
 _zip_* (library),23488,23488
 btSequentialImpulseConstraintSolver,21984,21984
 btDiscreteDynamicsWorld,21712,21712
@@ -79,9 +79,9 @@ _rec_* (library),13760,13760
 _ssl_* (library),13684,13684
 gjkepa2_impl,13124,13124
 MVKDescriptorSetLayoutBinding,12933,12933
-_dmGameSystemDDF_* (library),12896,9040
 btGeneric6DofConstraint,12800,12800
 b2World,12256,12256
+_dmGameSystemDDF_* (library),12092,8400
 _EXT_* (library),11960,0
 MVKExtensionList,11747,11747
 MVKGraphicsResourcesCommandEncoderState,11554,11554
@@ -162,7 +162,7 @@ b2GridShape,5420,5420
 dmConnectionPool,5392,5392
 btCompoundShape,5384,5384
 dmSys,5328,5232
-topdown(),5224,5168
+topdown(),5224,5224
 _inflate_* (library),5200,5200
 _dmInputDDF_* (library),5200,4368
 MVKResourcesCommandEncoderState,5122,5122
@@ -179,7 +179,7 @@ b2Body,4944,4944
 _opt_* (library),4880,4880
 _mh_* (library),4864,32
 _dmGameObjectDDF_* (library),4816,3232
-btMinkowskiPenetrationDepthSolver,4808,3808
+btMinkowskiPenetrationDepthSolver,4808,4096
 btHashedOverlappingPairCache,4808,4808
 _run_* (library),4800,4800
 spvExpandOperandSequenceOnce(),4784,4784
@@ -220,6 +220,7 @@ _gc_* (library),3808,3808
 btSimulationIslandManager,3808,3808
 MVKImageViewPlane,3758,3758
 btGjkPairDetector,3736,3736
+[__TEXT],3713,8473
 _deflate,3664,3664
 _serialize_* (library),3648,3648
 MVKCmdDrawIndexed,3588,3588
@@ -264,6 +265,7 @@ b2RopeJoint,2912,2912
 _glfwSetInputMode,2880,2880
 _make_* (library),2864,2864
 _stbi_* (library),2848,2848
+[__DATA],2832,8
 _parseMapping,2816,2816
 btBoxShape,2808,2808
 btConvexTriangleCallback,2776,2776
@@ -328,7 +330,6 @@ _vwin1024,2048,2048
 _resample_* (library),2032,2032
 btTriangleShape,2024,2024
 _matchCallback,2000,2000
-[__DATA],1984,8
 MVKSurface,1973,1973
 MVKDXTnCodec,1967,1967
 b2CollidePolygons(),1952,1952
@@ -375,9 +376,9 @@ __glfwRefreshContextAttribs,1504,1504
 btConvexInternalShape,1480,1480
 _vkspreflection_* (library),1472,1472
 _fetch_* (library),1472,1472
-_g_* (library),1461,0
 _JobSystemUpdate,1456,1456
 dmURI,1456,1456
+_g_* (library),1449,0
 _static_* (library),1448,1448
 dmResourceProvider,1448,1448
 _findValidMapping,1440,1440
@@ -389,15 +390,14 @@ MVKWatermarkRandom,1414,1414
 _strbuf_* (library),1408,1408
 _auxiliar_* (library),1408,1408
 _dmSystemDDF_* (library),1392,608
-[__TEXT],1385,6145
 btGjkConvexCast,1384,1384
 MVKTexelBufferDescriptor,1379,1379
 _luaJIT_* (library),1376,1376
 btUnionFind,1376,1376
 b2ContactManager,1376,1376
-btPolyhedralConvexAabbCachingShape,1376,1264
+btPolyhedralConvexAabbCachingShape,1376,1376
 _ccm_* (library),1373,1373
-btConvexInternalAabbCachingShape,1368,1256
+btConvexInternalAabbCachingShape,1368,1368
 MVKBufferDescriptor,1358,1358
 MVKInlineUniformBlockDescriptor,1354,1354
 __glfwDefaultMappings,1352,1352
@@ -486,7 +486,6 @@ _oggbyte_* (library),1008,1008
 b2Mat33,1008,1008
 MVKSemaphoreMTLEvent,1007,1007
 MVKLayer,1002,1002
-dmGameSystemDDF,1000,1000
 b2WorldManifold,992,992
 btBridgedManifoldResult,984,984
 _chacha20_* (library),980,980
@@ -497,6 +496,7 @@ GetGlyphIndexTTF(),960,960
 __glfwGetGammaRampNull,960,960
 kMVKMTLDepthStencilDescriptorDataDefault,960,0
 _floor0_* (library),960,960
+dmGameSystemDDF,952,952
 dmZlib,944,944
 b2Joint,944,944
 dmResourceProviderFile,944,816
@@ -2557,7 +2557,7 @@ _Render_* (library),8,0
 sAllocFunc,8,8
 sFreeFunc,8,8
 stbi__check_png_header(),8,8
-uniqueId,8,0
+uniqueId,8,8
 _b2velocityThresholdOverride,4,0
 _gAddedPairs,4,0
 _gContactBreakingThreshold,4,4
