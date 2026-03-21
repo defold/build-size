@@ -1,29 +1,29 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142704
-dmGameSystem,407874,556530
-[section .rodata],340223,340223
-dmGraphics,148473,207653
+dmGameSystem,407874,556524
+[section .rodata],340271,340271
+dmGraphics,148597,207777
 dmGui,115799,151620
-dmGameObject,115584,163777
+dmGameObject,115584,163745
 dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
-dmRender,102917,144346
+dmRender,102917,144339
 std,77302,96305
 [section .rel.dyn],70728,70728
 _pfb,65536,65561
-[section .ARM.exidx],61504,61504
+[section .ARM.exidx],61512,61512
 dmHashTable<>,50764,63440
-_GLOBAL_* (library),47992,54237
+_GLOBAL_* (library),47992,54242
 (anonymous namespace),44188,103020
 dmParticle,40337,51295
 dmPhysics,38137,58246
-dmResource,36396,51378
+dmResource,36396,51383
 dmSound,25265,32608
 _ssl_* (library),22756,31372
 btConeTwistConstraint,22000,25064
 _decompress_* (library),21628,22962
-dmEngine,21198,26421
+dmEngine,21306,26620
 _zip_* (library),21164,26601
 btQuantizedBvh,18928,22181
 dmRig,18704,23449
@@ -74,7 +74,7 @@ dmConfigFile,6192,7529
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5911,5911
+[section .text],5938,5938
 [section .dynstr],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -118,7 +118,7 @@ b2RevoluteJoint,4072,5865
 _decl_* (library),4058,4599
 _book_* (library),4034,4412
 deflate,4008,4128
-dmArray<>,3960,5963
+dmArray<>,3960,5970
 btBvhTriangleMeshShape,3948,7289
 b2EPCollider,3884,4320
 b2GridShape,3848,5521
@@ -576,12 +576,12 @@ dmHashBufferNoReverse64,388,476
 _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
+[LOAD #1 [R]],386,386
 lex_number,384,443
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
-[LOAD #1 [R]],378,378
 deflatePending,376,455
 JobSystemCreateJob,372,439
 _SpriteDesc_* (library),369,960
@@ -996,7 +996,7 @@ _ktabk_* (library),170,212
 _LuaModule_* (library),170,452
 _PbrSpecularGlossiness_* (library),169,387
 b2DistanceJointDef,168,260
-dmEngineGetResult(),168,259
+dmEngineGetResult(),168,260
 b2WheelJointDef,168,257
 ResourceGetByHash(),168,244
 _glfwPlatformOpenWindow,168,240
@@ -2438,7 +2438,6 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
-_CortexA8657417_* (library),3,43
 [LOAD #2 [RX]],3,3
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
@@ -2450,14 +2449,14 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5407536
-[section .debug_loc],0,2948124
-[section .debug_line],0,2293227
-[section .debug_str],0,1771540
-[section .debug_ranges],0,931368
+[section .debug_info],0,5407551
+[section .debug_loc],0,2948044
+[section .debug_line],0,2293393
+[section .debug_str],0,1771703
+[section .debug_ranges],0,931336
 [section .debug_abbrev],0,427424
-[section .debug_frame],0,270900
-[section .symtab],0,44192
+[section .debug_frame],0,270904
+[section .symtab],0,44176
 [section .strtab],0,17334
 [ELF Headers],0,1400
 [section .shstrtab],0,368

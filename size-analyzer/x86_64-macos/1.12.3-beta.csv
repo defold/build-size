@@ -1,17 +1,17 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3854336,3852976
+[__LINKEDIT],3854336,3854072
 MVK_spirv_cross,1692371,1692227
 dmScript,634444,109824
 dmGameSystem,419924,418700
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",241474,241474
+"_TEXT,_* (library)",241538,241538
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125748,124764
 dmGameObject,122680,122656
-dmGraphics,115809,114729
+dmGraphics,117905,116825
 dmRender,114080,113752
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
@@ -29,7 +29,7 @@ MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
 dmParticle,55968,55800
 _LZ4HC_* (library),49440,49440
-stbi__process_marker(),42382,42382
+stbi__process_marker(),42718,42718
 MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42096
 _recff_* (library),36656,36656
@@ -51,7 +51,7 @@ btCollisionWorld,23976,23968
 _zip_* (library),23488,23488
 btSequentialImpulseConstraintSolver,21984,21984
 btDiscreteDynamicsWorld,21712,21712
-dmEngine,21184,21168
+dmEngine,21248,21232
 _lua_* (library),20104,20104
 _fold_* (library),19712,19712
 _cp_* (library),18400,18400
@@ -87,7 +87,7 @@ MVKExtensionList,11747,11747
 MVKGraphicsResourcesCommandEncoderState,11554,11554
 _vorbis_* (library),11392,11392
 dmEasing,11000,11000
-dmHttpCache,10970,10970
+dmHttpCache,10986,10986
 MVKCmdResolveImage<>,10758,10758
 dmHID,10576,10192
 MVKQueueFullCommandBufferSubmission<>,10420,10420
@@ -338,6 +338,7 @@ btTypedConstraint,1896,1896
 dmCrypt,1888,1888
 _idct_* (library),1872,1872
 _dmModelDDF_* (library),1868,1160
+[__TEXT],1865,6625
 _ecdsa_* (library),1829,1829
 _glfwGetGamepadState,1824,1824
 _mapping_* (library),1824,1824
@@ -807,7 +808,6 @@ mvkGetVulkanVersionString(),352,352
 removeleaf(),352,352
 _zdist_* (library),352,352
 MVKCmdCopyQueryPoolResults,349,349
-[__TEXT],345,5105
 MVKCmdDispatchIndirect,345,345
 _mmap_* (library),344,336
 btGjkEpaPenetrationDepthSolver,344,344

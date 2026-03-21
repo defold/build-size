@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3784704,3777088
+[__LINKEDIT],3784704,3777680
 MVK_spirv_cross,1517066,1516922
 dmScript,625132,100512
-basist,373487,358627
+basist,373449,358589
 dmGameSystem,352780,351572
 std,291979,291979
-"_TEXT,_* (library)",274844,274844
+"_TEXT,_* (library)",274904,274904
 _lj_* (library),226741,226741
 _variable_* (library),127354,127354
 _mbedtls_* (library),126868,126708
-dmCrash,113688,7008
+dmCrash,113728,7048
 _except_* (library),110720,110720
 (anonymous namespace),106036,106036
 dmGameObject,99564,99540
+dmGraphics,94753,93712
 dmGui,94248,93280
-dmGraphics,93541,92500
 dmRender,88584,88256
 _LZ4_* (library),68100,68100
 MVKPixelFormats,66490,66466
@@ -22,10 +22,10 @@ _pfb,65548,65548
 __watermarkTextureContent,65536,65536
 MVKInstance,60619,60619
 spvtools,60399,60399
-_GLOBAL_* (library),56316,56316
+_GLOBAL_* (library),56320,56320
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
-stbi__process_marker(),42868,42868
+stbi__process_marker(),43216,43216
 _LZ4HC_* (library),42488,42488
 MVKObjectPool<>,34565,34565
 dmPhysics,34324,34320
@@ -48,7 +48,7 @@ _asm_* (library),19661,19661
 dmHashTable<>,19612,19612
 _lua_* (library),19359,19359
 _fold_* (library),18954,18954
-dmEngine,18052,18036
+dmEngine,18112,18096
 _cp_* (library),17708,17708
 cereal,17054,17054
 btCollisionWorld,16876,16876
@@ -71,7 +71,7 @@ _ssl_* (library),13700,13700
 MVKImage,13510,13510
 dmInput,13468,12444
 MVKCmdBufferImageCopy<>,13425,13425
-_DATA_* (library),13104,13104
+_DATA_* (library),13064,13064
 MVKDescriptorPool,12790,12790
 _rec_* (library),12780,12780
 _dmGameSystemDDF_* (library),12060,8368
@@ -113,7 +113,6 @@ _inflate,7564,7564
 _clspvreflection_* (library),7544,7544
 _ov_* (library),7456,7456
 MVKCmdResolveImage<>,7438,7438
-[__TEXT],7418,12194
 dmSoundCodec,7204,7172
 tinfl_decompress(),7140,7140
 _deflate_* (library),7066,7066
@@ -134,6 +133,7 @@ _lex_* (library),6068,6068
 MVKDeviceMemory,6053,6053
 MVKQueue,5858,5858
 dmBuffer,5800,5792
+[__TEXT],5772,10548
 MVKPipelineCache,5728,5728
 MVKCmdClearAttachments<>,5706,5706
 dmConfigFile,5616,5616

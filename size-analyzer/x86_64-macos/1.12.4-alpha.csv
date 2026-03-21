@@ -1,17 +1,17 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3850240,3848952
+[__LINKEDIT],3850240,3850056
 MVK_spirv_cross,1692371,1692227
 dmScript,634444,109824
 dmGameSystem,418100,416876
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",241226,241226
+"_TEXT,_* (library)",241290,241290
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125748,124764
 dmGameObject,122680,122656
-dmGraphics,115809,114729
+dmGraphics,117905,116825
 dmRender,114080,113752
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
@@ -29,7 +29,7 @@ MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
 dmParticle,55968,55800
 _LZ4HC_* (library),49440,49440
-stbi__process_marker(),42382,42382
+stbi__process_marker(),42718,42718
 MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42184
 _recff_* (library),36656,36656
@@ -51,7 +51,7 @@ btCollisionWorld,23976,23976
 _zip_* (library),23488,23488
 btSequentialImpulseConstraintSolver,21984,21984
 btDiscreteDynamicsWorld,21712,21712
-dmEngine,21184,21168
+dmEngine,21248,21232
 _lua_* (library),20104,20104
 _fold_* (library),19712,19712
 _cp_* (library),18400,18400
@@ -87,7 +87,7 @@ MVKExtensionList,11747,11747
 MVKGraphicsResourcesCommandEncoderState,11554,11554
 _vorbis_* (library),11392,11392
 dmEasing,11000,11000
-dmHttpCache,10970,10970
+dmHttpCache,10986,10986
 MVKCmdResolveImage<>,10758,10758
 dmHID,10576,10192
 MVKQueueFullCommandBufferSubmission<>,10420,10420
@@ -276,7 +276,6 @@ _build_* (library),2704,2704
 ReverseHashContainer,2704,2704
 btCapsuleShape,2696,2696
 btSubsimplexConvexCast,2680,2680
-[__TEXT],2673,7433
 MVKMTLBufferAllocationPool,2653,2653
 MVKFramebuffer,2625,2625
 __packetout,2624,2624
@@ -1639,6 +1638,7 @@ _bitrev,104,104
 _Components_* (library),104,104
 btCollisionPairCallback,104,104
 MVKCmdBeginRenderPassBase,100,100
+[__TEXT],97,4857
 -[CAMetalLayer(MoltenVK) naturalDrawableSizeMVK],96,96
 -[GLFWApplicationDelegate applicationDidChangeScreenParameters:],96,96
 -[GLFWContentView dealloc],96,96
