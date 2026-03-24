@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
-dmScript,632211,142704
-dmGameSystem,405962,553311
+dmScript,632211,142711
+dmGameSystem,406030,553475
 [section .rodata],339695,339695
 dmGraphics,148597,207777
 dmGui,115799,151620
@@ -8,12 +8,12 @@ dmGameObject,115584,163745
 dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
-dmRender,102917,144339
+dmRender,102917,144353
 std,77302,96305
 [section .rel.dyn],70440,70440
 _pfb,65536,65561
 [section .ARM.exidx],61432,61432
-dmHashTable<>,50764,63440
+dmHashTable<>,50764,63447
 _GLOBAL_* (library),47748,53998
 (anonymous namespace),44188,103020
 dmParticle,40337,51295
@@ -42,7 +42,7 @@ _mpi_* (library),14088,16667
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 dmInput,11949,13700
-[section .plt],11920,11920
+[section .plt],11919,11919
 b2World,11672,13849
 _ecp_* (library),11029,13516
 dmEasing,11004,11212
@@ -74,7 +74,7 @@ dmConfigFile,6192,7529
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5934,5934
+[section .text],5930,5930
 [section .dynstr],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -392,7 +392,7 @@ dmZlib,856,1041
 insertleaf(),852,924
 _initialize_* (library),840,911
 _chacha20_* (library),840,1203
-_ThumbV7PILongThunk_* (library),840,6586
+_ThumbV7PILongThunk_* (library),840,6602
 dmHashReverse32Alloc(),838,928
 _profile_* (library),838,1227
 _verify_* (library),836,1041
@@ -1095,7 +1095,7 @@ bcwrite_ktabk,144,190
 _EmitterKey_* (library),144,255
 _GamepadMap_* (library),144,373
 dmTime,144,311
-_ARMV7PILongThunk_* (library),143,887
+_ARMV7PILongThunk_* (library),143,884
 lua_newuserdata,142,196
 buf_grow,142,183
 _PropertyDeclarationEntry_* (library),142,385
@@ -2233,6 +2233,7 @@ _init_* (library),5,68
 ResourceRegisterReloadedCallback(),4,130
 ResourceUnregisterReloadedCallback(),4,125
 ResourceRegisterDecryptionFunction(),4,104
+_CortexA8657417_* (library),4,103
 EnsureStructAliasSize_0ad2b86153fefc7de7c0552f78d82b4d(),4,96
 EnsureStructAliasSize_13bac21d0b5b2232369d324edd576ac4(),4,96
 EnsureStructAliasSize_157f3a4752e1fc4ee2309a69c664683a(),4,96
@@ -2435,7 +2436,6 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
-[LOAD #2 [RX]],3,3
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
 g_PendingResizeBecauseOfInsets,1,47
@@ -2446,17 +2446,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5400422
-[section .debug_loc],0,2946556
-[section .debug_line],0,2290348
-[section .debug_str],0,1767979
-[section .debug_ranges],0,930672
+[section .debug_info],0,5400564
+[section .debug_loc],0,2946041
+[section .debug_line],0,2290394
+[section .debug_str],0,1768187
+[section .debug_ranges],0,930680
 [section .debug_abbrev],0,425953
-[section .debug_frame],0,270592
-[section .symtab],0,44144
+[section .debug_frame],0,270608
+[section .symtab],0,44128
 [section .strtab],0,17305
-[ELF Headers],0,1400
+[ELF Headers],0,1360
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,9
+[Unmapped],0,12

@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3850240,3850056
+[__LINKEDIT],3850240,3850192
 MVK_spirv_cross,1692371,1692227
 dmScript,634444,109824
-dmGameSystem,418100,416876
+dmGameSystem,418212,416988
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
@@ -205,6 +205,7 @@ dmPlatform,4112,4096
 dmMessage,4104,4064
 _vwin2048,4096,4096
 mvk_smallvector_allocator<>,4096,4096
+[__TEXT],4081,8841
 MVKPresentableSwapchainImage,4039,4039
 btConvexShape,4024,4024
 stbtt_GetGlyphShape(),4016,4016
@@ -1638,7 +1639,6 @@ _bitrev,104,104
 _Components_* (library),104,104
 btCollisionPairCallback,104,104
 MVKCmdBeginRenderPassBase,100,100
-[__TEXT],97,4857
 -[CAMetalLayer(MoltenVK) naturalDrawableSizeMVK],96,96
 -[GLFWApplicationDelegate applicationDidChangeScreenParameters:],96,96
 -[GLFWContentView dealloc],96,96
