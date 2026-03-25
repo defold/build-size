@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3784704,3777824
+[__LINKEDIT],3784704,3778160
 MVK_spirv_cross,1517066,1516922
 dmScript,625132,100512
 basist,373449,358589
-dmGameSystem,352948,351740
+dmGameSystem,352988,351780
 std,291979,291979
 "_TEXT,_* (library)",274904,274904
 _lj_* (library),226741,226741
@@ -54,6 +54,7 @@ cereal,17054,17054
 btCollisionWorld,16876,16876
 _vwin8192,16388,16388
 _parse_* (library),16180,16180
+dmRig,16084,16060
 MVKDescriptorTypePool<>,16048,16048
 btQuantizedBvh,15936,15936
 dmLiveUpdate,15824,14728
@@ -61,7 +62,6 @@ _KHR_* (library),15340,0
 btDiscreteDynamicsWorld,15016,15016
 glsl_entries,14904,14904
 __glfw,14744,0
-dmRig,14660,14636
 dmDDF,14424,14360
 _field_* (library),14359,14359
 MVKCommandEncoder,14268,14268
@@ -136,7 +136,6 @@ dmBuffer,5800,5792
 MVKPipelineCache,5728,5728
 MVKCmdClearAttachments<>,5706,5706
 dmConfigFile,5616,5616
-[__TEXT],5596,10372
 MVKDescriptorSet,5511,5511
 MVKCommandEncodingPool,5473,5473
 _ra_* (library),5472,5472
@@ -173,6 +172,7 @@ MVKCommandBuffer,4243,4243
 dmSystemDDF,4169,4169
 _do_* (library),4144,4144
 MVKCmdClearImage<>,4138,4138
+[__TEXT],4124,8900
 btHashedOverlappingPairCache,4112,4112
 btBvhTriangleMeshShape,4108,4108
 GetGlyphTTF(),4096,4096
@@ -184,7 +184,7 @@ MVKPipelineLayout,4028,4028
 _dmParticleDDF_* (library),3992,3304
 btCompoundCollisionAlgorithm,3952,3952
 _pk_* (library),3952,3952
-_OUTLINED_* (library),3944,3944
+_OUTLINED_* (library),3952,3952
 _gc_* (library),3940,3940
 _process_* (library),3888,3888
 simple_json,3888,3888

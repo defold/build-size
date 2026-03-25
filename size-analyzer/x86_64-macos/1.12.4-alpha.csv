@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3850240,3850192
+[__LINKEDIT],3854336,3850488
 MVK_spirv_cross,1692371,1692227
 dmScript,634444,109824
 dmGameSystem,418212,416988
@@ -34,9 +34,9 @@ MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42184
 _recff_* (library),36656,36656
 btConeTwistConstraint,36152,36152
+dmRig,35776,35752
 dmResource,34992,34992
 MVKObjectPool<>,34117,34117
-dmRig,32976,32952
 MVKPhysicalDevice,32741,32677
 opencl_entries,29808,29808
 MVKCommandTypePool<>,29459,29459
@@ -205,7 +205,6 @@ dmPlatform,4112,4096
 dmMessage,4104,4064
 _vwin2048,4096,4096
 mvk_smallvector_allocator<>,4096,4096
-[__TEXT],4081,8841
 MVKPresentableSwapchainImage,4039,4039
 btConvexShape,4024,4024
 stbtt_GetGlyphShape(),4016,4016
@@ -411,6 +410,7 @@ dmBlockAllocator,1312,1312
 _AMD_* (library),1300,0
 dmVMath,1296,1296
 btSphereTriangleCollisionAlgorithm,1296,1296
+[__TEXT],1281,6041
 Vectormath,1280,1280
 b2BroadPhase,1280,1280
 btPairCachingGhostObject,1272,1272

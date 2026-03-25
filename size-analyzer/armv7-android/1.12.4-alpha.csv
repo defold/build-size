@@ -25,8 +25,8 @@ btConeTwistConstraint,22000,25064
 _decompress_* (library),21628,22962
 dmEngine,21306,26620
 _zip_* (library),21164,26601
+dmRig,20232,24977
 btQuantizedBvh,18928,22181
-dmRig,18704,23449
 _load_* (library),18688,19796
 btCollisionWorld,18289,25117
 _cf_* (library),17380,26649
@@ -42,7 +42,7 @@ _mpi_* (library),14088,16667
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 dmInput,11949,13700
-[section .plt],11919,11919
+[section .plt],11920,11920
 b2World,11672,13849
 _ecp_* (library),11029,13516
 dmEasing,11004,11212
@@ -74,7 +74,7 @@ dmConfigFile,6192,7529
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5930,5930
+[section .text],5922,5922
 [section .dynstr],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -392,7 +392,7 @@ dmZlib,856,1041
 insertleaf(),852,924
 _initialize_* (library),840,911
 _chacha20_* (library),840,1203
-_ThumbV7PILongThunk_* (library),840,6602
+_ThumbV7PILongThunk_* (library),840,6586
 dmHashReverse32Alloc(),838,928
 _profile_* (library),838,1227
 _verify_* (library),836,1041
@@ -1095,7 +1095,7 @@ bcwrite_ktabk,144,190
 _EmitterKey_* (library),144,255
 _GamepadMap_* (library),144,373
 dmTime,144,311
-_ARMV7PILongThunk_* (library),143,884
+_ARMV7PILongThunk_* (library),143,887
 lua_newuserdata,142,196
 buf_grow,142,183
 _PropertyDeclarationEntry_* (library),142,385
@@ -2047,6 +2047,7 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
+[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2227,13 +2228,11 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
-[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceRegisterReloadedCallback(),4,130
 ResourceUnregisterReloadedCallback(),4,125
 ResourceRegisterDecryptionFunction(),4,104
-_CortexA8657417_* (library),4,103
 EnsureStructAliasSize_0ad2b86153fefc7de7c0552f78d82b4d(),4,96
 EnsureStructAliasSize_13bac21d0b5b2232369d324edd576ac4(),4,96
 EnsureStructAliasSize_157f3a4752e1fc4ee2309a69c664683a(),4,96
@@ -2436,6 +2435,7 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
+[LOAD #2 [RX]],3,3
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
 g_PendingResizeBecauseOfInsets,1,47
@@ -2446,17 +2446,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5400564
-[section .debug_loc],0,2946041
-[section .debug_line],0,2290394
-[section .debug_str],0,1768187
-[section .debug_ranges],0,930680
-[section .debug_abbrev],0,425953
-[section .debug_frame],0,270608
-[section .symtab],0,44128
+[section .debug_info],0,5403906
+[section .debug_loc],0,2950354
+[section .debug_line],0,2292473
+[section .debug_str],0,1768248
+[section .debug_ranges],0,935424
+[section .debug_abbrev],0,425963
+[section .debug_frame],0,270652
+[section .symtab],0,44144
 [section .strtab],0,17305
-[ELF Headers],0,1360
+[ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,12
+[Unmapped],0,11
