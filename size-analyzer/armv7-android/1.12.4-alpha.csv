@@ -1,31 +1,31 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142711
-dmGameSystem,406030,553475
-[section .rodata],339695,339695
+dmGameSystem,406294,553398
+[section .rodata],340223,340223
 dmGraphics,148597,207777
 dmGui,115799,151620
 dmGameObject,115584,163745
 dmCrash,110750,11042
 basist,107919,111865
 _compress_* (library),104967,106278
-dmRender,102917,144353
+dmRender,102973,144409
 std,77302,96305
 [section .rel.dyn],70440,70440
 _pfb,65536,65561
-[section .ARM.exidx],61432,61432
+[section .ARM.exidx],61472,61472
 dmHashTable<>,50764,63447
-_GLOBAL_* (library),47748,53998
+_GLOBAL_* (library),48852,55090
 (anonymous namespace),44188,103020
 dmParticle,40337,51295
 dmPhysics,38137,58246
 dmResource,36396,51383
-dmSound,25265,32608
+dmSound,27913,36520
 _ssl_* (library),22756,31372
 btConeTwistConstraint,22000,25064
 _decompress_* (library),21628,22962
 dmEngine,21306,26620
 _zip_* (library),21164,26601
-dmRig,20232,24977
+dmRig,20484,25593
 btQuantizedBvh,18928,22181
 _load_* (library),18688,19796
 btCollisionWorld,18289,25117
@@ -74,7 +74,7 @@ dmConfigFile,6192,7529
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5944,5944
-[section .text],5922,5922
+[section .text],5910,5910
 [section .dynstr],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -149,7 +149,7 @@ b2WeldJoint,2964,3839
 topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
 _cconv_* (library),2928,3379
-[section .bss],2893,0
+[section .bss],2917,0
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
@@ -576,12 +576,12 @@ dmHashBufferNoReverse64,388,476
 _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
-[LOAD #1 [R]],386,386
 lex_number,384,443
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
+[LOAD #1 [R]],378,378
 deflatePending,376,455
 JobSystemCreateJob,372,439
 _SpriteDesc_* (library),369,960
@@ -2446,17 +2446,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5403906
-[section .debug_loc],0,2950354
-[section .debug_line],0,2292473
-[section .debug_str],0,1768248
-[section .debug_ranges],0,935424
-[section .debug_abbrev],0,425963
-[section .debug_frame],0,270652
+[section .debug_info],0,5405852
+[section .debug_loc],0,2953323
+[section .debug_line],0,2293135
+[section .debug_str],0,1770061
+[section .debug_ranges],0,936792
+[section .debug_abbrev],0,426041
+[section .debug_frame],0,270940
 [section .symtab],0,44144
 [section .strtab],0,17305
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,11
+[Unmapped],0,12

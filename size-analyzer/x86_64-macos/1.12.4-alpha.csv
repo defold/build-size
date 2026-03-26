@@ -1,25 +1,25 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3854336,3850488
-MVK_spirv_cross,1692371,1692227
+[__LINKEDIT],3858432,3855208
+MVK_spirv_cross,1692828,1692684
 dmScript,634444,109824
-dmGameSystem,418212,416988
+dmGameSystem,417700,416412
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250848,250848
-"_TEXT,_* (library)",241290,241290
+"_TEXT,_* (library)",241386,241386
 _mbedtls_* (library),131369,131197
 _variable_* (library),127132,127132
 dmGui,125748,124764
 dmGameObject,122680,122656
 dmGraphics,117905,116825
-dmRender,114080,113752
+dmRender,114240,113912
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
 _except_* (library),106140,106140
 MVKPixelFormats,103226,103202
 _LZ4_* (library),80480,80480
+_GLOBAL_* (library),69712,69712
 spvtools,69246,69246
-_GLOBAL_* (library),68992,68992
 _ZNSt3_* (library),67120,67120
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
@@ -34,14 +34,14 @@ MVKGraphicsPipeline,42338,42338
 dmPhysics,42188,42184
 _recff_* (library),36656,36656
 btConeTwistConstraint,36152,36152
-dmRig,35776,35752
+dmRig,35888,35864
 dmResource,34992,34992
 MVKObjectPool<>,34117,34117
 MVKPhysicalDevice,32741,32677
 opencl_entries,29808,29808
 MVKCommandTypePool<>,29459,29459
+dmSound,29408,29152
 _asm_* (library),27696,27696
-dmSound,27632,27472
 MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),25392,25392
@@ -264,18 +264,19 @@ b2RopeJoint,2912,2912
 _glfwSetInputMode,2880,2880
 _make_* (library),2864,2864
 _stbi_* (library),2848,2848
-[__DATA],2832,8
 _parseMapping,2816,2816
 btBoxShape,2808,2808
 btConvexTriangleCallback,2776,2776
 _cploop_* (library),2736,2736
 _crc32_* (library),2736,2736
+[__TEXT],2728,7488
 MVKBufferView,2727,2727
 _bcwrite_* (library),2720,2720
 _build_* (library),2704,2704
 ReverseHashContainer,2704,2704
 btCapsuleShape,2696,2696
 btSubsimplexConvexCast,2680,2680
+[__DATA],2672,8
 MVKMTLBufferAllocationPool,2653,2653
 MVKFramebuffer,2625,2625
 __packetout,2624,2624
@@ -410,7 +411,6 @@ dmBlockAllocator,1312,1312
 _AMD_* (library),1300,0
 dmVMath,1296,1296
 btSphereTriangleCollisionAlgorithm,1296,1296
-[__TEXT],1281,6041
 Vectormath,1280,1280
 b2BroadPhase,1280,1280
 btPairCachingGhostObject,1272,1272

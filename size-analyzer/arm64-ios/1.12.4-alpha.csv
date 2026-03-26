@@ -1,36 +1,36 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1851392,1837648
+[__LINKEDIT],1851392,1840096
 dmScript,620684,96072
-dmGameSystem,343832,341712
+dmGameSystem,343088,340904
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",149375,149375
+"_TEXT,_* (library)",149453,149453
 dmCrash,112648,5976
 _mbedtls_* (library),101888,101884
-basist,97761,82903
+basist,98226,83368
 dmGameObject,94064,94040
 dmGui,88380,87412
-dmRender,84580,84252
+dmRender,84604,84276
 dmGraphics,77553,76528
 _pfb,65544,65544
-_GLOBAL_* (library),37280,37280
+_GLOBAL_* (library),38100,38100
 _cp_* (library),34652,34652
 stbi__process_marker(),33864,33864
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
+[__TEXT],31119,47399
 dmParticle,29676,29508
 std,29240,29240
 dmResource,27252,27252
 _load_* (library),21176,21176
+dmSound,20540,20388
 dmHashTable<>,19444,19444
-dmSound,19352,19200
 _lua_* (library),19256,19256
 dmEngine,17604,17588
-[__TEXT],16654,32934
 btCollisionWorld,16572,16568
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 dmLiveUpdate,15700,14604
-dmRig,15324,15300
+dmRig,15528,15504
 _OBJC_* (library),14964,14964
 btDiscreteDynamicsWorld,14436,14436
 _lex_* (library),14292,14292
@@ -45,8 +45,8 @@ dmEasing,10824,10824
 _crc_* (library),10326,10326
 _vorbis_* (library),10240,10240
 _luaL_* (library),9892,9892
-[__DATA],9872,20
 _serialize_* (library),9780,9780
+[__DATA],9712,20
 b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
 _dmRigDDF_* (library),9444,6896
@@ -176,7 +176,6 @@ _LZ4_* (library),2164,2164
 SphereTriangleDetector,2164,2164
 b2Contact,2132,1528
 _dmInputDDF_* (library),2080,1248
-dmArray<>,2072,2072
 btCollisionDispatcher,2072,2072
 b2RopeJoint,2056,2056
 _crc32_* (library),2052,2052
@@ -184,6 +183,7 @@ _char2escape,2048,2048
 _fixedtables.lenfix,2048,2048
 _vwin1024,2048,2048
 _clib_* (library),2028,2028
+dmArray<>,2020,2020
 _buffer_* (library),1984,1984
 _decode_* (library),1968,1968
 _gola_* (library),1940,1940
@@ -208,6 +208,7 @@ btAlignedObjectArray<>,1704,1704
 basisu,1701,1701
 btCompoundLeafCallback,1692,1692
 _pk_* (library),1688,1688
+__MergedGlobals,1680,288
 _global_* (library),1648,1648
 b2Simplex,1640,1640
 _get_* (library),1632,1632
@@ -216,7 +217,6 @@ _dmHttpDDF_* (library),1620,1256
 btTriangleShape,1604,1604
 b2FrictionJoint,1592,1592
 b2MouseJoint,1588,1588
-__MergedGlobals,1584,288
 _jmp_* (library),1572,1572
 _var_* (library),1564,1564
 _ecdsa_* (library),1556,1556
