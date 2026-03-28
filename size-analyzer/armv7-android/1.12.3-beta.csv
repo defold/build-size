@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142704
 dmGameSystem,407874,556524
-[section .rodata],340271,340271
+[section .rodata],340367,340367
 dmGraphics,148597,207777
 dmGui,115799,151620
 dmGameObject,115584,163745
@@ -51,7 +51,7 @@ btGeneric6DofConstraint,10468,13589
 b2DynamicTree,10220,12192
 dmSocket,10084,14283
 gjkepa2_impl,10012,11557
-dmHttpClient,9956,13296
+dmHttpClient,9980,13320
 [section .hash],9656,9656
 dmResourceMounts,9580,12603
 inflate,9228,9636
@@ -73,8 +73,8 @@ btDbvt,6360,8443
 dmConfigFile,6192,7529
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
+[section .text],5946,5946
 [section .rel.plt],5944,5944
-[section .text],5938,5938
 [section .dynstr],5834,5834
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -2449,12 +2449,12 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5407551
-[section .debug_loc],0,2948044
-[section .debug_line],0,2293393
-[section .debug_str],0,1771703
-[section .debug_ranges],0,931336
-[section .debug_abbrev],0,427424
+[section .debug_info],0,5407602
+[section .debug_loc],0,2947996
+[section .debug_line],0,2293374
+[section .debug_str],0,1771738
+[section .debug_ranges],0,931376
+[section .debug_abbrev],0,427443
 [section .debug_frame],0,270904
 [section .symtab],0,44176
 [section .strtab],0,17334
@@ -2462,4 +2462,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,18
+[Unmapped],0,20
