@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142741
 dmGameSystem,409666,559209
-[section .rodata],342394,342394
-dmGraphics,148657,212071
+[section .rodata],342426,342426
+dmGraphics,148073,211463
 dmGui,115799,151515
 dmGameObject,115584,163777
 _compress_* (library),113767,115557
@@ -12,7 +12,7 @@ dmRender,103293,145196
 std,77302,96305
 [section .rel.dyn],70520,70520
 _pfb,65536,65561
-[section .ARM.exidx],61664,61664
+[section .ARM.exidx],61680,61680
 dmHashTable<>,50764,63447
 _GLOBAL_* (library),49372,55771
 (anonymous namespace),44188,103020
@@ -74,7 +74,7 @@ dmConfigFile,6296,7788
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
-[section .text],5902,5902
+[section .text],5907,5907
 [section .dynstr],5848,5848
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -2051,7 +2051,6 @@ meth_shutdown.methods,16,54
 _clone_* (library),16,211
 expr_toval,16,43
 quant_look,16,43
-[LOAD #4 [RW]],16,0
 _row_* (library),13,111
 TextLayoutCreate(),12,120
 ProfileRegisterPropertyBool(),12,90
@@ -2376,6 +2375,7 @@ g_EventLock,4,28
 gFindPairs,4,27
 json_array,4,27
 stbi__process_frame_header(),3,71
+_CortexA8657417_* (library),3,43
 [LOAD #2 [RX]],3,3
 EnsureStructAliasSize_84f93d368ad21e9b3fc7c98f76e5fea6(),2,78
 supported_init,2,47
@@ -2387,17 +2387,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5428694
-[section .debug_loc],0,2961074
-[section .debug_line],0,2297646
-[section .debug_str],0,1780336
-[section .debug_ranges],0,942184
-[section .debug_abbrev],0,426439
+[section .debug_info],0,5428828
+[section .debug_loc],0,2961553
+[section .debug_line],0,2297474
+[section .debug_str],0,1780390
+[section .debug_ranges],0,942176
+[section .debug_abbrev],0,426421
 [section .debug_frame],0,271516
-[section .symtab],0,44192
+[section .symtab],0,44208
 [section .strtab],0,17327
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,13
+[Unmapped],0,16
