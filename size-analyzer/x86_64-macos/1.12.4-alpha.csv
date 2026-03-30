@@ -1,17 +1,17 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3874816,3872848
+[__LINKEDIT],3874816,3871520
 MVK_spirv_cross,1692828,1692684
 dmScript,634444,109824
 dmGameSystem,420868,419476
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250928,250928
-"_TEXT,_* (library)",242152,242152
+"_TEXT,_* (library)",242168,242168
 _mbedtls_* (library),131401,131229
 _variable_* (library),127132,127132
 dmGui,125748,124764
 dmGameObject,122680,122656
-dmGraphics,117265,116185
+dmGraphics,116929,115929
 dmRender,114608,114280
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
@@ -398,6 +398,7 @@ btPolyhedralConvexShape,1344,1344
 Layout<>(),1331,1331
 spvDbgInfoExtOperandCanBeForwardDeclaredFunction(),1327,1327
 dmBlockAllocator,1312,1312
+[__DATA],1304,0
 _AMD_* (library),1300,0
 dmVMath,1296,1296
 btSphereTriangleCollisionAlgorithm,1296,1296
@@ -411,7 +412,6 @@ _pem_* (library),1258,1258
 btBoxBoxCollisionAlgorithm,1248,1248
 MVKLayerManager,1234,1234
 MVKQueueSubmission,1229,1229
-[__DATA],1224,0
 MVKGPUCounterQueryPool,1217,1217
 _vkCmdBindDescriptorSets,1216,1216
 _dmGamesysDDF_* (library),1204,824
@@ -819,6 +819,7 @@ _rescale_* (library),320,320
 MVKSemaphoreSubmitInfo,320,320
 MVKStorageBufferDynamicDescriptor,316,316
 MVKUniformBufferDynamicDescriptor,316,316
+[__TEXT],314,5074
 MVKPipelineCommandEncoderState,313,313
 JobThread(),312,304
 MVKCmdBeginQuery,307,307
@@ -1748,7 +1749,6 @@ MVKShaderStageResourceBinding,80,80
 _miniz_* (library),80,80
 dmStructDDF,80,80
 MVKBaseDeviceObject,78,78
-[__TEXT],74,4834
 MVKDeviceTrackingMixin,73,73
 btTransform,72,72
 _static_* (library),72,72
