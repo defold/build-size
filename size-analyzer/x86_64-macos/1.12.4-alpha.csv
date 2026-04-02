@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3874816,3871520
+[__LINKEDIT],3874816,3871352
 MVK_spirv_cross,1692828,1692684
 dmScript,634444,109824
-dmGameSystem,420868,419476
+dmGameSystem,420724,419332
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250928,250928
-"_TEXT,_* (library)",242168,242168
+"_TEXT,_* (library)",242160,242160
 _mbedtls_* (library),131401,131229
 _variable_* (library),127132,127132
 dmGui,125748,124764
 dmGameObject,122680,122656
 dmGraphics,116929,115929
-dmRender,114608,114280
+dmRender,114960,114632
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
 _except_* (library),106140,106140
@@ -819,7 +819,6 @@ _rescale_* (library),320,320
 MVKSemaphoreSubmitInfo,320,320
 MVKStorageBufferDynamicDescriptor,316,316
 MVKUniformBufferDynamicDescriptor,316,316
-[__TEXT],314,5074
 MVKPipelineCommandEncoderState,313,313
 JobThread(),312,304
 MVKCmdBeginQuery,307,307
@@ -1512,6 +1511,7 @@ btCollisionAlgorithm,120,120
 MVKSemaphore,119,119
 MVKReferenceCountingMixin<>,117,117
 MVKVulkanAPIDeviceObject,116,116
+[__TEXT],114,4874
 VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL,113,113
 -[GLFWContentView mouseEntered:],112,112
 -[GLFWContentView mouseExited:],112,112

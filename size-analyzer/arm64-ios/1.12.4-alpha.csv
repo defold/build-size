@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1867776,1855608
+[__LINKEDIT],1867776,1855672
 dmScript,620684,96072
-dmGameSystem,346024,343552
+dmGameSystem,345892,343420
 _lj_* (library),204660,204660
 "_TEXT,_* (library)",149933,149933
 dmCrash,112648,5976
@@ -9,10 +9,10 @@ _mbedtls_* (library),101888,101884
 basist,98226,83368
 dmGameObject,94064,94040
 dmGui,88380,87412
-dmRender,86368,86040
+dmRender,86604,86276
 dmGraphics,77077,76132
 _pfb,65544,65544
-_GLOBAL_* (library),38528,38528
+_GLOBAL_* (library),38536,38536
 _cp_* (library),34652,34652
 stbi__process_marker(),33806,33806
 dmPhysics,32688,32576
@@ -20,7 +20,7 @@ _ZNSt3_* (library),32452,32452
 dmParticle,29676,29508
 std,29240,29240
 dmResource,27284,27284
-[__TEXT],26669,42949
+[__TEXT],26401,42681
 _load_* (library),21176,21176
 dmSound,20540,20388
 dmHashTable<>,19444,19444
@@ -217,6 +217,7 @@ _ecdsa_* (library),1556,1556
 _strfmt_* (library),1536,1536
 _resample_* (library),1536,1536
 _match,1516,1516
+dmIntersection,1476,1476
 _alloc_* (library),1472,1472
 _luaJIT_* (library),1460,1460
 _cff_* (library),1444,1444
@@ -224,7 +225,6 @@ btHashMap<>,1432,1432
 _dmSystemDDF_* (library),1384,600
 _dmLiveUpdateDDF_* (library),1360,936
 btTransformUtil,1340,1340
-dmIntersection,1320,1320
 btConvexInternalShape,1312,1312
 _auxiliar_* (library),1308,1308
 _glfwOpenWindow,1296,1296
