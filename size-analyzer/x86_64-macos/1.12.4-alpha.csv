@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3874816,3871352
+[__LINKEDIT],3874816,3873600
 MVK_spirv_cross,1692828,1692684
 dmScript,634444,109824
-dmGameSystem,420724,419332
+dmGameSystem,423012,421620
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250928,250928
-"_TEXT,_* (library)",242160,242160
+"_TEXT,_* (library)",242344,242344
 _mbedtls_* (library),131401,131229
+dmGui,128308,127324
 _variable_* (library),127132,127132
-dmGui,125748,124764
 dmGameObject,122680,122656
 dmGraphics,116929,115929
-dmRender,114960,114632
+dmRender,115104,114776
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
 _except_* (library),106140,106140
@@ -232,8 +232,8 @@ MVKComputePipeline,3349,3349
 MVKTimelineSemaphoreEmulated,3335,3335
 MVKCmdCopyBuffer<>,3330,3330
 dmResourceProviderZip,3320,3192
+dmArray<>,3312,3312
 b2PolygonShape,3312,3312
-dmArray<>,3296,3296
 dmIntersection,3216,3216
 SphereTriangleDetector,3208,3208
 _floor1_* (library),3200,3200
@@ -261,6 +261,7 @@ _glfwSetInputMode,2880,2880
 _make_* (library),2864,2864
 _stbi_* (library),2848,2848
 _parseMapping,2816,2816
+[__TEXT],2810,7570
 btBoxShape,2808,2808
 btConvexTriangleCallback,2776,2776
 _cploop_* (library),2736,2736
@@ -824,6 +825,7 @@ JobThread(),312,304
 MVKCmdBeginQuery,307,307
 ResourceChunkCacheGet(),304,304
 SetContext(),304,304
+TextToCodePoints(),304,304
 _ConfigFileGetInt,304,304
 _cpparser,304,304
 _jmp_* (library),304,304
@@ -1440,7 +1442,7 @@ MVKSubpassDependency,128,128
 ResourceGetDescriptorByHash(),128,128
 ResourceGetPath(),128,128
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3575,128,0
+_ComponentTypeGui3653,128,0
 _ComponentTypeLight193,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
@@ -1451,7 +1453,7 @@ _LiveUpdateExt1013,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
-_ResourceTypeFont998,128,0
+_ResourceTypeFont1017,128,0
 _ResourceTypeGameObject230,128,0
 _ResourceTypeGui347,128,0
 _ResourceTypeGuiScript158,128,0
@@ -1511,7 +1513,6 @@ btCollisionAlgorithm,120,120
 MVKSemaphore,119,119
 MVKReferenceCountingMixin<>,117,117
 MVKVulkanAPIDeviceObject,116,116
-[__TEXT],114,4874
 VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL,113,113
 -[GLFWContentView mouseEntered:],112,112
 -[GLFWContentView mouseExited:],112,112
