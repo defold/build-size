@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142741
-dmGameSystem,411626,561476
+dmGameSystem,411630,561480
 [section .rodata],343178,343178
 dmGraphics,147717,210433
 dmGui,116135,152254
@@ -8,13 +8,13 @@ dmGameObject,115584,163777
 _compress_* (library),113767,115557
 dmCrash,110750,11042
 basist,107919,111865
-dmRender,103593,145657
+dmRender,103857,146278
 std,77302,96305
 [section .rel.dyn],70520,70520
 _pfb,65536,65561
-[section .ARM.exidx],61720,61720
+[section .ARM.exidx],61744,61744
 dmHashTable<>,50764,63447
-_GLOBAL_* (library),49372,55763
+_GLOBAL_* (library),49372,55760
 (anonymous namespace),44188,102922
 _zip_* (library),41252,47356
 dmParticle,40337,51295
@@ -74,7 +74,7 @@ dmConfigFile,6296,7788
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
-[section .text],5918,5918
+[section .text],5906,5906
 [section .dynstr],5848,5848
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -549,11 +549,11 @@ inet_pushresolved,388,454
 _glfwClearInput,388,452
 mz_compress2,388,433
 lex_number,384,443
-[LOAD #1 [R]],384,384
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
+[LOAD #1 [R]],376,376
 JobSystemCreateJob,372,439
 _SpriteDesc_* (library),369,960
 _cur_* (library),364,429
@@ -2052,7 +2052,6 @@ meth_shutdown.methods,16,54
 _clone_* (library),16,211
 expr_toval,16,43
 quant_look,16,43
-[LOAD #4 [RW]],16,0
 _row_* (library),13,111
 TextLayoutCreate(),12,120
 ProfileRegisterPropertyBool(),12,90
@@ -2388,13 +2387,13 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5434114
-[section .debug_loc],0,2964516
-[section .debug_line],0,2299262
-[section .debug_str],0,1782020
-[section .debug_ranges],0,942352
-[section .debug_abbrev],0,426614
-[section .debug_frame],0,271624
+[section .debug_info],0,5434551
+[section .debug_loc],0,2965013
+[section .debug_line],0,2299505
+[section .debug_str],0,1782408
+[section .debug_ranges],0,942368
+[section .debug_abbrev],0,426651
+[section .debug_frame],0,271688
 [section .symtab],0,44192
 [section .strtab],0,17327
 [ELF Headers],0,1400

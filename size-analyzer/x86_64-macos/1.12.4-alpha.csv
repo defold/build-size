@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3874816,3873600
+[__LINKEDIT],3874816,3874040
 MVK_spirv_cross,1692828,1692684
 dmScript,634444,109824
 dmGameSystem,423012,421620
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250928,250928
-"_TEXT,_* (library)",242344,242344
+"_TEXT,_* (library)",242352,242352
 _mbedtls_* (library),131401,131229
 dmGui,128308,127324
 _variable_* (library),127132,127132
 dmGameObject,122680,122656
 dmGraphics,116929,115929
-dmRender,115104,114776
+dmRender,115360,115032
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
 _except_* (library),106140,106140
@@ -261,7 +261,6 @@ _glfwSetInputMode,2880,2880
 _make_* (library),2864,2864
 _stbi_* (library),2848,2848
 _parseMapping,2816,2816
-[__TEXT],2810,7570
 btBoxShape,2808,2808
 btConvexTriangleCallback,2776,2776
 _cploop_* (library),2736,2736
@@ -276,6 +275,7 @@ __packetout,2624,2624
 MVKCmdBeginRendering<>,2612,2612
 btTriangleMeshShape,2568,2568
 __glfwCreateContextEGL,2560,2560
+[__TEXT],2546,7306
 b2FrictionJoint,2544,2544
 btContinuousConvexCollision,2504,2504
 btCollisionDispatcher,2496,2496
