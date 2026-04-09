@@ -1,11 +1,11 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3801088,3800288
+[__LINKEDIT],3801088,3800864
 MVK_spirv_cross,1517518,1517374
 dmScript,625132,100512
 basist,373441,358581
 dmGameSystem,356620,355324
 std,291963,291963
-"_TEXT,_* (library)",276060,276060
+"_TEXT,_* (library)",276122,276122
 _lj_* (library),226821,226821
 _variable_* (library),127354,127354
 _mbedtls_* (library),126892,126732
@@ -13,9 +13,9 @@ dmCrash,113728,7048
 _except_* (library),110720,110720
 (anonymous namespace),106036,106036
 dmGameObject,99564,99540
-dmGui,97252,96284
+dmGui,96856,95880
 dmGraphics,94789,93828
-dmRender,89752,89424
+dmRender,89964,89636
 _LZ4_* (library),68100,68100
 MVKPixelFormats,66490,66466
 _pfb,65548,65548
@@ -25,11 +25,11 @@ spvtools,60399,60399
 _GLOBAL_* (library),57572,57572
 _ZNSt3_* (library),53900,53900
 MVKDevice,53435,53435
-stbi__process_marker(),44273,44273
+stbi__process_marker(),44303,44303
 _LZ4HC_* (library),42488,42488
 _mz_* (library),39504,39504
 MVKObjectPool<>,34565,34565
-dmPhysics,34324,34208
+dmPhysics,34240,34124
 _recff_* (library),33977,33977
 dmParticle,32512,32344
 MVKGraphicsPipeline,31566,31566
@@ -98,7 +98,7 @@ b2DynamicTree,8944,8944
 MVKQueueFullCommandBufferSubmission<>,8835,8835
 MVKGraphicsResourcesCommandEncoderState,8790,8790
 dmHttpClient,8772,8756
-[__DATA],8748,28
+[__DATA],8740,28
 dmResourceMounts,8276,8276
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
@@ -279,6 +279,7 @@ _jpeg_* (library),2171,2171
 _io_* (library),2156,2156
 _match,2148,2148
 btCollisionDispatcher,2148,2148
+[__TEXT],2134,6910
 _s_* (library),2120,2120
 dmCrypt,2092,2092
 MVKDepthStencilCommandEncoderState,2089,2089
@@ -293,7 +294,6 @@ btConvexTriangleCallback,2008,2008
 btTypedConstraint,1988,1988
 dmArray<>,1984,1984
 dmIntersection,1980,1980
-[__TEXT],1950,6726
 ReverseHashContainer,1948,1948
 btSubsimplexConvexCast,1932,1932
 b2BlockAllocator,1916,1268

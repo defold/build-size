@@ -1,24 +1,24 @@
 symbol_group_name,vmsize,filesize
-dmScript,632211,142741
+dmScript,632211,142797
 dmGameSystem,411630,561480
-[section .rodata],343178,343178
-dmGraphics,147717,210433
-dmGui,116135,152254
+[section .rodata],343274,343274
+dmGraphics,147701,209696
+dmGui,116395,152802
 dmGameObject,115584,163777
 _compress_* (library),113767,115557
 dmCrash,110750,11042
 basist,107919,111865
-dmRender,103857,146278
-std,77302,96305
+dmRender,104025,146413
+std,77302,96321
 [section .rel.dyn],70520,70520
 _pfb,65536,65561
-[section .ARM.exidx],61744,61744
-dmHashTable<>,50764,63447
-_GLOBAL_* (library),49372,55760
-(anonymous namespace),44188,102922
+[section .ARM.exidx],61760,61760
+dmHashTable<>,50764,63440
+_GLOBAL_* (library),49372,55774
+(anonymous namespace),44188,103041
 _zip_* (library),41252,47356
 dmParticle,40337,51295
-dmPhysics,38137,58246
+dmPhysics,38153,58263
 dmResource,36488,51470
 dmSound,27913,36520
 _ssl_* (library),22756,31372
@@ -38,7 +38,7 @@ btSequentialImpulseConstraintSolver,15188,19119
 btAxisSweep3Internal<>,14740,19275
 _internal_* (library),14284,14721
 _mpi_* (library),14088,16667
-[section .ARM.extab],13920,13920
+[section .ARM.extab],13908,13908
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 [section .plt],11952,11952
@@ -74,7 +74,7 @@ dmConfigFile,6296,7788
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 [section .rel.plt],5960,5960
-[section .text],5906,5906
+[section .text],5882,5882
 [section .dynstr],5848,5848
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -144,7 +144,7 @@ _sync_* (library),2969,3402
 b2WeldJoint,2964,3839
 topdown(),2956,3209
 btConvexPlaneCollisionAlgorithm,2956,4555
-[section .bss],2946,0
+[section .bss],2954,0
 _cconv_* (library),2928,3379
 _dsp_* (library),2892,3376
 _flush_* (library),2884,3040
@@ -2126,20 +2126,25 @@ FontGetGlyphIndex(),8,69
 GetResourceSizeTTF(),8,69
 glfwSetDeviceChangedCallback,8,69
 FontGetLayoutType(),8,68
+ProfileSetThreadName(),8,68
 WindowGetDisplayScaleFactor,8,68
 WindowGetJoystickDeviceName,8,68
+ProfileScopeBegin(),8,67
 FontGetDescent(),8,66
 FontGetLineGap(),8,66
 ProfileIsInitialized(),8,66
 FontGetAscent(),8,65
 GBGetLineGap(),8,65
 WindowGetJoystickButtons,8,65
+ProfileScopeEnd(),8,64
 WindowAcquireAuxContext,8,64
 ProfileFrameBegin(),8,63
+ProfileLogText(),8,63
 _hdr_* (library),8,126
 WindowGetAcceleration,8,62
 WindowGetJoystickAxes,8,62
 WindowGetJoystickHats,8,62
+ProfileFrameEnd(),8,61
 WindowGetDeviceState,8,61
 WindowGetMouseButton,8,61
 WindowGetProcAddress,8,61
@@ -2245,10 +2250,8 @@ ProfilePropertySetS32(),4,64
 ProfilePropertySetS64(),4,64
 ProfilePropertySetU32(),4,64
 ProfilePropertySetU64(),4,64
-ProfileSetThreadName(),4,64
 _glfwPlatformGetProcAddress,4,64
 _glfwPlatformSetWindowTitle,4,64
-ProfileScopeBegin(),4,63
 _ZN12dmGameObjectL23g_* (library),4,63
 _glfwPlatformRestoreWindow,4,63
 b2RayCastCallback,4,63
@@ -2260,14 +2263,12 @@ glfwGetDefaultFramebuffer,4,62
 glfwGetDisplayScaleFactor,4,62
 _ZN8dmRenderL26g_* (library),4,61
 _glfwPlatformSetViewType,4,61
-ProfileScopeEnd(),4,60
 WindowSetWindowPosition,4,60
 _glfwPlatformWaitEvents,4,60
 dmFixedMemFree(),4,60
 glfwUnacquireAuxContext,4,60
 AppDestroy(),4,59
 ProfileInitialize(),4,59
-ProfileLogText(),4,59
 WindowGetMousePosition,4,59
 btBulletCollisionProbe,4,59
 btMotionState,4,59
@@ -2276,7 +2277,6 @@ glfwAcquireAuxContext,4,58
 _vertically_* (library),4,58
 AppCreate(),4,57
 ProfileFinalize(),4,57
-ProfileFrameEnd(),4,57
 WindowSetDeviceState,4,57
 WindowSetWindowTitle,4,57
 btFreeDefault(),4,57
@@ -2387,17 +2387,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5434551
-[section .debug_loc],0,2965013
-[section .debug_line],0,2299505
-[section .debug_str],0,1782408
-[section .debug_ranges],0,942368
-[section .debug_abbrev],0,426651
-[section .debug_frame],0,271688
-[section .symtab],0,44192
+[section .debug_info],0,5434848
+[section .debug_loc],0,2965650
+[section .debug_line],0,2299637
+[section .debug_str],0,1782663
+[section .debug_ranges],0,942272
+[section .debug_abbrev],0,426684
+[section .debug_frame],0,271748
+[section .symtab],0,44176
 [section .strtab],0,17327
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,16
+[Unmapped],0,13
