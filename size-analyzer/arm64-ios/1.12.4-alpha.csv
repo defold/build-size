@@ -1,37 +1,37 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1867776,1858720
+[__LINKEDIT],1867776,1856240
 dmScript,620684,96072
-dmGameSystem,347384,344912
+dmGameSystem,347292,344972
 _lj_* (library),204660,204660
-"_TEXT,_* (library)",150147,150147
+"_TEXT,_* (library)",149689,149689
 dmCrash,112648,5976
-_mbedtls_* (library),101888,101884
+_mbedtls_* (library),101432,101428
 basist,98226,83368
 dmGameObject,94064,94040
 dmGui,91360,90384
 dmRender,87492,87164
 dmGraphics,77077,76132
 _pfb,65544,65544
-_GLOBAL_* (library),38524,38524
+_GLOBAL_* (library),38532,38532
 _cp_* (library),34652,34652
-stbi__process_marker(),33836,33836
+stbi__process_marker(),33724,33724
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
 dmParticle,29676,29508
 std,29240,29240
-dmResource,27284,27284
+dmResource,26260,26260
+[__TEXT],23427,39707
 _load_* (library),21176,21176
 dmSound,20540,20388
-[__TEXT],20129,36409
 dmHashTable<>,19444,19444
 _lua_* (library),19256,19256
 dmEngine,17616,17600
 btCollisionWorld,16572,16568
 _vwin8192,16388,16388
 _mh_* (library),16384,32
-dmLiveUpdate,15700,14604
 dmRig,15528,15504
 _OBJC_* (library),14964,14964
+dmLiveUpdate,14632,13536
 btDiscreteDynamicsWorld,14436,14436
 _lex_* (library),14292,14292
 btSequentialImpulseConstraintSolver,13860,13860
@@ -39,7 +39,7 @@ _ssl_* (library),13520,13520
 dmDDF,13100,13036
 _mz_* (library),12980,12980
 _tdefl_* (library),12796,12796
-dmInput,11896,10872
+dmInput,11904,10872
 _dmGameSystemDDF_* (library),11892,8112
 _parse_* (library),11740,11740
 dmEasing,10824,10824
@@ -50,7 +50,7 @@ b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
 _dmRigDDF_* (library),9444,6896
 gjkepa2_impl,9044,9044
-[__DATA],8800,28
+[__DATA],8960,12
 dmHttpCache,8745,8745
 dmHID,8520,8448
 _gc_* (library),8228,8228
@@ -89,6 +89,7 @@ dmObjectPool<>,5332,5332
 _dmGuiDDF_* (library),5092,3968
 _ogg_* (library),5008,5008
 _io_* (library),4992,4992
+dmConnectionPool,4776,4776
 btConvexConvexAlgorithm,4768,4768
 dmHttpService,4720,4720
 _dmGameObjectDDF_* (library),4640,3056
@@ -107,7 +108,6 @@ _vwin2048,4096,4096
 GetGlyphTTF(),4084,4084
 btHashedOverlappingPairCache,4084,4084
 _ffi_* (library),4080,4080
-dmConnectionPool,4048,4048
 b2Body,4048,4048
 dmHttpDDF,4036,4036
 _tmalloc_* (library),3984,3984
@@ -185,7 +185,6 @@ btSubsimplexConvexCast,1916,1916
 _err_* (library),1908,1908
 _oid_* (library),1896,1896
 btDefaultCollisionConfiguration,1884,1884
-dmCrypt,1868,1868
 _dmModelDDF_* (library),1868,1160
 dmResourceProviderArchive,1852,1724
 _release_* (library),1840,1840
@@ -202,7 +201,7 @@ btAlignedObjectArray<>,1704,1704
 basisu,1701,1701
 btCompoundLeafCallback,1692,1692
 _pk_* (library),1688,1688
-__MergedGlobals,1680,264
+__MergedGlobals,1672,280
 _global_* (library),1648,1648
 b2Simplex,1640,1640
 _get_* (library),1632,1632
@@ -289,6 +288,7 @@ _aes_* (library),908,904
 dmPath,896,896
 _cpparser,892,892
 DebugDrawcallback,888,888
+dmCrypt,884,884
 _csctx_* (library),876,876
 TextLayoutLegacyCreate(),872,872
 _floor0_* (library),868,868
@@ -647,7 +647,7 @@ _ComponentTypeLight193,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
 _ComponentTypeSound574,128,0
-_LiveUpdateExt1013,128,0
+_LiveUpdateExt1011,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
@@ -1063,7 +1063,7 @@ ResourceTypeSetStreaming(),8,8
 TextLayoutFree(),8,8
 TextLayoutGetLines(),8,8
 _ZN12dmGameObjectL23g_* (library),8,8
-_ZN12dmGameSystemL25g_* (library),8,0
+_ZN12dmGameSystemL25g_* (library),8,8
 _ZN8dmRenderL26g_* (library),8,0
 _dyld_* (library),8,8
 __glfwPlatformGetDisplayScaleFactor,8,8
