@@ -4,9 +4,9 @@ dmGameSystem,416715,581108
 [section .rodata],358142,358142
 (anonymous namespace),130364,201932
 dmGui,129027,167063
-dmGraphics,128557,173511
+dmGraphics,128545,173523
 dmGameObject,117492,169075
-dmCrash,114782,14089
+dmCrash,114782,14065
 dmRender,111489,157720
 std,105631,119562
 _compress_* (library),103523,105965
@@ -19,7 +19,7 @@ dmParticle,39057,50151
 _zip_* (library),36816,44044
 dmResource,35848,51896
 _cf_* (library),33336,44965
-dmSound,26541,35276
+dmSound,26541,35252
 _ssl_* (library),25396,35846
 _decompress_* (library),22700,24209
 dmRig,21336,26757
@@ -28,10 +28,10 @@ dmEngine,20006,25175
 [section .rela.dyn],19680,19680
 _load_* (library),19360,20036
 dmDDF,17956,28127
-libunwind,17865,21134
+libunwind,17865,21158
 btCollisionWorld,17689,25067
 btQuantizedBvh,17680,21596
-__cxxabiv1,17288,28616
+__cxxabiv1,17288,28640
 btAxisSweep3Internal<>,17220,22563
 btDiscreteDynamicsWorld,17116,23011
 vwin8192,16384,16711
@@ -68,7 +68,7 @@ dmHttpCache,8177,10292
 _get_* (library),8048,10899
 _BC_* (library),7752,11681
 btDbvt,7316,9927
-_cxa_* (library),7230,9268
+_cxa_* (library),7230,9244
 dmConfigFile,6884,8440
 btIDebugDraw,6816,7984
 dmBuffer,6728,9032
@@ -198,7 +198,7 @@ b2MouseJoint,2488,4201
 _oid_* (library),2460,3762
 FontLoadFromMemoryTTF(),2456,2538
 _pcm_* (library),2442,2688
-_glfwJoy,2432,33
+_glfwJoy,2432,57
 _file_* (library),2396,2902
 _FontMap_* (library),2388,4037
 SphereTriangleDetector,2368,3321
@@ -334,7 +334,7 @@ _double_* (library),1268,1409
 _zlib_* (library),1268,1749
 _mod_* (library),1264,1765
 btPairCachingGhostObject,1260,2007
-_buffer_* (library),1259,1593
+_buffer_* (library),1259,1617
 b2CollidePolygons(),1248,1370
 b2Joint,1248,1869
 btTransformUtil,1244,1494
@@ -450,7 +450,7 @@ tls1_prf,844,901
 CProfileNode,840,1471
 dmPhysicsDDF,840,3953
 ciphersuite_preference,832,903
-_glfwInput,832,59
+_glfwInput,832,35
 b2ChainAndPolygonContact,832,1568
 btRayAabb(),828,939
 b2ChainAndCircleContact,824,1505
@@ -637,7 +637,7 @@ _TextureView_* (library),474,705
 _Volume_* (library),474,696
 _grow_* (library),472,563
 oggbyte_read4,472,558
-oggbyte_set4,472,557
+oggbyte_set4,472,533
 _RigScene_* (library),472,845
 btConvexCast,472,1195
 _Specular_* (library),469,677
@@ -809,11 +809,11 @@ _terminate_* (library),340,423
 _call_* (library),340,406
 gc_finalize,340,400
 mz_adler32,340,399
-[section .text],340,340
 _glfwPlatformGetJoystickButtons,336,416
 _ktabk_* (library),336,410
 _toreg_* (library),336,404
 _g_* (library),336,465
+[section .text],336,336
 b2Timer,336,588
 parse_label,328,388
 BroadphaseAabbTester,328,602
@@ -1344,7 +1344,7 @@ rmtp_GODeleted(),160,310
 rmtp_GuiNodes(),160,307
 rmtp_Messages(),160,307
 rmtp_Factory(),160,304
-rmtp_LuaRefs(),160,304
+rmtp_LuaRefs(),160,328
 rmtp_Tilemap(),160,304
 rmtp_Camera(),160,301
 rmtp_LuaMem(),160,301
@@ -1970,9 +1970,9 @@ _atexit_* (library),52,101
 ResourceChunkCacheGetNumChunks(),48,152
 FontCollectionGetFontCount(),48,144
 WindowGetMouseButton,48,141
+WindowGetStateParam,48,140
 ResourceTypeIsStreaming(),48,139
 TextLayoutGetLineCount(),48,136
-WindowGetHeight,48,136
 WindowGetDisplayScaleFactor,48,124
 WindowGetJoystickDeviceName,48,124
 WindowTriggerCloseCallback,48,123
@@ -1993,10 +1993,10 @@ WindowGetJoystickHats,48,118
 WindowGetProcAddress,48,117
 btAllocDefault(),48,117
 WindowGetMouseWheel,48,116
-WindowGetStateParam,48,116
 WindowGetTouchData,48,115
 glfwGetMouseLocked,48,115
 glfwGetAndroidApp,48,114
+WindowGetHeight,48,112
 WindowGetWidth,48,111
 buffer_isempty,48,111
 _fseek64_* (library),48,110
@@ -2310,11 +2310,9 @@ g_FirstExtension,16,135
 _GameObject_* (library),16,131
 _Script_* (library),16,121
 inet_optfamily.optvalue,16,88
-_CortexA53843419_* (library),16,165
 ADJUST_SQRT2,16,77
 quant_look,16,75
 gProfileClock,16,67
-[LOAD #4 [RW]],16,0
 [section .fini_array],16,16
 inet_optsocktype.optvalue,12,86
 b2_version,12,71
@@ -2324,6 +2322,7 @@ _dso_* (library),8,117
 _ZN12dmGameObjectL23g_* (library),8,101
 _ZN8dmRenderL26g_* (library),8,93
 stbi__check_png_header(),8,86
+_CortexA53843419_* (library),8,84
 g_ResourceTypeCreatorDescFirst,8,79
 _DrawCalls_* (library),8,77
 lua_version.version,8,76
@@ -2347,6 +2346,7 @@ _empty_* (library),8,41
 g_accelerometer,8,40
 g_AndroidApp,8,37
 g_MainThread,8,37
+[LOAD #2 [RX]],8,8
 _init_* (library),5,108
 _FRAME_* (library),4,13944
 gContactBreakingThreshold,4,78
@@ -2402,16 +2402,16 @@ g_accelerometerEnabled,1,47
 g_appLaunchInterrupted,1,47
 g_PendingResize,1,40
 g_AppResumed,1,37
-[section .debug_info],0,5813116
-[section .debug_loc],0,5371727
-[section .debug_line],0,2263868
-[section .debug_ranges],0,1826432
+[section .debug_info],0,5813200
+[section .debug_loc],0,5371922
+[section .debug_line],0,2263892
+[section .debug_ranges],0,1826464
 [section .debug_str],0,1782670
 [section .debug_abbrev],0,418197
-[section .symtab],0,91752
+[section .symtab],0,91728
 [section .strtab],0,15592
 [ELF Headers],0,2240
 [section .shstrtab],0,374
 [section .comment],0,190
 [section .debug_frame],0,120
-[Unmapped],0,9
+[Unmapped],0,11

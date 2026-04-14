@@ -2,7 +2,7 @@ symbol_group_name,vmsize,filesize
 dmScript,632211,142811
 dmGameSystem,411527,561701
 [section .rodata],342674,342674
-dmGraphics,147701,209696
+dmGraphics,147641,209444
 dmGui,116395,152802
 dmGameObject,115584,163777
 _compress_* (library),113767,115557
@@ -75,7 +75,7 @@ dmConfigFile,6296,7788
 _info_* (library),6007,6905
 dmConnectionPool,5996,7913
 [section .rel.plt],5960,5960
-[section .text],5878,5878
+[section .text],5874,5874
 [section .dynstr],5848,5848
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -2388,11 +2388,11 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5432309
-[section .debug_loc],0,2963749
-[section .debug_line],0,2298732
+[section .debug_info],0,5432382
+[section .debug_loc],0,2960816
+[section .debug_line],0,2298710
 [section .debug_str],0,1781709
-[section .debug_ranges],0,942272
+[section .debug_ranges],0,942320
 [section .debug_abbrev],0,426496
 [section .debug_frame],0,271440
 [section .symtab],0,44176
@@ -2401,4 +2401,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,10
+[Unmapped],0,12
