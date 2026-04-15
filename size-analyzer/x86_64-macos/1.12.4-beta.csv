@@ -2,7 +2,7 @@ symbol_group_name,vmsize,filesize
 [__LINKEDIT],3874816,3872920
 MVK_spirv_cross,1692828,1692684
 dmScript,634440,109820
-dmGameSystem,422880,421520
+dmGameSystem,423024,421664
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250928,250928
@@ -27,7 +27,7 @@ MVKInstance,62343,62343
 dmHashTable<>,61808,61808
 MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
-dmParticle,55968,55800
+dmParticle,56064,55896
 _LZ4HC_* (library),49432,49432
 _mz_* (library),44144,44144
 stbi__process_marker(),43794,43794
@@ -819,7 +819,6 @@ _rescale_* (library),320,320
 MVKSemaphoreSubmitInfo,320,320
 MVKStorageBufferDynamicDescriptor,316,316
 MVKUniformBufferDynamicDescriptor,316,316
-[__TEXT],314,5074
 MVKPipelineCommandEncoderState,313,313
 JobThread(),312,304
 MVKCmdBeginQuery,307,307
@@ -1750,6 +1749,7 @@ MVKShaderStageResourceBinding,80,80
 _miniz_* (library),80,80
 dmStructDDF,80,80
 MVKBaseDeviceObject,78,78
+[__TEXT],74,4834
 MVKDeviceTrackingMixin,73,73
 btTransform,72,72
 _static_* (library),72,72
