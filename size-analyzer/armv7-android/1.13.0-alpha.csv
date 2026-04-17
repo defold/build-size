@@ -1,31 +1,31 @@
 symbol_group_name,vmsize,filesize
-dmScript,632211,142811
-dmGameSystem,411659,561833
-[section .rodata],343242,343242
+dmScript,632211,142748
+dmGameSystem,417602,569541
+[section .rodata],344778,344778
 dmGraphics,147641,209444
 dmGui,116395,152795
-dmGameObject,115772,164091
+dmGameObject,115772,164073
 _compress_* (library),113767,115557
 dmCrash,110750,11042
 basist,107919,111865
-dmRender,104025,146441
-std,77302,96335
-[section .rel.dyn],70440,70440
+dmRender,104201,146785
+std,78466,97531
+[section .rel.dyn],70592,70592
 _pfb,65536,65561
-[section .ARM.exidx],61760,61760
-dmHashTable<>,50764,63374
-_GLOBAL_* (library),49372,55769
+[section .ARM.exidx],61848,61848
+dmHashTable<>,50764,63368
+_GLOBAL_* (library),49728,56139
 (anonymous namespace),44188,103041
 _zip_* (library),41252,47349
 dmParticle,40445,51442
 dmPhysics,38153,58263
-dmResource,35528,50066
+dmResource,35528,50071
 dmSound,27953,36560
 _ssl_* (library),22756,31365
+dmRig,22464,27911
 btConeTwistConstraint,22000,25064
 _decompress_* (library),21628,22916
-dmEngine,21366,26589
-dmRig,20484,25593
+dmEngine,21426,26695
 btQuantizedBvh,18928,22181
 _load_* (library),18688,19796
 btCollisionWorld,18289,25117
@@ -38,7 +38,7 @@ btAxisSweep3Internal<>,14740,19275
 _internal_* (library),14284,14721
 dmLiveUpdate,14244,18384
 _mpi_* (library),14088,16667
-[section .ARM.extab],13888,13888
+[section .ARM.extab],13900,13900
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 [section .plt],11951,11951
@@ -75,7 +75,7 @@ dmConfigFile,6296,7788
 _info_* (library),6007,6905
 dmConnectionPool,5996,7913
 [section .rel.plt],5960,5960
-[section .text],5890,5890
+[section .text],5910,5910
 [section .dynstr],5848,5848
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -115,7 +115,7 @@ vwin2048,4096,4121
 b2RevoluteJoint,4072,5865
 _decl_* (library),4058,4599
 _book_* (library),4034,4412
-dmArray<>,3960,5963
+dmArray<>,3960,5970
 btBvhTriangleMeshShape,3948,7289
 b2EPCollider,3884,4320
 b2GridShape,3848,5521
@@ -138,9 +138,9 @@ b2Fixture,3072,4028
 _glfwAndroidHandleInput,3064,3232
 _meta_* (library),3008,3855
 [section .got.plt],2992,2992
+[section .bss],2989,0
 _aes_* (library),2988,3810
 _run_* (library),2980,3217
-[section .bss],2970,0
 _sync_* (library),2969,3402
 b2WeldJoint,2964,3839
 topdown(),2956,3209
@@ -159,7 +159,7 @@ _camellia_* (library),2688,3310
 b2Contact,2685,3183
 b2PolygonShape,2660,3561
 _set_* (library),2640,4122
-[section .got],2600,2600
+[section .got],2608,2608
 stbtt_GetGlyphShape(),2576,2716
 _tab_* (library),2576,3349
 FontLoadFromMemoryTTF(),2572,2654
@@ -510,6 +510,7 @@ tremolo_mergesort,460,510
 floor1_inverse2,456,520
 glfwGetTouch,456,517
 cp_declarator,456,502
+_Mesh_* (library),452,541
 _serialize_* (library),450,769
 luaopen_package,448,512
 glfwOpenWindowHint,436,535
@@ -529,7 +530,6 @@ dmPoolAllocator,416,726
 expr_primary,414,459
 oggbyte_read4,412,458
 _build_* (library),408,499
-_Mesh_* (library),404,493
 _state_* (library),404,758
 CancelJobInternal(),400,523
 _glfwAndroidGetSafeAreaInsets,400,478
@@ -556,6 +556,7 @@ btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
 [LOAD #1 [R]],376,376
 JobSystemCreateJob,372,439
+dmRigDDF,372,3797
 _SpriteDesc_* (library),369,960
 _cur_* (library),364,429
 _JNIEnv,364,967
@@ -572,7 +573,6 @@ glfwExtensionSupported,352,423
 socket_sendto,352,414
 meth_sendto,352,412
 mz_deflate,352,395
-dmRigDDF,348,3537
 LZ4_loadDictHC,347,394
 GBGetGlyph(),344,446
 socket_connect,344,407
@@ -729,7 +729,7 @@ zip_openwitherror,236,286
 ov_read,236,276
 _malloc_* (library),236,353
 b2Timer,236,480
-_Register_* (library),234,12590
+_Register_* (library),236,12691
 matrixToEulerXYZ(),232,327
 auxiliar_checkgroup,232,300
 _glfwResetKeyboard,232,299
@@ -883,6 +883,7 @@ rmtp_Model(),188,314
 rmtp_Sound(),188,314
 rmtp_Mesh(),188,308
 _RayCastResponse_* (library),188,322
+_RigAnimation_* (library),188,301
 __float128,187,325
 __int128,187,325
 bool,187,325
@@ -977,7 +978,6 @@ _CollisionResponse_* (library),164,304
 _TriggerResponse_* (library),164,298
 _GamepadMapEntry_* (library),164,292
 _InputBinding_* (library),164,283
-_RigAnimation_* (library),164,277
 lua_pushcclosure,163,218
 luaL_openlibs,162,224
 _Struct_* (library),162,469
@@ -1212,9 +1212,11 @@ ffi_pairs,116,158
 _SetViewProjection_* (library),116,265
 _ManifestData_* (library),116,250
 _TriggerEvent_* (library),116,241
+_MorphWeightTrack_* (library),116,241
 dmDoubleLinkedList,116,535
 _Collision_* (library),116,232
 _DrawLine_* (library),116,226
+_MorphTarget_* (library),116,226
 _Transform_* (library),116,214
 _GamepadModifier_* (library),116,365
 lua_pushstring,115,168
@@ -2000,6 +2002,7 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
+[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2054,7 +2057,6 @@ meth_shutdown.methods,16,54
 _clone_* (library),16,211
 expr_toval,16,43
 quant_look,16,43
-[LOAD #4 [RW]],16,0
 _row_* (library),13,111
 TextLayoutCreate(),12,120
 ResourceGet(),12,91
@@ -2393,17 +2395,16 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5437961
-[section .debug_loc],0,2964852
-[section .debug_line],0,2278636
-[section .debug_str],0,1782841
-[section .debug_ranges],0,942576
-[section .debug_abbrev],0,426896
-[section .debug_frame],0,271608
+[section .debug_info],0,5455640
+[section .debug_loc],0,2974244
+[section .debug_line],0,2284236
+[section .debug_str],0,1788832
+[section .debug_ranges],0,945456
+[section .debug_abbrev],0,427100
+[section .debug_frame],0,272032
 [section .symtab],0,44160
 [section .strtab],0,17327
 [ELF Headers],0,1360
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,17

@@ -1,35 +1,35 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1867776,1856240
+[__LINKEDIT],1867776,1861520
 dmScript,620684,96072
-dmGameSystem,347428,345108
+dmGameSystem,352120,349440
 _lj_* (library),204660,204660
-"_TEXT,_* (library)",149689,149689
+"_TEXT,_* (library)",150824,150824
 dmCrash,112648,5976
 _mbedtls_* (library),101432,101428
 basist,98226,83368
 dmGameObject,94064,94040
 dmGui,91360,90384
-dmRender,87492,87164
-dmGraphics,76921,75976
+dmRender,87656,87312
+dmGraphics,76925,75980
 _pfb,65544,65544
-_GLOBAL_* (library),38524,38524
+_GLOBAL_* (library),38752,38752
 _cp_* (library),34652,34652
 stbi__process_marker(),33724,33724
 dmPhysics,32688,32576
-_ZNSt3_* (library),32452,32452
+_ZNSt3_* (library),31836,31836
 dmParticle,29748,29580
-std,29240,29240
+std,28304,28304
 dmResource,26260,26260
-[__TEXT],23363,39643
 _load_* (library),21176,21176
 dmSound,20540,20388
 dmHashTable<>,19444,19444
 _lua_* (library),19256,19256
-dmEngine,17616,17600
+dmEngine,17664,17648
+dmRig,17216,17192
+[__TEXT],16988,33268
 btCollisionWorld,16572,16568
 _vwin8192,16388,16388
 _mh_* (library),16384,32
-dmRig,15528,15504
 _OBJC_* (library),14964,14964
 dmLiveUpdate,14632,13536
 btDiscreteDynamicsWorld,14436,14436
@@ -44,15 +44,15 @@ _dmGameSystemDDF_* (library),11892,8112
 _parse_* (library),11740,11740
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
+_dmRigDDF_* (library),10036,7328
 _luaL_* (library),9892,9892
 _serialize_* (library),9780,9780
 b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
-_dmRigDDF_* (library),9444,6896
 gjkepa2_impl,9044,9044
-[__DATA],8960,12
 dmHttpCache,8745,8745
 dmHID,8520,8448
+[__DATA],8288,28
 _gc_* (library),8228,8228
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
@@ -162,7 +162,7 @@ __packetout,2376,2376
 _prepend_* (library),2316,2316
 b2PolygonShape,2280,2280
 _zip_* (library),2244,2244
-_g_* (library),2222,0
+_g_* (library),2238,0
 stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192
 _jpeg_* (library),2171,2171
@@ -201,7 +201,7 @@ btAlignedObjectArray<>,1704,1704
 basisu,1701,1701
 btCompoundLeafCallback,1692,1692
 _pk_* (library),1688,1688
-__MergedGlobals,1672,280
+__MergedGlobals,1672,176
 _global_* (library),1648,1648
 b2Simplex,1640,1640
 _get_* (library),1632,1632
@@ -462,6 +462,7 @@ dmPoolAllocator,312,312
 _ConfigFileGetFloat,308,308
 stbi__get16be(),308,308
 SetContext(),304,304
+_CONTEXT_* (library),304,296
 jc,300,300
 FontLoadFromMemory(),296,296
 _FSb4,296,296
@@ -484,7 +485,6 @@ dmUtf8,276,276
 +[EAGLView createView:recreate:],272,272
 _random_* (library),272,272
 _tokennames,272,272
-_CONTEXT_* (library),272,264
 GBGetGlyph(),268,268
 _dmHashBufferNoReverse64,268,268
 _bit_* (library),264,264
@@ -610,7 +610,7 @@ btSingleRayCallback,156,156
 _capture_* (library),152,152
 _emptybuffer,152,152
 _index2adr_* (library),152,152
-_Components_* (library),152,48
+_Components_* (library),152,32
 _ZN15dmDeviceAVAudioL17DeviceAVAudioOpenEPKN7dmSound16OpenDeviceParamsEPPv_* (library),152,152
 _package_* (library),152,152
 -[BaseView init],148,148
@@ -1063,7 +1063,7 @@ ResourceTypeSetStreaming(),8,8
 TextLayoutFree(),8,8
 TextLayoutGetLines(),8,8
 _ZN12dmGameObjectL23g_* (library),8,8
-_ZN12dmGameSystemL25g_* (library),8,8
+_ZN12dmGameSystemL25g_* (library),8,0
 _ZN8dmRenderL26g_* (library),8,0
 _dyld_* (library),8,8
 __glfwPlatformGetDisplayScaleFactor,8,8
@@ -1085,7 +1085,7 @@ g_CurrentExtension,8,0
 g_FirstExtension,8,0
 _DispatchCalls_* (library),8,0
 _DrawCalls_* (library),8,0
-_Gui_* (library),8,8
+_Gui_* (library),8,0
 _Render_* (library),8,0
 sAllocFunc,8,8
 sFreeFunc,8,8
