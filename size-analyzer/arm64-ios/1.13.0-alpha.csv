@@ -1,21 +1,22 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1867776,1861520
+[__LINKEDIT],1867776,1862384
 dmScript,620684,96072
-dmGameSystem,352120,349440
+dmGameSystem,352240,349560
 _lj_* (library),204660,204660
 "_TEXT,_* (library)",150824,150824
 dmCrash,112648,5976
 _mbedtls_* (library),101432,101428
-basist,98226,83368
+basist,98308,83450
 dmGameObject,94064,94040
-dmGui,91360,90384
-dmRender,87656,87312
+dmGui,91388,90412
+dmRender,87956,87612
 dmGraphics,76925,75980
 _pfb,65544,65544
-_GLOBAL_* (library),38752,38752
+_GLOBAL_* (library),38764,38764
 _cp_* (library),34652,34652
 stbi__process_marker(),33724,33724
 dmPhysics,32688,32576
+[__TEXT],32562,48842
 _ZNSt3_* (library),31836,31836
 dmParticle,29748,29580
 std,28304,28304
@@ -26,7 +27,6 @@ dmHashTable<>,19444,19444
 _lua_* (library),19256,19256
 dmEngine,17664,17648
 dmRig,17216,17192
-[__TEXT],16988,33268
 btCollisionWorld,16572,16568
 _vwin8192,16388,16388
 _mh_* (library),16384,32
@@ -91,7 +91,7 @@ _ogg_* (library),5008,5008
 _io_* (library),4992,4992
 dmConnectionPool,4776,4776
 btConvexConvexAlgorithm,4768,4768
-dmHttpService,4720,4720
+dmHttpService,4728,4728
 _dmGameObjectDDF_* (library),4640,3056
 b2PrismaticJoint,4524,4524
 _mdct_* (library),4516,4516
@@ -289,8 +289,8 @@ dmPath,896,896
 _cpparser,892,892
 DebugDrawcallback,888,888
 dmCrypt,884,884
+TextLayoutLegacyCreate(),876,876
 _csctx_* (library),876,876
-TextLayoutLegacyCreate(),872,872
 _LogInternal,868,868
 _floor0_* (library),868,868
 _tcp_* (library),864,864
@@ -626,6 +626,7 @@ _secp224r1_* (library),144,144
 -[BaseView positionFromPosition:offset:],140,140
 -[BaseView unmarkText],140,140
 -[ViewController createView:],140,140
+TextLayoutRelease(),140,140
 _ndigits_* (library),140,140
 _MLOOP_* (library),138,138
 __glfwInputKey,136,136
@@ -642,7 +643,7 @@ rmtp_Mesh(),132,132
 dmMemProfile,132,116
 b2Draw,132,132
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3653,128,0
+_ComponentTypeGui3656,128,0
 _ComponentTypeLight193,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
@@ -682,6 +683,7 @@ rmtp_Tilemap(),128,128
 dmPhysicsDDF,128,128
 -[SoundApplicationDelegate applicationDidBecomeActive:],124,124
 GBGetGlyphIndex(),124,124
+TextLayoutAcquire(),124,124
 _libsize,124,124
 _treatstackoption,124,124
 _depth_* (library),124,124
@@ -1060,7 +1062,6 @@ ProfileRegisterPropertyU32(),8,8
 ResourceDescriptorSetPrevResource(),8,8
 ResourceTypeGetContext(),8,8
 ResourceTypeSetStreaming(),8,8
-TextLayoutFree(),8,8
 TextLayoutGetLines(),8,8
 _ZN12dmGameObjectL23g_* (library),8,8
 _ZN12dmGameSystemL25g_* (library),8,0

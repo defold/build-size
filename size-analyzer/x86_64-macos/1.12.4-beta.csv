@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3874816,3872920
-MVK_spirv_cross,1692828,1692684
+[__LINKEDIT],3874816,3874024
+MVK_spirv_cross,1692903,1692759
 dmScript,634440,109820
-dmGameSystem,423024,421664
+dmGameSystem,423168,421808
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250928,250928
 "_TEXT,_* (library)",242104,242104
 _mbedtls_* (library),131401,131229
-dmGui,128340,127356
+dmGui,128372,127388
 _variable_* (library),127132,127132
 dmGameObject,122680,122656
 dmGraphics,116929,115929
-dmRender,115600,115272
+dmRender,116016,115688
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
 _except_* (library),106140,106140
@@ -156,7 +156,7 @@ _mdct_* (library),5760,5760
 MVKCmdDrawIndexedIndirect,5724,5724
 btCompoundCollisionAlgorithm,5704,5704
 MVKCmdDrawIndirect,5701,5701
-dmHttpService,5568,5568
+dmHttpService,5584,5584
 b2SeparationFunction,5440,5440
 b2GridShape,5420,5420
 btCompoundShape,5384,5384
@@ -237,6 +237,7 @@ b2PolygonShape,3312,3312
 dmIntersection,3216,3216
 SphereTriangleDetector,3208,3208
 _floor1_* (library),3200,3200
+[__TEXT],3199,7959
 _luaopen_* (library),3184,3184
 MVKImageView,3183,3183
 _amd_* (library),3152,3152
@@ -414,10 +415,10 @@ MVKQueueSubmission,1229,1229
 MVKGPUCounterQueryPool,1217,1217
 _vkCmdBindDescriptorSets,1216,1216
 _dmGamesysDDF_* (library),1204,824
+TextLayoutLegacyCreate(),1200,1200
 _ctype_* (library),1200,1200
 _aa_* (library),1200,1200
 btCollisionShape,1192,1192
-TextLayoutLegacyCreate(),1184,1184
 __glfwInputError,1184,1184
 MVKPipeline,1182,1182
 MVKEventNative,1177,1177
@@ -1324,6 +1325,8 @@ _sha384_* (library),145,145
 FontCollectionRemoveFont(),144,144
 ResourceGetByHash(),144,144
 ResourceGetTypeFromExtension(),144,144
+TextLayoutAcquire(),144,144
+TextLayoutRelease(),144,144
 _Z30mvkGetAvailableMTLDevicesArrayP11MVKInstance_* (library),144,144
 _ZN10MVKSurface9initLayerEP12CAMetalLayerPKcb_* (library),144,144
 __glfwGetEGLPlatformCocoa,144,144
@@ -1441,7 +1444,7 @@ MVKSubpassDependency,128,128
 ResourceGetDescriptorByHash(),128,128
 ResourceGetPath(),128,128
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3653,128,0
+_ComponentTypeGui3656,128,0
 _ComponentTypeLight193,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
@@ -1749,7 +1752,6 @@ MVKShaderStageResourceBinding,80,80
 _miniz_* (library),80,80
 dmStructDDF,80,80
 MVKBaseDeviceObject,78,78
-[__TEXT],74,4834
 MVKDeviceTrackingMixin,73,73
 btTransform,72,72
 _static_* (library),72,72
@@ -2305,7 +2307,6 @@ ResourceTypeSetPreloadFn(),16,16
 ResourceTypeSetRecreateFn(),16,16
 ResourceTypeSetStreaming(),16,16
 TextLayoutCreate(),16,16
-TextLayoutFree(),16,16
 TextLayoutGetLines(),16,16
 _ADJUST_* (library),16,16
 _DecryptXTeaCTR,16,16

@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3883008,3879856
-MVK_spirv_cross,1692828,1692684
+[__LINKEDIT],3883008,3880952
+MVK_spirv_cross,1692903,1692759
 dmScript,634440,109808
-dmGameSystem,429408,427748
+dmGameSystem,429552,427892
 basist,387675,372811
 std,315556,315556
 _lj_* (library),250928,250928
-"_TEXT,_* (library)",243120,243120
+"_TEXT,_* (library)",243128,243128
 _mbedtls_* (library),131401,131229
-dmGui,128340,127356
+dmGui,128372,127388
 _variable_* (library),127132,127132
 dmGameObject,122872,122848
 dmGraphics,116929,115929
-dmRender,115824,115480
+dmRender,116240,115896
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
 _except_* (library),106140,106140
@@ -156,7 +156,7 @@ _mdct_* (library),5760,5760
 MVKCmdDrawIndexedIndirect,5724,5724
 btCompoundCollisionAlgorithm,5704,5704
 MVKCmdDrawIndirect,5701,5701
-dmHttpService,5568,5568
+dmHttpService,5584,5584
 b2SeparationFunction,5440,5440
 b2GridShape,5420,5420
 btCompoundShape,5384,5384
@@ -413,10 +413,10 @@ MVKQueueSubmission,1229,1229
 MVKGPUCounterQueryPool,1217,1217
 _vkCmdBindDescriptorSets,1216,1216
 _dmGamesysDDF_* (library),1204,824
+TextLayoutLegacyCreate(),1200,1200
 _ctype_* (library),1200,1200
 _aa_* (library),1200,1200
 btCollisionShape,1192,1192
-TextLayoutLegacyCreate(),1184,1184
 __glfwInputError,1184,1184
 MVKPipeline,1182,1182
 MVKEventNative,1177,1177
@@ -452,7 +452,6 @@ _INVSQ_* (library),1040,1040
 _supported_* (library),1032,448
 MVKCmdSetViewport<>,1029,1029
 MVKSemaphoreImpl,1027,1027
-[__TEXT],1026,5786
 _FLOOR_* (library),1024,1024
 _FT0,1024,0
 _FT1,1024,0
@@ -1325,6 +1324,8 @@ _sha384_* (library),145,145
 FontCollectionRemoveFont(),144,144
 ResourceGetByHash(),144,144
 ResourceGetTypeFromExtension(),144,144
+TextLayoutAcquire(),144,144
+TextLayoutRelease(),144,144
 _Z30mvkGetAvailableMTLDevicesArrayP11MVKInstance_* (library),144,144
 _ZN10MVKSurface9initLayerEP12CAMetalLayerPKcb_* (library),144,144
 __glfwGetEGLPlatformCocoa,144,144
@@ -1442,7 +1443,7 @@ MVKSubpassDependency,128,128
 ResourceGetDescriptorByHash(),128,128
 ResourceGetPath(),128,128
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3653,128,0
+_ComponentTypeGui3656,128,0
 _ComponentTypeLight193,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
@@ -2080,6 +2081,7 @@ _ZN15MVKCmdBlitImageILm4EE6encodeEP17MVKCommandEncoder13MVKCommandUse_* (library
 dmBufferDDF,48,48
 dmEngineService,48,48
 dmLuaDDF,48,48
+[__TEXT],47,4807
 VkPhysicalDeviceImagelessFramebufferFeatures,47,47
 VkPhysicalDevicePortabilitySubsetFeaturesKHR,47,47
 VkPhysicalDeviceShaderAtomicFloatFeaturesEXT,47,47
@@ -2305,7 +2307,6 @@ ResourceTypeSetPreloadFn(),16,16
 ResourceTypeSetRecreateFn(),16,16
 ResourceTypeSetStreaming(),16,16
 TextLayoutCreate(),16,16
-TextLayoutFree(),16,16
 TextLayoutGetLines(),16,16
 _ADJUST_* (library),16,16
 _DecryptXTeaCTR,16,16

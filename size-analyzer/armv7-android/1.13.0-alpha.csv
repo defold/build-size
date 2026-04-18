@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142748
-dmGameSystem,417602,569541
-[section .rodata],344778,344778
+dmGameSystem,417762,569701
+[section .rodata],344906,344906
 dmGraphics,147641,209444
-dmGui,116395,152795
+dmGui,116439,152839
 dmGameObject,115772,164073
 _compress_* (library),113767,115557
 dmCrash,110750,11042
 basist,107919,111865
-dmRender,104201,146785
-std,78466,97531
+dmRender,104589,147289
+std,78466,97515
 [section .rel.dyn],70592,70592
 _pfb,65536,65561
-[section .ARM.exidx],61848,61848
+[section .ARM.exidx],61856,61856
 dmHashTable<>,50764,63368
 _GLOBAL_* (library),49728,56139
 (anonymous namespace),44188,103041
@@ -38,7 +38,7 @@ btAxisSweep3Internal<>,14740,19275
 _internal_* (library),14284,14721
 dmLiveUpdate,14244,18384
 _mpi_* (library),14088,16667
-[section .ARM.extab],13900,13900
+[section .ARM.extab],13912,13912
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 [section .plt],11951,11951
@@ -75,7 +75,7 @@ dmConfigFile,6296,7788
 _info_* (library),6007,6905
 dmConnectionPool,5996,7913
 [section .rel.plt],5960,5960
-[section .text],5910,5910
+[section .text],5914,5914
 [section .dynstr],5848,5848
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -322,8 +322,8 @@ btSphereTriangleCollisionAlgorithm,1052,2465
 btPolyhedralConvexAabbCachingShape,1048,1691
 btPolyhedralConvexShape,1048,1615
 _ecdsa_* (library),1048,1808
+TextLayoutLegacyCreate(),1044,1174
 btSphereSphereCollisionAlgorithm,1044,2447
-TextLayoutLegacyCreate(),1040,1170
 _dispatch_* (library),1040,1321
 _LOOKUP_* (library),1032,1126
 _ccall_* (library),1028,1127
@@ -550,11 +550,11 @@ inet_pushresolved,388,454
 _glfwClearInput,388,452
 mz_compress2,388,433
 lex_number,384,443
+[LOAD #1 [R]],384,384
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
-[LOAD #1 [R]],376,376
 JobSystemCreateJob,372,439
 dmRigDDF,372,3797
 _SpriteDesc_* (library),369,960
@@ -1092,6 +1092,7 @@ Particle_SetMaterial,137,213
 ResourceGetTypeFromExtensionHash(),136,256
 glfwAndroidUnregisterOnActivityResultListener,136,230
 glfwAndroidUnregisterOnCreateListener,136,222
+TextLayoutRelease(),136,219
 close_state,136,196
 lj_bcwrite,136,195
 ov_open,136,192
@@ -1133,7 +1134,7 @@ vwin64,128,151
 last4,128,150
 _StartRecord_* (library),128,434
 ComponentTypeAnim64,128,36
-ComponentTypeGui3653,128,37
+ComponentTypeGui3656,128,37
 ComponentTypeLight193,128,38
 ComponentTypeMesh1220,128,38
 ComponentTypeScript65,128,38
@@ -1183,6 +1184,7 @@ Particle_GetMaterialPath,121,201
 luaL_optnumber,121,168
 LZ4_saveDict,121,166
 _SetConstant_* (library),121,311
+TextLayoutAcquire(),120,203
 _glfwPlatformSwapInterval,120,194
 lua_tolstring,120,166
 cpluaopen,120,162
@@ -2002,7 +2004,6 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
-[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2122,7 +2123,6 @@ _glfwPlatformGetDefaultFramebuffer,8,75
 _glfwPlatformGetDisplayScaleFactor,8,75
 GBFreeGlyph(),8,74
 ExtensionAppParamsGetAppExitCode,8,73
-TextLayoutFree(),8,72
 _glfwPlatformExtensionSupported,8,72
 GBGetScaleFromSize(),8,71
 g_FirstExtension,8,71
@@ -2181,6 +2181,7 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
+[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceUnregisterReloadedCallback(),4,132
@@ -2395,16 +2396,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5455640
-[section .debug_loc],0,2974244
-[section .debug_line],0,2284236
-[section .debug_str],0,1788832
-[section .debug_ranges],0,945456
-[section .debug_abbrev],0,427100
-[section .debug_frame],0,272032
-[section .symtab],0,44160
+[section .debug_info],0,5455629
+[section .debug_loc],0,2974958
+[section .debug_line],0,2284565
+[section .debug_str],0,1788950
+[section .debug_ranges],0,945752
+[section .debug_abbrev],0,427110
+[section .debug_frame],0,272104
+[section .symtab],0,44176
 [section .strtab],0,17327
 [ELF Headers],0,1360
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
+[Unmapped],0,10
