@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3883008,3880952
+[__LINKEDIT],3883008,3880944
 MVK_spirv_cross,1692903,1692759
 dmScript,634440,109808
 dmGameSystem,429552,427892
@@ -11,7 +11,7 @@ _mbedtls_* (library),131401,131229
 dmGui,128372,127388
 _variable_* (library),127132,127132
 dmGameObject,122872,122848
-dmGraphics,116929,115929
+dmGraphics,117361,116361
 dmRender,116240,115896
 dmCrash,112164,6516
 (anonymous namespace),110736,110736
@@ -218,6 +218,7 @@ _gc_* (library),3808,3808
 btSimulationIslandManager,3808,3808
 MVKImageViewPlane,3758,3758
 btGjkPairDetector,3736,3736
+[__TEXT],3711,8471
 _serialize_* (library),3648,3648
 MVKCmdDrawIndexed,3588,3588
 MVKQueryPool,3575,3575
@@ -2081,7 +2082,6 @@ _ZN15MVKCmdBlitImageILm4EE6encodeEP17MVKCommandEncoder13MVKCommandUse_* (library
 dmBufferDDF,48,48
 dmEngineService,48,48
 dmLuaDDF,48,48
-[__TEXT],47,4807
 VkPhysicalDeviceImagelessFramebufferFeatures,47,47
 VkPhysicalDevicePortabilitySubsetFeaturesKHR,47,47
 VkPhysicalDeviceShaderAtomicFloatFeaturesEXT,47,47
