@@ -4,7 +4,7 @@ dmGameSystem,411819,561993
 [section .rodata],342802,342802
 dmGraphics,147641,209444
 dmGui,116439,152839
-dmGameObject,115584,163777
+dmGameObject,115596,163789
 _compress_* (library),113767,115557
 dmCrash,110750,11042
 basist,107919,111865
@@ -75,7 +75,7 @@ dmConfigFile,6296,7788
 _info_* (library),6007,6905
 dmConnectionPool,5996,7913
 [section .rel.plt],5960,5960
-[section .text],5878,5878
+[section .text],5882,5882
 [section .dynstr],5848,5848
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -2000,7 +2000,6 @@ secp192k1_p,24,52
 secp192r1_b,24,52
 secp192r1_n,24,52
 secp192r1_p,24,52
-[LOAD #4 [RW]],24,0
 _CONTEXT_* (library),21,101
 ResourceChunkCacheGetNumChunks(),20,108
 FontCollectionGetFontCount(),20,100
@@ -2176,6 +2175,7 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
+[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceUnregisterReloadedCallback(),4,132
@@ -2390,8 +2390,8 @@ g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
 [section .debug_info],0,5432421
-[section .debug_loc],0,2961499
-[section .debug_line],0,2299011
+[section .debug_loc],0,2961490
+[section .debug_line],0,2299028
 [section .debug_str],0,1781912
 [section .debug_ranges],0,942592
 [section .debug_abbrev],0,426506
