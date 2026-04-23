@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3817472,3805808
+[__LINKEDIT],3817472,3806048
 MVK_spirv_cross,1517593,1517449
 dmScript,625128,100496
 basist,373441,358581
@@ -25,9 +25,9 @@ spvtools,60399,60399
 _GLOBAL_* (library),57796,57796
 MVKDevice,53435,53435
 _ZNSt3_* (library),53284,53284
-stbi__process_marker(),44305,44305
+stbi__process_marker(),44320,44320
 _LZ4HC_* (library),42488,42488
-_mz_* (library),39504,39504
+_dm_* (library),40872,40872
 MVKObjectPool<>,34565,34565
 dmPhysics,34240,34124
 _recff_* (library),33977,33977
@@ -48,14 +48,13 @@ _asm_* (library),19661,19661
 dmHashTable<>,19612,19612
 _lua_* (library),19359,19359
 _fold_* (library),18954,18954
-dmRig,18292,18268
+dmRig,18264,18240
 dmEngine,18172,18156
 _cp_* (library),17708,17708
 cereal,17054,17054
 btCollisionWorld,16876,16868
 _vwin8192,16388,16388
 _parse_* (library),16180,16180
-_tdefl_* (library),16180,16180
 MVKDescriptorTypePool<>,16048,16048
 btQuantizedBvh,15936,15936
 _KHR_* (library),15340,0
@@ -73,9 +72,10 @@ MVKImage,13510,13510
 _DATA_* (library),13504,13504
 dmInput,13468,12444
 MVKCmdBufferImageCopy<>,13425,13425
+_tdefl_* (library),12880,12880
 MVKDescriptorPool,12790,12790
 _rec_* (library),12780,12780
-[__TEXT],12531,17307
+[__TEXT],12544,17320
 _dmGameSystemDDF_* (library),12244,8464
 _EXT_* (library),11960,0
 MVKRenderSubpass,11711,11711
@@ -93,6 +93,7 @@ _dmRenderDDF_* (library),9684,7240
 _expr_* (library),9424,9424
 gjkepa2_impl,9356,9356
 dmHttpCache,9224,9224
+_mz_* (library),9188,9188
 btGeneric6DofConstraint,9156,9156
 dmHID,9032,8960
 b2DynamicTree,8944,8944
@@ -114,7 +115,6 @@ _crec_* (library),7772,7772
 _clspvreflection_* (library),7544,7544
 _ov_* (library),7456,7456
 MVKCmdResolveImage<>,7438,7438
-_tinfl_* (library),7228,7228
 dmSoundCodec,7204,7172
 MVKDescriptorSetLayout,6877,6877
 _debuginfo_* (library),6808,6808
@@ -2099,7 +2099,6 @@ spvIsVulkanEnv(),28,28
 spvOpcodeIsBit(),28,28
 spvOpcodeIsLinearAlgebra(),28,28
 dmRecord,28,28
-_miniz_* (library),28,28
 VkPhysicalDeviceFeatures,27,27
 FontGetType(),24,24
 GBGetResourceSize(),24,24

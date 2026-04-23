@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3874816,3874024
+[__LINKEDIT],3874816,3874424
 MVK_spirv_cross,1692903,1692759
 dmScript,634440,109820
 dmGameSystem,423168,421808
@@ -29,8 +29,8 @@ MVKDevice,60803,60803
 MVKSmallVectorImpl<>,60400,60400
 dmParticle,56064,55896
 _LZ4HC_* (library),49432,49432
-_mz_* (library),44144,44144
-stbi__process_marker(),43794,43794
+_dm_* (library),47440,47440
+stbi__process_marker(),43810,43810
 MVKGraphicsPipeline,42338,42338
 dmPhysics,42140,42024
 _recff_* (library),36656,36656
@@ -54,7 +54,6 @@ btDiscreteDynamicsWorld,21712,21712
 dmEngine,21328,21312
 _lua_* (library),20104,20104
 _fold_* (library),19712,19712
-_tdefl_* (library),18864,18864
 _cp_* (library),18400,18400
 MVKCmdBufferImageCopy<>,18137,18137
 _parse_* (library),17856,17856
@@ -67,6 +66,7 @@ MVKRenderSubpass,15779,15779
 dmDDF,15672,15608
 _KHR_* (library),15340,0
 MVKDescriptorPool,15174,15174
+_tdefl_* (library),14976,14976
 glsl_entries,14912,14912
 dmLiveUpdate,14868,13772
 __glfw,14744,0
@@ -93,6 +93,7 @@ MVKCmdResolveImage<>,10758,10758
 dmHID,10576,10192
 MVKQueueFullCommandBufferSubmission<>,10420,10420
 _DATA_* (library),10360,10360
+_mz_* (library),10320,10320
 dmResourceMounts,10308,10308
 _luaL_* (library),10240,10240
 b2DynamicTree,9984,9984
@@ -100,7 +101,6 @@ b2DynamicTree,9984,9984
 btDbvt,9840,9840
 _expr_* (library),9760,9760
 _dmRenderDDF_* (library),9700,7256
-_tinfl_* (library),9648,9648
 _dmRigDDF_* (library),9628,7080
 _crec_* (library),9328,9328
 dmHttpClient,9264,9248
@@ -237,8 +237,8 @@ b2PolygonShape,3312,3312
 dmIntersection,3216,3216
 SphereTriangleDetector,3208,3208
 _floor1_* (library),3200,3200
-[__TEXT],3199,7959
 _luaopen_* (library),3184,3184
+[__TEXT],3183,7943
 MVKImageView,3183,3183
 _amd_* (library),3152,3152
 MVKMTLFunctionNull,3144,0
@@ -1749,7 +1749,6 @@ spvOpcodeIsAtomicWithLoad(),80,80
 stbi__bmask,80,80
 dmMemory,80,80
 MVKShaderStageResourceBinding,80,80
-_miniz_* (library),80,80
 dmStructDDF,80,80
 MVKBaseDeviceObject,78,78
 MVKDeviceTrackingMixin,73,73
