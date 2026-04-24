@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1867776,1857176
+[__LINKEDIT],1867776,1857272
 dmScript,620684,96072
-dmGameSystem,347556,345236
+dmGameSystem,347556,345196
 _lj_* (library),204660,204660
-"_TEXT,_* (library)",149689,149689
+"_TEXT,_* (library)",149712,149712
 dmCrash,112648,5976
 _mbedtls_* (library),101432,101428
 basist,98308,83450
@@ -12,15 +12,15 @@ dmGui,91388,90412
 dmRender,87792,87464
 dmGraphics,76921,75976
 _pfb,65544,65544
-_GLOBAL_* (library),38532,38532
+_GLOBAL_* (library),38524,38524
 _cp_* (library),34652,34652
 stbi__process_marker(),33727,33727
 dmPhysics,32688,32576
 _ZNSt3_* (library),32452,32452
 dmParticle,29748,29580
 std,29240,29240
-dmResource,26260,26260
-[__TEXT],22570,38850
+dmResource,26188,26188
+[__TEXT],22627,38907
 _load_* (library),21176,21176
 dmSound,20540,20388
 dmHashTable<>,19444,19444
@@ -50,7 +50,7 @@ b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
 _dmRigDDF_* (library),9444,6896
 gjkepa2_impl,9044,9044
-[__DATA],8960,12
+[__DATA],8912,28
 dmHttpCache,8745,8745
 dmHID,8520,8448
 _gc_* (library),8228,8228
@@ -162,7 +162,7 @@ __packetout,2376,2376
 _prepend_* (library),2316,2316
 b2PolygonShape,2280,2280
 _zip_* (library),2244,2244
-_g_* (library),2222,0
+_g_* (library),2218,0
 stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192
 _jpeg_* (library),2171,2171
@@ -201,7 +201,7 @@ btAlignedObjectArray<>,1704,1704
 basisu,1701,1701
 btCompoundLeafCallback,1692,1692
 _pk_* (library),1688,1688
-__MergedGlobals,1672,280
+__MergedGlobals,1672,256
 _global_* (library),1648,1648
 b2Simplex,1640,1640
 _get_* (library),1632,1632
@@ -221,8 +221,8 @@ _alloc_* (library),1472,1472
 _luaJIT_* (library),1460,1460
 _cff_* (library),1444,1444
 btHashMap<>,1432,1432
+_dmLiveUpdateDDF_* (library),1412,984
 _dmSystemDDF_* (library),1384,600
-_dmLiveUpdateDDF_* (library),1360,936
 btTransformUtil,1340,1340
 btConvexInternalShape,1312,1312
 _auxiliar_* (library),1308,1308

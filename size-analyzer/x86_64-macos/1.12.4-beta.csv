@@ -1,12 +1,12 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3874816,3874424
+[__LINKEDIT],3874816,3874528
 MVK_spirv_cross,1692903,1692759
 dmScript,634440,109820
-dmGameSystem,423168,421808
+dmGameSystem,423168,421776
 basist,387675,372811
 std,315732,315732
 _lj_* (library),250928,250928
-"_TEXT,_* (library)",242104,242104
+"_TEXT,_* (library)",242136,242136
 _mbedtls_* (library),131401,131229
 dmGui,128372,127388
 _variable_* (library),127132,127132
@@ -36,7 +36,7 @@ dmPhysics,42140,42024
 _recff_* (library),36656,36656
 btConeTwistConstraint,36152,36152
 dmRig,35888,35864
-dmResource,34216,34216
+dmResource,34136,34136
 MVKObjectPool<>,34117,34117
 MVKPhysicalDevice,32741,32677
 opencl_entries,29808,29808
@@ -234,11 +234,11 @@ MVKCmdCopyBuffer<>,3330,3330
 dmResourceProviderZip,3328,3200
 dmArray<>,3312,3312
 b2PolygonShape,3312,3312
+[__TEXT],3231,7991
 dmIntersection,3216,3216
 SphereTriangleDetector,3208,3208
 _floor1_* (library),3200,3200
 _luaopen_* (library),3184,3184
-[__TEXT],3183,7943
 MVKImageView,3183,3183
 _amd_* (library),3152,3152
 MVKMTLFunctionNull,3144,0
@@ -351,9 +351,9 @@ btManifoldResult,1720,1720
 MVKEventEmulated,1707,1707
 CProfileManager,1704,1632
 __glfwInitEGL,1696,1696
+_dmLiveUpdateDDF_* (library),1684,1256
 _get_* (library),1678,1678
 b2ChainShape,1664,1664
-_dmLiveUpdateDDF_* (library),1632,1208
 MVKCmdPushDescriptorSet,1626,1626
 _dmHttpDDF_* (library),1620,1256
 MVKSemaphoreEmulated,1567,1567
@@ -364,7 +364,7 @@ _cff_* (library),1536,1536
 _cpcparser,1520,1520
 _bcemit_* (library),1520,1520
 __glfwRefreshContextAttribs,1504,1504
-_g_* (library),1493,0
+_g_* (library),1489,0
 btConvexInternalShape,1480,1480
 _vkspreflection_* (library),1472,1472
 _fetch_* (library),1472,1472
@@ -395,13 +395,13 @@ __glfwDefaultMappings,1352,1352
 _unaccessed_* (library),1344,1344
 _compute_* (library),1344,1344
 btPolyhedralConvexShape,1344,1344
-[__DATA],1336,0
 Layout<>(),1331,1331
 spvDbgInfoExtOperandCanBeForwardDeclaredFunction(),1327,1327
 dmBlockAllocator,1312,1312
 _AMD_* (library),1300,0
 dmVMath,1296,1296
 btSphereTriangleCollisionAlgorithm,1296,1296
+[__DATA],1288,0
 Vectormath,1280,1280
 b2BroadPhase,1280,1280
 btPairCachingGhostObject,1272,1272
@@ -1412,7 +1412,7 @@ rmtp_Messages(),144,128
 rmtp_Model(),144,144
 rmtp_ModelIndexCount(),144,144
 rmtp_ModelVertexCount(),144,144
-rmtp_ModelVertexSize(),144,144
+rmtp_ModelVertexSize(),144,128
 rmtp_ParticleFx(),144,144
 rmtp_ParticleVertexCount(),144,144
 rmtp_ParticleVertexSize(),144,144

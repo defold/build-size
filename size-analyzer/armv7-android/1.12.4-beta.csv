@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142811
 dmGameSystem,411827,562001
-[section .rodata],342818,342818
+[section .rodata],342834,342834
 dmGraphics,147641,209444
 dmGui,116439,152839
 dmGameObject,115596,163789
@@ -10,16 +10,16 @@ dmCrash,110750,11042
 basist,107919,111865
 dmRender,104413,146945
 std,77302,96319
-[section .rel.dyn],70432,70432
+[section .rel.dyn],70448,70448
 _pfb,65536,65561
 [section .ARM.exidx],61728,61728
 dmHashTable<>,50764,63374
-_GLOBAL_* (library),49372,55769
+_GLOBAL_* (library),49368,55765
 (anonymous namespace),44188,103041
 dmParticle,40445,51442
 dmPhysics,38153,58263
 _mz_* (library),36028,42314
-dmResource,35488,50042
+dmResource,35408,49962
 dmSound,27913,36520
 _ssl_* (library),22756,31365
 btConeTwistConstraint,22000,25064
@@ -75,7 +75,7 @@ dmConfigFile,6296,7788
 _info_* (library),6007,6905
 dmConnectionPool,5996,7913
 [section .rel.plt],5960,5960
-[section .text],5890,5890
+[section .text],5894,5894
 [section .dynstr],5848,5848
 _tdefl_* (library),5704,7049
 btRigidBody,5672,8019
@@ -142,7 +142,7 @@ _meta_* (library),3008,3855
 [section .got.plt],2992,2992
 _aes_* (library),2988,3810
 _run_* (library),2980,3217
-[section .bss],2974,0
+[section .bss],2972,0
 _sync_* (library),2969,3402
 b2WeldJoint,2964,3839
 topdown(),2956,3209
@@ -1049,6 +1049,7 @@ lua_newuserdata,142,196
 buf_grow,142,183
 _PropertyDeclarationEntry_* (library),142,385
 _HttpRequestProgress_* (library),142,341
+_ManifestData_* (library),142,356
 FontCollectionRemoveFont(),140,240
 b2RevoluteJointDef,140,229
 b2WeldJointDef,140,225
@@ -1197,7 +1198,6 @@ btPointCollector,116,459
 ffh_resume,116,159
 ffi_pairs,116,158
 _SetViewProjection_* (library),116,265
-_ManifestData_* (library),116,250
 _TriggerEvent_* (library),116,241
 dmDoubleLinkedList,116,535
 _Collision_* (library),116,232
@@ -2149,7 +2149,6 @@ lua_version.version,8,44
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
-[LOAD #4 [RW]],8,0
 [section .fini_array],8,8
 _init_* (library),5,68
 ResourceUnregisterReloadedCallback(),4,132
@@ -2362,11 +2361,11 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5432421
-[section .debug_loc],0,2961490
-[section .debug_line],0,2299025
-[section .debug_str],0,1782257
-[section .debug_ranges],0,942592
+[section .debug_info],0,5432422
+[section .debug_loc],0,2961376
+[section .debug_line],0,2298968
+[section .debug_str],0,1782347
+[section .debug_ranges],0,942568
 [section .debug_abbrev],0,426506
 [section .debug_frame],0,271512
 [section .symtab],0,44192
@@ -2375,4 +2374,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,12
+[Unmapped],0,14

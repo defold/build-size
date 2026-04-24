@@ -1,25 +1,25 @@
 symbol_group_name,vmsize,filesize
-dmScript,632211,142748
-dmGameSystem,417874,569813
-[section .rodata],344906,344906
-dmGraphics,147641,209444
+dmScript,632459,142996
+dmGameSystem,417878,569817
+[section .rodata],345746,345746
+dmGraphics,148589,211471
 dmGui,116439,152839
 dmGameObject,115784,164085
 _compress_* (library),113051,114561
 dmCrash,110750,11042
 basist,107919,111865
-dmRender,104661,147360
+dmRender,105841,148760
 std,78466,97515
-[section .rel.dyn],70592,70592
+[section .rel.dyn],70640,70640
 _pfb,65536,65561
-[section .ARM.exidx],61848,61848
+[section .ARM.exidx],61880,61880
 dmHashTable<>,50764,63368
-_GLOBAL_* (library),49728,56139
-(anonymous namespace),44188,103041
+_GLOBAL_* (library),49724,56135
+(anonymous namespace),44188,103048
 dmParticle,40445,51442
 dmPhysics,38153,58263
 _mz_* (library),36028,42314
-dmResource,35528,50071
+dmResource,35448,49991
 dmSound,27953,36560
 _ssl_* (library),22756,31365
 dmRig,22396,27727
@@ -38,10 +38,10 @@ btAxisSweep3Internal<>,14740,19275
 _internal_* (library),14284,14721
 dmLiveUpdate,14244,18384
 _mpi_* (library),14088,16667
-[section .ARM.extab],13924,13924
+[section .ARM.extab],13948,13948
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
-[section .plt],11951,11951
+[section .plt],11967,11967
 dmInput,11949,13700
 b2World,11672,13849
 _ecp_* (library),11029,13516
@@ -53,7 +53,7 @@ b2DynamicTree,10220,12192
 dmSocket,10084,14283
 gjkepa2_impl,10012,11557
 dmHttpClient,9980,13320
-[section .hash],9672,9672
+[section .hash],9680,9680
 dmResourceMounts,9580,12603
 dmHttpCache,8997,10912
 _x509_* (library),8904,10959
@@ -67,16 +67,16 @@ __cxxabiv1,7494,17864
 dmHID,7482,13630
 _get_* (library),7362,9534
 btIDebugDraw,7328,8416
-[section .dynsym],6624,6624
+[section .dynsym],6640,6640
 dmBuffer,6420,8664
 btDbvt,6360,8443
 dmConfigFile,6296,7788
 [section .gnu.hash],6116,6116
 _info_* (library),6007,6905
 dmConnectionPool,5996,7913
-[section .rel.plt],5960,5960
-[section .text],5930,5930
-[section .dynstr],5848,5848
+[section .rel.plt],5968,5968
+[section .text],5890,5890
+[section .dynstr],5880,5880
 _tdefl_* (library),5704,7049
 btRigidBody,5672,8019
 btConvexConvexAlgorithm,5548,7613
@@ -139,8 +139,8 @@ btGjkPairDetector,3200,4396
 b2Fixture,3072,4028
 _glfwAndroidHandleInput,3064,3232
 _meta_* (library),3008,3855
-[section .got.plt],2992,2992
-[section .bss],2989,0
+[section .got.plt],2996,2996
+[section .bss],2995,0
 _aes_* (library),2988,3810
 _run_* (library),2980,3217
 _sync_* (library),2969,3402
@@ -167,7 +167,7 @@ _tab_* (library),2576,3349
 FontLoadFromMemoryTTF(),2572,2654
 _debug_* (library),2484,3172
 _glfwJoy,2432,25
-[section .gnu.version],2416,2416
+[section .gnu.version],2418,2418
 _page_* (library),2415,2898
 b2DistanceJoint,2408,3339
 _dhm_* (library),2400,2902
@@ -541,6 +541,7 @@ gcm_mult,396,453
 dmPPrint,396,722
 glfwGetWindowParam,392,491
 ll_loadfunc,392,452
+[LOAD #1 [R]],390,390
 dmHashBufferNoReverse64,388,476
 _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
@@ -550,7 +551,6 @@ ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
-[LOAD #1 [R]],376,376
 JobSystemCreateJob,372,439
 dmRigDDF,372,3797
 _SpriteDesc_* (library),369,960
@@ -1051,6 +1051,7 @@ lua_newuserdata,142,196
 buf_grow,142,183
 _PropertyDeclarationEntry_* (library),142,385
 _HttpRequestProgress_* (library),142,341
+_ManifestData_* (library),142,356
 FontCollectionRemoveFont(),140,240
 b2RevoluteJointDef,140,229
 b2WeldJointDef,140,225
@@ -1198,7 +1199,6 @@ btPointCollector,116,459
 ffh_resume,116,159
 ffi_pairs,116,158
 _SetViewProjection_* (library),116,265
-_ManifestData_* (library),116,250
 _TriggerEvent_* (library),116,241
 _MorphWeightTrack_* (library),116,241
 dmDoubleLinkedList,116,535
@@ -1878,6 +1878,7 @@ _TimeStepMode_* (library),32,151
 _mark_* (library),32,79
 _no_* (library),32,79
 _EmissionSpace_* (library),32,149
+android_main,32,77
 _FontRenderMode_* (library),32,147
 _IndexBufferFormat_* (library),32,147
 atexit,32,76
@@ -1961,7 +1962,6 @@ LZ4_favorDecompressionSpeed,24,84
 GetDescentTTF(),24,82
 GetLineGapTTF(),24,82
 GetAscentTTF(),24,81
-android_main,24,69
 timeout_init,24,69
 socket_open,24,68
 dmBufferDDF,24,262
@@ -2369,17 +2369,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5454646
-[section .debug_loc],0,2975009
-[section .debug_line],0,2281905
-[section .debug_str],0,1789319
-[section .debug_ranges],0,945848
-[section .debug_abbrev],0,426838
-[section .debug_frame],0,272084
-[section .symtab],0,44176
-[section .strtab],0,17327
+[section .debug_info],0,5456736
+[section .debug_loc],0,2976825
+[section .debug_line],0,2282941
+[section .debug_str],0,1790796
+[section .debug_ranges],0,946376
+[section .debug_abbrev],0,426876
+[section .debug_frame],0,272264
+[section .symtab],0,44224
+[section .strtab],0,17361
 [ELF Headers],0,1360
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,14
+[Unmapped],0,15

@@ -1,26 +1,26 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1867776,1862184
-dmScript,620684,96072
-dmGameSystem,352312,349632
+[__LINKEDIT],1867776,1864536
+dmScript,620844,96232
+dmGameSystem,352388,349668
 _lj_* (library),204660,204660
-"_TEXT,_* (library)",150824,150824
+"_TEXT,_* (library)",151233,151233
 dmCrash,112648,5976
 _mbedtls_* (library),101432,101428
 basist,98308,83450
 dmGameObject,94060,94036
 dmGui,91388,90412
-dmRender,88048,87704
-dmGraphics,76925,75980
+dmRender,89064,88720
+dmGraphics,77797,76836
 _pfb,65544,65544
-_GLOBAL_* (library),38756,38756
+_GLOBAL_* (library),38744,38744
 _cp_* (library),34652,34652
-stbi__process_marker(),33727,33727
+stbi__process_marker(),33879,33879
 dmPhysics,32688,32576
-[__TEXT],32451,48731
 _ZNSt3_* (library),31836,31836
+[__TEXT],29890,46170
 dmParticle,29748,29580
 std,28304,28304
-dmResource,26260,26260
+dmResource,26188,26188
 _load_* (library),21176,21176
 dmSound,20540,20388
 dmHashTable<>,19444,19444
@@ -52,10 +52,10 @@ _dmRenderDDF_* (library),9556,7112
 gjkepa2_impl,9044,9044
 dmHttpCache,8745,8745
 dmHID,8520,8448
-[__DATA],8288,28
 _gc_* (library),8228,8228
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
+[__DATA],8184,4
 _expr_* (library),7996,7996
 dmHttpClient,7988,7972
 _json_* (library),7936,7920
@@ -73,7 +73,7 @@ dBoxBox2(),6092,6092
 dmSocket,5972,5972
 _bcwrite_* (library),5968,5968
 _bcread_* (library),5852,5852
-"_DATA,_* (library)",5832,5832
+"_DATA,_* (library)",5840,5840
 _objc_* (library),5792,5792
 b2DynamicTree,5676,5676
 dmBuffer,5648,5640
@@ -162,7 +162,7 @@ __packetout,2376,2376
 _prepend_* (library),2316,2316
 b2PolygonShape,2280,2280
 _zip_* (library),2244,2244
-_g_* (library),2238,0
+_g_* (library),2234,0
 stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192
 _jpeg_* (library),2171,2171
@@ -201,7 +201,7 @@ btAlignedObjectArray<>,1704,1704
 basisu,1701,1701
 btCompoundLeafCallback,1692,1692
 _pk_* (library),1688,1688
-__MergedGlobals,1672,176
+__MergedGlobals,1672,160
 _global_* (library),1648,1648
 b2Simplex,1640,1640
 _get_* (library),1632,1632
@@ -221,8 +221,8 @@ _alloc_* (library),1472,1472
 _luaJIT_* (library),1460,1460
 _cff_* (library),1444,1444
 btHashMap<>,1432,1432
+_dmLiveUpdateDDF_* (library),1412,984
 _dmSystemDDF_* (library),1384,600
-_dmLiveUpdateDDF_* (library),1360,936
 btTransformUtil,1340,1340
 btConvexInternalShape,1312,1312
 _auxiliar_* (library),1308,1308
@@ -270,7 +270,7 @@ _RT3,1024,0
 _crc_* (library),1024,1024
 _vwin512,1024,1024
 btSphereTriangleCollisionAlgorithm,1024,1024
-_OUTLINED_* (library),1000,1000
+_OUTLINED_* (library),1008,1008
 _compute_* (library),992,992
 btBoxBoxCollisionAlgorithm,992,992
 btCollisionShape,988,988
@@ -610,7 +610,7 @@ btSingleRayCallback,156,156
 _capture_* (library),152,152
 _emptybuffer,152,152
 _index2adr_* (library),152,152
-_Components_* (library),152,32
+_Components_* (library),152,24
 _ZN15dmDeviceAVAudioL17DeviceAVAudioOpenEPKN7dmSound16OpenDeviceParamsEPPv_* (library),152,152
 _package_* (library),152,152
 -[BaseView init],148,148
