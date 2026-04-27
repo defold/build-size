@@ -11,6 +11,7 @@ import json
 import shutil
 import csv
 import zipfile
+import hashlib
 import matplotlib
 matplotlib.use('Agg')
 
@@ -20,6 +21,98 @@ from collections import OrderedDict
 
 # https://matplotlib.org/stable/api/markers_api.html
 markers = '.o8s+xD*pP<<>'
+GRAPH_EXCLUDED_PLATFORMS = {"js-web"}
+UNSUPPORTED_PLATFORM_BASE_VERSIONS = {
+    "js-web": (1, 13, 0),
+}
+COMMENTS_FILE = "comments.csv"
+COMMENTS_HASH_FILE = "comments.sha256"
+
+
+def parse_version_base(version_str):
+    base = version_str.split('-', 1)[0]
+    parts = [int(part) for part in base.split('.')]
+    while len(parts) < 3:
+        parts.append(0)
+    return tuple(parts[:3])
+
+
+def is_platform_supported_for_version(platform, version):
+    removed_from = UNSUPPORTED_PLATFORM_BASE_VERSIONS.get(platform)
+    if removed_from is None:
+        return True
+    return parse_version_base(version) < removed_from
+
+
+def remove_unsupported_platform_data(report, report_platforms, version):
+    changed = False
+    for report_platform in report_platforms:
+        platform = report_platform["platform"]
+        if is_platform_supported_for_version(platform, version):
+            continue
+        platform_data = report.get(platform)
+        if platform_data and version in platform_data:
+            del platform_data[version]
+            changed = True
+            print(f"  Removed unsupported {platform} data for {version}")
+    return changed
+
+
+def read_graph_comments(path=COMMENTS_FILE):
+    if not os.path.exists(path):
+        return []
+
+    with open(path, newline='') as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            return []
+
+        fields = {field.lower(): field for field in reader.fieldnames}
+        version_field = fields.get("version")
+        comment_field = fields.get("comment")
+        if not version_field or not comment_field:
+            return []
+
+        comments = []
+        for row in reader:
+            version = row.get(version_field, "").strip()
+            comment = row.get(comment_field, "").strip()
+            if version and comment:
+                comments.append({"version": version, "comment": comment})
+        return comments
+
+
+def graph_comments_hash(path=COMMENTS_FILE):
+    if not os.path.exists(path):
+        return ""
+
+    digest = hashlib.sha256()
+    with open(path, 'rb') as f:
+        while True:
+            chunk = f.read(65536)
+            if not chunk:
+                break
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def graph_comments_changed(path=COMMENTS_FILE, hash_path=COMMENTS_HASH_FILE):
+    current_hash = graph_comments_hash(path)
+    if not os.path.exists(hash_path):
+        return bool(current_hash)
+
+    with open(hash_path, 'r') as f:
+        previous_hash = f.read().strip()
+    return current_hash != previous_hash
+
+
+def write_graph_comments_hash(path=COMMENTS_FILE, hash_path=COMMENTS_HASH_FILE):
+    current_hash = graph_comments_hash(path)
+    if current_hash:
+        with open(hash_path, 'w') as f:
+            f.write(f"{current_hash}\n")
+    elif os.path.exists(hash_path):
+        os.remove(hash_path)
 
 # old list containing architectures we no longer use
 # also a mix of engines and archives (apk vs engine binary)
@@ -458,6 +551,8 @@ def create_report(report_filename, releases, report_platforms, fn, forced_versio
     for release in releases:
         version = release["version"]
         sha1 = release["sha1"]
+        if remove_unsupported_platform_data(report, report_platforms, version):
+            changed = True
 
         if version in report['version']:
             if version in forced_versions:
@@ -465,6 +560,9 @@ def create_report(report_filename, releases, report_platforms, fn, forced_versio
                 for report_platform in report_platforms:
                     platform = report_platform["platform"]
                     filename = report_platform["filename"]
+                    if not is_platform_supported_for_version(platform, version):
+                        print(f"  Skipping unsupported {platform} for {version}")
+                        continue
                     print(f"  Making report for {platform}...")
                     size = fn(sha1, platform, filename, version)
                     print(f"  Resported size: {platform} {size}")
@@ -481,6 +579,9 @@ def create_report(report_filename, releases, report_platforms, fn, forced_versio
         for report_platform in report_platforms:
             platform = report_platform["platform"]
             filename = report_platform["filename"]
+            if not is_platform_supported_for_version(platform, version):
+                print(f"  Skipping unsupported {platform} for {version}")
+                continue
             print(f"  Making report for {platform}...")
             size = fn(sha1, platform, filename, version)
             print(f"  Resported size: {platform} {size}")
@@ -540,6 +641,10 @@ def create_graph(report_filename, out, from_version=None):
         assert(len(markers) >= (len(data[0])-1)) # we need unique markers for each platform
 
         for engine, marker in zip(range(1, len(data[0])), markers):
+            platform = data[0][engine]
+            if platform in GRAPH_EXCLUDED_PLATFORMS:
+                continue
+
             # convert from string to int
             # find the max y size
             yaxis_size = []
@@ -548,7 +653,7 @@ def create_graph(report_filename, out, from_version=None):
                 max_ysize = max(max_ysize, num)
                 min_ysize = min(min_ysize, num)
                 yaxis_size.append(num)
-            ax.plot(xaxis_version, yaxis_size, label=data[0][engine], marker=marker)
+            ax.plot(xaxis_version, yaxis_size, label=platform, marker=marker)
 
         # make sure the plot fills out the area (easier to see nuances)
         ax.set_ylim(bottom=min_ysize)
@@ -564,6 +669,26 @@ def create_graph(report_filename, out, from_version=None):
         # create horizontal lines, to make it easier to track sizes
         for y in range(min_mb*mb, max_mb*mb, mb*step):
             ax.axhline(y, alpha=0.1)
+
+        version_positions = {version: index for index, version in enumerate(versions)}
+        for graph_comment in read_graph_comments():
+            version = graph_comment["version"]
+            if version not in version_positions:
+                continue
+            x = version_positions[version]
+            ax.axvline(x, color='0.45', alpha=0.55, linestyle='--', linewidth=1)
+            ax.annotate(
+                graph_comment["comment"],
+                xy=(x, 0.98),
+                xycoords=('data', 'axes fraction'),
+                xytext=(4, 0),
+                textcoords='offset points',
+                rotation=90,
+                ha='left',
+                va='top',
+                color='0.35',
+                fontsize=8,
+            )
 
         pyplot.yticks(locs, map(lambda x: "%d mb" % (x // mb), locs))
         pyplot.ylabel('SIZE')
@@ -685,7 +810,7 @@ reports_changed |= create_report(
 
 
 # create graphs based on the different reports
-if reports_changed:
+if reports_changed or graph_comments_changed():
     print("Creating graphs")
     # create_graph("legacy_engine_report.csv", out='legacy_engine_size.png')
     # create_graph("legacy_engine_report.csv", out='legacy_engine_size_stripped.png', from_version='1.2.155') # from 1.2.155, we have stripped versions available for all platforms
@@ -693,5 +818,6 @@ if reports_changed:
     create_graph("bundle_report.csv", out='bundle_size.png', from_version='1.2.166')
     create_graph("bob_report.csv", out='bob_size.png', from_version='1.2.166')
     create_graph("editor_report.csv", out='editor_size.png', from_version='1.3.6')
+    write_graph_comments_hash()
 else:
     print("Reports unchanged - skipping graph generation")

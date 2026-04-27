@@ -3,6 +3,7 @@
 class DefoldDashboard {
     constructor() {
         this.csvCache = new Map();
+        this.comments = [];
         this.charts = new Map();
         this.chartConfigs = new Map(); // Store chart configurations
         this.platformColors = {
@@ -54,6 +55,8 @@ class DefoldDashboard {
         for (const file of files) {
             await this.loadCSV(file);
         }
+
+        await this.loadComments();
     }
     
     async loadCSV(filename) {
@@ -84,14 +87,42 @@ class DefoldDashboard {
             throw error;
         }
     }
+
+    async loadComments() {
+        try {
+            const response = await fetch('comments.csv');
+            if (!response.ok) {
+                if (response.status === 404) {
+                    this.comments = [];
+                    return;
+                }
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = this.parseCSV(await response.text());
+            this.comments = data
+                .map(row => ({
+                    version: (row.VERSION || row.version || '').trim(),
+                    comment: (row.COMMENT || row.comment || '').trim()
+                }))
+                .filter(row => row.version && row.comment);
+        } catch (error) {
+            console.warn('Error loading comments.csv:', error);
+            this.comments = [];
+        }
+    }
     
     parseCSV(text) {
-        const lines = text.trim().split('\n');
-        const headers = lines[0].split(',').map(h => h.trim());
+        const lines = text.trim().split(/\r?\n/).filter(line => line.trim());
+        if (lines.length === 0) {
+            return [];
+        }
+
+        const headers = this.parseCSVLine(lines[0]);
         const data = [];
         
         for (let i = 1; i < lines.length; i++) {
-            const values = lines[i].split(',').map(v => v.trim());
+            const values = this.parseCSVLine(lines[i]);
             if (values.length === headers.length) {
                 const row = {};
                 headers.forEach((header, index) => {
@@ -102,6 +133,32 @@ class DefoldDashboard {
         }
         
         return data;
+    }
+
+    parseCSVLine(line) {
+        const values = [];
+        let value = '';
+        let inQuotes = false;
+
+        for (let i = 0; i < line.length; i++) {
+            const char = line[i];
+            if (char === '"') {
+                if (inQuotes && line[i + 1] === '"') {
+                    value += '"';
+                    i++;
+                } else {
+                    inQuotes = !inQuotes;
+                }
+            } else if (char === ',' && !inQuotes) {
+                values.push(value.trim());
+                value = '';
+            } else {
+                value += char;
+            }
+        }
+
+        values.push(value.trim());
+        return values;
     }
     
     compareVersions(v1, v2) {
@@ -186,7 +243,7 @@ class DefoldDashboard {
     
     createBundleChart() {
         const rawData = this.csvCache.get('bundle_report.csv');
-        const platforms = ['arm64-ios', 'arm64-android', 'armv7-android', 'x86_64-macos', 'js-web', 'wasm-web', 'x86_64-linux', 'x86-win32', 'x86_64-win32', 'arm64-macos'];
+        const platforms = ['arm64-ios', 'arm64-android', 'armv7-android', 'x86_64-macos', 'wasm-web', 'x86_64-linux', 'x86-win32', 'x86_64-win32', 'arm64-macos'];
         
         // Calculate default version (last 20 versions)
         const defaultVersion = this.calculateDefaultVersion('bundle_report.csv', '1.2.166');
@@ -206,7 +263,7 @@ class DefoldDashboard {
     
     createEngineChart() {
         const rawData = this.csvCache.get('engine_report.csv');
-        const platforms = ['arm64-ios', 'arm64-android', 'armv7-android', 'x86_64-macos', 'js-web', 'wasm-web', 'x86_64-linux', 'x86-win32', 'x86_64-win32', 'arm64-macos'];
+        const platforms = ['arm64-ios', 'arm64-android', 'armv7-android', 'x86_64-macos', 'wasm-web', 'x86_64-linux', 'x86-win32', 'x86_64-win32', 'arm64-macos'];
         
         // Calculate default version (last 20 versions)
         const defaultVersion = this.calculateDefaultVersion('engine_report.csv', '1.2.166');
@@ -277,6 +334,7 @@ class DefoldDashboard {
         
         const traces = [];
         const versions = data.map(row => row.VERSION);
+        const commentDecorations = this.buildCommentDecorations(versions);
         
         platforms.forEach(platform => {
             const sizes = data.map(row => {
@@ -340,6 +398,8 @@ class DefoldDashboard {
             },
             paper_bgcolor: 'white',
             plot_bgcolor: 'white',
+            shapes: commentDecorations.shapes,
+            annotations: commentDecorations.annotations,
             showlegend: showLegend,
             legend: showLegend ? {
                 orientation: 'h',
@@ -381,6 +441,44 @@ class DefoldDashboard {
             // Add legend usage info
             this.addLegendInfo(containerId);
         }
+    }
+
+    buildCommentDecorations(versions) {
+        const visibleVersions = new Set(versions);
+        const visibleComments = this.comments.filter(comment => visibleVersions.has(comment.version));
+
+        return {
+            shapes: visibleComments.map(comment => ({
+                type: 'line',
+                xref: 'x',
+                x0: comment.version,
+                x1: comment.version,
+                yref: 'paper',
+                y0: 0,
+                y1: 1,
+                line: {
+                    color: '#777',
+                    width: 1,
+                    dash: 'dot'
+                }
+            })),
+            annotations: visibleComments.map(comment => ({
+                x: comment.version,
+                y: 0.98,
+                xref: 'x',
+                yref: 'paper',
+                text: comment.comment,
+                showarrow: false,
+                textangle: -90,
+                xanchor: 'left',
+                yanchor: 'top',
+                xshift: 4,
+                font: {
+                    color: '#666',
+                    size: 11
+                }
+            }))
+        };
     }
     
     addLegendInfo(containerId) {
@@ -634,6 +732,7 @@ class DefoldDashboard {
         
         const traces = [];
         const versions = data.map(row => row.VERSION);
+        const commentDecorations = this.buildCommentDecorations(versions);
         
         platforms.forEach(platform => {
             const sizes = data.map(row => {
@@ -669,7 +768,14 @@ class DefoldDashboard {
             });
         });
         
-        Plotly.react(chartId, traces, chartData.layout, chartData.config);
+        const layout = {
+            ...chartData.layout,
+            shapes: commentDecorations.shapes,
+            annotations: commentDecorations.annotations
+        };
+        
+        Plotly.react(chartId, traces, layout, chartData.config);
+        this.charts.set(chartId, { ...chartData, traces, layout });
     }
     
     handleResize() {

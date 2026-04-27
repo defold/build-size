@@ -72,4 +72,6 @@ It will generate these files:
 
 To include a new version of dmengine in the report you need to [add an entry in the releases list in releases.json](https://github.com/defold/build-size/blob/master/releases.json). The sha1 of the version you wish to add can be seen at [d.defold.com](d.defold.com).
 
+To add graph annotations, add rows to [comments.csv](comments.csv) using `VERSION,COMMENT`. Each row is drawn as a vertical gray line with the comment text on the generated graphs and dashboard.
+
 The project will automatically generate new graphs and report files when a file in the project is changed.
