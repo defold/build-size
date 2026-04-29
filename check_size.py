@@ -25,6 +25,7 @@ GRAPH_EXCLUDED_PLATFORMS = {"js-web"}
 UNSUPPORTED_PLATFORM_BASE_VERSIONS = {
     "js-web": (1, 13, 0),
 }
+WEB_BUNDLE_PLATFORM_RENAMED_VERSION = (1, 13, 0)
 COMMENTS_FILE = "comments.csv"
 COMMENTS_HASH_FILE = "comments.sha256"
 
@@ -56,6 +57,13 @@ def remove_unsupported_platform_data(report, report_platforms, version):
             changed = True
             print(f"  Removed unsupported {platform} data for {version}")
     return changed
+
+
+def get_web_bundle_platform(platform, version=None):
+    if platform == "wasm-web":
+        if version is None or parse_version_base(version) >= WEB_BUNDLE_PLATFORM_RENAMED_VERSION:
+            return "wasm-web"
+    return "js-web"
 
 
 def read_graph_comments(path=COMMENTS_FILE):
@@ -355,7 +363,7 @@ def get_bundle_size_from_bob(sha1, platform, _, version=None):
             args.append("--architectures=" + platform)
             args.append("--bundle-format="+"aab")
         elif platform in ("wasm-web", "js-web"):
-            args.append("--platform=js-web")
+            args.append("--platform=" + get_web_bundle_platform(platform, version))
             args.append("--architectures=" + platform)
         elif platform in ("x86_64-macos", "arm64-macos"):
             args.append("--platform=x86_64-macos")
@@ -367,7 +375,7 @@ def get_bundle_size_from_bob(sha1, platform, _, version=None):
         args.append("--bundle-output=../bundle_output")
         args.extend(["clean", "build", "bundle"])
 
-        subprocess.call(args,cwd="empty_project")
+        subprocess.check_call(args,cwd="empty_project")
 
         if platform in ("armv7-android", "arm64-android"):
             return os.path.getsize("bundle_output/unnamed/unnamed.aab")
