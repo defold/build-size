@@ -9,7 +9,7 @@ _compress_* (library),113051,114561
 dmCrash,110750,11042
 basist,107919,111865
 dmRender,104413,146945
-std,77302,96319
+std,77302,96335
 [section .rel.dyn],70448,70448
 _pfb,65536,65561
 [section .ARM.exidx],61728,61728
@@ -75,7 +75,7 @@ dmConfigFile,6296,7788
 _info_* (library),6007,6905
 dmConnectionPool,5996,7913
 [section .rel.plt],5960,5960
-[section .text],5894,5894
+[section .text],5890,5890
 [section .dynstr],5848,5848
 _tdefl_* (library),5704,7049
 btRigidBody,5672,8019
@@ -318,10 +318,10 @@ _fromdB_* (library),1060,1096
 bcwrite_proto,1058,1104
 mapping_inverse,1052,1100
 btSphereTriangleCollisionAlgorithm,1052,2465
+TextLayoutLegacyCreate(),1048,1178
 btPolyhedralConvexAabbCachingShape,1048,1691
 btPolyhedralConvexShape,1048,1615
 _ecdsa_* (library),1048,1808
-TextLayoutLegacyCreate(),1044,1174
 btSphereSphereCollisionAlgorithm,1044,2447
 _dispatch_* (library),1040,1321
 _LOOKUP_* (library),1032,1126
@@ -2363,15 +2363,15 @@ g_AppResumed,1,29
 disableCcd,1,27
 [section .debug_info],0,5432422
 [section .debug_loc],0,2961376
-[section .debug_line],0,2298968
+[section .debug_line],0,2298969
 [section .debug_str],0,1782347
 [section .debug_ranges],0,942568
 [section .debug_abbrev],0,426506
 [section .debug_frame],0,271512
-[section .symtab],0,44192
+[section .symtab],0,44176
 [section .strtab],0,17327
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,14
+[Unmapped],0,17
