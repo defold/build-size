@@ -1,23 +1,23 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1785856,1784456
+[__LINKEDIT],1785856,1784760
 dmScript,620972,96560
-dmGameSystem,352388,351116
+dmGameSystem,352512,351240
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",150323,150323
+"_TEXT,_* (library)",150322,150322
 dmCrash,112656,8040
 basist,98300,84473
 dmGameObject,94060,94060
 dmGui,91388,90452
-dmRender,89064,88936
+dmRender,89668,89540
 dmGraphics,77821,77797
 _pfb,65544,65544
 _GLOBAL_* (library),38752,38752
 _cp_* (library),34652,34652
+_ZNSt3_* (library),32780,32780
 dmPhysics,32688,32688
-_ZNSt3_* (library),31836,31836
-dmParticle,29748,29748
-[__TEXT],28737,45017
-std,28304,28304
+dmParticle,30016,30016
+std,28328,28328
+[__TEXT],28246,44526
 dmResource,26188,26188
 _load_* (library),21176,21176
 stbi__process_marker(),20857,20857
@@ -25,10 +25,10 @@ dmSound,20540,20524
 dmHashTable<>,19444,19444
 _lua_* (library),19256,19256
 dmEngine,17664,17664
-dmRig,17188,17188
 btCollisionWorld,16572,16572
 _vwin8192,16388,16388
 _mh_* (library),16384,32
+dmRig,15692,15692
 _OBJC_* (library),14964,14964
 dmLiveUpdate,14632,13536
 _dm_* (library),14444,14444
@@ -167,10 +167,10 @@ b2Contact,2132,1528
 _s_* (library),2128,2128
 _dmInputDDF_* (library),2080,1248
 btCollisionDispatcher,2072,2072
+dmArray<>,2060,2060
 b2RopeJoint,2056,2056
 _char2escape,2048,2048
 _vwin1024,2048,2048
-dmArray<>,2028,2028
 _clib_* (library),2028,2028
 _buffer_* (library),1984,1984
 _decode_* (library),1968,1968
@@ -247,7 +247,7 @@ _FLOOR_* (library),1024,1024
 _crc_* (library),1024,1024
 _vwin512,1024,1024
 btSphereTriangleCollisionAlgorithm,1024,1024
-_OUTLINED_* (library),1008,1008
+_OUTLINED_* (library),1000,1000
 _compute_* (library),992,992
 btBoxBoxCollisionAlgorithm,992,992
 btCollisionShape,988,988
@@ -582,7 +582,7 @@ rmtp_Mesh(),132,132
 dmMemProfile,132,116
 b2Draw,132,132
 _ComponentTypeAnim64,128,128
-_ComponentTypeGui3656,128,0
+_ComponentTypeGui3657,128,0
 _ComponentTypeLight193,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,128

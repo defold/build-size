@@ -12,7 +12,7 @@ dmRender,104413,146945
 std,77302,96335
 [section .rel.dyn],70448,70448
 _pfb,65536,65561
-[section .ARM.exidx],61728,61728
+[section .ARM.exidx],61720,61720
 dmHashTable<>,50764,63374
 _GLOBAL_* (library),49368,55765
 (anonymous namespace),44188,103041
@@ -25,8 +25,8 @@ _ssl_* (library),22756,31365
 btConeTwistConstraint,22000,25064
 dmEngine,21350,26573
 _decompress_* (library),20800,21854
-dmRig,20484,25593
 btQuantizedBvh,18928,22181
+dmRig,18916,23855
 _load_* (library),18688,19796
 btCollisionWorld,18289,25117
 _cf_* (library),17380,26649
@@ -38,7 +38,7 @@ btAxisSweep3Internal<>,14740,19275
 _internal_* (library),14284,14721
 dmLiveUpdate,14244,18384
 _mpi_* (library),14088,16667
-[section .ARM.extab],13900,13900
+[section .ARM.extab],13912,13912
 _rsa_* (library),12852,15016
 _parse_* (library),12320,13928
 [section .plt],11952,11952
@@ -545,11 +545,11 @@ _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
 _glfwClearInput,388,452
 lex_number,384,443
-[LOAD #1 [R]],384,384
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 btDbvtNodeEnumerator,380,660
 _LabelDesc_* (library),379,933
+[LOAD #1 [R]],376,376
 JobSystemCreateJob,372,439
 _SpriteDesc_* (library),369,960
 _cur_* (library),364,429
@@ -2361,17 +2361,17 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5432422
-[section .debug_loc],0,2961376
-[section .debug_line],0,2298969
-[section .debug_str],0,1782347
-[section .debug_ranges],0,942568
-[section .debug_abbrev],0,426506
-[section .debug_frame],0,271512
+[section .debug_info],0,5429133
+[section .debug_loc],0,2957138
+[section .debug_line],0,2296931
+[section .debug_str],0,1782286
+[section .debug_ranges],0,937976
+[section .debug_abbrev],0,426496
+[section .debug_frame],0,271432
 [section .symtab],0,44176
 [section .strtab],0,17327
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,17
+[Unmapped],0,19

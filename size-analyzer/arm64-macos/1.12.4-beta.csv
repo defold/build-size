@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3801088,3800384
+[__LINKEDIT],3801088,3799808
 MVK_spirv_cross,1517593,1517449
 dmScript,625128,100508
 basist,373441,358581
-dmGameSystem,356796,355500
+dmGameSystem,356756,355460
 std,291963,291963
 "_TEXT,_* (library)",275866,275866
 _lj_* (library),226813,226813
@@ -53,13 +53,13 @@ _cp_* (library),17708,17708
 cereal,17054,17054
 btCollisionWorld,16876,16868
 _vwin8192,16388,16388
-dmRig,16332,16308
 _parse_* (library),16180,16180
 MVKDescriptorTypePool<>,16048,16048
 btQuantizedBvh,15936,15936
 _KHR_* (library),15340,0
 btDiscreteDynamicsWorld,15016,15016
 glsl_entries,14904,14904
+dmRig,14792,14768
 dmLiveUpdate,14748,13652
 __glfw,14744,0
 dmDDF,14424,14360
@@ -142,6 +142,7 @@ _ra_* (library),5472,5472
 b2ContactSolver,5376,5376
 _ecp_* (library),5348,5300
 dmObjectPool<>,5332,5332
+[__TEXT],5267,10043
 MVKShaderLibrary,5227,5227
 _dmInputDDF_* (library),5200,4368
 _dmGuiDDF_* (library),5092,3968
@@ -180,7 +181,7 @@ btDbvtBroadphase,4056,4056
 MVKCmdDrawIndirect,4048,4048
 MVKPipelineLayout,4028,4028
 _dmParticleDDF_* (library),3992,3304
-_OUTLINED_* (library),3988,3988
+_OUTLINED_* (library),3980,3980
 btCompoundCollisionAlgorithm,3952,3952
 _pk_* (library),3952,3952
 _gc_* (library),3940,3940
@@ -197,7 +198,6 @@ b2GridShape,3768,3768
 _inet_* (library),3756,3756
 _serialize_* (library),3752,3752
 dmMessage,3724,3684
-[__TEXT],3679,8455
 b2RevoluteJoint,3668,3668
 dmSSLSocket,3660,3652
 _trace_* (library),3628,3628

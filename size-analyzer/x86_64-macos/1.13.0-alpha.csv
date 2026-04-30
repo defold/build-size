@@ -1,35 +1,35 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3334144,3332800
+[__LINKEDIT],3334144,3333456
 MVK_spirv_cross,1642020,1641876
 dmScript,630356,105752
-dmGameSystem,423016,421544
+dmGameSystem,423224,421752
 basist,374816,359952
-std,287347,287347
-_lj_* (library),250912,250912
+std,287331,287331
+_lj_* (library),250928,250928
 "_TEXT,_* (library)",231411,231411
 _variable_* (library),127496,127496
 dmGui,122668,121676
 dmGraphics,115977,114993
+dmRender,115440,115096
 dmGameObject,115288,115264
-dmRender,114688,114344
 dmCrash,111652,6004
 (anonymous namespace),104708,104700
 MVKPixelFormats,101738,101714
 _except_* (library),101612,101612
 _GLOBAL_* (library),70512,70512
+_ZNSt3_* (library),66416,66416
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
-_ZNSt3_* (library),65120,65120
 MVKInstance,62103,62103
 MVKSmallVectorImpl<>,60272,60272
 MVKDevice,59731,59731
 dmHashTable<>,53920,53920
-dmParticle,51688,51520
+dmParticle,51880,51712
 MVKGraphicsPipeline,40754,40754
 dmPhysics,40696,40584
 spvtools,39751,39751
-dmRig,37752,37728
 _recff_* (library),36656,36656
+dmRig,35000,34976
 MVKObjectPool<>,34117,34117
 dmResource,31760,31760
 MVKPhysicalDevice,30853,30789
@@ -204,10 +204,10 @@ dmLog,3504,3200
 _socket_* (library),3472,3472
 MVKPresentableSwapchainImage,3447,3447
 _dmMath_* (library),3412,2432
+dmArray<>,3360,3360
 MVKTimelineSemaphoreEmulated,3335,3335
 MVKCmdCopyBuffer<>,3330,3330
 MVKComputePipeline,3317,3317
-dmArray<>,3312,3312
 b2PolygonShape,3312,3312
 MVKQueryPool,3271,3271
 dmResourceArchive,3232,3232
@@ -285,6 +285,7 @@ _s_* (library),2148,2148
 btPersistentManifold,2144,2144
 b2MouseJoint,2128,2128
 MVKOcclusionQueryPool,2128,2128
+[__TEXT],2117,6685
 _decode_* (library),2112,2112
 __glfwCreateWindowCocoa,2080,2080
 _dmInputDDF_* (library),2080,1248
@@ -303,7 +304,6 @@ btTransformUtil,1904,1904
 _dmModelDDF_* (library),1884,1176
 b2BlockAllocator,1880,1224
 _idct_* (library),1872,1872
-[__TEXT],1861,6429
 _mapping_* (library),1824,1824
 __glfwInitCocoa,1808,1808
 _cconv_* (library),1808,1808
@@ -1205,7 +1205,7 @@ _dmResourceDDF_* (library),136,48
 -[MVKBlockObserver initWithBlock:forObject:atKeyPath:],128,128
 MVKInflectionMap<>,128,128
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3656,128,0
+_ComponentTypeGui3657,128,0
 _ComponentTypeLight193,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
