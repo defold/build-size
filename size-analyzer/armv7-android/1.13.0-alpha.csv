@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,628801,136345
 dmGameSystem,411722,553729
-[section .rodata],340406,340406
+[section .rodata],340470,340470
 _mbedtls_* (library),155642,194454
 dmGraphics,145409,201647
 dmGui,111811,145733
@@ -18,7 +18,7 @@ _GLOBAL_* (library),49724,56126
 dmHashTable<>,47832,59597
 (anonymous namespace),45192,104168
 dmParticle,39217,48709
-dmPhysics,36928,54866
+dmPhysics,37360,55298
 dmResource,32348,43995
 dmSound,24809,31668
 dmEngine,21170,25599
@@ -1703,6 +1703,7 @@ package_loaders,20,52
 cp_check,20,45
 _glfwThrd,20,26
 g_Window,20,25
+[LOAD #4 [RW]],20,0
 stbi__compute_huffman_codes(),19,100
 cpfinalize,18,61
 global_create6,16,95
@@ -1987,7 +1988,6 @@ json_array,4,27
 add_count,4,26
 dbl_count,4,26
 mul_count,4,26
-[LOAD #4 [RW]],4,0
 stbi__process_frame_header(),3,71
 g_PendingResizeBecauseOfInsets,1,47
 g_accelerometerEnabled,1,39
@@ -1998,17 +1998,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5671007
-[section .debug_loc],0,3134983
-[section .debug_line],0,2378860
-[section .debug_str],0,1834243
-[section .debug_ranges],0,969744
+[section .debug_info],0,5671666
+[section .debug_loc],0,3135700
+[section .debug_line],0,2379228
+[section .debug_str],0,1834324
+[section .debug_ranges],0,970000
 [section .debug_abbrev],0,444281
-[section .debug_frame],0,283796
+[section .debug_frame],0,283800
 [section .symtab],0,44240
 [section .strtab],0,17781
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,5
+[Unmapped],0,4
