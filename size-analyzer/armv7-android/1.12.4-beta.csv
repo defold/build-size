@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,632211,142811
-dmGameSystem,411827,562001
+dmGameSystem,411939,562113
 [section .rodata],342834,342834
 dmGraphics,147641,209444
 dmGui,116439,152839
@@ -2028,6 +2028,7 @@ meth_shutdown.methods,16,54
 _clone_* (library),16,211
 expr_toval,16,43
 quant_look,16,43
+[LOAD #4 [RW]],16,0
 _row_* (library),13,111
 TextLayoutCreate(),12,120
 ResourceGet(),12,91
@@ -2361,9 +2362,9 @@ gDisableDeactivation,1,37
 g_PendingResize,1,32
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5429133
-[section .debug_loc],0,2957138
-[section .debug_line],0,2296931
+[section .debug_info],0,5429149
+[section .debug_loc],0,2957161
+[section .debug_line],0,2297001
 [section .debug_str],0,1782286
 [section .debug_ranges],0,937976
 [section .debug_abbrev],0,426496
@@ -2374,4 +2375,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,190
 [section .ARM.attributes],0,60
-[Unmapped],0,19
+[Unmapped],0,18

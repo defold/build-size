@@ -1,17 +1,17 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3276800,3260464
-MVK_spirv_cross,1474975,1474831
+[__LINKEDIT],3293184,3276960
+MVK_spirv_cross,1474968,1474824
 dmScript,621748,97336
-basist,361090,347259
-dmGameSystem,355960,354688
+dmGameSystem,370012,368740
+basist,361081,347122
 std,267918,267918
-"_TEXT,_* (library)",266018,266018
+"_TEXT,_* (library)",267572,267572
 _lj_* (library),226653,226653
 _variable_* (library),128058,128058
 dmCrash,112824,8208
 _except_* (library),106148,106148
 (anonymous namespace),101426,101426
-dmGameObject,94360,94336
+dmGameObject,94420,94396
 dmGraphics,93993,93985
 dmGui,93324,92388
 dmRender,90044,89916
@@ -19,11 +19,12 @@ MVKPixelFormats,65654,65630
 _pfb,65544,65544
 __watermarkTextureContent,65536,65536
 MVKInstance,60379,60379
-_GLOBAL_* (library),57796,57796
+_GLOBAL_* (library),57996,57996
 _ZNSt3_* (library),52568,52568
 MVKDevice,52427,52427
+_dm_* (library),42568,42568
 MVKObjectPool<>,34565,34565
-dmPhysics,34332,34332
+dmPhysics,34432,34432
 _recff_* (library),33977,33977
 spvtools,33344,33344
 MVKGraphicsPipeline,30186,30186
@@ -34,13 +35,13 @@ dmResource,26328,26328
 MVKPhysicalDevice,26073,26009
 MVKCommandTypePool<>,25631,25631
 stbi__process_marker(),23960,23960
+dmHashTable<>,21824,21824
 _objc_* (library),21536,21536
 MVKCommandPool,21081,21081
-_DATA_* (library),21008,21008
 dmSound,20636,20484
+_DATA_* (library),20528,20528
 _load_* (library),20168,20168
 _asm_* (library),19661,19661
-dmHashTable<>,19444,19444
 mvk,18974,18854
 _fold_* (library),18954,18954
 dmEngine,17932,17916
@@ -52,12 +53,10 @@ _parse_* (library),16180,16180
 MVKDescriptorTypePool<>,16048,16048
 dmRig,15920,15920
 _KHR_* (library),15340,0
-_lua_* (library),15300,15300
 glsl_entries,14904,14904
 btDiscreteDynamicsWorld,14788,14788
 __glfw,14744,0
-dmLiveUpdate,14680,13584
-_dm_* (library),14444,14444
+dmLiveUpdate,14672,13576
 btSequentialImpulseConstraintSolver,13952,13952
 dmDDF,13128,13064
 MVKCommandEncoder,13080,13080
@@ -76,16 +75,15 @@ dmEasing,10824,10824
 MVKExtensionList,10687,10687
 _OBJC_* (library),10332,10332
 _vorbis_* (library),10252,10252
-_field_* (library),10151,10151
+_field_* (library),10146,10146
 _dmRigDDF_* (library),10036,7328
 MVKDescriptorSetLayoutBinding,9894,9894
 b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
 MVKCmdBlitImage<>,9540,9540
-[__DATA],9512,28
-_luaL_* (library),9468,9468
 _expr_* (library),9424,9424
 gjkepa2_impl,9356,9356
+[__DATA],9272,12
 MVKQueueFullCommandBufferSubmission<>,8835,8835
 MVKGraphicsResourcesCommandEncoderState,8790,8790
 dmHID,8492,8492
@@ -107,7 +105,6 @@ MVKDescriptorSetLayout,6425,6425
 MVKResourcesCommandEncoderState,6410,6410
 dBoxBox2(),6300,6300
 btIDebugDraw,6292,6292
-[__TEXT],6274,10858
 MVKCmdCopyImage<>,6272,6272
 MVKCmdBeginRenderPass<>,6264,6264
 debuginfo_entries,6256,6256
@@ -143,6 +140,7 @@ b2PrismaticJoint,4524,4524
 btRigidBody,4508,4508
 btVoronoiSimplexSolver,4440,4440
 _opt_* (library),4428,4428
+b2Body,4392,4392
 MVKImagePlane,4372,4372
 _meth_* (library),4252,4252
 MVKRenderingCommandEncoderState,4182,4182
@@ -154,7 +152,6 @@ GetGlyphTTF(),4096,4096
 _vwin2048,4096,4096
 dmHttpDDF,4073,4073
 MVKCmdDrawIndirect,4048,4048
-b2Body,4048,4048
 btDbvt,3988,3988
 b2GearJoint,3984,3984
 MVKPipelineLayout,3944,3944
@@ -180,7 +177,7 @@ _parseMapping,3572,3572
 btDbvtBroadphase,3548,3548
 b2Island,3508,3508
 dmSys,3440,3352
-dmResourceProviderZip,3420,3292
+dmResourceProviderZip,3428,3300
 MVKRenderPass,3396,3396
 btCompoundShape,3360,3360
 _dmMath_* (library),3348,2368
@@ -188,11 +185,11 @@ MVKPresentableSwapchainImage,3311,3311
 dmDeviceAVAudio,3268,3268
 _ov_* (library),3212,3212
 dmLog,3176,3176
+[__TEXT],3137,7721
 MVKMTLFunctionNull,3136,0
 _amd_* (library),3128,3128
 b2SeparationFunction,3128,3128
 dmResourceArchive,3108,3108
-_luaopen_* (library),3096,3096
 btConvexPlaneCollisionAlgorithm,3084,3084
 btSimulationIslandManager,3008,3008
 spvExpandOperandSequenceOnce(),3000,3000
@@ -200,10 +197,10 @@ MVKCmdBindDescriptorSetsStatic<>,2997,2997
 b2EPCollider,2960,2960
 b2WheelJoint,2928,2928
 MVKComputePipeline,2925,2925
+b2Fixture,2924,2924
 MVKImageViewPlane,2920,2920
 MVKCmdBindVertexBuffers<>,2916,2916
 MVKQueryPool,2887,2887
-b2Fixture,2880,2880
 MVKShaderModule,2866,2866
 btGjkEpaSolver2,2844,2844
 MVKQueuePresentSurfaceSubmission,2835,2835
@@ -211,8 +208,8 @@ mvk_smallvector_allocator<>,2828,2828
 _dmParticleDDF_* (library),2824,2136
 _fs_* (library),2812,2812
 simple_json,2788,2788
+__MergedGlobals,2776,1600
 MVKTimelineSemaphoreEmulated,2763,2763
-__MergedGlobals,2752,1672
 _strscan_* (library),2744,2744
 MVKQueueCommandBufferSubmission,2742,2742
 MVKBufferView,2737,2737
@@ -319,6 +316,7 @@ __glfwRefreshContextAttribs,1468,1468
 _cff_* (library),1444,1444
 btHashMap<>,1436,1436
 MVKEventEmulated,1431,1431
+b2ChainShape,1428,1428
 _dmLiveUpdateDDF_* (library),1412,984
 MVKCmdPushDescriptorSet,1394,1394
 MVKCmdSetScissor<>,1391,1391
@@ -351,13 +349,12 @@ MVKQueueSubmission,1225,1225
 dmVMath,1200,1200
 MVKTimelineSemaphoreMTLEvent,1199,1199
 b2TimeOfImpact(),1196,1196
-_luaJIT_* (library),1192,1192
 _get_* (library),1188,1188
-btPolyhedralConvexAabbCachingShape,1180,1180
 _glfwWindowHint,1176,1176
 -[GLFWApplicationDelegate applicationWillFinishLaunching:],1172,1172
 _gola_* (library),1172,1172
 b2ContactManager,1172,1172
+btPolyhedralConvexAabbCachingShape,1172,1172
 _ffi_* (library),1172,1172
 _processPerformanceStats,1152,0
 _spvBinaryToText,1148,1148
@@ -506,6 +503,7 @@ _dmHashUpdateBuffer64,596,596
 _str_* (library),596,596
 MVKRenderPipelineCompiler,596,596
 dmConditionVariable,596,596
+_lua_* (library),592,592
 btClosestNotMeConvexResultCallback,592,592
 __glfwPollJoystickCocoa,588,588
 _vkCmdResolveImage,588,588
@@ -609,6 +607,7 @@ MVKCmdSetSampleLocations,403,403
 _vkCmdDrawIndexed,400,400
 _vkCmdPushDescriptorSetKHR,400,400
 _vkCmdSetStencilOp,400,400
+dmHashTable64<>,400,400
 _dmMeshDDF_* (library),400,296
 _loop_* (library),392,392
 _vkCmdDraw,392,392
@@ -679,6 +678,7 @@ _vkCmdEndRenderPass2,340,340
 _vkCmdNextSubpass,340,340
 _vkCmdSetSampleLocationsEXT,340,340
 mvkVkComponentMappingsMatch(),340,340
+_luaopen_* (library),340,340
 MVKCmdDebugMarkerBegin,337,337
 __glfwTerminateJoysticksCocoa,336,336
 _vkCmdSetDepthBias,336,336
@@ -838,7 +838,6 @@ _vkBindImageMemory2,240,240
 _vkDebugMarkerSetObjectNameEXT,240,240
 _vkGetDeviceGroupPeerMemoryFeatures,240,240
 _vkSetDebugUtilsObjectNameEXT,240,240
-dmHashTable64<>,240,240
 dmStrTok(),240,240
 mvkGetEnvVarNumber(),240,240
 mvkMTLTextureTypeFromVkImageViewTypeObj(),240,240
@@ -887,7 +886,6 @@ _vkGetSemaphoreCounterValue,224,224
 _vkInvalidateMappedMemoryRanges,224,224
 _vkSubmitDebugUtilsMessageEXT,224,224
 _vkWaitSemaphores,224,224
-b2ChainShape,224,224
 dmArrayUtil,224,224
 MVKCmdResetQueryPool,223,223
 _buf_* (library),220,220
@@ -1123,6 +1121,7 @@ stbi__get8(),164,164
 MVKCmdBindComputePipeline,164,164
 MVKCmdSetDepthWriteEnable,164,164
 MVKCmdSetStencilReference,164,164
+dmOpaqueHandleContainer<>,164,164
 MVKCmdSetDepthTestEnable,163,163
 MVKCmdSetDepthBounds,163,163
 MVKCmdSetPolygonMode,163,163
@@ -1289,7 +1288,6 @@ _dmHashReverseSafe64Alloc,112,112
 _glfwShowWindow,112,112
 _vkGetPhysicalDeviceMetalFeaturesMVK,112,112
 btAlignedAllocInternal(),112,112
-dmOpaqueHandleContainer<>,112,112
 _package_* (library),112,112
 dmTime,112,112
 _barklook,110,110
@@ -1399,6 +1397,7 @@ __glfwPlatformInitTimer,80,80
 _mvkMTLTessellationPartitionModeFromSpvExecutionMode,80,80
 _mvkMipmapLevels2D,80,80
 dmEngineUpdate(),80,80
+dmHashTable32<>,80,80
 mvkCreateCodec(),80,80
 mvkMTLTessellationPartitionModeFromSpvExecutionModeInObj(),80,80
 MVKBaseDeviceObject,78,78
@@ -1499,6 +1498,7 @@ mvkGetElapsedNanoseconds(),64,64
 spvExtInstTableGet(),64,64
 stbi__jbias,64,64
 btConvexCast,64,64
+_b2_* (library),64,32
 MVKDeviceTrackingMixin,61,61
 +[MVKBlockObserver observerWithBlock:forObject:atKeyPath:],60,60
 -[GLFWApplicationDelegate applicationShouldTerminate:],60,60
@@ -1570,7 +1570,6 @@ _globalMVKConfigStringHolders,48,0
 _mvkMTLBarrierScopeFromVkAccessFlags,48,48
 _mvkMipmapLevelSizeFromBaseSize3D,48,48
 _vkGetMTLTextureMVK,48,48
-_b2_* (library),48,16
 VkPhysicalDeviceImagelessFramebufferFeatures,47,47
 VkPhysicalDevicePortabilitySubsetFeaturesKHR,47,47
 VkPhysicalDeviceShaderAtomicFloatFeaturesEXT,47,47
