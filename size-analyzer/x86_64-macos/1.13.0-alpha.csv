@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3354624,3351392
+[__LINKEDIT],3354624,3351664
 MVK_spirv_cross,1642020,1641876
 dmScript,630356,105744
 dmGameSystem,438352,436656
@@ -9,7 +9,7 @@ _lj_* (library),250928,250928
 "_TEXT,_* (library)",233235,233235
 _variable_* (library),127496,127496
 dmGui,122668,121676
-dmGraphics,115977,114993
+dmGraphics,116201,115217
 dmRender,115440,115096
 dmGameObject,115368,115344
 dmCrash,111652,6004
@@ -42,7 +42,7 @@ MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),24576,24576
 btCollisionWorld,23692,23680
-stbi__process_marker(),23454,23454
+stbi__process_marker(),23470,23470
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,21744,21744
 btDiscreteDynamicsWorld,21472,21472
@@ -182,7 +182,6 @@ b2WeldJoint,4000,4000
 _ra_* (library),3952,3952
 dmResourceProviderArchiveMutable,3936,3808
 dmPlatform,3936,3920
-[__TEXT],3925,8493
 MVKCmdBindDescriptorSetsStatic<>,3861,3861
 dmDeviceAVAudio,3824,3824
 _gc_* (library),3808,3808
@@ -191,6 +190,7 @@ _inet_* (library),3776,3776
 btGjkPairDetector,3736,3736
 b2PulleyJoint,3728,3728
 btCompoundShape,3704,3704
+[__TEXT],3685,8253
 _serialize_* (library),3648,3648
 btSimulationIslandManager,3648,3648
 _ov_* (library),3616,3616
