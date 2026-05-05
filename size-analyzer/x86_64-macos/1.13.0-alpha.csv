@@ -1,15 +1,15 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3354624,3351664
+[__LINKEDIT],3362816,3358952
 MVK_spirv_cross,1642020,1641876
 dmScript,630356,105744
-dmGameSystem,438352,436656
+dmGameSystem,438400,436704
 basist,374800,359936
 std,287331,287331
 _lj_* (library),250928,250928
-"_TEXT,_* (library)",233235,233235
+"_TEXT,_* (library)",233227,233227
 _variable_* (library),127496,127496
-dmGui,122668,121676
-dmGraphics,116201,115217
+dmGui,122844,121852
+dmGraphics,116041,115057
 dmRender,115440,115096
 dmGameObject,115368,115344
 dmCrash,111652,6004
@@ -22,8 +22,8 @@ _pfb,65616,65616
 __watermarkTextureContent,65536,65536
 MVKInstance,62103,62103
 MVKSmallVectorImpl<>,60272,60272
+dmHashTable<>,59776,59776
 MVKDevice,59731,59731
-dmHashTable<>,56912,56912
 dmParticle,51880,51712
 _dm_* (library),47216,47216
 dmPhysics,41784,41672
@@ -42,7 +42,7 @@ MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),24576,24576
 btCollisionWorld,23692,23680
-stbi__process_marker(),23470,23470
+stbi__process_marker(),23560,23560
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,21744,21744
 btDiscreteDynamicsWorld,21472,21472
@@ -65,8 +65,8 @@ _tdefl_* (library),14800,14800
 __glfw,14744,0
 cereal,14710,14710
 _OBJC_* (library),14320,14320
-dmDDF,14184,14120
-dmHttpCache,13850,13850
+dmDDF,14200,14136
+dmHttpCache,13872,13872
 dmObjectPool<>,13824,13824
 _rec_* (library),13760,13760
 MVKCmdBlitImage<>,13168,13168
@@ -134,7 +134,7 @@ _mdct_* (library),5760,5760
 MVKCmdDrawIndirect,5701,5701
 MVKCmdDrawIndexedIndirect,5628,5628
 btVoronoiSimplexSolver,5616,5616
-dmHttpService,5584,5584
+dmHttpService,5616,5616
 _ogg_* (library),5488,5488
 btCompoundCollisionAlgorithm,5448,5448
 b2SeparationFunction,5440,5440
@@ -190,7 +190,6 @@ _inet_* (library),3776,3776
 btGjkPairDetector,3736,3736
 b2PulleyJoint,3728,3728
 btCompoundShape,3704,3704
-[__TEXT],3685,8253
 _serialize_* (library),3648,3648
 btSimulationIslandManager,3648,3648
 _ov_* (library),3616,3616
@@ -519,6 +518,7 @@ _lua_* (library),624,624
 MVKVulkanAPIObject,621,621
 MVKCmdClearColorImage<>,620,620
 btMatrix3x3,616,616
+[__TEXT],605,5173
 -[GLFWContentView flagsChanged:],592,592
 __glfwPollJoystickCocoa,592,592
 _vkCmdBlitImage,592,592

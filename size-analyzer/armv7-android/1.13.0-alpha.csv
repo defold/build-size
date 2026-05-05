@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
 dmScript,628801,136387
-dmGameSystem,426790,573605
-[section .rodata],343942,343942
+dmGameSystem,426814,573645
+[section .rodata],344070,344070
 _mbedtls_* (library),155642,194447
-dmGraphics,145409,201710
-dmGui,111811,145600
+dmGraphics,144961,201230
+dmGui,112008,145906
 dmCrash,110242,10066
 dmGameObject,108912,151232
 dmRender,104097,144068
@@ -13,8 +13,8 @@ _compress_* (library),97083,98466
 std,79033,98091
 _pfb,65536,65561
 [section .rel.dyn],62136,62136
-[section .ARM.exidx],55880,55880
-dmHashTable<>,50992,63712
+[section .ARM.exidx],55872,55872
+dmHashTable<>,53476,66196
 _GLOBAL_* (library),49960,56436
 (anonymous namespace),45192,104168
 dmParticle,39217,48716
@@ -32,7 +32,7 @@ btQuantizedBvh,15796,18310
 btDiscreteDynamicsWorld,15552,20578
 _psa_* (library),15232,19818
 btSequentialImpulseConstraintSolver,15008,18111
-dmDDF,14384,22274
+dmDDF,14396,22286
 dmLiveUpdate,14088,18090
 _internal_* (library),14080,14363
 [section .ARM.extab],13132,13132
@@ -69,9 +69,9 @@ _parse_* (library),6184,6970
 dmConfigFile,6088,7371
 [section .rel.plt],5928,5928
 [section .dynstr],5843,5843
-[section .text],5805,5805
+[section .text],5773,5773
 dmConnectionPool,5648,7251
-dmHttpService,5464,7008
+dmHttpService,5488,7032
 init_gl,5444,5980
 btConvexConvexAlgorithm,5440,7001
 b2ContactSolver,5400,6309
@@ -146,7 +146,7 @@ _packetout,2760,2803
 btOptimizedBvh,2756,4117
 _tdefl_* (library),2755,3170
 dmPlatform,2753,11898
-[section .bss],2718,0
+[section .bss],2717,0
 b2PulleyJoint,2692,3739
 _carith_* (library),2684,3247
 btConvexConcaveCollisionAlgorithm,2680,5048
@@ -334,7 +334,7 @@ floor1_inverse1,892,956
 b2WorldManifold,880,996
 b2EdgeShape,880,1586
 dmHashReverse64Alloc(),870,960
-dmCrypt,868,1146
+dmCrypt,864,1142
 _ThumbV7PILongThunk_* (library),864,6830
 dmHashBuffer64,859,922
 insertleaf(),852,924
@@ -487,13 +487,13 @@ ll_loadfunc,392,452
 dmHashBufferNoReverse64,388,476
 _glfwPlatformSwapBuffers,388,461
 inet_pushresolved,388,454
+[LOAD #1 [R]],388,388
 dmPPrint,388,649
 lex_number,384,443
 ciphersuite_definitions,384,424
 secp256r1_T,384,412
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
-[LOAD #1 [R]],380,380
 _LabelDesc_* (library),379,933
 _auth_* (library),376,488
 JobSystemCreateJob,372,439
@@ -1561,7 +1561,6 @@ package_loaders,20,52
 cp_check,20,45
 _glfwThrd,20,26
 g_Window,20,25
-[LOAD #4 [RW]],20,0
 stbi__compute_huffman_codes(),19,100
 cpfinalize,18,61
 global_create6,16,95
@@ -1846,6 +1845,7 @@ json_array,4,27
 add_count,4,26
 dbl_count,4,26
 mul_count,4,26
+[LOAD #4 [RW]],4,0
 stbi__process_frame_header(),3,71
 g_PendingResizeBecauseOfInsets,1,47
 g_accelerometerEnabled,1,39
@@ -1856,17 +1856,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5714151
-[section .debug_loc],0,3153433
-[section .debug_line],0,2392732
-[section .debug_str],0,1844837
-[section .debug_ranges],0,972528
-[section .debug_abbrev],0,447375
-[section .debug_frame],0,285856
+[section .debug_info],0,5724878
+[section .debug_loc],0,3155717
+[section .debug_line],0,2393000
+[section .debug_str],0,1850819
+[section .debug_ranges],0,972792
+[section .debug_abbrev],0,447642
+[section .debug_frame],0,285872
 [section .symtab],0,44272
 [section .strtab],0,17831
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,16
+[Unmapped],0,18
