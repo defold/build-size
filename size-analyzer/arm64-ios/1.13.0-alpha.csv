@@ -1,43 +1,43 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1818624,1805232
-dmScript,620964,96552
-dmGameSystem,366520,365248
+[__LINKEDIT],1802240,1801352
+dmScript,621000,96588
+dmGameSystem,367296,366024
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",151991,151991
+"_TEXT,_* (library)",151928,151928
 dmCrash,112656,8040
 basist,98300,84473
-dmGameObject,94124,94124
+dmGameObject,93932,93932
 dmGui,91636,90700
-dmRender,89668,89540
-dmGraphics,77721,77697
+dmRender,89632,89504
+dmGraphics,77709,77685
 _pfb,65544,65544
 _dm_* (library),47520,47520
-_GLOBAL_* (library),38944,38944
+_GLOBAL_* (library),38972,38972
 _cp_* (library),34652,34652
 dmPhysics,33544,33544
-_ZNSt3_* (library),32780,32780
+[__TEXT],32540,48820
 dmParticle,30016,30016
-std,28328,28328
 dmResource,26184,26184
-[__TEXT],24981,41261
 _load_* (library),21176,21176
 stbi__process_marker(),20945,20945
 dmHashTable<>,20880,20880
 dmSound,20540,20524
+std,19712,19712
 dmEngine,17664,17664
 btCollisionWorld,16572,16572
 _vwin8192,16388,16388
 _mh_* (library),16384,32
+_ZNSt3_* (library),16116,16116
 dmRig,15692,15692
 _OBJC_* (library),14964,14964
 dmLiveUpdate,14624,13528
 btDiscreteDynamicsWorld,14436,14436
 _lex_* (library),14292,14292
 btSequentialImpulseConstraintSolver,13860,13860
-[__DATA],13312,20
+[__DATA],13216,20
 dmDDF,13104,13040
+dmHttpCache,12318,12318
 _tdefl_* (library),12176,12176
-dmHttpCache,12174,12174
 dmInput,11896,10888
 _dmGameSystemDDF_* (library),11892,8112
 _parse_* (library),11740,11740
@@ -55,18 +55,18 @@ _vwin4096,8192,8192
 _expr_* (library),7996,7996
 dmHttpClient,7988,7972
 _json_* (library),7936,7936
-dmResourceMounts,7812,7812
 _create_* (library),7792,7792
+dmResourceMounts,7792,7792
 btAxisSweep3Internal<>,7040,7040
 dmSoundCodec,6952,6952
 _bcemit_* (library),6724,6724
 _strscan_* (library),6280,6280
-"_DATA,_* (library)",6264,6264
 btIDebugDraw,6256,6256
 _dmPhysicsDDF_* (library),6256,4528
+"_DATA,_* (library)",6248,6248
 _dmGraphics_* (library),6207,4816
 dBoxBox2(),6092,6092
-_objc_* (library),6016,6016
+_objc_* (library),6048,6048
 dmSocket,5976,5976
 _bcwrite_* (library),5968,5968
 _bcread_* (library),5852,5852
@@ -78,14 +78,14 @@ _fs_* (library),5436,5436
 _ccall_* (library),5376,5376
 b2ContactSolver,5376,5376
 dmObjectPool<>,5332,5332
-dmBuffer,5240,5240
 _dmGuiDDF_* (library),5092,3968
 _ogg_* (library),5008,5008
 _io_* (library),4992,4992
+dmBuffer,4936,4936
 dmConnectionPool,4804,4804
 btConvexConvexAlgorithm,4768,4768
-dmHttpService,4752,4752
-_dmGameObjectDDF_* (library),4640,4108
+dmHttpService,4764,4764
+_dmGameObjectDDF_* (library),4640,4020
 b2PrismaticJoint,4524,4524
 _mdct_* (library),4516,4516
 btRigidBody,4516,4516
@@ -94,7 +94,6 @@ _opt_* (library),4428,4428
 b2Body,4392,4392
 btVoronoiSimplexSolver,4288,4288
 _meth_* (library),4220,4220
-dmSys,4184,4096
 btMinkowskiPenetrationDepthSolver,4180,4180
 btDbvt,4164,4164
 _do_* (library),4136,4136
@@ -119,6 +118,7 @@ dmPlatform,3548,3556
 b2Island,3508,3508
 dmResourceProviderZip,3452,3324
 dmDeviceAVAudio,3452,3452
+dmSys,3452,3364
 dmLog,3432,3432
 _callback_* (library),3384,3384
 _dmMath_* (library),3348,2368
@@ -153,7 +153,7 @@ _prepend_* (library),2316,2316
 b2PolygonShape,2280,2280
 dmSSLSocket,2256,2256
 _zip_* (library),2244,2244
-_g_* (library),2234,116
+_g_* (library),2234,108
 stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192
 _jpeg_* (library),2171,2171
@@ -184,11 +184,11 @@ b2Distance(),1808,1808
 btConvexTriangleCallback,1804,1804
 _mapping_* (library),1804,1804
 btContinuousConvexCollision,1784,1784
+__MergedGlobals,1768,1768
 b2BlockAllocator,1764,1116
 btConvexShape,1736,1736
 btAlignedObjectArray<>,1704,1704
 basisu,1701,1701
-__MergedGlobals,1696,1696
 btCompoundLeafCallback,1692,1692
 _global_* (library),1648,1648
 b2Simplex,1640,1640
@@ -232,6 +232,7 @@ _ffh_* (library),1120,1120
 btPolyhedralConvexAabbCachingShape,1120,1120
 _dmGamesysDDF_* (library),1116,736
 btManifoldResult,1108,1108
+_dec64table,1104,1104
 _str_* (library),1080,1080
 btSphereSphereCollisionAlgorithm,1080,1080
 _hash_* (library),1056,1056
@@ -245,14 +246,15 @@ _crc_* (library),1024,1024
 _vwin512,1024,1024
 btSphereTriangleCollisionAlgorithm,1024,1024
 _OUTLINED_* (library),1016,1016
+dmMutex,1008,1008
 _compute_* (library),992,992
 btBoxBoxCollisionAlgorithm,992,992
 btCollisionShape,988,988
 _lib_* (library),984,984
 Layout<>(),960,960
 _idct_* (library),956,956
+dmSysPosix,956,956
 dmImage,952,952
-dmMutex,948,948
 _glfwDisable,944,944
 dmResourceProviderFile,944,816
 btGjkConvexCast,940,940
@@ -270,7 +272,6 @@ _dmPropertiesDDF_* (library),844,672
 __glfwInput,832,0
 btSphereShape,816,816
 _dmStructDDF_* (library),812,560
-_dec64table,784,784
 _finderrfunc,784,784
 btTriangleRaycastCallback,768,768
 b2Joint,756,756
@@ -307,18 +308,20 @@ dmCrypt,668,668
 _propagatemark,656,656
 dmThread,656,656
 b2CircleShape,656,656
+dmFileDescriptor,656,656
 _close_* (library),652,652
+dmTransform,648,648
 _dmBufferDDF_* (library),648,480
 _newtab,644,644
 b2CollidePolygonAndCircle(),636,636
 _zbuild_* (library),628,628
+dmConditionVariable,624,624
 b2CollideEdgeAndCircle(),620,620
 b2PositionSolverManifold,612,612
 btClosestNotMeConvexResultCallback,612,612
 _dmHashBuffer32,608,608
 btMatrix3x3,604,604
 _dmHashUpdateBuffer64,596,596
-dmConditionVariable,596,596
 _lua_* (library),592,592
 _fscope_* (library),592,592
 _mmap_* (library),588,588
@@ -326,7 +329,6 @@ _dmHashUpdateBuffer32,580,580
 b2StackAllocator,580,580
 btTriangleConvexcastCallback,572,572
 btUnionFind,568,568
-dmFileDescriptor,564,564
 btBoxBoxDetector,548,548
 _match_* (library),544,544
 b2Mat33,544,544
@@ -347,19 +349,18 @@ b2GridAndPolygonContact,496,496
 _de_* (library),492,492
 b2GridAndCircleContact,492,492
 _JobSystemCreate,488,488
+_b2Vec2_* (library),488,488
 _dict_* (library),484,484
 PutDone(),476,476
 _dmSoundDDF_* (library),472,360
 _const_* (library),464,464
 b2ChainAndPolygonContact,464,464
 b2ChainAndCircleContact,460,460
-_b2Vec2_* (library),448,448
 _build_* (library),448,448
 _grow_* (library),448,448
 dmZip,448,448
 _resizestack,444,444
 _luaopen_* (library),444,444
-dmTransform,436,436
 _dmHashBuffer64,432,432
 _newproxy_* (library),432,432
 ResourceChunkCacheEvictMemory(),428,428
