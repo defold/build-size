@@ -63,6 +63,8 @@ def build_editor_urls(sha1, channel, filename):
             f"http://d.defold.com/archive/{sha1}/editor-alpha/editor2/{filename}",
         ]
     return [
+        f"http://d.defold.com/archive/stable/{sha1}/stable/editor2/{filename}",
+        f"http://d.defold.com/archive/{sha1}/stable/editor2/{filename}",
         f"http://d.defold.com/archive/{sha1}/editor-alpha/editor2/{filename}",
     ]
 
