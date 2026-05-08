@@ -1,15 +1,15 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3358720,3355840
+[__LINKEDIT],3358720,3356336
 MVK_spirv_cross,1642020,1641876
 dmScript,630404,105792
 dmGameSystem,439360,437648
 basist,374800,359936
 std,277555,277555
 _lj_* (library),250912,250912
-"_TEXT,_* (library)",233342,233342
+"_TEXT,_* (library)",233350,233350
 _variable_* (library),127496,127496
 dmGui,122844,121852
-dmGraphics,116025,115041
+dmGraphics,117001,116017
 dmRender,115016,114584
 dmGameObject,114904,114880
 dmCrash,111652,6004
@@ -42,7 +42,7 @@ MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),24576,24576
 btCollisionWorld,23692,23680
-stbi__process_marker(),23560,23560
+stbi__process_marker(),23656,23656
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,21744,21744
 btDiscreteDynamicsWorld,21472,21472
@@ -336,7 +336,6 @@ getGlobalMVKConfig(),1440,1440
 MVKWatermarkRandom,1422,1422
 _dmLiveUpdateDDF_* (library),1420,992
 MVKTimelineSemaphoreMTLEvent,1415,1415
-[__TEXT],1402,5970
 btBvhTriangleMeshShape,1392,1392
 _dmSystemDDF_* (library),1392,608
 btGjkConvexCast,1384,1384
@@ -707,6 +706,7 @@ _vkCmdSetDepthBias,336,336
 stbtt_GetGlyphBox(),336,336
 _luaopen_* (library),336,336
 b2Timer,336,336
+[__TEXT],322,4890
 _ConfigFileGetFloat,320,320
 _book_* (library),320,320
 __glfwGetWindowFrameSizeCocoa,320,320
