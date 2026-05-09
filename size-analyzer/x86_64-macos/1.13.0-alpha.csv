@@ -1,15 +1,15 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3358720,3356336
+[__LINKEDIT],3358720,3358128
 MVK_spirv_cross,1642020,1641876
-dmScript,630404,105792
+dmScript,632852,108240
 dmGameSystem,439360,437648
 basist,374800,359936
 std,277555,277555
 _lj_* (library),250912,250912
-"_TEXT,_* (library)",233350,233350
+"_TEXT,_* (library)",234230,234230
 _variable_* (library),127496,127496
 dmGui,122844,121852
-dmGraphics,117001,116017
+dmGraphics,118121,117137
 dmRender,115016,114584
 dmGameObject,114904,114880
 dmCrash,111652,6004
@@ -42,7 +42,7 @@ MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),24576,24576
 btCollisionWorld,23692,23680
-stbi__process_marker(),23656,23656
+stbi__process_marker(),23624,23624
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,21744,21744
 btDiscreteDynamicsWorld,21472,21472
@@ -76,7 +76,7 @@ _dmGameSystemDDF_* (library),11972,8192
 _EXT_* (library),11960,0
 MVKExtensionList,11619,11619
 MVKGraphicsResourcesCommandEncoderState,11554,11554
-_DATA_* (library),11528,11528
+_DATA_* (library),11400,11400
 b2World,11072,11072
 dmEasing,10856,10856
 _vorbis_* (library),10736,10736
@@ -706,7 +706,6 @@ _vkCmdSetDepthBias,336,336
 stbtt_GetGlyphBox(),336,336
 _luaopen_* (library),336,336
 b2Timer,336,336
-[__TEXT],322,4890
 _ConfigFileGetFloat,320,320
 _book_* (library),320,320
 __glfwGetWindowFrameSizeCocoa,320,320
@@ -1201,6 +1200,7 @@ _MLOOP_* (library),144,144
 BroadphaseAabbTester,136,136
 BroadphaseRayTester,136,136
 _dmResourceDDF_* (library),136,48
+[__TEXT],130,4698
 -[MVKBlockObserver initWithBlock:forObject:atKeyPath:],128,128
 MVKInflectionMap<>,128,128
 _ComponentTypeAnim64,128,0

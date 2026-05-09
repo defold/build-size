@@ -1,22 +1,22 @@
 symbol_group_name,vmsize,filesize
-dmScript,628837,136402
+dmScript,631357,139167
 dmGameSystem,427790,574973
-[section .rodata],344262,344262
+[section .rodata],344982,344982
 _mbedtls_* (library),155642,194447
-dmGraphics,144941,201103
+dmGraphics,145577,201947
 dmGui,112008,145990
 dmCrash,110242,10066
 dmGameObject,109072,151462
 dmRender,104185,144602
-basist,99664,99133
+basist,99664,99203
 _compress_* (library),97083,98459
 _pfb,65536,65561
-[section .rel.dyn],62152,62152
+[section .rel.dyn],62256,62256
 std,60485,76815
-[section .ARM.exidx],55840,55840
+[section .ARM.exidx],55880,55880
 dmHashTable<>,53476,66171
-_GLOBAL_* (library),50000,56462
-(anonymous namespace),45192,104168
+_GLOBAL_* (library),50000,56455
+(anonymous namespace),45192,104133
 dmParticle,39217,48716
 dmPhysics,37456,55396
 dmResource,32348,44015
@@ -69,7 +69,7 @@ dmConfigFile,6088,7371
 [section .rel.plt],5928,5928
 dmSys,5886,7996
 [section .dynstr],5843,5843
-[section .text],5765,5765
+[section .text],5797,5797
 dmConnectionPool,5648,7251
 dmHttpService,5508,7052
 init_gl,5444,5980
@@ -146,7 +146,7 @@ _packetout,2760,2803
 btOptimizedBvh,2756,4117
 _tdefl_* (library),2755,3170
 dmPlatform,2753,11898
-[section .bss],2737,0
+[section .bss],2733,0
 b2PulleyJoint,2692,3739
 _carith_* (library),2684,3247
 btConvexConcaveCollisionAlgorithm,2680,5048
@@ -229,10 +229,10 @@ _ct_* (library),1520,1791
 dmVMath,1504,1710
 btTriangleShape,1492,2931
 dmHashFinal32,1478,1540
+[section .data.rel.ro],1472,1472
 glfwOpenWindow,1448,1511
 b2TimeOfImpact(),1444,1635
 _cff_* (library),1444,1699
-[section .data.rel.ro],1432,1432
 dmResourceProvider,1412,3145
 _fetch_* (library),1400,1505
 _cdata_* (library),1394,1765
@@ -1521,6 +1521,7 @@ _ZTSPDi,28,52
 _ZTSPDn,28,52
 _ZTSPDs,28,52
 _ZTSPDu,28,52
+[LOAD #4 [RW]],28,0
 gerrno,27,46
 _tls12_* (library),26,125
 _ZTSDh,26,49
@@ -1646,7 +1647,6 @@ writer_buf,12,55
 _atexit_* (library),12,53
 b2_version,12,39
 g_SoundManager,12,31
-[LOAD #4 [RW]],12,0
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
 [LOAD #2 [RX]],11,11
@@ -1857,17 +1857,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5696158
-[section .debug_loc],0,3139405
-[section .debug_line],0,2381835
-[section .debug_str],0,1847354
-[section .debug_ranges],0,969872
-[section .debug_abbrev],0,447679
-[section .debug_frame],0,285796
+[section .debug_info],0,5698823
+[section .debug_loc],0,3140993
+[section .debug_line],0,2383062
+[section .debug_str],0,1848812
+[section .debug_ranges],0,969928
+[section .debug_abbrev],0,447914
+[section .debug_frame],0,285956
 [section .symtab],0,44288
 [section .strtab],0,17858
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,14
+[Unmapped],0,8
