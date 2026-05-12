@@ -1,14 +1,14 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1818624,1802688
+[__LINKEDIT],1802240,1787176
 dmScript,623284,98872
-dmGameSystem,367296,366024
+dmGameSystem,367216,365944
 _lj_* (library),204580,204580
-"_TEXT,_* (library)",152799,152799
+"_TEXT,_* (library)",148167,148167
 dmCrash,112656,8040
 basist,98300,84473
-dmGameObject,93932,93932
+dmGameObject,93996,93996
 dmGui,91636,90700
-dmRender,89632,89504
+dmRender,89624,89496
 dmGraphics,78501,78477
 _pfb,65544,65544
 _dm_* (library),47520,47520
@@ -16,26 +16,25 @@ _GLOBAL_* (library),38968,38968
 _cp_* (library),34652,34652
 dmPhysics,33544,33544
 dmParticle,30016,30016
-[__TEXT],28870,45150
-dmResource,26184,26184
+dmResource,24176,24176
+[__TEXT],21970,38250
 _load_* (library),21176,21176
 dmHashTable<>,20880,20880
 stbi__process_marker(),20792,20792
 dmSound,20540,20524
 std,19712,19712
-dmEngine,17664,17664
+dmEngine,17600,17600
 btCollisionWorld,16572,16572
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 _ZNSt3_* (library),16116,16116
 dmRig,15692,15692
 _OBJC_* (library),14964,14964
-dmLiveUpdate,14624,13528
+[__DATA],14512,20
 btDiscreteDynamicsWorld,14436,14436
 _lex_* (library),14292,14292
 btSequentialImpulseConstraintSolver,13860,13860
-dmDDF,13104,13040
-[__DATA],13096,28
+dmDDF,12772,12708
 dmHttpCache,12318,12318
 _tdefl_* (library),12176,12176
 dmInput,11896,10888
@@ -56,14 +55,13 @@ _expr_* (library),7996,7996
 dmHttpClient,7988,7972
 _json_* (library),7936,7936
 _create_* (library),7792,7792
-dmResourceMounts,7792,7792
 btAxisSweep3Internal<>,7040,7040
 dmSoundCodec,6952,6952
 _bcemit_* (library),6724,6724
 _strscan_* (library),6280,6280
 btIDebugDraw,6256,6256
 _dmPhysicsDDF_* (library),6256,4528
-"_DATA,_* (library)",6248,6248
+"_DATA,_* (library)",6240,6240
 _dmGraphics_* (library),6207,4816
 dBoxBox2(),6092,6092
 _objc_* (library),6048,6048
@@ -85,7 +83,7 @@ dmBuffer,4936,4936
 dmConnectionPool,4804,4804
 btConvexConvexAlgorithm,4768,4768
 dmHttpService,4764,4764
-_dmGameObjectDDF_* (library),4640,3896
+_dmGameObjectDDF_* (library),4640,4124
 b2PrismaticJoint,4524,4524
 _mdct_* (library),4516,4516
 btRigidBody,4516,4516
@@ -93,6 +91,7 @@ _cconv_* (library),4472,4472
 _opt_* (library),4428,4428
 b2Body,4392,4392
 btVoronoiSimplexSolver,4288,4288
+dmLiveUpdate,4268,4228
 _meth_* (library),4220,4220
 btMinkowskiPenetrationDepthSolver,4180,4180
 btDbvt,4164,4164
@@ -105,6 +104,7 @@ dmHttpDDF,4036,4036
 _tmalloc_* (library),3984,3984
 b2GearJoint,3984,3984
 _process_* (library),3852,3852
+dmResourceMounts,3848,3848
 dmMessage,3764,3748
 btDbvtBroadphase,3708,3708
 b2GridShape,3700,3700
@@ -112,11 +112,10 @@ _inet_* (library),3684,3684
 b2RevoluteJoint,3656,3656
 btCompoundCollisionAlgorithm,3648,3648
 _socket_* (library),3636,3636
-dmResourceProviderArchiveMutable,3596,3468
 _run_* (library),3592,3592
 dmPlatform,3548,3556
 b2Island,3508,3508
-dmResourceProviderZip,3452,3324
+dmResourceProviderZip,3460,3332
 dmDeviceAVAudio,3452,3452
 dmSys,3452,3364
 dmLog,3432,3432
@@ -126,7 +125,6 @@ btCompoundShape,3348,3348
 _ctype_* (library),3264,3264
 _ov_* (library),3172,3172
 b2SeparationFunction,3128,3128
-dmResourceArchive,3108,3108
 _debug_* (library),3088,3088
 btConvexPlaneCollisionAlgorithm,3036,3036
 btSimulationIslandManager,2972,2972
@@ -152,8 +150,7 @@ __packetout,2376,2376
 _prepend_* (library),2316,2316
 b2PolygonShape,2280,2280
 dmSSLSocket,2256,2256
-_zip_* (library),2244,2244
-_g_* (library),2234,104
+_g_* (library),2234,116
 stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192
 _jpeg_* (library),2171,2171
@@ -162,6 +159,7 @@ _LZ4_* (library),2164,2164
 SphereTriangleDetector,2164,2164
 b2Contact,2132,1528
 _s_* (library),2128,2128
+_zip_* (library),2128,2128
 _dmInputDDF_* (library),2080,1248
 btCollisionDispatcher,2072,2072
 dmArray<>,2060,2060
@@ -213,17 +211,18 @@ btTransformUtil,1340,1340
 btConvexInternalShape,1312,1312
 _auxiliar_* (library),1308,1308
 _glfwOpenWindow,1296,1296
-dmResourceProvider,1296,1296
 dmBlockAllocator,1292,1292
 btBvhTriangleMeshShape,1288,1288
 _fetch_* (library),1272,1272
 btPolyhedralConvexShape,1244,1244
 b2CollidePolygons(),1240,1240
 b2BroadPhase,1240,1240
+dmResourceArchive,1232,1232
 dmZlib,1212,1212
 b2TimeOfImpact(),1196,1196
 dmVMath,1188,1188
 _get_* (library),1188,1188
+dmResourceProvider,1180,1180
 b2ContactManager,1172,1172
 _ll_* (library),1164,1164
 _JobSystemUpdate,1144,1144
@@ -304,7 +303,7 @@ insertleaf(),680,680
 _tab_* (library),676,676
 b2WorldManifold,676,676
 _profile_* (library),672,672
-dmCrypt,668,668
+dmCrypt,664,664
 _propagatemark,656,656
 dmThread,656,656
 b2CircleShape,656,656
@@ -358,7 +357,6 @@ b2ChainAndPolygonContact,464,464
 b2ChainAndCircleContact,460,460
 _build_* (library),448,448
 _grow_* (library),448,448
-dmZip,448,448
 _resizestack,444,444
 _luaopen_* (library),444,444
 _dmHashBuffer64,432,432
@@ -367,6 +365,7 @@ ResourceChunkCacheEvictMemory(),428,428
 _matchbracketclass,428,428
 CancelJobInternal(),424,424
 _collect_* (library),420,420
+dmZip,420,420
 -[BaseView fillTouch:forPhase:],416,416
 _zdist_* (library),416,416
 dmPPrint,412,412
@@ -540,11 +539,11 @@ stbi__get8(),164,164
 btSingleSweepCallback,164,164
 dmOpaqueHandleContainer<>,164,164
 JobContext,160,160
-_dmExportedSymbols,160,160
 _getfd,160,160
 dmEngineGetResult(),160,160
 _malloc_* (library),160,160
 +[VulkanView createView:recreate:],156,156
+_dmExportedSymbols,156,156
 _findfile,156,156
 btSingleRayCallback,156,156
 -[AppDelegateProxy respondsToSelector:],152,152
@@ -561,7 +560,6 @@ _setintfield,148,148
 __glfwPlatformSetWindowBackgroundColor,144,144
 _getthread,144,144
 _glfwInit,144,144
-dmResourceProviderArchivePrivate,144,144
 -[AppDelegateProxy methodSignatureForSelector:],140,140
 -[BaseView positionFromPosition:offset:],140,140
 -[BaseView unmarkText],140,140
@@ -587,7 +585,7 @@ _ComponentTypeLight193,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,128
 _ComponentTypeSound574,128,0
-_LiveUpdateExt1011,128,0
+_LiveUpdateExt294,128,0
 _ResourceTypeAnim35,128,128
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,128
@@ -806,7 +804,6 @@ _JobSystemUpdate.cold.5,40,40
 _LogGLError,40,40
 _LogInternal.cold.1,40,40
 _ResourceProviderArchive,40,40
-_ResourceProviderArchiveMutable,40,40
 _ResourceProviderFile,40,40
 _ResourceProviderZip,40,40
 _ResourceTypeFont,40,40
