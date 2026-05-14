@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
 dmScript,631357,139083
-dmGameSystem,459333,614481
+dmGameSystem,459285,614471
 [section .rodata],342938,342938
 _mbedtls_* (library),155642,194447
-dmGraphics,145577,201947
+dmGraphics,145573,201943
 dmGui,112008,145990
 dmCrash,110242,10066
 dmGameObject,109392,151789
@@ -14,11 +14,11 @@ _pfb,65536,65561
 [section .rel.dyn],63192,63192
 std,60485,76815
 [section .ARM.exidx],56056,56056
-dmHashTable<>,53904,66766
+dmHashTable<>,53904,66773
 _GLOBAL_* (library),50188,56775
 (anonymous namespace),45192,104133
 dmParticle,39217,48716
-dmPhysics,37456,55402
+dmPhysics,37456,55396
 dmResource,30108,40721
 dmSound,24809,31668
 dmEngine,20978,25452
@@ -66,7 +66,7 @@ _parse_* (library),6184,6970
 dmConfigFile,6088,7371
 [section .rel.plt],5928,5928
 dmSys,5886,7996
-[section .text],5869,5869
+[section .text],5857,5857
 [section .dynstr],5843,5843
 dmConnectionPool,5648,7251
 dmHttpService,5508,7052
@@ -94,7 +94,7 @@ _append_* (library),4252,4703
 _alloc_* (library),4242,4574
 dmDeviceOpenSL,4180,5243
 _ctype_* (library),4136,5074
-dmArray<>,4112,6198
+dmArray<>,4112,6191
 sincos_lookup0,4104,4135
 sincos_lookup1,4096,4127
 vwin2048,4096,4121
@@ -1857,12 +1857,12 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5711690
-[section .debug_loc],0,3162126
-[section .debug_line],0,2389712
-[section .debug_str],0,1844945
-[section .debug_ranges],0,974872
-[section .debug_abbrev],0,446300
+[section .debug_info],0,5711684
+[section .debug_loc],0,3162115
+[section .debug_line],0,2389693
+[section .debug_str],0,1845086
+[section .debug_ranges],0,974768
+[section .debug_abbrev],0,446275
 [section .debug_frame],0,287276
 [section .symtab],0,44224
 [section .strtab],0,17772
