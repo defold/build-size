@@ -1,39 +1,39 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1818624,1809096
-dmScript,623284,98872
-dmGameSystem,394684,393412
-_lj_* (library),204428,204428
+[__LINKEDIT],1818624,1809592
+dmScript,623276,98864
+dmGameSystem,394568,393296
+_lj_* (library),204432,204432
 "_TEXT,_* (library)",146000,146000
-dmCrash,112656,7992
+dmCrash,112656,7976
 basist,98557,83699
 dmGameObject,94356,94332
 dmGui,91632,90696
-dmRender,89624,89496
+dmRender,89632,89504
 dmGraphics,78501,77540
 dmHID,74659,74659
 _pfb,65544,65544
 _dm_* (library),47520,47520
-_GLOBAL_* (library),38876,38876
+_GLOBAL_* (library),38888,38888
 _cp_* (library),34652,34652
 dmPhysics,33520,33520
 dmParticle,30016,30016
-[__TEXT],25978,42258
 dmResource,24176,24176
 dmHashTable<>,21624,21624
 _load_* (library),21176,21176
 stbi__process_marker(),20787,20787
 dmSound,20540,20388
 std,19712,19712
+[__TEXT],17786,34066
 dmEngine,17532,17516
-btCollisionWorld,16572,16572
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 _ZNSt3_* (library),16116,16116
 dmRig,15692,15692
 _OBJC_* (library),14964,14964
-btDiscreteDynamicsWorld,14436,14436
+btCollisionWorld,14936,14936
 _lex_* (library),14292,14292
-btSequentialImpulseConstraintSolver,13860,13860
+btSequentialImpulseConstraintSolver,13840,13840
+btDiscreteDynamicsWorld,13768,13768
 dmDDF,12772,12708
 dmHttpCache,12310,12310
 _tdefl_* (library),12176,12176
@@ -43,11 +43,11 @@ _parse_* (library),11740,11740
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
 _dmRigDDF_* (library),10036,7328
-[__DATA],9792,28
+gjkepa2_impl,9908,9908
 _serialize_* (library),9780,9780
+[__DATA],9776,28
 b2World,9564,9564
 _dmRenderDDF_* (library),9556,7112
-gjkepa2_impl,9044,9044
 "_DATA,_* (library)",8240,8240
 _gc_* (library),8228,8228
 _sincos_* (library),8200,8200
@@ -64,7 +64,6 @@ _strscan_* (library),6280,6280
 btIDebugDraw,6256,6256
 _dmPhysicsDDF_* (library),6256,4528
 _dmGraphics_* (library),6207,4816
-dBoxBox2(),6092,6092
 dmSocket,5976,5976
 _bcwrite_* (library),5968,5968
 _bcread_* (library),5852,5852
@@ -80,70 +79,69 @@ _dmGuiDDF_* (library),5092,3968
 _ogg_* (library),5008,5008
 _io_* (library),4992,4992
 dmBuffer,4936,4936
+dBoxBox2(),4848,4848
 dmConnectionPool,4804,4804
-btConvexConvexAlgorithm,4768,4768
 dmHttpService,4764,4764
 _dmGameObjectDDF_* (library),4640,3056
 b2PrismaticJoint,4536,4536
 _mdct_* (library),4516,4516
-btRigidBody,4516,4516
+btConvexConvexAlgorithm,4488,4488
 _cconv_* (library),4472,4472
 _opt_* (library),4428,4428
+btRigidBody,4396,4396
 b2Body,4392,4392
-btVoronoiSimplexSolver,4288,4288
+btVoronoiSimplexSolver,4360,4360
 dmLiveUpdate,4268,4228
 _meth_* (library),4220,4220
-btMinkowskiPenetrationDepthSolver,4180,4180
-btDbvt,4164,4164
 _do_* (library),4136,4136
 _vwin2048,4096,4096
 b2GearJoint,4088,4088
 GetGlyphTTF(),4084,4084
-btHashedOverlappingPairCache,4084,4084
 _ffi_* (library),4080,4080
 dmHttpDDF,4036,4036
+btHashedOverlappingPairCache,4032,4032
 _tmalloc_* (library),3984,3984
 _process_* (library),3852,3852
 dmResourceMounts,3848,3848
 dmMessage,3764,3748
-btDbvtBroadphase,3708,3708
-b2GridShape,3700,3700
-_inet_* (library),3684,3684
+btDbvt,3716,3716
+b2GridShape,3684,3684
+_inet_* (library),3676,3676
 b2RevoluteJoint,3668,3668
-btCompoundCollisionAlgorithm,3648,3648
+btMinkowskiPenetrationDepthSolver,3664,3664
 _socket_* (library),3636,3636
+btCompoundShape,3632,3632
+btDbvtBroadphase,3616,3616
 _run_* (library),3592,3592
 b2Island,3508,3508
 dmDeviceAVAudio,3452,3452
 dmSys,3452,3364
 dmLog,3432,3432
 dmResourceProviderZip,3428,3300
+btCompoundCollisionAlgorithm,3412,3412
 _callback_* (library),3384,3384
 _dmMath_* (library),3348,2368
-btCompoundShape,3348,3348
 _ctype_* (library),3264,3264
 _ov_* (library),3172,3172
 b2SeparationFunction,3128,3128
 _debug_* (library),3088,3088
 dmPlatform,3052,3044
-btConvexPlaneCollisionAlgorithm,3036,3036
-btSimulationIslandManager,2972,2972
 b2EPCollider,2960,2960
 b2WheelJoint,2940,2940
 b2Fixture,2924,2924
 _dmParticleDDF_* (library),2824,2136
-btConvexConcaveCollisionAlgorithm,2752,2752
+btConvexPlaneCollisionAlgorithm,2784,2784
+btSimulationIslandManager,2780,2780
 _nd_* (library),2724,2724
-btGjkEpaSolver2,2704,2704
-btGjkPairDetector,2696,2696
+btConvexConcaveCollisionAlgorithm,2648,2648
 _res_* (library),2636,2636
 b2PulleyJoint,2632,2632
 b2WeldJoint,2612,2612
+btGjkPairDetector,2556,2556
 _floor1_* (library),2556,2556
 _make_* (library),2492,2492
-btBoxShape,2464,2464
-btCapsuleShape,2440,2440
-btQuantizedBvh,2408,2408
+btQuantizedBvh,2444,2444
+btBoxShape,2404,2404
 _add_* (library),2388,2388
 FontLoadFromMemoryTTF(),2384,2384
 __packetout,2376,2376
@@ -154,26 +152,26 @@ _g_* (library),2234,8
 stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192
 _jpeg_* (library),2171,2171
-btConvexHullShape,2168,2168
 _LZ4_* (library),2164,2164
-SphereTriangleDetector,2164,2164
 b2Contact,2132,1528
 _s_* (library),2128,2128
 _zip_* (library),2128,2128
 _dmInputDDF_* (library),2080,1248
-btCollisionDispatcher,2072,2072
 dmArray<>,2060,2060
 b2RopeJoint,2056,2056
 _char2escape,2048,2048
 _vwin1024,2048,2048
+btConvexHullShape,2040,2040
 _clib_* (library),2028,2028
+btCollisionDispatcher,2016,2016
+SphereTriangleDetector,2004,2004
 _buffer_* (library),1984,1984
+btCapsuleShape,1972,1972
 _decode_* (library),1968,1968
 _gola_* (library),1940,1940
-btSubsimplexConvexCast,1916,1916
 _err_* (library),1908,1908
-btDefaultCollisionConfiguration,1884,1884
 _dmModelDDF_* (library),1868,1160
+btDefaultCollisionConfiguration,1864,1864
 dmResourceProviderArchive,1852,1724
 _release_* (library),1840,1840
 ReverseHashContainer,1840,1840
@@ -181,42 +179,43 @@ dmLoadQueue,1824,1824
 b2FrictionJoint,1816,1816
 __MergedGlobals,1808,1600
 b2Distance(),1808,1808
-btConvexTriangleCallback,1804,1804
 _mapping_* (library),1804,1804
-btContinuousConvexCollision,1784,1784
 b2BlockAllocator,1764,1116
-btConvexShape,1736,1736
-btAlignedObjectArray<>,1704,1704
+btSubsimplexConvexCast,1740,1740
 basisu,1701,1701
-btCompoundLeafCallback,1692,1692
+btConvexShape,1696,1696
 b2MouseJoint,1680,1680
+btGjkEpaSolver2,1668,1668
 _global_* (library),1648,1648
 b2Simplex,1640,1640
-btPersistentManifold,1628,1628
 _dmHttpDDF_* (library),1620,1256
-btTriangleShape,1604,1604
+btCompoundLeafCallback,1608,1608
+btContinuousConvexCollision,1596,1596
+btConvexTriangleCallback,1576,1576
 _jmp_* (library),1572,1572
 _var_* (library),1564,1564
-_strfmt_* (library),1536,1536
+btPersistentManifold,1548,1548
 _resample_* (library),1536,1536
+_strfmt_* (library),1532,1532
 _match,1516,1516
+btTriangleShape,1492,1492
 dmIntersection,1476,1476
 _alloc_* (library),1472,1472
 _cff_* (library),1444,1444
-btHashMap<>,1432,1432
 b2ChainShape,1428,1428
+btAlignedObjectArray<>,1416,1416
 _dmLiveUpdateDDF_* (library),1412,984
 _dmSystemDDF_* (library),1384,600
+btHashMap<>,1380,1380
 _dmHIDAppleGamepadDefaultMappings,1352,1352
-btTransformUtil,1340,1340
-btConvexInternalShape,1312,1312
 _auxiliar_* (library),1308,1308
 _glfwOpenWindow,1296,1296
 dmBlockAllocator,1292,1292
-btBvhTriangleMeshShape,1288,1288
 _fetch_* (library),1272,1272
-btPolyhedralConvexShape,1244,1244
+btBvhTriangleMeshShape,1264,1264
+btPolyhedralConvexShape,1252,1252
 b2CollidePolygons(),1240,1240
+btConvexInternalShape,1240,1240
 b2BroadPhase,1240,1240
 dmResourceArchive,1232,1232
 dmZlib,1212,1212
@@ -226,60 +225,61 @@ _get_* (library),1188,1188
 dmResourceProvider,1180,1180
 b2ContactManager,1172,1172
 _ll_* (library),1164,1164
+btTransformUtil,1148,1148
 _JobSystemUpdate,1144,1144
 _oggpack_* (library),1132,1132
+btPolyhedralConvexAabbCachingShape,1124,1124
 _ffh_* (library),1120,1120
-btPolyhedralConvexAabbCachingShape,1120,1120
 _dmGamesysDDF_* (library),1116,736
-btManifoldResult,1108,1108
 _dec64table,1104,1104
 _str_* (library),1080,1080
-btSphereSphereCollisionAlgorithm,1080,1080
+btManifoldResult,1076,1076
+btSphereSphereCollisionAlgorithm,1076,1076
+cullPoints2(),1056,1056
 _hash_* (library),1056,1056
 dmExtension,1052,1052
-btPerturbedContactResult,1044,1044
+btCollisionObject,1032,1032
 _INVSQ_* (library),1032,1032
 _auxsort,1028,1028
-btCollisionObject,1028,1028
 _FLOOR_* (library),1024,1024
 _crc_* (library),1024,1024
 _vwin512,1024,1024
-btSphereTriangleCollisionAlgorithm,1024,1024
 _OUTLINED_* (library),1024,1024
 dmMutex,1008,1008
+btSphereTriangleCollisionAlgorithm,1004,1004
 _compute_* (library),992,992
-btBoxBoxCollisionAlgorithm,992,992
-btCollisionShape,988,988
 _lib_* (library),984,984
+btBoxBoxCollisionAlgorithm,972,972
 Layout<>(),960,960
 _idct_* (library),956,956
 dmSysPosix,956,956
 dmImage,952,952
 _glfwDisable,944,944
 dmResourceProviderFile,944,816
-btGjkConvexCast,940,940
 _oggbyte_* (library),928,928
 _timeout_* (library),924,924
+btCollisionShape,916,916
 dmPath,896,896
 _cpparser,892,892
-DebugDrawcallback,888,888
 TextLayoutLegacyCreate(),880,880
+btGjkConvexCast,876,876
 _csctx_* (library),876,876
 _LogInternal,868,868
 _floor0_* (library),868,868
 _tcp_* (library),864,864
 _dmPropertiesDDF_* (library),844,672
 __glfwInput,832,0
-btSphereShape,816,816
+DebugDrawcallback,828,828
+btPerturbedContactResult,812,812
 _dmStructDDF_* (library),812,560
 __initializeAvailabilityCheck,800,800
 b2Joint,792,792
+btSphereShape,792,792
 _finderrfunc,784,784
-btTriangleRaycastCallback,768,768
 _jit_* (library),752,752
 _fpconv_* (library),752,752
+CProfileManager,744,672
 _index2adr,732,732
-CProfileManager,728,656
 _priority,720,720
 GetGlyphIndexTTF(),716,716
 b2EdgeShape,716,716
@@ -287,25 +287,25 @@ _predict_* (library),712,712
 _func_* (library),712,712
 _udp_* (library),712,712
 _dmLuaDDF_* (library),712,528
-cullPoints2(),708,708
 dmURI,704,704
 SelectAndPopJob(),700,700
+insertleaf(),700,700
 _direct_* (library),700,700
 _reader_* (library),696,696
 _tremolo_* (library),692,692
+btTriangleRaycastCallback,692,692
 Vectormath,692,692
 _assign_* (library),692,692
-btGhostObject,692,692
 _dmHashFinal64,688,688
 _copy_* (library),688,688
 _strbuf_* (library),688,688
 _dmHashFinal32,680,680
 _hashkey,680,680
-insertleaf(),680,680
 _tab_* (library),676,676
 b2WorldManifold,676,676
 _profile_* (library),672,672
 dmCrypt,664,664
+btGhostObject,664,664
 _propagatemark,656,656
 dmThread,656,656
 b2CircleShape,656,656
@@ -319,17 +319,18 @@ _zbuild_* (library),628,628
 dmConditionVariable,624,624
 b2CollideEdgeAndCircle(),620,620
 b2PositionSolverManifold,612,612
-btClosestNotMeConvexResultCallback,612,612
 _dmHashBuffer32,608,608
 btMatrix3x3,604,604
 _dmHashUpdateBuffer64,596,596
+intersectRectQuad2(),596,596
 _lua_* (library),592,592
 _fscope_* (library),592,592
 _mmap_* (library),588,588
 _dmHashUpdateBuffer32,580,580
 b2StackAllocator,580,580
-btTriangleConvexcastCallback,572,572
 btUnionFind,568,568
+btTriangleConvexcastCallback,560,560
+btClosestNotMeConvexResultCallback,556,556
 btBoxBoxDetector,548,548
 _match_* (library),544,544
 b2Mat33,544,544
@@ -382,14 +383,13 @@ _mmcall,396,396
 _JobSystemDestroy,392,392
 ___isPlatformVersionAtLeast,392,392
 _glfwGetTouch,392,392
-btNullPairCache,392,392
+btNullPairCache,388,388
 _func,384,384
 _JobSystemPushJob,376,376
 _cpluaopen,376,376
 _rehashtab,376,376
 _countarray,368,368
 -[BaseView fillTouchStart:],364,364
-btConeTwistConstraint,364,364
 ResourceChunkCacheEvictPathHash(),360,360
 _classend,360,360
 _matchbalance,360,360
@@ -427,9 +427,9 @@ _ConfigFileGetFloat,308,308
 stbi__get16be(),308,308
 SetContext(),304,304
 _CONTEXT_* (library),304,304
+btConeTwistConstraint,300,300
 jc,300,300
 FontLoadFromMemory(),296,296
-btGjkEpaPenetrationDepthSolver,296,296
 _ShutdownEngine,292,292
 _bestasize,292,292
 _callhook,292,292
@@ -446,6 +446,7 @@ _random_* (library),272,272
 _tokennames,272,272
 GBGetGlyph(),268,268
 _dmHashBufferNoReverse64,268,268
+btGjkEpaPenetrationDepthSolver,268,268
 _bit_* (library),264,264
 _bcreg_* (library),264,264
 __glfwShowKeyboard,260,260
@@ -495,7 +496,6 @@ b2ClipSegmentToLine(),208,208
 _hookf,204,204
 _singlematch,204,204
 _sort_* (library),204,204
-applyAnisotropicFriction(),204,204
 b2WorldRayCastWrapper,204,204
 btAxisSweep3,204,204
 _min_* (library),200,200
@@ -534,23 +534,24 @@ ResourceChunkCacheDestroy(),168,168
 _end_* (library),168,168
 _glfwAppBootstrap,168,168
 _mksymname,168,168
+btSingleSweepCallback,168,168
 +[AppDelegateProxy application:willFinishLaunchingWithOptions:],164,164
 _has_* (library),164,164
 _segment_* (library),164,164
 dmStrlCat(),164,164
 stbi__get8(),164,164
-btSingleSweepCallback,164,164
 dmOpaqueHandleContainer<>,164,164
 JobContext,160,160
 _getfd,160,160
 dmEngineGetResult(),160,160
 dmHashTable32<>,160,160
+btSingleRayCallback,160,160
 _malloc_* (library),160,160
 +[VulkanView createView:recreate:],156,156
 _dmExportedSymbols,156,156
 _findfile,156,156
+dLineClosestApproach(),156,156
 _ZN5dmHIDL16InstallObserversEPNS_* (library),156,156
-btSingleRayCallback,156,156
 -[AppDelegateProxy respondsToSelector:],152,152
 _capture_* (library),152,152
 _emptybuffer,152,152
@@ -628,10 +629,10 @@ TextLayoutAcquire(),124,124
 _libsize,124,124
 _treatstackoption,124,124
 _depth_* (library),124,124
+CProfileNode,124,124
 -[ViewController viewDidLoad],120,120
 _glfwRegisterUIApplicationDelegate,120,120
 engine_main(),120,120
-CProfileNode,120,120
 -[BaseView deleteBackward],116,116
 -[BaseView textInRange:],116,116
 -[BaseView touchStart:withTouch:],116,116
@@ -680,7 +681,6 @@ __glfwPlatformGetProcAddress,88,88
 _glfwAccelerometerEnable,88,88
 _mad3sizes_* (library),88,88
 b2ContactListener,88,88
-btCollisionAlgorithm,88,88
 btCollisionPairCallback,88,88
 dmRenderDDF,88,88
 _bitrev,86,86
@@ -692,6 +692,7 @@ _glfwSetWindowSize,84,84
 _glfwUnregisterUIApplicationDelegate,84,84
 dmLZ4,84,84
 dmSnPrintf(),84,84
+btCollisionAlgorithm,84,84
 dmDoubleLinkedList,84,84
 -[BaseView endOfDocument],80,80
 -[ViewController dealloc],80,80
