@@ -1,29 +1,29 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3293184,3287024
+[__LINKEDIT],3260416,3257088
 MVK_spirv_cross,1475225,1475081
-dmScript,624060,99648
+dmScript,624056,99648
 dmGameSystem,398164,396892
-basist,315624,300762
+basist,315618,300762
 "_TEXT,_* (library)",269114,269114
 std,259286,259286
 _lj_* (library),226501,226501
 _variable_* (library),128058,128058
-dmCrash,112824,8208
+dmCrash,112816,6144
 _except_* (library),106148,106148
 (anonymous namespace),101426,101426
-dmGraphics,95605,94708
-dmGameObject,94688,94664
-dmGui,93568,92632
+dmGraphics,95605,94628
+dmGameObject,94696,94664
+dmGui,93568,92624
 dmRender,90008,89880
 dmHID,76901,76901
 MVKPixelFormats,65654,65630
 _pfb,65544,65544
 __watermarkTextureContent,65536,65536
 MVKInstance,60379,60379
-_GLOBAL_* (library),57920,57920
 MVKDevice,52427,52427
 _dm_* (library),42568,42568
 _ZNSt3_* (library),35904,35904
+_GLOBAL_* (library),35568,35568
 MVKObjectPool<>,34565,34565
 dmPhysics,34408,34408
 _recff_* (library),33977,33977
@@ -59,32 +59,33 @@ __glfw,14744,0
 btSequentialImpulseConstraintSolver,13872,13872
 btDiscreteDynamicsWorld,13768,13768
 MVKCommandEncoder,13080,13080
-dmDDF,12800,12736
+[__TEXT],13045,17741
+dmDDF,12824,12760
 _rec_* (library),12780,12780
 _tdefl_* (library),12712,12712
 MVKImage,12674,12674
 MVKDescriptorPool,12526,12526
-dmInput,12484,11476
+dmInput,12472,11468
 MVKCmdBufferImageCopy<>,12465,12465
 dmHttpCache,12148,12148
 _EXT_* (library),11960,0
-_dmGameSystemDDF_* (library),11892,8112
 "_DATA,_* (library)",11816,11816
+_dmGameSystemDDF_* (library),11504,11064
 MVKRenderSubpass,11247,11247
 dmEasing,10824,10824
 MVKExtensionList,10687,10687
 _OBJC_* (library),10332,10332
+[__DATA],10296,20
 _vorbis_* (library),10252,10252
-_dmRigDDF_* (library),10036,7328
 gjkepa2_impl,9900,9900
 MVKDescriptorSetLayoutBinding,9894,9894
+_dmRigDDF_* (library),9752,9560
 b2World,9564,9564
-_dmRenderDDF_* (library),9556,7112
 MVKCmdBlitImage<>,9540,9540
 _expr_* (library),9424,9424
+_dmRenderDDF_* (library),9332,8840
 MVKQueueFullCommandBufferSubmission<>,8835,8835
 MVKGraphicsResourcesCommandEncoderState,8790,8790
-[__DATA],8544,20
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
 _shader_* (library),8096,8096
@@ -95,7 +96,6 @@ _crec_* (library),7772,7772
 _clspvreflection_* (library),7544,7544
 MVKCommandResourceFactory,7308,7308
 MVKCmdResolveImage<>,7142,7142
-[__TEXT],7101,11797
 btAxisSweep3Internal<>,7080,7080
 dmSoundCodec,6984,6952
 _debuginfo_* (library),6808,6808
@@ -105,9 +105,9 @@ btIDebugDraw,6292,6292
 MVKCmdCopyImage<>,6272,6272
 MVKCmdBeginRenderPass<>,6264,6264
 debuginfo_entries,6256,6256
-_dmPhysicsDDF_* (library),6256,4528
-_dmGraphics_* (library),6207,4816
 MVKSwapchain,6119,6119
+_dmPhysicsDDF_* (library),6080,6040
+_dmGraphics_* (library),6071,5968
 _lex_* (library),6068,6068
 dmSocket,5956,5956
 MVKDeviceMemory,5797,5797
@@ -121,20 +121,20 @@ b2ContactSolver,5376,5376
 MVKPipelineCache,5348,5348
 dmObjectPool<>,5332,5332
 MVKCmdClearAttachments<>,5142,5142
-_dmGuiDDF_* (library),5092,3968
 MVKDescriptorSet,5059,5059
 _ogg_* (library),5008,5008
+_dmGuiDDF_* (library),4976,4760
 dmBuffer,4952,4952
 MVKCmdPipelineBarrier<>,4903,4903
 dBoxBox2(),4848,4848
 dmConnectionPool,4804,4804
 _mh_* (library),4800,32
 dmHttpService,4780,4780
-_dmGameObjectDDF_* (library),4640,3056
 _mdct_* (library),4580,4580
 MVKShaderLibrary,4571,4571
 b2PrismaticJoint,4536,4536
 btConvexConvexAlgorithm,4488,4488
+_dmGameObjectDDF_* (library),4452,4352
 _opt_* (library),4428,4428
 btRigidBody,4396,4396
 b2Body,4392,4392
@@ -177,9 +177,9 @@ b2Island,3508,3508
 btCompoundCollisionAlgorithm,3412,3412
 MVKRenderPass,3396,3396
 dmResourceProviderZip,3396,3268
-_dmMath_* (library),3348,2368
 MVKPresentableSwapchainImage,3311,3311
 dmDeviceAVAudio,3268,3268
+_dmMath_* (library),3256,3016
 _ov_* (library),3212,3212
 dmLog,3176,3176
 dmPlatform,3172,3156
@@ -195,17 +195,17 @@ b2Fixture,2924,2924
 MVKImageViewPlane,2920,2920
 MVKCmdBindVertexBuffers<>,2916,2916
 _field_* (library),2914,2914
-__MergedGlobals,2888,1600
+__MergedGlobals,2888,1464
 MVKQueryPool,2887,2887
 MVKShaderModule,2866,2866
 MVKQueuePresentSurfaceSubmission,2835,2835
 mvk_smallvector_allocator<>,2828,2828
-_dmParticleDDF_* (library),2824,2136
 _fs_* (library),2812,2812
 simple_json,2788,2788
 btConvexPlaneCollisionAlgorithm,2784,2784
 btSimulationIslandManager,2780,2780
 MVKTimelineSemaphoreEmulated,2763,2763
+_dmParticleDDF_* (library),2752,2640
 _strscan_* (library),2744,2744
 MVKQueueCommandBufferSubmission,2742,2742
 MVKBufferView,2737,2737
@@ -247,7 +247,6 @@ b2Contact,2132,1528
 _zip_* (library),2128,2128
 _s_* (library),2120,2120
 MVKSampler,2105,2105
-_dmInputDDF_* (library),2080,1248
 dmArray<>,2060,2060
 b2RopeJoint,2056,2056
 btConvexHullShape,2052,2052
@@ -256,6 +255,8 @@ _vwin1024,2048,2048
 _decode_* (library),2048,2048
 btCollisionDispatcher,2016,2016
 SphereTriangleDetector,2004,2004
+_dmInputDDF_* (library),1996,1968
+_Register_* (library),1984,1976
 btCapsuleShape,1972,1972
 ReverseHashContainer,1948,1948
 MVKFramebuffer,1917,1917
@@ -264,7 +265,6 @@ _mapping_* (library),1892,1892
 _cconv_* (library),1888,1888
 MVKImageDescriptor,1869,1869
 dmResourceProviderArchive,1868,1740
-_dmModelDDF_* (library),1868,1160
 btDefaultCollisionConfiguration,1864,1864
 b2Distance(),1848,1848
 _bcemit_* (library),1844,1844
@@ -275,6 +275,7 @@ _buffer_* (library),1816,1816
 b2FrictionJoint,1816,1816
 MVKDepthStencilCommandEncoderState,1809,1809
 b2BlockAllocator,1788,1140
+_dmModelDDF_* (library),1788,1736
 mvkCmdBeginRenderPass(),1760,1760
 MVKMTLBufferAllocationPool,1749,1749
 MVKCmdExecuteCommands<>,1741,1741
@@ -291,19 +292,18 @@ _emit_* (library),1660,1660
 MVKCmdWaitEvents<>,1658,1658
 _global_* (library),1648,1648
 b2Simplex,1640,1640
-_dmHttpDDF_* (library),1620,1256
 btCompoundLeafCallback,1608,1608
 __glfwInitEGL,1596,1596
 btContinuousConvexCollision,1596,1596
 _resample_* (library),1584,1584
 btConvexTriangleCallback,1576,1576
 MVKCmdBindDescriptorSetsDynamic<>,1576,1576
+_dmHttpDDF_* (library),1572,1544
 MVKSurface,1569,1569
 btPersistentManifold,1548,1548
 __glfwCreateWindowCocoa,1544,1544
 _cpcparser,1524,1524
 MVKRenderingAttachmentIterator,1505,1505
-_g_* (library),1498,8
 __glfwInitCocoa,1496,1496
 btTriangleShape,1492,1492
 _glfwSetInputMode,1484,1484
@@ -314,13 +314,12 @@ _cff_* (library),1444,1444
 MVKEventEmulated,1431,1431
 b2ChainShape,1428,1428
 btAlignedObjectArray<>,1416,1416
-_dmLiveUpdateDDF_* (library),1412,984
 MVKCmdPushDescriptorSet,1394,1394
 MVKCmdSetScissor<>,1391,1391
 MVKTexelBufferDescriptor,1391,1391
-_dmSystemDDF_* (library),1384,600
 _narrow_* (library),1380,1380
 btHashMap<>,1380,1380
+_dmLiveUpdateDDF_* (library),1368,1344
 MVKBufferDescriptor,1362,1362
 __glfwDefaultMappings,1352,1352
 _dmHIDAppleGamepadDefaultMappings,1352,1352
@@ -334,6 +333,7 @@ _AMD_* (library),1300,0
 getGlobalMVKConfig(),1296,1296
 dmBlockAllocator,1292,1292
 _matchCallback,1280,1280
+_dmSystemDDF_* (library),1276,1248
 MVKBaseObject,1274,1274
 btBvhTriangleMeshShape,1264,1264
 btPolyhedralConvexShape,1264,1264
@@ -363,13 +363,13 @@ _JobSystemUpdate,1144,1144
 _oggpack_* (library),1132,1132
 btPolyhedralConvexAabbCachingShape,1132,1132
 MVKWatermarkRandom,1117,1117
-_dmGamesysDDF_* (library),1116,736
 _debug_* (library),1108,1108
 MVKFence,1101,1101
 MVKDescriptorUpdateTemplate,1090,1090
 _dec64table,1080,1080
 btManifoldResult,1076,1076
 btSphereSphereCollisionAlgorithm,1076,1076
+_dmGamesysDDF_* (library),1064,1024
 dmExtension,1052,1052
 mvkVkResultName(),1048,1048
 __glfwCreateContextNSGL,1040,1040
@@ -414,14 +414,13 @@ btGjkConvexCast,876,876
 _csctx_* (library),876,876
 _floor0_* (library),868,868
 _tcp_* (library),864,864
-_dmPropertiesDDF_* (library),844,672
 _fwd_* (library),840,840
 mvkUpdateDescriptorSets(),840,840
 _unaccessed_* (library),832,832
 DebugDrawcallback,828,828
+_dmPropertiesDDF_* (library),824,816
 _LogInternal,820,820
 btPerturbedContactResult,812,812
-_dmStructDDF_* (library),812,560
 _propagatemark,808,808
 _vkCmdCopyBufferToImage2,808,808
 _vkCmdCopyImageToBuffer2,808,808
@@ -433,6 +432,7 @@ MVKSemaphoreImpl,791,791
 MVKQueueFamily,789,789
 _vkCmdBindVertexBuffers2,788,788
 _vkCmdPipelineBarrier,784,784
+_dmStructDDF_* (library),784,776
 _MVK_* (library),780,0
 __glfwInputError,776,776
 mvkAdjustFormatVectorToSize(),772,772
@@ -453,7 +453,6 @@ b2EdgeShape,716,716
 _findValidMapping,712,712
 _tremolo_* (library),712,712
 _udp_* (library),712,712
-_dmLuaDDF_* (library),712,528
 _copy_* (library),708,708
 dmURI,704,704
 _vk_* (library),704,704
@@ -464,6 +463,7 @@ btTriangleRaycastCallback,692,692
 Vectormath,692,692
 _dmHashFinal64,688,688
 _ll_* (library),688,688
+_dmLuaDDF_* (library),688,672
 _strbuf_* (library),688,688
 MVKGPUCounterQueryPool,681,681
 _dmHashFinal32,680,680
@@ -480,13 +480,13 @@ b2CircleShape,656,656
 dmFileDescriptor,656,656
 _removeCallback,652,652
 dmTransform,648,648
-_dmBufferDDF_* (library),648,480
 MVKPeerSwapchainImage,648,648
 b2CollidePolygonAndCircle(),636,636
 MVKMTLDeviceCapabilities,632,632
 _ZNKSt3_* (library),632,632
 _vkCmdPipelineBarrier2,628,628
 _zbuild_* (library),628,628
+_dmBufferDDF_* (library),628,624
 _vkCmdWaitEvents,624,624
 MVKSwapchainImage,624,624
 dmConditionVariable,624,624
@@ -568,11 +568,11 @@ kMVKMTLStencilDescriptorDataDefault,480,0
 MVKSamplerDescriptor,479,479
 _glfwCreateWindow,476,476
 __glfwAllocJoystick,472,472
-_dmSoundDDF_* (library),472,360
 PutDone(),468,468
 _cpluaopen,468,468
 _glfwExtensionSupported,468,468
 b2ChainAndPolygonContact,464,464
+_dmSoundDDF_* (library),460,432
 b2ChainAndCircleContact,460,460
 __glfwCreateWindowSurfaceCocoa,456,456
 _vkCmdBindPipeline,452,452
@@ -612,7 +612,6 @@ _vkCmdDrawIndexed,400,400
 _vkCmdPushDescriptorSetKHR,400,400
 _vkCmdSetStencilOp,400,400
 dmHashTable64<>,400,400
-_dmMeshDDF_* (library),400,296
 _loop_* (library),392,392
 _vkCmdDraw,392,392
 _vkCmdDrawIndexedIndirect,392,392
@@ -625,6 +624,7 @@ MVKTraceVulkanCallStartImpl(),388,388
 _JobSystemSetParent,388,388
 __glfwChooseVideoMode,388,388
 _vkCmdDispatch,388,388
+_dmMeshDDF_* (library),388,368
 btNullPairCache,388,388
 _JobSystemDestroy,384,384
 __glfwSetCursorPosCocoa,384,384
@@ -937,7 +937,6 @@ _vkGetPhysicalDeviceQueueFamilyProperties,216,216
 _vkGetPhysicalDeviceQueueFamilyProperties2,216,216
 _vkResetQueryPool,216,216
 dmEngineCreate(),216,216
-_dmEngineDDF_* (library),216,48
 _ConfigFileGetString,212,212
 _ExtensionRegister,212,212
 _book_* (library),212,212
@@ -1021,6 +1020,7 @@ _vkUnmapMemory2KHR,192,192
 _1_* (library),192,192
 MVKCmdDebugMarker,192,192
 _destroy_* (library),192,192
+_dmEngineDDF_* (library),192,192
 -[GLFWWindowDelegate windowDidDeminiaturize:],188,188
 _finalize,188,188
 _swapBuffersNSGL,188,188
@@ -1177,7 +1177,6 @@ _argv2cdata,136,136
 _sink_* (library),136,136
 dmEngineInitialize(),136,136
 spvExtInstTableValueLookup(),136,136
-_dmResourceDDF_* (library),136,48
 __glfwDestroyWindowNull,132,132
 _destroyContextEGL,132,132
 _direct_* (library),132,132
@@ -1240,6 +1239,7 @@ rmtp_Sound(),128,128
 rmtp_Sprite(),128,128
 rmtp_Tilemap(),128,128
 spvBinaryEndianness(),128,128
+_dmResourceDDF_* (library),128,120
 dmPhysicsDDF,128,128
 GBGetGlyphIndex(),124,124
 TextLayoutAcquire(),124,124
@@ -1742,6 +1742,7 @@ mvkIsColorAttachmentUsed(),24,24
 spvOpcodeSplit(),24,24
 _ZN15MVKCmdBlitImageILm1EE6encodeEP17MVKCommandEncoder13MVKCommandUse_* (library),24,24
 _ZN15MVKCmdBlitImageILm4EE6encodeEP17MVKCommandEncoder13MVKCommandUse_* (library),24,24
+_g_* (library),24,8
 dmGamesysDDF,24,24
 -[CAMetalLayer(MoltenVK) colorspaceNameMVK],20,20
 -[GLFWContentView isOpaque],20,20
