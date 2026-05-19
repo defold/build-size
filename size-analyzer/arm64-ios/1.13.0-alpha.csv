@@ -1,30 +1,30 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1785856,1779912
-dmScript,623272,98864
-dmGameSystem,394568,393296
+[__LINKEDIT],1802240,1787552
+dmScript,623976,99568
+dmGameSystem,404704,403080
 _lj_* (library),204432,204432
-"_TEXT,_* (library)",146000,146000
+"_TEXT,_* (library)",147621,147621
 dmCrash,112648,5976
 basist,98555,83699
 dmGameObject,94364,94332
 dmGui,91632,90648
-dmRender,89632,89504
-dmGraphics,78501,77540
+dmRender,89980,89852
+dmGraphics,78565,77604
 dmHID,74659,74659
 _pfb,65544,65544
 _dm_* (library),47520,47520
 _cp_* (library),34652,34652
 dmPhysics,33520,33520
 dmParticle,30016,30016
+[__TEXT],27666,43946
 dmResource,24176,24176
-[__TEXT],23746,40026
 dmHashTable<>,21624,21624
 _load_* (library),21176,21176
-stbi__process_marker(),20787,20787
+stbi__process_marker(),20746,20746
 dmSound,20540,20388
 std,19712,19712
 dmEngine,17532,17516
-_GLOBAL_* (library),16520,16520
+_GLOBAL_* (library),16604,16604
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 _ZNSt3_* (library),16116,16116
@@ -39,8 +39,8 @@ dmHttpCache,12310,12310
 _tdefl_* (library),12176,12176
 dmInput,12036,11032
 _parse_* (library),11740,11740
-[__DATA],11520,28
 _dmGameSystemDDF_* (library),11504,11064
+[__DATA],10896,12
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
 gjkepa2_impl,9908,9908
@@ -48,7 +48,7 @@ _serialize_* (library),9780,9780
 _dmRigDDF_* (library),9752,9560
 b2World,9564,9564
 _dmRenderDDF_* (library),9332,8840
-"_DATA,_* (library)",8240,8240
+"_DATA,_* (library)",8256,8256
 _gc_* (library),8228,8228
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
@@ -103,7 +103,7 @@ btHashedOverlappingPairCache,4032,4032
 _tmalloc_* (library),3984,3984
 _process_* (library),3852,3852
 dmResourceMounts,3848,3848
-dmMessage,3764,3748
+dmMessage,3764,3732
 btDbvt,3716,3716
 b2GridShape,3684,3684
 _inet_* (library),3676,3676
@@ -116,7 +116,7 @@ _run_* (library),3592,3592
 b2Island,3508,3508
 dmDeviceAVAudio,3452,3452
 dmSys,3452,3348
-dmLog,3432,3432
+dmLog,3432,3192
 dmResourceProviderZip,3428,3300
 btCompoundCollisionAlgorithm,3412,3412
 _callback_* (library),3384,3384
@@ -427,13 +427,13 @@ dmPoolAllocator,312,312
 _ConfigFileGetFloat,308,308
 stbi__get16be(),308,308
 SetContext(),304,304
-_CONTEXT_* (library),304,304
 btConeTwistConstraint,300,300
 jc,300,300
 FontLoadFromMemory(),296,296
 _ShutdownEngine,292,292
 _bestasize,292,292
 _callhook,292,292
+_CONTEXT_* (library),292,292
 _JobSystemCreateJob,288,288
 _adjuststack,288,288
 _dmHashRelease64,288,288
@@ -537,6 +537,7 @@ _glfwAppBootstrap,168,168
 _mksymname,168,168
 btSingleSweepCallback,168,168
 +[AppDelegateProxy application:willFinishLaunchingWithOptions:],164,164
+_dmExportedSymbols,164,164
 _has_* (library),164,164
 _segment_* (library),164,164
 dmStrlCat(),164,164
@@ -549,7 +550,6 @@ dmHashTable32<>,160,160
 btSingleRayCallback,160,160
 _malloc_* (library),160,160
 +[VulkanView createView:recreate:],156,156
-_dmExportedSymbols,156,156
 _findfile,156,156
 dLineClosestApproach(),156,156
 _ZN5dmHIDL16InstallObserversEPNS_* (library),156,156
@@ -702,9 +702,11 @@ _CrashExt,80,80
 _ExtensionAppParamsFinalize,80,80
 _ExtensionParamsFinalize,80,80
 _ScriptBox2DExt,80,80
+_ScriptComputeExt,80,80
 _ScriptFont,80,80
 _ScriptHttp,80,80
 _ScriptImageExt,80,80
+_ScriptMaterialExt,80,80
 _ScriptModelExt,80,80
 _ScriptTypesExt,80,80
 dmEngineUpdate(),80,80

@@ -1,17 +1,17 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3338240,3337720
+[__LINKEDIT],3346432,3345888
 MVK_spirv_cross,1642277,1642133
-dmScript,632848,108240
-dmGameSystem,468744,466648
+dmScript,633632,109024
+dmGameSystem,478568,476120
 basist,329344,314480
 std,277555,277555
 _lj_* (library),250880,250880
-"_TEXT,_* (library)",234604,234604
+"_TEXT,_* (library)",236316,236316
 _variable_* (library),127496,127496
 dmGui,122844,121852
-dmGraphics,118201,117209
+dmGraphics,118569,117577
+dmRender,115400,114968
 dmGameObject,115368,115336
-dmRender,115032,114600
 dmCrash,111652,6004
 (anonymous namespace),104708,104700
 MVKPixelFormats,101738,101714
@@ -26,7 +26,7 @@ MVKDevice,59731,59731
 dmParticle,51880,51712
 _dm_* (library),47216,47216
 _ZNSt3_* (library),45632,45632
-_GLOBAL_* (library),42832,42832
+_GLOBAL_* (library),42928,42928
 dmPhysics,41736,41624
 MVKGraphicsPipeline,40754,40754
 spvtools,39751,39751
@@ -42,7 +42,7 @@ dmSound,26312,26064
 MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),24576,24576
-stbi__process_marker(),23642,23642
+stbi__process_marker(),23594,23594
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,22240,22240
 dmEngine,20944,20928
@@ -82,8 +82,8 @@ _vorbis_* (library),10736,10736
 MVKCmdResolveImage<>,10438,10438
 MVKQueueFullCommandBufferSubmission<>,10420,10420
 "_DATA,_* (library)",10352,10352
-_DATA_* (library),10248,10248
 _dmRigDDF_* (library),10060,9872
+_DATA_* (library),9992,9992
 _expr_* (library),9760,9760
 _dmRenderDDF_* (library),9476,8984
 _crec_* (library),9328,9328
@@ -222,7 +222,6 @@ b2Fixture,2912,2912
 MVKTimestampQueryPool,2912,2912
 b2RopeJoint,2912,2912
 MVKWatermark,2911,2911
-[__DATA],2908,8
 SphereTriangleDetector,2904,2904
 btQuantizedBvh,2896,2896
 _glfwSetInputMode,2880,2880
@@ -240,6 +239,7 @@ dmIntersection,2624,2624
 MVKCmdBeginRendering<>,2612,2612
 MVKBufferView,2599,2599
 __glfwCreateContextEGL,2560,2560
+[__DATA],2556,8
 b2FrictionJoint,2544,2544
 _LZ4_* (library),2512,2512
 btConvexHullShape,2512,2512
@@ -633,7 +633,6 @@ jc,400,400
 removeleaf(),400,400
 _zdist_* (library),400,400
 dmZip,400,400
-[__TEXT],398,5078
 _CONTEXT_* (library),392,384
 b2CircleContact,392,392
 b2EdgeAndCircleContact,392,392
@@ -910,6 +909,7 @@ __glfwFocusWindowNull,208,208
 __glfwGetWindowContentScaleCocoa,208,208
 __glfwRestoreVideoModeCocoa,208,208
 __glfwSetWindowSizeLimitsCocoa,208,208
+_dmExportedSymbols,208,208
 _glfwCreateWindowSurface,208,208
 _index2adr,208,208
 _makeContextCurrentEGL,208,208
@@ -957,7 +957,6 @@ MVKCmdResetEvent,195,195
 _ConfigFileGetString,192,192
 _ZN17MVKCommandEncoder13finishQueriesEv_* (library),192,192
 __glfwPollEventsCocoa,192,192
-_dmExportedSymbols,192,192
 _getfd,192,192
 _glfwWindowHintString,192,192
 _vkAcquireNextImageKHR,192,192
@@ -1408,9 +1407,11 @@ _ExtensionParamsFinalize,80,80
 _ExtensionParamsInitialize,80,80
 _LiveUpdateExt,80,80
 _ScriptBox2DExt,80,80
+_ScriptComputeExt,80,80
 _ScriptFont,80,80
 _ScriptHttp,80,80
 _ScriptImageExt,80,80
+_ScriptMaterialExt,80,80
 _ScriptModelExt,80,80
 _ScriptTypesExt,80,80
 _WindowCreateParamsInitialize,80,80
@@ -2059,6 +2060,7 @@ dmEngineDDF,16,16
 dmGuiDDF,16,16
 dmLiveUpdateDDF,16,16
 dmModelDDF,16,16
+[__TEXT],14,4694
 JobSystemUpdate,8,0
 _AvailabilityVersionCheck,8,0
 _CompatibilityDispatchOnceCounter,8,0

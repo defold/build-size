@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3260416,3257088
+[__LINKEDIT],3276800,3264800
 MVK_spirv_cross,1475225,1475081
-dmScript,624056,99648
-dmGameSystem,398164,396892
-basist,315618,300762
-"_TEXT,_* (library)",269114,269114
+dmScript,624760,100352
+dmGameSystem,408296,406672
+basist,315610,300754
+"_TEXT,_* (library)",270735,270735
 std,259286,259286
 _lj_* (library),226501,226501
 _variable_* (library),128058,128058
 dmCrash,112816,6144
 _except_* (library),106148,106148
 (anonymous namespace),101426,101426
-dmGraphics,95605,94628
+dmGraphics,95649,94672
 dmGameObject,94696,94664
 dmGui,93568,92624
-dmRender,90008,89880
+dmRender,90356,90228
 dmHID,76901,76901
 MVKPixelFormats,65654,65630
 _pfb,65544,65544
@@ -23,7 +23,7 @@ MVKInstance,60379,60379
 MVKDevice,52427,52427
 _dm_* (library),42568,42568
 _ZNSt3_* (library),35904,35904
-_GLOBAL_* (library),35568,35568
+_GLOBAL_* (library),35656,35656
 MVKObjectPool<>,34565,34565
 dmPhysics,34408,34408
 _recff_* (library),33977,33977
@@ -35,14 +35,14 @@ MVKSmallVectorImpl<>,28620,28620
 MVKPhysicalDevice,26073,26009
 MVKCommandTypePool<>,25631,25631
 dmResource,24256,24256
-stbi__process_marker(),24135,24135
+stbi__process_marker(),24094,24094
 _objc_* (library),22816,22816
 dmHashTable<>,21624,21624
 MVKCommandPool,21081,21081
 dmSound,20636,20484
 _load_* (library),20168,20168
 _asm_* (library),19661,19661
-_DATA_* (library),19264,19264
+_DATA_* (library),19008,19008
 mvk,18974,18854
 _fold_* (library),18954,18954
 dmEngine,17800,17784
@@ -59,7 +59,6 @@ __glfw,14744,0
 btSequentialImpulseConstraintSolver,13872,13872
 btDiscreteDynamicsWorld,13768,13768
 MVKCommandEncoder,13080,13080
-[__TEXT],13045,17741
 dmDDF,12824,12760
 _rec_* (library),12780,12780
 _tdefl_* (library),12712,12712
@@ -75,8 +74,8 @@ MVKRenderSubpass,11247,11247
 dmEasing,10824,10824
 MVKExtensionList,10687,10687
 _OBJC_* (library),10332,10332
-[__DATA],10296,20
 _vorbis_* (library),10252,10252
+[__DATA],9944,20
 gjkepa2_impl,9900,9900
 MVKDescriptorSetLayoutBinding,9894,9894
 _dmRigDDF_* (library),9752,9560
@@ -496,6 +495,7 @@ MVKCmdClearDepthStencilImage<>,618,618
 MVKFunctionSpecializer,613,613
 __glfwChooseFBConfig,612,612
 b2PositionSolverManifold,612,612
+[__TEXT],609,5305
 _dmHashBuffer32,608,608
 btUnionFind,608,608
 MVKPrivateDataSlot,605,605
@@ -740,7 +740,6 @@ MVKUniformBufferDescriptor,305,305
 -[GLFWWindowDelegate windowDidResize:],304,304
 SetContext(),304,304
 _vkCmdSetSampleLocationsEnableEXT,304,304
-_CONTEXT_* (library),304,304
 MVKSampledImageDescriptor,304,304
 MVKStorageImageDescriptor,304,304
 _ZN25MVKRenderPipelineCompiler25newMTLRenderPipelineStateEP27MTLRenderPipelineDescriptor_* (library),304,304
@@ -749,6 +748,7 @@ btConeTwistConstraint,300,300
 jc,300,300
 mvkFormatFromOutput(),300,300
 FontLoadFromMemory(),296,296
+_CONTEXT_* (library),292,292
 MVKCmdBeginQuery,291,291
 _JobSystemCreateJob,288,288
 __glfwSetCursorCocoa,288,288
@@ -1114,6 +1114,7 @@ MVKCmdSetStencilTestEnable,165,165
 MVKCmdSetDepthBias,165,165
 MVKCmdSetEvent,165,165
 -[GLFWContentView updateTrackingAreas],164,164
+_dmExportedSymbols,164,164
 _sort_* (library),164,164
 dmStrlCat(),164,164
 stbi__get8(),164,164
@@ -1139,7 +1140,6 @@ MVKCmdSetCullMode,160,160
 btSingleRayCallback,160,160
 _malloc_* (library),160,160
 __glfwGetEGLPlatformCocoa,156,156
-_dmExportedSymbols,156,156
 _hash_* (library),156,156
 _hookf,156,156
 dLineClosestApproach(),156,156
@@ -1388,9 +1388,11 @@ _CrashExt,80,80
 _ExtensionAppParamsFinalize,80,80
 _ExtensionParamsFinalize,80,80
 _ScriptBox2DExt,80,80
+_ScriptComputeExt,80,80
 _ScriptFont,80,80
 _ScriptHttp,80,80
 _ScriptImageExt,80,80
+_ScriptMaterialExt,80,80
 _ScriptModelExt,80,80
 _ScriptTypesExt,80,80
 __glfwGetRequiredInstanceExtensionsCocoa,80,80
