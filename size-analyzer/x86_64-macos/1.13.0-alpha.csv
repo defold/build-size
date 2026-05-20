@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3346432,3345888
+[__LINKEDIT],3346432,3346112
 MVK_spirv_cross,1642277,1642133
 dmScript,633632,109024
 dmGameSystem,478568,476120
@@ -10,7 +10,7 @@ _lj_* (library),250880,250880
 _variable_* (library),127496,127496
 dmGui,122844,121852
 dmGraphics,118569,117577
-dmRender,115400,114968
+dmRender,115576,115144
 dmGameObject,115368,115336
 dmCrash,111652,6004
 (anonymous namespace),104708,104700
@@ -176,6 +176,7 @@ stbtt_GetGlyphShape(),4016,4016
 b2WeldJoint,4000,4000
 b2PulleyJoint,3968,3968
 _ra_* (library),3952,3952
+[__TEXT],3934,8614
 MVKCmdBindDescriptorSetsStatic<>,3861,3861
 dmDeviceAVAudio,3824,3824
 _gc_* (library),3808,3808
@@ -2060,7 +2061,6 @@ dmEngineDDF,16,16
 dmGuiDDF,16,16
 dmLiveUpdateDDF,16,16
 dmModelDDF,16,16
-[__TEXT],14,4694
 JobSystemUpdate,8,0
 _AvailabilityVersionCheck,8,0
 _CompatibilityDispatchOnceCounter,8,0

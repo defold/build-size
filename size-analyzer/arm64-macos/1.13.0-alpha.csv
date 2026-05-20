@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3276800,3264800
+[__LINKEDIT],3276800,3264960
 MVK_spirv_cross,1475225,1475081
 dmScript,624760,100352
 dmGameSystem,408296,406672
@@ -14,7 +14,7 @@ _except_* (library),106148,106148
 dmGraphics,95649,94672
 dmGameObject,94696,94664
 dmGui,93568,92624
-dmRender,90356,90228
+dmRender,90424,90296
 dmHID,76901,76901
 MVKPixelFormats,65654,65630
 _pfb,65544,65544
@@ -23,7 +23,7 @@ MVKInstance,60379,60379
 MVKDevice,52427,52427
 _dm_* (library),42568,42568
 _ZNSt3_* (library),35904,35904
-_GLOBAL_* (library),35656,35656
+_GLOBAL_* (library),35652,35652
 MVKObjectPool<>,34565,34565
 dmPhysics,34408,34408
 _recff_* (library),33977,33977
@@ -495,7 +495,6 @@ MVKCmdClearDepthStencilImage<>,618,618
 MVKFunctionSpecializer,613,613
 __glfwChooseFBConfig,612,612
 b2PositionSolverManifold,612,612
-[__TEXT],609,5305
 _dmHashBuffer32,608,608
 btUnionFind,608,608
 MVKPrivateDataSlot,605,605
@@ -530,6 +529,7 @@ _assign_* (library),552,552
 _vkCmdCopyBuffer,552,552
 __glfwGetGammaRampCocoa,548,548
 btBoxBoxDetector,548,548
+[__TEXT],545,5241
 MVKSamplerYcbcrConversion,544,544
 b2Mat33,544,544
 _spvBinaryParse,536,536

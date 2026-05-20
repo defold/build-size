@@ -7,7 +7,7 @@ _mbedtls_* (library),155642,194447
 dmGui,112008,145990
 dmCrash,110242,10066
 dmGameObject,109392,151789
-dmRender,104601,145853
+dmRender,104653,145905
 basist,99664,99203
 _compress_* (library),97083,98459
 [section .rel.dyn],69896,69896
@@ -64,7 +64,7 @@ dmBuffer,6240,8405
 _parse_* (library),6184,6970
 [section .gnu.hash],6124,6124
 dmConfigFile,6088,7371
-[section .text],6077,6077
+[section .text],6073,6073
 [section .rel.plt],5928,5928
 dmSys,5886,7996
 [section .dynstr],5843,5843
@@ -1531,7 +1531,6 @@ _ZTSPDi,28,52
 _ZTSPDn,28,52
 _ZTSPDs,28,52
 _ZTSPDu,28,52
-[LOAD #4 [RW]],28,0
 gerrno,27,46
 _tls12_* (library),26,125
 _ZTSDh,26,49
@@ -1660,6 +1659,7 @@ writer_buf,12,55
 _atexit_* (library),12,53
 b2_version,12,39
 g_SoundManager,12,31
+[LOAD #4 [RW]],12,0
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
 [LOAD #2 [RX]],11,11
@@ -1995,12 +1995,12 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5975954
-[section .debug_loc],0,3258975
-[section .debug_line],0,2384026
-[section .debug_str],0,2018366
-[section .debug_ranges],0,976360
-[section .debug_abbrev],0,454181
+[section .debug_info],0,5976031
+[section .debug_loc],0,3258823
+[section .debug_line],0,2384106
+[section .debug_str],0,2018466
+[section .debug_ranges],0,976464
+[section .debug_abbrev],0,454213
 [section .debug_frame],0,295388
 [section .symtab],0,44368
 [section .strtab],0,17985
@@ -2008,4 +2008,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,14
+[Unmapped],0,13
