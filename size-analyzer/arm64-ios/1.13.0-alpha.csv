@@ -1,13 +1,13 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1802240,1787712
+[__LINKEDIT],1802240,1790928
 dmScript,623976,99568
-dmGameSystem,404704,403080
+dmGameSystem,405333,403709
 _lj_* (library),204432,204432
-"_TEXT,_* (library)",147621,147621
+"_TEXT,_* (library)",148611,148611
 dmCrash,112648,5976
 basist,98555,83699
 dmGameObject,94364,94332
-dmGui,91632,90648
+dmGui,91756,90772
 dmRender,90048,89920
 dmGraphics,78565,77604
 dmHID,74659,74659
@@ -16,15 +16,15 @@ _dm_* (library),47520,47520
 _cp_* (library),34652,34652
 dmPhysics,33520,33520
 dmParticle,30016,30016
-[__TEXT],27602,43882
+[__TEXT],26440,42720
 dmResource,24176,24176
 dmHashTable<>,21624,21624
 _load_* (library),21176,21176
 stbi__process_marker(),20746,20746
 dmSound,20540,20388
 std,19712,19712
-dmEngine,17532,17516
-_GLOBAL_* (library),16600,16600
+dmEngine,17536,17520
+_GLOBAL_* (library),16612,16612
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 _ZNSt3_* (library),16116,16116
@@ -39,8 +39,8 @@ dmHttpCache,12310,12310
 _tdefl_* (library),12176,12176
 dmInput,12036,11032
 _parse_* (library),11740,11740
-_dmGameSystemDDF_* (library),11504,11064
-[__DATA],10896,12
+_dmGameSystemDDF_* (library),11508,11064
+[__DATA],10880,12
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
 gjkepa2_impl,9908,9908
@@ -91,7 +91,6 @@ _opt_* (library),4428,4428
 btRigidBody,4396,4396
 b2Body,4392,4392
 btVoronoiSimplexSolver,4360,4360
-dmLiveUpdate,4268,4228
 _meth_* (library),4220,4220
 _do_* (library),4136,4136
 _vwin2048,4096,4096
@@ -102,6 +101,7 @@ dmHttpDDF,4036,4036
 btHashedOverlappingPairCache,4032,4032
 _tmalloc_* (library),3984,3984
 _process_* (library),3852,3852
+dmLiveUpdate,3852,3812
 dmResourceMounts,3848,3848
 dmMessage,3764,3732
 btDbvt,3716,3716
@@ -117,7 +117,6 @@ b2Island,3508,3508
 dmDeviceAVAudio,3452,3452
 dmSys,3452,3348
 dmLog,3432,3192
-dmResourceProviderZip,3428,3300
 btCompoundCollisionAlgorithm,3412,3412
 _callback_* (library),3384,3384
 _ctype_* (library),3264,3264
@@ -126,6 +125,7 @@ _ov_* (library),3172,3172
 b2SeparationFunction,3128,3128
 _debug_* (library),3088,3088
 dmPlatform,3052,3044
+dmResourceProviderZip,3036,2908
 b2EPCollider,2960,2960
 b2WheelJoint,2940,2940
 b2Fixture,2924,2924
@@ -164,8 +164,8 @@ _clib_* (library),2028,2028
 btCollisionDispatcher,2016,2016
 SphereTriangleDetector,2004,2004
 _dmInputDDF_* (library),1996,1968
+_Register_* (library),1991,1983
 _buffer_* (library),1984,1984
-_Register_* (library),1984,1976
 btCapsuleShape,1972,1972
 _decode_* (library),1968,1968
 _gola_* (library),1940,1940
@@ -175,11 +175,11 @@ dmResourceProviderArchive,1852,1724
 _release_* (library),1840,1840
 ReverseHashContainer,1840,1840
 dmLoadQueue,1824,1824
+__MergedGlobals,1816,1416
 b2FrictionJoint,1816,1816
-__MergedGlobals,1808,1408
 b2Distance(),1808,1808
 _mapping_* (library),1804,1804
-_dmModelDDF_* (library),1788,1736
+_dmModelDDF_* (library),1800,1736
 b2BlockAllocator,1764,1116
 btSubsimplexConvexCast,1740,1740
 basisu,1701,1701
@@ -228,8 +228,8 @@ _ll_* (library),1164,1164
 btTransformUtil,1148,1148
 _JobSystemUpdate,1144,1144
 _oggpack_* (library),1132,1132
-btPolyhedralConvexAabbCachingShape,1124,1124
 _ffh_* (library),1120,1120
+btPolyhedralConvexAabbCachingShape,1116,1116
 _dec64table,1104,1104
 _str_* (library),1080,1080
 btManifoldResult,1076,1076
@@ -349,6 +349,7 @@ _vwin256,512,512
 _block_* (library),512,512
 -[BaseView initWithFrame:],496,496
 _foldarith,496,496
+_CONTEXT_* (library),496,496
 b2GridAndPolygonContact,496,496
 _de_* (library),492,484
 b2GridAndCircleContact,492,492
@@ -433,7 +434,6 @@ FontLoadFromMemory(),296,296
 _ShutdownEngine,292,292
 _bestasize,292,292
 _callhook,292,292
-_CONTEXT_* (library),292,292
 _JobSystemCreateJob,288,288
 _adjuststack,288,288
 _dmHashRelease64,288,288
@@ -586,7 +586,7 @@ rmtp_Mesh(),132,132
 dmMemProfile,132,116
 b2Draw,132,132
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3675,128,0
+_ComponentTypeGui3678,128,0
 _ComponentTypeLight193,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0

@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3276800,3264960
+[__LINKEDIT],3276800,3268304
 MVK_spirv_cross,1475225,1475081
 dmScript,624760,100352
-dmGameSystem,408296,406672
+dmGameSystem,408893,407269
 basist,315610,300754
-"_TEXT,_* (library)",270735,270735
+"_TEXT,_* (library)",271725,271725
 std,259286,259286
 _lj_* (library),226501,226501
 _variable_* (library),128058,128058
@@ -13,7 +13,7 @@ _except_* (library),106148,106148
 (anonymous namespace),101426,101426
 dmGraphics,95649,94672
 dmGameObject,94696,94664
-dmGui,93568,92624
+dmGui,93692,92748
 dmRender,90424,90296
 dmHID,76901,76901
 MVKPixelFormats,65654,65630
@@ -23,7 +23,7 @@ MVKInstance,60379,60379
 MVKDevice,52427,52427
 _dm_* (library),42568,42568
 _ZNSt3_* (library),35904,35904
-_GLOBAL_* (library),35652,35652
+_GLOBAL_* (library),35648,35648
 MVKObjectPool<>,34565,34565
 dmPhysics,34408,34408
 _recff_* (library),33977,33977
@@ -45,13 +45,14 @@ _asm_* (library),19661,19661
 _DATA_* (library),19008,19008
 mvk,18974,18854
 _fold_* (library),18954,18954
-dmEngine,17800,17784
+dmEngine,17804,17788
 _cp_* (library),17708,17708
 cereal,17054,17054
 _vwin8192,16388,16388
 _parse_* (library),16180,16180
 MVKDescriptorTypePool<>,16048,16048
 dmRig,15920,15920
+[__TEXT],15783,20479
 _KHR_* (library),15340,0
 btCollisionWorld,14936,14936
 glsl_entries,14904,14904
@@ -69,13 +70,13 @@ MVKCmdBufferImageCopy<>,12465,12465
 dmHttpCache,12148,12148
 _EXT_* (library),11960,0
 "_DATA,_* (library)",11816,11816
-_dmGameSystemDDF_* (library),11504,11064
+_dmGameSystemDDF_* (library),11508,11064
 MVKRenderSubpass,11247,11247
 dmEasing,10824,10824
 MVKExtensionList,10687,10687
 _OBJC_* (library),10332,10332
 _vorbis_* (library),10252,10252
-[__DATA],9944,20
+[__DATA],9928,20
 gjkepa2_impl,9900,9900
 MVKDescriptorSetLayoutBinding,9894,9894
 _dmRigDDF_* (library),9752,9560
@@ -139,7 +140,6 @@ btRigidBody,4396,4396
 b2Body,4392,4392
 MVKImagePlane,4372,4372
 btVoronoiSimplexSolver,4364,4364
-dmLiveUpdate,4268,4228
 _meth_* (library),4252,4252
 MVKRenderingCommandEncoderState,4182,4182
 _do_* (library),4144,4144
@@ -155,6 +155,7 @@ MVKPipelineLayout,3944,3944
 _gc_* (library),3940,3940
 _process_* (library),3888,3888
 _snap_* (library),3856,3856
+dmLiveUpdate,3852,3812
 mvkPopulateShaderConversionConfig(),3812,3812
 dmResourceMounts,3812,3812
 MVKCmdDrawIndexedIndirect,3800,3800
@@ -175,7 +176,6 @@ _parseMapping,3572,3572
 b2Island,3508,3508
 btCompoundCollisionAlgorithm,3412,3412
 MVKRenderPass,3396,3396
-dmResourceProviderZip,3396,3268
 MVKPresentableSwapchainImage,3311,3311
 dmDeviceAVAudio,3268,3268
 _dmMath_* (library),3256,3016
@@ -185,6 +185,7 @@ dmPlatform,3172,3156
 MVKMTLFunctionNull,3136,0
 _amd_* (library),3128,3128
 b2SeparationFunction,3128,3128
+dmResourceProviderZip,3036,2908
 spvExpandOperandSequenceOnce(),3000,3000
 MVKCmdBindDescriptorSetsStatic<>,2997,2997
 b2EPCollider,2960,2960
@@ -194,7 +195,7 @@ b2Fixture,2924,2924
 MVKImageViewPlane,2920,2920
 MVKCmdBindVertexBuffers<>,2916,2916
 _field_* (library),2914,2914
-__MergedGlobals,2888,1464
+__MergedGlobals,2896,1472
 MVKQueryPool,2887,2887
 MVKShaderModule,2866,2866
 MVKQueuePresentSurfaceSubmission,2835,2835
@@ -255,7 +256,7 @@ _decode_* (library),2048,2048
 btCollisionDispatcher,2016,2016
 SphereTriangleDetector,2004,2004
 _dmInputDDF_* (library),1996,1968
-_Register_* (library),1984,1976
+_Register_* (library),1991,1983
 btCapsuleShape,1972,1972
 ReverseHashContainer,1948,1948
 MVKFramebuffer,1917,1917
@@ -273,8 +274,8 @@ MVKCmdPushConstants<>,1821,1821
 _buffer_* (library),1816,1816
 b2FrictionJoint,1816,1816
 MVKDepthStencilCommandEncoderState,1809,1809
+_dmModelDDF_* (library),1800,1736
 b2BlockAllocator,1788,1140
-_dmModelDDF_* (library),1788,1736
 mvkCmdBeginRenderPass(),1760,1760
 MVKMTLBufferAllocationPool,1749,1749
 MVKCmdExecuteCommands<>,1741,1741
@@ -360,7 +361,7 @@ _spvBinaryToText,1148,1148
 btTransformUtil,1148,1148
 _JobSystemUpdate,1144,1144
 _oggpack_* (library),1132,1132
-btPolyhedralConvexAabbCachingShape,1132,1132
+btPolyhedralConvexAabbCachingShape,1124,1124
 MVKWatermarkRandom,1117,1117
 _debug_* (library),1108,1108
 MVKFence,1101,1101
@@ -529,7 +530,6 @@ _assign_* (library),552,552
 _vkCmdCopyBuffer,552,552
 __glfwGetGammaRampCocoa,548,548
 btBoxBoxDetector,548,548
-[__TEXT],545,5241
 MVKSamplerYcbcrConversion,544,544
 b2Mat33,544,544
 _spvBinaryParse,536,536
@@ -555,6 +555,7 @@ __glfwInputWindowFocus,500,500
 _fscope_* (library),500,500
 _vkCmdCopyImage2,500,500
 __glfwSetVideoModeCocoa,496,496
+_CONTEXT_* (library),496,496
 b2GridAndPolygonContact,496,496
 _de_* (library),492,492
 b2GridAndCircleContact,492,492
@@ -748,7 +749,6 @@ btConeTwistConstraint,300,300
 jc,300,300
 mvkFormatFromOutput(),300,300
 FontLoadFromMemory(),296,296
-_CONTEXT_* (library),292,292
 MVKCmdBeginQuery,291,291
 _JobSystemCreateJob,288,288
 __glfwSetCursorCocoa,288,288
@@ -1197,7 +1197,7 @@ dmMemProfile,132,116
 b2Draw,132,132
 MVKCommandEncoderState,129,129
 _ComponentTypeAnim64,128,0
-_ComponentTypeGui3675,128,0
+_ComponentTypeGui3678,128,0
 _ComponentTypeLight193,128,0
 _ComponentTypeMesh1220,128,0
 _ComponentTypeScript65,128,0
