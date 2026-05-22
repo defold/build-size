@@ -1,15 +1,15 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3350528,3349336
+[__LINKEDIT],3350528,3348752
 MVK_spirv_cross,1642277,1642133
 dmScript,633632,109032
 dmGameSystem,479017,476608
 basist,329344,314480
 std,277555,277555
 _lj_* (library),250880,250880
-"_TEXT,_* (library)",237328,237328
+"_TEXT,_* (library)",237320,237320
 _variable_* (library),127496,127496
-dmGui,123036,122044
-dmGraphics,118569,117577
+dmGui,123100,122108
+dmGraphics,119145,118169
 dmRender,115576,115144
 dmGameObject,115368,115336
 dmCrash,111652,6004
@@ -42,7 +42,7 @@ dmSound,26312,26064
 MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),24576,24576
-stbi__process_marker(),23594,23594
+stbi__process_marker(),23530,23530
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,22240,22240
 dmEngine,20928,20912
@@ -229,7 +229,6 @@ MVKShaderLibraryCache,2880,2880
 _make_* (library),2864,2864
 _parseMapping,2816,2816
 _dmParticleDDF_* (library),2808,2696
-[__TEXT],2762,7442
 _cploop_* (library),2736,2736
 _bcwrite_* (library),2720,2720
 btBoxShape,2712,2712
@@ -241,7 +240,7 @@ MVKCmdBeginRendering<>,2612,2612
 MVKBufferView,2599,2599
 __glfwCreateContextEGL,2560,2560
 b2FrictionJoint,2544,2544
-[__DATA],2516,0
+[__DATA],2532,0
 _LZ4_* (library),2512,2512
 btConvexHullShape,2512,2512
 MVKFramebuffer,2497,2497
@@ -270,6 +269,7 @@ btCollisionDispatcher,2208,2208
 MVKSampler,2205,2205
 btConvexTriangleCallback,2200,2200
 btDefaultCollisionConfiguration,2184,2184
+[__TEXT],2178,6858
 MVKMTLBufferAllocator,2176,2176
 _buffer_* (library),2176,2176
 btCapsuleShape,2168,2168

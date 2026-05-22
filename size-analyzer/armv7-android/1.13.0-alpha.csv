@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,631761,139567
-[section .rodata],370810,370810
+[section .rodata],370698,370698
 dmGameSystem,326397,485133
-dmGraphics,240467,326525
+dmGraphics,239827,325469
 _mbedtls_* (library),155642,194454
 dmGui,112096,146078
 dmCrash,110242,10066
@@ -13,9 +13,9 @@ _compress_* (library),97083,98459
 [section .rel.dyn],69896,69896
 _pfb,65536,65561
 std,60485,76519
-[section .ARM.exidx],57584,57584
+[section .ARM.exidx],57568,57568
 dmHashTable<>,49522,62357
-(anonymous namespace),44924,103739
+(anonymous namespace),44924,103732
 dmParticle,39217,48716
 dmPhysics,37456,55436
 dmResource,30108,40721
@@ -60,8 +60,8 @@ _zip_* (library),6864,7481
 btAxisSweep3Internal<>,6836,9147
 b2DynamicTree,6776,7809
 [section .dynsym],6576,6576
+[section .text],6248,6248
 dmBuffer,6240,8405
-[section .text],6236,6236
 _parse_* (library),6184,6970
 [section .gnu.hash],6124,6124
 dmConfigFile,6088,7371
@@ -205,7 +205,7 @@ b2MouseJoint,1788,3213
 _double_* (library),1752,1866
 glfwAndroidHandleInput,1744,1847
 btPersistentManifold,1740,2372
-[section .bss],1739,0
+[section .bss],1731,0
 _raw_* (library),1729,1924
 JobSystemUpdate,1716,1820
 _app_* (library),1696,2161
@@ -367,7 +367,7 @@ btPairCachingGhostObject,744,1255
 _glfwInput,740,27
 b2CircleShape,740,1396
 b2CollideEdgeAndCircle(),732,870
-[section .data],725,725
+[section .data],729,729
 _Material_* (library),724,1306
 __udivmoddi4,720,765
 btTriangleRaycastCallback,720,1043
@@ -1574,6 +1574,7 @@ package_loaders,20,52
 cp_check,20,45
 _glfwThrd,20,26
 g_Window,20,25
+[LOAD #4 [RW]],20,0
 stbi__compute_huffman_codes(),19,100
 cpfinalize,18,61
 _glfwAndroidPlatformDestroyWindow,16,98
@@ -1659,7 +1660,6 @@ writer_buf,12,55
 _atexit_* (library),12,53
 b2_version,12,39
 g_SoundManager,12,31
-[LOAD #4 [RW]],12,0
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
 err_syntax,10,53
@@ -1995,17 +1995,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6003245
-[section .debug_loc],0,3268501
-[section .debug_line],0,2451413
-[section .debug_str],0,2024314
-[section .debug_ranges],0,977624
-[section .debug_abbrev],0,456125
-[section .debug_frame],0,294956
+[section .debug_info],0,6003212
+[section .debug_loc],0,3267104
+[section .debug_line],0,2451240
+[section .debug_str],0,2024070
+[section .debug_ranges],0,977384
+[section .debug_abbrev],0,456200
+[section .debug_frame],0,294884
 [section .symtab],0,46176
 [section .strtab],0,18017
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,10
+[Unmapped],0,13
