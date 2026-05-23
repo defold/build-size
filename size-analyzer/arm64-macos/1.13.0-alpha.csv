@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3276800,3267728
+[__LINKEDIT],3276800,3268064
 MVK_spirv_cross,1475225,1475081
 dmScript,624760,100352
 dmGameSystem,408893,407269
 basist,315610,300754
-"_TEXT,_* (library)",271725,271725
+"_TEXT,_* (library)",271821,271821
 std,259286,259286
 _lj_* (library),226501,226501
 _variable_* (library),128058,128058
@@ -13,7 +13,7 @@ _except_* (library),106148,106148
 (anonymous namespace),101426,101426
 dmGraphics,96025,95064
 dmGameObject,94696,94664
-dmGui,93764,92820
+dmGui,93764,92812
 dmRender,90424,90296
 dmHID,76901,76901
 MVKPixelFormats,65654,65630
@@ -52,8 +52,8 @@ _vwin8192,16388,16388
 _parse_* (library),16180,16180
 MVKDescriptorTypePool<>,16048,16048
 dmRig,15920,15920
-[__TEXT],15378,20074
 _KHR_* (library),15340,0
+[__TEXT],15058,19754
 btCollisionWorld,14936,14936
 glsl_entries,14904,14904
 __glfw,14744,0
@@ -69,14 +69,14 @@ dmInput,12472,11468
 MVKCmdBufferImageCopy<>,12465,12465
 dmHttpCache,12148,12148
 _EXT_* (library),11960,0
-"_DATA,_* (library)",11816,11816
+"_DATA,_* (library)",11848,11848
 _dmGameSystemDDF_* (library),11508,11064
 MVKRenderSubpass,11247,11247
 dmEasing,10824,10824
 MVKExtensionList,10687,10687
 _OBJC_* (library),10332,10332
 _vorbis_* (library),10252,10252
-[__DATA],9944,20
+[__DATA],9912,20
 gjkepa2_impl,9900,9900
 MVKDescriptorSetLayoutBinding,9894,9894
 _dmRigDDF_* (library),9752,9560
@@ -195,7 +195,7 @@ b2Fixture,2924,2924
 MVKImageViewPlane,2920,2920
 MVKCmdBindVertexBuffers<>,2916,2916
 _field_* (library),2914,2914
-__MergedGlobals,2896,1472
+__MergedGlobals,2896,1448
 MVKQueryPool,2887,2887
 MVKShaderModule,2866,2866
 MVKQueuePresentSurfaceSubmission,2835,2835
@@ -224,6 +224,7 @@ MVKBuffer,2579,2579
 MVKCmdDrawIndexed,2572,2572
 _make_* (library),2560,2560
 MVKCmdDraw,2525,2525
+dmSSLSocket,2480,2480
 MVKShaderLibraryCache,2448,2448
 btQuantizedBvh,2444,2444
 _cploop_* (library),2436,2436
@@ -235,7 +236,6 @@ MVKCmdBeginRendering<>,2372,2372
 __glfwCreateContextEGL,2360,2360
 _LZ4_* (library),2316,2316
 b2PolygonShape,2304,2304
-dmSSLSocket,2256,2256
 MVKImageMemoryBinding,2248,2248
 stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192

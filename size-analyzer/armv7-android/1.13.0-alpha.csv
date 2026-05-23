@@ -3,7 +3,7 @@ dmScript,631761,139567
 [section .rodata],370698,370698
 dmGameSystem,326397,485133
 dmGraphics,239827,325469
-_mbedtls_* (library),155642,194454
+_mbedtls_* (library),155802,194630
 dmGui,112096,146078
 dmCrash,110242,10066
 dmGameObject,109392,151789
@@ -13,7 +13,7 @@ _compress_* (library),97083,98459
 [section .rel.dyn],69896,69896
 _pfb,65536,65561
 std,60485,76519
-[section .ARM.exidx],57568,57568
+[section .ARM.exidx],57560,57560
 dmHashTable<>,49522,62357
 (anonymous namespace),44924,103732
 dmParticle,39217,48716
@@ -60,7 +60,7 @@ _zip_* (library),6864,7481
 btAxisSweep3Internal<>,6836,9147
 b2DynamicTree,6776,7809
 [section .dynsym],6576,6576
-[section .text],6248,6248
+[section .text],6240,6240
 dmBuffer,6240,8405
 _parse_* (library),6184,6970
 [section .gnu.hash],6124,6124
@@ -149,13 +149,13 @@ _tdefl_* (library),2755,3170
 btConvexConcaveCollisionAlgorithm,2712,5048
 btOptimizedBvh,2696,4057
 _carith_* (library),2684,3247
-dmSSLSocket,2660,3252
 b2PolygonShape,2660,3561
+dmSSLSocket,2624,3216
 stbtt_GetGlyphShape(),2576,2716
 _tab_* (library),2576,3343
 FontLoadFromMemoryTTF(),2572,2654
-_mpi_* (library),2572,3086
 _crt_* (library),2532,2704
+_mpi_* (library),2532,3030
 btBoxShape,2504,4113
 _mac_* (library),2496,2887
 _set_* (library),2420,3598
@@ -202,11 +202,11 @@ res_inverse,1816,1860
 btGjkEpaSolver2,1816,2107
 _optimize_* (library),1792,1883
 b2MouseJoint,1788,3213
-_double_* (library),1752,1866
 glfwAndroidHandleInput,1744,1847
 btPersistentManifold,1740,2372
-[section .bss],1731,0
 _raw_* (library),1729,1924
+[section .bss],1727,0
+_double_* (library),1720,1818
 JobSystemUpdate,1716,1820
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
@@ -287,7 +287,6 @@ _MaterialDesc_* (library),1052,2280
 TextLayoutLegacyCreate(),1048,1178
 _write_* (library),1040,1244
 _dispatch_* (library),1040,1321
-_add_* (library),1032,1154
 _LOOKUP_* (library),1032,1126
 dmSysPosix,1032,1956
 _ccall_* (library),1028,1127
@@ -305,6 +304,7 @@ RT3,1024,20
 dmMutex,1024,1494
 dmExtension,1020,1809
 btPolyhedralConvexShape,1008,1575
+_add_* (library),1000,1106
 _bcread_* (library),994,1026
 _normalize_* (library),992,1147
 dmHashUpdateBuffer32,985,1054
@@ -494,11 +494,11 @@ dmPPrint,388,649
 lex_number,384,443
 ciphersuite_definitions,384,424
 secp256r1_T,384,412
+[LOAD #1 [R]],381,381
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 _auth_* (library),376,488
 _LabelDesc_* (library),375,917
-[LOAD #1 [R]],373,373
 _glfwAndroidPlatformSwapBuffers,372,452
 JobSystemCreateJob,372,439
 _SpriteDesc_* (library),365,943
@@ -653,7 +653,6 @@ Particle_GetInstanceStats,226,307
 _md_* (library),224,267
 _SetCamera_* (library),223,539
 _terminate_* (library),220,303
-_generate_* (library),220,290
 _socket_* (library),220,288
 auxiliar_newclass,220,286
 searchpath,220,279
@@ -1574,7 +1573,6 @@ package_loaders,20,52
 cp_check,20,45
 _glfwThrd,20,26
 g_Window,20,25
-[LOAD #4 [RW]],20,0
 stbi__compute_huffman_codes(),19,100
 cpfinalize,18,61
 _glfwAndroidPlatformDestroyWindow,16,98
@@ -1981,10 +1979,8 @@ mpi_one,4,28
 vkMapMemory,4,28
 gFindPairs,4,27
 json_array,4,27
-add_count,4,26
-dbl_count,4,26
-mul_count,4,26
 vkCmdDraw,4,26
+[LOAD #4 [RW]],4,0
 stbi__process_frame_header(),3,71
 g_PendingResizeBecauseOfInsets,1,47
 g_accelerometerEnabled,1,39
@@ -1995,17 +1991,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6003212
-[section .debug_loc],0,3267104
-[section .debug_line],0,2451240
-[section .debug_str],0,2024070
-[section .debug_ranges],0,977384
-[section .debug_abbrev],0,456200
-[section .debug_frame],0,294884
+[section .debug_info],0,5993583
+[section .debug_loc],0,3259390
+[section .debug_line],0,2445379
+[section .debug_str],0,2021629
+[section .debug_ranges],0,976184
+[section .debug_abbrev],0,455507
+[section .debug_frame],0,293756
 [section .symtab],0,46176
 [section .strtab],0,18017
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,13
+[Unmapped],0,15

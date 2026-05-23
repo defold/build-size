@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1802240,1791256
+[__LINKEDIT],1802240,1791592
 dmScript,623976,99568
 dmGameSystem,405333,403709
 _lj_* (library),204432,204432
-"_TEXT,_* (library)",148611,148611
+"_TEXT,_* (library)",148715,148715
 dmCrash,112648,5976
 basist,98555,83699
 dmGameObject,94364,94332
@@ -16,7 +16,7 @@ _dm_* (library),47520,47520
 _cp_* (library),34652,34652
 dmPhysics,33520,33520
 dmParticle,30016,30016
-[__TEXT],26283,42563
+[__TEXT],25955,42235
 dmResource,24176,24176
 dmHashTable<>,21624,21624
 _load_* (library),21176,21176
@@ -40,7 +40,7 @@ _tdefl_* (library),12176,12176
 dmInput,12036,11032
 _parse_* (library),11740,11740
 _dmGameSystemDDF_* (library),11508,11064
-[__DATA],10896,12
+[__DATA],10864,12
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
 gjkepa2_impl,9908,9908
@@ -48,7 +48,7 @@ _serialize_* (library),9780,9780
 _dmRigDDF_* (library),9752,9560
 b2World,9564,9564
 _dmRenderDDF_* (library),9332,8840
-"_DATA,_* (library)",8256,8256
+"_DATA,_* (library)",8288,8288
 _gc_* (library),8228,8228
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
@@ -116,7 +116,7 @@ _run_* (library),3592,3592
 b2Island,3508,3508
 dmDeviceAVAudio,3452,3452
 dmSys,3452,3348
-dmLog,3432,3192
+dmLog,3432,3160
 btCompoundCollisionAlgorithm,3412,3412
 _callback_* (library),3384,3384
 _ctype_* (library),3264,3264
@@ -140,6 +140,7 @@ b2WeldJoint,2612,2612
 btGjkPairDetector,2556,2556
 _floor1_* (library),2556,2556
 _make_* (library),2492,2492
+dmSSLSocket,2480,2480
 btQuantizedBvh,2444,2444
 btBoxShape,2404,2404
 _add_* (library),2388,2388
@@ -147,7 +148,6 @@ FontLoadFromMemoryTTF(),2384,2384
 __packetout,2376,2376
 _prepend_* (library),2316,2316
 b2PolygonShape,2280,2280
-dmSSLSocket,2256,2256
 stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192
 _jpeg_* (library),2171,2171

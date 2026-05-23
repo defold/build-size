@@ -1,12 +1,12 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3350528,3348752
+[__LINKEDIT],3350528,3349096
 MVK_spirv_cross,1642277,1642133
 dmScript,633632,109032
 dmGameSystem,479017,476608
 basist,329344,314480
 std,277555,277555
 _lj_* (library),250880,250880
-"_TEXT,_* (library)",237320,237320
+"_TEXT,_* (library)",237392,237392
 _variable_* (library),127496,127496
 dmGui,123100,122108
 dmGraphics,119145,118169
@@ -81,7 +81,7 @@ dmEasing,10856,10856
 _vorbis_* (library),10736,10736
 MVKCmdResolveImage<>,10438,10438
 MVKQueueFullCommandBufferSubmission<>,10420,10420
-"_DATA,_* (library)",10360,10360
+"_DATA,_* (library)",10392,10392
 _dmRigDDF_* (library),10060,9872
 _DATA_* (library),9992,9992
 _expr_* (library),9760,9760
@@ -239,17 +239,17 @@ dmIntersection,2624,2624
 MVKCmdBeginRendering<>,2612,2612
 MVKBufferView,2599,2599
 __glfwCreateContextEGL,2560,2560
+dmSSLSocket,2560,2560
 b2FrictionJoint,2544,2544
-[__DATA],2532,0
 _LZ4_* (library),2512,2512
 btConvexHullShape,2512,2512
+[__DATA],2500,0
 MVKFramebuffer,2497,2497
 FontLoadFromMemoryTTF(),2480,2480
 btSubsimplexConvexCast,2472,2472
 _zip_* (library),2464,2464
 __glfwPollMonitorsCocoa,2448,2448
 _jpeg_* (library),2447,2447
-dmSSLSocket,2400,2400
 simple_json,2384,2384
 MVKCmdPushConstants<>,2361,2361
 MVKCmdBindVertexBuffers<>,2352,2352
@@ -269,7 +269,6 @@ btCollisionDispatcher,2208,2208
 MVKSampler,2205,2205
 btConvexTriangleCallback,2200,2200
 btDefaultCollisionConfiguration,2184,2184
-[__TEXT],2178,6858
 MVKMTLBufferAllocator,2176,2176
 _buffer_* (library),2176,2176
 btCapsuleShape,2168,2168
@@ -294,6 +293,7 @@ btTriangleShape,2024,2024
 _matchCallback,2000,2000
 MVKDXTnCodec,1967,1967
 b2CollidePolygons(),1952,1952
+[__TEXT],1946,6626
 b2BlockAllocator,1880,1224
 _idct_* (library),1872,1872
 _dmModelDDF_* (library),1856,1792
@@ -1190,7 +1190,7 @@ rmtp_Gui(),144,128
 rmtp_Mesh(),144,144
 rmtp_Model(),144,128
 rmtp_ParticleFx(),144,144
-rmtp_Sound(),144,144
+rmtp_Sound(),144,136
 rmtp_Sprite(),144,128
 rmtp_Tilemap(),144,128
 CProfileNode,144,144
@@ -1854,7 +1854,7 @@ stbi__compute_huffman_codes(),32,32
 btConstraintSolver,32,32
 VkPhysicalDeviceFeatures2,28,28
 VkPhysicalDeviceFeatures,27,27
-rmtp_SoundPlaying(),24,24
+rmtp_SoundPlaying(),24,0
 _g_* (library),24,0
 dmGamesysDDF,24,24
 stbi__process_frame_header(),17,17
