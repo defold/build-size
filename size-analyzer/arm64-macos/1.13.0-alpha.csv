@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3276800,3268064
+[__LINKEDIT],3276800,3263744
 MVK_spirv_cross,1475225,1475081
-dmScript,624760,100352
-dmGameSystem,408893,407269
+dmScript,624756,100348
+dmGameSystem,404308,402684
 basist,315610,300754
-"_TEXT,_* (library)",271821,271821
+"_TEXT,_* (library)",270554,270554
 std,259286,259286
 _lj_* (library),226501,226501
 _variable_* (library),128058,128058
@@ -12,9 +12,9 @@ dmCrash,112816,6144
 _except_* (library),106148,106148
 (anonymous namespace),101426,101426
 dmGraphics,96025,95064
-dmGameObject,94696,94664
-dmGui,93764,92812
-dmRender,90424,90296
+dmGameObject,94592,94560
+dmGui,92388,91436
+dmRender,87320,87192
 dmHID,76901,76901
 MVKPixelFormats,65654,65630
 _pfb,65544,65544
@@ -23,7 +23,7 @@ MVKInstance,60379,60379
 MVKDevice,52427,52427
 _dm_* (library),42568,42568
 _ZNSt3_* (library),35904,35904
-_GLOBAL_* (library),35648,35648
+_GLOBAL_* (library),35652,35652
 MVKObjectPool<>,34565,34565
 dmPhysics,34408,34408
 _recff_* (library),33977,33977
@@ -35,14 +35,14 @@ MVKSmallVectorImpl<>,28620,28620
 MVKPhysicalDevice,26073,26009
 MVKCommandTypePool<>,25631,25631
 dmResource,24256,24256
-stbi__process_marker(),24035,24035
+stbi__process_marker(),23947,23947
 _objc_* (library),22816,22816
 dmHashTable<>,21624,21624
 MVKCommandPool,21081,21081
 dmSound,20636,20484
 _load_* (library),20168,20168
 _asm_* (library),19661,19661
-_DATA_* (library),19008,19008
+_DATA_* (library),19312,19312
 mvk,18974,18854
 _fold_* (library),18954,18954
 dmEngine,17804,17788
@@ -53,7 +53,6 @@ _parse_* (library),16180,16180
 MVKDescriptorTypePool<>,16048,16048
 dmRig,15920,15920
 _KHR_* (library),15340,0
-[__TEXT],15058,19754
 btCollisionWorld,14936,14936
 glsl_entries,14904,14904
 __glfw,14744,0
@@ -84,13 +83,14 @@ b2World,9564,9564
 MVKCmdBlitImage<>,9540,9540
 _expr_* (library),9424,9424
 _dmRenderDDF_* (library),9332,8840
+[__TEXT],8853,13549
 MVKQueueFullCommandBufferSubmission<>,8835,8835
 MVKGraphicsResourcesCommandEncoderState,8790,8790
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
 _shader_* (library),8096,8096
 dmHttpClient,8004,7988
-_json_* (library),7936,7936
+_json_* (library),7952,7952
 _create_* (library),7904,7904
 _crec_* (library),7772,7772
 _clspvreflection_* (library),7544,7544
@@ -255,8 +255,8 @@ _vwin1024,2048,2048
 _decode_* (library),2048,2048
 btCollisionDispatcher,2016,2016
 SphereTriangleDetector,2004,2004
+_Register_* (library),2000,1992
 _dmInputDDF_* (library),1996,1968
-_Register_* (library),1991,1983
 btCapsuleShape,1972,1972
 ReverseHashContainer,1948,1948
 MVKFramebuffer,1917,1917
@@ -498,6 +498,7 @@ __glfwChooseFBConfig,612,612
 b2PositionSolverManifold,612,612
 _dmHashBuffer32,608,608
 btUnionFind,608,608
+_lua_* (library),608,608
 MVKPrivateDataSlot,605,605
 btMatrix3x3,604,604
 MVKCmdClearColorImage<>,604,604
@@ -508,7 +509,6 @@ _dmHashUpdateBuffer64,596,596
 _str_* (library),596,596
 intersectRectQuad2(),596,596
 MVKRenderPipelineCompiler,596,596
-_lua_* (library),592,592
 __glfwPollJoystickCocoa,588,588
 _vkCmdResolveImage,588,588
 __glfwGetGammaRampNull,584,584
