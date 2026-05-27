@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1802240,1787416
+[__LINKEDIT],1802240,1788856
 dmScript,623972,99564
-dmGameSystem,400748,399124
+dmGameSystem,400820,399196
 _lj_* (library),204432,204432
-"_TEXT,_* (library)",147448,147448
+"_TEXT,_* (library)",147568,147568
 dmCrash,112648,5976
 basist,98555,83699
 dmGameObject,94260,94228
@@ -21,14 +21,14 @@ dmHashTable<>,21624,21624
 _load_* (library),21176,21176
 stbi__process_marker(),20599,20599
 dmSound,20540,20388
-[__TEXT],19766,36046
 std,19712,19712
+[__TEXT],17698,33978
 dmEngine,17536,17520
+dmRig,17032,17032
 _GLOBAL_* (library),16600,16600
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 _ZNSt3_* (library),16116,16116
-dmRig,15692,15692
 _OBJC_* (library),14964,14964
 btCollisionWorld,14936,14936
 _lex_* (library),14292,14292
@@ -40,7 +40,7 @@ _tdefl_* (library),12176,12176
 dmInput,12036,11032
 _parse_* (library),11740,11740
 _dmGameSystemDDF_* (library),11508,11064
-[__DATA],11168,28
+[__DATA],11128,20
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
 gjkepa2_impl,9908,9908
@@ -48,7 +48,7 @@ _serialize_* (library),9780,9780
 _dmRigDDF_* (library),9752,9560
 b2World,9564,9564
 _dmRenderDDF_* (library),9332,8840
-"_DATA,_* (library)",8288,8288
+"_DATA,_* (library)",8328,8328
 _gc_* (library),8228,8228
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
@@ -103,7 +103,7 @@ _tmalloc_* (library),3984,3984
 _process_* (library),3852,3852
 dmLiveUpdate,3852,3812
 dmResourceMounts,3848,3848
-dmMessage,3764,3748
+dmMessage,3764,3732
 btDbvt,3716,3716
 b2GridShape,3684,3684
 _inet_* (library),3676,3676
@@ -116,7 +116,7 @@ _run_* (library),3592,3592
 b2Island,3508,3508
 dmDeviceAVAudio,3452,3452
 dmSys,3452,3348
-dmLog,3432,3432
+dmLog,3432,3416
 btCompoundCollisionAlgorithm,3412,3412
 _callback_* (library),3384,3384
 _ctype_* (library),3264,3264
@@ -126,6 +126,7 @@ b2SeparationFunction,3128,3128
 _debug_* (library),3088,3088
 dmPlatform,3052,3044
 dmResourceProviderZip,3036,2908
+dmSSLSocket,3008,3008
 b2EPCollider,2960,2960
 b2WheelJoint,2940,2940
 b2Fixture,2924,2924
@@ -140,7 +141,6 @@ b2WeldJoint,2612,2612
 btGjkPairDetector,2556,2556
 _floor1_* (library),2556,2556
 _make_* (library),2492,2492
-dmSSLSocket,2480,2480
 btQuantizedBvh,2444,2444
 btBoxShape,2404,2404
 _add_* (library),2388,2388
@@ -237,8 +237,8 @@ btSphereSphereCollisionAlgorithm,1076,1076
 _dmGamesysDDF_* (library),1064,1024
 cullPoints2(),1056,1056
 _hash_* (library),1056,1056
+_OUTLINED_* (library),1056,1056
 dmExtension,1052,1052
-_OUTLINED_* (library),1048,1048
 btCollisionObject,1032,1032
 _INVSQ_* (library),1032,1032
 _auxsort,1028,1028

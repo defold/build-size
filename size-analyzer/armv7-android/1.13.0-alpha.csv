@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,631773,139594
 [section .rodata],369162,369162
-dmGameSystem,322546,479992
+dmGameSystem,322646,480092
 dmGraphics,239827,325476
 _mbedtls_* (library),155802,194630
 dmGui,110664,144220
@@ -13,19 +13,19 @@ _compress_* (library),97083,98459
 [section .rel.dyn],69608,69608
 _pfb,65536,65561
 std,60485,76519
-[section .ARM.exidx],57432,57432
+[section .ARM.exidx],57440,57440
 dmHashTable<>,49522,62369
 (anonymous namespace),44924,103732
 dmParticle,39217,48716
 dmPhysics,37456,55436
 dmResource,30108,40733
 dmSound,24809,31668
+dmRig,21624,26215
 dmEngine,20982,25456
 _decompress_* (library),20800,21854
-dmRig,19996,24440
-_GLOBAL_* (library),19663,26513
+_GLOBAL_* (library),19663,26507
 _cf_* (library),17380,26649
-_load_* (library),17236,17941
+_load_* (library),17236,17947
 btCollisionWorld,17197,23754
 vwin8192,16384,16409
 btQuantizedBvh,15568,18050
@@ -35,7 +35,7 @@ btDiscreteDynamicsWorld,14656,19682
 dmDDF,14084,21709
 _internal_* (library),14080,14363
 [section .ARM.extab],13120,13120
-[section .plt],11904,11904
+[section .plt],11903,11903
 dmInput,10903,11574
 dmEasing,10856,10983
 b2World,10688,12051
@@ -253,7 +253,7 @@ _file_* (library),1274,1644
 b2CollidePolygons(),1272,1426
 dmResourceArchive,1272,1860
 _str_* (library),1272,1638
-_ThumbV7PILongThunk_* (library),1272,10583
+_ThumbV7PILongThunk_* (library),1272,10599
 dmBlockAllocator,1268,1608
 dmHashUpdateBuffer64,1249,1318
 LogInternal,1244,1336
@@ -494,11 +494,11 @@ dmPPrint,388,649
 lex_number,384,443
 ciphersuite_definitions,384,424
 secp256r1_T,384,412
-[LOAD #1 [R]],381,381
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 _auth_* (library),376,488
 _LabelDesc_* (library),375,917
+[LOAD #1 [R]],373,373
 _glfwAndroidPlatformSwapBuffers,372,452
 JobSystemCreateJob,372,439
 _SpriteDesc_* (library),365,943
@@ -817,7 +817,7 @@ _GamepadMapEntry_* (library),160,275
 _InputBinding_* (library),160,269
 rmtp_Particles(),159,245
 bcemit_nil,158,185
-_ARMV7PILongThunk_* (library),158,902
+_ARMV7PILongThunk_* (library),158,899
 LZ4_createHC,157,202
 dmStrlCat(),156,207
 _randomize_* (library),156,206
@@ -1733,6 +1733,7 @@ gProfileClock,8,35
 [section .fini_array],8,8
 btInternalTriangleIndexCallback,4,134
 btTriangleCallback,4,108
+_CortexA8657417_* (library),4,103
 btDispatcher,4,96
 btCollisionAlgorithmCreateFunc,4,76
 btConvexPenetrationDepthSolver,4,76
@@ -1981,7 +1982,6 @@ gFindPairs,4,27
 json_array,4,27
 vkCmdDraw,4,26
 stbi__process_frame_header(),3,71
-[LOAD #2 [RX]],3,3
 g_PendingResizeBecauseOfInsets,1,47
 g_accelerometerEnabled,1,39
 g_appLaunchInterrupted,1,39
@@ -1991,17 +1991,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5985142
-[section .debug_loc],0,3256006
-[section .debug_line],0,2440724
-[section .debug_str],0,2020242
-[section .debug_ranges],0,975248
-[section .debug_abbrev],0,454536
-[section .debug_frame],0,293196
-[section .symtab],0,46192
+[section .debug_info],0,5988579
+[section .debug_loc],0,3260134
+[section .debug_line],0,2442811
+[section .debug_str],0,2020472
+[section .debug_ranges],0,979928
+[section .debug_abbrev],0,454546
+[section .debug_frame],0,293264
+[section .symtab],0,46176
 [section .strtab],0,17999
-[ELF Headers],0,1400
+[ELF Headers],0,1360
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,7
+[Unmapped],0,12

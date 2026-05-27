@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3276800,3263744
+[__LINKEDIT],3276800,3265168
 MVK_spirv_cross,1475225,1475081
 dmScript,624756,100348
-dmGameSystem,404308,402684
+dmGameSystem,404380,402756
 basist,315610,300754
-"_TEXT,_* (library)",270554,270554
+"_TEXT,_* (library)",270682,270682
 std,259286,259286
 _lj_* (library),226501,226501
 _variable_* (library),128058,128058
@@ -13,7 +13,7 @@ _except_* (library),106148,106148
 (anonymous namespace),101426,101426
 dmGraphics,96025,95064
 dmGameObject,94592,94560
-dmGui,92388,91436
+dmGui,92388,91404
 dmRender,87320,87192
 dmHID,76901,76901
 MVKPixelFormats,65654,65630
@@ -47,11 +47,11 @@ mvk,18974,18854
 _fold_* (library),18954,18954
 dmEngine,17804,17788
 _cp_* (library),17708,17708
+dmRig,17252,17252
 cereal,17054,17054
 _vwin8192,16388,16388
 _parse_* (library),16180,16180
 MVKDescriptorTypePool<>,16048,16048
-dmRig,15920,15920
 _KHR_* (library),15340,0
 btCollisionWorld,14936,14936
 glsl_entries,14904,14904
@@ -68,22 +68,21 @@ dmInput,12472,11468
 MVKCmdBufferImageCopy<>,12465,12465
 dmHttpCache,12148,12148
 _EXT_* (library),11960,0
-"_DATA,_* (library)",11848,11848
+"_DATA,_* (library)",11888,11888
 _dmGameSystemDDF_* (library),11508,11064
 MVKRenderSubpass,11247,11247
 dmEasing,10824,10824
 MVKExtensionList,10687,10687
 _OBJC_* (library),10332,10332
 _vorbis_* (library),10252,10252
-[__DATA],9912,20
 gjkepa2_impl,9900,9900
 MVKDescriptorSetLayoutBinding,9894,9894
+[__DATA],9872,12
 _dmRigDDF_* (library),9752,9560
 b2World,9564,9564
 MVKCmdBlitImage<>,9540,9540
 _expr_* (library),9424,9424
 _dmRenderDDF_* (library),9332,8840
-[__TEXT],8853,13549
 MVKQueueFullCommandBufferSubmission<>,8835,8835
 MVKGraphicsResourcesCommandEncoderState,8790,8790
 _sincos_* (library),8200,8200
@@ -99,6 +98,7 @@ MVKCmdResolveImage<>,7142,7142
 btAxisSweep3Internal<>,7080,7080
 dmSoundCodec,6984,6952
 _debuginfo_* (library),6808,6808
+[__TEXT],6785,11481
 MVKDescriptorSetLayout,6425,6425
 MVKResourcesCommandEncoderState,6410,6410
 btIDebugDraw,6292,6292
@@ -186,6 +186,7 @@ MVKMTLFunctionNull,3136,0
 _amd_* (library),3128,3128
 b2SeparationFunction,3128,3128
 dmResourceProviderZip,3036,2908
+dmSSLSocket,3008,3008
 spvExpandOperandSequenceOnce(),3000,3000
 MVKCmdBindDescriptorSetsStatic<>,2997,2997
 b2EPCollider,2960,2960
@@ -224,7 +225,6 @@ MVKBuffer,2579,2579
 MVKCmdDrawIndexed,2572,2572
 _make_* (library),2560,2560
 MVKCmdDraw,2525,2525
-dmSSLSocket,2480,2480
 MVKShaderLibraryCache,2448,2448
 btQuantizedBvh,2444,2444
 _cploop_* (library),2436,2436
@@ -372,8 +372,8 @@ btSphereSphereCollisionAlgorithm,1076,1076
 _dmGamesysDDF_* (library),1064,1024
 dmExtension,1052,1052
 mvkVkResultName(),1048,1048
+_OUTLINED_* (library),1048,1048
 __glfwCreateContextNSGL,1040,1040
-_OUTLINED_* (library),1040,1040
 btCollisionObject,1032,1032
 _INVSQ_* (library),1032,1032
 MVKBitArray,1028,1028
