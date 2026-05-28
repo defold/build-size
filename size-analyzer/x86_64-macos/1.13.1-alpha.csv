@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3346432,3346256
+[__LINKEDIT],3346432,3345128
 MVK_spirv_cross,1642277,1642133
 dmScript,633632,109032
-dmGameSystem,474344,471920
+dmGameSystem,473392,471240
 basist,329344,314480
 std,277555,277555
 _lj_* (library),250880,250880
 "_TEXT,_* (library)",236186,236186
 _variable_* (library),127496,127496
 dmGui,121756,120764
-dmGraphics,119145,118169
+dmGraphics,119161,118185
 dmGameObject,115256,115224
-dmRender,112224,111800
 dmCrash,111652,6004
+dmRender,111408,110984
 (anonymous namespace),104708,104700
 MVKPixelFormats,101738,101714
 _except_* (library),101612,101612
@@ -73,16 +73,16 @@ MVKCmdBlitImage<>,13168,13168
 gjkepa2_impl,12240,12240
 MVKDescriptorSetLayoutBinding,12165,12165
 _EXT_* (library),11960,0
-_dmGameSystemDDF_* (library),11684,11240
 MVKExtensionList,11619,11619
 MVKGraphicsResourcesCommandEncoderState,11554,11554
+_dmGameSystemDDF_* (library),11292,10856
 b2World,11072,11072
 dmEasing,10856,10856
 _vorbis_* (library),10736,10736
 MVKCmdResolveImage<>,10438,10438
 "_DATA,_* (library)",10432,10432
 MVKQueueFullCommandBufferSubmission<>,10420,10420
-_DATA_* (library),10296,10296
+_DATA_* (library),10312,10312
 _dmRigDDF_* (library),10060,9872
 _expr_* (library),9760,9760
 _dmRenderDDF_* (library),9476,8984
@@ -227,6 +227,7 @@ SphereTriangleDetector,2904,2904
 btQuantizedBvh,2896,2896
 _glfwSetInputMode,2880,2880
 MVKShaderLibraryCache,2880,2880
+[__DATA],2876,8
 _make_* (library),2864,2864
 _parseMapping,2816,2816
 _dmParticleDDF_* (library),2808,2696
@@ -240,6 +241,7 @@ dmIntersection,2624,2624
 MVKCmdBeginRendering<>,2612,2612
 MVKBufferView,2599,2599
 __glfwCreateContextEGL,2560,2560
+[__TEXT],2544,7224
 b2FrictionJoint,2544,2544
 _LZ4_* (library),2512,2512
 btConvexHullShape,2512,2512
@@ -247,7 +249,6 @@ MVKFramebuffer,2497,2497
 FontLoadFromMemoryTTF(),2480,2480
 btSubsimplexConvexCast,2472,2472
 _zip_* (library),2464,2464
-[__DATA],2460,8
 __glfwPollMonitorsCocoa,2448,2448
 _jpeg_* (library),2447,2447
 simple_json,2384,2384
@@ -276,8 +277,8 @@ MVKImageDescriptor,2157,2157
 _s_* (library),2132,2132
 MVKOcclusionQueryPool,2128,2128
 _decode_* (library),2112,2112
-_Register_* (library),2104,2032
 btContinuousConvexCollision,2088,2088
+_Register_* (library),2088,2016
 __glfwCreateWindowCocoa,2080,2080
 btHashMap<>,2080,2080
 btGjkEpaSolver2,2080,2080
@@ -324,10 +325,10 @@ _bcemit_* (library),1520,1520
 MVKPushConstantsCommandEncoderState,1518,1518
 btConvexInternalShape,1512,1512
 __glfwRefreshContextAttribs,1504,1504
+_JobSystemUpdate,1472,1472
 _vkspreflection_* (library),1472,1472
 _fetch_* (library),1472,1472
 MVKEventEmulated,1467,1467
-_JobSystemUpdate,1456,1456
 _findValidMapping,1440,1440
 getGlobalMVKConfig(),1440,1440
 -[GLFWApplicationDelegate applicationWillFinishLaunching:],1424,1424
@@ -429,7 +430,6 @@ btCollisionShape,896,896
 _vkCmdPipelineBarrier,880,880
 MVKStagedDescriptorBindingUse,880,880
 _timeout_* (library),880,880
-[__TEXT],864,5544
 __glfwInitJoysticksCocoa,864,864
 _vkCmdBeginRendering,864,864
 _vkCmdCopyBufferToImage2,864,864
@@ -452,15 +452,16 @@ btGhostObject,824,824
 _dmStructDDF_* (library),824,816
 _dec64table,818,818
 _vkCmdBindVertexBuffers2,816,816
-_b2Vec2_* (library),804,804
 MVKSemaphoreImpl,803,803
 __glfwInitVulkan,800,800
 MVKSamplerDescriptorMixin,796,796
+_b2Vec2_* (library),788,788
 _propagatemark,784,784
 b2PositionSolverManifold,784,784
 cullPoints2(),784,784
 _MVK_* (library),780,0
 MVKDeferredOperation,775,775
+PutDone(),768,768
 _dmHashFinal64,768,768
 _vkCmdPushConstants,768,768
 b2CollidePolygonAndCircle(),768,768
@@ -476,7 +477,6 @@ dmThread,736,736
 _bcread_* (library),736,736
 _copy_* (library),736,736
 MVKPeerSwapchainImage,736,736
-PutDone(),704,704
 _dmHashFinal32,704,704
 btTriangleConvexcastCallback,704,704
 _dmLuaDDF_* (library),696,680
@@ -822,7 +822,6 @@ mvkVkComponentMappingsMatch(),256,256
 dmOpaqueHandleContainer<>,256,256
 _zlength_* (library),256,256
 _destroy_* (library),256,256
-dmGameSystemDDF,248,248
 MVKCmdDebugMarkerEnd,247,247
 MVKCmdBindGraphicsPipeline,245,245
 MVKCmdSetStencilOp,245,245
@@ -844,6 +843,7 @@ spvDecodeLiteralStringOperand(),240,240
 btAxisSweep3,240,240
 btSingleSweepCallback,232,232
 MVKDescriptor,232,232
+dmGameSystemDDF,232,232
 MVKCmdDebugMarker,228,228
 __glfwGetMonitorWorkareaCocoa,224,224
 __glfwLoadLocalVulkanLoaderCocoa,224,224
@@ -1190,8 +1190,8 @@ rmtp_Gui(),144,128
 rmtp_Mesh(),144,144
 rmtp_Model(),144,128
 rmtp_ParticleFx(),144,144
-rmtp_Sound(),144,128
-rmtp_Sprite(),144,128
+rmtp_Sound(),144,144
+rmtp_Sprite(),144,144
 rmtp_Tilemap(),144,128
 CProfileNode,144,144
 MVKCurrentSubpassInfo,144,144
@@ -1203,7 +1203,7 @@ MVKInflectionMap<>,128,128
 _ComponentTypeAnim64,128,0
 _ComponentTypeGui3678,128,0
 _ComponentTypeLight193,128,0
-_ComponentTypeMesh1220,128,0
+_ComponentTypeMesh1205,128,0
 _ComponentTypeScript65,128,0
 _ComponentTypeSound574,128,0
 _ExtensionParamsGetContextByName,128,128
@@ -1211,7 +1211,7 @@ _LiveUpdateExt294,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
-_ResourceTypeFont1017,128,0
+_ResourceTypeFont1045,128,0
 _ResourceTypeGameObject230,128,0
 _ResourceTypeGui347,128,0
 _ResourceTypeGuiScript158,128,0
@@ -1324,7 +1324,7 @@ _package_* (library),112,112
 btConvexCast,112,112
 dmTime,112,112
 _bitrev,104,104
-_Components_* (library),104,72
+_Components_* (library),104,88
 btCollisionPairCallback,104,104
 -[CAMetalLayer(MoltenVK) naturalDrawableSizeMVK],96,96
 -[GLFWApplicationDelegate applicationDidChangeScreenParameters:],96,96
@@ -1854,7 +1854,7 @@ stbi__compute_huffman_codes(),32,32
 btConstraintSolver,32,32
 VkPhysicalDeviceFeatures2,28,28
 VkPhysicalDeviceFeatures,27,27
-rmtp_SoundPlaying(),24,0
+rmtp_SoundPlaying(),24,24
 _g_* (library),24,0
 dmGamesysDDF,24,24
 stbi__process_frame_header(),17,17
@@ -2042,15 +2042,15 @@ rmtp_ModelVertexCount(),16,0
 rmtp_ModelVertexSize(),16,0
 rmtp_ParticleVertexCount(),16,16
 rmtp_ParticleVertexSize(),16,16
-rmtp_ParticleVertexSizeGPU(),16,0
+rmtp_ParticleVertexSizeGPU(),16,16
 rmtp_ParticlesAlive(),16,0
 rmtp_RenderDispatchCount(),16,0
 rmtp_Resource(),16,16
 rmtp_ScriptCount(),16,16
 _Script_* (library),16,8
-rmtp_SpriteIndexSize(),16,0
-rmtp_SpriteVertexCount(),16,0
-rmtp_SpriteVertexSize(),16,0
+rmtp_SpriteIndexSize(),16,16
+rmtp_SpriteVertexCount(),16,16
+rmtp_SpriteVertexSize(),16,16
 rmtp_TilemapTileCount(),16,0
 rmtp_TilemapVertexCount(),16,0
 rmtp_TilemapVertexSize(),16,0

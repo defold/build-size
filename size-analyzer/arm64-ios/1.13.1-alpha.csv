@@ -1,14 +1,14 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1802240,1788856
+[__LINKEDIT],1802240,1787784
 dmScript,623972,99564
-dmGameSystem,400820,399196
+dmGameSystem,400044,398412
 _lj_* (library),204432,204432
-"_TEXT,_* (library)",147568,147568
-dmCrash,112648,5976
+"_TEXT,_* (library)",147563,147563
+dmCrash,112648,6104
 basist,98555,83699
 dmGameObject,94260,94228
-dmGui,90452,89468
-dmRender,86944,86816
+dmGui,90452,89516
+dmRender,86060,85932
 dmGraphics,78669,77724
 dmHID,74659,74659
 _pfb,65544,65544
@@ -22,10 +22,10 @@ _load_* (library),21176,21176
 stbi__process_marker(),20599,20599
 dmSound,20540,20388
 std,19712,19712
-[__TEXT],17698,33978
+[__TEXT],19263,35543
 dmEngine,17536,17520
 dmRig,17032,17032
-_GLOBAL_* (library),16600,16600
+_GLOBAL_* (library),16604,16604
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 _ZNSt3_* (library),16116,16116
@@ -39,8 +39,8 @@ dmHttpCache,12310,12310
 _tdefl_* (library),12176,12176
 dmInput,12036,11032
 _parse_* (library),11740,11740
-_dmGameSystemDDF_* (library),11508,11064
-[__DATA],11128,20
+[__DATA],11560,4
+_dmGameSystemDDF_* (library),11116,10680
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
 gjkepa2_impl,9908,9908
@@ -103,7 +103,7 @@ _tmalloc_* (library),3984,3984
 _process_* (library),3852,3852
 dmLiveUpdate,3852,3812
 dmResourceMounts,3848,3848
-dmMessage,3764,3732
+dmMessage,3764,3748
 btDbvt,3716,3716
 b2GridShape,3684,3684
 _inet_* (library),3676,3676
@@ -115,8 +115,8 @@ btDbvtBroadphase,3616,3616
 _run_* (library),3592,3592
 b2Island,3508,3508
 dmDeviceAVAudio,3452,3452
-dmSys,3452,3348
-dmLog,3432,3416
+dmSys,3452,3364
+dmLog,3432,3432
 btCompoundCollisionAlgorithm,3412,3412
 _callback_* (library),3384,3384
 _ctype_* (library),3264,3264
@@ -163,9 +163,9 @@ btConvexHullShape,2040,2040
 _clib_* (library),2028,2028
 btCollisionDispatcher,2016,2016
 SphereTriangleDetector,2004,2004
-_Register_* (library),2000,1992
 _dmInputDDF_* (library),1996,1968
 _buffer_* (library),1984,1984
+_Register_* (library),1984,1976
 btCapsuleShape,1972,1972
 _decode_* (library),1968,1968
 _gola_* (library),1940,1940
@@ -175,7 +175,7 @@ dmResourceProviderArchive,1852,1724
 _release_* (library),1840,1840
 ReverseHashContainer,1840,1840
 dmLoadQueue,1824,1824
-__MergedGlobals,1816,1416
+__MergedGlobals,1816,1608
 b2FrictionJoint,1816,1816
 b2Distance(),1808,1808
 _mapping_* (library),1804,1804
@@ -225,8 +225,8 @@ _get_* (library),1188,1188
 dmResourceProvider,1180,1180
 b2ContactManager,1172,1172
 _ll_* (library),1164,1164
+_JobSystemUpdate,1156,1156
 btTransformUtil,1148,1148
-_JobSystemUpdate,1144,1144
 _oggpack_* (library),1132,1132
 _ffh_* (library),1120,1120
 btPolyhedralConvexAabbCachingShape,1116,1116
@@ -276,7 +276,7 @@ b2Joint,792,792
 btSphereShape,792,792
 _finderrfunc,784,784
 _dmStructDDF_* (library),784,776
-_g_* (library),760,0
+_g_* (library),760,8
 _jit_* (library),752,752
 _fpconv_* (library),752,752
 CProfileManager,744,672
@@ -333,6 +333,7 @@ btUnionFind,568,568
 btTriangleConvexcastCallback,560,560
 btClosestNotMeConvexResultCallback,556,556
 btBoxBoxDetector,548,548
+PutDone(),544,544
 _match_* (library),544,544
 b2Mat33,544,544
 _buf_* (library),540,540
@@ -351,16 +352,16 @@ _block_* (library),512,512
 _foldarith,496,496
 _CONTEXT_* (library),496,496
 b2GridAndPolygonContact,496,496
-_de_* (library),492,484
+_de_* (library),492,492
 b2GridAndCircleContact,492,492
 _JobSystemCreate,488,488
-_b2Vec2_* (library),488,488
 _dict_* (library),484,484
-PutDone(),476,476
+_b2Vec2_* (library),472,472
 _const_* (library),464,464
 b2ChainAndPolygonContact,464,464
 _dmSoundDDF_* (library),460,432
 b2ChainAndCircleContact,460,460
+CancelJobInternal(),448,448
 _build_* (library),448,448
 _grow_* (library),448,448
 _resizestack,444,444
@@ -369,7 +370,6 @@ _dmHashBuffer64,432,432
 _newproxy_* (library),432,432
 ResourceChunkCacheEvictMemory(),428,428
 _matchbracketclass,428,428
-CancelJobInternal(),424,424
 _collect_* (library),420,420
 dmZip,420,420
 -[BaseView fillTouch:forPhase:],416,416
@@ -460,7 +460,6 @@ _dmHashReverse32,252,252
 _dmHashReverse64,252,252
 JobThread(),248,248
 _zlength_* (library),248,248
-dmGameSystemDDF,248,248
 -[ViewController getIntendedFrameOrigin:],240,240
 _countint,240,240
 dmStrTok(),240,240
@@ -469,6 +468,7 @@ _counthash,236,236
 _dmHashInit32,236,236
 _dmHashInit64,236,236
 -[AppDelegateProxy forwardInvocation:],232,232
+dmGameSystemDDF,232,232
 __glfwPlatformOpenWindowVulkan,228,228
 _cdata_* (library),228,228
 _pushnexttemplate,228,228
@@ -588,14 +588,14 @@ b2Draw,132,132
 _ComponentTypeAnim64,128,0
 _ComponentTypeGui3678,128,0
 _ComponentTypeLight193,128,0
-_ComponentTypeMesh1220,128,0
+_ComponentTypeMesh1205,128,0
 _ComponentTypeScript65,128,0
 _ComponentTypeSound574,128,0
 _LiveUpdateExt294,128,0
 _ResourceTypeAnim35,128,0
 _ResourceTypeAnimationSet103,128,0
 _ResourceTypeCollection369,128,0
-_ResourceTypeFont1017,128,0
+_ResourceTypeFont1045,128,0
 _ResourceTypeGameObject230,128,0
 _ResourceTypeGui347,128,0
 _ResourceTypeGuiScript158,128,0
@@ -870,7 +870,7 @@ __glfwPlatformQueryAuxContextOpenGL,24,24
 __glfwPlatformTerminate,24,24
 __glfwPlatformUnacquireAuxContext,24,24
 __glfwSetMarkedText,24,24
-(anonymous namespace),24,0
+(anonymous namespace),24,8
 dmGamesysDDF,24,24
 -[AppDelegate appUpdate].cold.1,20,20
 -[BaseView caretRectForPosition:],20,20
@@ -1067,7 +1067,7 @@ btFreeDefault(),4,4
 dmFixedMemFree(),4,4
 dmStrCaseCmp(),4,4
 stbi__process_frame_header(),4,4
-_unpremultiply_* (library),4,0
-_vertically_* (library),4,0
+_unpremultiply_* (library),4,4
+_vertically_* (library),4,4
 uniqueId,4,4
 [Mach-O Headers],0,72
