@@ -2,18 +2,18 @@ symbol_group_name,vmsize,filesize
 dmScript,638509,152364
 dmGameSystem,471532,647876
 [section .rodata],386995,386995
-dmGraphics,212775,283627
+dmGraphics,212775,283632
 _mbedtls_* (library),164491,207407
 (anonymous namespace),131132,203813
 dmGui,122264,157694
 dmCrash,114086,13116
-dmGameObject,110384,156980
+dmGameObject,110384,156986
 dmRender,108507,154521
 basist,95700,97707
 _compress_* (library),88343,90522
 std,87399,98113
 _pfb,65536,66553
-dmHashTable<>,53856,67354
+dmHashTable<>,53856,67330
 dmPhysics,40712,61683
 dmParticle,37593,47689
 _cf_* (library),33336,44725
@@ -22,7 +22,7 @@ dmSound,23781,31096
 [section .rela.dyn],22464,22464
 dmRig,22228,27139
 _decompress_* (library),21808,23054
-dmEngine,19414,23838
+dmEngine,19414,23886
 _GLOBAL_* (library),18056,25011
 _load_* (library),17900,18204
 libunwind,17865,20966
@@ -58,7 +58,7 @@ _mz_* (library),7988,9074
 dmHttpCache,7780,9451
 _BC_* (library),7752,11681
 _Register_* (library),7521,13159
-_cxa_* (library),7230,9374
+_cxa_* (library),7230,9316
 dmSocket,6832,10095
 btIDebugDraw,6816,8080
 b2DynamicTree,6804,8029
@@ -1105,7 +1105,7 @@ dmMemory,156,315
 rmtp_Gui(),156,347
 Particle_GetStats,154,220
 Particle_NewPrototypeFromDDF,153,230
-_android_* (library),152,463
+_android_* (library),152,457
 meth_getpeername,152,265
 meth_getsockname,152,265
 meth_settimeout,152,264
@@ -1293,7 +1293,7 @@ CrashExt,108,165
 ov_test,108,164
 LZ4_resetStreamState,105,174
 _Components_* (library),104,647
-dmEngineDestroy(),104,221
+dmEngineDestroy(),104,197
 dmLZ4,104,190
 _glfwPlatformGetJoystickDeviceId,104,185
 glfwGetJoystickDeviceGuid,104,178
@@ -1506,12 +1506,12 @@ _glfwClearWindowHints,64,134
 dmLiveUpdateDDF,64,266
 ComponentTypeScript,64,132
 ComponentTypeAnim,64,130
+dmEngineDDF,64,253
 stbi__jbias,64,129
 _no_* (library),64,127
 global_protect,64,127
 dmGuiDDF,64,247
 reader_string,64,126
-dmEngineDDF,64,248
 cpfinalize,64,123
 rescale_e,64,122
 _bad_* (library),64,198
@@ -2006,7 +2006,7 @@ disableCcd,1,59
 [section .debug_str],0,2028142
 [section .debug_ranges],0,1931040
 [section .debug_abbrev],0,449771
-[section .symtab],0,86952
+[section .symtab],0,87000
 [section .strtab],0,16288
 [ELF Headers],0,2240
 [section .shstrtab],0,374
