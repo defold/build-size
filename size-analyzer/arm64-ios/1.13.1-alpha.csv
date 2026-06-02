@@ -1,31 +1,31 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1802240,1787784
+[__LINKEDIT],1802240,1794152
 dmScript,623972,99364
-dmGameSystem,400044,398076
+dmGameSystem,407644,405676
 _lj_* (library),204432,204432
-"_TEXT,_* (library)",147563,147563
-dmCrash,112648,5976
+"_TEXT,_* (library)",147860,147860
+dmCrash,113380,6708
 basist,98555,83699
 dmGameObject,94260,93868
 dmGui,90452,89468
 dmRender,86060,85708
 dmGraphics,78669,77724
-dmHID,74659,74659
+dmHID,74653,74653
 _pfb,65544,65544
 _dm_* (library),47520,47520
 _cp_* (library),34652,34652
 dmPhysics,33520,33408
 dmParticle,30016,29848
+[__TEXT],25787,42067
 dmResource,24176,24088
 dmHashTable<>,21624,21624
 _load_* (library),21176,21176
-stbi__process_marker(),20599,20599
+stbi__process_marker(),20660,20660
 dmSound,20540,20388
 std,19712,19712
-[__TEXT],19263,35543
 dmEngine,17536,17472
 dmRig,17032,17008
-_GLOBAL_* (library),16604,16604
+_GLOBAL_* (library),16608,16608
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 _ZNSt3_* (library),16116,16116
@@ -39,7 +39,7 @@ dmHttpCache,12310,12310
 _tdefl_* (library),12176,12176
 dmInput,12036,11016
 _parse_* (library),11740,11740
-[__DATA],11560,4
+[__DATA],11376,12
 _dmGameSystemDDF_* (library),11116,11116
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
@@ -48,7 +48,7 @@ _serialize_* (library),9780,9780
 _dmRigDDF_* (library),9752,9560
 b2World,9564,9564
 _dmRenderDDF_* (library),9332,8840
-"_DATA,_* (library)",8328,8328
+"_DATA,_* (library)",8336,8336
 _gc_* (library),8228,8228
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
@@ -57,6 +57,7 @@ dmHttpClient,7988,7972
 _json_* (library),7952,7936
 _create_* (library),7792,7792
 _objc_* (library),7424,7424
+b2DynamicTree,7068,7068
 btAxisSweep3Internal<>,7040,7040
 dmSoundCodec,6952,6920
 _bcemit_* (library),6724,6724
@@ -67,7 +68,6 @@ _dmGraphics_* (library),6071,5968
 dmSocket,5976,5976
 _bcwrite_* (library),5968,5968
 _bcread_* (library),5852,5852
-b2DynamicTree,5676,5676
 _carith_* (library),5580,5580
 _mz_* (library),5556,5556
 dmConfigFile,5472,5472
@@ -152,7 +152,7 @@ stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192
 _jpeg_* (library),2171,2171
 _LZ4_* (library),2164,2164
-b2Contact,2132,1624
+b2Contact,2132,1528
 _s_* (library),2128,2128
 _zip_* (library),2128,2128
 dmArray<>,2060,2060
@@ -180,7 +180,7 @@ b2FrictionJoint,1816,1816
 b2Distance(),1808,1808
 _mapping_* (library),1804,1804
 _dmModelDDF_* (library),1800,1800
-b2BlockAllocator,1764,1764
+b2BlockAllocator,1764,1668
 btSubsimplexConvexCast,1740,1740
 basisu,1701,1701
 btConvexShape,1696,1696
@@ -216,9 +216,9 @@ btBvhTriangleMeshShape,1264,1264
 btPolyhedralConvexShape,1252,1252
 b2CollidePolygons(),1240,1240
 btConvexInternalShape,1240,1240
-b2BroadPhase,1240,1240
 dmResourceArchive,1232,1232
 dmZlib,1212,1212
+b2BroadPhase,1204,1204
 b2TimeOfImpact(),1196,1196
 dmVMath,1188,1188
 _get_* (library),1188,1188
@@ -230,14 +230,14 @@ btTransformUtil,1148,1148
 _oggpack_* (library),1132,1132
 _ffh_* (library),1120,1120
 btPolyhedralConvexAabbCachingShape,1116,1012
-_dec64table,1104,1104
+_dec64table,1088,1088
 _str_* (library),1080,1080
 btManifoldResult,1076,1076
 btSphereSphereCollisionAlgorithm,1076,1076
 _dmGamesysDDF_* (library),1064,1064
+_OUTLINED_* (library),1064,1064
 cullPoints2(),1056,1056
 _hash_* (library),1056,1056
-_OUTLINED_* (library),1056,1056
 dmExtension,1052,1052
 btCollisionObject,1032,1032
 _INVSQ_* (library),1032,1032

@@ -1,23 +1,23 @@
 symbol_group_name,vmsize,filesize
-dmScript,631773,139594
-[section .rodata],369130,369130
-dmGameSystem,321918,479478
+dmScript,631773,139601
+[section .rodata],369882,369882
+dmGameSystem,328202,487502
 dmGraphics,239827,325476
 _mbedtls_* (library),155802,194630
+dmCrash,112002,11279
 dmGui,110664,144220
-dmCrash,110242,10066
 dmGameObject,109304,151522
 dmRender,100095,140835
 basist,99664,99210
 _compress_* (library),97083,98459
-[section .rel.dyn],69448,69448
+[section .rel.dyn],69576,69576
 _pfb,65536,65561
-std,60485,76519
-[section .ARM.exidx],57440,57440
+std,60485,76498
+[section .ARM.exidx],57648,57648
 dmHashTable<>,49522,62363
-(anonymous namespace),44924,103732
+(anonymous namespace),44924,103725
 dmParticle,39217,48716
-dmPhysics,37455,55321
+dmPhysics,37456,55436
 dmResource,30108,40733
 dmSound,24809,31668
 dmRig,21624,26215
@@ -25,7 +25,7 @@ dmEngine,20982,25456
 _decompress_* (library),20800,21854
 _GLOBAL_* (library),19663,26491
 _cf_* (library),17380,26649
-_load_* (library),17236,17947
+_load_* (library),17236,17941
 btCollisionWorld,17197,23754
 vwin8192,16384,16409
 btQuantizedBvh,15568,18050
@@ -34,20 +34,21 @@ btSequentialImpulseConstraintSolver,14840,17943
 btDiscreteDynamicsWorld,14656,19682
 dmDDF,14084,21709
 _internal_* (library),14080,14363
-[section .ARM.extab],13120,13120
-[section .plt],11904,11904
+[section .ARM.extab],13240,13240
+[section .plt],11920,11920
 dmInput,10903,11574
 dmEasing,10856,10983
 b2World,10688,12051
 gjkepa2_impl,9688,11153
-[section .hash],9656,9656
+[section .hash],9664,9664
 dmHttpClient,9152,11738
 dmHttpCache,8768,10343
-_lua_* (library),8686,13149
+_lua_* (library),8686,13137
 dmObjectPool<>,8408,11270
 _mz_* (library),8380,9346
 vwin4096,8192,8217
 dmSoundCodec,7990,11788
+b2DynamicTree,7988,9467
 _strfmt_* (library),7954,9046
 _BC_* (library),7892,10850
 _get_* (library),7642,9777
@@ -58,16 +59,15 @@ btIDebugDraw,7328,8416
 _tinfl_* (library),7019,7435
 _zip_* (library),6864,7481
 btAxisSweep3Internal<>,6836,9147
-b2DynamicTree,6776,7809
-[section .dynsym],6576,6576
-[section .text],6263,6263
+[section .dynsym],6592,6592
+[section .text],6296,6296
 dmBuffer,6240,8405
 _parse_* (library),6184,6970
 [section .gnu.hash],6124,6124
 dmConfigFile,6088,7371
-[section .rel.plt],5936,5936
+[section .rel.plt],5944,5944
 dmSys,5886,7996
-[section .dynstr],5856,5856
+[section .dynstr],5862,5862
 dmConnectionPool,5648,7251
 dmHttpService,5508,7052
 init_gl,5444,5980
@@ -132,8 +132,8 @@ _key_* (library),3017,3573
 _mul_* (library),3012,3089
 _glfwJoy,3008,25
 _meta_* (library),3008,3855
+[section .got.plt],2984,2984
 _run_* (library),2980,3217
-[section .got.plt],2980,2980
 _sync_* (library),2969,3402
 b2WeldJoint,2964,3839
 _cconv_* (library),2928,3379
@@ -160,7 +160,7 @@ btBoxShape,2504,4113
 _mac_* (library),2496,2887
 _set_* (library),2420,3598
 _page_* (library),2415,2898
-[section .gnu.version],2412,2412
+[section .gnu.version],2414,2414
 b2DistanceJoint,2408,3339
 lex_scan,2334,2471
 _vm_* (library),2322,4045
@@ -207,7 +207,7 @@ btPersistentManifold,1740,2372
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
 _double_* (library),1720,1818
-[section .bss],1719,0
+[section .bss],1703,0
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
@@ -494,11 +494,11 @@ dmPPrint,388,649
 lex_number,384,443
 ciphersuite_definitions,384,424
 secp256r1_T,384,412
+[LOAD #1 [R]],381,381
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 _auth_* (library),376,488
 _LabelDesc_* (library),375,917
-[LOAD #1 [R]],373,373
 _glfwAndroidPlatformSwapBuffers,372,452
 JobSystemCreateJob,372,439
 _SpriteDesc_* (library),365,943
@@ -1571,6 +1571,7 @@ package_loaders,20,52
 cp_check,20,45
 _glfwThrd,20,26
 g_Window,20,25
+[LOAD #4 [RW]],20,0
 stbi__compute_huffman_codes(),19,100
 cpfinalize,18,61
 _glfwAndroidPlatformDestroyWindow,16,98
@@ -1689,6 +1690,7 @@ _glfwPlatformExtensionSupported,8,72
 GBGetScaleFromSize(),8,71
 g_FirstExtension,8,71
 FontGetResourceSize(),8,70
+_clang_* (library),8,70
 FontGetGlyphIndex(),8,69
 GetResourceSizeTTF(),8,69
 glfwSetDeviceChangedCallback,8,69
@@ -1706,7 +1708,6 @@ dmEngineDDF,8,128
 ProfileScopeEnd(),8,64
 ProfileFrameBegin(),8,63
 ProfileLogText(),8,63
-_clang_* (library),8,63
 ProfileFrameEnd(),8,61
 _DispatchCalls_* (library),8,58
 _GameObject_* (library),8,55
@@ -1735,7 +1736,6 @@ btCollisionAlgorithmCreateFunc,4,76
 btConvexPenetrationDepthSolver,4,76
 _glfwPlatformSetWindowBackgroundColor,4,74
 _glfwPlatformGetWindowRefreshRate,4,70
-b2RayCastCallback,4,70
 btBroadphaseAabbCallback,4,70
 _glfwPlatformRefreshWindowParams,4,69
 _glfwPlatformUnacquireAuxContext,4,69
@@ -1977,9 +1977,9 @@ vkMapMemory,4,28
 gFindPairs,4,27
 json_array,4,27
 vkCmdDraw,4,26
-[LOAD #4 [RW]],4,0
 stbi__process_frame_header(),3,71
 [LOAD #2 [RX]],3,3
+b2RayCastCallback,2,61
 g_PendingResizeBecauseOfInsets,1,47
 g_accelerometerEnabled,1,39
 g_appLaunchInterrupted,1,39
@@ -1989,17 +1989,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,5987930
-[section .debug_loc],0,3259516
-[section .debug_line],0,2442383
-[section .debug_str],0,2019729
-[section .debug_ranges],0,979232
-[section .debug_abbrev],0,454549
-[section .debug_frame],0,293144
-[section .symtab],0,46224
-[section .strtab],0,17999
+[section .debug_info],0,6020945
+[section .debug_loc],0,3269119
+[section .debug_line],0,2455604
+[section .debug_str],0,2027169
+[section .debug_ranges],0,983600
+[section .debug_abbrev],0,457250
+[section .debug_frame],0,294268
+[section .symtab],0,46368
+[section .strtab],0,18085
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,6
+[Unmapped],0,18

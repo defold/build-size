@@ -1,22 +1,22 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3346432,3345128
+[__LINKEDIT],3354624,3352312
 MVK_spirv_cross,1642277,1642133
 dmScript,633632,109032
-dmGameSystem,473392,471240
+dmGameSystem,482144,479992
 basist,329344,314480
 std,277555,277555
 _lj_* (library),250880,250880
-"_TEXT,_* (library)",236186,236186
+"_TEXT,_* (library)",236540,236540
 _variable_* (library),127496,127496
 dmGui,121756,120764
 dmGraphics,119161,118185
 dmGameObject,115256,115224
-dmCrash,111652,6004
+dmCrash,113540,6868
 dmRender,111408,110984
 (anonymous namespace),104708,104700
 MVKPixelFormats,101738,101714
 _except_* (library),101612,101612
-dmHID,81816,81520
+dmHID,81800,81504
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
 MVKInstance,62103,62103
@@ -42,7 +42,7 @@ dmSound,26312,26064
 MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),24576,24576
-stbi__process_marker(),23450,23450
+stbi__process_marker(),23514,23514
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,22240,22240
 dmEngine,20928,20912
@@ -79,10 +79,10 @@ _dmGameSystemDDF_* (library),11292,10856
 b2World,11072,11072
 dmEasing,10856,10856
 _vorbis_* (library),10736,10736
+"_DATA,_* (library)",10440,10440
 MVKCmdResolveImage<>,10438,10438
-"_DATA,_* (library)",10432,10432
 MVKQueueFullCommandBufferSubmission<>,10420,10420
-_DATA_* (library),10312,10312
+_DATA_* (library),10136,10136
 _dmRigDDF_* (library),10060,9872
 _expr_* (library),9760,9760
 _dmRenderDDF_* (library),9476,8984
@@ -96,6 +96,7 @@ _sincos_* (library),8208,8208
 _vwin4096,8192,8192
 _shader_* (library),8096,8096
 MVKDescriptorSetLayout,8025,8025
+b2DynamicTree,7952,7952
 _json_* (library),7904,7888
 MVKDeviceMemory,7860,7860
 _create_* (library),7712,7712
@@ -115,7 +116,6 @@ _lex_* (library),6704,6704
 dmSocket,6528,6528
 MVKPipelineCache,6520,6520
 btConvexConvexAlgorithm,6448,6448
-b2DynamicTree,6368,6368
 dmBuffer,6360,6352
 debuginfo_entries,6256,6256
 _dmGraphics_* (library),6216,6112
@@ -197,6 +197,7 @@ _socket_* (library),3472,3472
 dmArray<>,3456,3456
 dmPlatform,3456,3440
 MVKPresentableSwapchainImage,3447,3447
+[__TEXT],3406,8086
 _dmMath_* (library),3344,3104
 MVKTimelineSemaphoreEmulated,3335,3335
 MVKCmdCopyBuffer<>,3330,3330
@@ -227,7 +228,6 @@ SphereTriangleDetector,2904,2904
 btQuantizedBvh,2896,2896
 _glfwSetInputMode,2880,2880
 MVKShaderLibraryCache,2880,2880
-[__DATA],2876,8
 _make_* (library),2864,2864
 _parseMapping,2816,2816
 _dmParticleDDF_* (library),2808,2696
@@ -241,7 +241,6 @@ dmIntersection,2624,2624
 MVKCmdBeginRendering<>,2612,2612
 MVKBufferView,2599,2599
 __glfwCreateContextEGL,2560,2560
-[__TEXT],2544,7224
 b2FrictionJoint,2544,2544
 _LZ4_* (library),2512,2512
 btConvexHullShape,2512,2512
@@ -298,6 +297,7 @@ b2BlockAllocator,1880,1224
 _idct_* (library),1872,1872
 _dmModelDDF_* (library),1856,1792
 btCompoundLeafCallback,1848,1848
+[__DATA],1844,0
 btAlignedObjectArray<>,1840,1840
 _mapping_* (library),1824,1824
 __glfwInitCocoa,1808,1808
