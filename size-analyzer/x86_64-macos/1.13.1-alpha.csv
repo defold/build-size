@@ -1,16 +1,16 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3354624,3352312
+[__LINKEDIT],3354624,3353960
 MVK_spirv_cross,1642277,1642133
 dmScript,633632,109024
-dmGameSystem,482144,479296
+dmGameSystem,481984,479136
 basist,329344,314480
 std,277555,277555
 _lj_* (library),250880,250880
-"_TEXT,_* (library)",236532,236532
+"_TEXT,_* (library)",236580,236580
 _variable_* (library),127496,127496
 dmGui,121756,120764
-dmGraphics,119161,118185
-dmGameObject,115256,114864
+dmGraphics,119417,118441
+dmGameObject,115304,114912
 dmCrash,113540,6868
 dmRender,111408,110984
 (anonymous namespace),104708,104700
@@ -42,10 +42,10 @@ dmSound,26312,26064
 MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),24576,24576
-stbi__process_marker(),23514,23514
+stbi__process_marker(),23562,23562
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,22240,22240
-dmEngine,20928,20864
+dmEngine,21312,21248
 btCollisionWorld,20828,20816
 _fold_* (library),19712,19712
 _cp_* (library),18400,18400
@@ -197,7 +197,6 @@ _socket_* (library),3472,3472
 dmArray<>,3456,3456
 dmPlatform,3456,3440
 MVKPresentableSwapchainImage,3447,3447
-[__TEXT],3414,8094
 _dmMath_* (library),3344,3344
 MVKTimelineSemaphoreEmulated,3335,3335
 MVKCmdCopyBuffer<>,3330,3330
@@ -218,7 +217,7 @@ dmSSLSocket,3088,3088
 MVKQueueCommandBufferSubmission,3058,3058
 _strscan_* (library),2976,2976
 MVKQueuePresentSurfaceSubmission,2971,2971
-_field_* (library),2944,2944
+_field_* (library),2912,2912
 _res_* (library),2912,2912
 b2Fixture,2912,2912
 MVKTimestampQueryPool,2912,2912
@@ -229,6 +228,7 @@ btQuantizedBvh,2896,2896
 _glfwSetInputMode,2880,2880
 MVKShaderLibraryCache,2880,2880
 _make_* (library),2864,2864
+[__TEXT],2822,7502
 _parseMapping,2816,2816
 _dmParticleDDF_* (library),2808,2696
 _cploop_* (library),2736,2736
@@ -731,7 +731,6 @@ MVKUniformBufferDynamicDescriptor,316,316
 MVKPipelineCommandEncoderState,313,313
 MVKCmdBeginQuery,307,307
 ResourceChunkCacheGet(),304,304
-SetContext(),304,304
 TextToCodePoints(),304,304
 _ConfigFileGetInt,304,304
 _cpparser,304,304
@@ -845,6 +844,7 @@ btSingleSweepCallback,232,232
 MVKDescriptor,232,232
 dmGameSystemDDF,232,232
 MVKCmdDebugMarker,228,228
+_ContextRegistrySetByHash,224,224
 __glfwGetMonitorWorkareaCocoa,224,224
 __glfwLoadLocalVulkanLoaderCocoa,224,224
 __glfwSetClipboardStringCocoa,224,224
@@ -1201,12 +1201,12 @@ BroadphaseRayTester,136,136
 -[MVKBlockObserver initWithBlock:forObject:atKeyPath:],128,128
 MVKInflectionMap<>,128,128
 _ComponentTypeAnim64,128,128
-_ComponentTypeGui3678,128,0
-_ComponentTypeLight193,128,0
-_ComponentTypeMesh1205,128,0
+_ComponentTypeGui3679,128,0
+_ComponentTypeLight195,128,0
+_ComponentTypeMesh1206,128,0
 _ComponentTypeScript65,128,128
 _ComponentTypeSound574,128,0
-_ExtensionParamsGetContextByName,128,128
+_ContextRegistryGet,128,128
 _LiveUpdateExt294,128,128
 _ResourceTypeAnim35,128,128
 _ResourceTypeAnimationSet103,128,0
@@ -1402,10 +1402,8 @@ FontGetPath(),80,80
 FontGetPathHash(),80,80
 FontGetType(),80,80
 MVKCommandEncodingContext,80,80
+_ContextRegistryDestroy,80,80
 _CrashExt,80,80
-_ExtensionAppParamsFinalize,80,80
-_ExtensionParamsFinalize,80,80
-_ExtensionParamsInitialize,80,80
 _LiveUpdateExt,80,80
 _ScriptBox2DExt,80,80
 _ScriptComputeExt,80,80
@@ -1485,7 +1483,7 @@ dmSystemDDF,72,72
 ChunkComparePathOffsetFn(),64,64
 FontCollectionDestroy(),64,64
 FontDestroyTTF(),64,64
-_ExtensionAppParamsInitialize,64,64
+_ExtensionParamsInitialize,64,64
 _ZSt28_* (library),64,64
 _ZN15dmDeviceAVAudioL17DeviceAVAudioOpenEPKN7dmSound16OpenDeviceParamsEPPv_* (library),64,64
 _cxx_* (library),64,64
@@ -1582,6 +1580,11 @@ _ComponentTypeSound,48,48
 _ConfigFileGetFloat.cold.1,48,48
 _ConfigFileGetInt.cold.1,48,48
 _ConfigFileGetString.cold.1,48,48
+_ContextRegistryCreate,48,48
+_ContextRegistrySet,48,48
+_ExtensionAppParamsFinalize,48,48
+_ExtensionAppParamsInitialize,48,48
+_ExtensionParamsFinalize,48,48
 _GraphicsAdapterVulkan,48,48
 _JobSystemCreate.cold.1,48,48
 _JobSystemCreate.cold.2,48,48
@@ -1766,8 +1769,6 @@ TextLayoutGetLineCount(),32,32
 _AudioDecoderTremolo,32,32
 _AudioDecoderWav,32,32
 _DefaultSoundDevice,32,32
-_ExtensionAppParamsSetContext,32,32
-_ExtensionParamsSetContext,32,32
 _ZN13MVKImagePlane26pullFromDeviceOnCompletionEP17MVKCommandEncoderR19MVKImageSubresourceRK20MVKMappedMemoryRange_* (library),32,32
 ___isPlatformVersionAtLeast.cold.1,32,32
 ___isPlatformVersionAtLeast.cold.2,32,32
@@ -1901,6 +1902,10 @@ ResourceTypeSetStreaming(),16,16
 TextLayoutCreate(),16,16
 TextLayoutGetLines(),16,16
 _ADJUST_* (library),16,16
+_ExtensionAppParamsGetContextRegistry,16,16
+_ExtensionAppParamsSetContextRegistry,16,16
+_ExtensionParamsGetContextRegistry,16,16
+_ExtensionParamsSetContextRegistry,16,16
 _ZN17MVKCommandEncoder16getTempMTLBufferEmbb_* (library),16,16
 _ZN17MVKCommandEncoder24getStageCountersMTLFenceEv_* (library),16,16
 _ZN18MVKCmdUpdateBuffer6encodeEP17MVKCommandEncoder_* (library),16,16

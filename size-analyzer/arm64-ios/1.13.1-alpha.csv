@@ -1,12 +1,12 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1802240,1794152
+[__LINKEDIT],1802240,1796160
 dmScript,623972,99364
-dmGameSystem,407644,405676
+dmGameSystem,407476,405508
 _lj_* (library),204432,204432
-"_TEXT,_* (library)",147860,147860
+"_TEXT,_* (library)",147878,147878
 dmCrash,113380,6708
 basist,98555,83699
-dmGameObject,94260,93868
+dmGameObject,94284,93892
 dmGui,90452,89468
 dmRender,86060,85708
 dmGraphics,78669,77724
@@ -16,16 +16,16 @@ _dm_* (library),47520,47520
 _cp_* (library),34652,34652
 dmPhysics,33520,33408
 dmParticle,30016,29848
-[__TEXT],25787,42067
 dmResource,24176,24088
-dmHashTable<>,21624,21624
+[__TEXT],24149,40429
+dmHashTable<>,22980,22980
 _load_* (library),21176,21176
 stbi__process_marker(),20660,20660
 dmSound,20540,20388
 std,19712,19712
-dmEngine,17536,17472
+dmEngine,17936,17872
 dmRig,17032,17008
-_GLOBAL_* (library),16608,16608
+_GLOBAL_* (library),16600,16600
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 _ZNSt3_* (library),16116,16116
@@ -427,7 +427,6 @@ _init_* (library),312,312
 dmPoolAllocator,312,312
 _ConfigFileGetFloat,308,308
 stbi__get16be(),308,308
-SetContext(),304,304
 btConeTwistConstraint,300,300
 jc,300,300
 FontLoadFromMemory(),296,296
@@ -477,6 +476,7 @@ _optget,224,224
 _return_* (library),224,224
 dmArrayUtil,224,224
 -[EAGLView destroyFramebuffer],220,220
+_ContextRegistrySetByHash,220,220
 -[SoundApplicationDelegate handleInterruption:],216,216
 _start_* (library),216,216
 dmEngineCreate(),216,216
@@ -586,9 +586,9 @@ rmtp_Mesh(),132,132
 dmMemProfile,132,116
 b2Draw,132,132
 _ComponentTypeAnim64,128,128
-_ComponentTypeGui3678,128,128
-_ComponentTypeLight193,128,128
-_ComponentTypeMesh1205,128,128
+_ComponentTypeGui3679,128,128
+_ComponentTypeLight195,128,128
+_ComponentTypeMesh1206,128,128
 _ComponentTypeScript65,128,128
 _ComponentTypeSound574,128,128
 _LiveUpdateExt294,128,128
@@ -637,7 +637,7 @@ engine_main(),120,120
 -[BaseView deleteBackward],116,116
 -[BaseView textInRange:],116,116
 -[BaseView touchStart:withTouch:],116,116
-_ExtensionParamsGetContextByName,116,116
+_ContextRegistryGet,116,116
 __glfwInputMouseClick,116,116
 _free_* (library),116,116
 btPointCollector,116,116
@@ -678,6 +678,8 @@ recursedeletenode(),92,92
 -[ViewController viewDidAppear:],88,88
 FontDestroy(),88,88
 ResourceTypeContextGetContextByHash(),88,88
+_ContextRegistryDestroy,88,88
+_ScriptHttp,88,88
 __glfwPlatformGetProcAddress,88,88
 _glfwAccelerometerEnable,88,88
 _mad3sizes_* (library),88,88
@@ -699,12 +701,9 @@ dmDoubleLinkedList,84,84
 -[ViewController dealloc],80,80
 -[ViewController viewWillDisappear:],80,80
 _CrashExt,80,80
-_ExtensionAppParamsFinalize,80,80
-_ExtensionParamsFinalize,80,80
 _ScriptBox2DExt,80,80
 _ScriptComputeExt,80,80
 _ScriptFont,80,80
-_ScriptHttp,80,80
 _ScriptImageExt,80,80
 _ScriptMaterialExt,80,80
 _ScriptModelExt,80,80
@@ -736,7 +735,6 @@ FontCollectionDestroy(),64,64
 FontGetPath(),64,64
 FontGetPathHash(),64,64
 FontGetType(),64,64
-_ExtensionParamsInitialize,64,64
 _glfwGetWindowSize,64,64
 _glfwSetWindowSizeCallback,64,64
 _settabsb,64,64
@@ -751,7 +749,7 @@ _b2_* (library),64,64
 -[BaseView markedTextRange],60,60
 -[BaseView selectedTextRange],60,60
 ChunkComparePathOffsetFn(),60,60
-_ExtensionAppParamsInitialize,60,60
+_ContextRegistrySet,60,60
 _WindowCreateParamsInitialize,60,60
 _glfwSetWindowPos,60,60
 _setpc_* (library),60,60
@@ -772,9 +770,12 @@ b2PairLessThan(),56,56
 -[ViewController viewDidUnload],52,52
 -[VulkanView dealloc],52,52
 FontDestroyTTF(),52,52
+_ExtensionParamsInitialize,52,52
 _glfwGetMouseWheel,52,52
 _glfwIconifyWindow,52,52
 dmEngineFinalize(),52,52
+_ContextRegistryCreate,48,48
+_ExtensionAppParamsInitialize,48,48
 __glfwPlatformAcquireAuxContext,48,48
 _expr,48,48
 _glfwGetProcAddress,48,48
@@ -789,6 +790,8 @@ _glfwTerminate,48,48
 -[EAGLView destroyFramebuffer].cold.5,44,44
 -[IndexedRange start],44,44
 -[ViewController shouldUpdateViewFrame],44,44
+_ExtensionAppParamsFinalize,44,44
+_ExtensionParamsFinalize,44,44
 _glfwPollEvents,44,44
 _glfwSetWindowCloseCallback,44,44
 _glfwSetWindowFocusCallback,44,44
@@ -859,8 +862,6 @@ dmMemAlloc(),32,32
 FreeGlyphTTF(),28,28
 ResourceTypeReset(),28,28
 TextLayoutGetGlyphCount(),28,28
-_ExtensionAppParamsSetContext,28,28
-_ExtensionParamsSetContext,28,28
 _glfwGetJoystickParam,28,28
 dmRecord,28,28
 GBGetResourceSize(),24,24
@@ -946,6 +947,10 @@ GBGetDescent(),12,12
 _AudioDecoderTremolo,12,12
 _AudioDecoderWav,12,12
 _DefaultSoundDevice,12,12
+_ExtensionAppParamsGetContextRegistry,12,12
+_ExtensionAppParamsSetContextRegistry,12,12
+_ExtensionParamsGetContextRegistry,12,12
+_ExtensionParamsSetContextRegistry,12,12
 __glfwPlatformSetViewType,12,12
 _dmLogSetLevel,12,12
 btGeneric6DofConstraint,12,12
