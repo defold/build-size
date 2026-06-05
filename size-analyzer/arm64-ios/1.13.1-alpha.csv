@@ -1,31 +1,31 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1802240,1796160
-dmScript,623972,99364
-dmGameSystem,407476,405508
+[__LINKEDIT],1802240,1797104
+dmScript,624012,99396
+dmGameSystem,406500,404532
 _lj_* (library),204432,204432
-"_TEXT,_* (library)",147878,147878
-dmCrash,113380,6708
+"_TEXT,_* (library)",147743,147743
+dmCrash,113472,6792
 basist,98555,83699
 dmGameObject,94284,93892
 dmGui,90452,89468
-dmRender,86060,85708
-dmGraphics,78669,77724
-dmHID,74653,74653
+dmRender,86332,85972
+dmGraphics,78681,77736
+dmHID,74635,74635
 _pfb,65544,65544
 _dm_* (library),47520,47520
 _cp_* (library),34652,34652
 dmPhysics,33520,33408
-dmParticle,30016,29848
+dmParticle,30024,29856
+[__TEXT],24866,41146
 dmResource,24176,24088
-[__TEXT],24149,40429
 dmHashTable<>,22980,22980
 _load_* (library),21176,21176
 stbi__process_marker(),20660,20660
 dmSound,20540,20388
 std,19712,19712
-dmEngine,17936,17872
-dmRig,17032,17008
-_GLOBAL_* (library),16600,16600
+dmEngine,17876,17812
+dmRig,17068,17044
+_GLOBAL_* (library),16628,16628
 _vwin8192,16388,16388
 _mh_* (library),16384,32
 _ZNSt3_* (library),16116,16116
@@ -39,13 +39,13 @@ dmHttpCache,12310,12310
 _tdefl_* (library),12176,12176
 dmInput,12036,11016
 _parse_* (library),11740,11740
-[__DATA],11376,12
+[__DATA],11528,12
 _dmGameSystemDDF_* (library),11116,11116
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
 gjkepa2_impl,9908,9908
 _serialize_* (library),9780,9780
-_dmRigDDF_* (library),9752,9560
+_dmRigDDF_* (library),9584,9392
 b2World,9564,9564
 _dmRenderDDF_* (library),9332,8840
 "_DATA,_* (library)",8336,8336
@@ -152,7 +152,7 @@ stbtt_GetGlyphShape(),2204,2204
 b2DistanceJoint,2192,2192
 _jpeg_* (library),2171,2171
 _LZ4_* (library),2164,2164
-b2Contact,2132,1528
+b2Contact,2132,1608
 _s_* (library),2128,2128
 _zip_* (library),2128,2128
 dmArray<>,2060,2060
@@ -165,7 +165,7 @@ btCollisionDispatcher,2016,2016
 SphereTriangleDetector,2004,2004
 _dmInputDDF_* (library),1996,1968
 _buffer_* (library),1984,1984
-_Register_* (library),1984,1872
+_Register_* (library),1976,1864
 btCapsuleShape,1972,1972
 _decode_* (library),1968,1968
 _gola_* (library),1940,1940
@@ -180,7 +180,7 @@ b2FrictionJoint,1816,1816
 b2Distance(),1808,1808
 _mapping_* (library),1804,1804
 _dmModelDDF_* (library),1800,1800
-b2BlockAllocator,1764,1668
+b2BlockAllocator,1764,1764
 btSubsimplexConvexCast,1740,1740
 basisu,1701,1701
 btConvexShape,1696,1696
@@ -234,8 +234,8 @@ _dec64table,1088,1088
 _str_* (library),1080,1080
 btManifoldResult,1076,1076
 btSphereSphereCollisionAlgorithm,1076,1076
+_OUTLINED_* (library),1072,1072
 _dmGamesysDDF_* (library),1064,1064
-_OUTLINED_* (library),1064,1064
 cullPoints2(),1056,1056
 _hash_* (library),1056,1056
 dmExtension,1052,1052

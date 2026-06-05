@@ -2,9 +2,9 @@ symbol_group_name,vmsize,filesize
 dmScript,631773,139601
 [section .rodata],369882,369882
 dmGameSystem,328202,487502
-dmGraphics,239827,325476
+dmGraphics,239827,325504
 _mbedtls_* (library),155802,194630
-dmCrash,112002,11279
+dmCrash,112126,11614
 dmGui,110664,144220
 dmGameObject,109304,151522
 dmRender,100095,140835
@@ -15,7 +15,7 @@ _pfb,65536,65561
 std,60485,76498
 [section .ARM.exidx],57648,57648
 dmHashTable<>,49522,62363
-(anonymous namespace),44924,103725
+(anonymous namespace),44924,103732
 dmParticle,39217,48716
 dmPhysics,37456,55436
 dmResource,30108,40733
@@ -23,7 +23,7 @@ dmSound,24809,31668
 dmRig,21624,26215
 dmEngine,20982,25456
 _decompress_* (library),20800,21854
-_GLOBAL_* (library),19663,26491
+_GLOBAL_* (library),19663,26477
 _cf_* (library),17380,26649
 _load_* (library),17236,17941
 btCollisionWorld,17197,23754
@@ -60,7 +60,7 @@ _tinfl_* (library),7019,7435
 _zip_* (library),6864,7481
 btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6592,6592
-[section .text],6296,6296
+[section .text],6288,6288
 dmBuffer,6240,8405
 _parse_* (library),6184,6970
 [section .gnu.hash],6124,6124
@@ -207,7 +207,7 @@ btPersistentManifold,1740,2372
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
 _double_* (library),1720,1818
-[section .bss],1703,0
+[section .bss],1715,0
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
@@ -1571,7 +1571,6 @@ package_loaders,20,52
 cp_check,20,45
 _glfwThrd,20,26
 g_Window,20,25
-[LOAD #4 [RW]],20,0
 stbi__compute_huffman_codes(),19,100
 cpfinalize,18,61
 _glfwAndroidPlatformDestroyWindow,16,98
@@ -1977,6 +1976,7 @@ vkMapMemory,4,28
 gFindPairs,4,27
 json_array,4,27
 vkCmdDraw,4,26
+[LOAD #4 [RW]],4,0
 stbi__process_frame_header(),3,71
 [LOAD #2 [RX]],3,3
 b2RayCastCallback,2,61
@@ -1989,17 +1989,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6020945
-[section .debug_loc],0,3269119
-[section .debug_line],0,2455604
-[section .debug_str],0,2027169
-[section .debug_ranges],0,983600
-[section .debug_abbrev],0,457250
-[section .debug_frame],0,294268
+[section .debug_info],0,6021162
+[section .debug_loc],0,3269308
+[section .debug_line],0,2455761
+[section .debug_str],0,2027547
+[section .debug_ranges],0,983624
+[section .debug_abbrev],0,457321
+[section .debug_frame],0,294324
 [section .symtab],0,46368
 [section .strtab],0,18085
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,18
+[Unmapped],0,22

@@ -1,29 +1,29 @@
 symbol_group_name,vmsize,filesize
-dmScript,631773,139594
-[section .rodata],369978,369978
-dmGameSystem,328094,487606
-dmGraphics,240071,325628
+dmScript,631809,139630
+[section .rodata],369642,369642
+dmGameSystem,327015,486738
+dmGraphics,240155,325772
 _mbedtls_* (library),155802,194630
-dmCrash,112002,11279
+dmCrash,112126,11614
 dmGui,110664,144206
-dmGameObject,109336,151768
-dmRender,100095,140835
+dmGameObject,109336,151773
+dmRender,100303,141204
 basist,99664,99203
 _compress_* (library),97083,98459
-[section .rel.dyn],69576,69576
+[section .rel.dyn],69544,69544
 _pfb,65536,65561
 std,60485,76498
 [section .ARM.exidx],57728,57728
-dmHashTable<>,49522,62373
-(anonymous namespace),44924,103732
-dmParticle,39217,48723
-dmPhysics,37456,55441
-dmResource,30108,40728
+dmHashTable<>,49522,62366
+(anonymous namespace),44924,103739
+dmParticle,39229,48735
+dmPhysics,37456,55442
+dmResource,30108,40741
 dmSound,24809,31668
-dmRig,21624,26215
-dmEngine,21454,26094
+dmRig,21676,26304
+dmEngine,21414,26010
 _decompress_* (library),20800,21854
-_GLOBAL_* (library),19663,26454
+_GLOBAL_* (library),19683,26483
 _cf_* (library),17380,26649
 _load_* (library),17236,17941
 btCollisionWorld,17197,23754
@@ -60,7 +60,7 @@ _tinfl_* (library),7019,7435
 _zip_* (library),6864,7481
 btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6624,6624
-[section .text],6268,6268
+[section .text],6256,6256
 dmBuffer,6240,8405
 _parse_* (library),6184,6970
 [section .gnu.hash],6124,6124
@@ -127,7 +127,7 @@ btGjkPairDetector,3100,4296
 btBvhTriangleMeshShape,3092,5655
 b2Fixture,3072,4028
 _glfwAndroidHandleInput,3064,3232
-[section .got],3020,3020
+[section .got],3024,3024
 _key_* (library),3017,3573
 _mul_* (library),3012,3089
 _glfwJoy,3008,25
@@ -206,8 +206,8 @@ glfwAndroidHandleInput,1744,1847
 btPersistentManifold,1740,2372
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
+[section .bss],1720,0
 _double_* (library),1720,1818
-[section .bss],1703,0
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
@@ -310,8 +310,8 @@ _normalize_* (library),992,1147
 dmHashUpdateBuffer32,985,1054
 btCollisionShape,976,1641
 _buffer_* (library),971,1171
-_Register_* (library),969,4192
 btConvexInternalAabbCachingShape,968,1489
+_Register_* (library),965,4188
 dmHashBuffer32,963,1026
 dmResourceProviderFile,960,1652
 dmHashReverseErase64,953,1022
@@ -367,7 +367,7 @@ btPairCachingGhostObject,744,1255
 _glfwInput,740,27
 b2CircleShape,740,1396
 b2CollideEdgeAndCircle(),732,870
-[section .data],729,729
+[section .data],725,725
 _Material_* (library),724,1306
 __udivmoddi4,720,765
 btTriangleRaycastCallback,720,1043
@@ -446,6 +446,7 @@ _profile_* (library),492,671
 gcm_mask,488,529
 btUnionFind,488,789
 __udivmodsi4,480,525
+_Mesh_* (library),474,626
 glfwCreateJoystickDeviceGuid,472,549
 oggbyte_set4,472,517
 _ip6_* (library),468,538
@@ -457,7 +458,6 @@ floor1_inverse2,456,520
 glfwGetTouch,456,517
 cp_declarator,456,502
 _serialize_* (library),450,769
-_Mesh_* (library),448,537
 glfwOpenWindowHint,436,535
 CancelJobInternal(),436,527
 _sig_* (library),436,534
@@ -1005,7 +1005,6 @@ _TriggerEvent_* (library),112,225
 _MorphWeightTrack_* (library),112,225
 _Collision_* (library),112,219
 _DrawLine_* (library),112,215
-_MorphTarget_* (library),112,215
 _Transform_* (library),112,207
 Particle_SetRenderConstant,111,170
 LZ4_resetStreamHC,110,160
@@ -1133,7 +1132,7 @@ LZ4_createStreamHC,83,134
 max_expand,82,125
 _glfwAndroidPlatformCloseWindow,80,160
 _glfwPlatformGetJoystickHats,80,157
-dmEngineUpdate(),80,157
+dmEngineUpdate(),80,156
 recursedeletenode(),80,156
 FontDestroy(),80,150
 ChunkComparePathOffsetFn(),80,148
@@ -1268,7 +1267,7 @@ oggpack_bytes,62,108
 Particle_GetVertexBufferSize,61,122
 LZ4_freeStreamHC,61,110
 dLib,61,307
-dmEngineDestroy(),60,138
+dmEngineDestroy(),60,137
 btAlignedFreeInternal(),60,136
 Particle_GetContextMaxParticleCount,60,135
 FontGetPathHash(),60,134
@@ -1531,7 +1530,6 @@ _ZTSPDi,28,52
 _ZTSPDn,28,52
 _ZTSPDs,28,52
 _ZTSPDu,28,52
-[LOAD #4 [RW]],28,0
 gerrno,27,46
 _tls12_* (library),26,125
 _ZTSDh,26,49
@@ -1662,6 +1660,7 @@ writer_buf,12,55
 _atexit_* (library),12,53
 b2_version,12,39
 g_SoundManager,12,31
+[LOAD #4 [RW]],12,0
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
 err_syntax,10,53
@@ -1994,17 +1993,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6021328
-[section .debug_loc],0,3268970
-[section .debug_line],0,2456399
-[section .debug_str],0,2028014
-[section .debug_ranges],0,983072
-[section .debug_abbrev],0,457692
-[section .debug_frame],0,294536
-[section .symtab],0,46496
+[section .debug_info],0,6022546
+[section .debug_loc],0,3268789
+[section .debug_line],0,2456132
+[section .debug_str],0,2028468
+[section .debug_ranges],0,982832
+[section .debug_abbrev],0,457997
+[section .debug_frame],0,294620
+[section .symtab],0,46512
 [section .strtab],0,18153
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,10
+[Unmapped],0,4

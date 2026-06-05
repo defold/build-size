@@ -1,36 +1,36 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3354624,3353960
+[__LINKEDIT],3358720,3354928
 MVK_spirv_cross,1642277,1642133
-dmScript,633632,109024
-dmGameSystem,481984,479136
+dmScript,633672,109056
+dmGameSystem,480320,477648
 basist,329344,314480
-std,277555,277555
+std,277539,277539
 _lj_* (library),250880,250880
-"_TEXT,_* (library)",236580,236580
+"_TEXT,_* (library)",236396,236396
 _variable_* (library),127496,127496
-dmGui,121756,120764
-dmGraphics,119417,118441
+dmGui,121772,120780
+dmGraphics,119441,118473
 dmGameObject,115304,114912
-dmCrash,113540,6868
-dmRender,111408,110984
+dmCrash,113644,6964
+dmRender,112296,111864
 (anonymous namespace),104708,104700
 MVKPixelFormats,101738,101714
 _except_* (library),101612,101612
-dmHID,81800,81504
+dmHID,81784,81488
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
 MVKInstance,62103,62103
 MVKSmallVectorImpl<>,60272,60272
 dmHashTable<>,60176,60176
 MVKDevice,59731,59731
-dmParticle,51880,51712
+dmParticle,51896,51728
 _dm_* (library),47216,47216
 _ZNSt3_* (library),45632,45632
-_GLOBAL_* (library),42928,42928
+_GLOBAL_* (library),42960,42960
 dmPhysics,41736,41624
 MVKGraphicsPipeline,40754,40754
 spvtools,39751,39751
-dmRig,37752,37728
+dmRig,37784,37760
 _recff_* (library),36656,36656
 MVKObjectPool<>,34117,34117
 MVKPhysicalDevice,30853,30789
@@ -45,7 +45,7 @@ _load_* (library),24576,24576
 stbi__process_marker(),23562,23562
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,22240,22240
-dmEngine,21312,21248
+dmEngine,21232,21168
 btCollisionWorld,20828,20816
 _fold_* (library),19712,19712
 _cp_* (library),18400,18400
@@ -65,8 +65,8 @@ _tdefl_* (library),14800,14800
 __glfw,14744,0
 cereal,14710,14710
 _OBJC_* (library),14320,14320
+dmHttpCache,14014,14014
 dmDDF,14008,14000
-dmHttpCache,13982,13982
 dmObjectPool<>,13824,13824
 _rec_* (library),13760,13760
 MVKCmdBlitImage<>,13168,13168
@@ -83,7 +83,7 @@ _vorbis_* (library),10736,10736
 MVKCmdResolveImage<>,10438,10438
 MVKQueueFullCommandBufferSubmission<>,10420,10420
 _DATA_* (library),10136,10136
-_dmRigDDF_* (library),10060,9872
+_dmRigDDF_* (library),9892,9696
 _expr_* (library),9760,9760
 _dmRenderDDF_* (library),9476,8984
 _crec_* (library),9328,9328
@@ -184,6 +184,7 @@ _serialize_* (library),3648,3648
 btDbvtBroadphase,3648,3648
 btCompoundShape,3640,3640
 _ov_* (library),3616,3616
+[__TEXT],3614,8294
 MVKCmdDrawIndexed,3588,3588
 MVKImageViewPlane,3582,3582
 dmResourceProviderZip,3560,3560
@@ -206,8 +207,8 @@ btGjkPairDetector,3288,3288
 MVKQueryPool,3271,3271
 _floor1_* (library),3200,3200
 _amd_* (library),3152,3152
+dmSys,3152,3056
 MVKMTLFunctionNull,3144,0
-dmSys,3144,3056
 b2DistanceJoint,3120,3120
 MVKComputeResourcesCommandEncoderState,3110,3110
 MVKImageView,3103,3103
@@ -228,7 +229,6 @@ btQuantizedBvh,2896,2896
 _glfwSetInputMode,2880,2880
 MVKShaderLibraryCache,2880,2880
 _make_* (library),2864,2864
-[__TEXT],2822,7502
 _parseMapping,2816,2816
 _dmParticleDDF_* (library),2808,2696
 _cploop_* (library),2736,2736
@@ -277,10 +277,10 @@ _s_* (library),2132,2132
 MVKOcclusionQueryPool,2128,2128
 _decode_* (library),2112,2112
 btContinuousConvexCollision,2088,2088
-_Register_* (library),2088,1984
 __glfwCreateWindowCocoa,2080,2080
 btHashMap<>,2080,2080
 btGjkEpaSolver2,2080,2080
+_Register_* (library),2080,1976
 _dmInputDDF_* (library),2068,2040
 mvkCmdBeginRenderPass(),2064,2064
 dmResourceProviderArchive,2064,2064
@@ -291,13 +291,13 @@ basisu,2037,2037
 _resample_* (library),2032,2032
 btTriangleShape,2024,2024
 _matchCallback,2000,2000
+[__DATA],1988,0
 MVKDXTnCodec,1967,1967
 b2CollidePolygons(),1952,1952
 b2BlockAllocator,1880,1224
 _idct_* (library),1872,1872
 _dmModelDDF_* (library),1856,1792
 btCompoundLeafCallback,1848,1848
-[__DATA],1844,0
 btAlignedObjectArray<>,1840,1840
 _mapping_* (library),1824,1824
 __glfwInitCocoa,1808,1808
@@ -1541,9 +1541,9 @@ mvkMTLWindingFromSpvExecutionModeInObj(),64,64
 spvTakeFirstMatchableOperand(),64,64
 stbi__jbias,64,64
 dmRecord,64,64
+dLib,64,64
 MVKCodec,57,57
 vtxCompilerType,56,56
-dLib,56,56
 VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR,55,55
 VkPhysicalDevicePipelineCreationCacheControlFeatures,55,55
 VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures,54,54
