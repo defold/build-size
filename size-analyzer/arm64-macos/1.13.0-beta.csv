@@ -1,14 +1,14 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3276800,3270960
-MVK_spirv_cross,1475221,1475077
+[__LINKEDIT],3276800,3271008
+MVK_spirv_cross,1475302,1475158
 dmScript,624756,100348
 dmGameSystem,411204,409572
 basist,315610,300754
-"_TEXT,_* (library)",270974,270974
+"_TEXT,_* (library)",270984,270984
 std,259286,259286
 _lj_* (library),226501,226501
 _variable_* (library),128058,128058
-dmCrash,113640,7168
+dmCrash,113640,7136
 _except_* (library),106148,106148
 (anonymous namespace),101426,101426
 dmGraphics,96041,95080
@@ -36,7 +36,7 @@ MVKPhysicalDevice,26073,26009
 MVKCommandTypePool<>,25631,25631
 dmResource,24256,24256
 stbi__process_marker(),24012,24012
-_objc_* (library),22816,22816
+_objc_* (library),22848,22848
 dmHashTable<>,21624,21624
 MVKCommandPool,21081,21081
 dmSound,20636,20484
@@ -55,8 +55,8 @@ MVKDescriptorTypePool<>,16048,16048
 _KHR_* (library),15340,0
 btCollisionWorld,14936,14936
 glsl_entries,14904,14904
-[__TEXT],14794,19490
 __glfw,14744,0
+[__TEXT],14471,19167
 btSequentialImpulseConstraintSolver,13872,13872
 btDiscreteDynamicsWorld,13768,13768
 MVKCommandEncoder,13080,13080
@@ -69,13 +69,13 @@ dmInput,12472,11468
 MVKCmdBufferImageCopy<>,12465,12465
 dmHttpCache,12148,12148
 _EXT_* (library),11960,0
-"_DATA,_* (library)",11896,11896
+"_DATA,_* (library)",11904,11904
 MVKRenderSubpass,11247,11247
 _dmGameSystemDDF_* (library),11116,10680
 dmEasing,10824,10824
 MVKExtensionList,10687,10687
 _OBJC_* (library),10332,10332
-[__DATA],10272,4
+[__DATA],10264,28
 _vorbis_* (library),10252,10252
 gjkepa2_impl,9900,9900
 MVKDescriptorSetLayoutBinding,9894,9894
@@ -174,10 +174,10 @@ btDbvtBroadphase,3616,3616
 _run_* (library),3592,3592
 _parseMapping,3572,3572
 b2Island,3508,3508
+dmDeviceAVAudio,3468,3468
 btCompoundCollisionAlgorithm,3412,3412
 MVKRenderPass,3396,3396
 MVKPresentableSwapchainImage,3311,3311
-dmDeviceAVAudio,3268,3268
 _dmMath_* (library),3256,3016
 _ov_* (library),3212,3212
 dmLog,3176,3176

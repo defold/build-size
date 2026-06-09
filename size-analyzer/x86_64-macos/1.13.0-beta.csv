@@ -1,12 +1,12 @@
 symbol_group_name,vmsize,filesize
 [__LINKEDIT],3354624,3352608
-MVK_spirv_cross,1642277,1642133
+MVK_spirv_cross,1642358,1642214
 dmScript,633632,109032
-dmGameSystem,482144,479992
+dmGameSystem,482144,479976
 basist,329344,314480
 std,277539,277539
 _lj_* (library),250880,250880
-"_TEXT,_* (library)",236540,236540
+"_TEXT,_* (library)",236550,236550
 _variable_* (library),127496,127496
 dmGui,121772,120780
 dmGraphics,119153,118185
@@ -79,7 +79,7 @@ _dmGameSystemDDF_* (library),11292,10856
 b2World,11072,11072
 dmEasing,10856,10856
 _vorbis_* (library),10736,10736
-"_DATA,_* (library)",10440,10440
+"_DATA,_* (library)",10448,10448
 MVKCmdResolveImage<>,10438,10438
 MVKQueueFullCommandBufferSubmission<>,10420,10420
 _DATA_* (library),10136,10136
@@ -170,13 +170,13 @@ b2Island,4128,4128
 _vwin2048,4096,4096
 mvk_smallvector_allocator<>,4096,4096
 dmMessage,4080,4048
+dmDeviceAVAudio,4064,4064
 dmHttpDDF,4048,4048
 stbtt_GetGlyphShape(),4016,4016
 b2WeldJoint,4000,4000
 b2PulleyJoint,3968,3968
 _ra_* (library),3952,3952
 MVKCmdBindDescriptorSetsStatic<>,3861,3861
-dmDeviceAVAudio,3824,3824
 _gc_* (library),3808,3808
 dmLiveUpdate,3808,3768
 _inet_* (library),3776,3776
@@ -202,7 +202,6 @@ MVKTimelineSemaphoreEmulated,3335,3335
 MVKCmdCopyBuffer<>,3330,3330
 MVKComputePipeline,3317,3317
 b2PolygonShape,3312,3312
-[__TEXT],3310,7990
 btGjkPairDetector,3288,3288
 MVKQueryPool,3271,3271
 _floor1_* (library),3200,3200
@@ -216,6 +215,7 @@ _fs_* (library),3088,3088
 b2Distance(),3088,3088
 dmSSLSocket,3088,3088
 MVKQueueCommandBufferSubmission,3058,3058
+[__TEXT],2979,7659
 _strscan_* (library),2976,2976
 MVKQueuePresentSurfaceSubmission,2971,2971
 _field_* (library),2944,2944
@@ -297,8 +297,8 @@ b2BlockAllocator,1880,1224
 _idct_* (library),1872,1872
 _dmModelDDF_* (library),1856,1792
 btCompoundLeafCallback,1848,1848
-[__DATA],1844,0
 btAlignedObjectArray<>,1840,1840
+[__DATA],1836,8
 _mapping_* (library),1824,1824
 __glfwInitCocoa,1808,1808
 _cconv_* (library),1808,1808
