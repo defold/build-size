@@ -1,23 +1,23 @@
 symbol_group_name,vmsize,filesize
 dmScript,632253,140121
-dmGameSystem,459341,616179
-[section .rodata],372153,372153
+dmGameSystem,459341,616173
+[section .rodata],372265,372265
 dmGraphics,243415,330009
 _mbedtls_* (library),175074,213217
 basist,118172,116078
 dmCrash,112130,11618
 dmGui,110712,144254
-dmGameObject,109564,152025
+dmGameObject,109688,152113
 dmRender,100047,140167
 [section .rel.dyn],66968,66968
 _pfb,65536,65561
 [section .ARM.exidx],54760,54760
-dmHashTable<>,54200,66988
+dmHashTable<>,54200,67000
 (anonymous namespace),45192,104326
 dmPhysics,37456,55396
 dmParticle,37304,46121
 std,32900,41223
-dmResource,29620,40327
+dmResource,29620,40357
 dmSound,25893,32864
 _GLOBAL_* (library),23680,30306
 dmRig,21668,26296
@@ -55,7 +55,7 @@ _zip_* (library),7160,7853
 _tinfl_* (library),7091,7507
 btAxisSweep3Internal<>,6836,9147
 _parse_* (library),6216,7002
-[section .text],6053,6053
+[section .text],6061,6061
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 dmSys,5886,7996
@@ -196,7 +196,6 @@ res_inverse,1788,1832
 b2MouseJoint,1788,3213
 _vorbis_* (library),1768,1928
 _double_* (library),1752,1850
-glfwAndroidHandleInput,1744,1847
 btPersistentManifold,1740,2372
 JobSystemUpdate,1728,1832
 [section .bss],1709,0
@@ -247,6 +246,7 @@ b2CollidePolygons(),1272,1426
 dmResourceArchive,1272,1860
 _str_* (library),1272,1638
 dmBlockAllocator,1268,1608
+addInputEvents,1260,1355
 LogInternal,1244,1336
 btManifoldResult,1224,1743
 dmZlib,1224,1409
@@ -341,8 +341,10 @@ _ecp_* (library),800,942
 _compute_* (library),800,990
 CProfileManager,796,1296
 _bisect_* (library),792,849
+glfwAndroidFlushEvents,788,891
 dmCrypt,780,998
 _sign_* (library),772,926
+glfwAndroidHandleInput,768,839
 secp384r1_T,768,796
 b2Joint,764,1313
 Vectormath,756,915
@@ -380,7 +382,6 @@ _cjson_* (library),656,786
 make_current,652,745
 global_data,648,44
 _prf_* (library),640,798
-glfwAndroidFlushEvents,628,731
 _handshake_* (library),628,695
 JobSystemCreate,628,692
 btGhostObject,628,1183
@@ -1368,6 +1369,7 @@ gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
 [section .gnu.hash],24,24
+[LOAD #4 [RW]],23,0
 _CONTEXT_* (library),21,101
 FontCollectionGetFontCount(),20,100
 btConcaveShape,20,245
@@ -1553,7 +1555,6 @@ chacha20_info,8,38
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
-[LOAD #4 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 btTriangleCallback,4,108
 btDispatcher,4,96
@@ -1819,17 +1820,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6156435
-[section .debug_loc],0,3422843
-[section .debug_line],0,2660971
-[section .debug_str],0,2040484
-[section .debug_ranges],0,1030408
-[section .debug_abbrev],0,463678
-[section .debug_frame],0,294048
+[section .debug_info],0,6158700
+[section .debug_loc],0,3425068
+[section .debug_line],0,2661996
+[section .debug_str],0,2040719
+[section .debug_ranges],0,1030704
+[section .debug_abbrev],0,463702
+[section .debug_frame],0,294172
 [section .symtab],0,30528
 [section .strtab],0,17117
 [ELF Headers],0,1360
 [section .shstrtab],0,391
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,11
+[Unmapped],0,6
