@@ -2,7 +2,7 @@ symbol_group_name,vmsize,filesize
 dmScript,632253,140121
 dmGameSystem,459341,616173
 [section .rodata],372265,372265
-dmGraphics,243415,330009
+dmGraphics,244991,332080
 _mbedtls_* (library),175074,213217
 basist,118172,116078
 dmCrash,112130,11618
@@ -11,9 +11,9 @@ dmGameObject,109688,152113
 dmRender,100047,140167
 [section .rel.dyn],66968,66968
 _pfb,65536,65561
-[section .ARM.exidx],54760,54760
+[section .ARM.exidx],54800,54800
 dmHashTable<>,54200,67000
-(anonymous namespace),45192,104326
+(anonymous namespace),45192,104347
 dmPhysics,37456,55396
 dmParticle,37304,46121
 std,32900,41223
@@ -33,7 +33,7 @@ _internal_* (library),14804,15087
 btDiscreteDynamicsWorld,14656,19682
 dmInput,14653,15420
 dmDDF,14112,21737
-[section .ARM.extab],12240,12240
+[section .ARM.extab],12264,12264
 dmEasing,10856,10983
 b2World,10688,12051
 dmHID,10596,16081
@@ -55,7 +55,7 @@ _zip_* (library),7160,7853
 _tinfl_* (library),7091,7507
 btAxisSweep3Internal<>,6836,9147
 _parse_* (library),6216,7002
-[section .text],6061,6061
+[section .text],6049,6049
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 dmSys,5886,7996
@@ -84,6 +84,7 @@ _tls13_* (library),4531,5484
 dmResourceMounts,4528,6199
 btVoronoiSimplexSolver,4360,5465
 b2GearJoint,4300,5312
+dmLog,4260,5166
 _append_* (library),4252,4703
 _alloc_* (library),4242,4574
 dmDeviceOpenSL,4208,5309
@@ -98,7 +99,6 @@ b2RevoluteJoint,4072,5865
 _decl_* (library),4058,4599
 dmPlatform,4052,13348
 _Unwind_* (library),4036,4911
-dmLog,4000,4783
 btDbvt,3860,5115
 b2GridShape,3848,5521
 btDbvtBroadphase,3844,5655
@@ -247,7 +247,6 @@ dmResourceArchive,1272,1860
 _str_* (library),1272,1638
 dmBlockAllocator,1268,1608
 addInputEvents,1260,1355
-LogInternal,1244,1336
 btManifoldResult,1224,1743
 dmZlib,1224,1409
 _strscan_* (library),1216,1393
@@ -266,6 +265,7 @@ _stream_* (library),1144,1594
 _buf_* (library),1138,1904
 _add_* (library),1120,1226
 btCollisionObject,1120,2044
+LogInternal,1100,1160
 _calc_* (library),1088,1531
 btPolyhedralConvexAabbCachingShape,1072,1699
 dmHashRelease64,1068,1132
@@ -1369,7 +1369,6 @@ gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
 [section .gnu.hash],24,24
-[LOAD #4 [RW]],23,0
 _CONTEXT_* (library),21,101
 FontCollectionGetFontCount(),20,100
 btConcaveShape,20,245
@@ -1555,6 +1554,7 @@ chacha20_info,8,38
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
+[LOAD #4 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 btTriangleCallback,4,108
 btDispatcher,4,96
@@ -1820,17 +1820,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6158700
-[section .debug_loc],0,3425068
-[section .debug_line],0,2661996
-[section .debug_str],0,2040719
-[section .debug_ranges],0,1030704
-[section .debug_abbrev],0,463702
-[section .debug_frame],0,294172
+[section .debug_info],0,6160134
+[section .debug_loc],0,3425687
+[section .debug_line],0,2662823
+[section .debug_str],0,2041552
+[section .debug_ranges],0,1031152
+[section .debug_abbrev],0,463740
+[section .debug_frame],0,294336
 [section .symtab],0,30528
 [section .strtab],0,17117
 [ELF Headers],0,1360
 [section .shstrtab],0,391
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,6
+[Unmapped],0,8

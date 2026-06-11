@@ -1,15 +1,15 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3354624,3352608
+[__LINKEDIT],3358720,3356224
 MVK_spirv_cross,1642358,1642214
 dmScript,633632,109032
 dmGameSystem,482144,479976
 basist,329344,314480
 std,277539,277539
 _lj_* (library),250880,250880
-"_TEXT,_* (library)",236550,236550
+"_TEXT,_* (library)",236558,236558
 _variable_* (library),127496,127496
 dmGui,121772,120780
-dmGraphics,119153,118185
+dmGraphics,120241,119273
 dmGameObject,115256,115224
 dmCrash,113644,6964
 dmRender,111408,110984
@@ -27,7 +27,7 @@ dmParticle,51880,51712
 _dm_* (library),47216,47216
 _ZNSt3_* (library),45632,45632
 _GLOBAL_* (library),42928,42928
-dmPhysics,41736,41624
+dmPhysics,41720,41608
 MVKGraphicsPipeline,40754,40754
 spvtools,39751,39751
 dmRig,37752,37728
@@ -70,7 +70,7 @@ dmHttpCache,13982,13982
 dmObjectPool<>,13824,13824
 _rec_* (library),13760,13760
 MVKCmdBlitImage<>,13168,13168
-gjkepa2_impl,12240,12240
+gjkepa2_impl,12224,12224
 MVKDescriptorSetLayoutBinding,12165,12165
 _EXT_* (library),11960,0
 MVKExtensionList,11619,11619
@@ -215,7 +215,6 @@ _fs_* (library),3088,3088
 b2Distance(),3088,3088
 dmSSLSocket,3088,3088
 MVKQueueCommandBufferSubmission,3058,3058
-[__TEXT],2979,7659
 _strscan_* (library),2976,2976
 MVKQueuePresentSurfaceSubmission,2971,2971
 _field_* (library),2944,2944
@@ -293,6 +292,7 @@ btTriangleShape,2024,2024
 _matchCallback,2000,2000
 MVKDXTnCodec,1967,1967
 b2CollidePolygons(),1952,1952
+[__TEXT],1915,6595
 b2BlockAllocator,1880,1224
 _idct_* (library),1872,1872
 _dmModelDDF_* (library),1856,1792
