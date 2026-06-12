@@ -1,27 +1,27 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1802240,1794488
+[__LINKEDIT],1802240,1794840
 dmScript,623972,99564
 dmGameSystem,407644,406012
 _lj_* (library),204432,204432
-"_TEXT,_* (library)",147870,147870
+"_TEXT,_* (library)",147939,147939
 dmCrash,113472,6792
-basist,98636,83780
+basist,98698,83842
 dmGameObject,94260,94228
 dmGui,90452,89508
 dmRender,86060,85932
 dmGraphics,78669,77724
 dmHID,74653,74653
-_pfb,65544,65544
+_pfb,65552,65552
 _dm_* (library),47520,47520
 _cp_* (library),34652,34652
 dmPhysics,33516,33516
 dmParticle,30016,30016
-[__TEXT],25380,41660
+[__TEXT],24869,41149
 dmResource,24176,24176
 dmHashTable<>,21624,21624
 _load_* (library),21176,21176
+dmSound,20688,20536
 stbi__process_marker(),20660,20660
-dmSound,20540,20388
 std,19712,19712
 dmEngine,17536,17520
 dmRig,17032,17032
@@ -39,7 +39,7 @@ dmHttpCache,12310,12310
 _tdefl_* (library),12176,12176
 dmInput,12036,11032
 _parse_* (library),11740,11740
-[__DATA],11360,4
+[__DATA],11336,20
 _dmGameSystemDDF_* (library),11116,10680
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
@@ -48,7 +48,7 @@ _serialize_* (library),9780,9780
 _dmRigDDF_* (library),9752,9560
 b2World,9564,9564
 _dmRenderDDF_* (library),9332,8840
-"_DATA,_* (library)",8344,8344
+"_DATA,_* (library)",8360,8360
 _gc_* (library),8228,8228
 _sincos_* (library),8200,8200
 _vwin4096,8192,8192
@@ -56,7 +56,7 @@ _expr_* (library),7996,7996
 dmHttpClient,7988,7972
 _json_* (library),7952,7952
 _create_* (library),7792,7792
-_objc_* (library),7456,7456
+_objc_* (library),7520,7520
 b2DynamicTree,7068,7068
 btAxisSweep3Internal<>,7040,7040
 dmSoundCodec,6952,6920
@@ -100,6 +100,7 @@ _ffi_* (library),4080,4080
 dmHttpDDF,4036,4036
 btHashedOverlappingPairCache,4032,4032
 _tmalloc_* (library),3984,3984
+dmDeviceAVAudio,3880,3880
 _process_* (library),3852,3852
 dmLiveUpdate,3852,3812
 dmResourceMounts,3848,3848
@@ -109,7 +110,6 @@ b2GridShape,3684,3684
 _inet_* (library),3676,3676
 b2RevoluteJoint,3668,3668
 btMinkowskiPenetrationDepthSolver,3664,3664
-dmDeviceAVAudio,3652,3652
 _socket_* (library),3636,3636
 btCompoundShape,3632,3632
 btDbvtBroadphase,3616,3616
@@ -175,7 +175,7 @@ dmResourceProviderArchive,1852,1724
 _release_* (library),1840,1840
 ReverseHashContainer,1840,1840
 dmLoadQueue,1824,1824
-__MergedGlobals,1816,1552
+__MergedGlobals,1816,1520
 b2FrictionJoint,1816,1816
 b2Distance(),1808,1808
 _mapping_* (library),1804,1804
@@ -414,6 +414,7 @@ b2EdgeAndCircleContact,324,324
 b2PolygonAndCircleContact,324,324
 -[AppDelegate application:didFinishLaunchingWithOptions:],320,320
 _cur_* (library),320,320
+(anonymous namespace),320,296
 _zdefault_* (library),320,320
 _rescale_* (library),320,320
 b2CircleContact,320,320
@@ -477,11 +478,9 @@ _optget,224,224
 _return_* (library),224,224
 dmArrayUtil,224,224
 -[EAGLView destroyFramebuffer],220,220
--[SoundApplicationDelegate handleInterruption:],216,216
 _start_* (library),216,216
 dmEngineCreate(),216,216
 -[AppDelegateProxy application:openURL:sourceApplication:annotation:],212,212
--[SoundApplicationDelegate handleRouteChange:],212,212
 _ConfigFileGetString,212,212
 _ExtensionRegister,212,212
 _book_* (library),212,212
@@ -504,6 +503,7 @@ b2ContactFilter,196,196
 _cpcparser,192,192
 _panic,192,192
 _dmEngineDDF_* (library),192,192
+_except_* (library),192,192
 -[BaseView touchesBegan:withEvent:],188,188
 __glfwRefreshContextParams,188,188
 _finalize,188,188
@@ -529,8 +529,6 @@ b2TestOverlap(),176,176
 -[EAGLView setupView],172,172
 _cpwriter,172,172
 b2CollideCircles(),172,172
-_except_* (library),172,172
--[SoundApplicationDelegate handleSecondaryAudio:],168,168
 ResourceChunkCacheDestroy(),168,168
 _end_* (library),168,168
 _glfwAppBootstrap,168,168
@@ -624,7 +622,8 @@ rmtp_Sprite(),128,128
 rmtp_Tilemap(),128,128
 _dmResourceDDF_* (library),128,120
 dmPhysicsDDF,128,128
--[SoundApplicationDelegate applicationDidBecomeActive:],124,124
+-[SoundApplicationDelegate handleInterruption:],124,124
+-[SoundApplicationDelegate handleRouteChange:],124,124
 GBGetGlyphIndex(),124,124
 TextLayoutAcquire(),124,124
 _libsize,124,124
@@ -711,6 +710,7 @@ _ScriptModelExt,80,80
 _ScriptTypesExt,80,80
 dmEngineUpdate(),80,80
 -[AppDelegateProxy init],76,76
+-[SoundApplicationDelegate handleSecondaryAudio:],76,76
 __glfwPlatformGetWindowRefreshRate,76,76
 _synlevel_* (library),76,76
 dmStrlCpy(),76,76
@@ -870,13 +870,13 @@ __glfwPlatformQueryAuxContextOpenGL,24,24
 __glfwPlatformTerminate,24,24
 __glfwPlatformUnacquireAuxContext,24,24
 __glfwSetMarkedText,24,24
-(anonymous namespace),24,8
 dmGamesysDDF,24,24
 -[AppDelegate appUpdate].cold.1,20,20
 -[BaseView caretRectForPosition:],20,20
 -[BaseView firstRectForRange:],20,20
 -[IndexedRange range],20,20
 -[IndexedRange setRange:],20,20
+-[SoundApplicationDelegate applicationDidBecomeActive:],20,20
 ResourceChunkCacheCanFit(),20,20
 TextLayoutGetBounds(),20,20
 ___isPlatformVersionAtLeast.cold.1,20,20
