@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,631773,139601
-[section .rodata],369882,369882
+[section .rodata],369866,369866
 dmGameSystem,328202,487502
 dmGraphics,241351,327525
 _mbedtls_* (library),155802,194630
@@ -1571,7 +1571,6 @@ package_loaders,20,52
 cp_check,20,45
 _glfwThrd,20,26
 g_Window,20,25
-[LOAD #4 [RW]],20,0
 stbi__compute_huffman_codes(),19,100
 cpfinalize,18,61
 _glfwAndroidPlatformDestroyWindow,16,98
@@ -1977,6 +1976,7 @@ vkMapMemory,4,28
 gFindPairs,4,27
 json_array,4,27
 vkCmdDraw,4,26
+[LOAD #4 [RW]],4,0
 stbi__process_frame_header(),3,71
 [LOAD #2 [RX]],3,3
 b2RayCastCallback,2,61
