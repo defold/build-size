@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3358720,3356224
+[__LINKEDIT],3358720,3356000
 MVK_spirv_cross,1642358,1642214
 dmScript,633632,109032
 dmGameSystem,482144,479976
@@ -9,14 +9,14 @@ _lj_* (library),250880,250880
 "_TEXT,_* (library)",236558,236558
 _variable_* (library),127496,127496
 dmGui,121772,120780
-dmGraphics,120241,119273
+dmGraphics,120401,119433
 dmGameObject,115256,115224
 dmCrash,113644,6964
 dmRender,111408,110984
 (anonymous namespace),104708,104700
 MVKPixelFormats,101738,101714
 _except_* (library),101612,101612
-dmHID,81800,81504
+dmHID,81736,81456
 _pfb,65616,65616
 __watermarkTextureContent,65536,65536
 MVKInstance,62103,62103
@@ -42,7 +42,7 @@ dmSound,26312,26064
 MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),24576,24576
-stbi__process_marker(),23514,23514
+stbi__process_marker(),23562,23562
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,22240,22240
 dmEngine,20928,20912
@@ -195,8 +195,8 @@ dmLog,3504,3200
 btSimulationIslandManager,3488,3488
 _socket_* (library),3472,3472
 dmArray<>,3456,3456
-dmPlatform,3456,3440
 MVKPresentableSwapchainImage,3447,3447
+dmPlatform,3440,3424
 _dmMath_* (library),3344,3104
 MVKTimelineSemaphoreEmulated,3335,3335
 MVKCmdCopyBuffer<>,3330,3330
@@ -292,18 +292,18 @@ btTriangleShape,2024,2024
 _matchCallback,2000,2000
 MVKDXTnCodec,1967,1967
 b2CollidePolygons(),1952,1952
-[__TEXT],1915,6595
 b2BlockAllocator,1880,1224
 _idct_* (library),1872,1872
 _dmModelDDF_* (library),1856,1792
+[__DATA],1852,8
 btCompoundLeafCallback,1848,1848
 btAlignedObjectArray<>,1840,1840
-[__DATA],1836,8
 _mapping_* (library),1824,1824
 __glfwInitCocoa,1808,1808
 _cconv_* (library),1808,1808
 btPerturbedContactResult,1800,1800
 _global_* (library),1792,1792
+[__TEXT],1771,6451
 MVKMetalCompiler,1763,1763
 btTransformUtil,1760,1760
 __glfwSetWindowMonitorCocoa,1728,1728

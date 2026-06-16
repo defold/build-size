@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,632253,140121
 dmGameSystem,461193,618229
-[section .rodata],374673,374673
+[section .rodata],374669,374669
 dmGraphics,245183,332125
 _mbedtls_* (library),175074,213217
 basist,118172,116078
@@ -10,7 +10,7 @@ dmGui,110712,144205
 dmGameObject,109688,152113
 dmRender,103297,144419
 _compress_* (library),97191,98574
-[section .rel.dyn],69328,69328
+[section .rel.dyn],69304,69304
 _pfb,65536,65561
 std,60458,77534
 [section .ARM.exidx],57368,57368
@@ -39,8 +39,8 @@ dmDDF,14112,21737
 [section .plt],11760,11760
 dmEasing,10856,10983
 b2World,10688,12051
-dmHID,10596,16081
 dmObjectPool<>,10532,13388
+dmHID,10520,16017
 gjkepa2_impl,9688,11153
 [section .hash],9576,9576
 dmHttpClient,9168,11754
@@ -103,7 +103,7 @@ _T_* (library),4096,7224
 dmLiveUpdate,4084,5913
 b2RevoluteJoint,4072,5865
 _decl_* (library),4058,4599
-dmPlatform,4052,13348
+dmPlatform,4040,13162
 _Unwind_* (library),4036,4911
 _book_* (library),4034,4412
 btDbvt,3860,5115
@@ -131,9 +131,9 @@ _key_* (library),3081,3623
 b2Fixture,3072,4028
 _glfwAndroidHandleInput,3064,3232
 _tdefl_* (library),3063,3524
-[section .got],3012,3012
 _glfwJoy,3008,25
 _meta_* (library),3008,3855
+[section .got],3000,3000
 _run_* (library),2980,3217
 _sync_* (library),2969,3402
 b2WeldJoint,2964,3839
@@ -207,7 +207,7 @@ btPersistentManifold,1740,2372
 _stream_* (library),1734,2384
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
-[section .bss],1710,0
+[section .bss],1706,0
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
@@ -507,11 +507,11 @@ JobSystemCreateJob,372,439
 _SpriteDesc_* (library),365,943
 _cur_* (library),364,429
 _JNIEnv,364,967
-[LOAD #1 [RX]],361,361
 socket_recvfrom,360,424
 ov_bitrate,359,402
 _glfwParseGLVersion,356,424
 collect_fd,356,415
+[LOAD #1 [RX]],353,353
 unwind_phase2(),352,475
 glfwExtensionSupported,352,423
 socket_connect,352,415
@@ -1531,7 +1531,6 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
-[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
@@ -1571,6 +1570,7 @@ io_tofile,24,66
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
+[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 FontCollectionGetFontCount(),20,100
 btConcaveShape,20,245
@@ -2033,7 +2033,7 @@ g_AppResumed,1,29
 disableCcd,1,27
 [section .debug_info],0,6193592
 [section .debug_loc],0,3447387
-[section .debug_line],0,2678436
+[section .debug_line],0,2678401
 [section .debug_str],0,2048501
 [section .debug_ranges],0,1035344
 [section .debug_abbrev],0,465654
@@ -2044,4 +2044,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,2
+[Unmapped],0,7

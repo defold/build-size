@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],1802240,1794840
+[__LINKEDIT],1802240,1794616
 dmScript,623972,99564
 dmGameSystem,407644,406012
 _lj_* (library),204432,204432
@@ -10,13 +10,13 @@ dmGameObject,94260,94228
 dmGui,90452,89508
 dmRender,86060,85932
 dmGraphics,78669,77724
-dmHID,74653,74653
+dmHID,74605,74605
 _pfb,65552,65552
 _dm_* (library),47520,47520
 _cp_* (library),34652,34652
 dmPhysics,33516,33516
 dmParticle,30016,30016
-[__TEXT],24869,41149
+[__TEXT],24933,41213
 dmResource,24176,24176
 dmHashTable<>,21624,21624
 _load_* (library),21176,21176
@@ -39,7 +39,7 @@ dmHttpCache,12310,12310
 _tdefl_* (library),12176,12176
 dmInput,12036,11032
 _parse_* (library),11740,11740
-[__DATA],11336,20
+[__DATA],11352,20
 _dmGameSystemDDF_* (library),11116,10680
 dmEasing,10824,10824
 _vorbis_* (library),10240,10240
@@ -124,8 +124,8 @@ _dmMath_* (library),3256,3016
 _ov_* (library),3172,3172
 b2SeparationFunction,3128,3128
 _debug_* (library),3088,3088
-dmPlatform,3052,3044
 dmResourceProviderZip,3036,2908
+dmPlatform,3036,3028
 dmSSLSocket,3008,3008
 b2EPCollider,2960,2960
 b2WheelJoint,2940,2940
@@ -165,7 +165,7 @@ btCollisionDispatcher,2016,2016
 SphereTriangleDetector,2004,2004
 _dmInputDDF_* (library),1996,1968
 _buffer_* (library),1984,1984
-_Register_* (library),1984,1976
+_Register_* (library),1976,1968
 btCapsuleShape,1972,1972
 _decode_* (library),1968,1968
 _gola_* (library),1940,1940
@@ -175,8 +175,8 @@ dmResourceProviderArchive,1852,1724
 _release_* (library),1840,1840
 ReverseHashContainer,1840,1840
 dmLoadQueue,1824,1824
-__MergedGlobals,1816,1520
 b2FrictionJoint,1816,1816
+__MergedGlobals,1808,1528
 b2Distance(),1808,1808
 _mapping_* (library),1804,1804
 _dmModelDDF_* (library),1800,1736

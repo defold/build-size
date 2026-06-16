@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3276800,3274720
+[__LINKEDIT],3276800,3274064
 MVK_spirv_cross,1475302,1475158
 dmScript,624756,100348
 dmGameSystem,411204,409572
@@ -8,14 +8,14 @@ basist,315610,300754
 std,259286,259286
 _lj_* (library),226501,226501
 _variable_* (library),128058,128058
-dmCrash,113640,7136
+dmCrash,113640,7152
 _except_* (library),106148,106148
 (anonymous namespace),101426,101426
-dmGraphics,96921,95960
+dmGraphics,97061,96100
 dmGameObject,94592,94560
 dmGui,92388,91452
 dmRender,86436,86308
-dmHID,76895,76895
+dmHID,76847,76847
 MVKPixelFormats,65654,65630
 _pfb,65544,65544
 __watermarkTextureContent,65536,65536
@@ -23,7 +23,7 @@ MVKInstance,60379,60379
 MVKDevice,52427,52427
 _dm_* (library),42568,42568
 _ZNSt3_* (library),35904,35904
-_GLOBAL_* (library),35656,35656
+_GLOBAL_* (library),35648,35648
 MVKObjectPool<>,34565,34565
 dmPhysics,34404,34404
 _recff_* (library),33977,33977
@@ -35,9 +35,9 @@ MVKSmallVectorImpl<>,28620,28620
 MVKPhysicalDevice,26073,26009
 MVKCommandTypePool<>,25631,25631
 dmResource,24256,24256
-stbi__process_marker(),24012,24012
-dmHashTable<>,23784,23784
+stbi__process_marker(),24059,24059
 _objc_* (library),22848,22848
+dmHashTable<>,21624,21624
 MVKCommandPool,21081,21081
 dmSound,20636,20484
 _load_* (library),20168,20168
@@ -58,6 +58,7 @@ glsl_entries,14904,14904
 __glfw,14744,0
 btSequentialImpulseConstraintSolver,13872,13872
 btDiscreteDynamicsWorld,13768,13768
+[__TEXT],13440,18136
 MVKCommandEncoder,13080,13080
 dmDDF,12824,12760
 _rec_* (library),12780,12780
@@ -69,13 +70,12 @@ MVKCmdBufferImageCopy<>,12465,12465
 dmHttpCache,12148,12148
 _EXT_* (library),11960,0
 "_DATA,_* (library)",11904,11904
-[__TEXT],11395,16091
 MVKRenderSubpass,11247,11247
 _dmGameSystemDDF_* (library),11116,10680
 dmEasing,10824,10824
 MVKExtensionList,10687,10687
 _OBJC_* (library),10332,10332
-[__DATA],10264,28
+[__DATA],10280,28
 _vorbis_* (library),10252,10252
 gjkepa2_impl,9900,9900
 MVKDescriptorSetLayoutBinding,9894,9894
@@ -181,7 +181,7 @@ MVKPresentableSwapchainImage,3311,3311
 _dmMath_* (library),3256,3016
 _ov_* (library),3212,3212
 dmLog,3176,3176
-dmPlatform,3168,3152
+dmPlatform,3152,3136
 MVKMTLFunctionNull,3136,0
 _amd_* (library),3128,3128
 b2SeparationFunction,3128,3128
@@ -196,7 +196,7 @@ b2Fixture,2924,2924
 MVKImageViewPlane,2920,2920
 MVKCmdBindVertexBuffers<>,2916,2916
 _field_* (library),2914,2914
-__MergedGlobals,2896,1608
+__MergedGlobals,2888,1600
 MVKQueryPool,2887,2887
 MVKShaderModule,2866,2866
 MVKQueuePresentSurfaceSubmission,2835,2835
@@ -256,7 +256,7 @@ _decode_* (library),2048,2048
 btCollisionDispatcher,2016,2016
 SphereTriangleDetector,2004,2004
 _dmInputDDF_* (library),1996,1968
-_Register_* (library),1984,1976
+_Register_* (library),1976,1968
 btCapsuleShape,1972,1972
 ReverseHashContainer,1948,1948
 MVKFramebuffer,1917,1917

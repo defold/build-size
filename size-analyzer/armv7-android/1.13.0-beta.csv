@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,631773,139601
-[section .rodata],369866,369866
+[section .rodata],369946,369946
 dmGameSystem,328202,487502
-dmGraphics,241351,327525
+dmGraphics,241667,327880
 _mbedtls_* (library),155802,194630
 dmCrash,112126,11614
 dmGui,110664,144220
@@ -10,10 +10,10 @@ dmGameObject,109304,151522
 dmRender,100095,140835
 basist,99664,99210
 _compress_* (library),97083,98459
-[section .rel.dyn],69576,69576
+[section .rel.dyn],69552,69552
 _pfb,65536,65561
 std,60485,76498
-[section .ARM.exidx],57680,57680
+[section .ARM.exidx],57696,57696
 dmHashTable<>,49522,62363
 (anonymous namespace),44924,103732
 dmParticle,39217,48716
@@ -23,7 +23,7 @@ dmSound,24809,31668
 dmRig,21624,26215
 dmEngine,20982,25456
 _decompress_* (library),20800,21854
-_GLOBAL_* (library),19663,26484
+_GLOBAL_* (library),19663,26468
 _cf_* (library),17380,26649
 _load_* (library),17236,17941
 btCollisionWorld,17197,23754
@@ -35,12 +35,12 @@ btDiscreteDynamicsWorld,14656,19682
 dmDDF,14084,21709
 _internal_* (library),14080,14363
 [section .ARM.extab],13264,13264
-[section .plt],11920,11920
+[section .plt],11952,11952
 dmInput,10903,11574
 dmEasing,10856,10983
 b2World,10688,12051
 gjkepa2_impl,9688,11153
-[section .hash],9664,9664
+[section .hash],9680,9680
 dmHttpClient,9152,11738
 dmHttpCache,8768,10343
 _lua_* (library),8686,13137
@@ -52,22 +52,22 @@ b2DynamicTree,7988,9467
 _strfmt_* (library),7954,9046
 _BC_* (library),7892,10850
 _get_* (library),7642,9777
-dmHID,7641,13219
+dmHID,7585,13175
 dmSocket,7472,10551
 __cxxabiv1,7398,17506
 btIDebugDraw,7328,8416
 _tinfl_* (library),7019,7435
 _zip_* (library),6864,7481
 btAxisSweep3Internal<>,6836,9147
-[section .dynsym],6592,6592
-[section .text],6300,6300
+[section .dynsym],6624,6624
+[section .text],6297,6297
 dmBuffer,6240,8405
 _parse_* (library),6184,6970
 [section .gnu.hash],6124,6124
 dmConfigFile,6088,7371
-[section .rel.plt],5944,5944
+[section .rel.plt],5960,5960
+[section .dynstr],5909,5909
 dmSys,5886,7996
-[section .dynstr],5862,5862
 dmConnectionPool,5648,7251
 dmHttpService,5508,7052
 init_gl,5444,5980
@@ -127,12 +127,12 @@ btGjkPairDetector,3100,4296
 btBvhTriangleMeshShape,3092,5655
 b2Fixture,3072,4028
 _glfwAndroidHandleInput,3064,3232
-[section .got],3020,3020
 _key_* (library),3017,3573
 _mul_* (library),3012,3089
+[section .got],3008,3008
 _glfwJoy,3008,25
 _meta_* (library),3008,3855
-[section .got.plt],2984,2984
+[section .got.plt],2992,2992
 _run_* (library),2980,3217
 _sync_* (library),2969,3402
 b2WeldJoint,2964,3839
@@ -143,7 +143,7 @@ _flush_* (library),2884,3040
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
 btSimulationIslandManager,2800,3828
-dmPlatform,2789,12105
+dmPlatform,2777,11919
 _packetout,2760,2803
 _tdefl_* (library),2755,3170
 btConvexConcaveCollisionAlgorithm,2712,5048
@@ -159,8 +159,8 @@ _mpi_* (library),2532,3030
 btBoxShape,2504,4113
 _mac_* (library),2496,2887
 _set_* (library),2420,3598
+[section .gnu.version],2418,2418
 _page_* (library),2415,2898
-[section .gnu.version],2414,2414
 b2DistanceJoint,2408,3339
 lex_scan,2334,2471
 _vm_* (library),2322,4045
@@ -207,7 +207,7 @@ btPersistentManifold,1740,2372
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
 _double_* (library),1720,1818
-[section .bss],1715,0
+[section .bss],1711,0
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
@@ -491,10 +491,10 @@ ll_loadfunc,392,452
 dmHashBufferNoReverse64,388,476
 inet_pushresolved,388,454
 dmPPrint,388,649
+[LOAD #1 [R]],386,386
 lex_number,384,443
 ciphersuite_definitions,384,424
 secp256r1_T,384,412
-[LOAD #1 [R]],381,381
 ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 _auth_* (library),376,488
@@ -1656,6 +1656,7 @@ writer_buf,12,55
 _atexit_* (library),12,53
 b2_version,12,39
 g_SoundManager,12,31
+[LOAD #4 [RW]],12,0
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
 err_syntax,10,53
@@ -1976,8 +1977,8 @@ vkMapMemory,4,28
 gFindPairs,4,27
 json_array,4,27
 vkCmdDraw,4,26
-[LOAD #4 [RW]],4,0
 stbi__process_frame_header(),3,71
+_CortexA8657417_* (library),3,43
 [LOAD #2 [RX]],3,3
 b2RayCastCallback,2,61
 g_PendingResizeBecauseOfInsets,1,47
@@ -1989,17 +1990,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6022238
-[section .debug_loc],0,3269525
-[section .debug_line],0,2456307
-[section .debug_str],0,2028322
-[section .debug_ranges],0,983776
-[section .debug_abbrev],0,457337
-[section .debug_frame],0,294440
-[section .symtab],0,46368
-[section .strtab],0,18085
+[section .debug_info],0,6022429
+[section .debug_loc],0,3269993
+[section .debug_line],0,2456588
+[section .debug_str],0,2028427
+[section .debug_ranges],0,983792
+[section .debug_abbrev],0,457367
+[section .debug_frame],0,294444
+[section .symtab],0,46496
+[section .strtab],0,18132
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,12
+[Unmapped],0,5
