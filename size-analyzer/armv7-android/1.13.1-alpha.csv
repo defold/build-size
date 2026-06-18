@@ -1,16 +1,16 @@
 symbol_group_name,vmsize,filesize
 dmScript,632253,140121
 dmGameSystem,461193,618229
-[section .rodata],374669,374669
-dmGraphics,245183,332125
+[section .rodata],374797,374797
+dmGraphics,245312,332340
 _mbedtls_* (library),175074,213217
 basist,118172,116078
 dmCrash,112130,11618
 dmGui,110712,144205
 dmGameObject,109688,152113
-dmRender,103297,144419
+dmRender,103301,144423
 _compress_* (library),97191,98574
-[section .rel.dyn],69304,69304
+[section .rel.dyn],69448,69448
 _pfb,65536,65561
 std,60458,77534
 [section .ARM.exidx],57368,57368
@@ -22,7 +22,7 @@ dmResource,29620,40357
 dmSound,25893,32864
 _GLOBAL_* (library),23680,30322
 dmRig,21668,26296
-dmEngine,21522,26118
+dmEngine,21530,26126
 _decompress_* (library),20572,21626
 _load_* (library),17288,17993
 btCollisionWorld,17197,23754
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6432,6432
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6105,6105
+[section .text],6113,6113
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 dmSys,5886,7996
@@ -103,7 +103,7 @@ _T_* (library),4096,7224
 dmLiveUpdate,4084,5913
 b2RevoluteJoint,4072,5865
 _decl_* (library),4058,4599
-dmPlatform,4040,13162
+dmPlatform,4052,13174
 _Unwind_* (library),4036,4911
 _book_* (library),4034,4412
 btDbvt,3860,5115
@@ -207,7 +207,7 @@ btPersistentManifold,1740,2372
 _stream_* (library),1734,2384
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
-[section .bss],1706,0
+[section .bss],1721,0
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
@@ -215,8 +215,9 @@ _neon_* (library),1672,1757
 b2ChainShape,1656,2854
 b2BlockAllocator,1654,1568
 dmHashFinal64,1626,1688
+[section .data.rel.ro],1616,1616
 btAlignedObjectArray<>,1612,2263
-[section .data.rel.ro],1608,1608
+_ShaderDesc_* (library),1594,3425
 _x509_* (library),1544,1641
 _ov_* (library),1532,1616
 _global_* (library),1532,1852
@@ -244,7 +245,6 @@ _glfwAndroidHandleCommand,1332,1438
 _NodeDesc_* (library),1317,3524
 b2ContactManager,1316,1727
 Layout<>(),1308,1435
-_ShaderDesc_* (library),1298,2853
 _com_* (library),1295,2238
 btConvexInternalShape,1280,2496
 _ccallback_* (library),1276,1537
@@ -310,9 +310,9 @@ dmHashUpdateBuffer32,985,1054
 btCollisionShape,976,1641
 _buffer_* (library),971,1171
 btConvexInternalAabbCachingShape,968,1489
+_Register_* (library),965,4188
 dmHashBuffer32,963,1026
 dmResourceProviderFile,960,1652
-_Register_* (library),957,4180
 dmHashReverseErase64,953,1022
 cpcparser,952,1010
 serialize_get,948,994
@@ -1570,7 +1570,6 @@ io_tofile,24,66
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
-[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 FontCollectionGetFontCount(),20,100
 btConcaveShape,20,245
@@ -1628,6 +1627,7 @@ _x25519_* (library),16,94
 expr_toval,16,43
 quant_look,16,43
 _supported_* (library),16,37
+[LOAD #3 [RW]],15,0
 _ARMV7PILongThunk_* (library),15,15
 _row_* (library),13,111
 TextLayoutCreate(),12,120
@@ -2031,10 +2031,10 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6193592
-[section .debug_loc],0,3447387
-[section .debug_line],0,2678401
-[section .debug_str],0,2048501
+[section .debug_info],0,6196265
+[section .debug_loc],0,3447422
+[section .debug_line],0,2678444
+[section .debug_str],0,2049161
 [section .debug_ranges],0,1035344
 [section .debug_abbrev],0,465654
 [section .debug_frame],0,296856
@@ -2044,4 +2044,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,7
+[Unmapped],0,9

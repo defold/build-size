@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,631773,139601
-[section .rodata],369946,369946
+[section .rodata],370010,370010
 dmGameSystem,328202,487502
-dmGraphics,241667,327880
+dmGraphics,241760,328059
 _mbedtls_* (library),155802,194630
 dmCrash,112126,11614
 dmGui,110664,144220
@@ -60,7 +60,7 @@ _tinfl_* (library),7019,7435
 _zip_* (library),6864,7481
 btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6624,6624
-[section .text],6297,6297
+[section .text],6288,6288
 dmBuffer,6240,8405
 _parse_* (library),6184,6970
 [section .gnu.hash],6124,6124
@@ -207,7 +207,7 @@ btPersistentManifold,1740,2372
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
 _double_* (library),1720,1818
-[section .bss],1711,0
+[section .bss],1710,0
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
@@ -1528,6 +1528,7 @@ _ZTSPDi,28,52
 _ZTSPDn,28,52
 _ZTSPDs,28,52
 _ZTSPDu,28,52
+[LOAD #4 [RW]],28,0
 gerrno,27,46
 _tls12_* (library),26,125
 _ZTSDh,26,49
@@ -1656,7 +1657,6 @@ writer_buf,12,55
 _atexit_* (library),12,53
 b2_version,12,39
 g_SoundManager,12,31
-[LOAD #4 [RW]],12,0
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
 err_syntax,10,53
@@ -1978,7 +1978,6 @@ gFindPairs,4,27
 json_array,4,27
 vkCmdDraw,4,26
 stbi__process_frame_header(),3,71
-_CortexA8657417_* (library),3,43
 [LOAD #2 [RX]],3,3
 b2RayCastCallback,2,61
 g_PendingResizeBecauseOfInsets,1,47
@@ -1990,17 +1989,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6022429
-[section .debug_loc],0,3269993
-[section .debug_line],0,2456588
-[section .debug_str],0,2028427
+[section .debug_info],0,6022453
+[section .debug_loc],0,3270017
+[section .debug_line],0,2456623
+[section .debug_str],0,2028487
 [section .debug_ranges],0,983792
 [section .debug_abbrev],0,457367
 [section .debug_frame],0,294444
-[section .symtab],0,46496
+[section .symtab],0,46480
 [section .strtab],0,18132
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,5
+[Unmapped],0,3

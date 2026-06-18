@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-[__LINKEDIT],3358720,3356000
+[__LINKEDIT],3358720,3356104
 MVK_spirv_cross,1642358,1642214
 dmScript,633632,109032
 dmGameSystem,482144,479976
@@ -9,7 +9,7 @@ _lj_* (library),250880,250880
 "_TEXT,_* (library)",236558,236558
 _variable_* (library),127496,127496
 dmGui,121772,120780
-dmGraphics,120401,119433
+dmGraphics,120481,119497
 dmGameObject,115256,115224
 dmCrash,113644,6964
 dmRender,111408,110984
@@ -42,7 +42,7 @@ dmSound,26312,26064
 MVKCommandPool,26113,26113
 spv,25696,25696
 _load_* (library),24576,24576
-stbi__process_marker(),23562,23562
+stbi__process_marker(),23626,23626
 mvk,22406,22286
 btSequentialImpulseConstraintSolver,22240,22240
 dmEngine,20928,20912
@@ -295,15 +295,14 @@ b2CollidePolygons(),1952,1952
 b2BlockAllocator,1880,1224
 _idct_* (library),1872,1872
 _dmModelDDF_* (library),1856,1792
-[__DATA],1852,8
 btCompoundLeafCallback,1848,1848
 btAlignedObjectArray<>,1840,1840
+[__DATA],1836,8
 _mapping_* (library),1824,1824
 __glfwInitCocoa,1808,1808
 _cconv_* (library),1808,1808
 btPerturbedContactResult,1800,1800
 _global_* (library),1792,1792
-[__TEXT],1771,6451
 MVKMetalCompiler,1763,1763
 btTransformUtil,1760,1760
 __glfwSetWindowMonitorCocoa,1728,1728
@@ -313,6 +312,7 @@ MVKBaseObject,1712,1712
 MVKSurface,1701,1701
 __glfwInitEGL,1696,1696
 MVKRenderingAttachmentIterator,1665,1665
+[__TEXT],1643,6323
 btManifoldResult,1608,1608
 b2ChainShape,1600,1600
 _dmHttpDDF_* (library),1580,1552
