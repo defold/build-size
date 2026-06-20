@@ -1,46 +1,46 @@
 symbol_group_name,vmsize,filesize
 dmScript,632253,140121
-dmGameSystem,461193,618229
-[section .rodata],374797,374797
-dmGraphics,245312,332340
+dmGameSystem,461193,618214
+[section .rodata],376021,376021
+dmGraphics,245036,330064
 _mbedtls_* (library),175074,213217
 basist,118172,116078
 dmCrash,112130,11618
 dmGui,110712,144205
-dmGameObject,109688,152113
+dmGameObject,109688,152120
 dmRender,103301,144423
 _compress_* (library),97191,98574
-[section .rel.dyn],69448,69448
+[section .rel.dyn],69592,69592
 _pfb,65536,65561
 std,60458,77534
-[section .ARM.exidx],57368,57368
-dmHashTable<>,54548,67442
+[section .ARM.exidx],57304,57304
+dmHashTable<>,54548,67436
 (anonymous namespace),45192,104182
 dmParticle,39381,48880
 dmPhysics,37456,55396
 dmResource,29620,40357
 dmSound,25893,32864
-_GLOBAL_* (library),23680,30322
+_GLOBAL_* (library),23680,30308
 dmRig,21668,26296
-dmEngine,21530,26126
+dmEngine,21566,26206
 _decompress_* (library),20572,21626
 _load_* (library),17288,17993
 btCollisionWorld,17197,23754
 _cf_* (library),17184,26421
 _psa_* (library),17100,21444
 vwin8192,16384,16409
+dmInput,15621,16531
 btQuantizedBvh,15568,18050
 btSequentialImpulseConstraintSolver,14840,17943
 _internal_* (library),14804,15087
 btDiscreteDynamicsWorld,14656,19682
-dmInput,14653,15420
 dmDDF,14112,21737
-[section .ARM.extab],13740,13740
+[section .ARM.extab],13752,13752
 [section .plt],11760,11760
+dmHID,11344,17014
 dmEasing,10856,10983
 b2World,10688,12051
 dmObjectPool<>,10532,13388
-dmHID,10520,16017
 gjkepa2_impl,9688,11153
 [section .hash],9576,9576
 dmHttpClient,9168,11754
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6432,6432
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6113,6113
+[section .text],6105,6105
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 dmSys,5886,7996
@@ -207,15 +207,15 @@ btPersistentManifold,1740,2372
 _stream_* (library),1734,2384
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
-[section .bss],1721,0
+[section .bss],1711,0
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
 _neon_* (library),1672,1757
 b2ChainShape,1656,2854
 b2BlockAllocator,1654,1568
+[section .data.rel.ro],1632,1632
 dmHashFinal64,1626,1688
-[section .data.rel.ro],1616,1616
 btAlignedObjectArray<>,1612,2263
 _ShaderDesc_* (library),1594,3425
 _x509_* (library),1544,1641
@@ -308,9 +308,9 @@ _normalize_* (library),1000,1155
 _bcread_* (library),994,1026
 dmHashUpdateBuffer32,985,1054
 btCollisionShape,976,1641
+_Register_* (library),973,4196
 _buffer_* (library),971,1171
 btConvexInternalAabbCachingShape,968,1489
-_Register_* (library),965,4188
 dmHashBuffer32,963,1026
 dmResourceProviderFile,960,1652
 dmHashReverseErase64,953,1022
@@ -511,13 +511,13 @@ socket_recvfrom,360,424
 ov_bitrate,359,402
 _glfwParseGLVersion,356,424
 collect_fd,356,415
-[LOAD #1 [RX]],353,353
 unwind_phase2(),352,475
 glfwExtensionSupported,352,423
 socket_connect,352,415
 socket_sendto,352,414
 meth_sendto,352,412
 _ContactPointResponse_* (library),352,481
+[LOAD #1 [RX]],349,349
 _RenderTargetDesc_* (library),346,952
 GBGetGlyph(),344,446
 btConeTwistConstraint,344,441
@@ -896,6 +896,7 @@ bcemit_branch,138,184
 fscope_end,138,181
 _PropertyDeclarationEntry_* (library),138,354
 _HttpRequestProgress_* (library),138,321
+_GamepadMapRuntime_* (library),138,321
 _ManifestData_* (library),138,337
 Particle_SetMaterial,137,213
 Particle_ReloadPrototype,137,210
@@ -1161,7 +1162,7 @@ LZ4_createStreamHC,83,134
 max_expand,82,125
 _glfwAndroidPlatformCloseWindow,80,160
 _glfwPlatformGetJoystickHats,80,157
-dmEngineUpdate(),80,156
+dmEngineUpdate(),80,157
 recursedeletenode(),80,156
 FontDestroy(),80,150
 ChunkComparePathOffsetFn(),80,148
@@ -1274,6 +1275,7 @@ _ScriptUnrefMessage_* (library),64,195
 _SetFlipHorizontal_* (library),64,193
 _SetFlipVertical_* (library),64,189
 _SetUpdateFrequency_* (library),64,187
+_GamepadMapsRuntime_* (library),64,185
 stbi__jbias,64,97
 _GamepadModifier_* (library),64,183
 _HashDigest_* (library),64,179
@@ -1295,7 +1297,7 @@ oggpack_bytes,62,108
 Particle_GetVertexBufferSize,61,122
 LZ4_freeStreamHC,61,110
 dLib,61,307
-dmEngineDestroy(),60,137
+dmEngineDestroy(),60,138
 btAlignedFreeInternal(),60,136
 FontGetPathHash(),60,134
 glfwSetMarkedTextCallback,60,134
@@ -1531,6 +1533,7 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
+[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
@@ -1627,7 +1630,6 @@ _x25519_* (library),16,94
 expr_toval,16,43
 quant_look,16,43
 _supported_* (library),16,37
-[LOAD #3 [RW]],15,0
 _ARMV7PILongThunk_* (library),15,15
 _row_* (library),13,111
 TextLayoutCreate(),12,120
@@ -1777,6 +1779,7 @@ btDispatcher,4,96
 btCollisionAlgorithmCreateFunc,4,76
 btConvexPenetrationDepthSolver,4,76
 _glfwPlatformSetWindowBackgroundColor,4,74
+dmInputDDF,4,74
 ProfilePropertyAddF32(),4,70
 ProfilePropertyAddU32(),4,70
 ProfilePropertySetU32(),4,70
@@ -1791,7 +1794,6 @@ _glfwPlatformDisableSystemKeys,4,67
 _glfwPlatformSetMouseCursorPos,4,67
 btNodeOverlapCallback,4,67
 dmBufferDDF,4,67
-dmInputDDF,4,67
 _glfwPlatformEnableSystemKeys,4,66
 _ZN12dmGameSystemL25g_* (library),4,65
 _glfwPlatformHideMouseCursor,4,65
@@ -2031,13 +2033,13 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6196265
-[section .debug_loc],0,3447422
-[section .debug_line],0,2678444
-[section .debug_str],0,2049161
+[section .debug_info],0,6217885
+[section .debug_loc],0,3448695
+[section .debug_line],0,2679015
+[section .debug_str],0,2049882
 [section .debug_ranges],0,1035344
-[section .debug_abbrev],0,465654
-[section .debug_frame],0,296856
+[section .debug_abbrev],0,465950
+[section .debug_frame],0,296632
 [section .symtab],0,43792
 [section .strtab],0,18000
 [ELF Headers],0,1400
