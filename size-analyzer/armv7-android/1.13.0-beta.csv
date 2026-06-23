@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,631773,139601
-[section .rodata],370010,370010
+[section .rodata],370698,370698
 dmGameSystem,328202,487502
-dmGraphics,241760,328059
+dmGraphics,242944,329554
 _mbedtls_* (library),155802,194630
 dmCrash,112126,11614
 dmGui,110664,144220
@@ -13,9 +13,9 @@ _compress_* (library),97083,98459
 [section .rel.dyn],69552,69552
 _pfb,65536,65561
 std,60485,76498
-[section .ARM.exidx],57696,57696
+[section .ARM.exidx],57728,57728
 dmHashTable<>,49522,62363
-(anonymous namespace),44924,103732
+(anonymous namespace),44924,103725
 dmParticle,39217,48716
 dmPhysics,37456,55436
 dmResource,30108,40733
@@ -60,7 +60,7 @@ _tinfl_* (library),7019,7435
 _zip_* (library),6864,7481
 btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6624,6624
-[section .text],6288,6288
+[section .text],6300,6300
 dmBuffer,6240,8405
 _parse_* (library),6184,6970
 [section .gnu.hash],6124,6124
@@ -202,7 +202,6 @@ res_inverse,1816,1860
 btGjkEpaSolver2,1816,2107
 _optimize_* (library),1792,1883
 b2MouseJoint,1788,3213
-glfwAndroidHandleInput,1744,1847
 btPersistentManifold,1740,2372
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
@@ -255,6 +254,7 @@ dmResourceArchive,1272,1860
 _str_* (library),1272,1638
 _ThumbV7PILongThunk_* (library),1272,10583
 dmBlockAllocator,1268,1608
+addInputEvents,1260,1355
 dmHashUpdateBuffer64,1249,1318
 LogInternal,1244,1336
 btManifoldResult,1224,1743
@@ -354,9 +354,11 @@ _compute_* (library),800,990
 CProfileManager,796,1296
 _zbuild_* (library),792,887
 _bisect_* (library),792,849
+glfwAndroidFlushEvents,788,891
 dmCrypt,788,1006
 dmHashReverse64,784,848
 _ecp_* (library),772,971
+glfwAndroidHandleInput,768,839
 secp384r1_T,768,796
 b2Joint,764,1313
 Vectormath,756,915
@@ -395,7 +397,6 @@ make_current,652,745
 global_data,648,44
 res_unpack,643,686
 _prf_* (library),632,790
-glfwAndroidFlushEvents,628,731
 JobSystemCreate,628,692
 btGhostObject,628,1183
 b2Mat33,628,947
@@ -1659,6 +1660,7 @@ b2_version,12,39
 g_SoundManager,12,31
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
+[LOAD #2 [RX]],11,11
 err_syntax,10,53
 cp_err,10,33
 _depth_* (library),9,54
@@ -1978,7 +1980,6 @@ gFindPairs,4,27
 json_array,4,27
 vkCmdDraw,4,26
 stbi__process_frame_header(),3,71
-[LOAD #2 [RX]],3,3
 b2RayCastCallback,2,61
 g_PendingResizeBecauseOfInsets,1,47
 g_accelerometerEnabled,1,39
@@ -1989,17 +1990,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6022453
-[section .debug_loc],0,3270017
-[section .debug_line],0,2456623
-[section .debug_str],0,2028487
-[section .debug_ranges],0,983792
-[section .debug_abbrev],0,457367
-[section .debug_frame],0,294444
+[section .debug_info],0,6043789
+[section .debug_loc],0,3272413
+[section .debug_line],0,2457690
+[section .debug_str],0,2029413
+[section .debug_ranges],0,984056
+[section .debug_abbrev],0,457752
+[section .debug_frame],0,294640
 [section .symtab],0,46480
 [section .strtab],0,18132
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,3
+[Unmapped],0,6
