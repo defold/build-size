@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,632973,140937
 dmGameSystem,461417,618438
-[section .rodata],376421,376421
+[section .rodata],376405,376405
 dmGraphics,245036,330064
 _mbedtls_* (library),175074,213217
 basist,118172,116078
@@ -53,7 +53,7 @@ dmSoundCodec,7990,11788
 _strfmt_* (library),7954,9046
 _BC_* (library),7892,10850
 _get_* (library),7550,9451
-dmSocket,7496,10575
+dmSocket,7532,10611
 _mz_* (library),7456,8348
 __cxxabiv1,7398,17522
 btIDebugDraw,7328,8416
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6480,6480
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6109,6109
+[section .text],6105,6105
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 [section .rel.plt],5888,5888
@@ -1533,6 +1533,7 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
+[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
@@ -1629,7 +1630,6 @@ _x25519_* (library),16,94
 expr_toval,16,43
 quant_look,16,43
 _supported_* (library),16,37
-[LOAD #3 [RW]],15,0
 _ARMV7PILongThunk_* (library),15,15
 _row_* (library),13,111
 TextLayoutCreate(),12,120
@@ -2033,12 +2033,12 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6220619
-[section .debug_loc],0,3452205
-[section .debug_line],0,2680937
-[section .debug_str],0,2051573
+[section .debug_info],0,6220625
+[section .debug_loc],0,3452303
+[section .debug_line],0,2680967
+[section .debug_str],0,2051587
 [section .debug_ranges],0,1036664
-[section .debug_abbrev],0,466201
+[section .debug_abbrev],0,466216
 [section .debug_frame],0,296756
 [section .symtab],0,43936
 [section .strtab],0,18022
@@ -2046,4 +2046,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,8
+[Unmapped],0,9
