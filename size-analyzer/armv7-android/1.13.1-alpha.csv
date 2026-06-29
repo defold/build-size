@@ -1,26 +1,26 @@
 symbol_group_name,vmsize,filesize
 dmScript,632973,140937
-dmGameSystem,461417,618438
-[section .rodata],376405,376405
-dmGraphics,245036,330064
+dmGameSystem,463634,619224
+[section .rodata],376325,376325
+dmGraphics,245908,331209
 _mbedtls_* (library),175074,213217
 basist,118172,116078
 dmCrash,112130,11618
 dmGui,111612,145144
 dmGameObject,109688,152120
-dmRender,103301,144423
+dmRender,103349,144471
 _compress_* (library),97191,98574
-[section .rel.dyn],69600,69600
+[section .rel.dyn],69608,69608
 _pfb,65536,65561
 std,60458,77534
-[section .ARM.exidx],57344,57344
+[section .ARM.exidx],57360,57360
 dmHashTable<>,54548,67436
 (anonymous namespace),45192,104175
 dmParticle,39381,48880
 dmPhysics,37456,55396
 dmResource,29784,40521
 dmSound,26101,33360
-_GLOBAL_* (library),23720,30440
+_GLOBAL_* (library),23720,30529
 dmRig,21668,26296
 dmEngine,21578,26218
 _decompress_* (library),20572,21626
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6480,6480
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6105,6105
+[section .text],6089,6089
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 [section .rel.plt],5888,5888
@@ -205,10 +205,10 @@ _optimize_* (library),1792,1883
 b2MouseJoint,1788,3213
 _double_* (library),1752,1850
 btPersistentManifold,1740,2372
+[section .bss],1734,0
 _stream_* (library),1734,2384
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
-[section .bss],1719,0
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
@@ -504,12 +504,12 @@ _check_* (library),380,493
 _LabelDesc_* (library),375,917
 _glfwAndroidPlatformSwapBuffers,372,452
 JobSystemCreateJob,372,439
+[LOAD #1 [RX]],365,365
 _SpriteDesc_* (library),365,943
 _cur_* (library),364,429
 _JNIEnv,364,967
 socket_recvfrom,360,424
 ov_bitrate,359,402
-[LOAD #1 [RX]],357,357
 _glfwParseGLVersion,356,424
 collect_fd,356,415
 unwind_phase2(),352,475
@@ -529,10 +529,10 @@ _ctx_* (library),340,819
 _find_* (library),338,367
 auxiliar_tostring,336,402
 _sig_* (library),336,364
+[section .init_array],336,336
 LZ4_loadDictHC,335,382
 b2EdgeSeparation(),332,442
 _g_* (library),332,433
-[section .init_array],332,332
 meth_receive,328,437
 _de_* (library),328,453
 stbi__get16be(),328,395
@@ -2033,17 +2033,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6220625
-[section .debug_loc],0,3452303
-[section .debug_line],0,2680967
-[section .debug_str],0,2051587
-[section .debug_ranges],0,1036664
-[section .debug_abbrev],0,466216
-[section .debug_frame],0,296756
-[section .symtab],0,43936
-[section .strtab],0,18022
+[section .debug_info],0,6229044
+[section .debug_loc],0,3452377
+[section .debug_line],0,2683507
+[section .debug_str],0,2052177
+[section .debug_ranges],0,1037304
+[section .debug_abbrev],0,467283
+[section .debug_frame],0,296800
+[section .symtab],0,43952
+[section .strtab],0,18041
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,9
+[Unmapped],0,4
