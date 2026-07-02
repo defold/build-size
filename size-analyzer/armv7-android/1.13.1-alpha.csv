@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,632973,140895
 dmGameSystem,465610,621389
-[section .rodata],377109,377109
+[section .rodata],376797,376797
 dmGraphics,245908,331188
 _mbedtls_* (library),175074,213217
 basist,118172,116078
@@ -24,7 +24,7 @@ _GLOBAL_* (library),23720,30522
 dmRig,21668,26296
 dmEngine,21578,26218
 _decompress_* (library),20572,21626
-dmInput,17789,18755
+dmInput,17797,18763
 _load_* (library),17288,17993
 btCollisionWorld,17197,23754
 _cf_* (library),17184,26421
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6480,6480
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6109,6109
+[section .text],6101,6101
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 [section .rel.plt],5888,5888
@@ -90,7 +90,6 @@ _tls13_* (library),4531,5484
 dmResourceMounts,4528,6199
 btVoronoiSimplexSolver,4360,5465
 b2GearJoint,4300,5312
-dmLog,4260,5166
 _append_* (library),4252,4703
 _alloc_* (library),4242,4574
 dmDeviceOpenSL,4208,5309
@@ -102,6 +101,7 @@ vwin2048,4096,4121
 _T_* (library),4096,7224
 dmLiveUpdate,4084,5913
 b2RevoluteJoint,4072,5865
+dmLog,4064,4890
 _decl_* (library),4058,4599
 dmPlatform,4052,13174
 _Unwind_* (library),4036,4911
@@ -144,6 +144,7 @@ _flush_* (library),2908,3064
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
+ReverseHashContainer,2856,3461
 btSimulationIslandManager,2800,3828
 _mac_* (library),2788,3207
 _packetout,2760,2803
@@ -167,7 +168,6 @@ _vm_* (library),2322,4045
 _make_* (library),2288,2466
 _expr_* (library),2270,2594
 b2RopeJoint,2252,3276
-ReverseHashContainer,2236,2547
 SphereTriangleDetector,2204,2886
 _carith_* (library),2184,2375
 expr_binop,2162,2333
@@ -204,31 +204,33 @@ btGjkEpaSolver2,1816,2107
 _optimize_* (library),1792,1883
 b2MouseJoint,1788,3213
 _double_* (library),1752,1850
-[section .bss],1744,0
+[section .bss],1740,0
 btPersistentManifold,1740,2372
 _stream_* (library),1734,2384
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
+dmHashUpdateBuffer64,1721,1790
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
 _neon_* (library),1672,1757
 b2ChainShape,1656,2854
 b2BlockAllocator,1654,1568
+dmHashFinal64,1634,1696
 [section .data.rel.ro],1632,1632
-dmHashFinal64,1626,1688
 btAlignedObjectArray<>,1612,2263
 _ShaderDesc_* (library),1594,3425
+dmHashFinal32,1546,1608
 _x509_* (library),1544,1641
 _ov_* (library),1532,1616
 _global_* (library),1532,1852
 _lsp_* (library),1528,1596
 dmOpaqueHandleContainer<>,1524,2506
 dmVMath,1504,1710
-dmHashFinal32,1478,1540
 glfwOpenWindow,1448,1511
 b2TimeOfImpact(),1444,1635
 _cff_* (library),1444,1699
+dmHashUpdateBuffer32,1441,1510
 btTriangleShape,1428,2819
 _fetch_* (library),1400,1505
 _ffh_* (library),1396,2560
@@ -255,7 +257,7 @@ b2CollidePolygons(),1272,1426
 _str_* (library),1272,1638
 dmBlockAllocator,1268,1608
 addInputEvents,1260,1355
-dmHashUpdateBuffer64,1249,1318
+LogInternal,1224,1284
 btManifoldResult,1224,1743
 dmZlib,1224,1409
 _strscan_* (library),1216,1393
@@ -263,7 +265,9 @@ btTriangleMeshShape,1204,1963
 serialize_put,1196,1258
 btHashMap<>,1188,1378
 btTransformUtil,1188,1438
+dmHashClone64,1170,1232
 strscan_dec,1168,1228
+dmHashClone32,1166,1228
 _idct_* (library),1164,1223
 _time_* (library),1162,1348
 global_select,1160,1222
@@ -273,11 +277,6 @@ _entry_* (library),1148,1610
 _buf_* (library),1138,1898
 _add_* (library),1120,1226
 btCollisionObject,1120,2044
-dmHashRelease32,1100,1164
-dmHashRelease64,1100,1164
-LogInternal,1100,1160
-dmHashClone32,1098,1160
-dmHashClone64,1098,1160
 _calc_* (library),1088,1545
 btPolyhedralConvexAabbCachingShape,1072,1699
 _fromdB_* (library),1060,1096
@@ -306,20 +305,17 @@ dmExtension,1020,1809
 btPolyhedralConvexShape,1008,1575
 _normalize_* (library),1000,1155
 _bcread_* (library),994,1026
-dmHashUpdateBuffer32,985,1054
 _Register_* (library),977,4200
 btCollisionShape,976,1641
 _buffer_* (library),971,1171
 btConvexInternalAabbCachingShape,968,1489
-dmHashBuffer32,963,1026
+dmHashBuffer32,967,1030
 dmResourceProviderFile,960,1652
 dmHashReverseErase64,953,1022
 cpcparser,952,1010
 serialize_get,948,994
 btSphereTriangleCollisionAlgorithm,948,2361
 dmPath,944,1170
-dmHashInit32,937,998
-dmHashInit64,933,994
 _rsassa_* (library),928,1054
 _GlyphBank_* (library),926,2651
 btBoxBoxCollisionAlgorithm,924,2239
@@ -335,7 +331,7 @@ b2EdgeShape,880,1586
 dmHashReverse64Alloc(),870,960
 gcm_mask,868,909
 _write_* (library),864,1014
-dmHashBuffer64,859,922
+dmHashBuffer64,863,926
 _initialize_* (library),856,927
 dmImage,848,1175
 _unw_* (library),844,1556
@@ -367,8 +363,10 @@ dmHashReverse32,752,816
 _gc_* (library),752,1224
 ANativeActivity_onCreate,749,822
 btPairCachingGhostObject,744,1255
+dmHashInit32,741,802
 _glfwInput,740,27
 b2CircleShape,740,1396
+dmHashInit64,737,798
 b2CollideEdgeAndCircle(),732,870
 [section .data],731,731
 _Material_* (library),724,1306
@@ -379,6 +377,8 @@ b2PositionSolverManifold,716,856
 dmURI,716,860
 intersectRectQuad2(),712,774
 _clib_* (library),706,939
+dmHashRelease32,704,768
+dmHashRelease64,704,768
 dmAndroid,704,1300
 jc,700,863
 _FontMap_* (library),692,2115
@@ -504,12 +504,12 @@ _check_* (library),380,493
 _LabelDesc_* (library),375,917
 _glfwAndroidPlatformSwapBuffers,372,452
 JobSystemCreateJob,372,439
-[LOAD #1 [RX]],365,365
 _SpriteDesc_* (library),365,943
 _cur_* (library),364,429
 _JNIEnv,364,967
 socket_recvfrom,360,424
 ov_bitrate,359,402
+[LOAD #1 [RX]],357,357
 _glfwParseGLVersion,356,424
 collect_fd,356,415
 unwind_phase2(),352,475
@@ -2034,17 +2034,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6243070
-[section .debug_loc],0,3461223
-[section .debug_line],0,2688397
-[section .debug_str],0,2058722
-[section .debug_ranges],0,1040184
-[section .debug_abbrev],0,467281
-[section .debug_frame],0,297148
+[section .debug_info],0,6244838
+[section .debug_loc],0,3463340
+[section .debug_line],0,2688404
+[section .debug_str],0,2059324
+[section .debug_ranges],0,1038456
+[section .debug_abbrev],0,467307
+[section .debug_frame],0,297252
 [section .symtab],0,43952
 [section .strtab],0,18041
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,3
+[Unmapped],0,5
