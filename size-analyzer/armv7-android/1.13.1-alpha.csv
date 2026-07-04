@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,632973,140895
 dmGameSystem,465610,621389
-[section .rodata],376797,376797
+[section .rodata],376749,376749
 dmGraphics,245908,331188
 _mbedtls_* (library),175074,213217
 basist,118172,116078
@@ -13,18 +13,18 @@ _compress_* (library),97191,98574
 [section .rel.dyn],69792,69792
 _pfb,65536,65561
 std,60458,77534
-[section .ARM.exidx],57368,57368
-dmHashTable<>,54512,67394
+[section .ARM.exidx],57416,57416
+dmHashTable<>,54524,67406
 (anonymous namespace),45192,104189
 dmParticle,39381,48887
 dmPhysics,37456,55396
-dmResource,29784,40521
+dmResource,29540,40356
 dmSound,26101,33360
-_GLOBAL_* (library),23720,30522
+_GLOBAL_* (library),23716,30518
 dmRig,21668,26296
 dmEngine,21578,26218
 _decompress_* (library),20572,21626
-dmInput,17797,18763
+dmInput,17893,18859
 _load_* (library),17288,17993
 btCollisionWorld,17197,23754
 _cf_* (library),17184,26421
@@ -35,9 +35,9 @@ btSequentialImpulseConstraintSolver,14840,17943
 _internal_* (library),14804,15087
 btDiscreteDynamicsWorld,14656,19682
 dmDDF,14112,21737
-[section .ARM.extab],13764,13764
+[section .ARM.extab],13776,13776
 [section .plt],11808,11808
-dmHID,11344,17014
+dmHID,11508,17178
 dmEasing,10856,10983
 b2World,10688,12051
 dmObjectPool<>,10532,13395
@@ -52,8 +52,8 @@ vwin4096,8192,8217
 dmSoundCodec,7990,11788
 _strfmt_* (library),7954,9046
 _BC_* (library),7892,10850
+dmSocket,7552,10772
 _get_* (library),7550,9451
-dmSocket,7532,10611
 _mz_* (library),7456,8348
 __cxxabiv1,7398,17522
 btIDebugDraw,7328,8416
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6480,6480
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6101,6101
+[section .text],6085,6085
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 [section .rel.plt],5888,5888
@@ -78,7 +78,6 @@ b2PrismaticJoint,5144,6983
 dBoxBox2(),5140,5347
 _luaL_* (library),5065,7398
 btRigidBody,4972,7074
-dmMessage,4964,6847
 btConvexConvexAlgorithm,4872,6369
 _lib_* (library),4862,7071
 GetGlyphTTF(),4796,5091
@@ -96,16 +95,17 @@ dmDeviceOpenSL,4208,5309
 _ctype_* (library),4136,5074
 dmArray<>,4112,6199
 sincos_lookup0,4104,4135
+dmMessage,4104,6067
 sincos_lookup1,4096,4127
 vwin2048,4096,4121
 _T_* (library),4096,7224
 dmLiveUpdate,4084,5913
 b2RevoluteJoint,4072,5865
-dmLog,4064,4890
 _decl_* (library),4058,4599
 dmPlatform,4052,13174
 _Unwind_* (library),4036,4911
 _book_* (library),4034,4412
+dmLog,3916,4742
 btDbvt,3860,5115
 b2GridShape,3848,5521
 btDbvtBroadphase,3844,5655
@@ -257,7 +257,6 @@ b2CollidePolygons(),1272,1426
 _str_* (library),1272,1638
 dmBlockAllocator,1268,1608
 addInputEvents,1260,1355
-LogInternal,1224,1284
 btManifoldResult,1224,1743
 dmZlib,1224,1409
 _strscan_* (library),1216,1393
@@ -265,6 +264,7 @@ btTriangleMeshShape,1204,1963
 serialize_put,1196,1258
 btHashMap<>,1188,1378
 btTransformUtil,1188,1438
+LogInternal,1172,1232
 dmHashClone64,1170,1232
 strscan_dec,1168,1228
 dmHashClone32,1166,1228
@@ -277,6 +277,7 @@ _entry_* (library),1148,1610
 _buf_* (library),1138,1898
 _add_* (library),1120,1226
 btCollisionObject,1120,2044
+dmFileDescriptor,1108,1719
 _calc_* (library),1088,1545
 btPolyhedralConvexAabbCachingShape,1072,1699
 _fromdB_* (library),1060,1096
@@ -386,7 +387,6 @@ cullPoints2(),688,759
 JobSystemSetParent,688,755
 _func_* (library),688,1022
 btSphereShape,680,1502
-dmFileDescriptor,672,1267
 _luaJIT_* (library),665,996
 _aes_* (library),664,890
 ResourceChunkCachePut(),660,778
@@ -507,9 +507,9 @@ JobSystemCreateJob,372,439
 _SpriteDesc_* (library),365,943
 _cur_* (library),364,429
 _JNIEnv,364,967
+[LOAD #1 [RX]],361,361
 socket_recvfrom,360,424
 ov_bitrate,359,402
-[LOAD #1 [RX]],357,357
 _glfwParseGLVersion,356,424
 collect_fd,356,415
 unwind_phase2(),352,475
@@ -622,13 +622,13 @@ _Animation_* (library),254,681
 btGjkEpaPenetrationDepthSolver,252,570
 meth_send,252,358
 strbuf_resize,252,314
+RecvTimeout(),252,307
 HttpAddHeader,252,298
 nd_mul2k,252,277
 _CameraDesc_* (library),252,640
 _dynamic_* (library),251,314
 _glfwAndroidSetFullscreenParameters,248,332
 ContextRegistrySetByHash,248,305
-RecvTimeout(),248,303
 _auth_* (library),248,295
 _zlength_* (library),248,329
 _phase2_* (library),244,426
@@ -1274,6 +1274,7 @@ ffi_checkptr,64,109
 _ResetConstantTileMap_* (library),64,199
 _ScriptUnrefMessage_* (library),64,195
 _SetFlipHorizontal_* (library),64,193
+dmSpinlock,64,343
 _SetFlipVertical_* (library),64,189
 _SetUpdateFrequency_* (library),64,187
 _GamepadMapsRuntime_* (library),64,185
@@ -2034,17 +2035,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6244838
-[section .debug_loc],0,3463340
-[section .debug_line],0,2688404
-[section .debug_str],0,2059324
-[section .debug_ranges],0,1038456
-[section .debug_abbrev],0,467307
-[section .debug_frame],0,297252
-[section .symtab],0,43952
-[section .strtab],0,18041
+[section .debug_info],0,6242326
+[section .debug_loc],0,3461622
+[section .debug_line],0,2687906
+[section .debug_str],0,2059752
+[section .debug_ranges],0,1038048
+[section .debug_abbrev],0,467834
+[section .debug_frame],0,297452
+[section .symtab],0,43968
+[section .strtab],0,18062
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,5
+[Unmapped],0,6
