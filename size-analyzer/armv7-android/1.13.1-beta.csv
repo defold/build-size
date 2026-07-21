@@ -7,7 +7,7 @@ _mbedtls_* (library),175074,213217
 basist,118172,116078
 dmGui,113160,146946
 dmCrash,112130,11618
-dmGameObject,109688,152126
+dmGameObject,109640,152078
 dmRender,103349,144471
 _compress_* (library),97191,98574
 [section .rel.dyn],69944,69944
@@ -1577,7 +1577,6 @@ io_tofile,24,66
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
-[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 FontCollectionGetFontCount(),20,100
 btConcaveShape,20,245
@@ -1779,6 +1778,7 @@ ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
 [section .fini_array],8,8
+[LOAD #3 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 btTriangleCallback,4,108
 btDispatcher,4,96
@@ -2040,8 +2040,8 @@ supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
 [section .debug_info],0,6246758
-[section .debug_loc],0,3463075
-[section .debug_line],0,2690227
+[section .debug_loc],0,3463053
+[section .debug_line],0,2690195
 [section .debug_str],0,2062182
 [section .debug_ranges],0,1038496
 [section .debug_abbrev],0,468257
@@ -2052,4 +2052,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,5
+[Unmapped],0,3
