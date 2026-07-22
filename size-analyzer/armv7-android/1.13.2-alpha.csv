@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,633073,141011
 dmGameSystem,467358,623886
-[section .rodata],376637,376637
+[section .rodata],376653,376653
 dmGraphics,245908,331167
 _mbedtls_* (library),175074,213217
 basist,118172,116078
@@ -21,7 +21,7 @@ dmPhysics,37456,55396
 dmResource,29540,40335
 dmSound,26101,33360
 _GLOBAL_* (library),23788,30699
-dmEngine,21782,26529
+dmEngine,21830,26577
 dmRig,21668,26296
 _decompress_* (library),20572,21626
 dmInput,17893,18859
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6480,6480
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6097,6097
+[section .text],6093,6093
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 [section .rel.plt],5888,5888
@@ -1044,6 +1044,7 @@ _open_* (library),106,156
 jmp_patchval,106,151
 hash_dense,106,149
 ResourceRegisterTypeCreatorDesc(),104,253
+WindowCreateParamsInitialize,104,181
 meth_shutdown,104,166
 select_open,104,164
 ov_test,104,160
@@ -1151,7 +1152,6 @@ _Skeleton_* (library),88,185
 debug_getupvalue,86,135
 lex_more,86,111
 _udata_* (library),86,177
-WindowCreateParamsInitialize,84,161
 mbedtls_debug(),84,161
 TextLayoutLegacyFree(),84,155
 _glfwInitTimer,84,147
@@ -1538,7 +1538,6 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
-[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
@@ -1636,6 +1635,7 @@ _x25519_* (library),16,94
 expr_toval,16,43
 quant_look,16,43
 _supported_* (library),16,37
+[LOAD #3 [RW]],15,0
 _ARMV7PILongThunk_* (library),15,15
 _row_* (library),13,111
 TextLayoutCreate(),12,120
@@ -2039,17 +2039,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6250019
-[section .debug_loc],0,3464243
-[section .debug_line],0,2691000
-[section .debug_str],0,2060898
+[section .debug_info],0,6250070
+[section .debug_loc],0,3464171
+[section .debug_line],0,2691018
+[section .debug_str],0,2060912
 [section .debug_ranges],0,1038544
 [section .debug_abbrev],0,468240
-[section .debug_frame],0,297824
+[section .debug_frame],0,297832
 [section .symtab],0,43984
 [section .strtab],0,18088
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,3
+[Unmapped],0,4
