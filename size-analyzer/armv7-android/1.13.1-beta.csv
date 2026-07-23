@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,632857,140779
-dmGameSystem,467378,623943
+dmGameSystem,467382,623947
 [section .rodata],376973,376973
 dmGraphics,245908,331188
 _mbedtls_* (library),175074,213217
@@ -36,7 +36,7 @@ _internal_* (library),14804,15087
 btDiscreteDynamicsWorld,14656,19682
 dmDDF,14112,21737
 [section .ARM.extab],13776,13776
-[section .plt],11808,11808
+[section .plt],11807,11807
 dmHID,11508,17178
 dmEasing,10856,10983
 b2World,10688,12051
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6480,6480
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6093,6093
+[section .text],6105,6105
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 [section .rel.plt],5888,5888
@@ -397,7 +397,7 @@ make_current,652,745
 global_data,648,44
 res_unpack,643,686
 _prf_* (library),640,798
-_ThumbV7PILongThunk_* (library),636,5156
+_ThumbV7PILongThunk_* (library),636,5169
 _handshake_* (library),628,695
 JobSystemCreate,628,692
 btGhostObject,628,1183
@@ -511,13 +511,13 @@ socket_recvfrom,360,424
 ov_bitrate,359,402
 _glfwParseGLVersion,356,424
 collect_fd,356,415
-[LOAD #1 [RX]],353,353
 unwind_phase2(),352,475
 glfwExtensionSupported,352,423
 socket_connect,352,415
 socket_sendto,352,414
 meth_sendto,352,412
 _ContactPointResponse_* (library),352,481
+[LOAD #1 [RX]],350,350
 _RenderTargetDesc_* (library),346,952
 GBGetGlyph(),344,446
 btConeTwistConstraint,344,441
@@ -1577,6 +1577,7 @@ io_tofile,24,66
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
+[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 FontCollectionGetFontCount(),20,100
 btConcaveShape,20,245
@@ -1778,9 +1779,9 @@ ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 gProfileClock,8,35
 [section .fini_array],8,8
-[LOAD #3 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 btTriangleCallback,4,108
+_CortexA8657417_* (library),4,103
 btDispatcher,4,96
 btCollisionAlgorithmCreateFunc,4,76
 btConvexPenetrationDepthSolver,4,76
@@ -2040,16 +2041,16 @@ supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
 [section .debug_info],0,6246758
-[section .debug_loc],0,3463053
-[section .debug_line],0,2690195
+[section .debug_loc],0,3463113
+[section .debug_line],0,2690241
 [section .debug_str],0,2062182
-[section .debug_ranges],0,1038496
+[section .debug_ranges],0,1038520
 [section .debug_abbrev],0,468257
 [section .debug_frame],0,297792
-[section .symtab],0,43984
+[section .symtab],0,43968
 [section .strtab],0,18088
-[ELF Headers],0,1400
+[ELF Headers],0,1360
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,3
+[Unmapped],0,5

@@ -1,19 +1,19 @@
 symbol_group_name,vmsize,filesize
 dmScript,639281,153402
-dmGameSystem,475910,649437
+dmGameSystem,475906,649457
 [section .rodata],394398,394398
 dmGraphics,217684,287946
-_mbedtls_* (library),180643,222671
+_mbedtls_* (library),180643,222695
 (anonymous namespace),131132,203110
 dmGui,124396,160094
 dmCrash,117098,15050
 basist,113572,113802
-dmGameObject,112524,160140
-dmRender,111341,157753
+dmGameObject,112524,160116
+dmRender,111341,157729
 _compress_* (library),88447,91216
 std,87495,98383
 _pfb,65536,66776
-dmHashTable<>,52788,66031
+dmHashTable<>,52788,66103
 dmPhysics,40704,60924
 dmParticle,37765,47892
 _cf_* (library),33036,44409
@@ -34,7 +34,7 @@ vwin8192,16384,16681
 __cxxabiv1,16360,26534
 _lua_* (library),16342,22241
 dmInput,16269,17708
-dmDDF,15292,23681
+dmDDF,15292,23657
 btQuantizedBvh,15192,17962
 btSequentialImpulseConstraintSolver,15044,18351
 dmHID,12324,18814
@@ -51,12 +51,12 @@ _luaL_* (library),9265,12262
 [section .hash],9224,9224
 dmHttpClient,8976,11850
 dmHttpService,8768,11281
-b2DynamicTree,8604,10179
+b2DynamicTree,8604,10155
 dmSoundCodec,8582,12952
 btAxisSweep3Internal<>,8448,11183
 vwin4096,8192,8345
 dmHttpCache,7805,9849
-_get_* (library),7772,9977
+_get_* (library),7772,9953
 _BC_* (library),7752,11681
 _Register_* (library),7682,13674
 _cxa_* (library),7230,9346
@@ -96,7 +96,7 @@ _book_* (library),4907,5470
 b2RevoluteJoint,4860,7061
 dmMessage,4672,6883
 b2Body,4672,5895
-btDbvtBroadphase,4564,6607
+btDbvtBroadphase,4564,6583
 _tab_* (library),4484,5547
 _cconv_* (library),4456,4995
 btVoronoiSimplexSolver,4420,5541
@@ -199,7 +199,7 @@ SphereTriangleDetector,2280,3050
 dmResourceArchive,2276,3171
 dmResourceProviderArchive,2264,3522
 _file_* (library),2240,2698
-_x509_* (library),2204,2349
+_x509_* (library),2204,2373
 _ccallback_* (library),2204,2545
 btConvexInternalShape,2200,3656
 _sig_* (library),2176,2306
@@ -295,7 +295,7 @@ btNullPairCache,1312,3314
 glfwOpenWindow,1300,1363
 _name_* (library),1300,1455
 gc_onestep,1288,1347
-Vectormath,1288,1503
+Vectormath,1288,1479
 _time_* (library),1286,1536
 _clib_* (library),1284,1597
 dmHashUpdateBuffer64,1281,1350
@@ -430,7 +430,7 @@ cp_declarator,780,890
 propagatemark,780,866
 GetGlyphIndexTTF(),780,857
 _vmeta_* (library),772,2300
-dmTransform,764,976
+dmTransform,764,1000
 dmThread,764,1226
 _profile_* (library),764,975
 _ext_* (library),760,850
@@ -500,7 +500,7 @@ PutDone(),624,722
 _RigAnimation_* (library),624,817
 _SetGridShapeHull_* (library),624,809
 oggpack_look,621,682
-btUnionFind,620,1001
+btUnionFind,620,1025
 _bc_* (library),616,709
 _Create_* (library),614,979
 _PbrMetallicRoughness_* (library),610,1010
@@ -553,11 +553,11 @@ _Vector4WOne_* (library),524,1004
 _Vector3_* (library),524,975
 _Quat_* (library),524,968
 CancelJobInternal(),520,611
-b2PolygonContact,520,1046
+b2PolygonContact,520,1022
 b2EdgeAndPolygonContact,520,1033
 _ManifestHeader_* (library),519,1059
 JobSystemPushJob,516,581
-b2PolygonAndCircleContact,516,1039
+b2PolygonAndCircleContact,516,1063
 b2EdgeAndCircleContact,516,1024
 _Volume_* (library),514,882
 _TextureView_* (library),514,862
@@ -727,19 +727,19 @@ _toreg_* (library),336,404
 _MorphWeightTrack_* (library),336,513
 b2Timer,336,588
 _select_* (library),332,420
-_sw_* (library),332,415
+_sw_* (library),332,391
 entropy_update,328,415
 _gather_* (library),328,400
 _start_* (library),328,399
 auxiliar_tostring,328,394
 parse_label,328,388
 BroadphaseAabbTester,328,602
+[section .text],328,328
 BroadphaseRayTester,328,575
 _SetParent_* (library),326,737
 debug_putchunkname,324,391
 meth_setpeername,324,389
 socket_accept,324,386
-[section .text],324,324
 btConvexCast,324,886
 meth_send,320,426
 expr_discharge,320,407
@@ -781,7 +781,7 @@ FontLoadFromMemory(),308,386
 ciphersuite_preference,308,379
 rsa_unblind,308,368
 timeout_getretry,304,393
-meth_connect,304,389
+meth_connect,304,365
 copy_slot,304,362
 btSingleSweepCallback,304,564
 btCollisionAlgorithm,304,652
@@ -903,12 +903,12 @@ meth_setsockname,244,309
 dmTime,244,459
 Particle_GetInstanceStats,242,323
 matchbracketclass,240,330
+meth_bind,240,322
 ctype_prepqual,240,303
 jmp_patchval,240,301
 lj_bcwrite,240,299
 udp_create,240,299
 cpluaopen,240,298
-meth_bind,240,298
 var_new,240,296
 ResourceChunkCacheDestroy(),236,335
 _branch_* (library),236,300
@@ -1546,11 +1546,11 @@ MLOOP_1,64,96
 MLOOP_2,64,96
 g_AppCommands,64,62
 glfwGetJoystickParam,60,153
-HttpDeleteRequest,60,150
 TextLayoutGetGlyphCount(),60,149
 ResourceTypeReset(),60,145
 lex_check,60,142
 glfwGetJoystickDeviceId,60,132
+HttpDeleteRequest,60,126
 socket_open,60,120
 cp_check,60,117
 atexit,60,91
@@ -1563,9 +1563,9 @@ strfmt_map,56,115
 writer_buf,56,115
 gcm_incr,56,113
 ResourceChunkCacheCanFit(),52,151
+HttpResponseGetBytesTotal,52,150
 TextLayoutGetBounds(),52,142
 _glfwPlatformIconifyWindow,52,127
-HttpResponseGetBytesTotal,52,126
 _entries_* (library),52,125
 inet_trycreate,52,115
 global_unload,52,114
@@ -2049,7 +2049,7 @@ g_AppResumed,1,61
 disableCcd,1,59
 [section .debug_info],0,6669501
 [section .debug_loc],0,6355318
-[section .debug_line],0,2679319
+[section .debug_line],0,2679307
 [section .debug_str],0,2068441
 [section .debug_ranges],0,2062912
 [section .debug_abbrev],0,463149
@@ -2059,4 +2059,4 @@ disableCcd,1,59
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,120
-[Unmapped],0,5
+[Unmapped],0,1

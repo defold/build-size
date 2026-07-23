@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,639117,153406
-dmGameSystem,475938,649447
+dmGameSystem,475934,649419
 [section .rodata],394666,394666
 dmGraphics,217684,288025
 _mbedtls_* (library),180643,222781
@@ -8,7 +8,7 @@ _mbedtls_* (library),180643,222781
 dmGui,124380,160143
 dmCrash,117098,15050
 basist,113572,113826
-dmGameObject,111548,158841
+dmGameObject,111548,158889
 dmRender,111341,157681
 _compress_* (library),88447,91271
 std,87495,98533
@@ -24,7 +24,7 @@ dmRig,22320,27508
 _decompress_* (library),21732,22978
 dmEngine,19990,24771
 _psa_* (library),19240,24598
-_GLOBAL_* (library),18176,25158
+_GLOBAL_* (library),18176,25134
 _load_* (library),17928,18225
 libunwind,17865,20966
 btCollisionWorld,17309,24201
@@ -34,15 +34,15 @@ vwin8192,16384,16705
 __cxxabiv1,16360,26414
 _lua_* (library),16342,22320
 dmInput,16269,17708
-dmDDF,15292,23657
+dmDDF,15292,23633
 btQuantizedBvh,15192,17962
 btSequentialImpulseConstraintSolver,15044,18351
-dmHID,12324,18814
+dmHID,12324,18838
 _lib_* (library),11978,15499
 _strfmt_* (library),11476,12735
 [section .plt],10944,10944
 dmEasing,10856,11039
-_internal_* (library),10588,10927
+_internal_* (library),10588,10951
 dmObjectPool<>,10492,13492
 b2World,10260,11703
 [section .dynsym],9552,9552
@@ -155,7 +155,7 @@ _dsp_* (library),3140,3736
 secp384r1_T,3096,3235
 b2EPCollider,3096,3329
 expr_binop,3088,3147
-_crt_* (library),3068,3312
+_crt_* (library),3068,3288
 _mac_* (library),3064,3455
 _ffh_* (library),3056,4636
 _tdefl_* (library),3047,3834
@@ -614,8 +614,8 @@ unsigned long long,467,797
 unsigned short,467,797
 _GamepadMapRuntime_* (library),458,737
 _clear_* (library),458,712
-JobSystemDestroy,456,545
 _token_* (library),456,525
+JobSystemDestroy,456,521
 fpconv_strtod,456,518
 _ContactPointEvent_* (library),456,667
 _RequestRayCast_* (library),456,661
@@ -679,8 +679,8 @@ glfwEnable,388,447
 _PropertyDesc_* (library),388,758
 ConfigFileGetFloat,384,499
 JobSystemCreateJob,384,475
+socket_recvfrom,384,472
 _glfwParseGLVersion,384,452
-socket_recvfrom,384,448
 expr_toreg,384,443
 _SetViewProjection_* (library),384,601
 _TriggerEvent_* (library),384,561
@@ -734,12 +734,12 @@ _start_* (library),328,399
 auxiliar_tostring,328,394
 parse_label,328,388
 BroadphaseAabbTester,328,626
+[section .text],328,328
 BroadphaseRayTester,328,575
 _SetParent_* (library),326,713
 socket_accept,324,410
 debug_putchunkname,324,391
 meth_setpeername,324,389
-[section .text],324,324
 btConvexCast,324,886
 meth_send,320,426
 _opaque_* (library),320,391
@@ -823,11 +823,11 @@ _128_* (library),280,750
 _192_* (library),280,750
 _256_* (library),280,750
 dmArrayUtil,276,365
+JobThread(),276,432
 LZ4_compressHC2,276,340
 HttpAddHeader,276,338
 gola_resolve,276,337
 DefoldError,276,336
-JobThread(),276,408
 b2DistanceProxy,272,357
 _calculate_* (library),272,355
 aes_info,272,353
@@ -903,10 +903,10 @@ meth_setsockname,244,309
 dmTime,244,459
 Particle_GetInstanceStats,242,316
 matchbracketclass,240,330
+udp_create,240,323
 ctype_prepqual,240,303
 jmp_patchval,240,301
 lj_bcwrite,240,299
-udp_create,240,299
 cpluaopen,240,298
 meth_bind,240,298
 var_new,240,296
@@ -1137,13 +1137,13 @@ mksymname,152,210
 clib_new,152,209
 _glfwAndroidPlatformVerifySurface,148,230
 btAlignedAllocInternal(),148,225
-rmtp_GameObject(),148,387
 LZ4DecompressBuffer,148,216
 socket_shutdown,148,212
 _cparse_* (library),148,211
 bit_bswap,148,206
 bit_bnot,148,205
 rmtp_Components(),148,349
+rmtp_GameObject(),148,363
 rmtp_Particles(),148,353
 rmtp_Graphics(),148,343
 rmtp_Message(),148,340
@@ -1238,11 +1238,11 @@ ScriptTypesExt160,128,66
 _miniz_* (library),128,345
 Particle_GenerateVertexDataPartial,127,210
 LZ4MaxCompressedSize,125,218
-socket_gethostbyaddr,124,217
 glfwGetMouseButton,124,215
 glfwSetWindowSize,124,214
 _mad3sizes_* (library),124,203
 ResourceChunkCacheCreate(),124,202
+socket_gethostbyaddr,124,193
 auxiliar_add2group,124,191
 auxiliar_typeerror,124,191
 glfwCloseWindow,124,188
@@ -1431,8 +1431,8 @@ Particle_ResetInstance,83,154
 Particle_StartInstance,83,154
 Particle_StopInstance,82,176
 LZ4_versionNumber,82,148
-global_create6,80,215
 global_create,80,214
+global_create6,80,191
 FontCollectionDestroy(),80,171
 ProfileLogText(),80,156
 dmEngineFinalize(),80,156
@@ -1498,6 +1498,7 @@ io_tofile,72,130
 dmProfiler,72,240
 dmMemProfile,72,229
 ResourceTypeAnimationSet,68,165
+ComponentTypeGui,68,157
 _glfwAndroidPlatformAcquireAuxContext,68,154
 glfwTerminate,68,154
 _glfwAndroidPlatformQueryAuxContext,68,152
@@ -1512,7 +1513,6 @@ ComponentTypeLight,68,135
 ComponentTypeSound,68,135
 ResourceTypeScript,68,135
 ComponentTypeMesh,68,134
-ComponentTypeGui,68,133
 ResourceTypeAnim,68,133
 stbi__bmask,68,133
 ResourceTypeGui,68,132
@@ -1574,10 +1574,10 @@ expr_toval,52,111
 zip_open,52,109
 _atexit_* (library),52,101
 _preset_* (library),50,427
-ResourceTypeIsStreaming(),48,163
 _glfwAndroidPlatformSetPendingResizeBecauseOfInsets,48,148
 GetDescentTTF(),48,146
 FontCollectionGetFontCount(),48,144
+ResourceTypeIsStreaming(),48,139
 TextLayoutGetLineCount(),48,136
 _glfwAndroidPlatformOnResize,48,125
 GetLineGapTTF(),48,122
@@ -1632,6 +1632,7 @@ timeout_init,44,105
 __udivti3,44,102
 io_init,44,100
 _dec_* (library),44,90
+ResourceTypeSetStreaming(),40,157
 FontGetGlyphByIndex(),40,149
 ResourceDescriptorSetPrevResource(),40,149
 ResourceDescriptorSetResourceSize(),40,148
@@ -1643,7 +1644,6 @@ ResourceTypeGetPreloadSize(),40,134
 ProfileRegisterPropertyF32(),40,133
 ProfileRegisterPropertyGroup(),40,133
 ProfileRegisterPropertyU32(),40,133
-ResourceTypeSetStreaming(),40,133
 ResourceTypeGetNameHash(),40,131
 ResourceTypeGetContext(),40,130
 TextLayoutGetGlyphs(),40,125
@@ -2050,7 +2050,7 @@ g_AppResumed,1,61
 disableCcd,1,59
 [section .debug_info],0,6666088
 [section .debug_loc],0,6353512
-[section .debug_line],0,2678581
+[section .debug_line],0,2678569
 [section .debug_str],0,2069696
 [section .debug_ranges],0,2062800
 [section .debug_abbrev],0,463119
@@ -2060,4 +2060,4 @@ disableCcd,1,59
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,120
-[Unmapped],0,1
+[Unmapped],0,5
