@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,633073,141011
 dmGameSystem,467362,623890
-[section .rodata],376653,376653
+[section .rodata],376525,376525
 dmGraphics,245908,331167
 _mbedtls_* (library),175074,213217
 basist,118172,116078
@@ -10,21 +10,21 @@ dmCrash,112130,11618
 dmGameObject,110844,153412
 dmRender,103349,144471
 _compress_* (library),97191,98574
-[section .rel.dyn],69976,69976
+[section .rel.dyn],69952,69952
 _pfb,65536,65561
 std,60458,77499
-[section .ARM.exidx],57464,57464
+[section .ARM.exidx],57504,57504
 dmHashTable<>,53576,66309
 (anonymous namespace),45192,104189
 dmParticle,39381,48873
 dmPhysics,37456,55396
 dmResource,29540,40335
 dmSound,26101,33360
-_GLOBAL_* (library),23788,30699
+_GLOBAL_* (library),23824,30735
 dmEngine,21830,26577
 dmRig,21668,26296
 _decompress_* (library),20572,21626
-dmInput,17893,18859
+dmInput,19601,20622
 _load_* (library),17288,17993
 btCollisionWorld,17197,23754
 _cf_* (library),17184,26421
@@ -35,9 +35,9 @@ btSequentialImpulseConstraintSolver,14840,17943
 _internal_* (library),14804,15087
 btDiscreteDynamicsWorld,14656,19682
 dmDDF,14112,21737
-[section .ARM.extab],13776,13776
+[section .ARM.extab],13780,13780
 [section .plt],11808,11808
-dmHID,11508,17178
+dmHID,11284,17257
 dmEasing,10856,10983
 b2World,10688,12051
 dmObjectPool<>,10532,13395
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6480,6480
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6105,6105
+[section .text],6109,6109
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 [section .rel.plt],5888,5888
@@ -206,9 +206,9 @@ b2MouseJoint,1788,3213
 _double_* (library),1752,1850
 btPersistentManifold,1740,2372
 _stream_* (library),1734,2377
-[section .bss],1731,0
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
+[section .bss],1725,0
 dmHashUpdateBuffer64,1721,1790
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
@@ -216,8 +216,8 @@ dmIntersection,1680,2162
 _neon_* (library),1672,1757
 b2ChainShape,1656,2854
 b2BlockAllocator,1654,1568
-[section .data.rel.ro],1636,1636
 dmHashFinal64,1634,1696
+[section .data.rel.ro],1620,1620
 btAlignedObjectArray<>,1612,2263
 _ShaderDesc_* (library),1594,3425
 dmHashFinal32,1546,1608
@@ -511,13 +511,13 @@ socket_recvfrom,360,424
 ov_bitrate,359,402
 _glfwParseGLVersion,356,424
 collect_fd,356,415
-[LOAD #1 [RX]],353,353
 unwind_phase2(),352,475
 glfwExtensionSupported,352,423
 socket_connect,352,415
 socket_sendto,352,414
 meth_sendto,352,412
 _ContactPointResponse_* (library),352,481
+[LOAD #1 [RX]],349,349
 _RenderTargetDesc_* (library),346,952
 GBGetGlyph(),344,446
 btConeTwistConstraint,344,441
@@ -891,13 +891,13 @@ FontCollectionRemoveFont(),140,240
 _glfwAndroidPlatformOnGainedFocus,140,222
 bcemit_INS,140,199
 index2adr,140,182
+_GamepadMapRuntime_* (library),140,392
 _GamepadMap_* (library),140,361
 Particle_GetTileSource,139,224
 Particle_SetTileSource,139,224
 bcemit_branch,138,184
 fscope_end,138,181
 _HttpRequestProgress_* (library),138,321
-_GamepadMapRuntime_* (library),138,321
 _ManifestData_* (library),138,337
 Particle_GetMaterial,137,220
 Particle_SetMaterial,137,220
@@ -1538,7 +1538,6 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
-[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
@@ -1636,6 +1635,7 @@ _x25519_* (library),16,94
 expr_toval,16,43
 quant_look,16,43
 _supported_* (library),16,37
+[LOAD #3 [RW]],15,0
 _ARMV7PILongThunk_* (library),15,15
 _row_* (library),13,111
 TextLayoutCreate(),12,120
@@ -2039,17 +2039,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6250070
-[section .debug_loc],0,3464231
-[section .debug_line],0,2691064
-[section .debug_str],0,2060912
-[section .debug_ranges],0,1038568
-[section .debug_abbrev],0,468240
-[section .debug_frame],0,297832
+[section .debug_info],0,6253058
+[section .debug_loc],0,3467281
+[section .debug_line],0,2692476
+[section .debug_str],0,2062915
+[section .debug_ranges],0,1040672
+[section .debug_abbrev],0,468094
+[section .debug_frame],0,297928
 [section .symtab],0,43984
 [section .strtab],0,18088
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,2
+[Unmapped],0,6
