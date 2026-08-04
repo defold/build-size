@@ -1,28 +1,28 @@
 symbol_group_name,vmsize,filesize
-dmScript,633073,141011
-dmGameSystem,467362,623890
-[section .rodata],377117,377117
-dmGraphics,245908,331167
+dmScript,633145,141083
+dmGameSystem,467926,625350
+[section .rodata],377181,377181
+dmGraphics,245908,331545
 _mbedtls_* (library),175074,213217
-basist,118172,116078
-dmGui,113188,146939
+basist,118172,116106
+dmGui,113144,147184
 dmCrash,112130,11618
-dmGameObject,110844,153412
+dmGameObject,110884,153469
 dmRender,103349,144471
 _compress_* (library),97191,98574
-[section .rel.dyn],69952,69952
+[section .rel.dyn],69672,69672
 _pfb,65536,65561
 std,60458,77499
-[section .ARM.exidx],57680,57680
-dmHashTable<>,53576,66309
-(anonymous namespace),45192,104189
+[section .ARM.exidx],57824,57824
+dmHashTable<>,53576,66273
+(anonymous namespace),45192,104098
 dmParticle,39381,48873
 dmPhysics,37456,55396
-dmResource,29540,40335
+dmResource,29540,40395
 dmSound,26101,33360
 _GLOBAL_* (library),23824,30735
-dmEngine,21830,26577
 dmRig,21668,26296
+dmEngine,21590,26337
 _decompress_* (library),20572,21626
 dmInput,19601,20622
 _load_* (library),18068,18837
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6496,6496
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6097,6097
+[section .text],6109,6109
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 [section .rel.plt],5896,5896
@@ -131,7 +131,6 @@ _key_* (library),3081,3644
 b2Fixture,3072,4028
 _glfwAndroidHandleInput,3064,3232
 _tdefl_* (library),3063,3524
-[section .got],3012,3012
 _glfwJoy,3008,25
 _meta_* (library),3008,3855
 _run_* (library),2980,3217
@@ -144,6 +143,7 @@ _flush_* (library),2908,3064
 _dsp_* (library),2892,3376
 b2PulleyJoint,2876,4118
 parse_chunk,2868,2960
+[section .got],2864,2864
 ReverseHashContainer,2856,3461
 btSimulationIslandManager,2800,3828
 _mac_* (library),2788,3179
@@ -172,7 +172,7 @@ b2RopeJoint,2252,3276
 SphereTriangleDetector,2204,2886
 _carith_* (library),2184,2375
 expr_binop,2162,2333
-basisu,2161,2739
+basisu,2161,2774
 glfwAndroidDiscoverJoysticks,2148,2225
 dmResourceProviderArchive,2148,3238
 dmResourceArchive,2112,2943
@@ -196,6 +196,7 @@ _jpeg_* (library),1867,2247
 b2Simplex,1864,2298
 _next_* (library),1856,1991
 btContinuousConvexCollision,1828,2392
+[section .bss],1822,0
 btConvexTriangleCallback,1820,2317
 btConvexHullShape,1820,3387
 JNIAndroidSetCommandLine,1816,1889
@@ -208,7 +209,6 @@ btPersistentManifold,1740,2372
 _stream_* (library),1734,2377
 _raw_* (library),1729,1924
 JobSystemUpdate,1728,1832
-[section .bss],1726,0
 dmHashUpdateBuffer64,1721,1790
 _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
@@ -368,9 +368,9 @@ _gl_* (library),744,1058
 dmHashInit32,741,802
 _glfwInput,740,27
 b2CircleShape,740,1396
-[section .data],739,739
 dmHashInit64,737,798
 b2CollideEdgeAndCircle(),732,870
+[section .data],731,731
 _Material_* (library),724,1306
 _verify_* (library),724,903
 __udivmoddi4,720,765
@@ -514,7 +514,6 @@ _cur_* (library),364,429
 _JNIEnv,364,967
 _glfwAndroidPlatformOpenWindow,360,439
 socket_recvfrom,360,424
-[LOAD #1 [RX]],360,360
 ov_bitrate,359,402
 _glfwParseGLVersion,356,424
 collect_fd,356,415
@@ -524,8 +523,9 @@ socket_connect,352,415
 socket_sendto,352,414
 meth_sendto,352,412
 _ContactPointResponse_* (library),352,481
+[LOAD #1 [RX]],352,352
+GBGetGlyph(),348,450
 _RenderTargetDesc_* (library),346,952
-GBGetGlyph(),344,446
 btConeTwistConstraint,344,441
 socket_recv,344,404
 socket_send,344,404
@@ -791,6 +791,7 @@ _TileGrid_* (library),182,480
 _multiply_* (library),180,247
 _glfwInputKey,180,242
 JobContext,180,232
+dmExportedSymbols,180,230
 rmtp_Gui(),180,297
 finalize,180,221
 _toreg_* (library),178,262
@@ -846,7 +847,6 @@ _InputBinding_* (library),160,269
 bcemit_nil,158,185
 LZ4_createHC,157,202
 dmStrlCat(),156,207
-dmExportedSymbols,156,206
 _randomize_* (library),156,206
 _len_* (library),156,201
 _Vector4WOne_* (library),156,444
@@ -941,11 +941,13 @@ vwin64,128,151
 _update_* (library),128,304
 _ConvexHull_* (library),128,432
 ComponentTypeAnim64,128,36
-ComponentTypeGui3879,128,37
+ComponentTypeGui3885,128,37
 ComponentTypeLight254,128,38
 ComponentTypeMesh1204,128,38
+ComponentTypeParticleFX1246,128,44
 ComponentTypeScript65,128,38
 ComponentTypeSound572,128,38
+ComponentTypeTileMap1066,128,41
 LiveUpdateExt294,128,33
 ResourceTypeAnim35,128,35
 ResourceTypeAnimationSet103,128,44
@@ -958,8 +960,10 @@ ResourceTypeLight280,128,37
 ResourceTypeLua195,128,35
 ResourceTypeOgg410,128,35
 ResourceTypeOpus411,128,36
+ResourceTypeParticleFX161,128,42
 ResourceTypeScript151,128,38
 ResourceTypeTTF103,128,35
+ResourceTypeTileMap269,128,39
 ResourceTypeWav412,128,35
 ScriptTypesExt160,128,34
 g_Listeners,128,28
@@ -1163,6 +1167,8 @@ lex_more,86,111
 _udata_* (library),86,177
 mbedtls_debug(),84,161
 TextLayoutLegacyFree(),84,155
+ScriptLibParticleFX,84,152
+ScriptLibTileMap,84,149
 _glfwInitTimer,84,147
 socket_gethostbyaddr,84,137
 HttpPushRequest,84,132
@@ -1252,6 +1258,8 @@ ResourceTypeAnimationSet,68,141
 btTransform,68,140
 ResourceTypeCollection,68,139
 ResourceTypeGameObject,68,139
+ResourceTypeParticleFX,68,139
+ResourceTypeTileMap,68,136
 ResourceTypeScript,68,135
 glfwGetMouseWheel,68,134
 ResourceTypeAnim,68,133
@@ -1373,6 +1381,8 @@ _Components_* (library),52,231
 b2CollideEdgeAndPolygon(),52,176
 dmFixedMemAllocatorInit(),52,153
 glfwGetWindowRefreshRate,52,125
+ComponentTypeParticleFX,52,124
+ComponentTypeTileMap,52,121
 ComponentTypeLight,52,119
 ComponentTypeSound,52,119
 glfwGetProcAddress,52,119
@@ -1551,6 +1561,7 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
+[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
@@ -1590,7 +1601,6 @@ io_tofile,24,66
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
-[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 FontCollectionGetFontCount(),20,100
 btConcaveShape,20,245
@@ -2053,17 +2063,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6261225
-[section .debug_loc],0,3476979
-[section .debug_line],0,2698279
-[section .debug_str],0,2064371
+[section .debug_info],0,6263951
+[section .debug_loc],0,3477641
+[section .debug_line],0,2699793
+[section .debug_str],0,2065851
 [section .debug_ranges],0,1041912
-[section .debug_abbrev],0,468301
-[section .debug_frame],0,298692
+[section .debug_abbrev],0,468631
+[section .debug_frame],0,299128
 [section .symtab],0,44032
 [section .strtab],0,18095
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,11
+[Unmapped],0,4
