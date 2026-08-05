@@ -2,7 +2,7 @@ symbol_group_name,vmsize,filesize
 dmScript,633145,141083
 dmGameSystem,467926,625350
 [section .rodata],377181,377181
-dmGraphics,245908,331545
+dmGraphics,246000,331637
 _mbedtls_* (library),175074,213217
 basist,118172,116106
 dmGui,113144,147184
@@ -63,7 +63,7 @@ btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6496,6496
 _parse_* (library),6216,7002
 [section .gnu.hash],6116,6116
-[section .text],6109,6109
+[section .text],6113,6113
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 [section .rel.plt],5896,5896
@@ -2063,12 +2063,12 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6263951
-[section .debug_loc],0,3477641
-[section .debug_line],0,2699793
-[section .debug_str],0,2065851
-[section .debug_ranges],0,1041912
-[section .debug_abbrev],0,468631
+[section .debug_info],0,6264222
+[section .debug_loc],0,3478185
+[section .debug_line],0,2699956
+[section .debug_str],0,2066106
+[section .debug_ranges],0,1041936
+[section .debug_abbrev],0,468601
 [section .debug_frame],0,299128
 [section .symtab],0,44032
 [section .strtab],0,18095
@@ -2076,4 +2076,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,4
+[Unmapped],0,5
