@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,633145,141083
 dmGameSystem,467926,625350
-[section .rodata],377181,377181
-dmGraphics,246000,331637
+[section .rodata],377261,377261
+dmGraphics,246440,332340
 _mbedtls_* (library),175074,213217
 basist,118172,116106
 dmGui,113144,147184
@@ -13,14 +13,14 @@ _compress_* (library),97191,98574
 [section .rel.dyn],69672,69672
 _pfb,65536,65561
 std,60458,77499
-[section .ARM.exidx],57824,57824
+[section .ARM.exidx],57840,57840
 dmHashTable<>,53576,66273
-(anonymous namespace),45192,104098
+(anonymous namespace),45192,104084
 dmParticle,39381,48873
 dmPhysics,37456,55396
 dmResource,29540,40395
 dmSound,26101,33360
-_GLOBAL_* (library),23824,30735
+_GLOBAL_* (library),23824,30721
 dmRig,21668,26296
 dmEngine,21590,26337
 _decompress_* (library),20572,21626
@@ -36,7 +36,7 @@ _internal_* (library),14804,15087
 btDiscreteDynamicsWorld,14656,19682
 dmDDF,14112,21737
 [section .ARM.extab],13808,13808
-[section .plt],11824,11824
+[section .plt],11823,11823
 dmHID,11284,17257
 dmEasing,10856,10983
 b2World,10688,12051
@@ -62,8 +62,8 @@ _tinfl_* (library),7091,7507
 btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6496,6496
 _parse_* (library),6216,7002
+[section .text],6121,6121
 [section .gnu.hash],6116,6116
-[section .text],6113,6113
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
 [section .rel.plt],5896,5896
@@ -397,7 +397,7 @@ _cjson_* (library),656,786
 global_data,648,44
 res_unpack,643,686
 _prf_* (library),640,798
-_ThumbV7PILongThunk_* (library),636,5156
+_ThumbV7PILongThunk_* (library),636,5169
 _handshake_* (library),628,695
 JobSystemCreate,628,692
 btGhostObject,628,1183
@@ -523,7 +523,7 @@ socket_connect,352,415
 socket_sendto,352,414
 meth_sendto,352,412
 _ContactPointResponse_* (library),352,481
-[LOAD #1 [RX]],352,352
+[LOAD #1 [RX]],349,349
 GBGetGlyph(),348,450
 _RenderTargetDesc_* (library),346,952
 btConeTwistConstraint,344,441
@@ -1806,6 +1806,7 @@ gProfileClock,8,35
 [section .fini_array],8,8
 btInternalTriangleIndexCallback,4,134
 btTriangleCallback,4,108
+_CortexA8657417_* (library),4,103
 btDispatcher,4,96
 btCollisionAlgorithmCreateFunc,4,76
 btConvexPenetrationDepthSolver,4,76
@@ -2063,16 +2064,16 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6264222
-[section .debug_loc],0,3478185
-[section .debug_line],0,2699956
-[section .debug_str],0,2066106
-[section .debug_ranges],0,1041936
-[section .debug_abbrev],0,468601
-[section .debug_frame],0,299128
-[section .symtab],0,44032
+[section .debug_info],0,6264722
+[section .debug_loc],0,3478270
+[section .debug_line],0,2700323
+[section .debug_str],0,2066265
+[section .debug_ranges],0,1042176
+[section .debug_abbrev],0,468615
+[section .debug_frame],0,299176
+[section .symtab],0,44016
 [section .strtab],0,18095
-[ELF Headers],0,1400
+[ELF Headers],0,1360
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
