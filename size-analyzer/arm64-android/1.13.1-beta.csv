@@ -2,7 +2,7 @@ symbol_group_name,vmsize,filesize
 dmScript,639117,153238
 dmGameSystem,475934,649443
 [section .rodata],394546,394546
-dmGraphics,218824,289535
+dmGraphics,218848,289559
 _mbedtls_* (library),180643,222647
 (anonymous namespace),131132,203199
 dmGui,124380,160095
@@ -47,7 +47,7 @@ dmObjectPool<>,10492,13468
 b2World,10260,11751
 [section .dynsym],9552,9552
 gjkepa2_impl,9340,10885
-_luaL_* (library),9265,12293
+_luaL_* (library),9265,12317
 [section .hash],9224,9224
 dmHttpClient,8976,11898
 dmHttpService,8768,11257
@@ -219,7 +219,7 @@ _next_* (library),1940,2075
 _cipher_* (library),1940,2165
 fs_finish,1916,1998
 btAlignedObjectArray<>,1900,2655
-serialize_put,1900,2034
+serialize_put,1900,2010
 _FontDesc_* (library),1894,3626
 _vorbis_* (library),1892,2124
 btPolyhedralConvexAabbCachingShape,1888,2655
@@ -369,7 +369,7 @@ _ModelDesc_* (library),1000,1899
 _SpriteGeometry_* (library),999,1500
 TextLayoutLegacyCreate(),996,1126
 dmPath,996,1222
-_serialize_* (library),996,1411
+_serialize_* (library),996,1435
 glfwDisable,992,1052
 _Property_* (library),992,1423
 _CollisionShape_* (library),986,1457
@@ -732,6 +732,7 @@ _MorphWeightTrack_* (library),336,561
 b2Timer,336,588
 _select_* (library),332,396
 _sw_* (library),332,391
+[section .text],332,332
 _gather_* (library),328,400
 _start_* (library),328,399
 auxiliar_tostring,328,394
@@ -743,7 +744,6 @@ _SetParent_* (library),326,713
 meth_setpeername,324,413
 debug_putchunkname,324,391
 socket_accept,324,386
-[section .text],324,324
 btConvexCast,324,886
 meth_send,320,426
 _opaque_* (library),320,391
@@ -819,9 +819,9 @@ dmSystemDDF,288,1153
 hash_mprime,284,344
 ov_read,284,340
 _glfwAndroidSetFullscreenParameters,280,364
-fscope_end,280,363
 _glfwTerminateJoysticks,280,352
 bcemit_INS,280,339
+fscope_end,280,339
 make_assoc,280,339
 _128_* (library),280,750
 _192_* (library),280,750
@@ -1323,7 +1323,6 @@ LZ4_resetStreamState,105,174
 _Components_* (library),104,647
 dmEngineDestroy(),104,197
 dmLZ4,104,190
-unwindstack,104,188
 _glfwAndroidPlatformOnInitWindow,104,185
 _glfwPlatformGetJoystickDeviceId,104,185
 glfwGetJoystickDeviceGuid,104,178
@@ -1332,6 +1331,7 @@ meth_shutdown.methods,104,174
 ReleaseNativeWindow,104,172
 _ru124_* (library),104,169
 glfwGetMousePos,104,168
+unwindstack,104,164
 parse_then,104,163
 profile_state,104,62
 Particle_ResetAttributeScratchBuffer,101,186
@@ -1443,6 +1443,7 @@ LZ4_versionNumber,82,148
 global_create6,80,191
 global_create,80,190
 FontCollectionDestroy(),80,171
+jmp_patch,80,162
 ProfileLogText(),80,156
 dmEngineFinalize(),80,156
 glfwGetWindowRefreshRate,80,153
@@ -1453,7 +1454,6 @@ debug_frameline,80,144
 floor1_memosize,80,144
 oggpack_eop,80,140
 err_token,80,138
-jmp_patch,80,138
 _x25519_* (library),80,222
 _glfwLibrary,80,61
 _glfwWinAndroid,80,64
@@ -2059,8 +2059,8 @@ g_AppResumed,1,61
 disableCcd,1,59
 [section .debug_info],0,6674076
 [section .debug_loc],0,6368422
-[section .debug_line],0,2682572
-[section .debug_str],0,2072508
+[section .debug_line],0,2682603
+[section .debug_str],0,2072552
 [section .debug_ranges],0,2069120
 [section .debug_abbrev],0,463255
 [section .symtab],0,91104
@@ -2069,4 +2069,4 @@ disableCcd,1,59
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,120
-[Unmapped],0,4
+[Unmapped],0,1

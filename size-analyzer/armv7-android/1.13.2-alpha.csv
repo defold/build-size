@@ -2,7 +2,7 @@ symbol_group_name,vmsize,filesize
 dmScript,633145,141083
 dmGameSystem,467722,625188
 [section .rodata],377883,377883
-dmGraphics,247088,333122
+dmGraphics,247252,333430
 _mbedtls_* (library),175074,213217
 basist,118172,116106
 dmGui,113144,147184
@@ -36,7 +36,7 @@ _internal_* (library),14804,15087
 btDiscreteDynamicsWorld,14656,19682
 dmDDF,14112,21737
 [section .ARM.extab],13980,13980
-[section .plt],11856,11856
+[section .plt],11855,11855
 dmHID,11300,17273
 dmEasing,10856,10983
 b2World,10688,12051
@@ -63,7 +63,7 @@ _tinfl_* (library),7091,7507
 btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6528,6528
 _parse_* (library),6216,7002
-[section .text],6177,6177
+[section .text],6173,6173
 [section .gnu.hash],6116,6116
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
@@ -410,7 +410,7 @@ _cjson_* (library),656,786
 global_data,648,44
 res_unpack,643,686
 _prf_* (library),640,798
-_ThumbV7PILongThunk_* (library),636,5156
+_ThumbV7PILongThunk_* (library),636,5169
 _handshake_* (library),628,695
 JobSystemCreate,628,692
 btGhostObject,628,1183
@@ -544,7 +544,7 @@ socket_recvfrom,360,424
 ov_bitrate,359,402
 _glfwParseGLVersion,356,424
 collect_fd,356,415
-[LOAD #1 [RX]],356,356
+[LOAD #1 [RX]],353,353
 unwind_phase2(),352,475
 glfwExtensionSupported,352,423
 socket_connect,352,415
@@ -1865,6 +1865,7 @@ gProfileClock,8,35
 [section .fini_array],8,8
 btInternalTriangleIndexCallback,4,134
 btTriangleCallback,4,108
+_CortexA8657417_* (library),4,103
 btDispatcher,4,96
 btCollisionAlgorithmCreateFunc,4,76
 btConvexPenetrationDepthSolver,4,76
@@ -2122,17 +2123,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6315863
-[section .debug_loc],0,3517190
-[section .debug_line],0,2724641
-[section .debug_str],0,2085427
-[section .debug_ranges],0,1052176
+[section .debug_info],0,6315880
+[section .debug_loc],0,3517399
+[section .debug_line],0,2724795
+[section .debug_str],0,2085542
+[section .debug_ranges],0,1052376
 [section .debug_abbrev],0,471651
 [section .debug_frame],0,301172
-[section .symtab],0,44208
+[section .symtab],0,44192
 [section .strtab],0,18186
-[ELF Headers],0,1400
+[ELF Headers],0,1360
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,4
+[Unmapped],0,5
