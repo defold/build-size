@@ -1,26 +1,26 @@
 symbol_group_name,vmsize,filesize
 dmScript,633145,141083
-dmGameSystem,467722,625188
-[section .rodata],377883,377883
-dmGraphics,247252,333430
+dmGameSystem,467986,625445
+[section .rodata],379163,379163
+dmGraphics,248888,335585
 _mbedtls_* (library),175074,213217
-basist,118172,116106
+basist,118172,116113
 dmGui,113648,147688
 dmCrash,112130,11618
 dmGameObject,110884,153469
 dmRender,101377,141966
 _compress_* (library),97191,98574
-[section .rel.dyn],69672,69672
+[section .rel.dyn],69784,69784
 _pfb,65536,65561
 std,60458,77499
-[section .ARM.exidx],58192,58192
+[section .ARM.exidx],58208,58208
 dmHashTable<>,53576,66273
 (anonymous namespace),45192,104077
 dmParticle,39381,48873
 dmPhysics,37456,55396
 dmResource,29540,40395
 dmSound,26101,33360
-_GLOBAL_* (library),23864,30761
+_GLOBAL_* (library),23864,30775
 dmRig,21668,26296
 dmEngine,21590,26337
 _decompress_* (library),20572,21626
@@ -35,14 +35,14 @@ btSequentialImpulseConstraintSolver,14840,17943
 _internal_* (library),14804,15087
 btDiscreteDynamicsWorld,14656,19682
 dmDDF,14112,21737
-[section .ARM.extab],14004,14004
-[section .plt],11856,11856
+[section .ARM.extab],14016,14016
+[section .plt],11888,11888
 dmHID,11300,17273
 dmEasing,10856,10983
 b2World,10688,12051
-dmObjectPool<>,10532,13395
+dmObjectPool<>,10532,13388
 gjkepa2_impl,9688,11153
-[section .hash],9624,9624
+[section .hash],9640,9640
 FontSDFGenerate(),9468,9719
 dmHttpClient,9168,11754
 dmHttpService,8896,11073
@@ -61,16 +61,16 @@ _get_* (library),7206,9023
 _zip_* (library),7160,7853
 _tinfl_* (library),7091,7507
 btAxisSweep3Internal<>,6836,9147
-[section .dynsym],6528,6528
+[section .dynsym],6560,6560
 _parse_* (library),6216,7002
-[section .text],6181,6181
+[section .text],6201,6201
 [section .gnu.hash],6116,6116
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
-[section .rel.plt],5912,5912
-dmSys,5886,7996
+[section .rel.plt],5928,5928
 dmConnectionPool,5856,7459
-[section .dynstr],5803,5803
+dmSys,5838,7948
+[section .dynstr],5818,5818
 b2ContactSolver,5400,6309
 _process_* (library),5264,5545
 _create_* (library),5216,5475
@@ -135,8 +135,8 @@ _glfwAndroidHandleInput,3064,3232
 _tdefl_* (library),3063,3524
 _glfwJoy,3008,25
 _meta_* (library),3008,3855
+[section .got.plt],2976,2976
 _sync_* (library),2969,3402
-[section .got.plt],2968,2968
 b2WeldJoint,2964,3839
 _cconv_* (library),2928,3379
 btConvexPlaneCollisionAlgorithm,2924,4491
@@ -161,8 +161,8 @@ FontPackGlyphVertices(),2568,2771
 btBoxShape,2504,4113
 _set_* (library),2420,3598
 _page_* (library),2415,2898
+[section .gnu.version],2408,2408
 b2DistanceJoint,2408,3339
-[section .gnu.version],2404,2404
 _luaopen_* (library),2358,3135
 lex_scan,2334,2471
 _vm_* (library),2322,4045
@@ -196,12 +196,12 @@ _jpeg_* (library),1867,2247
 b2Simplex,1864,2298
 _next_* (library),1856,1991
 btContinuousConvexCollision,1828,2392
+[section .bss],1824,0
 btConvexTriangleCallback,1820,2317
 btConvexHullShape,1820,3387
 JNIAndroidSetCommandLine,1816,1889
 res_inverse,1816,1860
 btGjkEpaSolver2,1816,2107
-[section .bss],1814,0
 _optimize_* (library),1792,1883
 b2MouseJoint,1788,3213
 _double_* (library),1752,1850
@@ -216,12 +216,12 @@ _app_* (library),1696,2161
 btCompoundLeafCallback,1692,2016
 dmIntersection,1680,2162
 _neon_* (library),1672,1757
+_ShaderDesc_* (library),1672,3701
 b2ChainShape,1656,2854
 b2BlockAllocator,1654,1568
+[section .data.rel.ro],1652,1652
 dmHashFinal64,1634,1696
-[section .data.rel.ro],1620,1620
 btAlignedObjectArray<>,1612,2263
-_ShaderDesc_* (library),1594,3425
 dmHashFinal32,1546,1608
 _x509_* (library),1544,1641
 _ov_* (library),1532,1616
@@ -535,10 +535,10 @@ _LabelDesc_* (library),375,917
 JobSystemCreateJob,372,439
 make_current,368,429
 _malloc_* (library),368,545
+[LOAD #1 [RX]],365,365
 _SpriteDesc_* (library),365,943
 PointCurveDistanceSquaredFromRoots(),364,476
 _cur_* (library),364,429
-[LOAD #1 [RX]],364,364
 _JNIEnv,364,967
 _glfwAndroidPlatformOpenWindow,360,439
 socket_recvfrom,360,424
@@ -2122,17 +2122,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6316326
-[section .debug_loc],0,3517908
-[section .debug_line],0,2725136
-[section .debug_str],0,2085639
-[section .debug_ranges],0,1052624
-[section .debug_abbrev],0,471651
-[section .debug_frame],0,301200
-[section .symtab],0,44208
-[section .strtab],0,18186
+[section .debug_info],0,6318378
+[section .debug_loc],0,3522845
+[section .debug_line],0,2726027
+[section .debug_str],0,2087103
+[section .debug_ranges],0,1053176
+[section .debug_abbrev],0,471692
+[section .debug_frame],0,301328
+[section .symtab],0,44304
+[section .strtab],0,18201
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,4
+[Unmapped],0,2
