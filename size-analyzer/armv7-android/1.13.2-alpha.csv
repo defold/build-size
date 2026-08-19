@@ -1,26 +1,26 @@
 symbol_group_name,vmsize,filesize
 dmScript,633145,141083
-dmGameSystem,467986,625445
-[section .rodata],379163,379163
-dmGraphics,248888,335585
+dmGameSystem,468444,626315
+[section .rodata],379275,379275
+dmGraphics,248888,335571
 _mbedtls_* (library),175074,213217
 basist,118172,116113
-dmGui,113648,147688
+dmGui,113648,147681
 dmCrash,112130,11618
-dmGameObject,110884,153469
+dmGameObject,111264,154003
 dmRender,101377,141966
 _compress_* (library),97191,98574
-[section .rel.dyn],69784,69784
+[section .rel.dyn],69792,69792
 _pfb,65536,65561
 std,60458,77499
-[section .ARM.exidx],58208,58208
+[section .ARM.exidx],58232,58232
 dmHashTable<>,53576,66273
-(anonymous namespace),45192,104077
+(anonymous namespace),45192,104070
 dmParticle,39381,48873
 dmPhysics,37456,55396
-dmResource,29540,40395
+dmResource,29560,40415
 dmSound,26101,33360
-_GLOBAL_* (library),23864,30775
+_GLOBAL_* (library),23904,30815
 dmRig,21668,26296
 dmEngine,21590,26337
 _decompress_* (library),20572,21626
@@ -63,7 +63,7 @@ _tinfl_* (library),7091,7507
 btAxisSweep3Internal<>,6836,9147
 [section .dynsym],6560,6560
 _parse_* (library),6216,7002
-[section .text],6201,6201
+[section .text],6193,6193
 [section .gnu.hash],6116,6116
 dmConfigFile,6044,7327
 dmBuffer,6044,8209
@@ -196,12 +196,12 @@ _jpeg_* (library),1867,2247
 b2Simplex,1864,2298
 _next_* (library),1856,1991
 btContinuousConvexCollision,1828,2392
-[section .bss],1824,0
 btConvexTriangleCallback,1820,2317
 btConvexHullShape,1820,3387
 JNIAndroidSetCommandLine,1816,1889
 res_inverse,1816,1860
 btGjkEpaSolver2,1816,2107
+[section .bss],1814,0
 _optimize_* (library),1792,1883
 b2MouseJoint,1788,3213
 _double_* (library),1752,1850
@@ -985,17 +985,17 @@ vwin64,128,151
 _update_* (library),128,304
 _ConvexHull_* (library),128,432
 ComponentTypeAnim64,128,36
-ComponentTypeGui3885,128,37
+ComponentTypeGui3887,128,37
 ComponentTypeLight254,128,38
-ComponentTypeMesh1204,128,38
+ComponentTypeMesh1206,128,38
 ComponentTypeParticleFX1246,128,44
 ComponentTypeScript65,128,38
-ComponentTypeSound572,128,38
-ComponentTypeTileMap1066,128,41
+ComponentTypeSound574,128,38
+ComponentTypeTileMap1068,128,41
 LiveUpdateExt294,128,33
 ResourceTypeAnim35,128,35
 ResourceTypeAnimationSet103,128,44
-ResourceTypeCollection369,128,42
+ResourceTypeCollection378,128,42
 ResourceTypeFont1050,128,37
 ResourceTypeGameObject230,128,42
 ResourceTypeGui347,128,35
@@ -2122,17 +2122,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,6318378
-[section .debug_loc],0,3522845
-[section .debug_line],0,2726027
-[section .debug_str],0,2087103
-[section .debug_ranges],0,1053176
-[section .debug_abbrev],0,471692
-[section .debug_frame],0,301328
+[section .debug_info],0,6320040
+[section .debug_loc],0,3524221
+[section .debug_line],0,2726630
+[section .debug_str],0,2088004
+[section .debug_ranges],0,1053272
+[section .debug_abbrev],0,471783
+[section .debug_frame],0,301432
 [section .symtab],0,44304
 [section .strtab],0,18201
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,2
+[Unmapped],0,1
