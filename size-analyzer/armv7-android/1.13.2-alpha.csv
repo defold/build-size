@@ -1,13 +1,13 @@
 symbol_group_name,vmsize,filesize
 dmScript,633145,141076
-dmGameSystem,567024,760278
-[section .rodata],395443,395443
+dmGameSystem,567292,760546
+[section .rodata],395427,395427
 dmGraphics,256668,344986
 _mbedtls_* (library),175074,213217
 basist,118172,116127
 dmGui,113648,147681
 dmCrash,112130,11618
-dmGameObject,111264,154003
+dmGameObject,111488,154227
 dmRender,101585,142174
 _compress_* (library),97191,98574
 [section .rel.dyn],74152,74152
@@ -70,8 +70,8 @@ btAxisSweep3Internal<>,6908,9245
 btConvexConvexAlgorithm,6780,9228
 btGjkPairDetector,6688,7852
 [section .dynsym],6560,6560
+[section .text],6361,6361
 btPolyhedralContactClipping,6360,7221
-[section .text],6357,6357
 btDbvt,6336,8073
 btAlignedObjectArray<>,6312,8443
 _parse_* (library),6216,7002
@@ -2166,17 +2166,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7174041
-[section .debug_loc],0,4065772
-[section .debug_line],0,3054356
-[section .debug_str],0,2292608
-[section .debug_ranges],0,1281304
+[section .debug_info],0,7174662
+[section .debug_loc],0,4066313
+[section .debug_line],0,3054618
+[section .debug_str],0,2292781
+[section .debug_ranges],0,1281608
 [section .debug_abbrev],0,518156
-[section .debug_frame],0,330548
+[section .debug_frame],0,330560
 [section .symtab],0,44656
 [section .strtab],0,18807
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,3
+[Unmapped],0,2
