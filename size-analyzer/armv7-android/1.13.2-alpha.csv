@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,633145,141076
 dmGameSystem,567292,760546
-[section .rodata],395427,395427
-dmGraphics,256668,344986
+[section .rodata],395235,395235
+dmGraphics,256608,344926
 _mbedtls_* (library),175074,213217
 basist,118172,116127
 dmGui,113648,147681
@@ -70,7 +70,7 @@ btAxisSweep3Internal<>,6908,9245
 btConvexConvexAlgorithm,6780,9228
 btGjkPairDetector,6688,7852
 [section .dynsym],6560,6560
-[section .text],6361,6361
+[section .text],6365,6365
 btPolyhedralContactClipping,6360,7221
 btDbvt,6336,8073
 btAlignedObjectArray<>,6312,8443
@@ -115,10 +115,10 @@ dmMessage,4104,6067
 sincos_lookup1,4096,4127
 vwin2048,4096,4121
 _T_* (library),4096,7224
+dmPlatform,4088,13458
 dmLiveUpdate,4084,5913
 b2RevoluteJoint,4072,5865
 _decl_* (library),4058,4599
-dmPlatform,4052,13174
 btCompoundCollisionAlgorithm,4048,5860
 _Unwind_* (library),4036,4911
 _book_* (library),4034,4412
@@ -398,8 +398,6 @@ Blend(),752,831
 dmHashReverse32,752,816
 _gc_* (library),752,1224
 ANativeActivity_onCreate,749,822
-CreateGLSurfaceForWindow,744,817
-_gl_* (library),744,1058
 dmHashInit32,741,802
 PushSegment(),740,880
 _glfwInput,740,27
@@ -441,6 +439,7 @@ btGhostObject,636,1191
 _ThumbV7PILongThunk_* (library),636,5156
 _handshake_* (library),628,695
 JobSystemCreate,628,692
+_gl_* (library),628,942
 b2Mat33,628,947
 btMatrix3x3,620,861
 PutDone(),616,714
@@ -448,7 +447,6 @@ GetCFFGlyphForStandardCode(),616,713
 _bc_* (library),616,669
 PushCommand(),612,874
 _ssl_* (library),612,970
-_width_* (library),604,677
 b2StackAllocator,600,975
 btBoxBoxDetector,596,1020
 _drbg_* (library),596,669
@@ -469,9 +467,9 @@ engine_main(),560,628
 touchById,548,606
 ResourceChunkCacheEvictMemory(),544,648
 global_connect,544,607
-final_gl,544,601
 _prng_* (library),544,701
 _FontDesc_* (library),542,1642
+CreateGLSurfaceForWindow,540,613
 btTransform,540,734
 b2FindMaxSeparation(),536,650
 _unused_* (library),536,592
@@ -479,6 +477,7 @@ SelectAndPopJob(),532,631
 _TextureImage_* (library),532,1041
 FindCurveCrossingX(),524,599
 _glfwPlatformInit,520,586
+final_gl,520,577
 poly1305_process,516,565
 dmTrigLookup,516,609
 FontOutlineBoundsQuadraticTo(),512,618
@@ -498,6 +497,7 @@ _glfwPlatformTerminate,496,567
 JobSystemDestroy,496,561
 _VertexAttribute_* (library),494,1482
 AppendOutline(),492,594
+_width_* (library),492,565
 _profile_* (library),492,671
 DictGet(),488,556
 ResourcePreloader,488,606
@@ -565,7 +565,6 @@ _check_* (library),380,493
 _LabelDesc_* (library),375,917
 _RenderTargetDesc_* (library),375,1053
 JobSystemCreateJob,372,439
-make_current,368,429
 _malloc_* (library),368,545
 [LOAD #1 [RX]],365,365
 _SpriteDesc_* (library),365,943
@@ -590,11 +589,11 @@ socket_recv,344,404
 socket_send,344,404
 bcemit_store,342,387
 FontOutlineBoundsCubicTo(),340,445
+glfwWaitForAndroidWindow,340,413
 _glfwShowKeyboard,340,406
 _ctx_* (library),340,819
 _find_* (library),338,367
 BuildDistancePolynomial(),336,435
-WaitForAppAndWindow,336,404
 auxiliar_tostring,336,402
 _sig_* (library),336,364
 LZ4_loadDictHC,335,382
@@ -680,6 +679,7 @@ gola_fixup,260,303
 _StreamDesc_* (library),258,421
 _obj_* (library),258,411
 _char_* (library),257,286
+make_current,256,317
 meth_connect,256,317
 bit_band,256,313
 bit_bxor,256,313
@@ -1007,6 +1007,7 @@ socket_bind,132,176
 _onCreate_* (library),132,79
 meth_setfd,128,235
 sprintf(),128,230
+_glfwAndroidAcquireWindow,128,202
 _mad4sizes_* (library),128,192
 debug_varname,128,190
 _eht_* (library),128,177
@@ -1055,7 +1056,6 @@ bit_bswap,124,182
 bit_tobit,124,182
 bit_bnot,124,181
 var_new,124,180
-IsAppWindowCurrent,124,175
 jmp_patchtestreg,124,173
 _apply_* (library),124,170
 socket_listen,124,170
@@ -1068,6 +1068,7 @@ Particle_GetMaterialPath,121,194
 LZ4_saveDict,121,166
 TextLayoutAcquire(),120,203
 _glfwAndroidPlatformSwapInterval,120,201
+glfwAndroidIsWindowCurrent,120,195
 DestroyRequest(),120,185
 ResourceTypeTTF,120,184
 cpluaopen,120,162
@@ -1350,7 +1351,6 @@ ResourceTypeLua,68,132
 glfwCloseWindow,68,132
 bcread_error,68,129
 LZ4_setStreamDecode,68,120
-ReleaseNativeWindow,68,120
 __divmodsi4,68,112
 stbi__bmask,68,101
 mz_bitmasks,68,96
@@ -1373,7 +1373,7 @@ btCollisionPairCallback,64,272
 dmLZ4,64,134
 glfwIconifyWindow,64,130
 _glfwInputChar,64,127
-ReleaseWindow,64,110
+glfwReleaseAndroidWindow,64,121
 ffi_checkptr,64,109
 _ResetConstantTileMap_* (library),64,199
 _ScriptUnrefMessage_* (library),64,195
@@ -1689,6 +1689,7 @@ io_tofile,24,66
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
+[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 FontCollectionGetFontCount(),20,100
 ResourceTypeIsStreaming(),20,95
@@ -1894,7 +1895,6 @@ chacha20_info,8,38
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 [section .fini_array],8,8
-[LOAD #3 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 btTriangleCallback,4,108
 btDispatcher,4,96
@@ -2166,17 +2166,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7174662
-[section .debug_loc],0,4066313
-[section .debug_line],0,3054618
-[section .debug_str],0,2292781
-[section .debug_ranges],0,1281608
-[section .debug_abbrev],0,518156
-[section .debug_frame],0,330560
+[section .debug_info],0,7174715
+[section .debug_loc],0,4065816
+[section .debug_line],0,3054316
+[section .debug_str],0,2293101
+[section .debug_ranges],0,1281712
+[section .debug_abbrev],0,518094
+[section .debug_frame],0,330624
 [section .symtab],0,44656
 [section .strtab],0,18807
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,2
+[Unmapped],0,4
