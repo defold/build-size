@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
 dmScript,633145,141076
-dmGameSystem,567292,760546
-[section .rodata],395235,395235
-dmGraphics,256608,344926
+dmGameSystem,567200,760454
+[section .rodata],395171,395171
+dmGraphics,256220,344350
 _mbedtls_* (library),175074,213217
 basist,118172,116127
 dmGui,113648,147681
 dmCrash,112130,11618
 dmGameObject,111488,154227
-dmRender,101585,142174
+dmRender,102085,142796
 _compress_* (library),97191,98574
 [section .rel.dyn],74152,74152
 _pfb,65536,65561
-[section .ARM.exidx],61888,61888
+[section .ARM.exidx],61848,61848
 std,60458,77499
-dmHashTable<>,59596,74121
+dmHashTable<>,58128,72291
 (anonymous namespace),45192,104021
 dmParticle,39381,48873
 dmPhysics,39060,57543
@@ -70,8 +70,8 @@ btAxisSweep3Internal<>,6908,9245
 btConvexConvexAlgorithm,6780,9228
 btGjkPairDetector,6688,7852
 [section .dynsym],6560,6560
-[section .text],6365,6365
 btPolyhedralContactClipping,6360,7221
+[section .text],6341,6341
 btDbvt,6336,8073
 btAlignedObjectArray<>,6312,8443
 _parse_* (library),6216,7002
@@ -566,7 +566,6 @@ _LabelDesc_* (library),375,917
 _RenderTargetDesc_* (library),375,1053
 JobSystemCreateJob,372,439
 _malloc_* (library),368,545
-[LOAD #1 [RX]],365,365
 _SpriteDesc_* (library),365,943
 PointCurveDistanceSquaredFromRoots(),364,476
 _cur_* (library),364,429
@@ -574,6 +573,7 @@ _JNIEnv,364,967
 _glfwAndroidPlatformOpenWindow,360,439
 socket_recvfrom,360,424
 ov_bitrate,359,402
+[LOAD #1 [RX]],357,357
 _glfwParseGLVersion,356,424
 collect_fd,356,415
 unwind_phase2(),352,475
@@ -1689,7 +1689,6 @@ io_tofile,24,66
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
-[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 FontCollectionGetFontCount(),20,100
 ResourceTypeIsStreaming(),20,95
@@ -1895,6 +1894,7 @@ chacha20_info,8,38
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 [section .fini_array],8,8
+[LOAD #3 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 btTriangleCallback,4,108
 btDispatcher,4,96
@@ -2166,17 +2166,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7174715
-[section .debug_loc],0,4065816
-[section .debug_line],0,3054316
-[section .debug_str],0,2293101
-[section .debug_ranges],0,1281712
-[section .debug_abbrev],0,518094
-[section .debug_frame],0,330624
+[section .debug_info],0,7161455
+[section .debug_loc],0,4063710
+[section .debug_line],0,3053456
+[section .debug_str],0,2302083
+[section .debug_ranges],0,1282208
+[section .debug_abbrev],0,517691
+[section .debug_frame],0,330456
 [section .symtab],0,44656
 [section .strtab],0,18807
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,4
+[Unmapped],0,7
