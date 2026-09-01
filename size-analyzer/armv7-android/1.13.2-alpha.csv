@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,633145,141076
-dmGameSystem,567204,760353
+dmGameSystem,567220,760369
 [section .rodata],395251,395251
 dmGraphics,256820,344905
 _mbedtls_* (library),175074,213217
@@ -1690,6 +1690,7 @@ io_tofile,24,66
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
+[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 FontCollectionGetFontCount(),20,100
 ResourceTypeIsStreaming(),20,95
@@ -1895,7 +1896,6 @@ chacha20_info,8,38
 ADJUST_SQRT2,8,37
 b2Vec2_zero,8,36
 [section .fini_array],8,8
-[LOAD #3 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 btTriangleCallback,4,108
 btDispatcher,4,96
@@ -2167,9 +2167,9 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7161777
+[section .debug_info],0,7161787
 [section .debug_loc],0,4062992
-[section .debug_line],0,3053653
+[section .debug_line],0,3053669
 [section .debug_str],0,2302084
 [section .debug_ranges],0,1282120
 [section .debug_abbrev],0,517647
@@ -2180,4 +2180,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,6
+[Unmapped],0,4
