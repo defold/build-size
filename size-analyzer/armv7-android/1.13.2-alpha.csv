@@ -1,30 +1,30 @@
 symbol_group_name,vmsize,filesize
 dmScript,633145,141083
-dmGameSystem,580552,775719
+dmGameSystem,580552,775740
 [section .rodata],400333,400333
-dmGraphics,259224,346673
+dmGraphics,259224,346631
 _mbedtls_* (library),175074,213217
-basist,118172,116113
+basist,118172,116106
 dmGui,115948,150435
 dmCrash,112130,11618
-dmGameObject,111504,154243
+dmGameObject,111504,154237
 dmRender,102465,143384
 _compress_* (library),97191,98574
 [section .rel.dyn],74736,74736
 _pfb,65536,65561
-[section .ARM.exidx],62520,62520
+[section .ARM.exidx],62552,62552
 std,60458,77499
-dmHashTable<>,58128,72249
+dmHashTable<>,58128,72263
 (anonymous namespace),45192,104084
 dmParticle,39381,48873
 dmPhysics,37632,55728
 btConvexHullInternal,33384,35349
-dmResource,29560,40409
-_GLOBAL_* (library),26432,34053
+dmResource,29560,40422
+_GLOBAL_* (library),26432,34046
 dmSound,26101,33360
 btSequentialImpulseConstraintSolver,21856,26350
+dmEngine,21778,26494
 dmRig,21668,26296
-dmEngine,21578,26325
 btCollisionWorld,21417,30751
 _decompress_* (library),20572,21626
 dmInput,19601,20622
@@ -71,7 +71,7 @@ btAxisSweep3Internal<>,6908,9245
 btConvexConvexAlgorithm,6780,9228
 btGjkPairDetector,6688,7852
 [section .dynsym],6576,6576
-[section .text],6386,6386
+[section .text],6370,6370
 btPolyhedralContactClipping,6360,7221
 btDbvt,6336,8073
 btAlignedObjectArray<>,6312,8443
@@ -89,7 +89,7 @@ _process_* (library),5264,5545
 _create_* (library),5216,5475
 b2PrismaticJoint,5144,6983
 _luaL_* (library),5065,7398
-dmArray<>,4880,7725
+dmArray<>,4880,7718
 _lib_* (library),4862,7071
 _do_* (library),4796,5009
 btDbvtBroadphase,4776,6584
@@ -205,8 +205,7 @@ InplaceSolverIslandCallback,2196,2763
 _carith_* (library),2184,2375
 FontPackDecorationVertices(),2164,2330
 expr_binop,2162,2333
-basisu,2161,2760
-glfwAndroidDiscoverJoysticks,2148,2225
+basisu,2161,2774
 dmResourceProviderArchive,2148,3238
 btPoint2PointConstraint,2136,3531
 gridRaycast<>(),2072,2404
@@ -217,6 +216,7 @@ btSubsimplexConvexCast,2044,2549
 btManifoldResult,2032,3313
 dmResourceArchive,2012,2843
 dmLoadQueue,1976,2730
+glfwAndroidDiscoverJoysticks,1964,2041
 glfwAndroidUpdateJoystick,1960,2066
 TextLayoutInitializeDecorationGeometry(),1928,2032
 b2Distance(),1924,2138
@@ -486,6 +486,7 @@ _lex_* (library),562,869
 engine_main(),560,628
 touchById,548,606
 ResourceChunkCacheEvictMemory(),544,648
+glfwAndroidConnectJoystick,544,619
 global_connect,544,607
 _prng_* (library),544,701
 _FontDesc_* (library),542,1642
@@ -728,6 +729,7 @@ meth_send,252,358
 btSingleSweepCallback,252,464
 strbuf_resize,252,314
 RecvTimeout(),252,307
+JNIGetMethodID,252,299
 HttpAddHeader,252,298
 nd_mul2k,252,277
 _CameraDesc_* (library),252,640
@@ -797,7 +799,7 @@ _Bone_* (library),215,397
 _TextureTransform_* (library),214,700
 _TileCell_* (library),214,657
 ResourceChunkCacheDestroy(),212,311
-dmEngineCreate(),212,297
+dmEngineCreate(),212,295
 ResolvedMarkup,212,268
 _ComponentDesc_* (library),212,462
 _glfwPlatformGetJoystickButtons,208,288
@@ -1310,7 +1312,7 @@ LZ4_createStreamHC,83,134
 max_expand,82,125
 _glfwAndroidPlatformOnInitWindow,80,161
 _glfwPlatformGetJoystickHats,80,157
-dmEngineUpdate(),80,157
+dmEngineUpdate(),80,156
 FontDestroy(),80,150
 ChunkComparePathOffsetFn(),80,148
 auxiliar_typeerror,80,147
@@ -1318,6 +1320,7 @@ timeout_markstart,80,146
 error_finalizer,80,144
 profile_signal,80,143
 ResourceChunkCacheCreate(),80,142
+JNICheckAndClearException,80,138
 err_msgv,80,137
 socket_gethostbyname,80,133
 die,80,132
@@ -1347,7 +1350,6 @@ ResourceTypeOpus,76,141
 ResourceTypeOgg,76,140
 ResourceTypeWav,76,140
 cp_tok2str,76,135
-JNIGetMethodID,76,123
 getfield,76,117
 cpcall,76,115
 Particle_CreateContext,75,130
@@ -1456,7 +1458,7 @@ oggpack_bytes,62,108
 Particle_GetVertexBufferSize,61,122
 LZ4_freeStreamHC,61,110
 dLib,61,307
-dmEngineDestroy(),60,138
+dmEngineDestroy(),60,137
 ParseEntity(),60,135
 FontGetPathHash(),60,134
 glfwSetMarkedTextCallback,60,134
@@ -2283,17 +2285,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7300578
-[section .debug_loc],0,4145348
-[section .debug_line],0,3108870
-[section .debug_str],0,2356119
-[section .debug_ranges],0,1312832
-[section .debug_abbrev],0,523504
-[section .debug_frame],0,334420
+[section .debug_info],0,7300972
+[section .debug_loc],0,4146274
+[section .debug_line],0,3107958
+[section .debug_str],0,2356356
+[section .debug_ranges],0,1312856
+[section .debug_abbrev],0,523637
+[section .debug_frame],0,334532
 [section .symtab],0,44784
 [section .strtab],0,18895
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,7
+[Unmapped],0,2
