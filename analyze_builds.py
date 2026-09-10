@@ -838,7 +838,9 @@ def main():
     platforms_config = {
         "arm64-android": "libdmengine_release.so",
         "armv7-android": "libdmengine_release.so",
+        "x86_64-android": "libdmengine_release.so",
         "arm64-ios": "dmengine_release",
+        "arm64_sim-ios": "dmengine_release",
         "x86_64-macos": "dmengine_release",
         "arm64-macos": "dmengine_release",
         "bob.jar": None  # Special platform for bob.jar analysis
@@ -910,6 +912,10 @@ def main():
             version = release['version']
             sha1 = release['sha1']
             
+            # Android x86_64 and ARM64 iOS Simulator were introduced in 1.13.2, including prereleases.
+            if platform in ("x86_64-android", "arm64_sim-ios") and parse_version(version)[:3] < (1, 13, 2):
+                continue
+
             print(f"\nProcessing version {version} (sha1: {sha1}) for {platform}")
             
             # Check if analysis already exists
@@ -959,7 +965,7 @@ def main():
             
             else:
                 # Handle native binary analysis
-                if platform in ["arm64-ios", "x86_64-macos", "arm64-macos"]:
+                if platform in ["arm64-ios", "arm64_sim-ios", "x86_64-macos", "arm64-macos"]:
                     # Apple platforms - need binary and dSYM file
                     binary_filename = f"dmengine_release_{version}"
                     dsym_filename = f"dmengine_release_{version}.dSYM.zip"
