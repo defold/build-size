@@ -18,9 +18,11 @@ The Defold Size Analyzer consists of three main components:
 The Python script automates the download and analysis of Defold components across versions.
 
 #### Supported Platforms:
-- **Native Binaries**: `arm64-android`, `armv7-android`, `arm64-ios`, `x86_64-macos`, `arm64-macos` (libdmengine_release.so)
+- **Native Binaries**: `arm64-android`, `armv7-android`, `x86_64-android`, `arm64-ios`, `arm64_sim-ios`, `x86_64-macos`, `arm64-macos` (`libdmengine_release.so` on Android, `dmengine_release` on Apple platforms)
 - **Java Tooling**: `bob.jar` (editor/build tools)
 - **Editor Applications**: `editor-win32`, `editor-x86_64-linux`, `editor-x86_64-macos`, `editor-arm64-macos` (complete editor packages)
+
+`x86_64-android` and `arm64_sim-ios` analysis starts from 1.13.2, including prereleases.
 
 #### Data Sources:
 - Downloads components from Defold's archive: `http://d.defold.com/archive/{sha1}/`
@@ -131,7 +133,7 @@ The dashboard provides a high-level view of component size evolution across vers
 - Opens in new tab for seamless workflow
 
 **Supported Platforms:**
-- `arm64-ios`, `arm64-android`, `armv7-android`
+- `arm64-ios`, `arm64_sim-ios`, `arm64-android`, `armv7-android`, `x86_64-android`
 - `x86_64-macos`, `x86_64-linux`, `x86-win32`, `x86_64-win32`, `arm64-macos`
 - `js-web`, `wasm-web`
 - `bob.jar` (special handling for build tools)

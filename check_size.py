@@ -20,8 +20,12 @@ from collections import OrderedDict
 
 
 # https://matplotlib.org/stable/api/markers_api.html
-markers = '.o8s+xD*pP<<>'
+markers = '.o8s+xD*pP<v>'
 GRAPH_EXCLUDED_PLATFORMS = {"js-web"}
+MIN_PLATFORM_BASE_VERSIONS = {
+    "x86_64-android": (1, 13, 2),
+    "arm64_sim-ios": (1, 13, 2),
+}
 UNSUPPORTED_PLATFORM_BASE_VERSIONS = {
     "js-web": (1, 13, 0),
 }
@@ -39,6 +43,9 @@ def parse_version_base(version_str):
 
 
 def is_platform_supported_for_version(platform, version):
+    introduced_in = MIN_PLATFORM_BASE_VERSIONS.get(platform)
+    if introduced_in is not None and parse_version_base(version) < introduced_in:
+        return False
     removed_from = UNSUPPORTED_PLATFORM_BASE_VERSIONS.get(platform)
     if removed_from is None:
         return True
@@ -141,8 +148,10 @@ legacy_engines = [
 
 engines = [
     {"platform": "arm64-ios",       "filename": "dmengine_release"},
+    {"platform": "arm64_sim-ios",   "filename": "dmengine_release"},
     {"platform": "arm64-android",   "filename": "libdmengine_release.so"},
     {"platform": "armv7-android",   "filename": "libdmengine_release.so"},
+    {"platform": "x86_64-android",  "filename": "libdmengine_release.so"},
     {"platform": "x86_64-macos",    "filename": "dmengine_release"},
     {"platform": "arm64-macos",     "filename": "dmengine_release"},
     {"platform": "js-web",          "filename": "dmengine_release.js"},
@@ -154,8 +163,10 @@ engines = [
 
 bundles = [
     {"platform": "arm64-ios",       "filename": "notused"},
+    {"platform": "arm64_sim-ios",   "filename": "notused"},
     {"platform": "arm64-android",   "filename": "notused"},
     {"platform": "armv7-android",   "filename": "notused"},
+    {"platform": "x86_64-android",  "filename": "notused"},
     {"platform": "x86_64-macos",    "filename": "notused"},
     {"platform": "arm64-macos",     "filename": "notused"},
     {"platform": "js-web",          "filename": "notused"},
@@ -360,7 +371,7 @@ def get_bundle_size_from_bob(sha1, platform, _, version=None):
         args.append("-jar")
         args.append("bob.jar")
         args.append("--archive")
-        if platform in ("armv7-android", "arm64-android"):
+        if platform in ("armv7-android", "arm64-android", "x86_64-android"):
             args.append("--platform=armv7-android")
             args.append("--architectures=" + platform)
             args.append("--bundle-format="+"aab")
@@ -379,9 +390,9 @@ def get_bundle_size_from_bob(sha1, platform, _, version=None):
 
         subprocess.check_call(args,cwd="empty_project")
 
-        if platform in ("armv7-android", "arm64-android"):
+        if platform in ("armv7-android", "arm64-android", "x86_64-android"):
             return os.path.getsize("bundle_output/unnamed/unnamed.aab")
-        elif platform in ("arm64-ios","x86_64-ios","arm64-darwin"):
+        elif platform in ("arm64-ios", "arm64_sim-ios", "x86_64-ios", "arm64-darwin"):
             return os.path.getsize("bundle_output/unnamed.ipa")
         elif platform in ("x86_64-macos", "x86_64-darwin", "arm64-macos"):
             return get_folder_size("bundle_output/unnamed.app")
@@ -550,9 +561,11 @@ def create_report(report_filename, releases, report_platforms, fn, forced_versio
         changed = True
 
     # Add new platforms
+    new_platforms = set()
     for platform in supported_platforms:
         if not platform in report:
             report[platform] = OrderedDict()
+            new_platforms.add(platform)
             changed = True
 
 
@@ -565,11 +578,13 @@ def create_report(report_filename, releases, report_platforms, fn, forced_versio
             changed = True
 
         if version in report['version']:
-            if version in forced_versions:
-                print("  Version {} updated - Getting size".format(version))
+            if version in forced_versions or new_platforms:
+                print("  Version {} has updated or new platforms - Getting size".format(version))
                 for report_platform in report_platforms:
                     platform = report_platform["platform"]
                     filename = report_platform["filename"]
+                    if version not in forced_versions and platform not in new_platforms:
+                        continue
                     if not is_platform_supported_for_version(platform, version):
                         print(f"  Skipping unsupported {platform} for {version}")
                         continue

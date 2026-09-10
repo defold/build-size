@@ -8,8 +8,10 @@ class DefoldDashboard {
         this.chartConfigs = new Map(); // Store chart configurations
         this.platformColors = {
             'arm64-ios': '#e74c3c',
+            'arm64_sim-ios': '#c0398d',
             'arm64-android': '#3498db',
             'armv7-android': '#9b59b6',
+            'x86_64-android': '#d35400',
             'x86_64-macos': '#2ecc71',
             'js-web': '#f39c12',
             'wasm-web': '#e67e22',
@@ -243,7 +245,7 @@ class DefoldDashboard {
     
     createBundleChart() {
         const rawData = this.csvCache.get('bundle_report.csv');
-        const platforms = ['arm64-ios', 'arm64-android', 'armv7-android', 'x86_64-macos', 'wasm-web', 'x86_64-linux', 'x86-win32', 'x86_64-win32', 'arm64-macos'];
+        const platforms = ['arm64-ios', 'arm64_sim-ios', 'arm64-android', 'armv7-android', 'x86_64-android', 'x86_64-macos', 'wasm-web', 'x86_64-linux', 'x86-win32', 'x86_64-win32', 'arm64-macos'];
         
         // Calculate default version (last 20 versions)
         const defaultVersion = this.calculateDefaultVersion('bundle_report.csv', '1.2.166');
@@ -263,7 +265,7 @@ class DefoldDashboard {
     
     createEngineChart() {
         const rawData = this.csvCache.get('engine_report.csv');
-        const platforms = ['arm64-ios', 'arm64-android', 'armv7-android', 'x86_64-macos', 'wasm-web', 'x86_64-linux', 'x86-win32', 'x86_64-win32', 'arm64-macos'];
+        const platforms = ['arm64-ios', 'arm64_sim-ios', 'arm64-android', 'armv7-android', 'x86_64-android', 'x86_64-macos', 'wasm-web', 'x86_64-linux', 'x86-win32', 'x86_64-win32', 'arm64-macos'];
         
         // Calculate default version (last 20 versions)
         const defaultVersion = this.calculateDefaultVersion('engine_report.csv', '1.2.166');
@@ -585,8 +587,10 @@ class DefoldDashboard {
         // Convert formatted platform name back to platform key
         const reverseNameMap = {
             'ARM64 iOS': 'arm64-ios',
+            'ARM64 iOS Simulator': 'arm64_sim-ios',
             'ARM64 Android': 'arm64-android',
             'ARMv7 Android': 'armv7-android',
+            'x86_64 Android': 'x86_64-android',
             'x86_64 macOS': 'x86_64-macos',
             'JS Web': 'js-web',
             'WASM Web': 'wasm-web',
@@ -635,8 +639,10 @@ class DefoldDashboard {
     formatPlatformName(platform) {
         const names = {
             'arm64-ios': 'ARM64 iOS',
+            'arm64_sim-ios': 'ARM64 iOS Simulator',
             'arm64-android': 'ARM64 Android',
             'armv7-android': 'ARMv7 Android',
+            'x86_64-android': 'x86_64 Android',
             'x86_64-macos': 'x86_64 macOS',
             'js-web': 'JS Web',
             'wasm-web': 'WASM Web',

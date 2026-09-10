@@ -10,7 +10,7 @@ This project will plot the size of the Defold engine (aka dmengine) as well as t
 The bundle size is measured as:
 
 * Android - Size of .aab file containing one CPU architecture
-* iOS - Size of .ipa file
+* iOS (device and simulator) - Size of .ipa file
 * macOS - Size of .app file
 * Windows - Size of zip archive with engine, required library files and game archive
 * Linux - Size of zip archive with engine, required library files and game archive
