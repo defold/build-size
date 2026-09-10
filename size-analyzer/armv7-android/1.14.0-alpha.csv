@@ -1,29 +1,29 @@
 symbol_group_name,vmsize,filesize
 dmScript,633049,140984
-dmGameSystem,583356,778742
-[section .rodata],402591,402591
+dmGameSystem,583740,779124
+[section .rodata],402639,402639
 dmGraphics,259544,346553
 _mbedtls_* (library),175074,213217
 basist,118172,116120
-dmGui,116432,151105
+dmGui,116316,150989
 dmCrash,112130,11618
-dmGameObject,111504,154366
+dmGameObject,111504,154395
 dmRender,102833,143510
 _compress_* (library),97191,98574
 [section .rel.dyn],78472,78472
 _pfb,65536,65561
-[section .ARM.exidx],63808,63808
+[section .ARM.exidx],63816,63816
 std,60458,77499
-dmHashTable<>,58128,72249
+dmHashTable<>,58128,72263
 (anonymous namespace),45192,104231
 dmPhysics,41080,60294
 dmParticle,39381,48873
 btConvexHullInternal,32348,34121
-dmResource,29380,40047
-_GLOBAL_* (library),26352,33947
+dmResource,29380,40046
+_GLOBAL_* (library),26352,33940
 dmSound,26101,33360
-dmEngine,22254,27014
 dmRig,21668,26296
+dmEngine,20982,25590
 btSequentialImpulseConstraintSolver,20760,25174
 _decompress_* (library),20572,21626
 btCollisionWorld,19893,29083
@@ -73,7 +73,7 @@ btAxisSweep3Internal<>,6740,9029
 [section .dynsym],6624,6624
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
-[section .text],6446,6446
+[section .text],6442,6442
 _parse_* (library),6216,7002
 btDbvt,6160,7865
 RefreshObjectStyles(),6148,6331
@@ -92,7 +92,7 @@ _process_* (library),5264,5545
 _create_* (library),5216,5475
 b2PrismaticJoint,5144,6983
 _luaL_* (library),5065,7398
-dmArray<>,4880,7730
+dmArray<>,4880,7737
 _lib_* (library),4862,7071
 _do_* (library),4796,5009
 b2Body,4728,5855
@@ -610,6 +610,7 @@ _check_* (library),380,493
 _RenderTargetDesc_* (library),375,1053
 JobSystemCreateJob,372,439
 [section .init_array],372,372
+[LOAD #1 [RX]],368,368
 _malloc_* (library),368,545
 _SpriteDesc_* (library),365,943
 PointCurveDistanceSquaredFromRoots(),364,476
@@ -617,7 +618,6 @@ _cur_* (library),364,429
 _JNIEnv,364,967
 _glfwAndroidPlatformOpenWindow,360,439
 socket_recvfrom,360,424
-[LOAD #1 [RX]],360,360
 ov_bitrate,359,402
 TextLayoutSetObjectStyle(),356,448
 _glfwParseGLVersion,356,424
@@ -1005,7 +1005,7 @@ _Quat_* (library),156,402
 _EventKey_* (library),155,398
 _Struct_* (library),154,439
 _android_* (library),152,340
-dmEngineInitialize(),152,238
+dmEngineInitialize(),152,236
 onNativeWindowRedrawNeeded,152,227
 onNativeWindowResized,152,222
 debug_putchunkname,152,219
@@ -1510,8 +1510,8 @@ dmHashString32,59,106
 dmHashString64,59,106
 treatstackoption,58,107
 LZ4_resetStreamState,57,110
-dmEngineFinalize(),56,140
 _glfwAndroidPlatformOnGainedFocus,56,138
+dmEngineFinalize(),56,138
 FontTrueTypeDestroy(),56,127
 b2ContactListener,56,561
 b2PairLessThan(),56,119
@@ -1737,7 +1737,6 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
-[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
@@ -1844,6 +1843,7 @@ expr_toval,16,43
 quant_look,16,43
 _vec3_* (library),16,37
 _supported_* (library),16,37
+[LOAD #3 [RW]],15,0
 _ARMV7PILongThunk_* (library),15,15
 _row_* (library),13,111
 btOverlappingPairCache,12,156
@@ -2312,12 +2312,12 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7491583
-[section .debug_loc],0,4044372
-[section .debug_line],0,3246400
-[section .debug_str],0,2408096
-[section .debug_ranges],0,1349368
-[section .debug_abbrev],0,530571
+[section .debug_info],0,7491305
+[section .debug_loc],0,4044493
+[section .debug_line],0,3245889
+[section .debug_str],0,2407899
+[section .debug_ranges],0,1349296
+[section .debug_abbrev],0,530553
 [section .debug_frame],0,339212
 [section .symtab],0,45056
 [section .strtab],0,19147
@@ -2325,4 +2325,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,6
+[Unmapped],0,9
