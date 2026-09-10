@@ -34,7 +34,6 @@ This is the size of a release version of the our command line build interface (b
 
 ![bob.jar size per platform and version](./bob_size.png)
 
-
 ## Deprecated graphs
 Graph of versions stripped of debug symbols:
 
