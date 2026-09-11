@@ -3,7 +3,7 @@ dmScript,639133,151590
 dmGameSystem,601360,815555
 [section .rodata],421088,421088
 dmGraphics,229420,301529
-_mbedtls_* (library),180643,223689
+_mbedtls_* (library),180643,236045
 (anonymous namespace),131132,203172
 dmGui,127416,164216
 dmCrash,117098,15002
@@ -13,7 +13,7 @@ dmRender,110529,156401
 _compress_* (library),88447,91209
 std,87495,100176
 _pfb,65536,66368
-dmHashTable<>,57116,71892
+dmHashTable<>,57116,71868
 dmPhysics,46016,68244
 dmParticle,37765,47984
 _cf_* (library),33036,44313
@@ -27,13 +27,13 @@ btCollisionWorld,21049,31023
 btSequentialImpulseConstraintSolver,20600,25006
 _GLOBAL_* (library),19972,27679
 _load_* (library),19824,20217
-dmEngine,19266,23854
+dmEngine,19266,23853
 _psa_* (library),19240,24670
 btDiscreteDynamicsWorld,18728,23747
 dmInput,18417,20063
 libunwind,17865,21014
 btConeTwistConstraint,17128,19454
-dmDDF,16932,25331
+dmDDF,16932,25355
 [section .rela.plt],16536,16536
 vwin8192,16384,16609
 __cxxabiv1,16360,26601
@@ -68,7 +68,7 @@ _Register_* (library),7971,14041
 btRigidBody,7832,10491
 dmHttpCache,7805,9729
 _BC_* (library),7752,11784
-_get_* (library),7468,21945
+_get_* (library),7468,9589
 _cxa_* (library),7230,9292
 _mz_* (library),7108,8144
 dmSocket,6956,10440
@@ -681,7 +681,7 @@ _GamepadMapRuntime_* (library),484,864
 _GamepadMap_* (library),484,833
 opt_setmembership,480,546
 _TriggerResponse_* (library),480,687
-parse_args,476,559
+parse_args,476,535
 TextLayout,476,612
 _grow_* (library),472,563
 _glfwAndroidPlatformSwapBuffers,472,552
@@ -1308,6 +1308,7 @@ FontOutlineBoundsMoveTo(),144,258
 btSdfCollisionShape,144,248
 TimingGetDelayCallback(),144,246
 TextLayoutRelease(),144,227
+expr_list,144,226
 _glfwAndroidPlatformOnTermWindow,144,225
 _glfwInputMouseClick,144,213
 glfwGetJoystickPos,144,211
@@ -1316,7 +1317,6 @@ expr_toanyreg,144,206
 b2Log(),144,205
 expr_field,144,203
 bit_tobit,144,202
-expr_list,144,202
 package_global,144,183
 _jit_* (library),144,277
 Particle_CreateContext,143,214
@@ -2322,11 +2322,11 @@ g_PendingResize,1,64
 supported_init,1,63
 g_AppResumed,1,61
 disableCcd,1,59
-[section .debug_info],0,8000939
+[section .debug_info],0,8000940
 [section .debug_loc],0,7267982
 [section .debug_line],0,3192226
 [section .debug_ranges],0,2622832
-[section .debug_str],0,2415796
+[section .debug_str],0,2415795
 [section .debug_abbrev],0,524741
 [section .symtab],0,96096
 [section .strtab],0,17571
@@ -2334,3 +2334,4 @@ disableCcd,1,59
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,120
+[Unmapped],0,1

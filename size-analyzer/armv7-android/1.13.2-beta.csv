@@ -1,13 +1,13 @@
 symbol_group_name,vmsize,filesize
 dmScript,633049,140984
-dmGameSystem,583356,778742
+dmGameSystem,583356,778748
 [section .rodata],402591,402591
 dmGraphics,259544,346553
 _mbedtls_* (library),175074,213217
 basist,118172,116120
 dmGui,116432,151105
 dmCrash,112130,11618
-dmGameObject,111504,154366
+dmGameObject,111504,154354
 dmRender,102833,143510
 _compress_* (library),97191,98574
 [section .rel.dyn],78472,78472
@@ -19,10 +19,10 @@ dmHashTable<>,58128,72249
 dmPhysics,41080,60294
 dmParticle,39381,48873
 btConvexHullInternal,32348,34121
-dmResource,29380,40047
+dmResource,29380,40053
 _GLOBAL_* (library),26352,33947
 dmSound,26101,33360
-dmEngine,22254,27014
+dmEngine,22254,27013
 dmRig,21668,26296
 btSequentialImpulseConstraintSolver,20760,25174
 _decompress_* (library),20572,21626
@@ -2312,10 +2312,10 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7491583
+[section .debug_info],0,7491584
 [section .debug_loc],0,4044372
 [section .debug_line],0,3246400
-[section .debug_str],0,2408096
+[section .debug_str],0,2408095
 [section .debug_ranges],0,1349368
 [section .debug_abbrev],0,530571
 [section .debug_frame],0,339212
@@ -2325,4 +2325,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,6
+[Unmapped],0,7
