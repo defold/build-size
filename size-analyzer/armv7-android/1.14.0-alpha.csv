@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,633049,140984
 dmGameSystem,583740,779124
-[section .rodata],402639,402639
-dmGraphics,259544,346553
+[section .rodata],402415,402415
+dmGraphics,259632,346641
 _mbedtls_* (library),175074,213217
 basist,118172,116120
 dmGui,116316,150989
@@ -73,7 +73,7 @@ btAxisSweep3Internal<>,6740,9029
 [section .dynsym],6624,6624
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
-[section .text],6442,6442
+[section .text],6434,6434
 _parse_* (library),6216,7002
 btDbvt,6160,7865
 RefreshObjectStyles(),6148,6331
@@ -1737,6 +1737,7 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
+[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
@@ -1843,7 +1844,6 @@ expr_toval,16,43
 quant_look,16,43
 _vec3_* (library),16,37
 _supported_* (library),16,37
-[LOAD #3 [RW]],15,0
 _ARMV7PILongThunk_* (library),15,15
 _row_* (library),13,111
 btOverlappingPairCache,12,156
@@ -2312,11 +2312,11 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7491306
-[section .debug_loc],0,4044493
-[section .debug_line],0,3245889
+[section .debug_info],0,7491319
+[section .debug_loc],0,4044219
+[section .debug_line],0,3245962
 [section .debug_str],0,2407898
-[section .debug_ranges],0,1349296
+[section .debug_ranges],0,1349144
 [section .debug_abbrev],0,530553
 [section .debug_frame],0,339212
 [section .symtab],0,45056
