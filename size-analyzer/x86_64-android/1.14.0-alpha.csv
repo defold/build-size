@@ -5,19 +5,19 @@ dmGraphics,311209,367508
 _mbedtls_* (library),229695,257674
 dmGameObject,153674,189437
 dmGui,148857,174972
-dmRender,140600,175905
+dmRender,140660,176046
 (anonymous namespace),138695,194168
 basist,137066,133274
 dmCrash,119265,15297
-std,109474,116192
+std,109467,116185
 _compress_* (library),107860,108935
 dmHashTable<>,83725,94635
-[section .text],70373,70373
+[section .text],70383,70383
 _pfb,65536,65569
 dmPhysics,58071,74837
 dmParticle,58014,65786
 _decompress_* (library),50473,51239
-dmResource,39954,48923
+dmResource,39931,48900
 _cf_* (library),35509,42754
 dmSound,34414,39921
 dmRig,31207,35027
@@ -26,7 +26,7 @@ btConvexHullInternal,30460,31937
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
 dmEngine,27764,30961
-_GLOBAL_* (library),25329,30568
+_GLOBAL_* (library),25429,30715
 btDiscreteDynamicsWorld,25213,29104
 dmInput,24737,25447
 _load_* (library),23454,23631
@@ -141,7 +141,7 @@ btGImpactQuantizedBvh,4757,5182
 _do_* (library),4711,4772
 btBoxShape,4692,6171
 btGeneric6DofSpringConstraint,4654,5943
-dmLog,4633,5259
+dmLog,4645,5365
 btConvexPolyhedron,4597,5128
 TextLayoutLegacyCreateInternal(),4500,4632
 btMiniSDF,4476,4636
@@ -263,11 +263,11 @@ btGjkEpaSolver2,2362,2605
 btPrimitiveTriangle,2362,2635
 _app_* (library),2360,2649
 _vm_* (library),2358,4124
+[section .rela.dyn],2352,2352
 gridRaycast<>(),2346,2606
 _cdata_* (library),2344,2651
 btDefaultCollisionConfiguration,2339,3178
 btVec3PointTriDist2(),2335,2407
-[section .rela.dyn],2328,2328
 [section .gnu.version],2306,2306
 _resample_* (library),2304,2554
 _stream_* (library),2298,2822
@@ -315,6 +315,7 @@ btDoSimplex3(),1781,1845
 dmBlockAllocator,1775,2051
 btSphereSphereCollisionAlgorithm,1774,3113
 RefreshDecorations(),1771,1832
+snprintf(),1767,2023
 dmSysPosix,1753,2589
 _com_* (library),1741,2484
 _Matrix4_* (library),1736,2695
@@ -332,11 +333,10 @@ _bcread_* (library),1639,1679
 serialize_get,1635,1673
 _fetch_* (library),1631,1720
 _write_* (library),1626,1774
-[section .bss],1621,0
+[section .bss],1620,0
 btAABB,1612,1709
 b2Joint,1610,2015
 _Mesh_* (library),1591,1834
-snprintf(),1587,1819
 _gc_* (library),1585,1988
 btBoxBoxCollisionAlgorithm,1576,2843
 dmVMath,1574,1704
@@ -552,10 +552,10 @@ _ext_* (library),760,802
 b2FindMaxSeparation(),759,849
 BlurBitmapChannel(),756,810
 ExtendCubicAxisBounds(),753,843
+[section .init_array],752,752
 intersectRectQuad2(),751,805
 _Bone_* (library),751,965
 cp_declarator,745,783
-[section .init_array],744,744
 insertleaf(),741,805
 glfwAndroidHandleInput,731,778
 TextLayoutInitializeObjectStyles(),730,804
@@ -601,12 +601,12 @@ _ctx_* (library),675,1074
 FontTrueTypeGetGlyphIndex(),669,739
 lex_number,667,702
 JobSystemDestroy,663,704
+[LOAD #1 [RX]],663,663
 JobSystemPushJob,662,703
 poly1305_process,662,703
 b2PolygonContact,662,1020
 _prng_* (library),662,779
 parse_body,655,690
-[LOAD #1 [RX]],655,655
 _Value_* (library),654,884
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
@@ -845,7 +845,6 @@ _base_* (library),376,464
 glfwGetWindowParam,373,416
 ExtensionRegister,373,415
 _lookup_* (library),373,409
-sprintf(),372,458
 ConvertPolynomialToBernstein(),371,435
 _pkcs_* (library),370,411
 _dynamic_* (library),369,408
@@ -1199,6 +1198,7 @@ dmStrlCat(),188,231
 _cparse_* (library),188,227
 lex_newline,188,224
 DestroyRequest(),187,244
+sprintf(),185,247
 _glfwPlatformOpenWindow,184,232
 strscan_double,184,223
 b2Log(),184,221
@@ -2320,16 +2320,16 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,8229990
-[section .debug_loc],0,6721400
-[section .debug_line],0,3157647
-[section .debug_str],0,2416855
-[section .debug_ranges],0,1211248
-[section .debug_abbrev],0,521783
+[section .debug_info],0,8229804
+[section .debug_loc],0,6721372
+[section .debug_line],0,3157641
+[section .debug_str],0,2416967
+[section .debug_ranges],0,1211392
+[section .debug_abbrev],0,521903
 [section .symtab],0,26232
 [section .strtab],0,17363
 [ELF Headers],0,2240
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,96
-[Unmapped],0,3
+[Unmapped],0,16
