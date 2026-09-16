@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,633049,140984
-dmGameSystem,583356,778748
+dmGameSystem,583576,779101
 [section .rodata],402367,402367
 dmGraphics,259632,346641
 _mbedtls_* (library),175074,213217
@@ -73,10 +73,10 @@ btAxisSweep3Internal<>,6740,9029
 [section .dynsym],6624,6624
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
-[section .text],6438,6438
+[section .text],6442,6442
+RefreshObjectStyles(),6280,6463
 _parse_* (library),6216,7002
 btDbvt,6160,7865
-RefreshObjectStyles(),6148,6331
 [section .gnu.hash],6116,6116
 btPolyhedralContactClipping,6108,6969
 dmConfigFile,6044,7327
@@ -124,7 +124,7 @@ b2RevoluteJoint,4072,5865
 _decl_* (library),4058,4599
 _Unwind_* (library),4036,4911
 _book_* (library),4034,4412
-FontCreateLayoutVertices(),4008,4253
+FontCreateLayoutVertices(),4016,4261
 btPolyhedralConvexShape,3984,4944
 dmLog,3916,4742
 btCompoundShape,3868,5418
@@ -188,7 +188,7 @@ dmSSLSocket,2624,3216
 _crt_* (library),2616,2788
 _tab_* (library),2576,3343
 btConvexShape,2532,3300
-FontGetLayoutVertexMetrics(),2504,2619
+FontGetLayoutVertexMetrics(),2488,2603
 _set_* (library),2420,3598
 [section .gnu.version],2416,2416
 _page_* (library),2415,2898
@@ -277,6 +277,7 @@ _ov_* (library),1532,1616
 _global_* (library),1532,1852
 _lsp_* (library),1528,1596
 dmOpaqueHandleContainer<>,1524,2506
+ResolveGlyphLayerRenderData(),1520,1717
 dmVMath,1504,1710
 RefreshDecorations(),1480,1597
 btVec3PointTriDist2(),1472,1600
@@ -298,7 +299,6 @@ _compressHC_* (library),1371,1754
 _use_* (library),1364,1428
 fs_finish,1344,1402
 Layout<>(),1328,1455
-ResolveGlyphLayerRenderData(),1320,1485
 b2ContactManager,1316,1727
 btConvexInternalShape,1296,2512
 _com_* (library),1295,2238
@@ -377,6 +377,7 @@ _GlyphBank_* (library),926,2593
 btBoxBoxCollisionAlgorithm,924,2271
 dmHashReverseErase32,917,986
 TextLayoutCompileStyleFragment(),916,1085
+TextLayoutInitializeObjectStyles(),916,1014
 btPerturbedContactResult,912,1121
 _Emitter_* (library),907,2196
 btGjkConvexCast,904,1342
@@ -394,6 +395,7 @@ _write_* (library),864,1014
 dmHashBuffer64,863,926
 ParseObjectDimension(),856,950
 _initialize_* (library),856,927
+GetGlyphTTF(),852,939
 btAngularLimit,848,1234
 _unw_* (library),844,1556
 dmHashReverse32Alloc(),838,928
@@ -415,7 +417,6 @@ glfwAndroidFlushEvents,788,891
 TextLayoutFinalizeLineBaselines(),784,902
 dmHashReverse64,784,848
 InitCFF2Font(),784,838
-GetGlyphTTF(),780,867
 dmCrypt,780,998
 _sign_* (library),772,926
 [section .data],769,769
@@ -445,6 +446,7 @@ b2PositionSolverManifold,716,856
 dmURI,716,860
 _FontMap_* (library),716,2139
 intersectRectQuad2(),712,774
+AddLayoutStyle(),708,809
 _clib_* (library),706,939
 btGjkEpaPenetrationDepthSolver,704,1023
 dmHashRelease32,704,768
@@ -461,7 +463,6 @@ btBridgedManifoldResult,668,874
 _luaJIT_* (library),665,996
 _aes_* (library),664,890
 ResourceChunkCachePut(),660,778
-TextLayoutInitializeObjectStyles(),656,754
 match,656,710
 _build_* (library),656,860
 _cjson_* (library),656,786
@@ -491,6 +492,7 @@ dmConditionVariable,576,1093
 ExtendCubicAxisBounds(),572,686
 _glfwAndroidPlatformGetWindowRefreshRate,572,661
 glfwAndroidUpdateDpad,572,642
+TextLayout,572,676
 dmThread,572,986
 _emutls_* (library),569,793
 mdct_backward,566,628
@@ -507,7 +509,6 @@ glfwAndroidConnectJoystick,544,619
 global_connect,544,607
 _prng_* (library),544,701
 CreateGLSurfaceForWindow,540,613
-TextLayout,540,644
 b2FindMaxSeparation(),536,650
 _unused_* (library),536,592
 btBoxBoxDetector,532,940
@@ -582,7 +583,6 @@ _name_* (library),420,503
 glfwEnable,416,507
 expr_primary,414,459
 ParsePrivate(),412,514
-AddLayoutStyle(),412,512
 oggbyte_read4,412,458
 FontGetOutlineBounds(),408,523
 _state_* (library),404,758
@@ -1737,6 +1737,7 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
+[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
@@ -1769,6 +1770,8 @@ _glfwAndroidPlatformSetPendingResizeBecauseOfInsets,24,124
 _glfwAndroidPlatformOnResize,24,101
 btAlignedFreeInternal(),24,100
 _glfwPlatformIconifyWindow,24,99
+GlyphBankGetDescent(),24,88
+GlyphBankGetAscent(),24,87
 GetDescentTTF(),24,82
 GetLineGapTTF(),24,82
 GetAscentTTF(),24,81
@@ -1843,7 +1846,6 @@ expr_toval,16,43
 quant_look,16,43
 _vec3_* (library),16,37
 _supported_* (library),16,37
-[LOAD #3 [RW]],15,0
 _ARMV7PILongThunk_* (library),15,15
 _row_* (library),13,111
 btOverlappingPairCache,12,156
@@ -1898,11 +1900,9 @@ ExtensionParamsGetContextRegistry,12,78
 ExtensionParamsSetContextRegistry,12,78
 rmtp_Factory(),12,78
 rmtp_LuaRefs(),12,78
-GlyphBankGetDescent(),12,76
 dmGamesysDDF,12,218
 rmtp_Camera(),12,76
 rmtp_LuaMem(),12,76
-GlyphBankGetAscent(),12,75
 rmtp_Label(),12,74
 HttpDeleteServiceInternal,12,70
 dmStrCaseCmp(),12,67
@@ -2312,17 +2312,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7491597
-[section .debug_loc],0,4044098
-[section .debug_line],0,3246475
-[section .debug_str],0,2408095
-[section .debug_ranges],0,1349216
-[section .debug_abbrev],0,530571
-[section .debug_frame],0,339212
+[section .debug_info],0,7492942
+[section .debug_loc],0,4045041
+[section .debug_line],0,3247430
+[section .debug_str],0,2408292
+[section .debug_ranges],0,1349920
+[section .debug_abbrev],0,530582
+[section .debug_frame],0,339240
 [section .symtab],0,45056
 [section .strtab],0,19147
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,9
+[Unmapped],0,8

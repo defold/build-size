@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,763451,927000
+dmGameSystem,765916,929985
 dmScript,670653,171704
 dmGraphics,311209,367508
 _mbedtls_* (library),229695,257674
@@ -12,10 +12,10 @@ dmCrash,119265,15297
 std,109467,116185
 _compress_* (library),107860,108935
 dmHashTable<>,83725,94635
-[section .text],70383,70383
+[section .text],70428,70428
 _pfb,65536,65569
 dmPhysics,58071,74837
-dmParticle,58014,65786
+dmParticle,58010,65782
 _decompress_* (library),50473,51239
 dmResource,39931,48900
 _cf_* (library),35509,42754
@@ -26,7 +26,7 @@ btConvexHullInternal,30460,31937
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
 dmEngine,27764,30961
-_GLOBAL_* (library),25429,30715
+_GLOBAL_* (library),25437,30723
 btDiscreteDynamicsWorld,25213,29104
 dmInput,24737,25447
 _load_* (library),23454,23631
@@ -79,10 +79,10 @@ TextLayoutResolveMarkup(),8471,8586
 dmArray<>,8214,10302
 _get_* (library),8211,9564
 vwin4096,8192,8225
+RefreshObjectStyles(),8077,8140
 _Register_* (library),7971,11972
 _mz_* (library),7960,8612
 _err_* (library),7917,8860
-RefreshObjectStyles(),7904,7967
 dmSys,7865,9578
 dmConnectionPool,7862,9169
 _BC_* (library),7817,11026
@@ -243,8 +243,8 @@ btQuantizedBvhTree,2683,3053
 btCapsuleShape,2677,3665
 btManifoldResult,2653,3822
 dmResourceProviderArchive,2653,3599
+FontGetLayoutVertexMetrics(),2640,2747
 _make_* (library),2634,2756
-FontGetLayoutVertexMetrics(),2624,2731
 _file_* (library),2542,2808
 _FontMap_* (library),2524,4147
 dmIntersection,2521,2971
@@ -358,6 +358,7 @@ _TileSet_* (library),1487,2394
 Layout<>(),1484,1555
 expr_table,1475,1510
 _CollisionShape_* (library),1470,1982
+ResolveGlyphLayerRenderData(),1446,1587
 DebugDrawcallback,1432,1959
 tremolo_mergesort,1424,1466
 btNullPairCache,1422,3089
@@ -384,7 +385,6 @@ b2EdgeShape,1318,1920
 _func_* (library),1318,1596
 optset,1312,1367
 dmCrypt,1309,1487
-ResolveGlyphLayerRenderData(),1291,1432
 addInputEvents,1286,1325
 global_select,1274,1312
 SegmentsIntersect(),1269,1338
@@ -455,6 +455,7 @@ RT3,1024,28
 cullPoints2(),1023,1070
 dmAndroid,1020,1500
 TextLayoutGetObjectPosition(),1010,1107
+TextLayoutInitializeObjectStyles(),1010,1084
 _SpriteGeometry_* (library),999,1356
 b2WorldManifold,997,1089
 b2PositionSolverManifold,992,1108
@@ -476,12 +477,14 @@ Blend(),931,986
 b2StackAllocator,930,1241
 btUnionFind,928,1213
 _gl_* (library),925,1151
+GetGlyphTTF(),913,992
 _zbuild_* (library),912,983
 _TextureSetAnimation_* (library),910,1463
 _verify_* (library),910,1033
 JobSystemSetParent,909,952
 b2GridAndPolygonContact,909,1302
 dmHashReverse32,906,946
+AddLayoutStyle(),904,981
 _EmbeddedInstanceDesc_* (library),899,1367
 _InstanceDesc_* (library),899,1324
 btBridgedManifoldResult,899,1097
@@ -517,7 +520,6 @@ engine_main(),842,886
 _profile_* (library),841,980
 _cjson_* (library),840,922
 _build_* (library),839,1003
-GetGlyphTTF(),834,913
 dmHashBuffer64,833,872
 _glfwInput,832,35
 b2ChainAndPolygonContact,831,1229
@@ -558,8 +560,8 @@ _Bone_* (library),751,965
 cp_declarator,745,783
 insertleaf(),741,805
 glfwAndroidHandleInput,731,778
-TextLayoutInitializeObjectStyles(),730,804
 expr_primary,730,767
+TextLayout,729,817
 _glfwAndroidPlatformSwapBuffers,727,783
 _TextureTransform_* (library),726,1276
 _TileCell_* (library),726,1233
@@ -590,7 +592,6 @@ _emutls_* (library),696,926
 _Sampler_* (library),694,1115
 _vmevent_* (library),691,774
 PointVariableCurveDistanceSquaredFromRoots(),689,814
-TextLayout,689,777
 b2PolygonAndCircleContact,689,1092
 touchById,685,719
 GIM_ShapeRetriever,683,1458
@@ -601,12 +602,12 @@ _ctx_* (library),675,1074
 FontTrueTypeGetGlyphIndex(),669,739
 lex_number,667,702
 JobSystemDestroy,663,704
-[LOAD #1 [RX]],663,663
 JobSystemPushJob,662,703
 poly1305_process,662,703
 b2PolygonContact,662,1020
 _prng_* (library),662,779
 parse_body,655,690
+[LOAD #1 [RX]],655,655
 _Value_* (library),654,884
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
@@ -615,7 +616,6 @@ _classify_* (library),645,733
 bit_tohex,642,676
 b2EdgeAndPolygonContact,639,1032
 ll_loadfunc,636,672
-AddLayoutStyle(),633,709
 _bisect_* (library),632,681
 decode_map,632,667
 _TileLayer_* (library),627,1022
@@ -2320,16 +2320,16 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,8229804
-[section .debug_loc],0,6721372
-[section .debug_line],0,3157641
-[section .debug_str],0,2416967
-[section .debug_ranges],0,1211392
-[section .debug_abbrev],0,521903
+[section .debug_info],0,8233466
+[section .debug_loc],0,6726271
+[section .debug_line],0,3159448
+[section .debug_str],0,2417756
+[section .debug_ranges],0,1212608
+[section .debug_abbrev],0,521974
 [section .symtab],0,26232
 [section .strtab],0,17363
 [ELF Headers],0,2240
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,96
-[Unmapped],0,16
+[Unmapped],0,11
