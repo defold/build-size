@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,633049,140984
-dmGameSystem,583576,779101
+dmGameSystem,583516,778952
 [section .rodata],402367,402367
 dmGraphics,259632,346641
 _mbedtls_* (library),175074,213217
@@ -12,7 +12,7 @@ dmRender,102833,143510
 _compress_* (library),97191,98574
 [section .rel.dyn],78472,78472
 _pfb,65536,65561
-[section .ARM.exidx],63808,63808
+[section .ARM.exidx],63824,63824
 std,60458,77499
 dmHashTable<>,58128,72249
 (anonymous namespace),45192,104231
@@ -34,7 +34,7 @@ _cf_* (library),17184,26421
 btDiscreteDynamicsWorld,17148,21751
 _psa_* (library),17100,21458
 vwin8192,16384,16409
-[section .ARM.extab],16176,16176
+[section .ARM.extab],16188,16188
 dmDDF,16100,23863
 btQuantizedBvh,15948,18286
 _internal_* (library),14804,15087
@@ -49,7 +49,6 @@ dmObjectPool<>,10588,13451
 btGImpactCollisionAlgorithm,10328,13393
 gjkepa2_impl,9796,11375
 [section .hash],9672,9672
-FontSDFGenerate(),9468,9719
 btGeneric6DofConstraint,9376,12035
 dmHttpClient,9168,11754
 dmHttpService,8896,11073
@@ -73,7 +72,7 @@ btAxisSweep3Internal<>,6740,9029
 [section .dynsym],6624,6624
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
-[section .text],6442,6442
+[section .text],6449,6449
 RefreshObjectStyles(),6280,6463
 _parse_* (library),6216,7002
 btDbvt,6160,7865
@@ -91,7 +90,9 @@ dBoxBox2(),5280,5519
 _process_* (library),5264,5545
 _create_* (library),5216,5475
 b2PrismaticJoint,5144,6983
+GenerateDistanceField(),5072,5272
 _luaL_* (library),5065,7398
+FontSDFGenerate(),4900,5119
 dmArray<>,4880,7730
 _lib_* (library),4862,7071
 _do_* (library),4796,5009
@@ -277,7 +278,7 @@ _ov_* (library),1532,1616
 _global_* (library),1532,1852
 _lsp_* (library),1528,1596
 dmOpaqueHandleContainer<>,1524,2506
-ResolveGlyphLayerRenderData(),1520,1717
+ResolveGlyphLayerRenderData(),1512,1709
 dmVMath,1504,1710
 RefreshDecorations(),1480,1597
 btVec3PointTriDist2(),1472,1600
@@ -358,7 +359,6 @@ RT3,1024,20
 dmMutex,1024,1494
 dmExtension,1020,1809
 btCollisionShape,1016,1794
-FontGenerateGlyph(),1012,1122
 _normalize_* (library),1000,1155
 _bcread_* (library),994,1026
 FontTrueTypeCreate(),988,1048
@@ -366,6 +366,7 @@ BlurBitmapChannel(),972,1034
 _buffer_* (library),971,1171
 dmHashBuffer32,967,1030
 dmResourceProviderFile,960,1652
+FontGenerateGlyph(),956,1066
 btSphereTriangleCollisionAlgorithm,956,2401
 dmHashReverseErase64,953,1022
 cpcparser,952,1010
@@ -381,6 +382,7 @@ TextLayoutInitializeObjectStyles(),916,1014
 btPerturbedContactResult,912,1121
 _Emitter_* (library),907,2196
 btGjkConvexCast,904,1342
+FontGetGlyphTTF(),900,1007
 _loadf_* (library),900,995
 K,896,930
 expr_table,896,923
@@ -395,7 +397,6 @@ _write_* (library),864,1014
 dmHashBuffer64,863,926
 ParseObjectDimension(),856,950
 _initialize_* (library),856,927
-GetGlyphTTF(),852,939
 btAngularLimit,848,1234
 _unw_* (library),844,1556
 dmHashReverse32Alloc(),838,928
@@ -614,10 +615,10 @@ _malloc_* (library),368,545
 _SpriteDesc_* (library),365,943
 PointCurveDistanceSquaredFromRoots(),364,476
 _cur_* (library),364,429
+[LOAD #1 [RX]],364,364
 _JNIEnv,364,967
 _glfwAndroidPlatformOpenWindow,360,439
 socket_recvfrom,360,424
-[LOAD #1 [RX]],360,360
 ov_bitrate,359,402
 TextLayoutSetObjectStyle(),356,448
 _glfwParseGLVersion,356,424
@@ -777,7 +778,7 @@ ExtensionRegister,240,306
 onDestroy,240,298
 make_assoc,240,283
 operator delete(),239,572
-operator delete[](),238,531
+operator delete[](),239,532
 _Texture_* (library),237,694
 FontOutlineBoundsMerge(),236,321
 auxiliar_checkgroup,236,304
@@ -1098,7 +1099,7 @@ LiveUpdateExt294,128,33
 ResourceTypeAnim35,128,35
 ResourceTypeAnimationSet103,128,44
 ResourceTypeCollection378,128,42
-ResourceTypeFont1129,128,37
+ResourceTypeFont1124,128,37
 ResourceTypeGameObject230,128,42
 ResourceTypeGui347,128,35
 ResourceTypeGuiScript158,128,41
@@ -1737,13 +1738,13 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
-[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
 _ZTSPKDs,30,55
 _ZTSPKDu,30,55
 priority,30,55
+GetGlyphTTF(),28,115
 _unexpected_* (library),28,112
 ResourceChunkCacheCanFit(),28,111
 FontTrueTypeGetScaleFromSize(),28,109
@@ -1846,6 +1847,7 @@ expr_toval,16,43
 quant_look,16,43
 _vec3_* (library),16,37
 _supported_* (library),16,37
+[LOAD #3 [RW]],15,0
 _ARMV7PILongThunk_* (library),15,15
 _row_* (library),13,111
 btOverlappingPairCache,12,156
@@ -2312,17 +2314,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7492942
-[section .debug_loc],0,4045041
-[section .debug_line],0,3247430
-[section .debug_str],0,2408292
-[section .debug_ranges],0,1349920
-[section .debug_abbrev],0,530582
-[section .debug_frame],0,339240
+[section .debug_info],0,7493625
+[section .debug_loc],0,4044420
+[section .debug_line],0,3248082
+[section .debug_str],0,2408380
+[section .debug_ranges],0,1349848
+[section .debug_abbrev],0,530744
+[section .debug_frame],0,339344
 [section .symtab],0,45056
 [section .strtab],0,19147
 [ELF Headers],0,1400
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,8
+[Unmapped],0,10

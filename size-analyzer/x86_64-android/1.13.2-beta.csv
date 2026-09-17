@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,763418,927092
+dmGameSystem,763322,926931
 dmScript,670653,171704
 dmGraphics,311209,367508
 _mbedtls_* (library),229695,257674
 dmGameObject,153674,189437
 dmGui,149022,175137
-dmRender,140600,175905
+dmRender,140604,175909
 (anonymous namespace),138695,194168
 basist,137066,133274
 dmCrash,119265,15297
 std,109469,116187
 _compress_* (library),107860,108935
 dmHashTable<>,83725,94635
-[section .text],70413,70413
+[section .text],70421,70421
 _pfb,65536,65569
 dmPhysics,58071,74837
 dmParticle,58010,65782
@@ -25,7 +25,7 @@ btCollisionWorld,30610,38976
 btConvexHullInternal,30460,31937
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,29330,32547
+dmEngine,29338,32555
 _GLOBAL_* (library),25321,30560
 btDiscreteDynamicsWorld,25213,29104
 dmInput,24737,25447
@@ -53,7 +53,6 @@ dmSoundCodec,12426,15644
 _lib_* (library),12383,14680
 dmHttpClient,11401,13483
 _internal_* (library),11202,11421
-FontSDFGenerate(),11182,11281
 [section .plt],11040,11040
 dmHttpService,10958,12799
 dmEasing,10874,10985
@@ -107,12 +106,14 @@ btCompoundCollisionAlgorithm,6506,8206
 btPolyhedralConvexShape,6438,7222
 _tls13_* (library),6092,6707
 _process_* (library),6000,6177
+FontSDFGenerate(),5962,6061
 dmLiveUpdate,5952,7369
 btDbvtBroadphase,5882,7418
 dmResourceMounts,5864,7295
 FontCreateLayoutVertices(),5817,5942
 [section .gnu.hash],5804,5804
 dmDeviceOpenSL,5790,6667
+GenerateDistanceField(),5743,5855
 [section .dynstr],5711,5711
 InterpretCharString(),5689,5784
 b2SeparationFunction,5637,5895
@@ -358,7 +359,7 @@ _TileSet_* (library),1487,2394
 Layout<>(),1484,1555
 expr_table,1475,1510
 _CollisionShape_* (library),1470,1982
-ResolveGlyphLayerRenderData(),1446,1587
+ResolveGlyphLayerRenderData(),1438,1579
 DebugDrawcallback,1432,1959
 tremolo_mergesort,1424,1466
 btNullPairCache,1422,3089
@@ -423,11 +424,11 @@ dmHashReverseErase32,1108,1153
 glfwDisable,1108,1144
 dmPath,1107,1261
 FontTrueTypeCreate(),1103,1155
+FontGenerateGlyph(),1099,1185
 _Unwind_* (library),1095,1527
 _ssl_* (library),1081,1295
 PushText(),1079,1146
 _serialize_* (library),1079,1350
-FontGenerateGlyph(),1076,1162
 TextLayoutCompileStyleFragment(),1075,1220
 b2Mat33,1071,1294
 _fromdB_* (library),1068,1112
@@ -461,6 +462,7 @@ b2WorldManifold,997,1089
 b2PositionSolverManifold,992,1108
 _Property_* (library),992,1279
 dmTransform,987,1138
+FontGetGlyphTTF(),985,1084
 _ecp_* (library),980,1114
 ResourceChunkCachePut(),971,1065
 auxsort,971,1003
@@ -477,7 +479,6 @@ Blend(),931,986
 b2StackAllocator,930,1241
 btUnionFind,928,1213
 _gl_* (library),925,1151
-GetGlyphTTF(),913,992
 _zbuild_* (library),912,983
 _TextureSetAnimation_* (library),910,1463
 _verify_* (library),910,1033
@@ -591,7 +592,6 @@ btClosestNotMeConvexResultCallback,697,1055
 _emutls_* (library),696,926
 _Sampler_* (library),694,1115
 _vmevent_* (library),691,774
-PointVariableCurveDistanceSquaredFromRoots(),689,814
 b2PolygonAndCircleContact,689,1092
 touchById,685,719
 GIM_ShapeRetriever,683,1458
@@ -607,11 +607,11 @@ poly1305_process,662,703
 b2PolygonContact,662,1020
 _prng_* (library),662,779
 parse_body,655,690
-[LOAD #1 [RX]],655,655
 _Value_* (library),654,884
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
+[LOAD #1 [RX]],647,647
 _classify_* (library),645,733
 bit_tohex,642,676
 b2EdgeAndPolygonContact,639,1032
@@ -619,6 +619,7 @@ ll_loadfunc,636,672
 _bisect_* (library),632,681
 decode_map,632,667
 _TileLayer_* (library),627,1022
+PointVariableCurveDistanceSquaredFromRoots(),625,750
 _SetGridShapeHull_* (library),624,761
 _StyleEffect_* (library),624,749
 _RigAnimation_* (library),624,745
@@ -1383,7 +1384,7 @@ LiveUpdateExt294,128,41
 ResourceTypeAnim35,128,43
 ResourceTypeAnimationSet103,128,52
 ResourceTypeCollection378,128,50
-ResourceTypeFont1129,128,45
+ResourceTypeFont1124,128,45
 ResourceTypeGameObject230,128,50
 ResourceTypeGui347,128,43
 ResourceTypeGuiScript158,128,49
@@ -1742,6 +1743,7 @@ FontTrueTypeGetScaleFromSize(),55,128
 socket_open,55,91
 _glfwPlatformSwapBuffers,54,103
 atexit,54,85
+FreeGlyphTTF(),53,112
 timeout_open,53,90
 except_open,53,89
 glfwGetJoystickDeviceId,52,100
@@ -1773,7 +1775,6 @@ MarkupCreateStyleFragment(),46,127
 buffer_isempty,46,85
 gcm_incr,46,79
 TextLayoutGetLineCount(),45,109
-FreeGlyphTTF(),45,104
 MarkupGetTextLength(),45,101
 GetDescentTTF(),45,95
 GetLineGapTTF(),45,95
@@ -1812,6 +1813,7 @@ _clang_* (library),43,90
 HttpResponseGetEvent,43,88
 glfwGetMouseLocked,43,86
 b2Alloc(),43,79
+GetGlyphTTF(),42,121
 GlyphBankGetDescent(),42,98
 GlyphBankGetAscent(),42,97
 timeout_init,42,79
@@ -2320,16 +2322,16 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,8231979
-[section .debug_loc],0,6722629
-[section .debug_line],0,3159058
-[section .debug_str],0,2417249
-[section .debug_ranges],0,1211600
-[section .debug_abbrev],0,521796
+[section .debug_info],0,8232723
+[section .debug_loc],0,6722598
+[section .debug_line],0,3159737
+[section .debug_str],0,2417337
+[section .debug_ranges],0,1211472
+[section .debug_abbrev],0,521958
 [section .symtab],0,26232
 [section .strtab],0,17363
 [ELF Headers],0,2240
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,96
-[Unmapped],0,5
+[Unmapped],0,9
