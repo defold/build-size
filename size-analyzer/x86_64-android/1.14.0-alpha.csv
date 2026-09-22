@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,766308,930636
-dmScript,670653,171704
-dmGraphics,311320,367619
+dmGameSystem,766461,930892
+dmScript,671008,172059
+dmGraphics,317902,374508
 _mbedtls_* (library),229695,257674
-std,174643,199843
+std,174638,199838
 dmGameObject,153674,189437
 dmGui,148857,174972
-dmRender,140664,176050
+dmRender,141468,176854
 (anonymous namespace),138695,194168
 basist,123729,119901
 dmCrash,119265,15297
 _compress_* (library),114295,115370
 dmHashTable<>,83725,94635
-[section .text],71825,71825
+[section .text],71888,71888
 _pfb,65536,65569
 dmPhysics,58071,74837
 dmParticle,58010,65782
@@ -26,7 +26,7 @@ btConvexHullInternal,30460,31937
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
 dmEngine,27764,30961
-_GLOBAL_* (library),25541,30888
+_GLOBAL_* (library),25533,30880
 btDiscreteDynamicsWorld,25213,29104
 dmInput,24737,25447
 _load_* (library),23454,23631
@@ -341,10 +341,10 @@ b2Joint,1610,2015
 _Mesh_* (library),1591,1834
 snprintf(),1587,1819
 _gc_* (library),1585,1988
+[section .data],1580,1580
 btBoxBoxCollisionAlgorithm,1576,2843
 dmVMath,1574,1704
 dmExtension,1570,2167
-[section .data],1569,1569
 dmZlib,1563,1700
 secp256r1_T,1560,1596
 _loadf_* (library),1554,1625
@@ -386,6 +386,7 @@ _add_* (library),1322,1396
 _name_* (library),1322,1405
 b2EdgeShape,1318,1920
 _func_* (library),1318,1596
+_RenderTargetDesc_* (library),1316,2138
 optset,1312,1367
 dmCrypt,1309,1487
 addInputEvents,1286,1325
@@ -396,7 +397,6 @@ _normalize_* (library),1258,1389
 _JNIEnv,1246,1793
 _SpriteDesc_* (library),1237,1887
 _rsassa_* (library),1231,1341
-_RenderTargetDesc_* (library),1215,1965
 dmResourceProviderFile,1206,1754
 func,1200,1373
 b2CircleShape,1198,1758
@@ -613,12 +613,12 @@ b2PolygonContact,662,1020
 _prng_* (library),662,779
 parse_body,655,690
 _Value_* (library),654,884
+[LOAD #1 [RX]],650,650
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
 _classify_* (library),645,733
 bit_tohex,642,676
-[LOAD #1 [RX]],642,642
 b2EdgeAndPolygonContact,639,1032
 ll_loadfunc,636,672
 _bisect_* (library),632,681
@@ -2329,16 +2329,16 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,8514672
-[section .debug_loc],0,7040328
-[section .debug_line],0,3242739
-[section .debug_str],0,2542573
-[section .debug_ranges],0,1269328
-[section .debug_abbrev],0,527329
+[section .debug_info],0,8518275
+[section .debug_loc],0,7060891
+[section .debug_line],0,3245550
+[section .debug_str],0,2543785
+[section .debug_ranges],0,1270592
+[section .debug_abbrev],0,527353
 [section .symtab],0,28104
 [section .strtab],0,18513
 [ELF Headers],0,2240
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,96
-[Unmapped],0,16
+[Unmapped],0,17

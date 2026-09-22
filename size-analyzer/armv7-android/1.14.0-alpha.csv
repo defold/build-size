@@ -1,33 +1,33 @@
 symbol_group_name,vmsize,filesize
-dmScript,633049,140984
-dmGameSystem,586148,782431
-[section .rodata],395167,395167
-dmGraphics,259628,346602
+dmScript,633305,141240
+dmGameSystem,586244,782654
+[section .rodata],396095,396095
+dmGraphics,263272,350654
 _mbedtls_* (library),175074,213217
 dmGui,116316,150989
 dmCrash,112130,11618
 basist,112036,110577
 dmGameObject,111504,154401
-dmRender,102789,143555
+dmRender,103345,144111
 _compress_* (library),102175,103702
 std,98302,145148
-[section .rel.dyn],79144,79144
-[section .ARM.exidx],65984,65984
+[section .rel.dyn],79152,79152
+[section .ARM.exidx],66000,66000
 _pfb,65536,65561
 dmHashTable<>,58128,72270
-(anonymous namespace),45236,103955
+(anonymous namespace),45236,103948
 dmPhysics,41080,60294
 dmParticle,39381,48873
 btConvexHullInternal,32348,34121
 dmResource,29376,40036
-_GLOBAL_* (library),26496,34240
+_GLOBAL_* (library),26496,34247
 dmSound,26101,33360
 dmRig,21668,26296
 dmEngine,20982,25589
 btSequentialImpulseConstraintSolver,20760,25174
 _decompress_* (library),20200,21146
 btCollisionWorld,19893,29083
-[section .ARM.extab],19624,19624
+[section .ARM.extab],19648,19648
 dmInput,19601,20622
 _load_* (library),18068,18837
 btConeTwistConstraint,17844,20122
@@ -74,7 +74,7 @@ btAxisSweep3Internal<>,6740,9029
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6496,6496
-[section .text],6446,6446
+[section .text],6438,6438
 RefreshObjectStyles(),6280,6463
 _parse_* (library),6216,7002
 btDbvt,6160,7865
@@ -164,7 +164,7 @@ _glfwAndroidHandleInput,3064,3232
 _tdefl_* (library),3063,3524
 _glfwJoy,3008,25
 _meta_* (library),3008,3855
-[section .got],2980,2980
+[section .got],2976,2976
 _sync_* (library),2969,3402
 btMiniSDF,2968,3208
 b2WeldJoint,2964,3839
@@ -422,8 +422,8 @@ dmHashReverse64,784,848
 InitCFF2Font(),784,838
 LZ4HC_searchExtDict,784,836
 dmCrypt,780,998
+[section .data],772,772
 _sign_* (library),772,926
-[section .data],769,769
 glfwAndroidHandleInput,768,839
 secp384r1_T,768,796
 DebugDrawcallback,768,1359
@@ -594,6 +594,7 @@ oggbyte_read4,412,458
 FontGetOutlineBounds(),408,523
 LZ4_uncompress,407,454
 _state_* (library),404,758
+_RenderTargetDesc_* (library),404,1146
 snprintf(),400,751
 _glfwAndroidGetSafeAreaInsets,400,478
 parse_body,400,459
@@ -616,7 +617,6 @@ ProcessOneJob(),380,467
 ConfigFileGetInt,380,445
 [section .init_array],380,380
 _check_* (library),380,493
-_RenderTargetDesc_* (library),375,1053
 JobSystemCreateJob,372,439
 mbrtoc32,372,472
 _malloc_* (library),368,545
@@ -1873,7 +1873,6 @@ expr_toval,16,43
 quant_look,16,43
 _vec3_* (library),16,37
 _supported_* (library),16,37
-[LOAD #3 [RW]],15,0
 _ARMV7PILongThunk_* (library),15,15
 _row_* (library),13,111
 btOverlappingPairCache,12,156
@@ -2065,6 +2064,7 @@ TAG_SIZE,8,29
 TAG_WAVE,8,29
 TAG_UL,8,27
 [section .fini_array],8,8
+[LOAD #3 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 TextLayoutCreateMarkup(),4,123
 btTriangleCallback,4,108
@@ -2340,17 +2340,17 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7715436
-[section .debug_loc],0,4213766
-[section .debug_line],0,3330017
-[section .debug_str],0,2535478
-[section .debug_ranges],0,1378640
-[section .debug_abbrev],0,538435
-[section .debug_frame],0,352800
+[section .debug_info],0,7718589
+[section .debug_loc],0,4218180
+[section .debug_line],0,3332285
+[section .debug_str],0,2536659
+[section .debug_ranges],0,1379904
+[section .debug_abbrev],0,538437
+[section .debug_frame],0,352924
 [section .symtab],0,48400
 [section .strtab],0,19998
 [ELF Headers],0,1360
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,8
+[Unmapped],0,7
