@@ -8,7 +8,7 @@ basist,118172,116120
 dmGui,116432,151105
 dmCrash,112130,11618
 dmGameObject,111504,154354
-dmRender,102833,143510
+dmRender,102809,143486
 _compress_* (library),97191,98574
 [section .rel.dyn],78488,78488
 _pfb,65536,65561
@@ -72,7 +72,7 @@ btAxisSweep3Internal<>,6740,9029
 [section .dynsym],6624,6624
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
-[section .text],6437,6437
+[section .text],6425,6425
 RefreshObjectStyles(),6352,6535
 _parse_* (library),6216,7002
 btDbvt,6160,7865
@@ -271,6 +271,7 @@ btUniversalConstraint,1628,1945
 btCompoundCompoundLeafCallback,1592,1827
 btConvexTriangleCallback,1580,2108
 btCapsuleShape,1576,2740
+ResolveGlyphLayerRenderData(),1548,1745
 dmHashFinal32,1546,1608
 btCompoundLeafCallback,1544,1853
 _x509_* (library),1544,1641
@@ -278,7 +279,6 @@ _ov_* (library),1532,1616
 _global_* (library),1532,1852
 _lsp_* (library),1528,1596
 dmOpaqueHandleContainer<>,1524,2506
-ResolveGlyphLayerRenderData(),1512,1709
 dmVMath,1504,1710
 RefreshDecorations(),1480,1597
 btVec3PointTriDist2(),1472,1600
@@ -2315,11 +2315,11 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7495132
-[section .debug_loc],0,4045373
-[section .debug_line],0,3249148
+[section .debug_info],0,7495305
+[section .debug_loc],0,4045339
+[section .debug_line],0,3249189
 [section .debug_str],0,2408749
-[section .debug_ranges],0,1350040
+[section .debug_ranges],0,1350232
 [section .debug_abbrev],0,530771
 [section .debug_frame],0,339428
 [section .symtab],0,45056
@@ -2328,4 +2328,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,9
+[Unmapped],0,5

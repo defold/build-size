@@ -5,14 +5,14 @@ dmGraphics,311414,367815
 _mbedtls_* (library),229695,257674
 dmGameObject,153674,189437
 dmGui,149022,175137
-dmRender,140614,175919
+dmRender,140645,175950
 (anonymous namespace),138695,194168
 basist,137066,133274
 dmCrash,119265,15297
 std,109468,116186
 _compress_* (library),107860,108935
 dmHashTable<>,83725,94635
-[section .text],70455,70455
+[section .text],70440,70440
 _pfb,65536,65569
 dmPhysics,58071,74837
 dmParticle,58010,65782
@@ -360,9 +360,9 @@ _CollisionObjectDesc_* (library),1490,2448
 tcp_methods,1488,1524
 _TileSet_* (library),1487,2394
 Layout<>(),1484,1555
+ResolveGlyphLayerRenderData(),1482,1623
 expr_table,1475,1510
 _CollisionShape_* (library),1470,1982
-ResolveGlyphLayerRenderData(),1434,1575
 DebugDrawcallback,1432,1959
 tremolo_mergesort,1424,1466
 btNullPairCache,1422,3089
@@ -2323,11 +2323,11 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,8234495
-[section .debug_loc],0,6723744
-[section .debug_line],0,3160896
+[section .debug_info],0,8234866
+[section .debug_loc],0,6724139
+[section .debug_line],0,3160973
 [section .debug_str],0,2417722
-[section .debug_ranges],0,1211696
+[section .debug_ranges],0,1211552
 [section .debug_abbrev],0,521985
 [section .symtab],0,26232
 [section .strtab],0,17363
@@ -2335,4 +2335,4 @@ disableCcd,1,35
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,96
-[Unmapped],0,5
+[Unmapped],0,10
