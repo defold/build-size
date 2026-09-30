@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,766525,930956
-dmScript,671008,172059
-dmGraphics,318116,374740
+dmGameSystem,766556,930987
+dmScript,671086,172137
+dmGraphics,331481,389960
 _mbedtls_* (library),229695,257674
 std,174637,199837
 dmGameObject,153674,189437
@@ -12,7 +12,7 @@ basist,123729,119901
 dmCrash,119265,15297
 _compress_* (library),114295,115370
 dmHashTable<>,83725,94635
-[section .text],71906,71906
+[section .text],71994,71994
 _pfb,65536,65569
 dmPhysics,58071,74837
 dmParticle,58010,65782
@@ -26,7 +26,7 @@ btConvexHullInternal,30460,31937
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
 dmEngine,27772,30969
-_GLOBAL_* (library),25556,30903
+_GLOBAL_* (library),25540,30887
 btDiscreteDynamicsWorld,25213,29104
 dmInput,24737,25447
 _load_* (library),23454,23631
@@ -118,10 +118,10 @@ dmDeviceOpenSL,5790,6667
 GenerateDistanceField(),5743,5855
 InterpretCharString(),5689,5784
 b2SeparationFunction,5637,5895
+_ShaderDesc_* (library),5616,7885
 _meta_* (library),5614,6181
 btGImpactMeshShapePart,5604,8462
 b2WheelJoint,5565,6753
-_ShaderDesc_* (library),5544,7813
 _cconv_* (library),5543,5866
 btMinkowskiPenetrationDepthSolver,5395,6098
 btVoronoiSimplexSolver,5360,6161
@@ -152,7 +152,7 @@ btGImpactMeshShape,4421,6705
 b2EPCollider,4325,4510
 _hdr_* (library),4303,4570
 btOptimizedBvh,4298,5563
-_luaopen_* (library),4227,4716
+_luaopen_* (library),4249,4738
 b2PolygonShape,4217,4966
 sincos_lookup0,4143,4182
 sincos_lookup1,4135,4174
@@ -334,8 +334,8 @@ _TextureSet_* (library),1641,1994
 _bcread_* (library),1639,1679
 serialize_get,1635,1673
 _fetch_* (library),1631,1720
-[section .bss],1628,0
 _write_* (library),1626,1774
+[section .bss],1620,0
 btAABB,1612,1709
 b2Joint,1610,2015
 _Mesh_* (library),1591,1834
@@ -1396,7 +1396,7 @@ ResourceTypeFont1134,128,45
 ResourceTypeGameObject230,128,50
 ResourceTypeGui347,128,43
 ResourceTypeGuiScript158,128,49
-ResourceTypeLight280,128,45
+ResourceTypeLight281,128,45
 ResourceTypeLua195,128,43
 ResourceTypeOgg410,128,43
 ResourceTypeOpus411,128,44
@@ -2011,7 +2011,6 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
-[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 reltable.hookf,20,59
@@ -2283,6 +2282,7 @@ vkMapMemory,8,36
 TAG_UL,8,35
 json_array,8,35
 vkCmdDraw,8,34
+[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2330,16 +2330,16 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,8521790
-[section .debug_loc],0,7062300
-[section .debug_line],0,3246719
-[section .debug_str],0,2544504
-[section .debug_ranges],0,1270656
-[section .debug_abbrev],0,527407
+[section .debug_info],0,8531403
+[section .debug_loc],0,7076654
+[section .debug_line],0,3251681
+[section .debug_str],0,2548376
+[section .debug_ranges],0,1273952
+[section .debug_abbrev],0,527437
 [section .symtab],0,28104
 [section .strtab],0,18513
 [ELF Headers],0,2240
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,96
-[Unmapped],0,16
+[Unmapped],0,18
