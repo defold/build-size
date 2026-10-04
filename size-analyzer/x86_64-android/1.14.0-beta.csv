@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,766394,930403
+dmGameSystem,766424,930433
 dmScript,670280,171265
 dmGraphics,331450,389929
 _mbedtls_* (library),229695,257674
-std,174640,199840
+std,174644,199844
 dmGameObject,166871,203760
 dmGui,149285,175487
 dmRender,141509,176895
@@ -12,7 +12,7 @@ basist,123729,119901
 dmCrash,119265,15297
 _compress_* (library),114295,115370
 dmHashTable<>,81685,92350
-[section .text],72027,72027
+[section .text],72035,72035
 _pfb,65536,65569
 dmPhysics,58071,74837
 dmParticle,58010,65782
@@ -25,7 +25,7 @@ btCollisionWorld,30610,38976
 btConvexHullInternal,30460,31937
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,27967,31164
+dmEngine,27975,31172
 _GLOBAL_* (library),25524,30871
 btDiscreteDynamicsWorld,25213,29104
 dmInput,24737,25447
@@ -144,10 +144,10 @@ btBoxShape,4692,6171
 btGeneric6DofSpringConstraint,4654,5943
 dmLog,4645,5365
 btConvexPolyhedron,4597,5128
-TextLayoutLegacyCreateInternal(),4500,4632
+TextLayoutLegacyCreateInternal(),4513,4645
 btMiniSDF,4476,4636
+DecodeGlyf(),4447,4523
 _tab_* (library),4436,5067
-DecodeGlyf(),4427,4503
 btGImpactMeshShape,4421,6705
 b2EPCollider,4325,4510
 _hdr_* (library),4303,4570
@@ -188,6 +188,7 @@ _mac_* (library),3560,3783
 InplaceSolverIslandCallback,3493,3996
 SphereTriangleDetector,3462,4088
 btConvexShape,3460,4044
+_GlyphBank_* (library),3450,5575
 _crt_* (library),3418,3566
 b2MouseJoint,3407,4640
 TextLayoutGetGlyphRenderData(),3399,3506
@@ -204,7 +205,6 @@ _Emitter_* (library),3163,4620
 _optimize_* (library),3161,3214
 expr_binop,3160,3195
 init_gl,3160,3192
-_GlyphBank_* (library),3150,5049
 cp_next,3127,3159
 _carith_* (library),3102,3221
 secp384r1_T,3096,3132
@@ -329,8 +329,8 @@ _TextureImage_* (library),1676,2249
 _VertexAttribute_* (library),1670,2778
 btSphereShape,1666,2376
 b2ContactManager,1662,2009
+[section .bss],1661,0
 btSphereTriangleCollisionAlgorithm,1659,3024
-[section .bss],1641,0
 _TextureSet_* (library),1641,1994
 _bcread_* (library),1639,1679
 serialize_get,1635,1673
@@ -612,9 +612,9 @@ JobSystemPushJob,662,703
 poly1305_process,662,703
 b2PolygonContact,662,1020
 _prng_* (library),662,779
+[LOAD #1 [RX]],658,658
 parse_body,655,690
 _Value_* (library),654,884
-[LOAD #1 [RX]],650,650
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
@@ -796,6 +796,7 @@ _glfwParseGLVersion,420,464
 _StartRecord_* (library),420,756
 inet_pushresolved,418,460
 _packet_* (library),416,507
+FontLoadFromMemory(),415,469
 operator new[](),414,592
 _index_* (library),414,453
 _CollectionFactoryDesc_* (library),414,834
@@ -821,7 +822,6 @@ _call_* (library),404,446
 FontCollectionSetNamedStyle(),400,508
 _ctr_* (library),398,455
 searchpath,397,432
-FontLoadFromMemory(),396,450
 b2DistanceProxy,394,455
 _PlayAnimation_* (library),394,683
 _callback_* (library),393,434
@@ -836,6 +836,7 @@ _struct_* (library),384,423
 _SetViewProjection_* (library),384,529
 _TriggerEvent_* (library),384,513
 _ResetConstant_* (library),384,648
+GlyphBankGetGlyph(),383,468
 _toreg_* (library),382,426
 strscan_hex,382,418
 btSingleRayCallback,381,563
@@ -899,7 +900,6 @@ entropy_update,337,376
 _MorphWeightTrack_* (library),336,465
 _opaque_* (library),335,382
 _start_* (library),334,381
-GlyphBankGetGlyph(),333,418
 dmArrayUtil,332,397
 _CHARSET_* (library),332,381
 cpparser,331,364
@@ -1393,7 +1393,7 @@ LiveUpdateExt294,128,41
 ResourceTypeAnim35,128,43
 ResourceTypeAnimationSet103,128,52
 ResourceTypeCollection387,128,50
-ResourceTypeFont1134,128,45
+ResourceTypeFont1136,128,45
 ResourceTypeGameObject230,128,50
 ResourceTypeGui347,128,43
 ResourceTypeGuiScript158,128,49
@@ -2330,11 +2330,11 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,8576396
-[section .debug_loc],0,7125979
-[section .debug_line],0,3272366
-[section .debug_str],0,2551366
-[section .debug_ranges],0,1278240
+[section .debug_info],0,8576655
+[section .debug_loc],0,7126137
+[section .debug_line],0,3272464
+[section .debug_str],0,2551585
+[section .debug_ranges],0,1278336
 [section .debug_abbrev],0,528201
 [section .symtab],0,28104
 [section .strtab],0,18513
@@ -2342,4 +2342,4 @@ disableCcd,1,35
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,96
-[Unmapped],0,10
+[Unmapped],0,14

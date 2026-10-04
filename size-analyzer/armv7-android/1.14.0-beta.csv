@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,632589,140422
-dmGameSystem,587624,783700
-[section .rodata],397645,397645
+dmGameSystem,587700,783776
+[section .rodata],397693,397693
 dmGraphics,274436,364288
 _mbedtls_* (library),175074,213217
 dmGameObject,126070,171358
@@ -11,7 +11,7 @@ basist,112036,110556
 dmRender,103321,144087
 _compress_* (library),102175,103688
 std,98302,145134
-[section .rel.dyn],79208,79208
+[section .rel.dyn],79256,79256
 [section .ARM.exidx],66192,66192
 _pfb,65536,65561
 dmHashTable<>,57040,70958
@@ -74,7 +74,7 @@ btAxisSweep3Internal<>,6740,9029
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6496,6496
-[section .text],6462,6462
+[section .text],6474,6474
 RefreshObjectStyles(),6352,6535
 _parse_* (library),6216,7002
 btDbvt,6160,7865
@@ -232,11 +232,11 @@ TextLayoutInitializeDecorationGeometry(),1924,2028
 cp_next,1916,2100
 btDefaultCollisionConfiguration,1900,2803
 _err_* (library),1898,3263
+[section .bss],1889,0
 _vorbis_* (library),1880,2040
 _scalar_* (library),1880,2283
 btGImpactMeshShape,1876,4448
 _cipher_* (library),1872,2017
-[section .bss],1869,0
 _jpeg_* (library),1867,2247
 b2Simplex,1864,2298
 btCollisionObject,1860,2986
@@ -362,6 +362,7 @@ RT3,1024,20
 dmMutex,1024,1494
 dmExtension,1020,1809
 btCollisionShape,1016,1794
+_GlyphBank_* (library),1010,2879
 _normalize_* (library),1000,1155
 _bcread_* (library),994,1026
 FontTrueTypeCreate(),988,1048
@@ -377,7 +378,6 @@ serialize_get,948,994
 dmPath,944,1170
 btAABB,940,1045
 _rsassa_* (library),928,1054
-_GlyphBank_* (library),926,2593
 btBoxBoxCollisionAlgorithm,924,2271
 dmHashReverseErase32,917,986
 TextLayoutInitializeObjectStyles(),916,1014
@@ -686,6 +686,7 @@ _gxx_* (library),317,386
 ParseFloat(),316,399
 _glfwTerminateJoysticks,316,388
 wcsnrtombs,316,421
+GlyphBankGetGlyph(),312,405
 meth_accept,312,372
 _vmevent_* (library),312,443
 FontLoadFromMemory(),308,386
@@ -728,7 +729,6 @@ socket_accept,280,342
 _TextureSetAnimation_* (library),278,775
 JobThread(),276,376
 b2WorldRayCastWrapper,272,384
-GlyphBankGetGlyph(),272,365
 dmHashEnableReverseHash,272,344
 ConfigFileGetString,272,340
 [section .dynamic],272,272
@@ -1120,7 +1120,7 @@ LiveUpdateExt294,128,33
 ResourceTypeAnim35,128,35
 ResourceTypeAnimationSet103,128,44
 ResourceTypeCollection387,128,42
-ResourceTypeFont1134,128,37
+ResourceTypeFont1136,128,37
 ResourceTypeGameObject230,128,42
 ResourceTypeGui347,128,35
 ResourceTypeGuiScript158,128,41
@@ -1761,6 +1761,7 @@ _ZTIDi,31,54
 _ZTIDn,31,54
 _ZTIDs,31,54
 _ZTIDu,31,54
+[LOAD #3 [RW]],31,0
 _ZTSPKDh,30,55
 _ZTSPKDi,30,55
 _ZTSPKDn,30,55
@@ -2066,7 +2067,6 @@ TAG_SIZE,8,29
 TAG_WAVE,8,29
 TAG_UL,8,27
 [section .fini_array],8,8
-[LOAD #3 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 TextLayoutCreateMarkup(),4,123
 btTriangleCallback,4,108
@@ -2342,12 +2342,12 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,7759693
-[section .debug_loc],0,4260512
-[section .debug_line],0,3357859
-[section .debug_str],0,2543999
+[section .debug_info],0,7759960
+[section .debug_loc],0,4260353
+[section .debug_line],0,3357939
+[section .debug_str],0,2544218
 [section .debug_ranges],0,1390568
-[section .debug_abbrev],0,539255
+[section .debug_abbrev],0,539273
 [section .debug_frame],0,355012
 [section .symtab],0,48400
 [section .strtab],0,19998
@@ -2355,4 +2355,4 @@ disableCcd,1,27
 [section .shstrtab],0,368
 [section .comment],0,348
 [section .ARM.attributes],0,60
-[Unmapped],0,2
+[Unmapped],0,3
