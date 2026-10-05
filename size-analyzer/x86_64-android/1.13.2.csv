@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,763386,926995
+dmGameSystem,763416,927025
 dmScript,670653,171704
 dmGraphics,311414,367815
 _mbedtls_* (library),229695,257674
@@ -9,10 +9,10 @@ dmRender,140645,175950
 (anonymous namespace),138695,194168
 basist,137066,133274
 dmCrash,119265,15297
-std,109468,116186
+std,109472,116190
 _compress_* (library),107860,108935
 dmHashTable<>,83725,94635
-[section .text],70440,70440
+[section .text],70448,70448
 _pfb,65536,65569
 dmPhysics,58071,74837
 dmParticle,58010,65782
@@ -25,7 +25,7 @@ btCollisionWorld,30610,38976
 btConvexHullInternal,30460,31937
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,29330,32547
+dmEngine,29338,32555
 _GLOBAL_* (library),25336,30575
 btDiscreteDynamicsWorld,25213,29104
 dmInput,24737,25447
@@ -144,10 +144,10 @@ btBoxShape,4692,6171
 btGeneric6DofSpringConstraint,4654,5943
 dmLog,4633,5259
 btConvexPolyhedron,4597,5128
-TextLayoutLegacyCreateInternal(),4500,4632
+TextLayoutLegacyCreateInternal(),4513,4645
 btMiniSDF,4476,4636
+DecodeGlyf(),4447,4523
 _tab_* (library),4436,5067
-DecodeGlyf(),4427,4503
 btGImpactMeshShape,4421,6705
 b2EPCollider,4325,4510
 _hdr_* (library),4303,4570
@@ -188,6 +188,7 @@ _mac_* (library),3560,3783
 InplaceSolverIslandCallback,3493,3996
 SphereTriangleDetector,3462,4088
 btConvexShape,3460,4044
+_GlyphBank_* (library),3450,5575
 _crt_* (library),3418,3566
 b2MouseJoint,3407,4640
 TextLayoutGetGlyphRenderData(),3399,3506
@@ -204,7 +205,6 @@ _ffh_* (library),3167,4171
 _Emitter_* (library),3163,4620
 _optimize_* (library),3161,3214
 expr_binop,3160,3195
-_GlyphBank_* (library),3150,5049
 cp_next,3127,3159
 init_gl,3113,3145
 _carith_* (library),3102,3221
@@ -328,12 +328,12 @@ _VertexAttribute_* (library),1670,2778
 btSphereShape,1666,2376
 b2ContactManager,1662,2009
 btSphereTriangleCollisionAlgorithm,1659,3024
+[section .bss],1641,0
 _TextureSet_* (library),1641,1994
 _bcread_* (library),1639,1679
 serialize_get,1635,1673
 _fetch_* (library),1631,1720
 _write_* (library),1626,1774
-[section .bss],1621,0
 btAABB,1612,1709
 b2Joint,1610,2015
 _Mesh_* (library),1591,1834
@@ -603,12 +603,12 @@ _ctx_* (library),675,1074
 FontTrueTypeGetGlyphIndex(),669,739
 lex_number,667,702
 JobSystemDestroy,663,704
-[LOAD #1 [RX]],663,663
 JobSystemPushJob,662,703
 poly1305_process,662,703
 b2PolygonContact,662,1020
 _prng_* (library),662,779
 parse_body,655,690
+[LOAD #1 [RX]],655,655
 _Value_* (library),654,884
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
@@ -792,6 +792,7 @@ _glfwParseGLVersion,420,464
 _StartRecord_* (library),420,756
 inet_pushresolved,418,460
 _packet_* (library),416,507
+FontLoadFromMemory(),415,469
 operator new[](),414,592
 _index_* (library),414,453
 _CollectionFactoryDesc_* (library),414,834
@@ -817,7 +818,6 @@ _call_* (library),404,446
 FontCollectionSetNamedStyle(),400,508
 _ctr_* (library),398,455
 searchpath,397,432
-FontLoadFromMemory(),396,450
 b2DistanceProxy,394,455
 _PlayAnimation_* (library),394,683
 _callback_* (library),393,434
@@ -832,6 +832,7 @@ _struct_* (library),384,423
 _SetViewProjection_* (library),384,529
 _TriggerEvent_* (library),384,513
 _ResetConstant_* (library),384,648
+GlyphBankGetGlyph(),383,468
 _toreg_* (library),382,426
 strscan_hex,382,418
 btSingleRayCallback,381,563
@@ -893,7 +894,6 @@ entropy_update,337,376
 _MorphWeightTrack_* (library),336,465
 _opaque_* (library),335,382
 _start_* (library),334,381
-GlyphBankGetGlyph(),333,418
 dmArrayUtil,332,397
 _CHARSET_* (library),332,381
 cpparser,331,364
@@ -1385,7 +1385,7 @@ LiveUpdateExt294,128,41
 ResourceTypeAnim35,128,43
 ResourceTypeAnimationSet103,128,52
 ResourceTypeCollection378,128,50
-ResourceTypeFont1134,128,45
+ResourceTypeFont1136,128,45
 ResourceTypeGameObject230,128,50
 ResourceTypeGui347,128,43
 ResourceTypeGuiScript158,128,49
@@ -2004,6 +2004,7 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
+[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 reltable.hookf,20,59
@@ -2275,7 +2276,6 @@ vkMapMemory,8,36
 TAG_UL,8,35
 json_array,8,35
 vkCmdDraw,8,34
-[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2323,11 +2323,11 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,8234866
-[section .debug_loc],0,6724139
-[section .debug_line],0,3160973
-[section .debug_str],0,2417722
-[section .debug_ranges],0,1211552
+[section .debug_info],0,8235125
+[section .debug_loc],0,6724297
+[section .debug_line],0,3161071
+[section .debug_str],0,2417941
+[section .debug_ranges],0,1211648
 [section .debug_abbrev],0,521985
 [section .symtab],0,26232
 [section .strtab],0,17363
@@ -2335,4 +2335,4 @@ disableCcd,1,35
 [section .shstrtab],0,374
 [section .comment],0,348
 [section .debug_frame],0,96
-[Unmapped],0,10
+[Unmapped],0,6
