@@ -1,34 +1,34 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,766424,930433
-dmScript,670280,171265
-dmGraphics,331398,389877
+dmGameSystem,766480,930489
+dmScript,671541,173427
+dmGraphics,332508,391476
 _mbedtls_* (library),229695,257674
 std,174581,199781
-dmGameObject,166871,203760
-dmGui,149285,175487
+dmGameObject,166910,203799
+dmGui,149338,175540
 dmRender,141509,176895
 (anonymous namespace),138695,194168
 basist,123729,119901
 dmCrash,119265,15297
 _compress_* (library),114295,115370
 dmHashTable<>,81685,92350
-[section .text],71954,71954
+[section .text],72015,72015
 _pfb,65536,65569
 dmPhysics,58071,74837
 dmParticle,58010,65782
 _decompress_* (library),43365,44131
 dmResource,39922,48891
-_cf_* (library),35509,42754
+_cf_* (library),35502,42747
 dmSound,34160,39667
 dmRig,31207,35027
 btCollisionWorld,30610,38976
 btConvexHullInternal,30460,31937
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,27967,31164
-_GLOBAL_* (library),25524,30875
+dmEngine,28094,31291
+_GLOBAL_* (library),25516,30867
 btDiscreteDynamicsWorld,25213,29104
-dmInput,24737,25447
+dmInput,25053,25763
 _load_* (library),23454,23631
 libunwind,23347,25261
 dmDDF,22194,28553
@@ -41,7 +41,7 @@ _lua_* (library),16716,20335
 vwin8192,16384,16417
 __cxxabiv1,16075,23964
 btIDebugDraw,15765,17218
-dmHID,15358,20503
+dmHID,15412,20557
 btGImpactCollisionAlgorithm,15245,18066
 btGeneric6DofConstraint,14081,16475
 btSliderConstraint,13344,14682
@@ -99,10 +99,10 @@ btPersistentManifold,6943,7738
 _decl_* (library),6759,7116
 btConvexPlaneCollisionAlgorithm,6757,8260
 btConvexConcaveCollisionAlgorithm,6740,8988
+dmPlatform,6592,16535
 _alloc_* (library),6574,6850
 b2RevoluteJoint,6519,8072
 btCompoundCollisionAlgorithm,6506,8206
-dmPlatform,6502,16289
 btPolyhedralConvexShape,6438,7222
 _tls13_* (library),6092,6707
 _process_* (library),6000,6177
@@ -215,8 +215,8 @@ btTriangleMeshShape,3065,4540
 dmSSLSocket,3055,3495
 _pcm_* (library),3035,3185
 astc_helpers,3031,362
+dmNativeAndroidDispatchInput,3011,3064
 dmNativeJoy,3008,36
-dmNativeAndroidDispatchInput,2974,3027
 btCollisionObject,2958,3948
 _except_* (library),2948,2948
 char2escape,2912,2948
@@ -323,9 +323,9 @@ btTriangleIndexVertexArray,1736,2976
 JobSystemUpdate,1733,1821
 _calc_* (library),1697,2007
 dmImage,1690,1937
+[section .bss],1681,0
 _TextureImage_* (library),1676,2249
 _VertexAttribute_* (library),1670,2778
-[section .bss],1669,0
 btSphereShape,1666,2376
 btSphereTriangleCollisionAlgorithm,1659,3024
 _TextureSet_* (library),1641,1994
@@ -382,6 +382,7 @@ btTriangleRaycastCallback,1342,1617
 _initialize_* (library),1341,1388
 dmMutex,1334,1660
 LogInternal,1331,1367
+addInputEvents,1329,1368
 b2BroadPhase,1324,1900
 _add_* (library),1322,1396
 _name_* (library),1322,1405
@@ -390,7 +391,6 @@ _func_* (library),1318,1596
 _RenderTargetDesc_* (library),1316,2138
 optset,1312,1367
 dmCrypt,1309,1487
-addInputEvents,1286,1325
 b2Joint,1285,1690
 global_select,1274,1312
 SegmentsIntersect(),1269,1338
@@ -486,6 +486,7 @@ _verify_* (library),910,1033
 ParseSize(),909,995
 JobSystemSetParent,909,952
 dmHashReverse32,906,946
+_Reboot_* (library),904,1499
 _EmbeddedInstanceDesc_* (library),899,1367
 _InstanceDesc_* (library),899,1324
 btBridgedManifoldResult,899,1097
@@ -519,11 +520,11 @@ ResourceChunkCacheEvictMemory(),848,928
 engine_main(),846,890
 CreateGLSurfaceForWindow,841,890
 _profile_* (library),841,980
+dmNativeInput,840,38
 _cjson_* (library),840,922
 _build_* (library),839,1003
 dmNativeAndroidFlushEvents,835,886
 dmHashBuffer64,833,872
-dmNativeInput,832,38
 _Texture_* (library),829,1358
 _PlaySound_* (library),827,1436
 _SoundDesc_* (library),827,1387
@@ -581,7 +582,6 @@ _SetCamera_* (library),711,1067
 _MeshDesc_* (library),711,1230
 _packed_* (library),710,761
 _Cubemap_* (library),708,1186
-_Reboot_* (library),708,1183
 final_gl,707,740
 _ResourceEntry_* (library),703,979
 _EmbeddedComponentDesc_* (library),702,1090
@@ -1342,6 +1342,7 @@ _ZTIPDs,136,168
 _ZTIPDu,136,168
 recursedeletenode(),135,203
 dmNativeAndroidPlatformVerifySurface,135,196
+dmNativeInputMouseClick,135,183
 JobSystemCancelJob,135,178
 Particle_GenerateVertexDataPartial,134,193
 hash_sparse,134,170
@@ -1376,7 +1377,7 @@ auxiliar_add2group,128,171
 profile_signal,128,167
 vwin64,128,159
 ComponentTypeAnim64,128,44
-ComponentTypeGui4224,128,45
+ComponentTypeGui4227,128,45
 ComponentTypeLight237,128,46
 ComponentTypeMesh1206,128,46
 ComponentTypeParticleFX1246,128,52
@@ -1433,7 +1434,6 @@ dLib,119,317
 onInputQueueDestroyed,118,164
 _seek_* (library),118,155
 bcread_error,118,155
-dmNativeInputMouseClick,117,165
 expr_tonextreg,117,156
 FontCollectionGetNamedStyleEffects(),116,199
 _type_* (library),116,161
@@ -1808,6 +1808,8 @@ AudioDecoderWav,44,84
 cpgrowstack,44,80
 cp_err,44,75
 MarkupCreate(),43,111
+dmNativeIsMouseLeftButtonFromTouch,43,102
+dmNativeIsMousePositionFromTouch,43,100
 FontGetScaleFromSize(),43,99
 dmNativeAndroidWindowOpened,43,95
 HttpDeleteServiceInternal,43,93
@@ -2314,12 +2316,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,8576429
-[section .debug_loc],0,7103079
-[section .debug_line],0,3270255
-[section .debug_str],0,2554033
-[section .debug_ranges],0,1275360
-[section .debug_abbrev],0,529295
+[section .debug_info],0,8578083
+[section .debug_loc],0,7105186
+[section .debug_line],0,3271833
+[section .debug_str],0,2554774
+[section .debug_ranges],0,1275472
+[section .debug_abbrev],0,529301
 [section .symtab],0,28104
 [section .strtab],0,18522
 [ELF Headers],0,2240
