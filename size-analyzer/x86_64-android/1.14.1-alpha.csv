@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
 dmGameSystem,768279,932577
-dmScript,671565,173451
-dmGraphics,332474,391442
+dmScript,670958,172610
+dmGraphics,332484,391452
 _mbedtls_* (library),229695,257674
-std,174551,199751
+std,174556,199756
 dmGameObject,166910,203799
 dmGui,149564,175766
 dmRender,141639,177025
@@ -12,7 +12,7 @@ basist,123729,119901
 dmCrash,119265,15297
 _compress_* (library),114295,115370
 dmHashTable<>,81685,92350
-[section .text],77390,77390
+[section .text],77378,77378
 _pfb,65536,65569
 dmPhysics,58071,74837
 dmParticle,58010,65782
@@ -331,9 +331,9 @@ JobSystemUpdate,1733,1821
 bcwrite_proto,1730,1768
 _clib_* (library),1713,1867
 _calc_* (library),1697,2007
+[section .bss],1693,0
 dmImage,1690,1937
 gc_onestep,1689,1724
-[section .bss],1689,0
 _TextureImage_* (library),1676,2249
 _VertexAttribute_* (library),1670,2778
 btSphereShape,1666,2376
@@ -615,12 +615,12 @@ JobSystemDestroy,663,704
 JobSystemPushJob,662,703
 poly1305_process,662,703
 _prng_* (library),662,779
-[LOAD #1 [RX]],655,655
 _Value_* (library),654,884
 touchById,653,687
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
+[LOAD #1 [RX]],647,647
 bit_tohex,642,676
 b2GridAndPolygonContact,634,1027
 b2GridAndCircleContact,634,1022
@@ -2246,12 +2246,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9161653
-[section .debug_loc],0,7702773
-[section .debug_line],0,3458586
-[section .debug_str],0,2601139
-[section .debug_ranges],0,1366592
-[section .debug_abbrev],0,566082
+[section .debug_info],0,9161261
+[section .debug_loc],0,7702232
+[section .debug_line],0,3458449
+[section .debug_str],0,2600888
+[section .debug_ranges],0,1366560
+[section .debug_abbrev],0,566001
 [section .symtab],0,28104
 [section .strtab],0,18522
 [ELF Headers],0,2304
