@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,633337,141753
-dmGameSystem,589428,785837
-[section .rodata],387601,387601
-dmGraphics,275152,365601
+dmGameSystem,589636,786176
+[section .rodata],387665,387665
+dmGraphics,275096,365929
 _mbedtls_* (library),175074,213217
 dmGameObject,126114,171402
 dmGui,116972,151557
@@ -21,7 +21,7 @@ dmParticle,39381,48873
 _cf_* (library),33060,42889
 btConvexHullInternal,32348,34121
 dmResource,29388,40059
-_GLOBAL_* (library),26496,34278
+_GLOBAL_* (library),26576,34358
 dmSound,26101,33360
 dmRig,21808,26436
 dmEngine,21142,25705
@@ -80,7 +80,7 @@ btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6488,6488
 _alloc_* (library),6432,6780
-[section .text],6367,6367
+[section .text],6359,6359
 _parse_* (library),6272,7058
 btDbvt,6160,7865
 btPolyhedralContactClipping,6108,6969
@@ -1767,7 +1767,6 @@ wcsrtombs,20,62
 hookf.hooknames,20,52
 g_Window,20,25
 stbi__compute_huffman_codes(),19,100
-[LOAD #3 [RW]],19,0
 dmNativeAndroidPlatformDestroyWindow,16,101
 global_create6,16,95
 global_create,16,94
@@ -2247,6 +2246,7 @@ vkMapMemory,4,28
 json_array,4,27
 vkCmdDraw,4,26
 stbi__process_frame_header(),3,71
+[LOAD #3 [RW]],3,0
 _bionic_* (library),1,54
 gContactCalcArea3Points,1,41
 g_accelerometerEnabled,1,39
@@ -2257,13 +2257,13 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8289444
-[section .debug_loc],0,4571308
-[section .debug_line],0,3534759
-[section .debug_str],0,2592930
-[section .debug_ranges],0,1451976
-[section .debug_abbrev],0,576758
-[section .debug_frame],0,377696
+[section .debug_info],0,8289678
+[section .debug_loc],0,4571504
+[section .debug_line],0,3535059
+[section .debug_str],0,2593204
+[section .debug_ranges],0,1452088
+[section .debug_abbrev],0,576773
+[section .debug_frame],0,377700
 [section .symtab],0,47312
 [section .strtab],0,20013
 [ELF Headers],0,1400
@@ -2271,4 +2271,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,8
+[Unmapped],0,6

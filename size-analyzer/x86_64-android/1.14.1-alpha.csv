@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,768279,932577
+dmGameSystem,768449,932894
 dmScript,670958,172610
-dmGraphics,332484,391452
+dmGraphics,332307,391275
 _mbedtls_* (library),229695,257674
 std,174556,199756
 dmGameObject,166910,203799
@@ -12,7 +12,7 @@ basist,123729,119901
 dmCrash,119265,15297
 _compress_* (library),114295,115370
 dmHashTable<>,81685,92350
-[section .text],77378,77378
+[section .text],77370,77370
 _pfb,65536,65569
 dmPhysics,58071,74837
 dmParticle,58010,65782
@@ -27,7 +27,7 @@ btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
 dmEngine,28094,31291
 _lua_* (library),26934,30553
-_GLOBAL_* (library),25547,30898
+_GLOBAL_* (library),25658,31009
 btDiscreteDynamicsWorld,25213,29104
 dmInput,25053,25763
 _load_* (library),23454,23631
@@ -1927,7 +1927,6 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
-[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 reltable.hookf,20,59
@@ -2199,6 +2198,7 @@ vkMapMemory,8,36
 TAG_UL,8,35
 json_array,8,35
 vkCmdDraw,8,34
+[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2246,12 +2246,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9161261
-[section .debug_loc],0,7702232
-[section .debug_line],0,3458449
-[section .debug_str],0,2600888
-[section .debug_ranges],0,1366560
-[section .debug_abbrev],0,566001
+[section .debug_info],0,9161540
+[section .debug_loc],0,7702654
+[section .debug_line],0,3458542
+[section .debug_str],0,2601162
+[section .debug_ranges],0,1366656
+[section .debug_abbrev],0,566016
 [section .symtab],0,28104
 [section .strtab],0,18522
 [ELF Headers],0,2304
@@ -2259,4 +2259,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,7
+[Unmapped],0,9
