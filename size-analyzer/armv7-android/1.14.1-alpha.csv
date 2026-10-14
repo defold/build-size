@@ -2,7 +2,7 @@ symbol_group_name,vmsize,filesize
 dmScript,633337,141837
 dmGameSystem,590456,787106
 [section .rodata],388437,388437
-dmGraphics,275428,366440
+dmGraphics,275156,366168
 _mbedtls_* (library),176054,214464
 dmGameObject,135862,182786
 dmGui,116972,151571
@@ -11,7 +11,7 @@ basist,112036,110388
 dmRender,103473,144239
 _compress_* (library),102175,103702
 std,98742,145609
-[section .rel.dyn],79752,79752
+[section .rel.dyn],79760,79760
 [section .ARM.exidx],65608,65608
 _pfb,65536,65561
 dmHashTable<>,55700,69368
@@ -657,7 +657,6 @@ socket_sendto,352,414
 meth_sendto,352,412
 searchpath,352,411
 _ContactPointResponse_* (library),352,481
-[LOAD #1 [RX]],349,349
 TextLayoutGetDecorationGeometry(),348,464
 FontPackGlyphFaceColors(),348,449
 GetOrCreateNamedStyle(),348,441
@@ -667,6 +666,7 @@ socket_recv,344,404
 socket_send,344,404
 btNullPairCache,344,2187
 _Model_* (library),343,805
+[LOAD #1 [RX]],341,341
 FontOutlineBoundsCubicTo(),340,445
 TextLayoutGetLineOriginX(),340,431
 dmNativeWaitForAndroidWindow,340,417
@@ -754,6 +754,7 @@ PushOutlineCommand(),280,431
 SetIntersectionSegmentBounds(),280,363
 socket_accept,280,342
 _TextureSetAnimation_* (library),278,775
+_Animation_* (library),278,705
 JobThread(),276,376
 dmHashEnableReverseHash,272,344
 ConfigFileGetString,272,340
@@ -786,7 +787,6 @@ vwin128,256,280
 FSb,256,20
 RSb,256,20
 _zdist_* (library),256,333
-_Animation_* (library),254,681
 meth_send,252,358
 strbuf_resize,252,314
 RecvTimeout(),252,307
@@ -1776,7 +1776,6 @@ hookf.hooknames,20,52
 _supported_* (library),20,37
 g_Window,20,25
 stbi__compute_huffman_codes(),19,100
-[LOAD #3 [RW]],19,0
 dmNativeAndroidPlatformDestroyWindow,16,101
 global_create6,16,95
 global_create,16,94
@@ -1877,6 +1876,7 @@ b2_version,12,39
 g_SoundManager,12,31
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
+[LOAD #3 [RW]],11,0
 _depth_* (library),9,54
 _init_* (library),9,98
 btConstraintSolver,8,186
@@ -2264,11 +2264,11 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8318985
-[section .debug_loc],0,4598138
-[section .debug_line],0,3547722
-[section .debug_str],0,2600527
-[section .debug_ranges],0,1462944
+[section .debug_info],0,8319076
+[section .debug_loc],0,4598028
+[section .debug_line],0,3547691
+[section .debug_str],0,2600606
+[section .debug_ranges],0,1462888
 [section .debug_abbrev],0,578487
 [section .debug_frame],0,378524
 [section .symtab],0,47328
@@ -2278,4 +2278,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,1
+[Unmapped],0,4
