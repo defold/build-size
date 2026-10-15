@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,633337,141837
 dmGameSystem,590456,787106
-[section .rodata],388437,388437
-dmGraphics,275156,366168
+[section .rodata],388421,388421
+dmGraphics,275216,366180
 _mbedtls_* (library),176054,214464
 dmGameObject,135862,182786
 dmGui,116972,151571
@@ -81,7 +81,7 @@ btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6488,6488
 _alloc_* (library),6432,6780
-[section .text],6351,6351
+[section .text],6355,6355
 _parse_* (library),6340,7126
 btDbvt,6160,7865
 btPolyhedralContactClipping,6108,6969
@@ -1725,6 +1725,7 @@ _ZTSPDn,28,52
 _ZTSPDs,28,52
 _ZTSPDu,28,52
 gerrno,27,46
+[LOAD #3 [RW]],27,0
 _tls12_* (library),26,125
 _ZTSDh,26,49
 _ZTSDi,26,49
@@ -1876,7 +1877,6 @@ b2_version,12,39
 g_SoundManager,12,31
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
-[LOAD #3 [RW]],11,0
 _depth_* (library),9,54
 _init_* (library),9,98
 btConstraintSolver,8,186
@@ -2264,9 +2264,9 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8319076
-[section .debug_loc],0,4598028
-[section .debug_line],0,3547691
+[section .debug_info],0,8319116
+[section .debug_loc],0,4597938
+[section .debug_line],0,3547722
 [section .debug_str],0,2600606
 [section .debug_ranges],0,1462888
 [section .debug_abbrev],0,578487
@@ -2278,4 +2278,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,4
+[Unmapped],0,3
