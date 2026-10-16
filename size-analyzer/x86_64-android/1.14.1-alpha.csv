@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,769529,934045
+dmGameSystem,769525,934041
 dmScript,671170,172822
-dmGraphics,332241,391321
+dmGraphics,334744,393824
 _mbedtls_* (library),230926,259021
 dmGameObject,178010,216231
-std,174557,199757
+std,174555,199755
 dmGui,149560,175762
 dmRender,141639,177025
 (anonymous namespace),138758,194231
@@ -12,7 +12,7 @@ basist,123729,119901
 dmCrash,119265,15297
 _compress_* (library),114295,115370
 dmHashTable<>,81154,91766
-[section .text],77615,77615
+[section .text],77606,77606
 _pfb,65536,65569
 dmParticle,61768,70130
 dmPhysics,58240,75058
@@ -25,7 +25,7 @@ btCollisionWorld,30610,38976
 btConvexHullInternal,30460,31937
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,28102,31299
+dmEngine,28094,31291
 _lua_* (library),26934,30553
 _GLOBAL_* (library),25720,31071
 btDiscreteDynamicsWorld,25213,29104
@@ -1339,7 +1339,7 @@ _determine_* (library),128,174
 auxiliar_add2group,128,171
 vwin64,128,159
 ComponentTypeAnim64,128,44
-ComponentTypeGui4227,128,45
+ComponentTypeGui4232,128,45
 ComponentTypeLight237,128,46
 ComponentTypeMesh1213,128,46
 ComponentTypeParticleFX1240,128,52
@@ -1935,6 +1935,7 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
+[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 reltable.hookf,20,59
@@ -2205,7 +2206,6 @@ vkMapMemory,8,36
 TAG_UL,8,35
 json_array,8,35
 vkCmdDraw,8,34
-[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2253,11 +2253,11 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9192468
-[section .debug_loc],0,7742489
-[section .debug_line],0,3470081
-[section .debug_str],0,2609494
-[section .debug_ranges],0,1377552
+[section .debug_info],0,9193574
+[section .debug_loc],0,7729823
+[section .debug_line],0,3470744
+[section .debug_str],0,2609740
+[section .debug_ranges],0,1377696
 [section .debug_abbrev],0,567491
 [section .symtab],0,28128
 [section .strtab],0,18547
@@ -2266,4 +2266,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,7
+[Unmapped],0,2

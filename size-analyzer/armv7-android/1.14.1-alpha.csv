@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,633337,141837
-dmGameSystem,590456,787106
-[section .rodata],388421,388421
-dmGraphics,275216,366180
+dmGameSystem,590452,787102
+[section .rodata],388565,388565
+dmGraphics,278040,369004
 _mbedtls_* (library),176054,214464
 dmGameObject,135862,182786
 dmGui,116972,151571
@@ -30,7 +30,7 @@ btSequentialImpulseConstraintSolver,20760,25174
 _decompress_* (library),20200,21146
 btCollisionWorld,19893,29083
 dmInput,19821,20842
-[section .ARM.extab],19708,19708
+[section .ARM.extab],19712,19712
 _load_* (library),18068,18837
 btConeTwistConstraint,17844,20122
 btDiscreteDynamicsWorld,17148,21751
@@ -81,7 +81,7 @@ btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6488,6488
 _alloc_* (library),6432,6780
-[section .text],6355,6355
+[section .text],6351,6351
 _parse_* (library),6340,7126
 btDbvt,6160,7865
 btPolyhedralContactClipping,6108,6969
@@ -650,6 +650,7 @@ TextLayoutSetObjectStyle(),356,448
 dmNativeParseGLVersion,356,427
 collect_fd,356,415
 fscope_end,356,399
+[LOAD #1 [RX]],353,353
 unwind_phase2(),352,475
 btSingleContactCallback,352,570
 socket_connect,352,415
@@ -666,7 +667,6 @@ socket_recv,344,404
 socket_send,344,404
 btNullPairCache,344,2187
 _Model_* (library),343,805
-[LOAD #1 [RX]],341,341
 FontOutlineBoundsCubicTo(),340,445
 TextLayoutGetLineOriginX(),340,431
 dmNativeWaitForAndroidWindow,340,417
@@ -1128,7 +1128,7 @@ _ext_* (library),128,162
 vwin64,128,151
 _ConvexHull_* (library),128,432
 ComponentTypeAnim64,128,36
-ComponentTypeGui4227,128,37
+ComponentTypeGui4232,128,37
 ComponentTypeLight237,128,38
 ComponentTypeMesh1213,128,38
 ComponentTypeParticleFX1240,128,44
@@ -2264,13 +2264,13 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8319116
-[section .debug_loc],0,4597938
-[section .debug_line],0,3547722
-[section .debug_str],0,2600606
-[section .debug_ranges],0,1462888
+[section .debug_info],0,8320264
+[section .debug_loc],0,4598465
+[section .debug_line],0,3548537
+[section .debug_str],0,2600852
+[section .debug_ranges],0,1462960
 [section .debug_abbrev],0,578487
-[section .debug_frame],0,378524
+[section .debug_frame],0,378568
 [section .symtab],0,47328
 [section .strtab],0,20038
 [ELF Headers],0,1400
