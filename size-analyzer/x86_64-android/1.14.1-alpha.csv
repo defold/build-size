@@ -1,22 +1,22 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,769525,934041
-dmScript,671170,172822
-dmGraphics,334744,393824
+dmGameSystem,767013,931643
+dmScript,671231,172883
+dmGraphics,335395,394168
 _mbedtls_* (library),230926,259021
 dmGameObject,178010,216231
-std,174555,199755
+std,174552,199752
 dmGui,149560,175762
 dmRender,141639,177025
-(anonymous namespace),138758,194231
+(anonymous namespace),138734,194207
 basist,123729,119901
 dmCrash,119265,15297
 _compress_* (library),114295,115370
 dmHashTable<>,81154,91766
-[section .text],77606,77606
+[section .text],77576,77576
 _pfb,65536,65569
 dmParticle,61768,70130
 dmPhysics,58240,75058
-_cf_* (library),43576,50821
+_cf_* (library),43506,50751
 _decompress_* (library),43365,44131
 dmResource,39922,48891
 dmSound,34050,39615
@@ -25,9 +25,9 @@ btCollisionWorld,30610,38976
 btConvexHullInternal,30460,31937
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,28094,31291
+dmEngine,28257,31529
 _lua_* (library),26934,30553
-_GLOBAL_* (library),25720,31071
+_GLOBAL_* (library),25680,30975
 btDiscreteDynamicsWorld,25213,29104
 dmInput,25053,25763
 _load_* (library),23454,23631
@@ -83,18 +83,18 @@ _get_* (library),8197,9550
 vwin4096,8192,8225
 _decl_* (library),8053,8331
 b2DynamicTree,7989,9180
-_Register_* (library),7971,11972
 _mz_* (library),7960,8612
 b2ContactSolver,7934,8659
+_Register_* (library),7906,11794
 dmSys,7869,9582
 dmConnectionPool,7862,9169
 _BC_* (library),7817,11026
 _parse_* (library),7760,8234
 _alloc_* (library),7557,7833
 _cxa_* (library),7484,8802
+dmBuffer,7444,9045
 _zip_* (library),7435,7963
 dmConfigFile,7434,8464
-dmBuffer,7396,8997
 b2GearJoint,7249,8101
 _tab_* (library),7208,7839
 btHashedOverlappingPairCache,7141,10528
@@ -197,8 +197,8 @@ btConvexShape,3460,4044
 _GlyphBank_* (library),3450,5575
 _crt_* (library),3418,3566
 MarkupCreateInternal(),3386,3489
+b2PolygonShape,3360,4109
 btPoint2PointConstraint,3359,4586
-b2PolygonShape,3356,4105
 fs_finish,3345,3379
 FontPackDecorationVertices(),3312,3422
 btTriangleShape,3305,4560
@@ -264,11 +264,11 @@ btConvexInternalShape,2419,3491
 _file_* (library),2416,2606
 _x509_* (library),2405,2502
 dmNativeAndroidDiscoverJoysticks,2382,2439
-[section .rela.dyn],2376,2376
 btTypedConstraint,2368,2654
 btGjkEpaSolver2,2362,2605
 btPrimitiveTriangle,2362,2635
 _app_* (library),2360,2649
+[section .rela.dyn],2352,2352
 gridRaycast<>(),2346,2606
 b2Contact,2342,2243
 btDefaultCollisionConfiguration,2339,3178
@@ -332,9 +332,9 @@ JobSystemUpdate,1733,1821
 _calc_* (library),1733,2043
 bcwrite_proto,1730,1768
 _clib_* (library),1713,1867
-[section .bss],1701,0
 dmImage,1690,1937
 gc_onestep,1689,1724
+[section .bss],1688,0
 _TextureImage_* (library),1676,2249
 _VertexAttribute_* (library),1670,2778
 btSphereShape,1666,2376
@@ -352,7 +352,6 @@ b2ChainShape,1581,2563
 parse_body,1580,1615
 btBoxBoxCollisionAlgorithm,1576,2843
 dmVMath,1574,1704
-[section .data],1573,1573
 dmExtension,1570,2167
 dmZlib,1563,1700
 _state_* (library),1563,1861
@@ -360,6 +359,7 @@ secp256r1_T,1560,1596
 _loadf_* (library),1554,1625
 _CompiledStyle_* (library),1553,1983
 _ov_* (library),1551,1619
+[section .data],1549,1549
 _LOOKUP_* (library),1548,1666
 _LabelDesc_* (library),1544,2228
 dmHashUpdateBuffer64,1528,1573
@@ -550,7 +550,6 @@ optget,800,855
 btHeightfieldTerrainShape,799,908
 CancelJobInternal(),799,866
 _ComponentDesc_* (library),796,1078
-_StreamDesc_* (library),794,981
 dmNativeAndroidPlatformSwapBuffers,793,852
 BuildSimpleContours(),787,896
 mgf_mask,787,820
@@ -567,10 +566,10 @@ dmNativeAndroidPlatformGetWindowRefreshRate,765,833
 parse_assignment,765,806
 ll_loadfunc,764,800
 _ext_* (library),760,802
-[section .init_array],760,760
 LZ4MID_searchExtDict,759,804
 BlurBitmapChannel(),756,810
 ExtendCubicAxisBounds(),753,843
+[section .init_array],752,752
 intersectRectQuad2(),751,805
 _Bone_* (library),751,965
 _handshake_* (library),749,792
@@ -616,12 +615,12 @@ JobSystemDestroy,663,704
 JobSystemPushJob,662,703
 poly1305_process,662,703
 _prng_* (library),662,779
-[LOAD #1 [RX]],655,655
 _Value_* (library),654,884
 touchById,653,687
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
+[LOAD #1 [RX]],647,647
 bit_tohex,642,676
 b2GridAndPolygonContact,634,1027
 b2GridAndCircleContact,634,1022
@@ -1125,7 +1124,6 @@ err_argmsg,217,252
 panic,216,246
 _GamepadMapsRuntime_* (library),216,353
 _SetScale_* (library),216,343
-_BufferDesc_* (library),216,339
 _GamepadMaps_* (library),216,339
 _ClearColor_* (library),216,339
 _RunScript_* (library),216,337
@@ -1898,7 +1896,6 @@ app_dummy,33,67
 TAG_SPRITE,32,112
 dmInputDDF,32,110
 dmParticleDDF,32,105
-dmBufferDDF,32,103
 dmResourceDDF,32,100
 dmSoundDDF,32,100
 gCalculateCombinedContactStiffnessCallback,32,99
@@ -2253,17 +2250,17 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9193574
-[section .debug_loc],0,7729823
-[section .debug_line],0,3470744
-[section .debug_str],0,2609740
-[section .debug_ranges],0,1377696
-[section .debug_abbrev],0,567491
-[section .symtab],0,28128
-[section .strtab],0,18547
+[section .debug_info],0,9186650
+[section .debug_loc],0,7727765
+[section .debug_line],0,3469574
+[section .debug_str],0,2607813
+[section .debug_ranges],0,1376128
+[section .debug_abbrev],0,566985
+[section .symtab],0,28104
+[section .strtab],0,18530
 [ELF Headers],0,2304
 [section .shstrtab],0,389
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,2
+[Unmapped],0,11
