@@ -5,14 +5,14 @@ dmGraphics,335453,394226
 _mbedtls_* (library),230926,259021
 dmGameObject,178010,216231
 std,174870,200070
-dmRender,157753,194574
+dmRender,157806,194627
 dmGui,149984,176315
 (anonymous namespace),138734,194207
 basist,123709,119881
 dmCrash,119281,15313
 _compress_* (library),114295,115370
 dmHashTable<>,81181,91793
-[section .text],78027,78027
+[section .text],78046,78046
 _pfb,65536,65569
 dmParticle,61752,70114
 dmPhysics,58224,75042
@@ -631,8 +631,8 @@ touchById,653,687
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
+[LOAD #1 [RX]],647,647
 bit_tohex,642,676
-[LOAD #1 [RX]],639,639
 b2GridAndPolygonContact,634,1027
 b2GridAndCircleContact,634,1022
 _bisect_* (library),632,681
@@ -1974,7 +1974,6 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
-[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 _to_* (library),20,87
@@ -2265,6 +2264,7 @@ vkMapMemory,8,36
 TAG_UL,8,35
 json_array,8,35
 vkCmdDraw,8,34
+[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2313,12 +2313,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9274299
-[section .debug_loc],0,7805649
-[section .debug_line],0,3505159
-[section .debug_str],0,2629654
-[section .debug_ranges],0,1391392
-[section .debug_abbrev],0,572555
+[section .debug_info],0,9274683
+[section .debug_loc],0,7805846
+[section .debug_line],0,3505207
+[section .debug_str],0,2629752
+[section .debug_ranges],0,1391488
+[section .debug_abbrev],0,572599
 [section .symtab],0,28176
 [section .strtab],0,18603
 [ELF Headers],0,2304
@@ -2326,4 +2326,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,9
+[Unmapped],0,14
