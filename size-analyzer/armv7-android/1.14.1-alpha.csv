@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
 dmScript,633369,141827
-dmGameSystem,595528,791384
-[section .rodata],396008,396008
+dmGameSystem,595008,790737
+[section .rodata],396152,396152
 dmGraphics,278760,369450
 _mbedtls_* (library),176054,214457
 dmGameObject,135862,182826
@@ -12,23 +12,23 @@ basist,112036,110381
 std,108786,157799
 _compress_* (library),102175,103702
 [section .rel.dyn],80088,80088
-[section .ARM.exidx],66648,66648
+[section .ARM.exidx],66672,66672
 _pfb,65536,65561
-dmHashTable<>,55716,69377
+dmHashTable<>,55716,69391
 (anonymous namespace),45236,103912
 dmParticle,43109,53380
 dmPhysics,41180,60446
 _cf_* (library),33060,42889
-dmResource,33036,45535
+dmResource,33028,45680
 btConvexHullInternal,32348,34121
-_GLOBAL_* (library),27876,35817
+_GLOBAL_* (library),27876,35803
 dmSound,26177,33486
 dmRig,21808,26436
 _lua_* (library),20934,25465
 dmEngine,20914,25686
 btSequentialImpulseConstraintSolver,20760,25174
 _decompress_* (library),20200,21146
-[section .ARM.extab],20168,20168
+[section .ARM.extab],20192,20192
 btCollisionWorld,19893,29083
 dmInput,19845,20923
 _load_* (library),18068,18837
@@ -49,13 +49,13 @@ _luaL_* (library),11573,13978
 dmNativeJoy,11520,28
 btHingeConstraint,11088,13099
 dmEasing,10856,10983
-dmObjectPool<>,10644,13500
+dmObjectPool<>,10644,13514
 btGImpactCollisionAlgorithm,10328,13393
 gjkepa2_impl,9796,11375
 btGeneric6DofConstraint,9376,12035
 b2World,9364,10615
-dmHttpClient,9168,11754
-dmHttpService,8896,11073
+dmHttpService,9200,11484
+dmHttpClient,9188,11774
 dmHttpCache,8797,10577
 _T_* (library),8704,13924
 parse_chunk,8456,8548
@@ -81,15 +81,15 @@ _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6512,6512
-[section .text],6487,6487
+[section .text],6471,6471
 _alloc_* (library),6432,6780
 _parse_* (library),6340,7126
 btDbvt,6160,7865
 btPolyhedralContactClipping,6108,6969
+dmConfigFile,6084,7367
 dmBuffer,6076,8241
 _tab_* (library),6068,6835
 _lib_* (library),6050,8231
-dmConfigFile,6044,7327
 [section .dynstr],5959,5959
 dmSys,5930,8179
 CreateEffect(),5900,6246
@@ -645,6 +645,7 @@ ParsePrivate(),412,514
 oggbyte_read4,412,458
 FontGetOutlineBounds(),408,523
 GenerateGlyphByIndex(),408,509
+ConfigFileGetFloat,408,475
 cpluaopen,408,450
 LZ4_uncompress,407,454
 _RenderTargetDesc_* (library),404,1146
@@ -654,10 +655,10 @@ dmNativeAndroidGetSafeAreaInsets,400,481
 lj_parse,400,441
 operator new(),398,640
 ResourceChunkCacheEvictPathHash(),396,502
-ConfigFileGetFloat,396,463
 cp_errmsg,396,454
 ProcessVBoundsAction,392,506
 dmNativeTerminateJoysticks,392,467
+ConfigFileGetInt,392,457
 dmHashBufferNoReverse64,388,476
 inet_pushresolved,388,454
 [section .init_array],388,388
@@ -667,7 +668,6 @@ _lookup_* (library),384,444
 ciphersuite_definitions,384,424
 secp256r1_T,384,412
 ProcessOneJob(),380,467
-ConfigFileGetInt,380,445
 JobSystemCreateJob,372,439
 mbrtoc32,372,472
 TextToCodePoints(),368,452
@@ -787,6 +787,7 @@ FontCollectionSetNamedStyle(),284,416
 FontGetDecorationFaceColors(),284,405
 OverlayStyle(),284,356
 _start_* (library),284,355
+ConfigFileGetString,284,352
 dmNativePreMain,284,348
 _call_* (library),284,334
 _HttpResponse_* (library),284,502
@@ -800,7 +801,6 @@ _Animation_* (library),278,705
 JobThread(),276,376
 Grow<>(),272,348
 dmHashEnableReverseHash,272,344
-ConfigFileGetString,272,340
 _ktabk_* (library),272,330
 [section .dynamic],272,272
 b2EdgeSeparation(),268,378
@@ -1193,7 +1193,7 @@ ResourceTypeAnimationSet103,128,44
 ResourceTypeCollection387,128,42
 ResourceTypeFont1295,128,37
 ResourceTypeGameObject237,128,42
-ResourceTypeGui430,128,35
+ResourceTypeGui452,128,35
 ResourceTypeGuiScript158,128,41
 ResourceTypeLight281,128,37
 ResourceTypeLua195,128,35
@@ -1845,7 +1845,6 @@ hookf.hooknames,20,52
 _supported_* (library),20,37
 g_Window,20,25
 stbi__compute_huffman_codes(),19,100
-[LOAD #3 [RW]],19,0
 FontCollectionSetColorEmojiEnabled(),16,105
 dmNativeAndroidPlatformDestroyWindow,16,101
 global_create6,16,95
@@ -2349,6 +2348,7 @@ vkMapMemory,4,28
 json_array,4,27
 vkCmdDraw,4,26
 stbi__process_frame_header(),3,71
+[LOAD #3 [RW]],3,0
 _ZL16g_* (library),2,82
 _bionic_* (library),1,54
 gContactCalcArea3Points,1,41
@@ -2360,13 +2360,13 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8542877
-[section .debug_loc],0,4720806
-[section .debug_line],0,3634332
-[section .debug_str],0,2665748
-[section .debug_ranges],0,1509536
-[section .debug_abbrev],0,588857
-[section .debug_frame],0,384608
+[section .debug_info],0,8543395
+[section .debug_loc],0,4717864
+[section .debug_line],0,3633506
+[section .debug_str],0,2666084
+[section .debug_ranges],0,1507080
+[section .debug_abbrev],0,588937
+[section .debug_frame],0,384748
 [section .symtab],0,47520
 [section .strtab],0,20126
 [ELF Headers],0,1400
@@ -2374,4 +2374,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,10
+[Unmapped],0,9
