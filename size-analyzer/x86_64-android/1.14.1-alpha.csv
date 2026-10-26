@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,772318,936019
+dmGameSystem,772837,936668
 dmScript,671110,172762
 dmGraphics,335258,393949
 _mbedtls_* (library),230926,259021
 std,189521,216771
 dmGameObject,178010,216231
-dmRender,175743,213905
+dmRender,175861,214023
 dmGui,149984,176315
 (anonymous namespace),138734,194207
 basist,123709,119881
 dmCrash,119281,15313
 _compress_* (library),114295,115370
 dmHashTable<>,81338,91950
-[section .text],78711,78711
+[section .text],78767,78767
 _pfb,65536,65569
 dmParticle,61752,70114
 dmPhysics,58208,75026
@@ -25,7 +25,7 @@ btCollisionWorld,30610,38976
 btConvexHullInternal,30424,31901
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,27628,30900
+dmEngine,27676,30948
 _lua_* (library),26938,30557
 _GLOBAL_* (library),26654,32117
 dmInput,25260,25970
@@ -640,12 +640,12 @@ JobSystemDestroy,663,704
 JobSystemPushJob,662,703
 poly1305_process,662,703
 _prng_* (library),662,779
+[LOAD #1 [RX]],655,655
 _Value_* (library),654,884
 touchById,653,687
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
-[LOAD #1 [RX]],647,647
 bit_tohex,642,676
 b2GridAndPolygonContact,634,1027
 b2GridAndCircleContact,634,1022
@@ -942,6 +942,7 @@ dmHashEnableReverseHash,338,386
 dmUtf8,338,524
 entropy_update,337,376
 _MorphWeightTrack_* (library),336,465
+dmEngineService,336,1130
 _opaque_* (library),335,382
 _start_* (library),334,381
 dmArrayUtil,332,397
@@ -1121,7 +1122,6 @@ FontOutlineBoundsMerge(),239,316
 dmStrTrim(),238,281
 dmEngineGetResult(),237,314
 udp_open,237,270
-dmEngineService,237,796
 dmTime,236,379
 index2adr,235,269
 socket_select,234,272
@@ -2010,7 +2010,6 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
-[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 _to_* (library),20,87
@@ -2301,6 +2300,7 @@ vkMapMemory,8,36
 TAG_UL,8,35
 json_array,8,35
 vkCmdDraw,8,34
+[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2349,12 +2349,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9434644
-[section .debug_loc],0,7912902
-[section .debug_line],0,3547894
-[section .debug_str],0,2675126
-[section .debug_ranges],0,1414992
-[section .debug_abbrev],0,577850
+[section .debug_info],0,9435013
+[section .debug_loc],0,7912501
+[section .debug_line],0,3548246
+[section .debug_str],0,2675515
+[section .debug_ranges],0,1414624
+[section .debug_abbrev],0,577866
 [section .symtab],0,28200
 [section .strtab],0,18620
 [ELF Headers],0,2304
@@ -2362,4 +2362,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,8
+[Unmapped],0,14

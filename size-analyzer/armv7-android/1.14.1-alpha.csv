@@ -1,11 +1,11 @@
 symbol_group_name,vmsize,filesize
 dmScript,633369,141827
-dmGameSystem,595008,790737
+dmGameSystem,595260,790989
 [section .rodata],396152,396152
 dmGraphics,278760,369450
 _mbedtls_* (library),176054,214457
-dmGameObject,135862,182826
-dmRender,132077,176643
+dmGameObject,135862,182820
+dmRender,132169,176735
 dmGui,117432,152229
 dmCrash,112130,11618
 basist,112036,110381
@@ -24,8 +24,8 @@ btConvexHullInternal,32348,34121
 _GLOBAL_* (library),27876,35803
 dmSound,26177,33486
 dmRig,21808,26436
+dmEngine,20974,25746
 _lua_* (library),20934,25465
-dmEngine,20914,25686
 btSequentialImpulseConstraintSolver,20760,25174
 _decompress_* (library),20200,21146
 [section .ARM.extab],20192,20192
@@ -81,7 +81,7 @@ _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6512,6512
-[section .text],6471,6471
+[section .text],6503,6503
 _alloc_* (library),6432,6780
 _parse_* (library),6340,7126
 btDbvt,6160,7865
@@ -1607,6 +1607,7 @@ LZ4_createStreamDecode,51,106
 Particle_RenderEmitter,51,106
 LZ4_versionString,50,116
 LZ4_slideInputBuffer,49,102
+dmEngineService,48,938
 FontGenFinalize(),48,134
 dmNativeSetWindowIconifyCallback,48,129
 dmNativeSetWindowCloseCallback,48,127
@@ -1704,7 +1705,6 @@ _ZTIPDs,40,64
 _ZTIPDu,40,64
 round_constants,40,32
 is_equal(),38,101
-dmEngineService,36,656
 MarkupCreateStyleFragment(),36,125
 JNIDetachCurrentThread,36,107
 TextLayoutLegacyFree(),36,107
@@ -1979,7 +1979,6 @@ TextLayoutGetLines(),8,76
 dmModelDDF,8,150
 FontFreeGlyph(),8,75
 dmProfiler,8,144
-ProfileSetThreadName(),8,73
 dmLiveUpdateDDF,8,146
 dmNativeSetDeviceChangedCallback,8,73
 GetScaleFromSizeTTF(),8,72
@@ -1997,6 +1996,7 @@ GetGlyphIndexTTF(),8,69
 GetResourceSizeTTF(),8,69
 FontGetLayoutType(),8,68
 MarkupGetSource(),8,68
+ProfileSetThreadName(),8,68
 dmMemProfile,8,133
 MarkupGetSpans(),8,67
 ProfileScopeBegin(),8,67
@@ -2360,13 +2360,13 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8543395
-[section .debug_loc],0,4717864
-[section .debug_line],0,3633506
-[section .debug_str],0,2666084
-[section .debug_ranges],0,1507080
+[section .debug_info],0,8544148
+[section .debug_loc],0,4718310
+[section .debug_line],0,3633885
+[section .debug_str],0,2666473
+[section .debug_ranges],0,1507112
 [section .debug_abbrev],0,588937
-[section .debug_frame],0,384748
+[section .debug_frame],0,384796
 [section .symtab],0,47520
 [section .strtab],0,20126
 [ELF Headers],0,1400
@@ -2374,4 +2374,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,9
+[Unmapped],0,7
