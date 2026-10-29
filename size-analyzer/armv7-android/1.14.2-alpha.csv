@@ -1,24 +1,24 @@
 symbol_group_name,vmsize,filesize
 dmScript,633441,141899
-dmGameSystem,596120,791902
-[section .rodata],396376,396376
-dmGraphics,278728,369500
+dmGameSystem,596184,791966
+[section .rodata],396512,396512
+dmGraphics,278760,369532
 _mbedtls_* (library),176054,214457
 dmGameObject,136082,183134
-dmRender,132549,177206
+dmRender,133425,178082
 dmGui,117300,152125
 dmCrash,112130,11618
 basist,112036,110388
 std,108786,157792
 _compress_* (library),102175,103702
 [section .rel.dyn],79888,79888
-[section .ARM.exidx],66944,66944
+[section .ARM.exidx],66952,66952
 _pfb,65536,65561
 dmHashTable<>,55332,68946
-dmResource,47512,62443
+dmResource,47492,62423
 (anonymous namespace),45236,103933
 dmParticle,43193,53425
-dmPhysics,41180,60446
+dmPhysics,41184,60450
 _cf_* (library),33060,42889
 btConvexHullInternal,32348,34121
 _GLOBAL_* (library),27876,35796
@@ -40,7 +40,7 @@ dmDDF,16176,23963
 btQuantizedBvh,15948,18286
 _strfmt_* (library),15132,16374
 _internal_* (library),14804,15087
-[section .plt],13056,13056
+[section .plt],13055,13055
 btGeneric6DofSpring2Constraint,13048,16979
 dmHID,12748,19297
 dmObjectPool<>,11916,15082
@@ -81,8 +81,8 @@ _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6512,6512
-[section .text],6435,6435
 _alloc_* (library),6432,6780
+[section .text],6399,6399
 _parse_* (library),6340,7126
 btDbvt,6160,7865
 dmConfigFile,6156,7439
@@ -160,9 +160,9 @@ dmResourceProviderZip,3420,4394
 b2GridShape,3412,5005
 _carith_* (library),3368,3461
 _luaopen_* (library),3358,4135
-b2WheelJoint,3288,4660
 btGImpactQuantizedBvh,3276,3773
 [section .got.plt],3268,3268
+b2WheelJoint,3256,4628
 cp_next,3248,3368
 TextLayoutGetGlyphRenderData(),3208,3372
 EncodeCurves(),3204,3431
@@ -252,8 +252,8 @@ _ccallback_* (library),1876,2153
 btGImpactMeshShape,1876,4448
 _cipher_* (library),1872,2017
 _jpeg_* (library),1867,2247
+_next_* (library),1864,1999
 btCollisionObject,1860,2986
-_next_* (library),1856,1991
 btGjkEpaSolver2,1844,2135
 _file_* (library),1836,2114
 b2FrictionJoint,1832,3023
@@ -553,7 +553,7 @@ dmNativeOpenWindow,564,631
 JobSystemPushJob,564,629
 _alg_* (library),564,623
 dmNativeAndroidPlatformSwapBuffers,552,635
-_ThumbV7PILongThunk_* (library),552,5594
+_ThumbV7PILongThunk_* (library),552,5637
 touchById,548,606
 ResourceChunkCacheEvictMemory(),544,648
 global_connect,544,607
@@ -671,7 +671,6 @@ JobSystemCreateJob,372,439
 mbrtoc32,372,472
 TextToCodePoints(),368,452
 _malloc_* (library),368,545
-[LOAD #1 [RX]],367,367
 _SpriteDesc_* (library),365,943
 PointCurveDistanceSquaredFromRoots(),364,476
 _cur_* (library),364,429
@@ -687,6 +686,7 @@ TextLayoutSetObjectStyle(),356,448
 dmNativeParseGLVersion,356,427
 collect_fd,356,415
 fscope_end,356,399
+[LOAD #1 [RX]],356,356
 unwind_phase2(),352,475
 dmNativeAndroidInitializeJoystickAxes,352,438
 btSingleContactCallback,352,570
@@ -1187,7 +1187,7 @@ ComponentTypeMesh1201,128,38
 ComponentTypeParticleFX1249,128,44
 ComponentTypeScript65,128,38
 ComponentTypeSound601,128,38
-ComponentTypeTileMap1062,128,41
+ComponentTypeTileMap1064,128,41
 LiveUpdateExt294,128,33
 ResourceTypeAnim35,128,35
 ResourceTypeAnimationSet103,128,44
@@ -2187,7 +2187,6 @@ vkGetPhysicalDeviceProperties,4,46
 vkDestroyDescriptorSetLayout,4,45
 vkGetImageMemoryRequirements,4,45
 vkGetPhysicalDeviceFeatures2,4,45
-_CortexA8657417_* (library),4,44
 b2velocityThresholdOverride,4,44
 vkCreateDescriptorSetLayout,4,44
 vkGetImageSubresourceLayout,4,44
@@ -2365,18 +2364,18 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8561705
-[section .debug_loc],0,4731754
-[section .debug_line],0,3642560
-[section .debug_str],0,2673284
-[section .debug_ranges],0,1514464
-[section .debug_abbrev],0,588212
-[section .debug_frame],0,385836
-[section .symtab],0,47488
-[section .strtab],0,20070
-[ELF Headers],0,1440
+[section .debug_info],0,8563450
+[section .debug_loc],0,4732860
+[section .debug_line],0,3643328
+[section .debug_str],0,2673246
+[section .debug_ranges],0,1515496
+[section .debug_abbrev],0,588225
+[section .debug_frame],0,385852
+[section .symtab],0,47472
+[section .strtab],0,20067
+[ELF Headers],0,1400
 [section .shstrtab],0,383
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,5
+[Unmapped],0,3

@@ -1,21 +1,21 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,773645,937604
+dmGameSystem,773695,937654
 dmScript,671164,172816
-dmGraphics,335625,394420
+dmGraphics,335682,394477
 _mbedtls_* (library),230926,259021
 std,189522,216772
 dmGameObject,178353,216658
-dmRender,176132,214377
+dmRender,177144,215389
 dmGui,149997,176328
 (anonymous namespace),138734,194207
 basist,123709,119881
 dmCrash,119281,15313
 _compress_* (library),114295,115370
 dmHashTable<>,81350,91962
-[section .text],79067,79067
+[section .text],79030,79030
 _pfb,65536,65569
 dmParticle,61907,70269
-dmResource,61563,74165
+dmResource,61535,74137
 dmPhysics,58208,75026
 _cf_* (library),43506,50751
 _decompress_* (library),43365,44131
@@ -125,7 +125,7 @@ GenerateDistanceField(),5743,5855
 InterpretCharString(),5701,5796
 _ShaderDesc_* (library),5688,7957
 btGImpactMeshShapePart,5604,8462
-b2WheelJoint,5565,6753
+b2WheelJoint,5432,6620
 btMinkowskiPenetrationDepthSolver,5395,6098
 btVoronoiSimplexSolver,5360,6161
 FontVectorPaintAddGlyph(),5350,5436
@@ -203,8 +203,8 @@ SphereTriangleDetector,3462,4088
 btConvexShape,3460,4044
 _crt_* (library),3418,3566
 MarkupCreateInternal(),3386,3489
-b2PolygonShape,3360,4109
 btPoint2PointConstraint,3359,4586
+b2PolygonShape,3356,4105
 fs_finish,3345,3379
 btTriangleShape,3305,4560
 _mpi_* (library),3246,3648
@@ -283,8 +283,8 @@ FontGetGlyphTTF(),2315,2414
 _resample_* (library),2304,2554
 _stream_* (library),2298,2822
 _entry_* (library),2258,2656
+_next_* (library),2220,2307
 _FontDesc_* (library),2218,3670
-_next_* (library),2204,2291
 btTransformUtil,2200,2402
 btPolyhedralConvexAabbCachingShape,2192,2767
 _scalar_* (library),2188,2551
@@ -412,7 +412,7 @@ optset,1312,1367
 expr_primary,1312,1349
 dmCrypt,1309,1487
 AddCurve(),1304,1385
-b2Joint,1285,1690
+b2Joint,1280,1685
 global_select,1274,1312
 FontVectorSlugAddFontGlyph(),1273,1384
 SegmentsIntersect(),1269,1338
@@ -1401,7 +1401,7 @@ ComponentTypeMesh1201,128,46
 ComponentTypeParticleFX1249,128,52
 ComponentTypeScript65,128,46
 ComponentTypeSound601,128,46
-ComponentTypeTileMap1062,128,49
+ComponentTypeTileMap1064,128,49
 LiveUpdateExt294,128,41
 ResourceTypeAnim35,128,43
 ResourceTypeAnimationSet103,128,52
@@ -2352,11 +2352,11 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9457480
-[section .debug_loc],0,7933793
-[section .debug_line],0,3557241
-[section .debug_str],0,2682339
-[section .debug_ranges],0,1420896
+[section .debug_info],0,9459159
+[section .debug_loc],0,7934649
+[section .debug_line],0,3557964
+[section .debug_str],0,2682301
+[section .debug_ranges],0,1422208
 [section .debug_abbrev],0,577105
 [section .symtab],0,28128
 [section .strtab],0,18561
@@ -2365,4 +2365,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,6
+[Unmapped],0,2
