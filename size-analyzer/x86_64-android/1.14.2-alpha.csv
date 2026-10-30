@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,773695,937654
+dmGameSystem,773877,937937
 dmScript,671164,172816
 dmGraphics,335682,394477
 _mbedtls_* (library),230926,259021
@@ -12,10 +12,10 @@ basist,123709,119881
 dmCrash,119281,15313
 _compress_* (library),114295,115370
 dmHashTable<>,81350,91962
-[section .text],79030,79030
+[section .text],79076,79076
 _pfb,65536,65569
 dmParticle,61907,70269
-dmResource,61535,74137
+dmResource,61667,74271
 dmPhysics,58208,75026
 _cf_* (library),43506,50751
 _decompress_* (library),43365,44131
@@ -27,7 +27,7 @@ btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
 dmEngine,27709,30981
 _lua_* (library),26938,30557
-_GLOBAL_* (library),26654,32117
+_GLOBAL_* (library),26662,32125
 dmInput,25282,25992
 btDiscreteDynamicsWorld,25213,29104
 _load_* (library),23438,23615
@@ -50,10 +50,10 @@ btSliderConstraint,13344,14682
 btRigidBody,12896,14907
 gjkepa2_impl,12593,13871
 _lib_* (library),12155,14416
+dmHttpClient,11971,14224
 dmSoundCodec,11780,14998
 [section .plt],11600,11600
 dmNativeJoy,11520,36
-dmHttpClient,11437,13519
 dmHttpService,11418,13342
 _internal_* (library),11202,11421
 [section .hash],11104,11104
@@ -112,13 +112,13 @@ b2RevoluteJoint,6519,8072
 btCompoundCollisionAlgorithm,6506,8206
 btPolyhedralConvexShape,6438,7222
 _tls13_* (library),6108,6723
+dmResourceMounts,6053,7584
 _process_* (library),6000,6177
 _cconv_* (library),5973,6252
 dmLiveUpdate,5971,7388
 FontSDFGenerate(),5962,6061
 btDbvtBroadphase,5882,7418
 [section .dynstr],5847,5847
-dmResourceMounts,5838,7269
 [section .got.plt],5816,5816
 dmDeviceOpenSL,5770,6647
 GenerateDistanceField(),5743,5855
@@ -303,11 +303,11 @@ vwin1024,2048,2081
 strscan_dec,2033,2069
 gcm_mask,2029,2062
 JNIAndroidSetCommandLine,2024,2073
+dmResourceProvider,2019,3440
 _gc_* (library),2019,2422
 _sig_* (library),2015,2097
 dmZip,1982,3185
 _find_* (library),1963,2143
-dmResourceProvider,1960,3294
 serialize_put,1953,1991
 b2TimeOfImpact(),1952,2023
 _global_* (library),1951,2183
@@ -640,12 +640,12 @@ JobSystemPushJob,662,703
 poly1305_process,662,703
 _prng_* (library),662,779
 FontGenUpdateGlyphs(),657,723
+[LOAD #1 [RX]],655,655
 _Value_* (library),654,884
 touchById,653,687
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
-[LOAD #1 [RX]],647,647
 bit_tohex,642,676
 b2GridAndPolygonContact,634,1027
 b2GridAndCircleContact,634,1022
@@ -2352,12 +2352,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9459159
-[section .debug_loc],0,7934649
-[section .debug_line],0,3557964
-[section .debug_str],0,2682301
-[section .debug_ranges],0,1422208
-[section .debug_abbrev],0,577105
+[section .debug_info],0,9460390
+[section .debug_loc],0,7937189
+[section .debug_line],0,3558749
+[section .debug_str],0,2683053
+[section .debug_ranges],0,1422368
+[section .debug_abbrev],0,577148
 [section .symtab],0,28128
 [section .strtab],0,18561
 [ELF Headers],0,2304
@@ -2365,4 +2365,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,2
+[Unmapped],0,6
