@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,773877,937937
+dmGameSystem,785060,951999
 dmScript,671164,172816
-dmGraphics,335682,394477
+dmGraphics,335666,394461
 _mbedtls_* (library),230926,259021
-std,189522,216772
-dmGameObject,178353,216658
-dmRender,177144,215389
+std,189523,216773
+dmRender,187811,229153
+dmGameObject,179156,217844
 dmGui,149997,176328
 (anonymous namespace),138734,194207
 basist,123709,119881
 dmCrash,119281,15313
 _compress_* (library),114295,115370
-dmHashTable<>,81350,91962
-[section .text],79076,79076
+dmHashTable<>,83361,94272
+[section .text],79530,79530
 _pfb,65536,65569
 dmParticle,61907,70269
 dmResource,61667,74271
@@ -25,9 +25,9 @@ btCollisionWorld,30610,38976
 btConvexHullInternal,30424,31901
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,27709,30981
+dmEngine,27061,30333
 _lua_* (library),26938,30557
-_GLOBAL_* (library),26662,32125
+_GLOBAL_* (library),26623,32086
 dmInput,25282,25992
 btDiscreteDynamicsWorld,25213,29104
 _load_* (library),23438,23615
@@ -163,7 +163,7 @@ b2GridShape,4337,5706
 b2EPCollider,4325,4510
 _hdr_* (library),4303,4570
 btOptimizedBvh,4298,5563
-dmResourceProviderZip,4272,5110
+dmResourceProviderZip,4260,5098
 _luaopen_* (library),4166,4655
 sincos_lookup0,4143,4182
 sincos_lookup1,4135,4174
@@ -203,8 +203,8 @@ SphereTriangleDetector,3462,4088
 btConvexShape,3460,4044
 _crt_* (library),3418,3566
 MarkupCreateInternal(),3386,3489
+b2PolygonShape,3360,4109
 btPoint2PointConstraint,3359,4586
-b2PolygonShape,3356,4105
 fs_finish,3345,3379
 btTriangleShape,3305,4560
 _mpi_* (library),3246,3648
@@ -337,9 +337,9 @@ bcwrite_proto,1730,1768
 FontCacheEffect(),1724,1807
 _clib_* (library),1713,1867
 ConvertGlyphBitmap(),1705,1793
+[section .bss],1695,0
 dmImage,1690,1937
 gc_onestep,1689,1724
-[section .bss],1679,0
 _TextureImage_* (library),1676,2249
 _VertexAttribute_* (library),1670,2778
 btSphereShape,1666,2376
@@ -350,6 +350,7 @@ _write_* (library),1642,1790
 _TextureSet_* (library),1641,1994
 _fetch_* (library),1631,1720
 btAABB,1612,1709
+dmExtension,1598,2196
 TextLayoutAdoptResolvedMarkup(),1591,1701
 _Mesh_* (library),1591,1834
 snprintf(),1587,1819
@@ -358,7 +359,6 @@ b2ChainShape,1581,2563
 parse_body,1580,1615
 btBoxBoxCollisionAlgorithm,1576,2843
 dmVMath,1574,1704
-dmExtension,1570,2167
 dmZlib,1563,1700
 _state_* (library),1563,1861
 secp256r1_T,1560,1596
@@ -398,9 +398,9 @@ FontOutlineMakeYMonotonic(),1380,1448
 JobSystemUpdate,1356,1444
 btTriangleRaycastCallback,1342,1617
 _initialize_* (library),1341,1388
+[section .rodata],1336,1336
 dmMutex,1334,1660
 ctype_preptype,1332,1371
-[section .rodata],1332,1332
 LogInternal,1331,1367
 addInputEvents,1324,1363
 _luaJIT_* (library),1324,1570
@@ -640,12 +640,12 @@ JobSystemPushJob,662,703
 poly1305_process,662,703
 _prng_* (library),662,779
 FontGenUpdateGlyphs(),657,723
-[LOAD #1 [RX]],655,655
 _Value_* (library),654,884
 touchById,653,687
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
+[LOAD #1 [RX]],647,647
 bit_tohex,642,676
 b2GridAndPolygonContact,634,1027
 b2GridAndCircleContact,634,1022
@@ -1308,6 +1308,7 @@ bit_tobit,155,189
 _android_* (library),152,404
 btSdfCollisionShape,152,232
 FontCollectionGetFont(),152,220
+[section .data.rel.ro],152,152
 meth_settimeout,151,215
 Particle_GetTileSourcePath,151,202
 dmMemory,151,262
@@ -1337,7 +1338,6 @@ dmNativeAndroidPlatformOnInitWindow,145,205
 _open_* (library),145,187
 socket_shutdown,145,185
 package_global,144,183
-[section .data.rel.ro],144,144
 HttpNewServiceWithCacheInternal,143,199
 Particle_GenerateVertexData,143,195
 FontGetDecorationPattern(),142,262
@@ -1395,7 +1395,7 @@ _determine_* (library),128,174
 auxiliar_add2group,128,171
 vwin64,128,159
 ComponentTypeAnim64,128,44
-ComponentTypeGui4302,128,45
+ComponentTypeGui4211,128,45
 ComponentTypeLight237,128,46
 ComponentTypeMesh1201,128,46
 ComponentTypeParticleFX1249,128,52
@@ -1447,6 +1447,7 @@ LZ4_createStreamHC,119,162
 bcread_error,119,156
 dLib,119,317
 onInputQueueDestroyed,118,164
+ScriptImageExt,118,157
 _seek_* (library),118,155
 FontCollectionGetNamedStyleEffects(),116,199
 _type_* (library),116,161
@@ -1476,7 +1477,6 @@ TextLayoutGetGlyphFaceColors(),108,215
 dmNativeOSGetAcceleration,108,158
 LZ4MaxCompressedSize,108,153
 GetEglFailureResult,108,152
-ScriptImageExt,108,147
 ScriptTypesExt,108,147
 mbedtls_debug(),107,160
 ScriptLibTileMap,107,148
@@ -1561,6 +1561,7 @@ LZ4_versionString,89,131
 DecryptXTeaCTR,89,128
 LZ4_freeStream,89,128
 FontVectorSlugData,88,192
+ExtensionAppParamsInitialize,88,141
 Particle_CreateInstance,88,136
 dmLZ4,87,149
 dmNativeOSCloseWindow,87,133
@@ -1577,6 +1578,7 @@ LZ4_slideInputBuffer,85,130
 LZ4_freeHC,85,120
 global_create6,84,147
 global_create,84,146
+ExtensionParamsInitialize,84,134
 Particle_RenderEmitter,84,131
 Particle_ResetInstance,84,131
 Particle_StartInstance,84,131
@@ -1588,7 +1590,6 @@ Particle_StopInstance,83,129
 bcreg_reserve,83,121
 socket_setnonblocking,82,128
 err_limit,82,116
-ExtensionAppParamsInitialize,81,134
 dmEngineFinalize(),81,127
 dmNative_atexit,81,121
 EncryptXTeaCTR,81,120
@@ -1611,7 +1612,6 @@ floor0_memosize,78,118
 emutls_init,78,114
 zip_close,78,112
 FontOutlineBoundsGet(),77,158
-ExtensionParamsInitialize,77,127
 dmNativeInputChar,77,119
 Particle_Update,77,117
 socket_create,77,115
@@ -2352,17 +2352,17 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9460390
-[section .debug_loc],0,7937189
-[section .debug_line],0,3558749
-[section .debug_str],0,2683053
-[section .debug_ranges],0,1422368
-[section .debug_abbrev],0,577148
-[section .symtab],0,28128
-[section .strtab],0,18561
+[section .debug_info],0,9489241
+[section .debug_loc],0,7964328
+[section .debug_line],0,3578589
+[section .debug_str],0,2703606
+[section .debug_ranges],0,1427520
+[section .debug_abbrev],0,581882
+[section .symtab],0,28296
+[section .strtab],0,18703
 [ELF Headers],0,2304
 [section .shstrtab],0,389
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,6
+[Unmapped],0,8
