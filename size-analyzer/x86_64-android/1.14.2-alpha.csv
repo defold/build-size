@@ -1,9 +1,9 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,785060,951999
+dmGameSystem,785765,952857
 dmScript,671164,172816
-dmGraphics,335666,394461
+dmGraphics,335699,394494
 _mbedtls_* (library),230926,259021
-std,189523,216773
+std,189521,216771
 dmRender,187811,229153
 dmGameObject,179156,217844
 dmGui,149997,176328
@@ -12,7 +12,7 @@ basist,123709,119881
 dmCrash,119281,15313
 _compress_* (library),114295,115370
 dmHashTable<>,83361,94272
-[section .text],79530,79530
+[section .text],79577,79577
 _pfb,65536,65569
 dmParticle,61907,70269
 dmResource,61667,74271
@@ -74,8 +74,8 @@ dmArray<>,9063,11360
 RefreshObjectStyles(),8951,9014
 _tinfl_* (library),8837,9173
 btAlignedObjectArray<>,8806,10697
+dmPlatform,8730,19321
 _T_* (library),8704,15204
-dmPlatform,8690,19211
 parse_chunk,8681,8717
 _err_* (library),8675,9618
 dBoxBox2(),8633,8768
@@ -88,9 +88,9 @@ _decl_* (library),8053,8331
 b2DynamicTree,7989,9180
 _mz_* (library),7960,8612
 b2ContactSolver,7934,8659
+_Register_* (library),7874,11762
 dmSys,7869,9582
 dmConnectionPool,7862,9169
-_Register_* (library),7842,11730
 _BC_* (library),7817,11026
 _parse_* (library),7760,8234
 dmConfigFile,7702,8732
@@ -111,6 +111,7 @@ btConvexConcaveCollisionAlgorithm,6740,8988
 b2RevoluteJoint,6519,8072
 btCompoundCollisionAlgorithm,6506,8206
 btPolyhedralConvexShape,6438,7222
+_ShaderDesc_* (library),6120,8544
 _tls13_* (library),6108,6723
 dmResourceMounts,6053,7584
 _process_* (library),6000,6177
@@ -123,7 +124,6 @@ btDbvtBroadphase,5882,7418
 dmDeviceOpenSL,5770,6647
 GenerateDistanceField(),5743,5855
 InterpretCharString(),5701,5796
-_ShaderDesc_* (library),5688,7957
 btGImpactMeshShapePart,5604,8462
 b2WheelJoint,5432,6620
 btMinkowskiPenetrationDepthSolver,5395,6098
@@ -165,9 +165,9 @@ _hdr_* (library),4303,4570
 btOptimizedBvh,4298,5563
 dmResourceProviderZip,4260,5098
 _luaopen_* (library),4166,4655
+init_gl,4150,4182
 sincos_lookup0,4143,4182
 sincos_lookup1,4135,4174
-init_gl,4121,4153
 _mul_* (library),4120,4173
 btHashMap<>,4111,4477
 vwin2048,4096,4129
@@ -203,8 +203,8 @@ SphereTriangleDetector,3462,4088
 btConvexShape,3460,4044
 _crt_* (library),3418,3566
 MarkupCreateInternal(),3386,3489
-b2PolygonShape,3360,4109
 btPoint2PointConstraint,3359,4586
+b2PolygonShape,3356,4105
 fs_finish,3345,3379
 btTriangleShape,3305,4560
 _mpi_* (library),3246,3648
@@ -540,11 +540,11 @@ floor1_inverse2,879,919
 _traverse_* (library),879,1005
 dmHashRelease32,876,916
 dmHashRelease64,876,916
+CreateGLSurfaceForWindow,874,923
 b2CollideEdgeAndCircle(),870,984
 PushCommand(),865,1079
 capsuleCapsuleDistance(),864,955
 jc,859,974
-CreateGLSurfaceForWindow,858,907
 b2CollidePolygonAndCircle(),857,977
 dmHashBuffer64,849,888
 ResourceChunkCacheEvictMemory(),848,928
@@ -600,6 +600,7 @@ insertleaf(),741,805
 dmNativeAndroidHandleInput,735,786
 PushClipGlyph(),727,773
 lj_bcread,726,760
+final_gl,726,759
 _TextureTransform_* (library),726,1276
 _TileCell_* (library),726,1233
 opt_setmembership,725,767
@@ -616,7 +617,6 @@ _MeshDesc_* (library),711,1230
 _packed_* (library),710,761
 expr_toreg,710,745
 _Cubemap_* (library),708,1186
-final_gl,707,740
 _ResourceEntry_* (library),703,979
 _EmbeddedComponentDesc_* (library),702,1090
 _cur_* (library),700,741
@@ -645,8 +645,8 @@ touchById,653,687
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
-[LOAD #1 [RX]],647,647
 bit_tohex,642,676
+[LOAD #1 [RX]],639,639
 b2GridAndPolygonContact,634,1027
 b2GridAndCircleContact,634,1022
 _bisect_* (library),632,681
@@ -1395,7 +1395,7 @@ _determine_* (library),128,174
 auxiliar_add2group,128,171
 vwin64,128,159
 ComponentTypeAnim64,128,44
-ComponentTypeGui4211,128,45
+ComponentTypeGui4222,128,45
 ComponentTypeLight237,128,46
 ComponentTypeMesh1201,128,46
 ComponentTypeParticleFX1249,128,52
@@ -1545,6 +1545,7 @@ _ZTIDu,95,126
 _uncompress_* (library),94,151
 Particle_GetVertexBufferSize,94,147
 dmNativeReleaseAndroidWindow,94,147
+dmNativeOSGetDisplayDensity,94,146
 LZ4_createStreamDecode,94,141
 LZ4_resetStreamState,94,139
 global_skip,93,129
@@ -1856,6 +1857,7 @@ FontTrueTypeGetOutlineType(),39,109
 dmNativeGetDisplayScaleFactor,39,93
 GetResourceSizeTTF(),39,92
 dmNativeAcquireAuxContext,39,89
+dmNativeGetDisplayDensity,39,89
 dmNativeQueryAuxContext,39,87
 dmLogSetLevel,39,77
 FontGetGlyphByIndex(),38,123
@@ -2352,12 +2354,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9489241
-[section .debug_loc],0,7964328
-[section .debug_line],0,3578589
-[section .debug_str],0,2703606
-[section .debug_ranges],0,1427520
-[section .debug_abbrev],0,581882
+[section .debug_info],0,9491629
+[section .debug_loc],0,7964868
+[section .debug_line],0,3578964
+[section .debug_str],0,2704429
+[section .debug_ranges],0,1427680
+[section .debug_abbrev],0,581903
 [section .symtab],0,28296
 [section .strtab],0,18703
 [ELF Headers],0,2304
@@ -2365,4 +2367,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,8
+[Unmapped],0,5

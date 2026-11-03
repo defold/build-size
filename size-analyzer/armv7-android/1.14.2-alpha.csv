@@ -1,8 +1,8 @@
 symbol_group_name,vmsize,filesize
 dmScript,633441,141878
-dmGameSystem,603472,802779
-[section .rodata],403052,403052
-dmGraphics,278760,369560
+dmGameSystem,603908,803416
+[section .rodata],403228,403228
+dmGraphics,278740,369572
 _mbedtls_* (library),176054,214464
 dmRender,140989,189327
 dmGameObject,136438,183929
@@ -11,8 +11,8 @@ dmCrash,112130,11618
 basist,112036,110325
 std,108786,157799
 _compress_* (library),102175,103702
-[section .rel.dyn],79904,79904
-[section .ARM.exidx],67480,67480
+[section .rel.dyn],80000,80000
+[section .ARM.exidx],67504,67504
 _pfb,65536,65561
 dmHashTable<>,56672,70628
 dmResource,47720,62645
@@ -27,7 +27,7 @@ dmRig,21824,26452
 _lua_* (library),20934,25465
 btSequentialImpulseConstraintSolver,20760,25174
 dmEngine,20658,25342
-[section .ARM.extab],20208,20208
+[section .ARM.extab],20220,20220
 _decompress_* (library),20200,21146
 btCollisionWorld,19893,29083
 dmInput,19849,20927
@@ -82,7 +82,7 @@ btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6512,6512
 _alloc_* (library),6432,6780
-[section .text],6411,6411
+[section .text],6415,6415
 _parse_* (library),6340,7126
 btDbvt,6160,7865
 dmConfigFile,6156,7439
@@ -97,7 +97,7 @@ dmConnectionPool,5856,7459
 FontCreateLayoutVertices(),5740,5985
 btAlignedObjectArray<>,5640,7691
 _debug_* (library),5632,6454
-dmPlatform,5548,16337
+dmPlatform,5560,16427
 dmArray<>,5508,8648
 _meta_* (library),5444,6291
 lex_scan,5336,5521
@@ -254,6 +254,7 @@ _cipher_* (library),1872,2017
 _jpeg_* (library),1867,2247
 _next_* (library),1864,1999
 btCollisionObject,1860,2986
+_ShaderDesc_* (library),1856,4024
 btGjkEpaSolver2,1844,2135
 _file_* (library),1836,2114
 b2FrictionJoint,1832,3023
@@ -270,7 +271,6 @@ dmHashUpdateBuffer64,1773,1842
 _double_* (library),1752,1850
 _stream_* (library),1734,2384
 _raw_* (library),1729,1924
-_ShaderDesc_* (library),1720,3749
 _find_* (library),1708,1920
 FindBernsteinRoots(),1704,1822
 SelectCmap(),1696,1793
@@ -388,7 +388,7 @@ RT3,1024,20
 dmMutex,1024,1494
 btCollisionShape,1016,1794
 b2BroadPhase,1016,1656
-_Register_* (library),1010,4354
+_Register_* (library),1014,4358
 lex_longstring,1008,1055
 _normalize_* (library),1000,1155
 dmHashBuffer32,979,1042
@@ -686,7 +686,6 @@ TextLayoutSetObjectStyle(),356,448
 dmNativeParseGLVersion,356,427
 collect_fd,356,415
 fscope_end,356,399
-[LOAD #1 [RX]],356,356
 unwind_phase2(),352,475
 dmNativeAndroidInitializeJoystickAxes,352,438
 btSingleContactCallback,352,570
@@ -696,6 +695,7 @@ socket_sendto,352,414
 meth_sendto,352,412
 searchpath,352,411
 _ContactPointResponse_* (library),352,481
+[LOAD #1 [RX]],352,352
 TextLayoutGetDecorationGeometry(),348,464
 FontPackGlyphFaceColors(),348,449
 FindGlyphGradient(),348,445
@@ -1181,7 +1181,7 @@ _ext_* (library),128,162
 vwin64,128,151
 _ConvexHull_* (library),128,432
 ComponentTypeAnim64,128,36
-ComponentTypeGui4211,128,37
+ComponentTypeGui4222,128,37
 ComponentTypeLight237,128,38
 ComponentTypeMesh1201,128,38
 ComponentTypeParticleFX1249,128,44
@@ -1420,6 +1420,7 @@ LZ4_create,79,122
 LZ4_decoderRingBufferSize,78,136
 FontGetGlyph(),76,162
 dmNativeSetWindowSizeCallback,76,154
+dmNativeOSGetDisplayDensity,76,152
 GraphicsAdapterOpenGLES,76,148
 onNativeWindowDestroyed,76,148
 GraphicsAdapterVulkan,76,146
@@ -1885,6 +1886,7 @@ quant_look,16,43
 _RADIUS_* (library),16,80
 _PIVOT_* (library),16,78
 _vec3_* (library),16,37
+[LOAD #3 [RW]],15,0
 _row_* (library),13,111
 btOverlappingPairCache,12,156
 ApplySpatialGradientFallback(),12,129
@@ -1954,7 +1956,6 @@ b2_version,12,39
 g_SoundManager,12,31
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
-[LOAD #3 [RW]],11,0
 _depth_* (library),9,54
 _init_* (library),9,98
 btConstraintSolver,8,186
@@ -2134,6 +2135,7 @@ gCalculateCombinedSpinningFrictionCallback,4,63
 BoundsEndComposite(),4,62
 dmFontDDF,4,62
 dmNativeAcquireAuxContext,4,62
+dmNativeGetDisplayDensity,4,62
 dmNativeOSQueryAuxContext,4,62
 gCalculateCombinedRollingFrictionCallback,4,62
 _ZN8dmRenderL26g_* (library),4,61
@@ -2364,13 +2366,13 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8591274
-[section .debug_loc],0,4745151
-[section .debug_line],0,3664583
-[section .debug_str],0,2694616
-[section .debug_ranges],0,1519200
-[section .debug_abbrev],0,592997
-[section .debug_frame],0,388892
+[section .debug_info],0,8593532
+[section .debug_loc],0,4745497
+[section .debug_line],0,3664976
+[section .debug_str],0,2695439
+[section .debug_ranges],0,1519304
+[section .debug_abbrev],0,593018
+[section .debug_frame],0,389068
 [section .symtab],0,47584
 [section .strtab],0,20209
 [ELF Headers],0,1400
@@ -2378,4 +2380,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,4
+[Unmapped],0,7

@@ -2,7 +2,7 @@ symbol_group_name,vmsize,filesize
 dmScript,639269,154046
 dmGameSystem,611532,826138
 [section .rodata],417145,417145
-dmGraphics,247036,322640
+dmGraphics,247048,322652
 _mbedtls_* (library),181483,225190
 std,162148,199395
 dmRender,137057,187490
@@ -892,13 +892,13 @@ dmNativeOSGetJoystickPos,340,413
 gc_finalize,340,400
 TextLayoutGetDecorationGeometry(),336,452
 TextLayoutGetLineOriginX(),336,427
+[section .text],336,336
 _MorphWeightTrack_* (library),336,513
 b2Timer,336,588
 _CHARSET_* (library),332,429
 _check_* (library),332,398
 _select_* (library),332,396
 _sw_* (library),332,391
-[section .text],332,332
 btSingleSweepCallback,332,592
 _gather_* (library),328,424
 _start_* (library),328,399
@@ -1003,9 +1003,9 @@ b2EdgeSeparation(),280,390
 dmNativeAndroidSetFullscreenParameters,280,367
 bcemit_INS,280,339
 make_assoc,280,339
-_128_* (library),280,798
 _192_* (library),280,774
-_256_* (library),280,750
+_128_* (library),280,774
+_256_* (library),280,774
 Solid(),276,351
 ConfigFileGetString,276,344
 LZ4_compressHC2,276,340
@@ -2018,6 +2018,7 @@ priority,30,87
 _tls12_* (library),26,213
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,292
 g_SoundManager,24,63
+[LOAD #3 [RW]],24,0
 _CONTEXT_* (library),21,165
 _to_* (library),20,111
 reltable.hookf,20,83
@@ -2307,7 +2308,6 @@ TAG_UL,8,59
 json_array,8,59
 vkCmdDraw,8,58
 _num_* (library),8,42
-[LOAD #3 [RW]],8,0
 _FRAME_* (library),4,15893
 _vertically_* (library),4,90
 _unpremultiply_* (library),4,88
@@ -2355,11 +2355,11 @@ g_PendingResize,1,64
 supported_init,1,63
 g_AppResumed,1,61
 disableCcd,1,59
-[section .debug_info],0,9176301
-[section .debug_loc],0,8490673
-[section .debug_line],0,3582317
+[section .debug_info],0,9176337
+[section .debug_loc],0,8490877
+[section .debug_line],0,3582320
 [section .debug_ranges],0,2985696
-[section .debug_str],0,2681509
+[section .debug_str],0,2681537
 [section .debug_abbrev],0,580426
 [section .symtab],0,101400
 [section .strtab],0,18699
@@ -2368,4 +2368,4 @@ disableCcd,1,59
 [section .comment],0,348
 [section .debug_frame],0,120
 [section .debug_aranges],0,48
-[Unmapped],0,2
+[Unmapped],0,3

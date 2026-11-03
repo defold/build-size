@@ -2,7 +2,7 @@ symbol_group_name,vmsize,filesize
 dmScript,633441,141899
 dmGameSystem,596120,791902
 [section .rodata],396376,396376
-dmGraphics,278728,369500
+dmGraphics,278708,369512
 _mbedtls_* (library),176054,214457
 dmGameObject,136082,183134
 dmRender,132549,177206
@@ -81,8 +81,8 @@ _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6512,6512
-[section .text],6439,6439
 _alloc_* (library),6432,6780
+[section .text],6427,6427
 _parse_* (library),6340,7126
 btDbvt,6160,7865
 dmConfigFile,6156,7439
@@ -2364,10 +2364,10 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8561693
-[section .debug_loc],0,4731770
-[section .debug_line],0,3642551
-[section .debug_str],0,2673248
+[section .debug_info],0,8561718
+[section .debug_loc],0,4731851
+[section .debug_line],0,3642541
+[section .debug_str],0,2673276
 [section .debug_ranges],0,1514472
 [section .debug_abbrev],0,588212
 [section .debug_frame],0,385836
@@ -2378,4 +2378,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,6
+[Unmapped],0,2
