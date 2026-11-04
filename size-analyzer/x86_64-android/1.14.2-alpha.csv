@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,785765,952857
+dmGameSystem,786472,953564
 dmScript,671164,172816
 dmGraphics,335699,394494
 _mbedtls_* (library),230926,259021
@@ -12,11 +12,11 @@ basist,123709,119881
 dmCrash,119281,15313
 _compress_* (library),114295,115370
 dmHashTable<>,83361,94272
-[section .text],79577,79577
+[section .text],79578,79578
 _pfb,65536,65569
 dmParticle,61907,70269
 dmResource,61667,74271
-dmPhysics,58208,75026
+dmPhysics,58218,75036
 _cf_* (library),43506,50751
 _decompress_* (library),43365,44131
 dmSound,33998,39563
@@ -25,7 +25,7 @@ btCollisionWorld,30610,38976
 btConvexHullInternal,30424,31901
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,27061,30333
+dmEngine,27063,30335
 _lua_* (library),26938,30557
 _GLOBAL_* (library),26623,32086
 dmInput,25282,25992
@@ -2015,7 +2015,6 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
-[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 _to_* (library),20,87
@@ -2306,6 +2305,7 @@ vkMapMemory,8,36
 TAG_UL,8,35
 json_array,8,35
 vkCmdDraw,8,34
+[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2354,12 +2354,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9491629
-[section .debug_loc],0,7964868
-[section .debug_line],0,3578964
-[section .debug_str],0,2704429
-[section .debug_ranges],0,1427680
-[section .debug_abbrev],0,581903
+[section .debug_info],0,9492094
+[section .debug_loc],0,7965331
+[section .debug_line],0,3579287
+[section .debug_str],0,2704608
+[section .debug_ranges],0,1427776
+[section .debug_abbrev],0,581927
 [section .symtab],0,28296
 [section .strtab],0,18703
 [ELF Headers],0,2304
@@ -2367,4 +2367,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,5
+[Unmapped],0,7

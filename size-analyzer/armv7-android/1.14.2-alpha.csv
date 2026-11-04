@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,633441,141878
-dmGameSystem,603908,803416
+dmGameSystem,604556,804064
 [section .rodata],403228,403228
 dmGraphics,278740,369572
 _mbedtls_* (library),176054,214464
@@ -12,7 +12,7 @@ basist,112036,110325
 std,108786,157799
 _compress_* (library),102175,103702
 [section .rel.dyn],80000,80000
-[section .ARM.exidx],67504,67504
+[section .ARM.exidx],67496,67496
 _pfb,65536,65561
 dmHashTable<>,56672,70628
 dmResource,47720,62645
@@ -26,8 +26,8 @@ dmSound,25861,33170
 dmRig,21824,26452
 _lua_* (library),20934,25465
 btSequentialImpulseConstraintSolver,20760,25174
-dmEngine,20658,25342
-[section .ARM.extab],20220,20220
+dmEngine,20662,25346
+[section .ARM.extab],20232,20232
 _decompress_* (library),20200,21146
 btCollisionWorld,19893,29083
 dmInput,19849,20927
@@ -82,7 +82,7 @@ btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6512,6512
 _alloc_* (library),6432,6780
-[section .text],6415,6415
+[section .text],6419,6419
 _parse_* (library),6340,7126
 btDbvt,6160,7865
 dmConfigFile,6156,7439
@@ -675,6 +675,7 @@ _SpriteDesc_* (library),365,943
 PointCurveDistanceSquaredFromRoots(),364,476
 _cur_* (library),364,429
 strscan_bin,364,408
+[LOAD #1 [RX]],364,364
 _JNIEnv,364,967
 dmNativeAndroidPlatformOpenWindow,360,442
 socket_recvfrom,360,424
@@ -695,7 +696,6 @@ socket_sendto,352,414
 meth_sendto,352,412
 searchpath,352,411
 _ContactPointResponse_* (library),352,481
-[LOAD #1 [RX]],352,352
 TextLayoutGetDecorationGeometry(),348,464
 FontPackGlyphFaceColors(),348,449
 FindGlyphGradient(),348,445
@@ -2366,13 +2366,13 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8593532
-[section .debug_loc],0,4745497
-[section .debug_line],0,3664976
-[section .debug_str],0,2695439
-[section .debug_ranges],0,1519304
-[section .debug_abbrev],0,593018
-[section .debug_frame],0,389068
+[section .debug_info],0,8593970
+[section .debug_loc],0,4745867
+[section .debug_line],0,3665359
+[section .debug_str],0,2695618
+[section .debug_ranges],0,1519280
+[section .debug_abbrev],0,593042
+[section .debug_frame],0,389080
 [section .symtab],0,47584
 [section .strtab],0,20209
 [ELF Headers],0,1400
@@ -2380,4 +2380,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,7
+[Unmapped],0,5
