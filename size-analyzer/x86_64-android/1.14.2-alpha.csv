@@ -1,22 +1,22 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,786472,953564
+dmGameSystem,786609,953701
 dmScript,671164,172816
-dmGraphics,335699,394494
+dmGraphics,334245,392556
 _mbedtls_* (library),230926,259021
-std,189521,216771
-dmRender,187811,229153
+std,189547,216797
+dmRender,187724,229066
 dmGameObject,179156,217844
-dmGui,149997,176328
+dmGui,151072,177403
 (anonymous namespace),138734,194207
 basist,123709,119881
 dmCrash,119281,15313
 _compress_* (library),114295,115370
 dmHashTable<>,83361,94272
-[section .text],79578,79578
+[section .text],79491,79491
 _pfb,65536,65569
 dmParticle,61907,70269
 dmResource,61667,74271
-dmPhysics,58218,75036
+dmPhysics,58258,75076
 _cf_* (library),43506,50751
 _decompress_* (library),43365,44131
 dmSound,33998,39563
@@ -25,9 +25,9 @@ btCollisionWorld,30610,38976
 btConvexHullInternal,30424,31901
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,27063,30335
+dmEngine,27099,30371
 _lua_* (library),26938,30557
-_GLOBAL_* (library),26623,32086
+_GLOBAL_* (library),26607,32070
 dmInput,25282,25992
 btDiscreteDynamicsWorld,25213,29104
 _load_* (library),23438,23615
@@ -52,16 +52,16 @@ gjkepa2_impl,12593,13871
 _lib_* (library),12155,14416
 dmHttpClient,11971,14224
 dmSoundCodec,11780,14998
-[section .plt],11600,11600
+[section .plt],11616,11616
 dmNativeJoy,11520,36
 dmHttpService,11418,13342
 _internal_* (library),11202,11421
-[section .hash],11104,11104
+[section .hash],11112,11112
 b2World,10876,11863
 dmEasing,10874,10985
 dmHttpCache,10602,12118
 btGjkPairDetector,10299,11239
-[section .dynsym],10128,10128
+[section .dynsym],10152,10152
 btConvexConvexAlgorithm,9966,12166
 btDbvt,9831,11360
 mdct_backward,9785,9823
@@ -119,8 +119,8 @@ _cconv_* (library),5973,6252
 dmLiveUpdate,5971,7388
 FontSDFGenerate(),5962,6061
 btDbvtBroadphase,5882,7418
-[section .dynstr],5847,5847
-[section .got.plt],5816,5816
+[section .dynstr],5857,5857
+[section .got.plt],5824,5824
 dmDeviceOpenSL,5770,6647
 GenerateDistanceField(),5743,5855
 InterpretCharString(),5701,5796
@@ -203,8 +203,8 @@ SphereTriangleDetector,3462,4088
 btConvexShape,3460,4044
 _crt_* (library),3418,3566
 MarkupCreateInternal(),3386,3489
+b2PolygonShape,3360,4109
 btPoint2PointConstraint,3359,4586
-b2PolygonShape,3356,4105
 fs_finish,3345,3379
 btTriangleShape,3305,4560
 _mpi_* (library),3246,3648
@@ -238,7 +238,7 @@ _bcread_* (library),2825,2865
 btGImpactShapeInterface,2821,4101
 dmResourceArchive,2798,3525
 btCompoundCompoundLeafCallback,2787,2998
-[section .gnu.version],2774,2774
+[section .gnu.version],2776,2776
 _page_* (library),2774,3177
 btSubsimplexConvexCast,2764,3197
 _packetout,2763,2798
@@ -639,14 +639,14 @@ FontTrueTypeGetGlyphIndex(),665,735
 JobSystemPushJob,662,703
 poly1305_process,662,703
 _prng_* (library),662,779
-FontGenUpdateGlyphs(),657,723
+FontGenUpdateGlyphs(),654,720
 _Value_* (library),654,884
 touchById,653,687
+[LOAD #1 [RX]],651,651
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
 bit_tohex,642,676
-[LOAD #1 [RX]],639,639
 b2GridAndPolygonContact,634,1027
 b2GridAndCircleContact,634,1022
 _bisect_* (library),632,681
@@ -1274,11 +1274,11 @@ dmNativeCloseWindow,168,212
 SensorCallback,168,207
 _pk_* (library),168,203
 _test_* (library),168,247
+dmSpinlock,168,415
 Particle_ReloadPrototype,167,216
 btTripleCross(),166,229
 dmEngineInitialize(),166,214
 PopComposite(),166,210
-dmSpinlock,166,413
 oggbyte_read1,165,203
 strbuf_new,165,200
 MarkupDestroy(),164,214
@@ -1736,8 +1736,8 @@ FontGenAddGlyphs(),59,133
 HttpDeleteRequest,59,101
 inet_optfamily,59,98
 reader_string,59,97
-JobProcessSentinelGlyph(),58,130
 TextLayoutGetObjectSource(),58,125
+JobProcessSentinelGlyph(),57,129
 TextLayoutGetBounds(),57,123
 TextLayoutGetObjectCount(),57,123
 dmNativeAndroidSetJoystickLayoutLegacy,57,120
@@ -2015,6 +2015,7 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
+[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 _to_* (library),20,87
@@ -2305,7 +2306,6 @@ vkMapMemory,8,36
 TAG_UL,8,35
 json_array,8,35
 vkCmdDraw,8,34
-[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2354,17 +2354,17 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9492102
-[section .debug_loc],0,7965331
-[section .debug_line],0,3579287
-[section .debug_str],0,2704608
-[section .debug_ranges],0,1427776
-[section .debug_abbrev],0,581927
-[section .symtab],0,28296
-[section .strtab],0,18703
+[section .debug_info],0,9494348
+[section .debug_loc],0,7966179
+[section .debug_line],0,3580039
+[section .debug_str],0,2704849
+[section .debug_ranges],0,1428064
+[section .debug_abbrev],0,582010
+[section .symtab],0,28320
+[section .strtab],0,18713
 [ELF Headers],0,2304
 [section .shstrtab],0,389
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,7
+[Unmapped],0,15

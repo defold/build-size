@@ -1,24 +1,24 @@
 symbol_group_name,vmsize,filesize
 dmScript,633441,141878
-dmGameSystem,604556,804064
-[section .rodata],403228,403228
-dmGraphics,278740,369572
+dmGameSystem,604412,803920
+[section .rodata],403340,403340
+dmGraphics,277264,367440
 _mbedtls_* (library),176054,214464
-dmRender,140989,189327
+dmRender,140917,189255
 dmGameObject,136438,183929
-dmGui,117300,152076
+dmGui,118076,152852
 dmCrash,112130,11618
-basist,112036,110325
+basist,112036,110339
 std,108786,157799
 _compress_* (library),102175,103702
 [section .rel.dyn],80000,80000
-[section .ARM.exidx],67496,67496
+[section .ARM.exidx],67480,67480
 _pfb,65536,65561
 dmHashTable<>,56672,70628
 dmResource,47720,62645
 (anonymous namespace),45236,103919
 dmParticle,43193,53418
-dmPhysics,41184,60450
+dmPhysics,41236,60502
 _cf_* (library),33060,42889
 btConvexHullInternal,32348,34121
 _GLOBAL_* (library),27876,35824
@@ -26,7 +26,7 @@ dmSound,25861,33170
 dmRig,21824,26452
 _lua_* (library),20934,25465
 btSequentialImpulseConstraintSolver,20760,25174
-dmEngine,20662,25346
+dmEngine,20690,25374
 [section .ARM.extab],20232,20232
 _decompress_* (library),20200,21146
 btCollisionWorld,19893,29083
@@ -40,12 +40,12 @@ dmDDF,16176,23963
 btQuantizedBvh,15948,18286
 _strfmt_* (library),15132,16374
 _internal_* (library),14804,15087
-[section .plt],13055,13055
+[section .plt],13071,13071
 btGeneric6DofSpring2Constraint,13048,16979
 dmHID,12748,19297
 dmObjectPool<>,11916,15082
 btIDebugDraw,11900,13745
-[section .hash],11728,11728
+[section .hash],11736,11736
 _luaL_* (library),11573,13978
 dmNativeJoy,11520,28
 btHingeConstraint,11088,13099
@@ -74,15 +74,15 @@ _zip_* (library),7160,7839
 _tinfl_* (library),7091,7507
 RefreshObjectStyles(),7076,7259
 _decl_* (library),6896,7342
-[section .dynsym],6800,6800
+[section .dynsym],6816,6816
 btAxisSweep3Internal<>,6740,9029
 b2DynamicTree,6732,8115
 _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
-[section .rel.plt],6512,6512
+[section .rel.plt],6520,6520
+[section .text],6455,6455
 _alloc_* (library),6432,6780
-[section .text],6419,6419
 _parse_* (library),6340,7126
 btDbvt,6160,7865
 dmConfigFile,6156,7439
@@ -90,7 +90,7 @@ btPolyhedralContactClipping,6108,6969
 dmBuffer,6076,8241
 _tab_* (library),6068,6835
 _lib_* (library),6050,8231
-[section .dynstr],5959,5959
+[section .dynstr],5969,5969
 dmSys,5930,8179
 CreateEffect(),5900,6246
 dmConnectionPool,5856,7459
@@ -161,7 +161,7 @@ b2GridShape,3412,5005
 _carith_* (library),3368,3461
 _luaopen_* (library),3358,4135
 btGImpactQuantizedBvh,3276,3773
-[section .got.plt],3268,3268
+[section .got.plt],3272,3272
 b2WheelJoint,3256,4628
 cp_next,3248,3368
 TextLayoutGetGlyphRenderData(),3208,3372
@@ -177,7 +177,7 @@ _tdefl_* (library),3063,3524
 _sync_* (library),2969,3402
 btMiniSDF,2968,3208
 b2WeldJoint,2960,3835
-[section .gnu.version],2930,2930
+[section .gnu.version],2932,2932
 b2SeparationFunction,2924,3254
 ReverseHashContainer,2920,3525
 btSimulationIslandManager,2916,4079
@@ -342,13 +342,13 @@ _state_* (library),1192,1562
 FontColrGetGlyphBox(),1188,1305
 dmHashClone64,1182,1244
 dmHashClone32,1178,1240
-LogInternal,1172,1232
 IsBoundaryPoint(),1164,1299
 _idct_* (library),1164,1223
 _plane_* (library),1164,1376
 _time_* (library),1162,1348
 global_select,1160,1222
 _SceneDesc_* (library),1159,3471
+LogInternal,1156,1216
 dmImage,1156,1483
 _lex_* (library),1156,1527
 b2ChainShape,1156,2290
@@ -576,7 +576,6 @@ assign_adjust,520,566
 poly1305_process,516,565
 dmTrigLookup,516,609
 FontOutlineBoundsQuadraticTo(),512,618
-FontGenUpdateGlyphs(),512,602
 vwin256,512,536
 FontLoadFromMemoryTTF(),508,590
 mgf_mask,508,565
@@ -605,6 +604,7 @@ OutlineCubicTo(),484,590
 PushClipGlyph(),480,550
 __udivmodsi4,480,525
 PointVariableCurveDistanceSquaredFromRoots(),472,621
+FontGenUpdateGlyphs(),472,562
 dmNativeCreateJoystickDeviceGuid,472,553
 oggbyte_set4,472,517
 _ip6_* (library),468,538
@@ -675,7 +675,6 @@ _SpriteDesc_* (library),365,943
 PointCurveDistanceSquaredFromRoots(),364,476
 _cur_* (library),364,429
 strscan_bin,364,408
-[LOAD #1 [RX]],364,364
 _JNIEnv,364,967
 dmNativeAndroidPlatformOpenWindow,360,442
 socket_recvfrom,360,424
@@ -696,12 +695,12 @@ socket_sendto,352,414
 meth_sendto,352,412
 searchpath,352,411
 _ContactPointResponse_* (library),352,481
+[LOAD #1 [RX]],352,352
 TextLayoutGetDecorationGeometry(),348,464
 FontPackGlyphFaceColors(),348,449
 FindGlyphGradient(),348,445
 FontGenerateGlyph(),348,442
 GetOrCreateNamedStyle(),348,441
-FontGenDestroyJobData(),348,439
 expr_discharge,344,423
 btGImpactTriangleCallback,344,569
 dmNativeOSGetJoystickPos,344,417
@@ -724,6 +723,7 @@ _obj_* (library),336,489
 _g_* (library),332,433
 _CHARSET_* (library),332,373
 meth_receive,328,437
+FontGenDestroyJobData(),328,419
 btSolverBody,328,412
 _de_* (library),328,453
 stbi__get16be(),328,395
@@ -1568,7 +1568,6 @@ LZ4_resetStreamState,57,110
 JobPostProcessSentinelGlyph(),56,158
 dmNativeAndroidPlatformOnGainedFocus,56,141
 dmEngineFinalize(),56,139
-JobProcessSentinelGlyph(),56,136
 dmNativeSetCursorVisible,56,129
 FontTrueTypeDestroy(),56,127
 b2ContactListener,56,561
@@ -1709,6 +1708,7 @@ _ZTIPDu,40,64
 round_constants,40,32
 is_equal(),38,101
 MarkupCreateStyleFragment(),36,125
+JobProcessSentinelGlyph(),36,116
 JNIDetachCurrentThread,36,107
 TextLayoutLegacyFree(),36,107
 socket_hoststrerror,36,104
@@ -1819,6 +1819,7 @@ socket_open,24,68
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
+[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 dmNativeIsMouseLeftButtonFromTouch,20,103
 _reset_* (library),20,102
@@ -1886,7 +1887,6 @@ quant_look,16,43
 _RADIUS_* (library),16,80
 _PIVOT_* (library),16,78
 _vec3_* (library),16,37
-[LOAD #3 [RW]],15,0
 _row_* (library),13,111
 btOverlappingPairCache,12,156
 ApplySpatialGradientFallback(),12,129
@@ -2366,18 +2366,18 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8593978
-[section .debug_loc],0,4745867
-[section .debug_line],0,3665356
-[section .debug_str],0,2695618
-[section .debug_ranges],0,1519280
-[section .debug_abbrev],0,593042
-[section .debug_frame],0,389080
-[section .symtab],0,47584
-[section .strtab],0,20209
+[section .debug_info],0,8596189
+[section .debug_loc],0,4746906
+[section .debug_line],0,3665938
+[section .debug_str],0,2695859
+[section .debug_ranges],0,1518936
+[section .debug_abbrev],0,593107
+[section .debug_frame],0,389116
+[section .symtab],0,47632
+[section .strtab],0,20219
 [ELF Headers],0,1400
 [section .shstrtab],0,383
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,4
+[Unmapped],0,6
