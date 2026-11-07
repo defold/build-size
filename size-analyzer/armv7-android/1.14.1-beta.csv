@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
 dmScript,633441,141899
-dmGameSystem,596120,791902
-[section .rodata],396376,396376
-dmGraphics,278708,369512
+dmGameSystem,608164,807029
+[section .rodata],397648,397648
+dmGraphics,278784,369706
 _mbedtls_* (library),176054,214457
 dmGameObject,136082,183134
-dmRender,132549,177206
+dmRender,132957,178442
 dmGui,117300,152125
 dmCrash,112130,11618
 basist,112036,110388
 std,108786,157792
 _compress_* (library),102175,103702
-[section .rel.dyn],79888,79888
-[section .ARM.exidx],66944,66944
+[section .rel.dyn],80128,80128
+[section .ARM.exidx],67232,67232
 _pfb,65536,65561
 dmHashTable<>,55332,68946
 dmResource,47492,62423
@@ -21,14 +21,14 @@ dmParticle,43193,53425
 dmPhysics,41180,60446
 _cf_* (library),33060,42889
 btConvexHullInternal,32348,34121
-_GLOBAL_* (library),27876,35796
+_GLOBAL_* (library),27980,36065
 dmSound,25861,33170
 dmRig,21824,26452
 dmEngine,20986,25758
 _lua_* (library),20934,25465
 btSequentialImpulseConstraintSolver,20760,25174
+[section .ARM.extab],20256,20256
 _decompress_* (library),20200,21146
-[section .ARM.extab],20184,20184
 btCollisionWorld,19893,29083
 dmInput,19849,20927
 _load_* (library),18068,18837
@@ -81,8 +81,8 @@ _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6512,6512
+[section .text],6435,6435
 _alloc_* (library),6432,6780
-[section .text],6427,6427
 _parse_* (library),6340,7126
 btDbvt,6160,7865
 dmConfigFile,6156,7439
@@ -242,8 +242,8 @@ b2Distance(),1956,2106
 fs_finish,1952,2010
 btTriangleMeshShape,1940,3627
 strscan_dec,1928,1988
+[section .bss],1927,0
 _strscan_* (library),1904,2065
-[section .bss],1903,0
 btDefaultCollisionConfiguration,1900,2803
 FontPackGlyphVertices(),1880,2036
 _vorbis_* (library),1880,2040
@@ -655,12 +655,12 @@ lj_parse,400,441
 operator new(),398,640
 ResourceChunkCacheEvictPathHash(),396,502
 cp_errmsg,396,454
+[section .init_array],396,396
 ProcessVBoundsAction,392,506
 dmNativeTerminateJoysticks,392,467
 ConfigFileGetInt,392,457
 dmHashBufferNoReverse64,388,476
 inet_pushresolved,388,454
-[section .init_array],388,388
 dmPPrint,388,649
 ParseIndex(),384,460
 _lookup_* (library),384,444
@@ -967,6 +967,7 @@ dmIndexPool<>,192,275
 dmArrayUtil,192,265
 PopComposite(),192,260
 DefoldError,192,252
+dmExportedSymbols,192,242
 LZ4_compressHC2,192,240
 tcp_methods,192,220
 dmNativeWin,192,28
@@ -1010,7 +1011,6 @@ _LuaSource_* (library),186,341
 Particle_SetRotation,185,254
 TextLayoutReleaseObjects(),184,274
 meth_listen,184,244
-dmExportedSymbols,184,234
 setjitmode,184,227
 _RayCastResponse_* (library),184,303
 _RigAnimation_* (library),184,289
@@ -1321,6 +1321,8 @@ dmNativeOSPollEvents,96,165
 GetEglFailureResult,96,164
 dmNativeSwapBuffers,96,164
 ScriptBullet3DExt,96,162
+ScriptMaterialExt,96,162
+ScriptComputeExt,96,161
 ScriptBox2DExt,96,159
 ScriptImageExt,96,159
 ScriptModelExt,96,159
@@ -1848,6 +1850,7 @@ hookf.hooknames,20,52
 _supported_* (library),20,37
 g_Window,20,25
 stbi__compute_huffman_codes(),19,100
+[LOAD #3 [RW]],19,0
 FontCollectionSetColorEmojiEnabled(),16,105
 dmNativeAndroidPlatformDestroyWindow,16,101
 global_create6,16,95
@@ -1954,7 +1957,6 @@ b2_version,12,39
 g_SoundManager,12,31
 stbi__process_marker(),11,137
 g_AndroidCommandLineProgramName,11,59
-[LOAD #3 [RW]],11,0
 _depth_* (library),9,54
 _init_* (library),9,98
 btConstraintSolver,8,186
@@ -2364,18 +2366,18 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8561718
-[section .debug_loc],0,4731851
-[section .debug_line],0,3642541
-[section .debug_str],0,2673276
-[section .debug_ranges],0,1514472
-[section .debug_abbrev],0,588212
-[section .debug_frame],0,385836
-[section .symtab],0,47472
-[section .strtab],0,20067
+[section .debug_info],0,8578985
+[section .debug_loc],0,4736730
+[section .debug_line],0,3650135
+[section .debug_str],0,2676703
+[section .debug_ranges],0,1515576
+[section .debug_abbrev],0,590551
+[section .debug_frame],0,386732
+[section .symtab],0,47504
+[section .strtab],0,20106
 [ELF Headers],0,1400
 [section .shstrtab],0,383
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,2
+[Unmapped],0,4
