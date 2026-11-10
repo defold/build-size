@@ -1,18 +1,18 @@
 symbol_group_name,vmsize,filesize
 dmGameSystem,803805,973872
 dmScript,673376,175258
-dmGraphics,334578,393063
+dmGraphics,334742,393227
 _mbedtls_* (library),230926,259021
-dmRender,190152,232257
+dmRender,190078,232300
 std,189523,216773
-dmGameObject,179172,217860
+dmGameObject,179269,217957
 dmGui,155333,182249
 (anonymous namespace),138734,194207
 _compress_* (library),132936,134126
 basist,123709,119881
 dmCrash,119281,15313
 dmHashTable<>,83346,94257
-[section .text],80024,80024
+[section .text],80025,80025
 _pfb,65536,65569
 dmParticle,61903,70265
 dmResource,61667,74271
@@ -25,9 +25,9 @@ btCollisionWorld,30610,38976
 btConvexHullInternal,30424,31901
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
-dmEngine,27604,31030
+dmEngine,28366,32410
+_GLOBAL_* (library),27027,32607
 _lua_* (library),26938,30557
-_GLOBAL_* (library),26896,32476
 dmInput,25282,25992
 btDiscreteDynamicsWorld,25213,29104
 _load_* (library),23438,23615
@@ -56,7 +56,7 @@ dmSoundCodec,11780,14998
 dmNativeJoy,11520,36
 dmHttpService,11418,13342
 _internal_* (library),11202,11421
-[section .hash],11112,11112
+[section .hash],11120,11120
 b2World,10876,11863
 dmEasing,10874,10985
 dmHttpCache,10602,12118
@@ -105,7 +105,7 @@ btCompoundCompoundCollisionAlgorithm,7046,8389
 _debug_* (library),7018,7520
 _meta_* (library),7010,7577
 btPersistentManifold,6943,7738
-[section .gnu.hash],6888,6888
+[section .gnu.hash],6892,6892
 btConvexPlaneCollisionAlgorithm,6757,8260
 btConvexConcaveCollisionAlgorithm,6740,8988
 b2RevoluteJoint,6519,8072
@@ -240,7 +240,7 @@ _bcread_* (library),2825,2865
 btGImpactShapeInterface,2821,4101
 dmResourceArchive,2798,3525
 btCompoundCompoundLeafCallback,2787,2998
-[section .gnu.version],2776,2776
+[section .gnu.version],2778,2778
 _page_* (library),2774,3177
 FontGetLayoutVertexMetrics(),2766,2873
 btSubsimplexConvexCast,2764,3197
@@ -341,7 +341,7 @@ bcwrite_proto,1730,1768
 FontCacheEffect(),1724,1807
 _clib_* (library),1713,1867
 ConvertGlyphBitmap(),1705,1793
-[section .bss],1701,0
+[section .bss],1693,0
 dmImage,1690,1937
 gc_onestep,1689,1724
 _TextureImage_* (library),1676,2249
@@ -648,7 +648,7 @@ _prng_* (library),662,779
 FontGenUpdateGlyphs(),654,720
 _Value_* (library),654,884
 touchById,653,687
-[LOAD #1 [RX]],651,651
+[LOAD #1 [RX]],650,650
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 AppendOutline(),647,725
@@ -1010,6 +1010,7 @@ bcemit_INS,309,344
 ciphersuite_preference,308,355
 buf_grow,308,341
 OverlayStyle(),307,371
+dmHashIsReverseHashEnabled,306,357
 _shift_* (library),306,347
 dmNativeCrc16,306,344
 dmNativeAndroidSetFullscreenParameters,305,368
@@ -2372,12 +2373,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9582310
-[section .debug_loc],0,8051408
-[section .debug_line],0,3610757
-[section .debug_str],0,2715167
-[section .debug_ranges],0,1444368
-[section .debug_abbrev],0,588168
+[section .debug_info],0,9584187
+[section .debug_loc],0,8052911
+[section .debug_line],0,3611846
+[section .debug_str],0,2715794
+[section .debug_ranges],0,1444736
+[section .debug_abbrev],0,588160
 [section .symtab],0,28440
 [section .strtab],0,18780
 [ELF Headers],0,2304
@@ -2385,4 +2386,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,5
+[Unmapped],0,3

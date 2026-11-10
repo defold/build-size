@@ -1,11 +1,11 @@
 symbol_group_name,vmsize,filesize
 dmScript,635189,143977
-dmGameSystem,618380,821575
+dmGameSystem,618380,821579
 [section .rodata],405452,405452
-dmGraphics,277564,367892
+dmGraphics,277792,368168
 _mbedtls_* (library),176054,214464
-dmRender,142413,191522
-dmGameObject,136454,183959
+dmRender,142445,191647
+dmGameObject,136502,184007
 dmGui,118540,154296
 _compress_* (library),117163,118789
 dmCrash,112130,11618
@@ -14,17 +14,17 @@ std,108786,157815
 [section .rel.dyn],80328,80328
 [section .ARM.exidx],68056,68056
 _pfb,65536,65561
-dmHashTable<>,56672,70586
-dmResource,47720,62642
+dmHashTable<>,56672,70610
+dmResource,47720,62625
 (anonymous namespace),45236,103912
 dmParticle,43193,53418
 dmPhysics,41236,60502
 _cf_* (library),33060,42889
 btConvexHullInternal,32348,34121
-_GLOBAL_* (library),28124,36237
+_GLOBAL_* (library),28244,36345
 dmSound,25861,33170
 dmRig,21824,26452
-dmEngine,20990,25878
+dmEngine,21610,27064
 _lua_* (library),20934,25465
 btSequentialImpulseConstraintSolver,20760,25174
 [section .ARM.extab],20484,20484
@@ -35,7 +35,7 @@ btConeTwistConstraint,17844,20122
 btDiscreteDynamicsWorld,17148,21751
 _psa_* (library),17084,21392
 vwin8192,16384,16409
-dmDDF,16176,23963
+dmDDF,16176,23957
 btQuantizedBvh,15948,18286
 _decompress_* (library),15488,16494
 _strfmt_* (library),15132,16374
@@ -45,7 +45,7 @@ btGeneric6DofSpring2Constraint,13048,16979
 dmHID,12748,19297
 dmObjectPool<>,11916,15082
 btIDebugDraw,11900,13745
-[section .hash],11736,11736
+[section .hash],11744,11744
 _luaL_* (library),11573,13978
 dmNativeJoy,11520,28
 btHingeConstraint,11088,13099
@@ -68,7 +68,7 @@ dmSocket,7580,10800
 _mz_* (library),7456,8348
 __cxxabiv1,7398,17517
 FontCreateLayoutVertices(),7368,7613
-[section .gnu.hash],7348,7348
+[section .gnu.hash],7352,7352
 _get_* (library),7228,9061
 btRigidBody,7216,9595
 _zip_* (library),7160,7839
@@ -82,7 +82,7 @@ _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6512,6512
-[section .text],6503,6503
+[section .text],6487,6487
 _alloc_* (library),6432,6780
 _parse_* (library),6340,7126
 btDbvt,6160,7865
@@ -98,7 +98,7 @@ dmConnectionPool,5856,7459
 btAlignedObjectArray<>,5640,7691
 _debug_* (library),5632,6454
 dmPlatform,5560,16427
-dmArray<>,5492,8597
+dmArray<>,5492,8611
 _meta_* (library),5444,6291
 lex_scan,5336,5521
 dBoxBox2(),5280,5519
@@ -177,7 +177,7 @@ _tdefl_* (library),3063,3524
 _sync_* (library),2969,3402
 btMiniSDF,2968,3208
 b2WeldJoint,2960,3835
-[section .gnu.version],2932,2932
+[section .gnu.version],2934,2934
 b2SeparationFunction,2924,3254
 ReverseHashContainer,2920,3525
 btSimulationIslandManager,2916,4079
@@ -244,8 +244,8 @@ b2Distance(),1956,2106
 fs_finish,1952,2010
 btTriangleMeshShape,1940,3627
 strscan_dec,1928,1988
+[section .bss],1917,0
 _strscan_* (library),1904,2065
-[section .bss],1901,0
 btDefaultCollisionConfiguration,1900,2803
 FontPackGlyphVertices(),1880,2036
 _vorbis_* (library),1880,2040
@@ -696,6 +696,7 @@ ov_bitrate,359,402
 dmNativeParseGLVersion,356,427
 collect_fd,356,415
 fscope_end,356,399
+[LOAD #1 [RX]],355,355
 unwind_phase2(),352,475
 dmNativeAndroidInitializeJoystickAxes,352,438
 btSingleContactCallback,352,570
@@ -710,7 +711,6 @@ FontPackGlyphFaceColors(),348,449
 FindGlyphGradient(),348,445
 FontGenerateGlyph(),348,442
 GetOrCreateNamedStyle(),348,441
-[LOAD #1 [RX]],348,348
 expr_discharge,344,423
 btGImpactTriangleCallback,344,569
 dmNativeOSGetJoystickPos,344,417
@@ -828,6 +828,7 @@ _opaque_* (library),260,331
 debug_putchunkname,260,327
 rsa_unblind,260,304
 k_clTable,260,286
+dmHashIsReverseHashEnabled,259,334
 _char_* (library),257,286
 FontCreateEffectCache(),256,362
 make_current,256,317
@@ -979,7 +980,7 @@ Particle_SetPosition,193,262
 FontGetDecorationSegment(),192,326
 func,192,309
 dmNativeOSGetJoystickParam,192,299
-dmIndexPool<>,192,275
+dmIndexPool<>,192,281
 dmArrayUtil,192,265
 PopComposite(),192,260
 DefoldError,192,252
@@ -1120,7 +1121,7 @@ _Quat_* (library),156,402
 _EventKey_* (library),155,398
 _Struct_* (library),154,439
 _android_* (library),152,340
-dmEngineInitialize(),152,238
+dmEngineInitialize(),152,236
 onNativeWindowRedrawNeeded,152,227
 onNativeWindowResized,152,222
 FindGlyph(),152,211
@@ -1585,7 +1586,7 @@ dmHashString64,59,106
 LZ4_resetStreamState,57,110
 JobPostProcessSentinelGlyph(),56,158
 dmNativeAndroidPlatformOnGainedFocus,56,141
-dmEngineFinalize(),56,140
+dmEngineFinalize(),56,139
 TextLayoutRefreshObjectStyles(),56,135
 dmNativeSetCursorVisible,56,129
 FontTrueTypeDestroy(),56,127
@@ -1836,7 +1837,6 @@ socket_open,24,68
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
-[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 dmNativeIsMouseLeftButtonFromTouch,20,103
 _reset_* (library),20,102
@@ -1929,7 +1929,7 @@ rmtp_TilemapVertexSize(),12,98
 rmtp_ModelVertexCount(),12,96
 rmtp_SpriteVertexSize(),12,96
 rmtp_TilemapTileCount(),12,96
-ProfileRegisterPropertyF32(),12,95
+ProfileRegisterPropertyU32(),12,95
 rmtp_MeshVertexCount(),12,94
 rmtp_ModelIndexCount(),12,94
 rmtp_ModelVertexSize(),12,94
@@ -1942,8 +1942,8 @@ rmtp_MeshVertexSize(),12,92
 rmtp_ParticlesAlive(),12,92
 rmtp_GuiAnimations(),12,90
 rmtp_GuiParticlefx(),12,90
+ProfileRegisterPropertyF32(),12,89
 ProfileRegisterPropertyGroup(),12,89
-ProfileRegisterPropertyU32(),12,89
 rmtp_SoundPlaying(),12,88
 rmtp_GOInstances(),12,86
 rmtp_GuiTextures(),12,86
@@ -2113,6 +2113,7 @@ TAG_SIZE,8,29
 TAG_WAVE,8,29
 TAG_UL,8,27
 [section .fini_array],8,8
+[LOAD #3 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 TextLayoutCreateMarkup(),4,123
 btTriangleCallback,4,108
@@ -2123,7 +2124,6 @@ btConvexPenetrationDepthSolver,4,76
 FontTrueTypeGetColr(),4,75
 dmInputDDF,4,74
 dmNativeOSSetWindowBackgroundColor,4,71
-ProfilePropertyAddU32(),4,70
 btBroadphaseAabbCallback,4,70
 btEnterProfileZoneDefault(),4,69
 dmNativeSetWindowBackgroundColor,4,69
@@ -2140,6 +2140,7 @@ dmNativeOSUnacquireAuxContext,4,66
 _ZN12dmGameSystemL25g_* (library),4,65
 dmNativeAndroidVerifySurface,4,65
 ProfilePropertyAddF32(),4,64
+ProfilePropertyAddU32(),4,64
 ProfilePropertySetU32(),4,64
 dmNativeOSAcquireAuxContext,4,64
 dmNativeUnacquireAuxContext,4,64
@@ -2384,13 +2385,13 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8678693
-[section .debug_loc],0,4802618
-[section .debug_line],0,3699511
-[section .debug_str],0,2706199
-[section .debug_ranges],0,1542680
-[section .debug_abbrev],0,599338
-[section .debug_frame],0,391660
+[section .debug_info],0,8680133
+[section .debug_loc],0,4803604
+[section .debug_line],0,3700755
+[section .debug_str],0,2706826
+[section .debug_ranges],0,1543344
+[section .debug_abbrev],0,599380
+[section .debug_frame],0,391804
 [section .symtab],0,47664
 [section .strtab],0,20286
 [ELF Headers],0,1400
@@ -2398,4 +2399,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,8
+[Unmapped],0,7

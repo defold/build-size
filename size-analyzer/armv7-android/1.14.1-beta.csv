@@ -2,7 +2,7 @@ symbol_group_name,vmsize,filesize
 dmScript,633441,141899
 dmGameSystem,608164,807029
 [section .rodata],397648,397648
-dmGraphics,278784,369706
+dmGraphics,279012,369982
 _mbedtls_* (library),176054,214457
 dmGameObject,136082,183134
 dmRender,132957,178442
@@ -81,7 +81,7 @@ _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
 [section .rel.plt],6512,6512
-[section .text],6435,6435
+[section .text],6447,6447
 _alloc_* (library),6432,6780
 _parse_* (library),6340,7126
 btDbvt,6160,7865
@@ -1850,7 +1850,6 @@ hookf.hooknames,20,52
 _supported_* (library),20,37
 g_Window,20,25
 stbi__compute_huffman_codes(),19,100
-[LOAD #3 [RW]],19,0
 FontCollectionSetColorEmojiEnabled(),16,105
 dmNativeAndroidPlatformDestroyWindow,16,101
 global_create6,16,95
@@ -2355,6 +2354,7 @@ vkMapMemory,4,28
 json_array,4,27
 vkCmdDraw,4,26
 stbi__process_frame_header(),3,71
+[LOAD #3 [RW]],3,0
 _ZL16g_* (library),2,82
 _bionic_* (library),1,54
 gContactCalcArea3Points,1,41
@@ -2366,11 +2366,11 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8578985
-[section .debug_loc],0,4736730
-[section .debug_line],0,3650135
-[section .debug_str],0,2676703
-[section .debug_ranges],0,1515576
+[section .debug_info],0,8579284
+[section .debug_loc],0,4737162
+[section .debug_line],0,3650288
+[section .debug_str],0,2676739
+[section .debug_ranges],0,1515560
 [section .debug_abbrev],0,590551
 [section .debug_frame],0,386732
 [section .symtab],0,47504
