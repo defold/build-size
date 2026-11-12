@@ -1,5 +1,5 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,810263,981896
+dmGameSystem,811131,982901
 dmScript,686577,189713
 dmGraphics,334699,393122
 _mbedtls_* (library),230926,259021
@@ -12,7 +12,7 @@ _compress_* (library),132936,134126
 basist,123709,119881
 dmCrash,119281,15313
 dmHashTable<>,83346,94257
-[section .text],80260,80260
+[section .text],80245,80245
 _pfb,65536,65569
 dmParticle,61999,70361
 dmResource,61667,74271
@@ -376,7 +376,7 @@ _CollisionObjectDesc_* (library),1490,2448
 tcp_methods,1488,1524
 _TileSet_* (library),1487,2394
 b2ContactManager,1479,1826
-dmThread,1473,1992
+dmThread,1478,1997
 _CollisionShape_* (library),1470,1982
 _Model_* (library),1467,2128
 GetObjectPosition(),1457,1553
@@ -1872,10 +1872,11 @@ ProfileRegisterPropertyU32(),38,107
 FontFreeGlyph(),38,97
 dmNativeSetDeviceChangedCallback,38,95
 FontGetGlyphIndex(),38,91
-ProfileSetThreadName(),38,90
+ProfileThreadEntered(),38,90
 ProfileScopeBegin(),38,89
 FontGetDescent(),38,88
 FontGetAscent(),38,87
+ProfileThreadExited(),38,87
 ProfileScopeEnd(),38,86
 ProfileLogText(),38,85
 ProfileFrameEnd(),38,83
@@ -2357,12 +2358,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9640006
-[section .debug_loc],0,8091661
-[section .debug_line],0,3632080
-[section .debug_str],0,2736407
-[section .debug_ranges],0,1448800
-[section .debug_abbrev],0,592589
+[section .debug_info],0,9640564
+[section .debug_loc],0,8092707
+[section .debug_line],0,3632137
+[section .debug_str],0,2736738
+[section .debug_ranges],0,1449264
+[section .debug_abbrev],0,592602
 [section .symtab],0,28512
 [section .strtab],0,18870
 [ELF Headers],0,2304
@@ -2370,4 +2371,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,14
+[Unmapped],0,15
