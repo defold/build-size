@@ -1,22 +1,22 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,818426,991206
+dmGameSystem,818966,991746
 dmScript,684647,187656
-dmGraphics,333349,391645
+dmGraphics,333400,391822
 _mbedtls_* (library),230926,259021
 dmRender,192010,235708
-std,189510,216760
-dmGameObject,183674,222749
-dmGui,155362,182278
+std,189498,216748
+dmGameObject,184559,223706
+dmGui,155361,182277
 (anonymous namespace),138727,194200
 _compress_* (library),132936,134126
 basist,123709,119881
 dmCrash,119344,15449
 dmHashTable<>,83346,94257
-[section .text],81043,81043
+[section .text],81039,81039
 _pfb,65536,65569
 dmParticle,61804,70166
 dmResource,61667,74271
-dmPhysics,58258,75076
+dmPhysics,58312,75130
 _cf_* (library),43506,50751
 dmRig,39689,45088
 _decompress_* (library),35354,36120
@@ -26,7 +26,7 @@ btConvexHullInternal,30424,31901
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
 dmInput,27882,28974
-_GLOBAL_* (library),27028,32664
+_GLOBAL_* (library),26993,32629
 _lua_* (library),26938,30557
 dmEngine,26729,30435
 btDiscreteDynamicsWorld,25213,29104
@@ -34,7 +34,7 @@ _load_* (library),23452,23629
 dmJson,23422,24330
 libunwind,23347,25261
 dmObjectPool<>,22375,25215
-dmDDF,22262,28621
+dmDDF,22287,28646
 _psa_* (library),20345,23725
 btGeneric6DofSpring2Constraint,19878,23089
 btQuantizedBvh,19223,21193
@@ -51,8 +51,8 @@ btSliderConstraint,13344,14682
 btRigidBody,12896,14907
 gjkepa2_impl,12593,13871
 _lib_* (library),12155,14416
-dmHttpClient,11971,14224
-dmSoundCodec,11748,14966
+dmHttpClient,12011,14264
+dmSoundCodec,11717,14935
 [section .plt],11584,11584
 dmNativeJoy,11520,36
 dmHttpService,11418,13342
@@ -115,8 +115,8 @@ btPolyhedralConvexShape,6438,7222
 _ShaderDesc_* (library),6120,8544
 _tls13_* (library),6108,6723
 dmResourceMounts,6053,7584
+dmLiveUpdate,5985,7402
 _cconv_* (library),5973,6252
-dmLiveUpdate,5971,7388
 FontSDFGenerate(),5946,6045
 btDbvtBroadphase,5882,7418
 [section .dynstr],5852,5852
@@ -163,7 +163,7 @@ b2GridShape,4337,5706
 b2EPCollider,4325,4510
 _hdr_* (library),4303,4570
 btOptimizedBvh,4298,5563
-dmResourceProviderZip,4254,5092
+dmResourceProviderZip,4215,5053
 _luaopen_* (library),4166,4655
 sincos_lookup0,4143,4182
 sincos_lookup1,4135,4174
@@ -249,11 +249,11 @@ _packetout,2763,2798
 _x520_* (library),2760,2803
 btCompoundLeafCallback,2715,2992
 b2Distance(),2697,2791
+dmResourceProviderArchive,2694,3640
 _Material_* (library),2684,3354
 btQuantizedBvhTree,2683,3053
 btCapsuleShape,2677,3665
 btManifoldResult,2653,3822
-dmResourceProviderArchive,2653,3599
 _make_* (library),2634,2756
 TextLayoutInitializeDecorationGeometry(),2629,2710
 _FontMap_* (library),2622,4323
@@ -343,7 +343,7 @@ FontCacheEffect(),1724,1807
 dmResourceProviderFile,1719,2371
 _clib_* (library),1713,1867
 ConvertGlyphBitmap(),1705,1793
-[section .bss],1703,0
+[section .bss],1695,0
 dmImage,1690,1937
 gc_onestep,1689,1724
 _TextureImage_* (library),1676,2249
@@ -2053,6 +2053,7 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
+[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 _to_* (library),20,87
@@ -2342,7 +2343,6 @@ vkFreeMemory,8,37
 vkMapMemory,8,36
 TAG_UL,8,35
 vkCmdDraw,8,34
-[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2390,12 +2390,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9847267
-[section .debug_loc],0,8297887
-[section .debug_line],0,3718565
-[section .debug_str],0,2801857
-[section .debug_ranges],0,1483456
-[section .debug_abbrev],0,603898
+[section .debug_info],0,9847679
+[section .debug_loc],0,8298100
+[section .debug_line],0,3718784
+[section .debug_str],0,2801839
+[section .debug_ranges],0,1483424
+[section .debug_abbrev],0,603932
 [section .symtab],0,28752
 [section .strtab],0,19023
 [ELF Headers],0,2304
@@ -2403,4 +2403,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,15
+[Unmapped],0,21
