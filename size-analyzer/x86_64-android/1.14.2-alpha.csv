@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
 dmGameSystem,818966,991746
-dmScript,684647,187656
-dmGraphics,333400,391822
+dmScript,694599,197549
+dmGraphics,338081,397122
 _mbedtls_* (library),230926,259021
 dmRender,192010,235708
-std,189498,216748
+std,189502,216752
 dmGameObject,184559,223706
 dmGui,155361,182277
 (anonymous namespace),138727,194200
@@ -12,7 +12,7 @@ _compress_* (library),132936,134126
 basist,123709,119881
 dmCrash,119344,15449
 dmHashTable<>,83346,94257
-[section .text],81039,81039
+[section .text],81069,81069
 _pfb,65536,65569
 dmParticle,61804,70166
 dmResource,61667,74271
@@ -26,17 +26,17 @@ btConvexHullInternal,30424,31901
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
 dmInput,27882,28974
-_GLOBAL_* (library),26993,32629
+_GLOBAL_* (library),27001,32637
 _lua_* (library),26938,30557
 dmEngine,26729,30435
 btDiscreteDynamicsWorld,25213,29104
 _load_* (library),23452,23629
-dmJson,23422,24330
 libunwind,23347,25261
 dmObjectPool<>,22375,25215
 dmDDF,22287,28646
 _psa_* (library),20345,23725
 btGeneric6DofSpring2Constraint,19878,23089
+dmJson,19723,20520
 btQuantizedBvh,19223,21193
 btHingeConstraint,18969,20564
 dmHID,17255,22832
@@ -343,7 +343,7 @@ FontCacheEffect(),1724,1807
 dmResourceProviderFile,1719,2371
 _clib_* (library),1713,1867
 ConvertGlyphBitmap(),1705,1793
-[section .bss],1695,0
+[section .bss],1703,0
 dmImage,1690,1937
 gc_onestep,1689,1724
 _TextureImage_* (library),1676,2249
@@ -2278,6 +2278,7 @@ vkCmdBindPipeline,8,42
 vkCmdDrawIndirect,8,42
 vkCmdSetDepthBias,8,42
 vkCmdSetLineWidth,8,42
+vkCmdUpdateBuffer,8,42
 vkCreateImageView,8,42
 vkCreateQueryPool,8,42
 vkCreateSemaphore,8,42
@@ -2390,12 +2391,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9847679
-[section .debug_loc],0,8298100
-[section .debug_line],0,3718784
-[section .debug_str],0,2801839
-[section .debug_ranges],0,1483424
-[section .debug_abbrev],0,603932
+[section .debug_info],0,9859489
+[section .debug_loc],0,8321677
+[section .debug_line],0,3723979
+[section .debug_str],0,2808559
+[section .debug_ranges],0,1487280
+[section .debug_abbrev],0,603875
 [section .symtab],0,28752
 [section .strtab],0,19023
 [ELF Headers],0,2304
@@ -2403,4 +2404,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,21
+[Unmapped],0,13
