@@ -1,10 +1,10 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,818966,991746
+dmGameSystem,820083,993425
 dmScript,694599,197549
-dmGraphics,338081,397122
+dmGraphics,338351,397392
 _mbedtls_* (library),230926,259021
-dmRender,192010,235708
-std,189502,216752
+dmRender,192344,236281
+std,189496,216746
 dmGameObject,184559,223706
 dmGui,155361,182277
 (anonymous namespace),138727,194200
@@ -12,7 +12,7 @@ _compress_* (library),132936,134126
 basist,123709,119881
 dmCrash,119344,15449
 dmHashTable<>,83346,94257
-[section .text],81069,81069
+[section .text],81075,81075
 _pfb,65536,65569
 dmParticle,61804,70166
 dmResource,61667,74271
@@ -26,9 +26,9 @@ btConvexHullInternal,30424,31901
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
 dmInput,27882,28974
-_GLOBAL_* (library),27001,32637
+_GLOBAL_* (library),27009,32645
 _lua_* (library),26938,30557
-dmEngine,26729,30435
+dmEngine,26717,30423
 btDiscreteDynamicsWorld,25213,29104
 _load_* (library),23452,23629
 libunwind,23347,25261
@@ -60,7 +60,7 @@ _internal_* (library),11202,11421
 dmEasing,11151,11319
 [section .hash],11120,11120
 b2World,10876,11863
-dmHttpCache,10602,12118
+dmHttpCache,10598,12114
 FontCreateLayoutVertices(),10445,10570
 btGjkPairDetector,10299,11239
 [section .dynsym],10152,10152
@@ -543,6 +543,7 @@ btAngularLimit,887,1153
 QueriesConflict(),884,949
 btBoxBoxDetector,884,1268
 JobSystemCreate,880,920
+dmURI,880,992
 floor1_inverse2,879,919
 _traverse_* (library),879,1005
 dmHashRelease32,876,916
@@ -569,7 +570,6 @@ _SoundDesc_* (library),827,1387
 PushSegment(),820,936
 FontGetOutlineBounds(),817,892
 _CameraDesc_* (library),812,1248
-dmURI,809,921
 TextLayout,809,897
 _push_* (library),806,843
 _CollectionInstanceDesc_* (library),801,1203
@@ -643,11 +643,11 @@ JobSystemDestroy,672,713
 _toreg_* (library),669,713
 FreeJob(),668,724
 FontTrueTypeGetGlyphIndex(),665,735
+[LOAD #1 [RX]],663,663
 JobSystemPushJob,662,703
 poly1305_process,662,703
 _prng_* (library),662,779
 socket_gaistrerror,658,701
-[LOAD #1 [RX]],655,655
 FontGenUpdateGlyphs(),654,720
 _Value_* (library),654,884
 touchById,653,687
@@ -2391,12 +2391,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9859489
-[section .debug_loc],0,8321677
-[section .debug_line],0,3723979
-[section .debug_str],0,2808559
-[section .debug_ranges],0,1487280
-[section .debug_abbrev],0,603875
+[section .debug_info],0,9861593
+[section .debug_loc],0,8324460
+[section .debug_line],0,3724743
+[section .debug_str],0,2809912
+[section .debug_ranges],0,1487296
+[section .debug_abbrev],0,603927
 [section .symtab],0,28752
 [section .strtab],0,19023
 [ELF Headers],0,2304
@@ -2404,4 +2404,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,13
+[Unmapped],0,12
