@@ -4,7 +4,7 @@ dmGameSystem,636599,842865
 [section .rodata],416562,416562
 dmGraphics,280892,372887
 _mbedtls_* (library),176054,214464
-dmRender,146209,197950
+dmRender,146345,198182
 dmGameObject,140438,188806
 dmGui,118552,154350
 dmCrash,112182,11767
@@ -81,7 +81,7 @@ b2DynamicTree,6732,8115
 _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
-[section .text],6519,6519
+[section .text],6511,6511
 [section .rel.plt],6448,6448
 _alloc_* (library),6432,6780
 dmSys,6422,8929
@@ -2358,11 +2358,11 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8972259
-[section .debug_loc],0,4995770
-[section .debug_line],0,3823973
-[section .debug_str],0,2808442
-[section .debug_ranges],0,1576720
+[section .debug_info],0,8972474
+[section .debug_loc],0,4997106
+[section .debug_line],0,3824250
+[section .debug_str],0,2808548
+[section .debug_ranges],0,1577032
 [section .debug_abbrev],0,616104
 [section .debug_frame],0,404004
 [section .symtab],0,47648
@@ -2372,4 +2372,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,10
+[Unmapped],0,8

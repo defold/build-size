@@ -3,7 +3,7 @@ dmGameSystem,828289,1000159
 dmScript,694599,197549
 dmGraphics,338147,397882
 _mbedtls_* (library),230926,259021
-dmRender,195842,240443
+dmRender,196024,240625
 std,189328,216578
 dmGameObject,184602,223895
 dmGui,155361,182277
@@ -11,7 +11,7 @@ dmGui,155361,182277
 basist,123709,119881
 dmCrash,119344,15449
 dmHashTable<>,86916,98305
-[section .text],80650,80650
+[section .text],80644,80644
 _pfb,65536,65569
 dmParticle,61804,70166
 dmResource,61767,74471
@@ -2007,6 +2007,7 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
+[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 _to_* (library),20,87
@@ -2297,7 +2298,6 @@ vkFreeMemory,8,37
 vkMapMemory,8,36
 TAG_UL,8,35
 vkCmdDraw,8,34
-[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2345,11 +2345,11 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9892769
-[section .debug_loc],0,8348255
-[section .debug_line],0,3733158
-[section .debug_str],0,2816920
-[section .debug_ranges],0,1490592
+[section .debug_info],0,9892993
+[section .debug_loc],0,8348821
+[section .debug_line],0,3733337
+[section .debug_str],0,2817026
+[section .debug_ranges],0,1490864
 [section .debug_abbrev],0,604991
 [section .symtab],0,28776
 [section .strtab],0,19051
@@ -2358,4 +2358,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,19
+[Unmapped],0,16
