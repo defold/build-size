@@ -1,7 +1,7 @@
 symbol_group_name,vmsize,filesize
-dmScript,659238,170110
-dmGameSystem,636599,842865
-[section .rodata],416562,416562
+dmScript,658314,168962
+dmGameSystem,636599,842853
+[section .rodata],416610,416610
 dmGraphics,280892,372887
 _mbedtls_* (library),176054,214464
 dmRender,146345,198182
@@ -14,7 +14,7 @@ std,108786,157808
 [section .ARM.exidx],68696,68696
 _pfb,65536,65561
 dmHashTable<>,58964,73480
-dmResource,47852,62890
+dmResource,45280,60248
 (anonymous namespace),45236,103912
 dmParticle,43225,53450
 dmPhysics,41236,60502
@@ -29,7 +29,6 @@ dmEngine,20874,26013
 btSequentialImpulseConstraintSolver,20760,25174
 [section .ARM.extab],20628,20628
 btCollisionWorld,19893,29083
-dmJson,19649,20654
 _load_* (library),18068,18837
 btConeTwistConstraint,17844,20122
 btDiscreteDynamicsWorld,17148,21751
@@ -39,6 +38,7 @@ dmDDF,16176,23963
 btQuantizedBvh,15948,18286
 _strfmt_* (library),15132,16374
 _internal_* (library),14804,15087
+dmJson,14417,15486
 dmObjectPool<>,13984,17664
 btGeneric6DofSpring2Constraint,13048,16979
 [section .plt],12928,12928
@@ -688,6 +688,7 @@ PointCurveDistanceSquaredFromRoots(),364,476
 _cur_* (library),364,429
 strscan_bin,364,408
 _JNIEnv,364,967
+[LOAD #1 [RX]],361,361
 Engine,360,534
 TextLayoutSetObjectStyle(),360,452
 IsScheduleBusy(),360,447
@@ -700,7 +701,6 @@ ov_bitrate,359,402
 dmNativeParseGLVersion,356,427
 collect_fd,356,415
 fscope_end,356,399
-[LOAD #1 [RX]],353,353
 unwind_phase2(),352,475
 dmNativeAndroidInitializeJoystickAxes,352,438
 btSingleContactCallback,352,570
@@ -2358,13 +2358,13 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8972474
-[section .debug_loc],0,4997106
-[section .debug_line],0,3824250
-[section .debug_str],0,2808548
-[section .debug_ranges],0,1577032
-[section .debug_abbrev],0,616104
-[section .debug_frame],0,404004
+[section .debug_info],0,8968107
+[section .debug_loc],0,4993851
+[section .debug_line],0,3820926
+[section .debug_str],0,2808637
+[section .debug_ranges],0,1573536
+[section .debug_abbrev],0,616081
+[section .debug_frame],0,403988
 [section .symtab],0,47648
 [section .strtab],0,20560
 [ELF Headers],0,1440
@@ -2372,4 +2372,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,8
+[Unmapped],0,10

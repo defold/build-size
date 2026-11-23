@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
 dmGameSystem,828289,1000159
-dmScript,694599,197549
+dmScript,694335,197285
 dmGraphics,338147,397882
 _mbedtls_* (library),230926,259021
 dmRender,196024,240625
-std,189328,216578
+std,189339,216589
 dmGameObject,184602,223895
 dmGui,155361,182277
 (anonymous namespace),138727,194200
 basist,123709,119881
 dmCrash,119344,15449
 dmHashTable<>,86916,98305
-[section .text],80644,80644
+[section .text],80677,80677
 _pfb,65536,65569
 dmParticle,61804,70166
-dmResource,61767,74471
+dmResource,58939,71625
 dmPhysics,58312,75130
 _cf_* (library),43505,50750
 dmRig,39667,45066
@@ -34,7 +34,6 @@ dmObjectPool<>,22354,25194
 dmDDF,22287,28646
 _psa_* (library),20345,23725
 btGeneric6DofSpring2Constraint,19878,23089
-dmJson,19723,20520
 btQuantizedBvh,19223,21193
 btHingeConstraint,18969,20564
 dmHID,17255,22832
@@ -44,6 +43,7 @@ __cxxabiv1,16071,23960
 btIDebugDraw,15765,17218
 btGImpactCollisionAlgorithm,15245,18066
 _luaL_* (library),14998,16843
+dmJson,14531,15328
 btGeneric6DofConstraint,14081,16475
 btSliderConstraint,13344,14682
 btRigidBody,12896,14907
@@ -399,8 +399,8 @@ Vectormath,1391,1520
 btCollisionShape,1386,2052
 FontOutlineMakeYMonotonic(),1380,1448
 DataStoreSchedulerBegin,1378,1426
+[section .rodata],1362,1362
 JobSystemUpdate,1356,1444
-[section .rodata],1354,1354
 btTriangleRaycastCallback,1342,1617
 dmMutex,1334,1660
 ctype_preptype,1332,1371
@@ -2007,7 +2007,6 @@ priority,30,63
 _tls12_* (library),26,141
 _ZN10dmGraphicsL17GetExtProcAddressEPKcS1_* (library),24,230
 g_SoundManager,24,39
-[LOAD #3 [RW]],24,0
 [section .rela.plt],24,24
 _CONTEXT_* (library),21,117
 _to_* (library),20,87
@@ -2298,6 +2297,7 @@ vkFreeMemory,8,37
 vkMapMemory,8,36
 TAG_UL,8,35
 vkCmdDraw,8,34
+[LOAD #3 [RW]],8,0
 _vertically_* (library),4,66
 _unpremultiply_* (library),4,64
 gGjkEpaPenetrationTolerance,4,56
@@ -2345,12 +2345,12 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9892993
-[section .debug_loc],0,8348821
-[section .debug_line],0,3733337
-[section .debug_str],0,2817026
-[section .debug_ranges],0,1490864
-[section .debug_abbrev],0,604991
+[section .debug_info],0,9887405
+[section .debug_loc],0,8345832
+[section .debug_line],0,3730400
+[section .debug_str],0,2817115
+[section .debug_ranges],0,1489440
+[section .debug_abbrev],0,604983
 [section .symtab],0,28776
 [section .strtab],0,19051
 [ELF Headers],0,2304
@@ -2358,4 +2358,4 @@ disableCcd,1,35
 [section .comment],0,348
 [section .debug_frame],0,96
 [section .debug_aranges],0,48
-[Unmapped],0,16
+[Unmapped],0,11
