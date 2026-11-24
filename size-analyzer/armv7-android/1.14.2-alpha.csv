@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
 dmScript,658314,168962
-dmGameSystem,636599,842853
-[section .rodata],416610,416610
-dmGraphics,280892,372887
+dmGameSystem,636599,842847
+[section .rodata],416898,416898
+dmGraphics,281064,373059
 _mbedtls_* (library),176054,214464
-dmRender,146345,198182
-dmGameObject,140438,188806
+dmRender,146449,198365
+dmGameObject,140438,188860
 dmGui,118552,154350
 dmCrash,112182,11767
 basist,112036,110276
 std,108786,157808
-[section .rel.dyn],80136,80136
-[section .ARM.exidx],68696,68696
+[section .rel.dyn],80344,80344
+[section .ARM.exidx],68720,68720
 _pfb,65536,65561
-dmHashTable<>,58964,73480
-dmResource,45280,60248
+dmHashTable<>,58964,73474
+dmResource,45280,60239
 (anonymous namespace),45236,103912
 dmParticle,43225,53450
 dmPhysics,41236,60502
@@ -24,8 +24,8 @@ dmRig,28844,35315
 _GLOBAL_* (library),27316,35386
 dmSound,25861,33170
 dmInput,21781,23353
+dmEngine,21326,26623
 _lua_* (library),20934,25465
-dmEngine,20874,26013
 btSequentialImpulseConstraintSolver,20760,25174
 [section .ARM.extab],20628,20628
 btCollisionWorld,19893,29083
@@ -81,7 +81,7 @@ b2DynamicTree,6732,8115
 _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
-[section .text],6511,6511
+[section .text],6527,6527
 [section .rel.plt],6448,6448
 _alloc_* (library),6432,6780
 dmSys,6422,8929
@@ -92,7 +92,7 @@ btPolyhedralContactClipping,6108,6969
 _tab_* (library),6068,6835
 _lib_* (library),6050,8231
 [section .dynstr],5964,5964
-dmArray<>,5904,9428
+dmArray<>,5904,9435
 CreateEffect(),5900,6246
 dmConnectionPool,5856,7459
 btAlignedObjectArray<>,5640,7691
@@ -244,8 +244,8 @@ PaintColor(),1960,2075
 b2Distance(),1956,2106
 fs_finish,1952,2010
 btTriangleMeshShape,1940,3627
-[section .bss],1930,0
 strscan_dec,1928,1988
+[section .bss],1920,0
 _strscan_* (library),1904,2065
 btDefaultCollisionConfiguration,1900,2803
 FontPackGlyphVertices(),1880,2036
@@ -379,6 +379,7 @@ ParseSize(),1040,1150
 BlurVectorShadow(),1040,1122
 Transform(),1032,1114
 _LOOKUP_* (library),1032,1126
+_Register_* (library),1026,4370
 crc_lookup,1024,1051
 vwin512,1024,1048
 FT0,1024,20
@@ -392,7 +393,6 @@ RT3,1024,20
 dmMutex,1024,1494
 btCollisionShape,1016,1794
 b2BroadPhase,1016,1656
-_Register_* (library),1014,4358
 lex_longstring,1008,1055
 _normalize_* (library),1000,1155
 dmHashBuffer32,979,1042
@@ -452,8 +452,8 @@ dmThread,788,1483
 TextLayoutFinalizeLineBaselines(),784,902
 dmHashReverse64,784,848
 InitCFF2Font(),784,838
+[section .data],784,784
 ctype_preptype,780,827
-[section .data],780,780
 dmCrypt,780,998
 dmURI,776,920
 _sign_* (library),772,926
@@ -681,6 +681,7 @@ secp256r1_T,384,412
 ProcessOneJob(),380,467
 JobSystemCreateJob,372,439
 mbrtoc32,372,472
+[LOAD #1 [RX]],369,369
 TextToCodePoints(),368,452
 _malloc_* (library),368,545
 _SpriteDesc_* (library),365,943
@@ -688,7 +689,6 @@ PointCurveDistanceSquaredFromRoots(),364,476
 _cur_* (library),364,429
 strscan_bin,364,408
 _JNIEnv,364,967
-[LOAD #1 [RX]],361,361
 Engine,360,534
 TextLayoutSetObjectStyle(),360,452
 IsScheduleBusy(),360,447
@@ -735,6 +735,7 @@ _sig_* (library),336,364
 b2GridAndPolygonContact,336,785
 b2GridAndCircleContact,336,780
 _obj_* (library),336,489
+dmEngineCreate(),332,417
 _CHARSET_* (library),332,373
 meth_receive,328,437
 FontGenDestroyJobData(),328,419
@@ -767,7 +768,6 @@ meth_accept,312,372
 DataStoreContext,312,370
 debug_framepc,312,358
 gc_finalize,312,356
-dmEngineCreate(),308,393
 FontLoadFromMemory(),308,386
 Solid(),308,383
 _gather_* (library),308,380
@@ -1082,6 +1082,7 @@ LooperCallback,164,227
 lj_cparse,164,222
 floor0_inverse2,164,212
 _PropertyDeclarationEntry_* (library),162,378
+_ManifestData_* (library),162,361
 FontGetDecorationPattern(),160,288
 _validate_* (library),160,242
 CurveTo(),160,239
@@ -1118,7 +1119,7 @@ _Quat_* (library),156,402
 _EventKey_* (library),155,398
 _Struct_* (library),154,439
 _android_* (library),152,340
-dmEngineInitialize(),152,238
+dmEngineInitialize(),152,236
 onNativeWindowRedrawNeeded,152,227
 onNativeWindowResized,152,222
 FindGlyph(),152,211
@@ -1154,7 +1155,6 @@ _GamepadMap_* (library),140,361
 Particle_GetTileSource,139,224
 Particle_SetTileSource,139,224
 _HttpRequestProgress_* (library),138,321
-_ManifestData_* (library),138,337
 Particle_ReloadPrototype,137,224
 Particle_GetMaterial,137,220
 Particle_SetMaterial,137,220
@@ -1198,7 +1198,7 @@ LiveUpdateExt302,128,33
 ResourceTypeAnim35,128,35
 ResourceTypeAnimationSet103,128,44
 ResourceTypeCollection387,128,42
-ResourceTypeFont1312,128,37
+ResourceTypeFont1307,128,37
 ResourceTypeGameObject237,128,42
 ResourceTypeGui452,128,35
 ResourceTypeGuiScript158,128,41
@@ -1244,6 +1244,7 @@ dmGameSystemDDF,120,2198
 _Cue_* (library),119,322
 Particle_GetStats,118,198
 _CollectionFactoryDesc_* (library),118,498
+_PackageOutput_* (library),118,440
 _FactoryDesc_* (library),118,448
 dmNativeAndroidPlatformVerifySurface,116,201
 dmNativeAndroidPlatformOnInitWindow,116,200
@@ -1255,6 +1256,7 @@ _PropertyDesc_* (library),116,358
 Particle_GenerateVertexDataPartial,115,182
 _ComponentPropertyDesc_* (library),114,320
 _DisplayProfileQualifier_* (library),114,325
+_PackageMetadata_* (library),114,304
 _PrototypeDesc_* (library),114,312
 _DrawDebugText_* (library),114,286
 _ComputeDesc_* (library),114,291
@@ -1353,6 +1355,7 @@ _PathSettings_* (library),92,318
 _StyleDesc_* (library),92,309
 _can_* (library),92,272
 _InstancePropertyDesc_* (library),90,293
+_PackageRequirement_* (library),90,293
 _DisplayProfiles_* (library),90,287
 _DisplayProfile_* (library),90,265
 _TextureProfile_* (library),90,262
@@ -1568,7 +1571,7 @@ dmHashString32,59,106
 dmHashString64,59,106
 JobPostProcessSentinelGlyph(),56,158
 dmNativeAndroidPlatformOnGainedFocus,56,141
-dmEngineFinalize(),56,140
+dmEngineFinalize(),56,138
 TextLayoutRefreshObjectStyles(),56,135
 dmNativeSetCursorVisible,56,129
 FontTrueTypeDestroy(),56,127
@@ -1809,6 +1812,7 @@ socket_open,24,68
 gcm_incr,24,65
 zip_open,24,65
 package_global,24,55
+[LOAD #3 [RW]],23,0
 _CONTEXT_* (library),21,101
 dmNativeIsMouseLeftButtonFromTouch,20,103
 _reset_* (library),20,102
@@ -2087,7 +2091,6 @@ TAG_SIZE,8,29
 TAG_WAVE,8,29
 TAG_UL,8,27
 [section .fini_array],8,8
-[LOAD #3 [RW]],7,0
 btInternalTriangleIndexCallback,4,134
 TextLayoutCreateMarkup(),4,123
 btTriangleCallback,4,108
@@ -2358,18 +2361,18 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8968107
-[section .debug_loc],0,4993851
-[section .debug_line],0,3820926
-[section .debug_str],0,2808637
-[section .debug_ranges],0,1573536
-[section .debug_abbrev],0,616081
-[section .debug_frame],0,403988
-[section .symtab],0,47648
-[section .strtab],0,20560
+[section .debug_info],0,8971467
+[section .debug_loc],0,4994089
+[section .debug_line],0,3822289
+[section .debug_str],0,2810530
+[section .debug_ranges],0,1573688
+[section .debug_abbrev],0,616587
+[section .debug_frame],0,404084
+[section .symtab],0,47664
+[section .strtab],0,20580
 [ELF Headers],0,1440
 [section .shstrtab],0,383
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,10
+[Unmapped],0,12
