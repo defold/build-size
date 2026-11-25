@@ -1,6 +1,6 @@
 symbol_group_name,vmsize,filesize
 dmScript,658314,168962
-dmGameSystem,636599,842847
+dmGameSystem,637171,843483
 [section .rodata],416898,416898
 dmGraphics,281064,373059
 _mbedtls_* (library),176054,214464
@@ -81,7 +81,7 @@ b2DynamicTree,6732,8115
 _ctype_* (library),6684,7654
 btGjkPairDetector,6588,7752
 btConvexConvexAlgorithm,6544,8944
-[section .text],6527,6527
+[section .text],6531,6531
 [section .rel.plt],6448,6448
 _alloc_* (library),6432,6780
 dmSys,6422,8929
@@ -2361,13 +2361,13 @@ g_PendingResize,1,32
 supported_init,1,31
 g_AppResumed,1,29
 disableCcd,1,27
-[section .debug_info],0,8971467
-[section .debug_loc],0,4994089
-[section .debug_line],0,3822289
-[section .debug_str],0,2810530
-[section .debug_ranges],0,1573688
+[section .debug_info],0,8971811
+[section .debug_loc],0,4995291
+[section .debug_line],0,3822460
+[section .debug_str],0,2810639
+[section .debug_ranges],0,1573568
 [section .debug_abbrev],0,616587
-[section .debug_frame],0,404084
+[section .debug_frame],0,404100
 [section .symtab],0,47664
 [section .strtab],0,20580
 [ELF Headers],0,1440
@@ -2375,4 +2375,4 @@ disableCcd,1,27
 [section .comment],0,348
 [section .ARM.attributes],0,60
 [section .debug_aranges],0,32
-[Unmapped],0,12
+[Unmapped],0,10
