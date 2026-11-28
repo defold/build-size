@@ -1,20 +1,20 @@
 symbol_group_name,vmsize,filesize
-dmGameSystem,828988,1000858
+dmGameSystem,829176,1001188
 dmScript,694343,197293
-dmGraphics,338395,398130
+dmGraphics,339159,399114
 _mbedtls_* (library),230926,259021
-dmRender,196454,241126
-std,189343,216593
+dmRender,201889,248067
+std,189339,216589
 dmGameObject,184602,223895
 dmGui,155361,182277
 (anonymous namespace),138727,194200
 basist,123709,119881
 dmCrash,119344,15449
 dmHashTable<>,86971,98360
-[section .text],80688,80688
+[section .text],80834,80834
 _pfb,65536,65569
 dmParticle,61804,70166
-dmResource,58948,71634
+dmResource,59049,71900
 dmPhysics,58312,75130
 _cf_* (library),43505,50750
 dmRig,39667,45066
@@ -24,9 +24,9 @@ btConvexHullInternal,30424,31901
 btConeTwistConstraint,30127,31829
 btSequentialImpulseConstraintSolver,29805,33563
 dmInput,27882,28974
-dmEngine,27361,31277
+dmEngine,27541,31457
 _lua_* (library),26938,30557
-_GLOBAL_* (library),25338,30916
+_GLOBAL_* (library),25306,30884
 btDiscreteDynamicsWorld,25213,29104
 _load_* (library),23452,23629
 libunwind,23347,25261
@@ -111,10 +111,10 @@ b2RevoluteJoint,6519,8072
 btCompoundCollisionAlgorithm,6506,8206
 [section .gnu.hash],6504,6504
 btPolyhedralConvexShape,6438,7222
+dmLiveUpdate,6327,7744
+dmResourceMounts,6257,7906
 _ShaderDesc_* (library),6120,8544
 _tls13_* (library),6108,6723
-dmResourceMounts,6053,7584
-dmLiveUpdate,5985,7402
 _cconv_* (library),5973,6252
 FontSDFGenerate(),5946,6045
 btDbvtBroadphase,5882,7418
@@ -342,9 +342,9 @@ FontCacheEffect(),1724,1807
 dmResourceProviderFile,1719,2371
 _clib_* (library),1713,1867
 ConvertGlyphBitmap(),1705,1793
+[section .bss],1692,0
 dmImage,1690,1937
 gc_onestep,1689,1724
-[section .bss],1684,0
 _TextureImage_* (library),1676,2249
 _VertexAttribute_* (library),1670,2778
 btSphereShape,1666,2376
@@ -640,11 +640,11 @@ FreeJob(),668,724
 FontTrueTypeGetGlyphIndex(),665,735
 poly1305_process,662,703
 _prng_* (library),662,779
+[LOAD #1 [RX]],661,661
 socket_gaistrerror,658,701
 FontGenUpdateGlyphs(),654,720
 _Value_* (library),654,884
 touchById,653,687
-[LOAD #1 [RX]],653,653
 FindCurveCrossingX(),649,716
 FontOutlineBoundsQuadraticTo(),648,746
 RemoveTable(),648,725
@@ -1205,6 +1205,7 @@ _for_* (library),208,251
 package_lib,208,244
 FontVectorPaintClear(),207,279
 ov_info,207,239
+dmNativeAndroidPollEvents,206,256
 meth_listen,206,242
 FontGetDecorationEndGlyphs(),205,296
 Particle_SetPosition,205,250
@@ -1217,7 +1218,6 @@ _validate_* (library),203,277
 btCollisionPairCallback,203,403
 FontCollectionRemoveFont(),202,278
 meth_close,202,261
-dmNativeAndroidPollEvents,202,252
 protected_,201,236
 sort_comp,201,235
 ParseEntity(),200,267
@@ -1407,7 +1407,7 @@ ComponentTypeParticleFX1250,128,52
 ComponentTypeScript65,128,46
 ComponentTypeSound601,128,46
 ComponentTypeTileMap1065,128,49
-LiveUpdateExt302,128,41
+LiveUpdateExt312,128,41
 ResourceTypeAnim35,128,43
 ResourceTypeAnimationSet103,128,52
 ResourceTypeCollection387,128,50
@@ -2348,14 +2348,14 @@ g_PendingResize,1,40
 supported_init,1,39
 g_AppResumed,1,37
 disableCcd,1,35
-[section .debug_info],0,9891397
-[section .debug_loc],0,8348431
-[section .debug_line],0,3732243
-[section .debug_str],0,2819117
-[section .debug_ranges],0,1489760
-[section .debug_abbrev],0,605526
-[section .symtab],0,28800
-[section .strtab],0,19071
+[section .debug_info],0,9901589
+[section .debug_loc],0,8358374
+[section .debug_line],0,3738291
+[section .debug_str],0,2823549
+[section .debug_ranges],0,1491248
+[section .debug_abbrev],0,606388
+[section .symtab],0,28824
+[section .strtab],0,19099
 [ELF Headers],0,2304
 [section .shstrtab],0,389
 [section .comment],0,348
